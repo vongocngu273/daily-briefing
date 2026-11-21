@@ -33,6 +33,7 @@ class Article:
     summary: str = ""
     layers: list[int] = field(default_factory=list)
     cid: int = 0
+    image: str = ""
 
     @property
     def url_hash(self) -> str:
@@ -169,6 +170,67 @@ def _strip_gnews_suffix(title: str, source: str) -> str:
     return title
 
 
+_IMG_RE = re.compile(r"""<img[^>]+?src=["']([^"']+)["']""", re.I)
+_OG_RE = re.compile(r"""<meta[^>]+?(?:property|name)=["'](?:og:image|twitter:image)["'][^>]*?content=["']([^"']+)["']""", re.I)
+_OG_RE2 = re.compile(r"""<meta[^>]+?content=["']([^"']+)["'][^>]*?(?:property|name)=["'](?:og:image|twitter:image)["']""", re.I)
+
+
+def _usable_image(url: str) -> str:
+    url = html.unescape((url or "").strip())
+    if url.startswith("//"):
+        url = "https:" + url
+    if not url.startswith("https://"):
+        return ""  # chỉ nhận https để trang không bị lỗi nội dung hỗn hợp
+    low = url.lower().split("?")[0]
+    if any(x in low for x in ("1x1", "pixel", "spacer", "blank.gif", "feedburner")) or low.endswith(".svg"):
+        return ""
+    # BBC: ảnh RSS chỉ rộng 240px, lấy bản 480px cho nét
+    return re.sub(r"(ichef\.bbci\.co\.uk/[^ ]*?/)240/", r"\g<1>480/", url)
+
+
+def entry_image(e) -> str:
+    """Ảnh minh hoạ của một mục RSS: media:content / media:thumbnail / enclosure / <img> đầu tiên."""
+    cands: list[str] = []
+    for m in e.get("media_content") or []:
+        if (m.get("medium") in (None, "image")) and not str(m.get("type", "image")).startswith("video"):
+            cands.append(m.get("url", ""))
+    for m in e.get("media_thumbnail") or []:
+        cands.append(m.get("url", ""))
+    for l in e.get("links") or []:
+        if l.get("rel") == "enclosure" and str(l.get("type", "image")).startswith("image"):
+            cands.append(l.get("href", ""))
+    body = (e.get("summary", "") or "") + "".join(c.get("value", "") for c in e.get("content") or [])
+    cands += _IMG_RE.findall(body)
+    for c in cands:
+        u = _usable_image(c)
+        if u:
+            return u
+    return ""
+
+
+def page_image(url: str, timeout: int = 10) -> str:
+    """og:image của trang bài viết (dùng khi RSS không có ảnh). Lỗi -> chuỗi rỗng."""
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=timeout, stream=True)
+        r.raise_for_status()
+        head = r.raw.read(200_000, decode_content=True).decode(r.encoding or "utf-8", "ignore")
+        r.close()
+    except Exception:  # noqa: BLE001
+        return ""
+    m = _OG_RE.search(head) or _OG_RE2.search(head)
+    return _usable_image(m.group(1)) if m else ""
+
+
+def fill_missing_images(items: list, workers: int = 8) -> None:
+    """Bổ sung ảnh cho tin đã chọn mà RSS không có ảnh (bỏ qua link Google News)."""
+    todo = [it for it in items if not getattr(it, "image", "") and "news.google.com" not in it.url]
+    if not todo:
+        return
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        for it, img in zip(todo, ex.map(lambda it: page_image(it.url), todo)):
+            it.image = img
+
+
 def parse_feed(content: bytes, feed_cfg: dict) -> list[Article]:
     parsed = feedparser.parse(content)
     out = []
@@ -187,8 +249,9 @@ def parse_feed(content: bytes, feed_cfg: dict) -> list[Article]:
                 source = src_title
             title = _strip_gnews_suffix(title, source)
         summary = "" if is_gnews else clean_text(e.get("summary", ""))
+        image = "" if is_gnews else entry_image(e)
         out.append(Article(title=title, url=link, source=source, published=published,
-                           summary=summary, layers=list(feed_cfg.get("layers", [1, 2, 3]))))
+                           summary=summary, layers=list(feed_cfg.get("layers", [1, 2, 3])), image=image))
     return out
 
 

@@ -354,3 +354,27 @@ def test_telegram_message_has_sun_and_aqi():
         "aqi_label": "Kém với người nhạy cảm"}}, "")
     assert "🌅 Mặt trời  05:51 – 17:26" in msg and "😷 AQI <b>114</b> · Kém với người nhạy cảm" in msg
     assert "💡 Nhắc nhở" in msg
+
+
+# ---------- thumbnails ----------
+def test_entry_image_sources_and_filters():
+    from src.news import entry_image
+    assert entry_image({"media_thumbnail": [{"url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a.jpg"}]}) \
+        == "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/a.jpg"
+    assert entry_image({"links": [{"rel": "enclosure", "type": "image/jpeg", "href": "https://i.vnecdn.net/x.jpg"}]}) \
+        == "https://i.vnecdn.net/x.jpg"
+    assert entry_image({"summary": '<p><img src="http://insecure/x.jpg"><img src="https://cdn.x/y.png?w=1&amp;h=2"></p>'}) \
+        == "https://cdn.x/y.png?w=1&h=2"
+    assert entry_image({"summary": '<img src="https://feeds.feedburner.com/~r/x/1x1.gif">'}) == ""
+    assert entry_image({}) == ""
+
+
+def test_parse_feed_keeps_image_but_not_for_google_news():
+    from src.news import parse_feed
+    rss = b"""<?xml version="1.0"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel>
+    <item><title>Tin A</title><link>https://vnexpress.net/a.html</link><pubDate>Sat, 21 Nov 2026 01:00:00 +0700</pubDate>
+    <enclosure url="https://i1-vnexpress.vnecdn.net/a.jpg" type="image/jpeg" length="1"/></item></channel></rss>"""
+    arts = parse_feed(rss, {"source": "VnExpress", "url": "https://vnexpress.net/rss/x.rss"})
+    assert arts[0].image == "https://i1-vnexpress.vnecdn.net/a.jpg"
+    arts = parse_feed(rss, {"source": "Reuters", "url": "https://news.google.com/rss/search?q=x"})
+    assert arts[0].image == ""

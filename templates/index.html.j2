@@ -1,11 +1,14 @@
 <!doctype html>
-<html lang="vi" data-theme="dark">
+<html lang="vi" data-theme="dark" data-view="mag">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
 <script>/* Giao diện: mặc định tối; nhớ lựa chọn trên thiết bị này */
-try{var t=localStorage.getItem('banTinSang.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+try{var t=localStorage.getItem('banTinSang.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}
+/* Kiểu xem: list | mag | card, mặc định Tạp chí */
+document.documentElement.setAttribute('data-view','mag');
+try{var v=localStorage.getItem('banTinSang.view');if(v==='list'||v==='mag'||v==='card')document.documentElement.setAttribute('data-view',v);}catch(e){}</script>
 <title>Bản tin sáng · {{ serial }}</title>
 <link rel="preload" href="fonts/BarlowCondensed-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/BeVietnamPro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
@@ -124,6 +127,30 @@ main{padding:4px 0 8px}
 .empty{margin:10px 0 0;color:var(--muted);font-size:14px}
 .item{display:grid;grid-template-columns:42px minmax(0,1fr);gap:0 10px;padding:14px 0;border-bottom:1px dashed var(--rule);position:relative}
 .item:last-child{border-bottom:0}
+.item>.no{grid-area:no}.item>.body{grid-area:body;min-width:0}
+.item{grid-template-areas:"no body"}
+
+/* ---------- view switcher + thumbnails ---------- */
+.views{display:flex;align-items:center;gap:6px;margin-top:16px}
+.views span{font:600 13px var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.views button{font:600 14px/1 var(--cond);letter-spacing:.04em;text-transform:uppercase;color:var(--ink);background:none;border:1.5px solid var(--rule);padding:7px 9px;cursor:pointer;border-radius:0}
+.views button:hover{background:var(--ink);color:var(--paper)}
+.views button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.thumb{display:none;grid-area:thumb;position:relative;overflow:hidden;background:var(--stub);border:1.5px solid var(--rule)}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.ph-src{display:none}
+.thumb.ph .ph-src{display:flex;position:absolute;inset:0;align-items:center;justify-content:center;text-align:center;padding:6px;font:800 14px/1.05 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--stub-ink)}
+[data-view="mag"] .item{grid-template-columns:42px minmax(0,1fr) 104px;grid-template-areas:"no body thumb"}
+[data-view="mag"] .thumb{display:block;align-self:start;aspect-ratio:4/3;margin-top:3px}
+@media (max-width:519px){[data-view="mag"] .item{grid-template-columns:34px minmax(0,1fr) 88px;gap:0 8px}[data-view="mag"] .no{font-size:22px}}
+[data-view="card"] .items{display:grid;gap:14px;margin-top:14px}
+@media (min-width:640px){[data-view="card"] .items{grid-template-columns:repeat(2,minmax(0,1fr))}}
+[data-view="card"] .item,[data-view="card"] .item:last-child{display:flex;flex-direction:column;padding:0 0 12px;border:2px solid var(--rule)}
+[data-view="card"] .thumb{display:block;order:-1;aspect-ratio:16/9;border:0;border-bottom:2px solid var(--rule)}
+[data-view="card"] .thumb.ph .ph-src{font-size:22px}
+[data-view="card"] .no{position:absolute;top:8px;left:8px;z-index:1;background:var(--paper);padding:3px 6px 1px;font-size:22px;border:1.5px solid var(--rule)}
+[data-view="card"] .body{padding:10px 12px 0}
+[data-view="card"] .item h4{text-wrap:pretty}
 .no{font:800 26px/1 var(--cond);color:var(--red);padding-top:2px}
 .item h4{margin:0;font:600 17px/1.4 var(--read);max-width:var(--measure);text-wrap:balance}
 .sev{display:inline-block;width:1.45em;font-size:1em;line-height:1;vertical-align:-.05em}
@@ -240,6 +267,12 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 </nav>
 
 <main class="wrap">
+  <div class="views" role="group" aria-label="Kiểu xem">
+    <span>Kiểu xem</span>
+    <button type="button" data-v="list" aria-pressed="false">Danh sách</button>
+    <button type="button" data-v="mag" aria-pressed="false">Tạp chí</button>
+    <button type="button" data-v="card" aria-pressed="false">Thẻ</button>
+  </div>
   {% if ai_degraded %}
   <p class="notice">Một phần bản tin chưa được AI biên tập (lỗi kết nối Gemini), đang hiện tiêu đề gốc.</p>
   {% endif %}
@@ -270,10 +303,13 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         </table>
       </div>
       {% endif %}
+      {% if cat['items'] %}<div class="items">
       {% for n in cat['items'] %}
       <article class="item" id="tin-{{ "%02d"|format(n.num) }}" data-num="{{ n.num }}">
         <div class="no" aria-hidden="true">{{ "%02d"|format(n.num) }}</div>
-        <div>
+        {% if n.image %}<a class="thumb" href="{{ n.url }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="{{ n.image }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">{{ n.source }}</span></a>
+        {% else %}<span class="thumb ph" aria-hidden="true"><span class="ph-src">{{ n.source }}</span></span>{% endif %}
+        <div class="body">
           <h4><span class="sev" aria-hidden="true">{{ n.emoji }}</span>{{ n.title }}{% if n.is_update %}<span class="tag">Cập nhật</span>{% endif %}</h4>
           <p class="sum">{{ n.summary }}</p>
           <details>
@@ -291,9 +327,10 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
           </details>
         </div>
       </article>
-      {% else %}
-      <p class="empty">Không có tin nổi bật mới.</p>
       {% endfor %}
+      </div>{% else %}
+      <p class="empty">Không có tin nổi bật mới.</p>
+      {% endif %}
     </details>
     {% endfor %}
   </div>
@@ -323,6 +360,13 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 <script>
 (function(){
   var root=document.documentElement, th=document.getElementById('theme');
+  var vbs=document.querySelectorAll('.views button');
+  function markView(){var v=root.getAttribute('data-view');vbs.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-v')===v?'true':'false');});}
+  vbs.forEach(function(b){b.addEventListener('click',function(){
+    root.setAttribute('data-view',b.getAttribute('data-v')); markView();
+    try{localStorage.setItem('banTinSang.view',b.getAttribute('data-v'));}catch(e){}
+  });});
+  markView();
   function label(){th.setAttribute('aria-label',root.getAttribute('data-theme')==='dark'?'Chuyển sang giao diện sáng':'Chuyển sang giao diện tối');}
   label();
   th.addEventListener('click',function(){

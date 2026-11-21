@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from .config import HISTORY_PATH, SUMMARY_PATH, LAYER_TITLES, LAYERS, OUTPUT_PATH, load_config, tz, weather_location
 from .curator import Curator, NewsItem, fallback_layer
 from .market import fetch_market
-from .news import (add_to_history, candidates_for_layer, collect, load_history, prune_history,
+from .news import (add_to_history, fill_missing_images, candidates_for_layer, collect, load_history, prune_history,
                    recent_titles, save_history)
 from .renderer import render
 from .extras import air_advice, fetch_air, fetch_tide, uv_level
@@ -135,6 +135,8 @@ def run() -> int:
             cats.append({"key": key, "label": label, "items": items,
                          "first": items[0].num if items else 0, "last": items[-1].num if items else 0})
         layers_out.append({"id": layer, "title": LAYER_TITLES[layer], "categories": cats})
+    fill_missing_images(all_items)
+    log.info("Ảnh minh hoạ: %d/%d tin", sum(1 for i in all_items if i.image), len(all_items))
 
     takeaways: list[str] = []
     try:

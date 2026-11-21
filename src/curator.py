@@ -60,6 +60,7 @@ class NewsItem:
     published: str
     ai: bool = True  # False = deterministic fallback, not recorded in history
     num: int = 0  # continuous display number across the page (01..N)
+    image: str = ""  # https URL ảnh minh hoạ (có thể rỗng)
 
     @property
     def emoji(self) -> str:
@@ -108,6 +109,7 @@ def hydrate(result_items: list[CuratedItem], candidates: list[Article], layer: i
             url=art.url,
             source=art.source,
             published=art.published.isoformat(),
+            image=art.image,
         ))
     for k in out:
         out[k].sort(key=lambda n: SEVERITY_ORDER.get(n.severity, 3))
@@ -291,6 +293,6 @@ def fallback_layer(layer: int, candidates: list[Article], max_per_cat: int = 5) 
             cid=a.cid, category=first, severity="low", title=a.title,
             summary=truncate_words(a.summary, 25) or a.title, developments="", context="",
             why_it_matters="", is_update=False, url=a.url, source=a.source,
-            published=a.published.isoformat(), ai=False,
+            published=a.published.isoformat(), ai=False, image=a.image,
         ))
     return out
