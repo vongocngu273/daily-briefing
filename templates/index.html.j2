@@ -175,9 +175,9 @@ main{padding:4px 0 8px}
   border-radius:calc(var(--r) - 10px);corner-shape:squircle;box-shadow:0 1px 3px rgba(0,0,0,.25)}
 [data-view="card"] .item[data-flag]::before{top:10px;right:10px;border-radius:calc(var(--r) - 14px);corner-shape:squircle;z-index:1}
 [data-view="card"] .body{padding:10px 12px 0}
-[data-view="card"] .item h4{text-wrap:pretty}
+[data-view="card"] .item h4{text-wrap:pretty;font-size:20px}
 .no{font:800 26px/1 var(--cond);color:var(--red);padding-top:2px}
-.item h4{margin:0;font:600 17px/1.4 var(--read);max-width:var(--measure);text-wrap:balance}
+.item h4{margin:0;font:700 19px/1.32 var(--read);letter-spacing:-.01em;max-width:var(--measure);text-wrap:balance}
 .sev{display:inline-block;width:1.35em;line-height:1;vertical-align:-.12em}
 .sv{width:1.05em;height:1.05em;display:inline-block}
 .sv-high .sv-bg{fill:var(--sys-red)}.sv-med .sv-bg{fill:var(--sys-orange)}.sv-low .sv-bg{fill:var(--sys-gray)}
@@ -185,7 +185,7 @@ main{padding:4px 0 8px}
 .ic-loc{width:.95em;height:.95em;fill:currentColor;margin-right:.4em;vertical-align:-.12em}
 .advice li.alert::before{content:"Cảnh báo"}
 .tag{display:inline-block;vertical-align:2px;margin-left:6px;font:800 11px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--red);padding:3px 5px}
-.sum{margin:3px 0 0;max-width:var(--measure);color:var(--ink)}
+.sum{margin:6px 0 0;max-width:var(--measure);font-size:15.5px;line-height:1.55;color:color-mix(in srgb,var(--ink) 78%,var(--paper))}
 .item details{margin-top:6px}
 .item summary{display:inline-flex;gap:8px;align-items:baseline;cursor:pointer;list-style:none;font:600 13px var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .item summary::-webkit-details-marker{display:none}
@@ -277,7 +277,7 @@ footer b{color:var(--ink);font-weight:600}
 .sh-img img{width:100%;height:100%;object-fit:cover;display:block}
 .sh-meta{display:flex;align-items:center;gap:10px;font:600 13px var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .sh-meta b{font:800 22px/1 var(--cond);color:var(--red);letter-spacing:0}
-.sh-body h3{margin:8px 0 6px;font:600 21px/1.35 var(--read);text-wrap:balance}
+.sh-body h3{margin:8px 0 6px;font:700 23px/1.3 var(--read);letter-spacing:-.01em;text-wrap:balance}
 .sh-body .sum{font-size:17px}
 .sh-body .full{margin-top:14px}
 .sh-body .full dd{font-size:17px}
@@ -323,7 +323,7 @@ html.sheet-open{overflow:hidden}
 .rf.spin .ic-rf{animation:rfspin .8s linear infinite}
 @keyframes rfspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.rf.spin .ic-rf{animation:none}}
-.board caption{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.board caption .cap{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .board caption .rf{width:26px;height:26px}
 .hot{margin-top:18px;border:2px solid var(--rule);border-radius:var(--rL);corner-shape:squircle;overflow:hidden}
 .hot-head{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:2px solid var(--rule);background:var(--stub);color:var(--stub-ink)}
@@ -339,7 +339,7 @@ html.sheet-open{overflow:hidden}
 .hot-list a:hover b{text-decoration:underline;text-underline-offset:3px}
 .hthumb{width:72px;aspect-ratio:1;overflow:hidden;border-radius:var(--rM);corner-shape:squircle;background:var(--stub)}
 .hthumb img{width:100%;height:100%;object-fit:cover;display:block}
-.htxt b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font:600 16px/1.35 var(--read)}
+.htxt b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font:700 16px/1.35 var(--read)}
 .htxt small{display:block;margin-top:3px;font:600 12px var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 @media (min-width:700px){.hot-list{display:grid;grid-template-columns:1fr 1fr}.hot-list[hidden]{display:none}.hot-list li+li{border-top:0}.hot-list li{border-bottom:1px dashed var(--rule)}.hot-list li:nth-child(odd){border-right:1px dashed var(--rule)}}
 .toast{white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis;position:fixed;left:50%;bottom:calc(80px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:30;padding:10px 16px;border-radius:999px;background:var(--ink);color:var(--paper);font:600 14px var(--read);box-shadow:0 8px 24px rgba(0,0,0,.25);opacity:0;transition:opacity .2s;pointer-events:none}
@@ -470,7 +470,7 @@ html.sheet-open{overflow:hidden}
       {% if cat.key == "economy" %}
       <div class="board" id="thi-truong">
         <table>
-          <caption><span>Bảng giá{% if lv.updated %} · {{ lv.updated }}{% endif %}</span><button type="button" class="rf" data-refresh aria-label="Làm mới bảng giá">{{ refreshicon() }}</button></caption>
+          <caption><div class="cap"><span>Bảng giá{% if lv.updated %} · {{ lv.updated }}{% endif %}</span><button type="button" class="rf" data-refresh aria-label="Làm mới bảng giá">{{ refreshicon() }}</button></div></caption>
           <tbody>
           {% for q in quotes %}
             <tr>
