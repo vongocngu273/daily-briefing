@@ -59,7 +59,7 @@ def build_message(summary: dict, url: str) -> str:
     lines = [f"<b>Bản tin sáng · {e(summary.get('date_str', ''))}</b> ({e(summary.get('updated_at', ''))})", ""]
 
     loc = w.get("location_name", "")
-    advice = " ".join(w.get("advice") or []) or "Chưa có dữ liệu thời tiết."
+    advice = "\n".join(w.get("advice") or []) or "Chưa có dữ liệu thời tiết"
     lines.append(f"{icon} <b>Thời tiết{(' · ' + e(loc)) if loc else ''}</b>")
     lines.append(e(advice))
     windows = w.get("windows") or []

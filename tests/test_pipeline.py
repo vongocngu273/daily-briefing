@@ -74,11 +74,11 @@ def test_strong_gust_without_thunder_code_warns():
 
 def test_calm_day_no_warning():
     lines = make_advice([_slot("Sáng", 0, uv=2), _slot("Trưa", 1, uv=4), _slot("Chiều tối", 2)])
-    assert lines == ["Thời tiết ổn định, không cần áo mưa."]
+    assert lines == ["Thời tiết ổn định, không cần áo mưa"]
 
 
 def test_no_data():
-    assert make_advice([Slot(key="m", label="Sáng", hours="")]) == ["Chưa có dữ liệu thời tiết."]
+    assert make_advice([Slot(key="m", label="Sáng", hours="")]) == ["Chưa có dữ liệu thời tiết"]
 
 
 def test_build_slots_aggregates_hours():

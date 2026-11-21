@@ -131,7 +131,7 @@ def make_advice(slots: list[Slot]) -> list[str]:
     """1–2 dòng kết luận: áo mưa, chống nắng, cảnh báo giông lốc/ngập."""
     data = [s for s in slots if s.has_data]
     if not data:
-        return ["Chưa có dữ liệu thời tiết."]
+        return ["Chưa có dữ liệu thời tiết"]
 
     thunder = [s.label for s in data if s.code in THUNDER_CODES]
     rainy = [
@@ -154,9 +154,9 @@ def make_advice(slots: list[Slot]) -> list[str]:
     if uv_max >= 6:
         gear.append(f"mặc áo khoác chống nắng (UV tới {uv_max:g})".replace(".", ","))
     if gear:
-        lines.append("Nên " + "; ".join(gear) + ".")
+        lines.append("Nên " + "; ".join(gear))
     else:
-        lines.append("Thời tiết ổn định, không cần áo mưa.")
+        lines.append("Thời tiết ổn định, không cần áo mưa")
 
     warnings: list[str] = []
     if thunder or strong_gust:
@@ -168,7 +168,7 @@ def make_advice(slots: list[Slot]) -> list[str]:
         line = "; ".join(warnings)
         if not line.startswith("⚠️"):
             line = "⚠️ Cảnh báo " + line
-        lines.append(line + ".")
+        lines.append(line)
     return lines[:2]
 
 
@@ -192,7 +192,7 @@ def fetch_weather(loc: Location, timeout: int = 20) -> WeatherReport:
         except Exception as e:  # noqa: BLE001
             log.warning("Open-Meteo lỗi (lần %d): %s", attempt + 1, type(e).__name__)
     report.slots = [Slot(key=k, label=l, hours=f"{a:02d}:00–{b:02d}:00") for k, l, a, b in SLOTS]
-    report.advice = ["Chưa có dữ liệu thời tiết."]
+    report.advice = ["Chưa có dữ liệu thời tiết"]
     return report
 
 
