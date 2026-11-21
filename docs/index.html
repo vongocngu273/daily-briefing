@@ -30,12 +30,15 @@ try{var v=localStorage.getItem('banTinSang.view');if(v==='list'||v==='mag'||v===
   --red:#d0021b; --ink:#1b1f4a; --paper:#ffffff; --muted:#4a4e78; --rule:#1b1f4a;
   --cond:"Barlow Condensed","Arial Narrow",sans-serif;
   --read:"Be Vietnam Pro",-apple-system,"Segoe UI",sans-serif;
+  --sys-red:#FF3B30; --sys-orange:#FF9500; --sys-gray:#8E8E93;
   --gut:16px; --measure:68ch;
   color-scheme:light;
 }
 body[data-day="0"]{--stub:#5bbbe9} body[data-day="1"]{--stub:#a6d64a} body[data-day="2"]{--stub:#f7a440}
 body[data-day="3"]{--stub:#a98ddc} body[data-day="4"]{--stub:#3ccdbf} body[data-day="5"]{--stub:#f06e98}
 body[data-day="6"]{--stub:#f6cf3a}
+
+:root[data-theme="dark"]{--sys-red:#FF453A; --sys-orange:#FF9F0A; --sys-gray:#98989D}
 :root[data-theme="dark"]{--red:#ff5d6c; --ink:#ecebf7; --paper:#12142c; --muted:#b4b6d8; --rule:#5d6194; color-scheme:dark;
   --stub-ink:#f4f2fb; --field:#12142c; --serial:#ff5d6c; --field-muted:#b4b6d8; --engrave:rgba(255,255,255,.14)}
 [data-theme="dark"] body[data-day="0"]{--stub:#1f4f73} [data-theme="dark"] body[data-day="1"]{--stub:#3d5716} [data-theme="dark"] body[data-day="2"]{--stub:#7a4310}
@@ -82,7 +85,8 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .idx .na{font:600 14px var(--cond);color:var(--field-muted)}
 .idx .tide{font-size:13px;white-space:nowrap}
 .idx .tide b{font:800 14px var(--cond);letter-spacing:.04em;text-transform:uppercase;display:inline-block;min-width:3.2em}
-.idx .aq.warn .v::after,.idx .aq.alert .v::after{content:" ⚠️";font-size:.7em}
+.idx .aq .v .sv{display:none;width:.78em;height:.78em;margin-left:.25em;vertical-align:-.04em}
+.idx .aq.warn .v .sv,.idx .aq.alert .v .sv{display:inline-block}
 @media (min-width:700px){
   .idx{grid-column:1/-1;grid-template-columns:repeat(4,1fr)}
   .idx>div{border-bottom:0}
@@ -167,7 +171,12 @@ main{padding:4px 0 8px}
 [data-view="card"] .item h4{text-wrap:pretty}
 .no{font:800 26px/1 var(--cond);color:var(--red);padding-top:2px}
 .item h4{margin:0;font:600 17px/1.4 var(--read);max-width:var(--measure);text-wrap:balance}
-.sev{display:inline-block;width:1.45em;font-size:1em;line-height:1;vertical-align:-.05em}
+.sev{display:inline-block;width:1.35em;line-height:1;vertical-align:-.12em}
+.sv{width:1.05em;height:1.05em;display:inline-block}
+.sv-high .sv-bg{fill:var(--sys-red)}.sv-med .sv-bg{fill:var(--sys-orange)}.sv-low .sv-bg{fill:var(--sys-gray)}
+.sv-fg{fill:#fff}
+.ic-loc{width:.95em;height:.95em;fill:currentColor;margin-right:.4em;vertical-align:-.12em}
+.advice li.alert::before{content:"Cảnh báo"}
 .tag{display:inline-block;vertical-align:2px;margin-left:6px;font:800 11px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--red);padding:3px 5px}
 .sum{margin:3px 0 0;max-width:var(--measure);color:var(--ink)}
 .item details{margin-top:6px}
@@ -285,13 +294,13 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         </div>
         <div class="aq alert" id="ix-air">
           <h2>Không khí</h2>
-<p class="v">AQI&nbsp;153</p><p>Kém</p><p class="s">PM2.5&nbsp;90,6&nbsp;µg/m³</p>        </div>
+<p class="v">AQI&nbsp;153<svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></p><p>Kém</p><p class="s">PM2.5&nbsp;90,6&nbsp;µg/m³</p>        </div>
         <div>
           <h2>Thủy triều · Cần Giờ</h2>
 <p class="tide"><b>Thấp</b>&nbsp;04:44&nbsp;·&nbsp;0,2&nbsp;m</p><p class="tide"><b>Cao</b>&nbsp;11:00&nbsp;·&nbsp;1,5&nbsp;m</p><p class="tide"><b>Thấp</b>&nbsp;16:21&nbsp;·&nbsp;0,7&nbsp;m</p><p class="tide"><b>Cao</b>&nbsp;22:26&nbsp;·&nbsp;2,1&nbsp;m</p>        </div>
       </section>
     </div>
-    <div class="stub-row loc"><span id="wx-loc">TP.HCM (Bình Chánh &amp; Nội thành)</span><button type="button" class="geo" id="geo">📍 Theo vị trí máy</button></div>
+    <div class="stub-row loc"><span id="wx-loc">TP.HCM (Bình Chánh &amp; Nội thành)</span><button type="button" class="geo" id="geo"><svg class="ic-loc" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.3 2.2 2.8 8.4c-.8.3-.7 1.4.1 1.6l6.1 1.3 1.4 6.1c.2.8 1.3.9 1.6.1l6.2-14.5c.3-.6-.3-1.1-.9-.8z"/></svg><span id="geo-t">Theo vị trí máy</span></button></div>
     <ul class="advice" id="wx-advice"><li>Nên mặc áo khoác chống nắng (UV tới 7,5)</li><li>Không khí kém (AQI 153), nên đeo khẩu trang khi ra đường</li></ul>
     <a class="resume" id="resume" href="#" hidden><span>Đọc tiếp</span><svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/></svg></a>
     <div class="ticker" role="region" aria-label="Xu hướng tìm kiếm 24 giờ qua">
@@ -331,7 +340,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">01</div>
 <a class="thumb" href="https://tuoitre.vn/nong-iran-tuyen-bo-danh-trung-f-16-my-buoc-ha-canh-khan-cap-100261121210453479.htm" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/farjtt4s5rmntn7cs6qbcvcsta-17952697797001388070480-69-0-819-1200-crop-1795269804935839694406.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tuổi Trẻ</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Iran tuyên bố bắn trúng tiêm kích F-16 của Mỹ</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Iran tuyên bố bắn trúng tiêm kích F-16 của Mỹ</h4>
           <p class="sum">Quân đội Iran tuyên bố đã phóng tên lửa bắn trúng một tiêm kích F-16 của Mỹ trên vùng Vịnh.</p>
           <details>
             <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -347,7 +356,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">02</div>
 <a class="thumb" href="https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/3686/live/9ee585d0-e5a6-11f1-99b6-a35a62fa4264.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">BBC</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Ukraine tuyên bố tấn công cầu Crimea để đáp trả Nga</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Ukraine tuyên bố tấn công cầu Crimea để đáp trả Nga</h4>
           <p class="sum">Tổng thống Zelensky khẳng định các đòn tấn công cầu Crimea là phản ứng công bằng sau hàng trăm đợt không kích của Nga.</p>
           <details>
             <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -418,7 +427,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-03" data-num="3">
         <div class="no" aria-hidden="true">03</div>
 <span class="thumb ph" aria-hidden="true"><span class="ph-src">Reuters</span></span>        <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Mỹ dọa phạt doanh nghiệp xây trung tâm dữ liệu ngoài nước</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Mỹ dọa phạt doanh nghiệp xây trung tâm dữ liệu ngoài nước</h4>
           <p class="sum">Tổng thống Trump tuyên bố Mỹ sẽ áp lệnh phạt các doanh nghiệp công nghệ trong nước đặt trung tâm dữ liệu AI ở nước…</p>
           <details>
             <summary><span class="src">Reuters</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -433,7 +442,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-04" data-num="4">
         <div class="no" aria-hidden="true">04</div>
 <span class="thumb ph" aria-hidden="true"><span class="ph-src">AP News</span></span>        <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Chứng khoán Mỹ lao dốc vì làn sóng bán tháo công nghệ</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Chứng khoán Mỹ lao dốc vì làn sóng bán tháo công nghệ</h4>
           <p class="sum">Chỉ số S&amp;P 500 giảm 3,7% khi đợt bán tháo cổ phiếu công nghệ và trí tuệ nhân tạo tiếp tục trầm trọng hơn.</p>
           <details>
             <summary><span class="src">AP News</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -449,7 +458,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">05</div>
 <a class="thumb" href="https://vnexpress.net/bitcoin-giam-xuong-muc-thap-nhat-trong-hon-2-nam-5147439.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-kinhdoanh.vnecdn.net/2026/11/21/107167409175551915013610716740-4557-4906-1795247774.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=0d1Fojw1N96EfgMxc6izVQ" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Bitcoin rơi xuống mức thấp nhất trong hơn hai năm</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Bitcoin rơi xuống mức thấp nhất trong hơn hai năm</h4>
           <p class="sum">Giá Bitcoin chịu áp lực mạnh và giảm về gần mốc 55.000 USD trong bối cảnh các thị trường tài sản rủi ro suy giảm.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -465,7 +474,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">06</div>
 <a class="thumb" href="https://www.bbc.com/vietnamese/articles/cm93rknp1lneo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/208b/live/666ff4b0-e4b6-11f1-a094-5fdc692f3e33.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">BBC Tiếng Việt</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>IMF khuyến nghị Việt Nam kiểm soát rủi ro tăng trưởng nóng</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>IMF khuyến nghị Việt Nam kiểm soát rủi ro tăng trưởng nóng</h4>
           <p class="sum">Quỹ Tiền tệ Quốc tế khuyến nghị Việt Nam thận trọng với nguy cơ nền kinh tế tăng trưởng quá nóng do đầu tư công.</p>
           <details>
             <summary><span class="src">BBC Tiếng Việt</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -485,7 +494,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">07</div>
 <a class="thumb" href="https://www.vietnamplus.vn/thong-cao-bao-chi-so-27-ky-hop-thu-2-quoc-hoi-khoa-xvi-post1149881.vnp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6s8uF23gfSmj-tMrde6W1FlO1fnhlsuYh7LKpGncqeTR0eMe-pMBmMCBLw2AgyujI-HixheQPAKIrKjfqyfYMvv_Nrd7uAYOHts1O1K5NFBZzbV_65Aa6oaOVuikAjVqcw/ttxvn-quoc-hoi-bieu-quyet-thong-qua-cac-luat-va-nghi-quyet-9169650-6.jpg.avif" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VietnamPlus</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Quốc hội bế mạc Kỳ họp thứ 2 khóa XVI</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Quốc hội bế mạc Kỳ họp thứ 2 khóa XVI</h4>
           <p class="sum">Chiều 21/11, Quốc hội khóa XVI bế mạc Kỳ họp thứ 2 sau khi biểu quyết thông qua hàng loạt luật và nghị quyết.</p>
           <details>
             <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -501,7 +510,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">08</div>
 <a class="thumb" href="https://vnexpress.net/hon-162-000-ty-dong-xay-ba-tuyen-cao-toc-5147392.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-vnexpress.vnecdn.net/2026/11/21/202611210903110023-g3194982797-4551-1982-1795236027.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=Adu8l3zV8Hufs8jKtAm7SQ" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Quốc hội duyệt hơn 162.000 tỷ đồng xây 3 tuyến cao tốc</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Quốc hội duyệt hơn 162.000 tỷ đồng xây 3 tuyến cao tốc</h4>
           <p class="sum">Quốc hội đã thông qua chủ trương đầu tư ba tuyến cao tốc dài hơn 430 km với tổng vốn gần 162.400 tỷ đồng.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -517,7 +526,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">09</div>
 <a class="thumb" href="https://vnexpress.net/tam-dung-tuyen-dung-cong-chuc-tren-toan-quoc-5147400.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-vnexpress.vnecdn.net/2026/11/21/1792545690945b11941319c9749b6b-9414-3482-1795237172.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=JnE1xwHSwAnsYOayHqmazA" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Toàn quốc tạm dừng tuyển dụng công chức để rà soát</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Toàn quốc tạm dừng tuyển dụng công chức để rà soát</h4>
           <p class="sum">Các bộ ngành và địa phương trên cả nước tạm dừng tuyển dụng công chức để rà soát vị trí việc làm và biên chế.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -533,7 +542,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">10</div>
 <a class="thumb" href="https://vnexpress.net/cam-thu-tien-giu-cho-mua-nha-hinh-thanh-trong-tuong-lai-5147383.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-vnexpress.vnecdn.net/2026/11/21/DJI0914-1795236441-7593-1795236774.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=wF_r0JJFWlFnyadiGhvWkg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Luật mới cấm thu tiền giữ chỗ mua nhà ở tương lai</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Luật mới cấm thu tiền giữ chỗ mua nhà ở tương lai</h4>
           <p class="sum">Quy định mới cấm chủ đầu tư thu tiền dưới mọi hình thức để giữ chỗ mua nhà trước khi dự án đủ điều kiện.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -555,7 +564,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">11</div>
 <a class="thumb" href="https://tinhte.vn/thread/co-phieu-nvidia-giam-14-chuoi-7-tuan-giam-dai-nhat-tu-nam-2008.4194518/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://photo2.tinhte.vn/data/attachment-files/2026/11/9139488_cover-nvidia-giam-14-7-tuan.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tinh tế</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Cổ phiếu Nvidia trải qua chuỗi giảm tuần dài nhất từ 2008</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Cổ phiếu Nvidia trải qua chuỗi giảm tuần dài nhất từ 2008</h4>
           <p class="sum">Cổ phiếu hãng chip Nvidia sụt giảm 14% và ghi nhận chuỗi bảy tuần giảm liên tiếp dài nhất kể từ năm 2008.</p>
           <details>
             <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -571,7 +580,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">12</div>
 <a class="thumb" href="https://tinhte.vn/thread/apple-siet-agent-ben-ngoai-tu-lam-agent-rieng.4194165/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://photo2.tinhte.vn/data/attachment-files/2026/11/9138608_anh-1-apple-ai-agent.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tinh tế</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Apple siết agent AI bên ngoài trên hệ điều hành Mac</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Apple siết agent AI bên ngoài trên hệ điều hành Mac</h4>
           <p class="sum">Bản cập nhật macOS mới cho thấy Apple thắt chặt quyền cấp cho các agent AI bên ngoài để chuẩn bị ra mắt giải pháp…</p>
           <details>
             <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -587,7 +596,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">13</div>
 <a class="thumb" href="https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/5eb0/live/a9cadc20-e529-11f1-99a1-253766e7ad8b.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">BBC</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Đề xuất cấm doanh nghiệp Mỹ xây trung tâm AI ở nước…</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Đề xuất cấm doanh nghiệp Mỹ xây trung tâm AI ở nước…</h4>
           <p class="sum">Ý tưởng chính sách mới đe dọa ngăn các tập đoàn công nghệ Mỹ thiết lập hạ tầng trung tâm dữ liệu AI ở ngoài…</p>
           <details>
             <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -603,7 +612,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">14</div>
 <a class="thumb" href="https://www.vietnamplus.vn/my-youtube-dat-thoa-thuan-dan-xep-trong-vu-kien-ve-anh-huong-tam-ly-hoc-sinh-post1149898.vnp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://media.vietnamplus.vn/images/kpYwUNVIdmktOA6PhcDOMbaU9mZu3VrlvFMhbGgXTkAtaC2ZE8vuUNYj3wS8EIXw/ttxvn-youtube.jpg.avif" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VietnamPlus</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>YouTube đạt thỏa thuận dàn xếp vụ kiện ảnh hưởng tâm lý…</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>YouTube đạt thỏa thuận dàn xếp vụ kiện ảnh hưởng tâm lý…</h4>
           <p class="sum">YouTube đạt thỏa thuận dàn xếp các vụ kiện liên quan đến tác động tâm lý đối với học sinh tại các trường học Mỹ.</p>
           <details>
             <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -623,7 +632,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">15</div>
 <a class="thumb" href="https://tinhte.vn/thread/tu-thang-4-2027-app-android-khong-toi-uu-cho-may-gap-se-khong-duoc-cap-nhat-tren-google-play.4194421/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://imgproxy7.tinhte.vn/F-a0REAIVTi0E6DL4rAfJmDHigwpdeZplE7Xj9UqAPI/w:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9139219_body01.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tinh tế</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Google Play siết chuẩn ứng dụng cho máy gập từ năm 2027</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Google Play siết chuẩn ứng dụng cho máy gập từ năm 2027</h4>
           <p class="sum">Google yêu cầu ứng dụng Android phải tối ưu hóa cho màn hình gập nếu muốn tiếp tục được cập nhật từ tháng 4/2027.</p>
           <details>
             <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -639,7 +648,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">16</div>
 <a class="thumb" href="https://www.gsmarena.com/samsung_appoints_new_leadership_tm_roh_remains_ceo-news-75568.php" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://fdn.gsmarena.com/imgroot/news/26/08/samsung-dram-market-q2-2026/-184x111/gsmarena_000.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">GSMArena</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Samsung thay đổi lãnh đạo mảng thiết bị di động sau 7…</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Samsung thay đổi lãnh đạo mảng thiết bị di động sau 7…</h4>
           <p class="sum">Samsung tiến hành cải tổ nhân sự cấp cao và thay thế người đứng đầu mảng thiết bị di động sau bảy năm.</p>
           <details>
             <summary><span class="src">GSMArena</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -655,7 +664,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">17</div>
 <a class="thumb" href="https://tinhte.vn/thread/iphone-air-2-lo-anh-cum-camera-kep-thay-camera-don.4194697/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://imgproxy7.tinhte.vn/ReFy89vmu8Op6oQ6zzpd-wvigHesUYBDW24p2oSI0Dc/h:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9140007_itechapples-air2-02.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tinh tế</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>iPhone Air 2 lộ diện cụm camera kép nằm ngang phía sau</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>iPhone Air 2 lộ diện cụm camera kép nằm ngang phía sau</h4>
           <p class="sum">Hình ảnh rò rỉ mới nhất cho thấy mẫu iPhone Air 2 sẽ được nâng cấp lên cụm camera kép xếp theo chiều ngang.</p>
           <details>
             <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -671,7 +680,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">18</div>
 <a class="thumb" href="https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://9to5mac.com/wp-content/uploads/sites/6/2026/11/signal-app-icon-fi.jpg?quality=82&amp;strip=all&amp;w=1600" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">9to5Mac</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Signal chặn chụp màn hình trên iPhone để ngăn Siri AI đọc…</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Signal chặn chụp màn hình trên iPhone để ngăn Siri AI đọc…</h4>
           <p class="sum">Ứng dụng nhắn tin bảo mật Signal bổ sung tính năng chặn chụp màn hình nhằm bảo vệ dữ liệu trước tính năng Siri AI.</p>
           <details>
             <summary><span class="src">9to5Mac</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -691,7 +700,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">19</div>
 <a class="thumb" href="https://www.vietnamplus.vn/it-nhat-11-nguoi-tu-vong-hon-300-nguoi-nhap-vien-nghi-do-ngo-doc-ruou-tai-an-do-post1149900.vnp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://media.vietnamplus.vn/images/5MmeNhjhPqt12F-DZRmYgT8PoTvVEjmj_vAuB2PFwB1wRIgpL0kOSbsoYIZM6gByzlpf0mOUNtNcmcBOor2Fng/ttxvn-2006-ngo-doc-ruou-34.jpg.avif" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VietnamPlus</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Hơn 300 người nhập viện vì nghi ngộ độc rượu tại Ấn…</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Hơn 300 người nhập viện vì nghi ngộ độc rượu tại Ấn…</h4>
           <p class="sum">Sự cố nghi ngộ độc rượu giả tại Ấn Độ đã khiến ít nhất 11 người tử vong và hơn 300 trường hợp phải nhập…</p>
           <details>
             <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -707,7 +716,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">20</div>
 <a class="thumb" href="https://tuoitre.vn/phau-thuat-thay-khop-hang-thanh-cong-cho-cu-ba-101-tuoi-bi-gay-co-xuong-dui-100261121200539671.htm" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/phau-thuat-cu-ba-100-17952661026591649121277-40-0-790-1200-crop-17952662085511319180672.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tuổi Trẻ</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Thay khớp háng thành công cho cụ bà 101 tuổi tại Thanh…</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Thay khớp háng thành công cho cụ bà 101 tuổi tại Thanh…</h4>
           <p class="sum">Bác sĩ tại Thanh Hóa phẫu thuật thay khớp háng thành công giúp một bệnh nhân 101 tuổi tự đứng dậy sau hai ngày mổ.</p>
           <details>
             <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -723,7 +732,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">21</div>
 <a class="thumb" href="https://vnexpress.net/tuan-le-khoa-hoc-cong-nghe-vinfuture-2026-dien-ra-vao-thang-12-5147441.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-vnexpress.vnecdn.net/2026/11/21/image001-1795249058-8739-1795249322.png?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=sWQgZ1cfboC1zp9ZYtCg3g" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Tuần lễ Khoa học công nghệ VinFuture 2026 sắp diễn ra tại…</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Tuần lễ Khoa học công nghệ VinFuture 2026 sắp diễn ra tại…</h4>
           <p class="sum">Tuần lễ Khoa học công nghệ VinFuture 2026 sẽ diễn ra từ ngày 2 đến 8 tháng 12 với nhiều công nghệ đột phá được…</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -739,7 +748,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">22</div>
 <a class="thumb" href="https://vnexpress.net/noi-soi-khau-phuc-hoi-sun-soi-co-tay-5146999.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-suckhoe.vnecdn.net/2026/11/20/1795142950728c796975d6ccca8987-5425-9531-1795148970.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=HsAbxN19jTt6gsXDjXYMPQ" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">⚪</span>Bệnh viện Huế nội soi khâu phục hồi sụn sợi cổ tay</h4>
+          <h4><span class="sev" title="Tham khảo"><svg class="sv sv-low" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="3.6"/></svg></span>Bệnh viện Huế nội soi khâu phục hồi sụn sợi cổ tay</h4>
           <p class="sum">Bệnh viện Trường Đại học Y - Dược Huế lần đầu phẫu thuật nội soi khâu phục hồi thành công tổn thương phức hợp sụn…</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -759,7 +768,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">23</div>
 <a class="thumb" href="https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/5253/live/c9ca5500-e579-11f1-a5f6-b3028adf2d6d.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">BBC</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Hội nghị COP31 bế tắc do bất đồng về nhiên liệu hóa…</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Hội nghị COP31 bế tắc do bất đồng về nhiên liệu hóa…</h4>
           <p class="sum">Gần 200 quốc gia tham dự hội nghị biến đổi khí hậu COP31 lâm vào thế bế tắc trong việc thống nhất thỏa thuận chung…</p>
           <details>
             <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -775,7 +784,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">24</div>
 <a class="thumb" href="https://www.vietnamplus.vn/gia-lai-de-xuat-trung-uong-ho-tro-gan-407-ty-dong-di-doi-dan-vung-thien-tai-post1149886.vnp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6vvsrEidkcDHg-Vr-aZX_tAgHKdetU_IFA5hnT1sANPoc06cZm6F7DMzJiPBxBtRQfEzmnIwAZzaxukbbXGnySeu9AJXnetKtZ0fJEjC4xIxhitaiIjtktLy9O5jSnwfm-OUoG6pUtw__ttUCY4wOlI/ttxvn_gia-lai-mua-lu-gay-ngap-gan-1900-ho-dan-hon-500-nguoi-duoc-so-tan-khoi-vung-nguy-hiem-9150214.jpg.avif" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VietnamPlus</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Gia Lai đề xuất 407 tỷ đồng di dời dân vùng thiên…</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Gia Lai đề xuất 407 tỷ đồng di dời dân vùng thiên…</h4>
           <p class="sum">Tỉnh Gia Lai kiến nghị hỗ trợ kinh phí gần 407 tỷ đồng nhằm di dời khẩn cấp 290 hộ dân khỏi vùng sạt lở…</p>
           <details>
             <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -791,7 +800,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">25</div>
 <a class="thumb" href="https://tuoitre.vn/dong-dat-lon-lien-tiep-o-trung-quoc-indonesia-va-peru-100261121200540904.htm" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/ap26296032875804-1792726562422583368468-17952661409431821649315-29-0-485-730-crop-1795266221647364645426.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tuổi Trẻ</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Ba trận động đất mạnh liên tiếp xảy ra tại ba quốc…</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Ba trận động đất mạnh liên tiếp xảy ra tại ba quốc…</h4>
           <p class="sum">Các trận động đất có cường độ từ 5,6 đến 6,8 độ liên tục rung lắc khu vực Peru, Indonesia và Trung Quốc trong cùng…</p>
           <details>
             <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -807,7 +816,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">26</div>
 <a class="thumb" href="https://vnexpress.net/hon-100-trieu-cua-do-tren-dao-giang-sinh-lu-luot-di-cu-5147515.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-vnexpress.vnecdn.net/2026/11/21/VNECrab-1795267693-2928-1795267993.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=GiahiD_8FZWZdXOESiGZEw" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">⚪</span>Hơn 100 triệu con cua đỏ di cư ra biển tại Australia</h4>
+          <h4><span class="sev" title="Tham khảo"><svg class="sv sv-low" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="3.6"/></svg></span>Hơn 100 triệu con cua đỏ di cư ra biển tại Australia</h4>
           <p class="sum">Hàng trăm triệu con cua đỏ bắt đầu cuộc đại di cư phủ kín các tuyến đường trên đảo Giáng Sinh thuộc Australia.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -829,7 +838,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">27</div>
 <a class="thumb" href="https://www.vietnamplus.vn/luat-tri-tue-nhan-tao-huong-toi-bao-ve-tu-duy-sang-tao-cua-hoc-sinh-post1149878.vnp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://media.vietnamplus.vn/images/QcJaCVoYMCKXsPQ_Rprjc_U5e5g8S31T8e0yv5YfeR6rzNg3nqwNr-Ub9Bms5q0amNMTHFohxdAguCk395tLlw/ttxvn-tang-cuong-tin-hoc-31.jpg.avif" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VietnamPlus</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Định hướng quản lý AI nhằm bảo vệ tư duy học sinh</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Định hướng quản lý AI nhằm bảo vệ tư duy học sinh</h4>
           <p class="sum">Luật Trí tuệ nhân tạo hướng đến việc ứng dụng an toàn và bảo vệ năng lực sáng tạo của học sinh.</p>
           <details>
             <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -844,7 +853,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-28" data-num="28">
         <div class="no" aria-hidden="true">28</div>
 <span class="thumb ph" aria-hidden="true"><span class="ph-src">Reuters</span></span>        <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Cơ sở dữ liệu của FBI bị tin tặc tấn công</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Cơ sở dữ liệu của FBI bị tin tặc tấn công</h4>
           <p class="sum">Cơ sở dữ liệu thông tin tội phạm của FBI vừa bị tin tặc xâm nhập theo nguồn tin truyền thông Mỹ.</p>
           <details>
             <summary><span class="src">Reuters</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -860,7 +869,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">29</div>
 <a class="thumb" href="https://www.vietnamplus.vn/tan-cong-mang-nham-vao-bo-ngoai-giao-ao-va-doanh-nghiep-dau-khi-na-uy-post1149889.vnp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://media.vietnamplus.vn/images/_RfA0Lv7xigOosrBfIuLk5haAjKSlqNdhlpw5ZXrwb529blwf-aiKLX_yAOjUEyD/tan-cong-mang.jpg.avif" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VietnamPlus</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Tấn công mạng nhắm vào Bộ Ngoại giao Áo</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Tấn công mạng nhắm vào Bộ Ngoại giao Áo</h4>
           <p class="sum">Hacker đã xâm nhập và tiếp cận các tài liệu nhân sự ngoại giao của Áo cùng một tập đoàn Na Uy.</p>
           <details>
             <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -875,7 +884,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-30" data-num="30">
         <div class="no" aria-hidden="true">30</div>
 <span class="thumb ph" aria-hidden="true"><span class="ph-src">Reuters</span></span>        <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Signal chặn chụp màn hình để bảo vệ tin nhắn trước AI</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Signal chặn chụp màn hình để bảo vệ tin nhắn trước AI</h4>
           <p class="sum">Ứng dụng Signal chặn tính năng chụp màn hình nhằm ngăn các tác tử AI tự động đọc dữ liệu tin nhắn.</p>
           <details>
             <summary><span class="src">Reuters</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -895,7 +904,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">31</div>
 <a class="thumb" href="https://vnexpress.net/quang-liem-tro-lai-top-15-the-gioi-5147464.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-thethao.vnecdn.net/2026/11/21/quang-lie-m-1795252550-2480-1795252654.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=BBp084rFCBsl678cwblPzg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Lê Quang Liêm trở lại top 15 cờ vua thế giới</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Lê Quang Liêm trở lại top 15 cờ vua thế giới</h4>
           <p class="sum">Lê Quang Liêm đánh bại Ian Nepomniachtchi để chính thức trở lại top 15 thế giới tại giải cờ toàn năng 2026.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -911,7 +920,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">32</div>
 <a class="thumb" href="https://tuoitre.vn/dai-hoi-the-thao-toan-quoc-2026-hang-ngan-khan-gia-hao-huc-cho-doi-le-khai-mac-100261121082605733.htm" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/83c77d95-d348-4bad-b581-88da5ca4ce27-17952694024061061492699-84-0-1364-2048-crop-1795270075179409401224.jpeg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tuổi Trẻ</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Khai mạc Đại hội Thể thao toàn quốc lần thứ 10</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Khai mạc Đại hội Thể thao toàn quốc lần thứ 10</h4>
           <p class="sum">Đại hội Thể thao toàn quốc lần thứ 10 chính thức khai mạc tại Thành phố Hồ Chí Minh vào tối 21/11.</p>
           <details>
             <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -927,7 +936,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">33</div>
 <a class="thumb" href="https://tuoitre.vn/nam-dinh-cung-co-ngoi-dau-dong-nai-chim-sau-o-day-bang-100261121195038822.htm" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/capture-17952653638951709367739.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">Tuổi Trẻ</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Thép Xanh Nam Định củng cố ngôi đầu bảng V-League</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Thép Xanh Nam Định củng cố ngôi đầu bảng V-League</h4>
           <p class="sum">Thép Xanh Nam Định thắng 2-1 trước Hải Phòng để tiếp tục duy trì vị trí dẫn đầu bảng xếp hạng V-League.</p>
           <details>
             <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -943,7 +952,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">34</div>
 <a class="thumb" href="https://vnexpress.net/alcaraz-toan-thang-vong-bang-atp-finals-2026-5147419.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-thethao.vnecdn.net/2026/11/21/afp-d86a6ek-v2-highres-topshot-1335-3181-1795242858.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=e3u__VpEGg1aUVxi-LDOPQ" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Carlos Alcaraz toàn thắng vòng bảng ATP Finals 2026</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Carlos Alcaraz toàn thắng vòng bảng ATP Finals 2026</h4>
           <p class="sum">Carlos Alcaraz vượt qua Flavio Cobolli sau hai set để giành vé vào bán kết ATP Finals với thành tích toàn thắng.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -963,7 +972,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">35</div>
 <a class="thumb" href="https://vnexpress.net/nguoi-lao-dong-duoc-bo-sung-hai-ngay-nghi-le-5147309.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-vnexpress.vnecdn.net/2026/11/21/233a2725-1795235673-8774-1795236123.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=SZigu-VnWVK_XKsM_E8Vew" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Người lao động Việt Nam có thêm hai ngày nghỉ lễ</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Người lao động Việt Nam có thêm hai ngày nghỉ lễ</h4>
           <p class="sum">Quốc hội vừa bổ sung hai ngày nghỉ lễ 27/7 và 24/11 hưởng nguyên lương, nâng tổng số ngày nghỉ lên 13.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -979,7 +988,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">36</div>
 <a class="thumb" href="https://vnexpress.net/cam-lay-tang-nguoi-duoi-18-tuoi-de-ghep-cho-nguoi-khac-5147304.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-vnexpress.vnecdn.net/2026/11/21/917691243-n-1795232600-4418-1795232606.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=UgUdJyraJby6Z1lixDzu-w" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🔴</span>Cấm lấy tạng của người dưới 18 tuổi để ghép</h4>
+          <h4><span class="sev" title="Quan trọng"><svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg></span>Cấm lấy tạng của người dưới 18 tuổi để ghép</h4>
           <p class="sum">Luật sửa đổi vừa được Quốc hội thông qua cấm tuyệt đối việc lấy tạng người dưới 18 tuổi ghép cho người khác.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -995,7 +1004,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">37</div>
 <a class="thumb" href="https://www.vietnamplus.vn/quy-tap-duoc-30-hai-cot-liet-sy-trong-1-ngay-tai-cong-vien-le-thi-rieng-post1149885.vnp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6kLhaVBOy2CNjjqFpFf9pQ6B4CHYWMPxmOR5HFCfgJ505UxpgpggD5bGgvPcdBsJ_RMzW9lyKLQ7Y-metq1IyViwIeGBe4lgeEhMc4UOeppomlJlsiHFInhP5NUnLggup8cRPM616WkWecsn-gZhfSBJqq-OPyn-VYx1d8A72dfdalhn6mnL6qtzYYlSMD3kmA/ttxvn-chien-dich-500-ngay-dem-quy-tap-duoc-148-hai-cot-liet-si-sau-nua-thang-trien-khai-dot-2-tai-cong-vien-le-thi-rieng-9124369.jpg.avif" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VietnamPlus</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Tìm thấy thêm 30 hài cốt liệt sĩ tại TP.HCM</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Tìm thấy thêm 30 hài cốt liệt sĩ tại TP.HCM</h4>
           <p class="sum">Lực lượng tìm kiếm vừa phát hiện và quy tập thêm 30 bộ hài cốt liệt sĩ trong ngày tại Công viên Lê Thị Riêng.</p>
           <details>
             <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -1011,7 +1020,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         <div class="no" aria-hidden="true">38</div>
 <a class="thumb" href="https://vnexpress.net/cam-hut-thuoc-trong-toan-bo-khuon-vien-dai-hoc-cao-dang-5147359.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://vcdn1-vnexpress.vnecdn.net/2026/11/21/hu-t-thuo-c-hn-of-1795231167-7135-1795231372.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=bjOYzuHJCBJnUsoNGufT-Q" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">VnExpress</span></a>
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">🟡</span>Cấm hút thuốc toàn bộ khuôn viên trường đại học từ 2027</h4>
+          <h4><span class="sev" title="Đáng chú ý"><svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg></span>Cấm hút thuốc toàn bộ khuôn viên trường đại học từ 2027</h4>
           <p class="sum">Từ ngày 1/7/2027, hành vi hút thuốc lá sẽ bị cấm hoàn toàn trong toàn bộ khuôn viên đại học và cao đẳng.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -1071,7 +1080,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     try{localStorage.setItem('banTinSang.theme',t);}catch(e){}
   });
   /* Thời tiết theo vị trí máy: Open-Meteo, dự phòng MET Norway. Toạ độ chỉ gửi tới 2 dịch vụ thời tiết này. */
-  var GK='banTinSang.geo', geoBtn=document.getElementById('geo');
+  var GK='banTinSang.geo', geoBtn=document.getElementById('geo'), geoT=document.getElementById('geo-t');
   var SL=[['Sáng',7,9],['Trưa',11,14],['Chiều tối',17,20]];
   var WMO={0:'Trời quang',1:'Ít mây',2:'Có mây',3:'Nhiều mây, u ám',45:'Sương mù',48:'Sương mù đóng băng',51:'Mưa phùn nhẹ',53:'Mưa phùn',55:'Mưa phùn dày',61:'Mưa nhỏ',63:'Mưa vừa',65:'Mưa to',73:'Tuyết',80:'Mưa rào nhẹ',81:'Mưa rào',82:'Mưa rào rất to',95:'Dông',96:'Dông kèm mưa đá',99:'Dông mạnh kèm mưa đá'};
   var THUNDER=[95,96,99];
@@ -1119,7 +1128,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       if(s.uv!=null&&s.uv>=3)b+='<p>UV&nbsp;'+vn(s.uv)+'</p>';
       return b+'</div>';
     }).join('');
-    document.getElementById('wx-advice').innerHTML=advice(ss).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
+    document.getElementById('wx-advice').innerHTML=advice(ss).map(function(l){return l.indexOf('⚠️')===0?'<li class="alert">'+esc(l.slice(2).trim())+'</li>':'<li>'+esc(l)+'</li>';}).join('');
     document.getElementById('wx-loc').textContent=label;
   }
   var AQ=[[50,'Tốt','ok'],[100,'Trung bình','ok'],[150,'Kém với người nhạy cảm','warn'],[200,'Kém','alert'],[300,'Rất kém','alert'],[1e9,'Nguy hại','alert']];
@@ -1133,6 +1142,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
   }
   function airNote(a){return a>150?'Không khí '+lvl(a)[1].toLowerCase()+' (AQI '+a+'), nên đeo khẩu trang khi ra đường':a>100?'Không khí kém với người nhạy cảm (AQI '+a+'), nên đeo khẩu trang nếu đi xa':null;}
   function lvl(a){for(var i=0;i<AQ.length;i++)if(a<=AQ[i][0])return AQ[i];return AQ[AQ.length-1];}
+  var WARN=(document.querySelector('.sv-high')||{outerHTML:''}).outerHTML;
   function fetchAir(lat,lon){
     return fetch('https://air-quality-api.open-meteo.com/v1/air-quality?latitude='+lat+'&longitude='+lon+'&current=us_aqi,pm2_5&hourly=us_aqi&timezone=Asia%2FHo_Chi_Minh&forecast_days=1')
       .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
@@ -1141,7 +1151,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         if(mx==null)return null;
         var L=lvl(mx), pm=j.current&&j.current.pm2_5;
         var el=document.getElementById('ix-air'); el.className='aq '+L[2];
-        el.innerHTML='<h2>Không khí</h2><p class="v">AQI&nbsp;'+mx+'</p><p>'+L[1]+'</p>'+(pm!=null?'<p class="s">PM2.5&nbsp;'+vn(Math.round(pm*10)/10)+'&nbsp;µg/m³</p>':'');
+        el.innerHTML='<h2>Không khí</h2><p class="v">AQI&nbsp;'+mx+WARN+'</p><p>'+L[1]+'</p>'+(pm!=null?'<p class="s">PM2.5&nbsp;'+vn(Math.round(pm*10)/10)+'&nbsp;µg/m³</p>':'');
         return airNote(mx);
       }).catch(function(){return null;});
   }
@@ -1168,8 +1178,8 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       });
   }
   function locate(){
-    if(!navigator.geolocation){geoBtn.textContent='Máy không hỗ trợ định vị';return;}
-    geoBtn.setAttribute('aria-busy','true'); geoBtn.textContent='Đang lấy vị trí…';
+    if(!navigator.geolocation){geoT.textContent='Máy không hỗ trợ định vị';return;}
+    geoBtn.setAttribute('aria-busy','true'); geoT.textContent='Đang lấy vị trí…';
     navigator.geolocation.getCurrentPosition(function(pos){
       var lat=pos.coords.latitude.toFixed(4), lon=pos.coords.longitude.toFixed(4);
       Promise.all([openMeteo(lat,lon).catch(function(){return metNo(lat,lon);}),fetchAir(lat,lon)]).then(function(res){
@@ -1178,12 +1188,12 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         paintDaily(j.daily);
         if(note){var ul=document.getElementById('wx-advice'), li=document.createElement('li'); li.textContent=note; ul.appendChild(li);}
         try{localStorage.setItem(GK,'1');}catch(e){}
-        geoBtn.removeAttribute('aria-busy'); geoBtn.textContent='📍 Cập nhật';
-      }).catch(function(){geoBtn.removeAttribute('aria-busy'); geoBtn.textContent='📍 Lỗi, thử lại';});
+        geoBtn.removeAttribute('aria-busy'); geoT.textContent='Cập nhật';
+      }).catch(function(){geoBtn.removeAttribute('aria-busy'); geoT.textContent='Lỗi, thử lại';});
     },function(err){
       geoBtn.removeAttribute('aria-busy');
-      if(err.code===1){try{localStorage.removeItem(GK);}catch(e){} geoBtn.textContent='📍 Chưa cho phép vị trí';}
-      else geoBtn.textContent='📍 Lỗi, thử lại';
+      if(err.code===1){try{localStorage.removeItem(GK);}catch(e){} geoT.textContent='Chưa cho phép vị trí';}
+      else geoT.textContent='Lỗi, thử lại';
     },{enableHighAccuracy:false,timeout:15000,maximumAge:600000});
   }
   geoBtn.addEventListener('click',locate);

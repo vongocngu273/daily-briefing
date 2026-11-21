@@ -20,12 +20,15 @@ try{var v=localStorage.getItem('banTinSang.view');if(v==='list'||v==='mag'||v===
   --red:#d0021b; --ink:#1b1f4a; --paper:#ffffff; --muted:#4a4e78; --rule:#1b1f4a;
   --cond:"Barlow Condensed","Arial Narrow",sans-serif;
   --read:"Be Vietnam Pro",-apple-system,"Segoe UI",sans-serif;
+  --sys-red:#FF3B30; --sys-orange:#FF9500; --sys-gray:#8E8E93;
   --gut:16px; --measure:68ch;
   color-scheme:light;
 }
 body[data-day="0"]{--stub:#5bbbe9} body[data-day="1"]{--stub:#a6d64a} body[data-day="2"]{--stub:#f7a440}
 body[data-day="3"]{--stub:#a98ddc} body[data-day="4"]{--stub:#3ccdbf} body[data-day="5"]{--stub:#f06e98}
 body[data-day="6"]{--stub:#f6cf3a}
+
+:root[data-theme="dark"]{--sys-red:#FF453A; --sys-orange:#FF9F0A; --sys-gray:#98989D}
 :root[data-theme="dark"]{--red:#ff5d6c; --ink:#ecebf7; --paper:#12142c; --muted:#b4b6d8; --rule:#5d6194; color-scheme:dark;
   --stub-ink:#f4f2fb; --field:#12142c; --serial:#ff5d6c; --field-muted:#b4b6d8; --engrave:rgba(255,255,255,.14)}
 [data-theme="dark"] body[data-day="0"]{--stub:#1f4f73} [data-theme="dark"] body[data-day="1"]{--stub:#3d5716} [data-theme="dark"] body[data-day="2"]{--stub:#7a4310}
@@ -72,7 +75,8 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .idx .na{font:600 14px var(--cond);color:var(--field-muted)}
 .idx .tide{font-size:13px;white-space:nowrap}
 .idx .tide b{font:800 14px var(--cond);letter-spacing:.04em;text-transform:uppercase;display:inline-block;min-width:3.2em}
-.idx .aq.warn .v::after,.idx .aq.alert .v::after{content:" ⚠️";font-size:.7em}
+.idx .aq .v .sv{display:none;width:.78em;height:.78em;margin-left:.25em;vertical-align:-.04em}
+.idx .aq.warn .v .sv,.idx .aq.alert .v .sv{display:inline-block}
 @media (min-width:700px){
   .idx{grid-column:1/-1;grid-template-columns:repeat(4,1fr)}
   .idx>div{border-bottom:0}
@@ -157,7 +161,12 @@ main{padding:4px 0 8px}
 [data-view="card"] .item h4{text-wrap:pretty}
 .no{font:800 26px/1 var(--cond);color:var(--red);padding-top:2px}
 .item h4{margin:0;font:600 17px/1.4 var(--read);max-width:var(--measure);text-wrap:balance}
-.sev{display:inline-block;width:1.45em;font-size:1em;line-height:1;vertical-align:-.05em}
+.sev{display:inline-block;width:1.35em;line-height:1;vertical-align:-.12em}
+.sv{width:1.05em;height:1.05em;display:inline-block}
+.sv-high .sv-bg{fill:var(--sys-red)}.sv-med .sv-bg{fill:var(--sys-orange)}.sv-low .sv-bg{fill:var(--sys-gray)}
+.sv-fg{fill:#fff}
+.ic-loc{width:.95em;height:.95em;fill:currentColor;margin-right:.4em;vertical-align:-.12em}
+.advice li.alert::before{content:"Cảnh báo"}
 .tag{display:inline-block;vertical-align:2px;margin-left:6px;font:800 11px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--red);padding:3px 5px}
 .sum{margin:3px 0 0;max-width:var(--measure);color:var(--ink)}
 .item details{margin-top:6px}
@@ -234,6 +243,8 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 @media (max-width:519px){.tk-label{padding:9px 9px;font-size:13px;letter-spacing:.06em}}
 </style>
 </head>
+{% macro sevicon(sev) %}{% if sev == "high" %}<svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg>{% elif sev == "medium" %}<svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg>{% else %}<svg class="sv sv-low" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="3.6"/></svg>{% endif %}{% endmacro %}
+{% macro locicon() %}<svg class="ic-loc" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.3 2.2 2.8 8.4c-.8.3-.7 1.4.1 1.6l6.1 1.3 1.4 6.1c.2.8 1.3.9 1.6.1l6.2-14.5c.3-.6-.3-1.1-.9-.8z"/></svg>{% endmacro %}
 {% macro arrow(kind) %}<svg class="ic" viewBox="0 0 12 12" aria-hidden="true">{% if kind == "out" %}<path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/>{% else %}<path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/>{% endif %}</svg>{% endmacro %}
 <body data-day="{{ weekday }}" data-date="{{ date_compact }}">
 
@@ -272,7 +283,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         </div>
         <div class="aq{% if air is defined and air.ok %} {{ air.tone }}{% endif %}" id="ix-air">
           <h2>Không khí</h2>
-          {% if air is defined and air.ok %}<p class="v">AQI&nbsp;{{ air.aqi_max }}</p><p>{{ air.label }}</p>{% if air.pm25 is not none %}<p class="s">PM2.5&nbsp;{{ air.pm25|string|replace(".", ",") }}&nbsp;µg/m³</p>{% endif %}
+          {% if air is defined and air.ok %}<p class="v">AQI&nbsp;{{ air.aqi_max }}{{ sevicon("high") }}</p><p>{{ air.label }}</p>{% if air.pm25 is not none %}<p class="s">PM2.5&nbsp;{{ air.pm25|string|replace(".", ",") }}&nbsp;µg/m³</p>{% endif %}
           {% else %}<p class="na">Chưa có dữ liệu</p>{% endif %}
         </div>
         <div>
@@ -282,8 +293,8 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         </div>
       </section>
     </div>
-    <div class="stub-row loc"><span id="wx-loc">{{ weather.location }}</span><button type="button" class="geo" id="geo">📍 Theo vị trí máy</button></div>
-    <ul class="advice" id="wx-advice">{% for line in weather.advice %}<li>{{ line }}</li>{% endfor %}</ul>
+    <div class="stub-row loc"><span id="wx-loc">{{ weather.location }}</span><button type="button" class="geo" id="geo">{{ locicon() }}<span id="geo-t">Theo vị trí máy</span></button></div>
+    <ul class="advice" id="wx-advice">{% for line in weather.advice %}{% if line.startswith("⚠️") %}<li class="alert">{{ line[2:]|trim }}</li>{% else %}<li>{{ line }}</li>{% endif %}{% endfor %}</ul>
     <a class="resume" id="resume" href="#" hidden><span>Đọc tiếp</span>{{ arrow("next") }}</a>
     {% set tr = trends if trends is defined else none %}
     {% if tr and (tr.vn or tr.world) %}
@@ -358,7 +369,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         {% if n.image %}<a class="thumb" href="{{ n.url }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="{{ n.image }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">{{ n.source }}</span></a>
         {% else %}<span class="thumb ph" aria-hidden="true"><span class="ph-src">{{ n.source }}</span></span>{% endif %}
         <div class="body">
-          <h4><span class="sev" aria-hidden="true">{{ n.emoji }}</span>{{ n.title }}{% if n.is_update %}<span class="tag">Cập nhật</span>{% endif %}</h4>
+          <h4><span class="sev" title="{{ {"high": "Quan trọng", "medium": "Đáng chú ý"}.get(n.severity, "Tham khảo") }}">{{ sevicon(n.severity) }}</span>{{ n.title }}{% if n.is_update %}<span class="tag">Cập nhật</span>{% endif %}</h4>
           <p class="sum">{{ n.summary }}</p>
           <details>
             <summary><span class="src">{{ n.source }}</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -435,7 +446,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     try{localStorage.setItem('banTinSang.theme',t);}catch(e){}
   });
   /* Thời tiết theo vị trí máy: Open-Meteo, dự phòng MET Norway. Toạ độ chỉ gửi tới 2 dịch vụ thời tiết này. */
-  var GK='banTinSang.geo', geoBtn=document.getElementById('geo');
+  var GK='banTinSang.geo', geoBtn=document.getElementById('geo'), geoT=document.getElementById('geo-t');
   var SL=[['Sáng',7,9],['Trưa',11,14],['Chiều tối',17,20]];
   var WMO={0:'Trời quang',1:'Ít mây',2:'Có mây',3:'Nhiều mây, u ám',45:'Sương mù',48:'Sương mù đóng băng',51:'Mưa phùn nhẹ',53:'Mưa phùn',55:'Mưa phùn dày',61:'Mưa nhỏ',63:'Mưa vừa',65:'Mưa to',73:'Tuyết',80:'Mưa rào nhẹ',81:'Mưa rào',82:'Mưa rào rất to',95:'Dông',96:'Dông kèm mưa đá',99:'Dông mạnh kèm mưa đá'};
   var THUNDER=[95,96,99];
@@ -483,7 +494,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       if(s.uv!=null&&s.uv>=3)b+='<p>UV&nbsp;'+vn(s.uv)+'</p>';
       return b+'</div>';
     }).join('');
-    document.getElementById('wx-advice').innerHTML=advice(ss).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
+    document.getElementById('wx-advice').innerHTML=advice(ss).map(function(l){return l.indexOf('⚠️')===0?'<li class="alert">'+esc(l.slice(2).trim())+'</li>':'<li>'+esc(l)+'</li>';}).join('');
     document.getElementById('wx-loc').textContent=label;
   }
   var AQ=[[50,'Tốt','ok'],[100,'Trung bình','ok'],[150,'Kém với người nhạy cảm','warn'],[200,'Kém','alert'],[300,'Rất kém','alert'],[1e9,'Nguy hại','alert']];
@@ -497,6 +508,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
   }
   function airNote(a){return a>150?'Không khí '+lvl(a)[1].toLowerCase()+' (AQI '+a+'), nên đeo khẩu trang khi ra đường':a>100?'Không khí kém với người nhạy cảm (AQI '+a+'), nên đeo khẩu trang nếu đi xa':null;}
   function lvl(a){for(var i=0;i<AQ.length;i++)if(a<=AQ[i][0])return AQ[i];return AQ[AQ.length-1];}
+  var WARN=(document.querySelector('.sv-high')||{outerHTML:''}).outerHTML;
   function fetchAir(lat,lon){
     return fetch('https://air-quality-api.open-meteo.com/v1/air-quality?latitude='+lat+'&longitude='+lon+'&current=us_aqi,pm2_5&hourly=us_aqi&timezone=Asia%2FHo_Chi_Minh&forecast_days=1')
       .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
@@ -505,7 +517,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         if(mx==null)return null;
         var L=lvl(mx), pm=j.current&&j.current.pm2_5;
         var el=document.getElementById('ix-air'); el.className='aq '+L[2];
-        el.innerHTML='<h2>Không khí</h2><p class="v">AQI&nbsp;'+mx+'</p><p>'+L[1]+'</p>'+(pm!=null?'<p class="s">PM2.5&nbsp;'+vn(Math.round(pm*10)/10)+'&nbsp;µg/m³</p>':'');
+        el.innerHTML='<h2>Không khí</h2><p class="v">AQI&nbsp;'+mx+WARN+'</p><p>'+L[1]+'</p>'+(pm!=null?'<p class="s">PM2.5&nbsp;'+vn(Math.round(pm*10)/10)+'&nbsp;µg/m³</p>':'');
         return airNote(mx);
       }).catch(function(){return null;});
   }
@@ -532,8 +544,8 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       });
   }
   function locate(){
-    if(!navigator.geolocation){geoBtn.textContent='Máy không hỗ trợ định vị';return;}
-    geoBtn.setAttribute('aria-busy','true'); geoBtn.textContent='Đang lấy vị trí…';
+    if(!navigator.geolocation){geoT.textContent='Máy không hỗ trợ định vị';return;}
+    geoBtn.setAttribute('aria-busy','true'); geoT.textContent='Đang lấy vị trí…';
     navigator.geolocation.getCurrentPosition(function(pos){
       var lat=pos.coords.latitude.toFixed(4), lon=pos.coords.longitude.toFixed(4);
       Promise.all([openMeteo(lat,lon).catch(function(){return metNo(lat,lon);}),fetchAir(lat,lon)]).then(function(res){
@@ -542,12 +554,12 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
         paintDaily(j.daily);
         if(note){var ul=document.getElementById('wx-advice'), li=document.createElement('li'); li.textContent=note; ul.appendChild(li);}
         try{localStorage.setItem(GK,'1');}catch(e){}
-        geoBtn.removeAttribute('aria-busy'); geoBtn.textContent='📍 Cập nhật';
-      }).catch(function(){geoBtn.removeAttribute('aria-busy'); geoBtn.textContent='📍 Lỗi, thử lại';});
+        geoBtn.removeAttribute('aria-busy'); geoT.textContent='Cập nhật';
+      }).catch(function(){geoBtn.removeAttribute('aria-busy'); geoT.textContent='Lỗi, thử lại';});
     },function(err){
       geoBtn.removeAttribute('aria-busy');
-      if(err.code===1){try{localStorage.removeItem(GK);}catch(e){} geoBtn.textContent='📍 Chưa cho phép vị trí';}
-      else geoBtn.textContent='📍 Lỗi, thử lại';
+      if(err.code===1){try{localStorage.removeItem(GK);}catch(e){} geoT.textContent='Chưa cho phép vị trí';}
+      else geoT.textContent='Lỗi, thử lại';
     },{enableHighAccuracy:false,timeout:15000,maximumAge:600000});
   }
   geoBtn.addEventListener('click',locate);
