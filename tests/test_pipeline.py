@@ -448,3 +448,17 @@ def test_even_count_per_category():
     assert even_count([1, 2, 3]) == [1, 2]
     assert even_count([1, 2]) == [1, 2]
     assert even_count([1]) == [1] and even_count([]) == []
+
+
+# ---------- VN-Index ----------
+def test_vnindex_parsers():
+    from src.market import Quote, parse_ssi_index, parse_vps_history
+    q = parse_ssi_index({"data": {"indexValue": 1688.79, "prevIndexValue": 1689.62, "changePercent": -0.05,
+                                  "time": 1795161905097}}, Quote(symbol="^VNINDEX", name="VN-Index"))
+    assert q.ok and q.close == 1688.79 and round(q.change_pct, 2) == -0.05 and q.date == "20/11"
+    assert q.close_str == "1.688,79"
+    assert not parse_ssi_index({"data": {}}, Quote(symbol="x", name="x")).ok
+    v = parse_vps_history({"s": "ok", "t": [1795046400, 1795132800], "c": [1689.62, 1688.79]},
+                          Quote(symbol="^VNINDEX", name="VN-Index"))
+    assert v.close == 1688.79 and round(v.change_pct, 2) == -0.05 and v.date == "20/11"
+    assert not parse_vps_history({"s": "no_data"}, Quote(symbol="x", name="x")).ok

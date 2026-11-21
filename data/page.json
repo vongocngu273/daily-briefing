@@ -120,9 +120,9 @@
   {
    "symbol": "^VNINDEX",
    "name": "VN-Index",
-   "close": null,
-   "change_pct": null,
-   "date": null
+   "close": 1688.79,
+   "change_pct": -0.04912347154981163,
+   "date": "20/11"
   },
   {
    "symbol": "GC=F",
