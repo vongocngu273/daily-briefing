@@ -202,6 +202,16 @@ main{padding:4px 0 8px}
 .closing .na{font-weight:600}
 footer{padding:16px 0 calc(28px + env(safe-area-inset-bottom));font-size:12px;color:var(--muted)}
 footer p{margin:0 0 4px;max-width:var(--measure)}
+
+/* ---------- rounded corners (Apple-style continuous corners) ---------- */
+:root{--rL:18px;--rM:10px;--rS:6px}
+@supports (corner-shape:squircle){:root{--rL:28px;--rM:16px;--rS:9px}}
+.serial,.wx,.idx,.advice li,.closing ol,.board,.notice{border-radius:var(--rL);corner-shape:squircle;overflow:hidden}
+.advice li{border-left-width:2px;box-shadow:inset 8px 0 0 var(--serial);padding-left:18px}
+.strip a,.strip button,.views button,.geo,.resume,.thumb{border-radius:var(--rM);corner-shape:squircle}
+.tag,.item[data-flag]::before{border-radius:var(--rS);corner-shape:squircle}
+.board table{border-radius:0}
+[data-view="card"] .thumb{border-radius:0}
 </style>
 </head>
 {% macro arrow(kind) %}<svg class="ic" viewBox="0 0 12 12" aria-hidden="true">{% if kind == "out" %}<path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/>{% else %}<path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/>{% endif %}</svg>{% endmacro %}
