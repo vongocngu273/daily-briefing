@@ -10,30 +10,30 @@ colors:
   engrave-lime: "rgba(197,255,45,.16)"
 typography:
   display:
-    fontFamily: "Be Vietnam Pro, Arial Narrow, sans-serif"
+    fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
     fontSize: "clamp(72px, 24vw, 96px)"
     fontWeight: 800
     lineHeight: 0.95
     letterSpacing: "-0.02em"
   headline:
-    fontFamily: "Be Vietnam Pro, Arial Narrow, sans-serif"
+    fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
     fontSize: "30px"
     fontWeight: 800
     lineHeight: 1.05
     letterSpacing: "0.02em"
   title:
-    fontFamily: "Be Vietnam Pro, Arial Narrow, sans-serif"
+    fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
     fontSize: "22px"
     fontWeight: 800
     lineHeight: 1.15
     letterSpacing: "0.04em"
   numeral:
-    fontFamily: "Be Vietnam Pro, Arial Narrow, sans-serif"
+    fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
     fontSize: "26px"
     fontWeight: 800
     lineHeight: 1
   figure:
-    fontFamily: "Be Vietnam Pro, Arial Narrow, sans-serif"
+    fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
     fontSize: "20px"
     fontWeight: 800
     lineHeight: 1.1
@@ -49,13 +49,13 @@ typography:
     lineHeight: 1.6
     fontFeature: "tnum"
   label:
-    fontFamily: "Be Vietnam Pro, Arial Narrow, sans-serif"
+    fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
     fontSize: "13px"
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "0.12em"
   label-small:
-    fontFamily: "Be Vietnam Pro, Arial Narrow, sans-serif"
+    fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
     fontSize: "12px"
     fontWeight: 600
     letterSpacing: "0.12em"
@@ -109,7 +109,7 @@ components:
     padding: "5px 10px"
 ---
 
-> **Palette update (2026-11-21):** the page now uses the Bigman Backcom identity: black, lime `#C5FF2D`, white only, Be Vietnam Pro for every role (400/600/800, self-hosted). The ticket stubs are always black with lime accents; the weekday stub colours and serial red are retired. Light mode: white paper, black ink, lime only as a highlighter or label background behind black text (never lime text on white). Dark mode: black paper, white ink, lime text accents and a lime perforation edge. Market moves read by arrow plus tone: up is accent (black/lime), down is muted. Sections below that mention weekday colours, serial red or Barlow Condensed describe the previous palette; layout and components are unchanged.
+> **Palette update (2026-11-21):** the page now uses the Bigman Backcom identity: black, lime `#C5FF2D`, white only, typography unchanged (Barlow Condensed 600/800 for display, labels and numbers; Be Vietnam Pro 400/600 for reading text). The ticket stubs are always black with lime accents; the weekday stub colours and serial red are retired. Light mode: white paper, black ink, lime only as a highlighter or label background behind black text (never lime text on white). Dark mode: black paper, white ink, lime text accents and a lime perforation edge. Market moves read by arrow plus tone: up is accent (black/lime), down is muted. Sections below that mention weekday colours, serial red describe the previous palette; layout and components are unchanged.
 
 
 # Design System: Bản tin sáng
