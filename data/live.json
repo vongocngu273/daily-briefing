@@ -22,7 +22,7 @@
    "title": "Thủ tướng chỉ thị kích cầu tiêu dùng cuối năm",
    "url": "https://vnexpress.net/thu-tuong-chi-thi-kich-cau-tieu-dung-cuoi-nam-5147500.html",
    "source": "VnExpress",
-   "image": "https://i1-kinhdoanh.vnecdn.net/2026/11/21/img-1795264545-4321-1795264577.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yirqD19ta2l2YSM1MDF1FA",
+   "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/21/img-1795264545-4321-1795264577.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yirqD19ta2l2YSM1MDF1FA",
    "ts": "2026-11-21T12:51:24+00:00",
    "sources": 2,
    "score": 4.48
@@ -34,7 +34,7 @@
    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6kLhaVBOy2CNjjqFpFf9pQ6B4CHYWMPxmOR5HFCfgJ505UxpgpggD5bGgvPcdBsJ_RMzW9lyKLQ7Y-metq1IyViwIeGBe4lgeEhMc4UOeppomlJlsiHFInhP5NUnLggup8cRPM616WkWecsn-gZhfSBJqq-OPyn-VYx1d8A72dfdalhn6mnL6qtzYYlSMD3kmA/ttxvn-chien-dich-500-ngay-dem-quy-tap-duoc-148-hai-cot-liet-si-sau-nua-thang-trien-khai-dot-2-tai-cong-vien-le-thi-rieng-9124369.jpg.avif",
    "ts": "2026-11-21T12:36:39+00:00",
    "sources": 2,
-   "score": 4.44
+   "score": 4.43
   },
   {
    "title": "Ngày Văn hóa Việt Nam 2026: Sức mạnh gắn kết và bản sắc văn hóa",
@@ -43,7 +43,7 @@
    "image": "https://media.vietnamplus.vn/images/_RfA0Lv7xigOosrBfIuLkxs_I9loCcIKYKkL1HLmezgelPJuq_3sRjV3crgYCH2h/ttxvn-vuho1.jpg.avif",
    "ts": "2026-11-21T12:29:06+00:00",
    "sources": 2,
-   "score": 4.42
+   "score": 4.41
   },
   {
    "title": "Một đoạn cao tốc TP.HCM - Long Thành chuyển làn, tài xế cần lưu ý gì?",
@@ -56,6 +56,15 @@
   }
  ],
  "latest": [
+  {
+   "title": "Festival Tôm Cà Mau 2026: Lan tỏa bản sắc văn hóa, thúc đẩy phát triển ngành tôm",
+   "url": "https://www.vietnamplus.vn/festival-tom-ca-mau-2026-lan-toa-ban-sac-van-hoa-thuc-day-phat-trien-nganh-tom-post1149911.vnp",
+   "source": "VietnamPlus",
+   "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6rjrgCDn-jbpVYQ0IIsuO69gou0DRt35FTHlmo23uyflxrcBKze3vt6tlzAdy47TXTQzMwmgRuFcdSfcA4zb5V2KjmB6pUQM_dZ5twYIG6XM/ttxvn-khai-mac-festival-tom-ca-mau-lan-thu-2-nam-2026-9171070.jpg.avif",
+   "ts": "2026-11-21T15:57:23+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
   {
    "title": "Màn hình phụ 2.9-inch trên Xiaomi 18 Pro Max làm được gì?",
    "url": "https://tinhte.vn/thread/man-hinh-phu-2-9-inch-tren-xiaomi-18-pro-max-lam-duoc-gi.4194628/",
@@ -100,18 +109,47 @@
    "ts": "2026-11-21T15:21:22+00:00",
    "sources": 1,
    "score": 0.0
-  },
-  {
-   "title": "100 người ảnh hưởng nhất lịch sử #10: Einstein, năm 1905 và 38 micro giây mỗi ngày của GPS",
-   "url": "https://tinhte.vn/thread/100-nguoi-anh-huong-nhat-lich-su-10-einstein-nam-1905-va-38-micro-giay-moi-ngay-cua-gps.4194058/",
-   "source": "Tinh tế",
-   "image": "https://imgproxy7.tinhte.vn/RxBvUfp6Y8Y5mbW8UJJBHeWKvyPq7E0ed4-5Nzpb4aY/h:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9139491_01-einstein-schmutzer-1921.jpg",
-   "ts": "2026-11-21T14:50:08+00:00",
-   "sources": 1,
-   "score": 0.0
   }
  ],
  "cats": {
+  "culture_society": [
+   {
+    "title": "Festival Tôm Cà Mau 2026: Lan tỏa bản sắc văn hóa, thúc đẩy phát triển ngành tôm",
+    "url": "https://www.vietnamplus.vn/festival-tom-ca-mau-2026-lan-toa-ban-sac-van-hoa-thuc-day-phat-trien-nganh-tom-post1149911.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6rjrgCDn-jbpVYQ0IIsuO69gou0DRt35FTHlmo23uyflxrcBKze3vt6tlzAdy47TXTQzMwmgRuFcdSfcA4zb5V2KjmB6pUQM_dZ5twYIG6XM/ttxvn-khai-mac-festival-tom-ca-mau-lan-thu-2-nam-2026-9171070.jpg.avif",
+    "ts": "2026-11-21T15:57:23+00:00",
+    "sources": 1,
+    "score": 0
+   },
+   {
+    "title": "Rực rỡ sắc màu văn hóa Khmer tại Lễ hội Ok Om Bok Cần Thơ 2026",
+    "url": "https://www.vietnamplus.vn/ruc-ro-sac-mau-van-hoa-khmer-tai-le-hoi-ok-om-bok-can-tho-2026-post1149908.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6kEVovxtXGN94Ks3h6jIgLAOIW-5Nhdtpb4oQ9c0bmUJhGNLLo9GAs9Uw1dtFFSpHdPE-TvW6RTmwY7u0jPFB2FAgNp3iyMCo3z6aUBqBBfAcQDv4dI5klGmYfiEZWjY6nmYieAwj8fKxRtz1stpq7mT7DdlUN8tc40bRlHUKmsG/ttxvn-le-hoi-ok-om-bok-dua-ghe-ngo-thanh-pho-can-tho-2026-ton-vinh-ban-sac-gan-ket-cong-dong-cac-dan-toc-9171079.jpg.avif",
+    "ts": "2026-11-21T15:23:12+00:00",
+    "sources": 1,
+    "score": 0
+   },
+   {
+    "title": "Lan tỏa tình yêu di sản văn hóa dân tộc",
+    "url": "https://tuoitre.vn/lan-toa-tinh-yeu-di-san-van-hoa-dan-toc-1002611212058481.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/base64-17952696354651151971225-192-186-635-894-crop-17952699951321260052481.png",
+    "ts": "2026-11-21T14:28:00+00:00",
+    "sources": 1,
+    "score": 0
+   },
+   {
+    "title": "Đèn nước và ghe Cà Hâu sẽ thắp sáng sông Maspéro tối nay, khai mạc Lễ hội Oóc Om Bóc Cần Thơ.",
+    "url": "https://tuoitre.vn/den-nuoc-va-ghe-ca-hau-se-thap-sang-song-maspero-toi-nay-khai-mac-le-hoi-ooc-om-boc-can-tho-100261121171512603.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/img3390-17952551470062073807797-1360-0-2560-1920-crop-1795255691365103386947-125-3-1143-1632-crop-17952688150212097992829.jpg",
+    "ts": "2026-11-21T13:51:00+00:00",
+    "sources": 1,
+    "score": 0
+   }
+  ],
   "mobile": [
    {
     "title": "Màn hình phụ 2.9-inch trên Xiaomi 18 Pro Max làm được gì?",
@@ -188,44 +226,6 @@
     "score": 0
    }
   ],
-  "culture_society": [
-   {
-    "title": "Rực rỡ sắc màu văn hóa Khmer tại Lễ hội Ok Om Bok Cần Thơ 2026",
-    "url": "https://www.vietnamplus.vn/ruc-ro-sac-mau-van-hoa-khmer-tai-le-hoi-ok-om-bok-can-tho-2026-post1149908.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6kEVovxtXGN94Ks3h6jIgLAOIW-5Nhdtpb4oQ9c0bmUJhGNLLo9GAs9Uw1dtFFSpHdPE-TvW6RTmwY7u0jPFB2FAgNp3iyMCo3z6aUBqBBfAcQDv4dI5klGmYfiEZWjY6nmYieAwj8fKxRtz1stpq7mT7DdlUN8tc40bRlHUKmsG/ttxvn-le-hoi-ok-om-bok-dua-ghe-ngo-thanh-pho-can-tho-2026-ton-vinh-ban-sac-gan-ket-cong-dong-cac-dan-toc-9171079.jpg.avif",
-    "ts": "2026-11-21T15:23:12+00:00",
-    "sources": 1,
-    "score": 0
-   },
-   {
-    "title": "Đèn nước và ghe Cà Hâu sẽ thắp sáng sông Maspéro tối nay, khai mạc Lễ hội Oóc Om Bóc Cần Thơ.",
-    "url": "https://tuoitre.vn/den-nuoc-va-ghe-ca-hau-se-thap-sang-song-maspero-toi-nay-khai-mac-le-hoi-ooc-om-boc-can-tho-100261121171512603.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/img3390-17952551470062073807797-1360-0-2560-1920-crop-1795255691365103386947-125-3-1143-1632-crop-17952688150212097992829.jpg",
-    "ts": "2026-11-21T13:51:00+00:00",
-    "sources": 1,
-    "score": 0
-   },
-   {
-    "title": "Ngày Văn hóa Việt Nam 2026: Sức mạnh gắn kết và bản sắc văn hóa",
-    "url": "https://www.vietnamplus.vn/ngay-van-hoa-viet-nam-2026-suc-manh-gan-ket-va-ban-sac-van-hoa-post1149870.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/_RfA0Lv7xigOosrBfIuLkxs_I9loCcIKYKkL1HLmezgelPJuq_3sRjV3crgYCH2h/ttxvn-vuho1.jpg.avif",
-    "ts": "2026-11-21T12:29:06+00:00",
-    "sources": 1,
-    "score": 0
-   },
-   {
-    "title": "Lễ hội văn hóa Thiên Cấm Sơn, 2.500 chỗ lưu trú đã đầy khách",
-    "url": "https://tuoitre.vn/le-hoi-van-hoa-thien-cam-son-2500-cho-luu-tru-da-day-khach-100261121173517129.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/2aobore6v23obqdzzrzy3renr8db5ozfiysjrvlq-179525625804382079311-106-0-1706-2560-crop-17952570778921284362316.jpg",
-    "ts": "2026-11-21T12:14:00+00:00",
-    "sources": 1,
-    "score": 0
-   }
-  ],
   "geopolitics": [
    {
     "title": "Ukraine tái khẳng định quyết tâm gia nhập NATO",
@@ -240,7 +240,7 @@
     "title": "Nhóm người Việt bị cáo buộc mạo danh cảnh sát, giám đốc để lừa tiền ở Nhật",
     "url": "https://vnexpress.net/nhom-nguoi-viet-bi-cao-buoc-mao-danh-canh-sat-giam-doc-de-lua-tien-o-nhat-5147497.html",
     "source": "VnExpress",
-    "image": "https://i1-vnexpress.vnecdn.net/2026/11/21/1-1795266132-9455-1795266210.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GX_zeoIrpDdgdr9cLnNFmg",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/1-1795266132-9455-1795266210.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GX_zeoIrpDdgdr9cLnNFmg",
     "ts": "2026-11-21T13:45:43+00:00",
     "sources": 1,
     "score": 0
@@ -249,7 +249,7 @@
     "title": "Nữ cảnh vệ Trung Quốc tại APEC 'gây sốt' mạng xã hội",
     "url": "https://vnexpress.net/nu-canh-ve-trung-quoc-tai-apec-gay-sot-mang-xa-hoi-5147486.html",
     "source": "VnExpress",
-    "image": "https://i1-vnexpress.vnecdn.net/2026/11/21/1-1795263081-3165-1795263092.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ptWu8W4_2SV50ejG2ZVavA",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/1-1795263081-3165-1795263092.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ptWu8W4_2SV50ejG2ZVavA",
     "ts": "2026-11-21T12:58:09+00:00",
     "sources": 1,
     "score": 0
@@ -302,12 +302,50 @@
     "score": 0
    }
   ],
+  "economy": [
+   {
+    "title": "Một tuần, giá vàng thế giới mất đến 350 USD/ounce",
+    "url": "https://tuoitre.vn/mot-tuan-gia-vang-the-gioi-mat-den-350-usd-ounce-100261121210251489.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/sjc-2-1-1795269299295670521028-0-0-1250-2000-crop-17952693279071649918419.jpg",
+    "ts": "2026-11-21T14:28:00+00:00",
+    "sources": 1,
+    "score": 0
+   },
+   {
+    "title": "Doanh nghiệp thuộc TKV khai thác than khi chưa có phép, giải trình nếu dừng sẽ thiệt hại 653 tỉ",
+    "url": "https://tuoitre.vn/doanh-nghiep-thuoc-tkv-khai-thac-than-khi-chua-co-phep-giai-trinh-neu-dung-se-thiet-hai-653-ti-100261121194406963.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/tkv-1795264522951812548075-17952662813051341046908-70-214-652-1145-crop-17952663245112139524560.jpg",
+    "ts": "2026-11-21T12:59:00+00:00",
+    "sources": 1,
+    "score": 0
+   },
+   {
+    "title": "Thủ tướng chỉ thị kích cầu tiêu dùng cuối năm",
+    "url": "https://vnexpress.net/thu-tuong-chi-thi-kich-cau-tieu-dung-cuoi-nam-5147500.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/21/img-1795264545-4321-1795264577.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yirqD19ta2l2YSM1MDF1FA",
+    "ts": "2026-11-21T12:51:24+00:00",
+    "sources": 1,
+    "score": 0
+   },
+   {
+    "title": "Hà Nội nêu điều kiện giao chủ đầu tư dự án nhà ở cho thuê không qua đấu giá, đấu thầu",
+    "url": "https://tuoitre.vn/ha-noi-neu-dieu-kien-giao-chu-dau-tu-du-an-nha-o-cho-thue-khong-qua-dau-gia-dau-thau-100261121163548783.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/90049272317932855752264208232419334438954416n-1795253642308455136554-0-0-934-1495-crop-17952557619141193693151.png",
+    "ts": "2026-11-21T10:06:00+00:00",
+    "sources": 1,
+    "score": 0
+   }
+  ],
   "sports": [
    {
     "title": "Haaland bị khước từ bàn tranh cãi trong trận hòa của Man City",
     "url": "https://vnexpress.net/haaland-bi-khuoc-tu-ban-tranh-cai-trong-tran-hoa-cua-man-city-5147520.html",
     "source": "VnExpress",
-    "image": "https://i1-thethao.vnecdn.net/2026/11/21/a-nh-ma-n-hi-nh-lu-c-179527001-3233-9521-1795270032.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=SRulfS2rnPIwS89mulA_7g",
+    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/21/a-nh-ma-n-hi-nh-lu-c-179527001-3233-9521-1795270032.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=SRulfS2rnPIwS89mulA_7g",
     "ts": "2026-11-21T14:25:56+00:00",
     "sources": 1,
     "score": 0
@@ -325,7 +363,7 @@
     "title": "'Nghệ thuật' thắng 1-0 của Arsenal",
     "url": "https://vnexpress.net/nghe-thuat-thang-1-0-cua-arsenal-5147311.html",
     "source": "VnExpress",
-    "image": "https://i1-thethao.vnecdn.net/2026/11/21/a-nh-ma-n-hi-nh-lu-1795235651-8855-1795235662.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=8Vyc4ILw6DjFC8izX0-SWA",
+    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/21/a-nh-ma-n-hi-nh-lu-1795235651-8855-1795235662.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=8Vyc4ILw6DjFC8izX0-SWA",
     "ts": "2026-11-21T05:00:00+00:00",
     "sources": 1,
     "score": 0
@@ -334,46 +372,8 @@
     "title": "Hai cầu thủ 15 tuổi dự hai World Cup trong ba tuần",
     "url": "https://vnexpress.net/hai-cau-thu-15-tuoi-du-hai-world-cup-trong-ba-tuan-5147333.html",
     "source": "VnExpress",
-    "image": "https://i1-thethao.vnecdn.net/2026/11/21/fifa-under-world-cup-festival-9959-2742-1795227327.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=4rDbFcOxiUmNsQf3VycUbg",
+    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/21/fifa-under-world-cup-festival-9959-2742-1795227327.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=4rDbFcOxiUmNsQf3VycUbg",
     "ts": "2026-11-21T05:00:00+00:00",
-    "sources": 1,
-    "score": 0
-   }
-  ],
-  "economy": [
-   {
-    "title": "Doanh nghiệp thuộc TKV khai thác than khi chưa có phép, giải trình nếu dừng sẽ thiệt hại 653 tỉ",
-    "url": "https://tuoitre.vn/doanh-nghiep-thuoc-tkv-khai-thac-than-khi-chua-co-phep-giai-trinh-neu-dung-se-thiet-hai-653-ti-100261121194406963.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/tkv-1795264522951812548075-17952662813051341046908-70-214-652-1145-crop-17952663245112139524560.jpg",
-    "ts": "2026-11-21T12:59:00+00:00",
-    "sources": 1,
-    "score": 0
-   },
-   {
-    "title": "Thủ tướng chỉ thị kích cầu tiêu dùng cuối năm",
-    "url": "https://vnexpress.net/thu-tuong-chi-thi-kich-cau-tieu-dung-cuoi-nam-5147500.html",
-    "source": "VnExpress",
-    "image": "https://i1-kinhdoanh.vnecdn.net/2026/11/21/img-1795264545-4321-1795264577.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yirqD19ta2l2YSM1MDF1FA",
-    "ts": "2026-11-21T12:51:24+00:00",
-    "sources": 1,
-    "score": 0
-   },
-   {
-    "title": "Ngành tôm Việt Nam đặt mục tiêu xuất khẩu 4,7 tỷ USD",
-    "url": "https://vnexpress.net/nganh-tom-viet-nam-dat-muc-tieu-xuat-khau-4-7-ty-usd-5147435.html",
-    "source": "VnExpress",
-    "image": "https://i1-vnexpress.vnecdn.net/2026/11/21/dsc-1795246346-1359-1795246436.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GRvWU4A2Yd1VeHborP-I9g",
-    "ts": "2026-11-21T09:36:16+00:00",
-    "sources": 1,
-    "score": 0
-   },
-   {
-    "title": "GBIA mở rộng kết nối hàng không toàn cầu, tiếp cận 65 hãng bay",
-    "url": "https://tuoitre.vn/gbia-mo-rong-ket-noi-hang-khong-toan-cau-tiep-can-65-hang-bay-100261121154757471.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/giba-1-1795250193992209033393-0-0-611-977-crop-17952501972251778416042.png",
-    "ts": "2026-11-21T09:30:00+00:00",
     "sources": 1,
     "score": 0
    }
@@ -392,7 +392,7 @@
     "title": "5 cách giữ dáng khi ăn thịt nướng ngày lạnh",
     "url": "https://vnexpress.net/5-cach-giu-dang-khi-an-thit-nuong-ngay-lanh-5147401.html",
     "source": "VnExpress",
-    "image": "https://i1-suckhoe.vnecdn.net/2026/11/21/medium-vecteezy-korean-style-p-9019-4349-1795237507.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=NX_PMZkthzKwL0L3BncOLQ",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/medium-vecteezy-korean-style-p-9019-4349-1795237507.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=NX_PMZkthzKwL0L3BncOLQ",
     "ts": "2026-11-21T12:00:00+00:00",
     "sources": 1,
     "score": 0
@@ -423,17 +423,6 @@
     "source": "BBC Tiếng Việt",
     "image": "https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/ca6f/live/86958400-e586-11f1-99a1-253766e7ad8b.jpg",
     "ts": "2026-11-21T10:05:32+00:00",
-    "sources": 1,
-    "score": 0
-   }
-  ],
-  "environment": [
-   {
-    "title": "Trường Đại học Tài nguyên và Môi trường TP.HCM - 50 năm hình thành và phát triển",
-    "url": "https://tuoitre.vn/truong-dai-hoc-tai-nguyen-va-moi-truong-tphcm-50-nam-hinh-thanh-va-phat-trien-100261121132921708.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/dsc04420-1795242174479534825716-83-0-1333-2000-crop-17952421807021890106487.jpeg",
-    "ts": "2026-11-21T10:00:00+00:00",
     "sources": 1,
     "score": 0
    }
@@ -499,10 +488,10 @@
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin (USD)",
-   "close": 59783.26953125,
-   "change_pct": 1.6739900159036294,
+   "close": 59826.30859375,
+   "change_pct": 1.747186969586991,
    "date": "21/11"
   }
  ],
- "updated": "2026-11-21T15:58:45.832271+00:00"
+ "updated": "2026-11-21T16:00:23.813081+00:00"
 }
