@@ -410,3 +410,33 @@ def test_snapshot_roundtrip_renders_same_page(tmp_path):
     save_snapshot(ctx, snap)
     render(load_snapshot(snap), out_path=b)
     assert a.read_text(encoding="utf-8") == b.read_text(encoding="utf-8")
+
+
+# ---------- Google Trends ticker ----------
+_TRENDS_RSS = """<?xml version="1.0"?><rss xmlns:ht="https://trends.google.com/trending/rss"><channel>
+<item><title>erling haaland</title><ht:approx_traffic>1000+</ht:approx_traffic><pubDate>Sat, 21 Nov 2026 06:40:00 -0800</pubDate>
+<ht:news_item><ht:news_item_title>Haaland &amp; City</ht:news_item_title><ht:news_item_url>https://x.com/a</ht:news_item_url></ht:news_item></item>
+<item><title>lazio</title><ht:approx_traffic>20K+</ht:approx_traffic><pubDate>Sat, 21 Nov 2026 06:50:00 -0800</pubDate></item>
+</channel></rss>"""
+
+
+def test_trends_parse_and_traffic():
+    from src.trends import parse_rss, parse_traffic
+    assert parse_traffic("2000+") == 2000 and parse_traffic("20K+") == 20000 and parse_traffic("1M+") == 1_000_000
+    items = parse_rss(_TRENDS_RSS, "VN")
+    assert [i["term"] for i in items] == ["erling haaland", "lazio"]
+    assert items[0]["url"] == "https://x.com/a" and items[0]["news"] == "Haaland & City"
+
+
+def test_trends_merge_keeps_24h_dedups_and_ranks():
+    from datetime import datetime, timezone
+    from src.trends import for_page, merge, parse_rss
+    now = datetime(2026, 11, 21, 15, 0, tzinfo=timezone.utc)
+    old = {"term": "Cũ", "geo": "VN", "traffic": "50K+", "score": 50000, "ts": "2026-11-20T10:00:00+00:00", "url": "", "news": ""}
+    dup = {"term": "LAZIO", "geo": "VN", "traffic": "200+", "score": 200, "ts": "2026-11-21T12:00:00+00:00", "url": "", "news": ""}
+    store = {"vn": [old, dup]}
+    merge(store, "vn", parse_rss(_TRENDS_RSS, "VN"), now)
+    assert [i["term"] for i in store["vn"]] == ["lazio", "erling haaland"]   # bỏ mục >24h, giữ lượt cao hơn
+    page = for_page({**store, "updated": now.isoformat()})
+    assert page["vn"][0]["term"] == "Lazio" and page["vn"][0]["url"].startswith("https://www.google.com/search?q=lazio")
+    assert page["updated"] == "22:00"

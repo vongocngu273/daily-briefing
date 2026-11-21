@@ -59,6 +59,9 @@ def load_snapshot(path: Path = SNAPSHOT_PATH) -> dict:
     if ctx.get("tide") is not None:
         ctx["tide"] = _build(TideReport, ctx["tide"])
     ctx["quotes"] = [_build(Quote, q) for q in ctx.get("quotes", [])]
+    # Trend luôn lấy bản mới nhất trong data/trends.json (cập nhật 2 giờ/lần)
+    from .trends import for_page, load_store
+    ctx["trends"] = for_page(load_store())
     for layer in ctx.get("layers", []):
         for cat in layer.get("categories", []):
             cat["items"] = [_build(NewsItem, n) for n in cat.get("items", [])]

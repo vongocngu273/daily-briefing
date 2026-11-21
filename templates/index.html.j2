@@ -212,6 +212,26 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 .tag,.item[data-flag]::before{border-radius:var(--rS);corner-shape:squircle}
 .board table{border-radius:0}
 [data-view="card"] .thumb{border-radius:0}
+
+/* ---------- breaking-news ticker (Google Trends 24h) ---------- */
+.ticker{display:flex;align-items:stretch;margin-top:14px;background:var(--field);color:var(--stub-ink);border:2px solid var(--stub-ink);border-radius:var(--rM);corner-shape:squircle;overflow:hidden;font:600 15px/1 var(--cond);letter-spacing:.04em}
+.tk-label{flex:none;display:flex;align-items:center;gap:7px;padding:9px 12px;background:var(--serial);color:#fff;text-transform:uppercase;letter-spacing:.1em;font-weight:800;z-index:1}
+.tk-label i{width:8px;height:8px;border-radius:50%;background:#fff}
+@media (prefers-reduced-motion:no-preference){.tk-label i{animation:tkblink 1.2s steps(1) infinite}}
+@keyframes tkblink{50%{opacity:.15}}
+.tk-viewport{flex:1;min-width:0;overflow:hidden;display:flex;align-items:center;-webkit-mask:linear-gradient(90deg,transparent,#000 18px,#000 calc(100% - 18px),transparent);mask:linear-gradient(90deg,transparent,#000 18px,#000 calc(100% - 18px),transparent)}
+.tk-track{display:flex;width:max-content;white-space:nowrap}
+.tk-run{display:flex;align-items:center;gap:0;padding-right:0}
+.tk-track a{color:inherit;text-decoration:none;padding:0 14px;border-left:1.5px solid color-mix(in srgb,var(--stub-ink) 30%,transparent)}
+.tk-track a:hover{color:var(--serial)}
+.tk-track small{font-size:.78em;color:var(--serial);font-weight:800;margin-left:3px}
+.tk-group{padding:0 12px 0 18px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--serial)}
+.tk-upd{color:var(--field-muted);font-weight:600}
+.ticker.run .tk-track{animation:tkscroll var(--tk-dur,60s) linear infinite}
+.ticker.run:hover .tk-track,.ticker.run:focus-within .tk-track,.ticker.paused .tk-track{animation-play-state:paused}
+@keyframes tkscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tk-viewport{overflow-x:auto}}
+@media (max-width:519px){.tk-label{padding:9px 9px;font-size:13px;letter-spacing:.06em}}
 </style>
 </head>
 {% macro arrow(kind) %}<svg class="ic" viewBox="0 0 12 12" aria-hidden="true">{% if kind == "out" %}<path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/>{% else %}<path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/>{% endif %}</svg>{% endmacro %}
@@ -265,7 +285,21 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     <div class="stub-row loc"><span id="wx-loc">{{ weather.location }}</span><button type="button" class="geo" id="geo">📍 Theo vị trí máy</button></div>
     <ul class="advice" id="wx-advice">{% for line in weather.advice %}<li>{{ line }}</li>{% endfor %}</ul>
     <a class="resume" id="resume" href="#" hidden><span>Đọc tiếp</span>{{ arrow("next") }}</a>
+    {% set tr = trends if trends is defined else none %}
+    {% if tr and (tr.vn or tr.world) %}
+    <div class="ticker" role="region" aria-label="Xu hướng tìm kiếm 24 giờ qua">
+      <span class="tk-label"><i aria-hidden="true"></i>Xu hướng 24h</span>
+      <div class="tk-viewport"><div class="tk-track" id="tk-track">
+        <span class="tk-run">
+        {% if tr.vn %}<span class="tk-group">🇻🇳 Việt Nam</span>{% for t in tr.vn %}<a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">{{ t.term }}{% if t.traffic %} <small>{{ t.traffic }}</small>{% endif %}</a>{% endfor %}{% endif %}
+        {% if tr.world %}<span class="tk-group">🌐 Thế giới</span>{% for t in tr.world %}<a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">{{ t.term }}{% if t.traffic %} <small>{{ t.traffic }}</small>{% endif %}</a>{% endfor %}{% endif %}
+        {% if tr.updated %}<span class="tk-group tk-upd">Google Trends · {{ tr.updated }}</span>{% endif %}
+        </span>
+      </div></div>
+    </div>
+    {% else %}
     <div class="micro" aria-hidden="true">{% for _ in range(14) %}Bản tin sáng · {{ serial }} · {{ year }} · {% endfor %}</div>
+    {% endif %}
   </div>
 </header>
 <div class="perf top" aria-hidden="true"></div>
@@ -373,6 +407,18 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 
 <script>
 (function(){
+  /* Dòng chữ chạy: nhân đôi nội dung để lặp liền mạch, tốc độ ~55px/giây cho dễ đọc */
+  (function(){
+    var tr=document.getElementById('tk-track'); if(!tr) return;
+    var tk=tr.closest('.ticker');
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var run=tr.querySelector('.tk-run'), copy=run.cloneNode(true);
+    copy.setAttribute('aria-hidden','true'); copy.querySelectorAll('a').forEach(function(a){a.tabIndex=-1;});
+    tr.appendChild(copy);
+    tk.style.setProperty('--tk-dur',Math.max(20,Math.round(run.offsetWidth/55))+'s');
+    tk.classList.add('run');
+    tk.addEventListener('touchstart',function(){tk.classList.toggle('paused');},{passive:true});
+  })();
   var root=document.documentElement, th=document.getElementById('theme');
   var vbs=document.querySelectorAll('.views button');
   function markView(){var v=root.getAttribute('data-view');vbs.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-v')===v?'true':'false');});}

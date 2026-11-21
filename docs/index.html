@@ -222,6 +222,26 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 .tag,.item[data-flag]::before{border-radius:var(--rS);corner-shape:squircle}
 .board table{border-radius:0}
 [data-view="card"] .thumb{border-radius:0}
+
+/* ---------- breaking-news ticker (Google Trends 24h) ---------- */
+.ticker{display:flex;align-items:stretch;margin-top:14px;background:var(--field);color:var(--stub-ink);border:2px solid var(--stub-ink);border-radius:var(--rM);corner-shape:squircle;overflow:hidden;font:600 15px/1 var(--cond);letter-spacing:.04em}
+.tk-label{flex:none;display:flex;align-items:center;gap:7px;padding:9px 12px;background:var(--serial);color:#fff;text-transform:uppercase;letter-spacing:.1em;font-weight:800;z-index:1}
+.tk-label i{width:8px;height:8px;border-radius:50%;background:#fff}
+@media (prefers-reduced-motion:no-preference){.tk-label i{animation:tkblink 1.2s steps(1) infinite}}
+@keyframes tkblink{50%{opacity:.15}}
+.tk-viewport{flex:1;min-width:0;overflow:hidden;display:flex;align-items:center;-webkit-mask:linear-gradient(90deg,transparent,#000 18px,#000 calc(100% - 18px),transparent);mask:linear-gradient(90deg,transparent,#000 18px,#000 calc(100% - 18px),transparent)}
+.tk-track{display:flex;width:max-content;white-space:nowrap}
+.tk-run{display:flex;align-items:center;gap:0;padding-right:0}
+.tk-track a{color:inherit;text-decoration:none;padding:0 14px;border-left:1.5px solid color-mix(in srgb,var(--stub-ink) 30%,transparent)}
+.tk-track a:hover{color:var(--serial)}
+.tk-track small{font-size:.78em;color:var(--serial);font-weight:800;margin-left:3px}
+.tk-group{padding:0 12px 0 18px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--serial)}
+.tk-upd{color:var(--field-muted);font-weight:600}
+.ticker.run .tk-track{animation:tkscroll var(--tk-dur,60s) linear infinite}
+.ticker.run:hover .tk-track,.ticker.run:focus-within .tk-track,.ticker.paused .tk-track{animation-play-state:paused}
+@keyframes tkscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tk-viewport{overflow-x:auto}}
+@media (max-width:519px){.tk-label{padding:9px 9px;font-size:13px;letter-spacing:.06em}}
 </style>
 </head>
 <body data-day="5" data-date="20261121">
@@ -274,7 +294,13 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     <div class="stub-row loc"><span id="wx-loc">TP.HCM (Bình Chánh &amp; Nội thành)</span><button type="button" class="geo" id="geo">📍 Theo vị trí máy</button></div>
     <ul class="advice" id="wx-advice"><li>Nên mặc áo khoác chống nắng (UV tới 7,5)</li><li>Không khí kém (AQI 153), nên đeo khẩu trang khi ra đường</li></ul>
     <a class="resume" id="resume" href="#" hidden><span>Đọc tiếp</span><svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/></svg></a>
-    <div class="micro" aria-hidden="true">Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · </div>
+    <div class="ticker" role="region" aria-label="Xu hướng tìm kiếm 24 giờ qua">
+      <span class="tk-label"><i aria-hidden="true"></i>Xu hướng 24h</span>
+      <div class="tk-viewport"><div class="tk-track" id="tk-track">
+        <span class="tk-run">
+<span class="tk-group">🇻🇳 Việt Nam</span><a href="https://bongdaplus.vn/ngoai-hang-anh/nhan-dinh-bong-da-tottenham-vs-ipswich-22h00-ngay-21-11-ga-trong-gay-vang-5294662611.html" target="_blank" rel="noopener noreferrer">Tottenham đấu với ipswich town <small>2000+</small></a><a href="https://www.bbc.com/sport/football/live/ck3r530w3vd3t" target="_blank" rel="noopener noreferrer">Man city vs fulham f.c. standings <small>1000+</small></a><a href="https://baonghean.vn/nhan-dinh-rayo-vallecano-vs-valencia-cuoc-doi-dau-kho-phan-dinh-10356325.html" target="_blank" rel="noopener noreferrer">Rayo đấu với valencia <small>500+</small></a><a href="https://bongdaplus.vn/serie-a/nhan-dinh-bong-da-como-vs-cagliari-21h00-ngay-21-11-thang-hoa-cung-fabregas-5294462611.html" target="_blank" rel="noopener noreferrer">Como vs <small>200+</small></a><a href="https://www.bbc.com/sport/football/live/cq98xlj88p30t" target="_blank" rel="noopener noreferrer">West ham đấu với preston <small>200+</small></a><a href="https://www.gazzetta.it/Calcio/Serie-A/21-11-2026/lazio-lecce-live-risultato-e-gol-in-diretta-serie-a.shtml" target="_blank" rel="noopener noreferrer">Lazio <small>200+</small></a><a href="https://www.google.com/search?q=100%20days%20of%20deception%20xem%20phim" target="_blank" rel="noopener noreferrer">100 days of deception xem phim <small>200+</small></a><a href="https://www.skysports.com/football/live-blog/13610684/chelsea-vs-leeds-live-premier-league-match-updates-news-score-and-line-ups" target="_blank" rel="noopener noreferrer">Emmanuel emegha <small>200+</small></a><a href="https://www.24h.com.vn/the-thao/truc-tiep-tennis-alcaraz-shelton-thoi-co-cua-shelton-atp-finals-c101a1812943.html" target="_blank" rel="noopener noreferrer">Ben shelton <small>100+</small></a><a href="https://baonghean.vn/truc-tiep-sv-elversberg-vs-sc-freiburg-freiburg-nhinh-hon-trong-the-tran-can-bang-chua-co-ban-thang-10356321.html" target="_blank" rel="noopener noreferrer">Elversberg đấu với freiburg <small>100+</small></a><span class="tk-group">🌐 Thế giới</span><a href="https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026-1121/" target="_blank" rel="noopener noreferrer">Best tech black friday deals <small>5000+</small></a><a href="https://as.com/futbol/internacional/manchester-city-fulham-en-directo-premier-league-hoy-en-vivo-f202611-d/" target="_blank" rel="noopener noreferrer">Posiciones de manchester city contra fulham <small>2000+</small></a><a href="https://www.elmundo.es/deportes/futbol/laliga-ea-sports/rayo-valencia/2026/11/21/01_0101_20261121_184_191-directo.html" target="_blank" rel="noopener noreferrer">Rayo vallecano - valencia c. f. <small>1000+</small></a><a href="https://www.espn.com/college-football/story/_/id/50542494/malachi-toney-nearing-return-ankle-surgery-coach-says" target="_blank" rel="noopener noreferrer">Mario cristobal <small>1000+</small></a><a href="https://www.purexbox.com/news/2026/11/gta-6-players-warned-to-turn-off-auto-uploads-or-risk-getting-banned-on-xbox" target="_blank" rel="noopener noreferrer">Gta 6 xbox auto upload bans <small>1000+</small></a><a href="https://www.beyazbelgehaber.com/haber/galatasaray-spor-kulu-bu-nun-samsunspor-karsisindaki-i-lk-11-i-ve-yedekleri-aciklandi" target="_blank" rel="noopener noreferrer">Galatasaray <small>1000+</small></a><a href="https://www.bbc.com/sport/football/live/c8p3vz73331rt" target="_blank" rel="noopener noreferrer">Rayo vs valencia <small>500+</small></a><a href="https://www.bbc.com/sport/football/live/cq98xlj88p30t" target="_blank" rel="noopener noreferrer">West ham vs preston <small>500+</small></a><a href="https://www.bbc.co.uk/weather/articles/ckvg251xz51do" target="_blank" rel="noopener noreferrer">Weather warning <small>500+</small></a><a href="https://www.bostonglobe.com/2026/11/19/sports/harvard-yale-football-fenway-park/" target="_blank" rel="noopener noreferrer">Harvard yale game <small>200+</small></a><a href="https://www.forbes.com/sites/paultassi/2026/11/21/grand-theft-auto-6-is-being-review-bombed-on-metacritic/" target="_blank" rel="noopener noreferrer">Gta 6 review score discrepancy <small>200+</small></a><a href="https://sports.yahoo.com/articles/emmanuel-emegha-issues-chelsea-warning-130239821.html" target="_blank" rel="noopener noreferrer">Emmanuel emegha <small>200+</small></a><a href="https://www.bbc.co.uk/sport/football/live/cqlyjk5yyerrt" target="_blank" rel="noopener noreferrer">Notts county vs stevenage <small>200+</small></a><a href="https://www.bbc.co.uk/sport/football/live/cv1j60ejjy46t" target="_blank" rel="noopener noreferrer">Oldham athletic vs exeter city <small>200+</small></a><a href="https://www.bbc.co.uk/sport/football/live/cr2klx9kk308t" target="_blank" rel="noopener noreferrer">Mansfield town vs mk dons <small>200+</small></a><span class="tk-group tk-upd">Google Trends · 22:12</span>        </span>
+      </div></div>
+    </div>
   </div>
 </header>
 <div class="perf top" aria-hidden="true"></div>
@@ -1096,6 +1122,18 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 
 <script>
 (function(){
+  /* Dòng chữ chạy: nhân đôi nội dung để lặp liền mạch, tốc độ ~55px/giây cho dễ đọc */
+  (function(){
+    var tr=document.getElementById('tk-track'); if(!tr) return;
+    var tk=tr.closest('.ticker');
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var run=tr.querySelector('.tk-run'), copy=run.cloneNode(true);
+    copy.setAttribute('aria-hidden','true'); copy.querySelectorAll('a').forEach(function(a){a.tabIndex=-1;});
+    tr.appendChild(copy);
+    tk.style.setProperty('--tk-dur',Math.max(20,Math.round(run.offsetWidth/55))+'s');
+    tk.classList.add('run');
+    tk.addEventListener('touchstart',function(){tk.classList.toggle('paused');},{passive:true});
+  })();
   var root=document.documentElement, th=document.getElementById('theme');
   var vbs=document.querySelectorAll('.views button');
   function markView(){var v=root.getAttribute('data-view');vbs.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-v')===v?'true':'false');});}

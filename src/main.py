@@ -16,6 +16,7 @@ from .news import (add_to_history, fill_missing_images, candidates_for_layer, co
 from .renderer import render
 from .extras import air_advice, fetch_air, fetch_tide, uv_level
 from .rerender import save_snapshot
+from .trends import for_page, update as update_trends
 from .weather import fetch_weather, weather_severity
 
 log = logging.getLogger("daily-briefing")
@@ -170,6 +171,11 @@ def run() -> int:
         "year": local.strftime("%Y"),
         "date_compact": local.strftime("%Y%m%d"),
     }
+    try:
+        context["trends"] = for_page(update_trends())
+    except Exception as e:  # noqa: BLE001
+        log.warning("Google Trends lỗi: %s", type(e).__name__)
+        context["trends"] = {"vn": [], "world": [], "updated": ""}
     render(context)
     save_snapshot(context)
     write_summary(build_summary(context, local), SUMMARY_PATH)
