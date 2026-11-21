@@ -69,8 +69,9 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .wx p{margin:0;font-size:12px;line-height:1.35}
 .wx .na{font:600 14px var(--cond);color:var(--field-muted)}
 .stub-row.loc{margin-bottom:6px}
-.advice{margin:0;padding:0;list-style:none;font-weight:600;font-size:14px;line-height:1.45}
-.advice li+li{margin-top:2px}
+.advice{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.advice li{background:var(--field);color:var(--stub-ink);border:2px solid var(--stub-ink);border-left:8px solid var(--serial);padding:7px 12px 9px;font:600 17px/1.4 var(--read)}
+.advice li::before{content:"Nhắc nhở";display:block;margin-bottom:1px;font:800 12px/1.2 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--serial)}
 .resume{display:inline-block;margin-top:10px;font:800 15px var(--cond);letter-spacing:.06em;text-transform:uppercase;background:var(--stub-ink);color:var(--stub);padding:5px 10px;text-decoration:none}
 .resume[hidden]{display:none}
 .ic{width:.72em;height:.72em;fill:currentColor;margin-left:.3em;vertical-align:.02em}
@@ -165,35 +166,29 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 
 <header class="stub" id="thoi-tiet">
 <svg class="guilloche" aria-hidden="true" focusable="false"><defs><pattern id="gp-top" width="72" height="44" patternUnits="userSpaceOnUse"><path d="M0.0 22.00L2.0 24.95L4.0 27.81L6.0 30.50L8.0 32.93L10.0 35.02L12.0 36.72L14.0 37.97L16.0 38.74L18.0 39.00L20.0 38.74L22.0 37.97L24.0 36.72L26.0 35.02L28.0 32.93L30.0 30.50L32.0 27.81L34.0 24.95L36.0 22.00L38.0 19.05L40.0 16.19L42.0 13.50L44.0 11.07L46.0 8.98L48.0 7.28L50.0 6.03L52.0 5.26L54.0 5.00L56.0 5.26L58.0 6.03L60.0 7.28L62.0 8.98L64.0 11.07L66.0 13.50L68.0 16.19L70.0 19.05L72.0 22.00"/><path d="M0.0 22.00L2.0 19.05L4.0 16.19L6.0 13.50L8.0 11.07L10.0 8.98L12.0 7.28L14.0 6.03L16.0 5.26L18.0 5.00L20.0 5.26L22.0 6.03L24.0 7.28L26.0 8.98L28.0 11.07L30.0 13.50L32.0 16.19L34.0 19.05L36.0 22.00L38.0 24.95L40.0 27.81L42.0 30.50L44.0 32.93L46.0 35.02L48.0 36.72L50.0 37.97L52.0 38.74L54.0 39.00L56.0 38.74L58.0 37.97L60.0 36.72L62.0 35.02L64.0 32.93L66.0 30.50L68.0 27.81L70.0 24.95L72.0 22.00"/><path d="M0.0 34.02L2.0 35.93L4.0 37.41L6.0 38.42L8.0 38.94L10.0 38.94L12.0 38.42L14.0 37.41L16.0 35.93L18.0 34.02L20.0 31.75L22.0 29.18L24.0 26.40L26.0 23.48L28.0 20.52L30.0 17.60L32.0 14.82L34.0 12.25L36.0 9.98L38.0 8.07L40.0 6.59L42.0 5.58L44.0 5.06L46.0 5.06L48.0 5.58L50.0 6.59L52.0 8.07L54.0 9.98L56.0 12.25L58.0 14.82L60.0 17.60L62.0 20.52L64.0 23.48L66.0 26.40L68.0 29.18L70.0 31.75L72.0 34.02"/><path d="M0.0 9.98L2.0 8.07L4.0 6.59L6.0 5.58L8.0 5.06L10.0 5.06L12.0 5.58L14.0 6.59L16.0 8.07L18.0 9.98L20.0 12.25L22.0 14.82L24.0 17.60L26.0 20.52L28.0 23.48L30.0 26.40L32.0 29.18L34.0 31.75L36.0 34.02L38.0 35.93L40.0 37.41L42.0 38.42L44.0 38.94L46.0 38.94L48.0 38.42L50.0 37.41L52.0 35.93L54.0 34.02L56.0 31.75L58.0 29.18L60.0 26.40L62.0 23.48L64.0 20.52L66.0 17.60L68.0 14.82L70.0 12.25L72.0 9.98"/><path d="M0.0 39.00L2.0 38.74L4.0 37.97L6.0 36.72L8.0 35.02L10.0 32.93L12.0 30.50L14.0 27.81L16.0 24.95L18.0 22.00L20.0 19.05L22.0 16.19L24.0 13.50L26.0 11.07L28.0 8.98L30.0 7.28L32.0 6.03L34.0 5.26L36.0 5.00L38.0 5.26L40.0 6.03L42.0 7.28L44.0 8.98L46.0 11.07L48.0 13.50L50.0 16.19L52.0 19.05L54.0 22.00L56.0 24.95L58.0 27.81L60.0 30.50L62.0 32.93L64.0 35.02L66.0 36.72L68.0 37.97L70.0 38.74L72.0 39.00"/><path d="M0.0 5.00L2.0 5.26L4.0 6.03L6.0 7.28L8.0 8.98L10.0 11.07L12.0 13.50L14.0 16.19L16.0 19.05L18.0 22.00L20.0 24.95L22.0 27.81L24.0 30.50L26.0 32.93L28.0 35.02L30.0 36.72L32.0 37.97L34.0 38.74L36.0 39.00L38.0 38.74L40.0 37.97L42.0 36.72L44.0 35.02L46.0 32.93L48.0 30.50L50.0 27.81L52.0 24.95L54.0 22.00L56.0 19.05L58.0 16.19L60.0 13.50L62.0 11.07L64.0 8.98L66.0 7.28L68.0 6.03L70.0 5.26L72.0 5.00"/><path d="M0.0 34.02L2.0 31.75L4.0 29.18L6.0 26.40L8.0 23.48L10.0 20.52L12.0 17.60L14.0 14.82L16.0 12.25L18.0 9.98L20.0 8.07L22.0 6.59L24.0 5.58L26.0 5.06L28.0 5.06L30.0 5.58L32.0 6.59L34.0 8.07L36.0 9.98L38.0 12.25L40.0 14.82L42.0 17.60L44.0 20.52L46.0 23.48L48.0 26.40L50.0 29.18L52.0 31.75L54.0 34.02L56.0 35.93L58.0 37.41L60.0 38.42L62.0 38.94L64.0 38.94L66.0 38.42L68.0 37.41L70.0 35.93L72.0 34.02"/><path d="M0.0 9.98L2.0 12.25L4.0 14.82L6.0 17.60L8.0 20.52L10.0 23.48L12.0 26.40L14.0 29.18L16.0 31.75L18.0 34.02L20.0 35.93L22.0 37.41L24.0 38.42L26.0 38.94L28.0 38.94L30.0 38.42L32.0 37.41L34.0 35.93L36.0 34.02L38.0 31.75L40.0 29.18L42.0 26.40L44.0 23.48L46.0 20.52L48.0 17.60L50.0 14.82L52.0 12.25L54.0 9.98L56.0 8.07L58.0 6.59L60.0 5.58L62.0 5.06L64.0 5.06L66.0 5.58L68.0 6.59L70.0 8.07L72.0 9.98"/></pattern></defs><rect width="100%" height="100%" fill="url(#gp-top)"/></svg>  <div class="wrap">
-    <div class="stub-row"><h1>Bản tin sáng</h1><span>Cập nhật 19:33</span></div>
+    <div class="stub-row"><h1>Bản tin sáng</h1><span>Cập nhật 19:37</span></div>
     <div class="ticket">
-      <div class="serial" aria-label="Thứ Bảy, 21/11/2026"><b>21·11</b><span>Thứ Bảy<small>2026 · 38 tin</small></span></div>
+      <div class="serial" aria-label="Thứ Bảy, 21/11/2026"><b>21·11</b><span>Thứ Bảy<small>2026 · 35 tin</small></span></div>
       <section class="wx" aria-label="Thời tiết TP.HCM (Bình Chánh &amp; Nội thành)">
         <div>
           <h2>Sáng</h2>
           <p class="hrs">07:00–09:00</p>
-          <div class="t">26–29°</div>
-          <p>Nhiều mây, u ám</p>
-          <p>Mưa&nbsp;0%</p>
-<p>UV&nbsp;3,6</p>        </div>
+          <p class="na">Chưa có dữ liệu</p>
+        </div>
         <div>
           <h2>Trưa</h2>
           <p class="hrs">11:00–14:00</p>
-          <div class="t">31–32°</div>
-          <p>Mưa phùn nhẹ</p>
-          <p>Mưa&nbsp;11%<br>0,1&nbsp;mm</p>
-<p>UV&nbsp;7,5</p>        </div>
+          <p class="na">Chưa có dữ liệu</p>
+        </div>
         <div>
           <h2>Chiều tối</h2>
           <p class="hrs">17:00–20:00</p>
-          <div class="t">28–31°</div>
-          <p>Nhiều mây, u ám</p>
-          <p>Mưa&nbsp;19%</p>
+          <p class="na">Chưa có dữ liệu</p>
         </div>
       </section>
     </div>
     <div class="stub-row loc"><span>TP.HCM (Bình Chánh &amp; Nội thành)</span></div>
-    <ul class="advice"><li>Nên mặc áo khoác chống nắng (UV tới 7,5).</li></ul>
+    <ul class="advice"><li>Chưa có dữ liệu thời tiết</li></ul>
     <a class="resume" id="resume" href="#" hidden><span>Đọc tiếp</span><svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/></svg></a>
     <div class="micro" aria-hidden="true">Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · </div>
   </div>
@@ -218,14 +213,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-01" data-num="1">
         <div class="no" aria-hidden="true">01</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Tên lửa Nga rơi xuống Ba Lan gây căng thẳng</h4>
-          <p class="sum">Tên lửa Nga rơi vào lãnh thổ Ba Lan giữa lúc châu Âu tập trận, khiến NATO tuyên bố đây là hành vi vi phạm.</p>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Iran nêu điều kiện đàm phán hạt nhân với Mỹ</h4>
+          <p class="sum">Iran yêu cầu Mỹ chấm dứt xung đột và dỡ bỏ phong tỏa đường biển trước khi tái đàm phán hạt nhân.</p>
           <details>
-            <summary><span class="src">AP News</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Sự việc xảy ra khi các cuộc tập trận quân sự của châu Âu đang diễn ra gần đó. NATO đã chính thức lên tiếng gọi đây là hành vi vi phạm chủ quyền.</dd></div><div><dt>Bối cảnh</dt><dd>Căng thẳng an ninh giữa Nga và phương Tây liên tục leo thang kể từ khi chiến sự tại Ukraine bùng nổ.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Sự cố có nguy cơ châm ngòi đối đầu trực tiếp giữa NATO và Nga, đe dọa nghiêm trọng an ninh toàn cầu.</dd></div>              </dl>
-              <a class="orig" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQNXhFLWVHeVA2TTIyRTRBRklRM29NQlpLTkNSbkdUYlNWVTNLek1BNG52cDFJRjNNVGNxNW04V3RDTEJPNGtDZ1R6WXE5TVV3SDJhQkFDRVFEMXZaTF92aWhZdS1xS1A0QnR2dE9selFRNGJYclZkRmdKUlJrWjB3VGxzTFE3aVBjYWJCUXhsM0Q1Sk5qR1U3TFlIekxkUE43MUNNenk2bw?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại AP News<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Phía Iran tuyên bố chỉ thương lượng khi xung đột với Mỹ chấm dứt và các lệnh phong tỏa đường biển được dỡ bỏ. Dù vậy, Tehran vẫn để ngỏ khả năng giải quyết các bất đồng tồn tại.</dd></div><div><dt>Bối cảnh</dt><dd>Căng thẳng khu vực Trung Đông tiếp tục diễn biến phức tạp liên quan đến chương trình hạt nhân của Iran và các đòn cấm vận từ Mỹ.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Các biến động an ninh tại Trung Đông có nguy cơ ảnh hưởng trực tiếp đến thị trường dầu mỏ thế giới và chuỗi cung ứng của Việt Nam.</dd></div>              </dl>
+              <a class="orig" href="https://www.vietnamplus.vn/xung-dot-tai-trung-dong-iran-neu-dieu-kien-noi-lai-dam-phan-hat-nhan-voi-my-post1149882.vnp" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VietnamPlus<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -233,14 +228,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-02" data-num="2">
         <div class="no" aria-hidden="true">02</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Iran nêu điều kiện đàm phán hạt nhân với Mỹ</h4>
-          <p class="sum">Iran tuyên bố chỉ đàm phán hạt nhân khi Mỹ chấm dứt xung đột và dỡ bỏ lệnh phong tỏa đường biển.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Anh và EU đạt thỏa thuận mới về thương mại và đi…</h4>
+          <p class="sum">Anh và Liên minh châu Âu vừa thống nhất các thỏa thuận then chốt nhằm hàn gắn quan hệ hậu Brexit.</p>
           <details>
-            <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">AP News</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Tehran khẳng định để ngỏ khả năng đối thoại nếu các điều kiện tiên quyết về quân sự và hàng hải được đáp ứng đầy đủ.</dd></div><div><dt>Bối cảnh</dt><dd>Quan hệ giữa Washington và Tehran tiếp tục căng thẳng sâu sắc xung quanh thỏa thuận hạt nhân và các động thái phong tỏa vùng Vịnh.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Bất kỳ biến động nào tại eo biển Hormuz đều có thể ảnh hưởng tức thì đến giá dầu và an ninh năng lượng thế giới.</dd></div>              </dl>
-              <a class="orig" href="https://www.vietnamplus.vn/xung-dot-tai-trung-dong-iran-neu-dieu-kien-noi-lai-dam-phan-hat-nhan-voi-my-post1149882.vnp" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VietnamPlus<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>London và Brussels đã cam kết tái thiết quan hệ thông qua các thỏa thuận quan trọng về giao thương và đi lại. Đôi bên nỗ lực cải thiện hợp tác bất chấp một số vướng mắc tồn đọng về chi phí học tập của sinh viên.</dd></div><div><dt>Bối cảnh</dt><dd>Kể từ khi rời khỏi EU, Anh gặp nhiều khó khăn trong việc điều hòa dòng chảy hàng hóa và đi lại với các nước thành viên khối.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Sự ổn định trong quan hệ giữa Anh và EU tạo điều kiện thuận lợi hơn cho hoạt động xuất nhập khẩu của các doanh nghiệp Việt Nam vào hai thị trường lớn này.</dd></div>              </dl>
+              <a class="orig" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQaW9ETGFMaFhwLXBycnlkTXVlQmlReW5NSGdqVmNhbkVoeGZ3aEJ3cWlwdWZTb19QVVFGMTRJYkVUTHdrRHFtQjh0T05fRTVIUlE4RTdlUm03LVZGWEhBay1uU256NlUyRzZuLTZERExLb01lMHlSY1FDTHJETXVULVp1d0pnN3pvRmRpRTUxN3hNUW5peHlFM1Q4R3p6ekYyUF8tQUZhcw?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại AP News<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -248,14 +243,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-03" data-num="3">
         <div class="no" aria-hidden="true">03</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Anh và EU đạt thỏa thuận hậu Brexit</h4>
-          <p class="sum">Anh và Liên minh châu Âu nhất trí các thỏa thuận về thương mại và đi lại nhằm tái thiết quan hệ song phương.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Hội nghị khí hậu COP31 bế tắc quanh nhiên liệu hóa thạch</h4>
+          <p class="sum">Đại diện gần 200 quốc gia chưa thể đạt thỏa thuận chung tại COP31 do bất đồng gay gắt về nhiên liệu hóa thạch.</p>
           <details>
-            <summary><span class="src">AP News</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Hai bên đạt bước tiến mới trong hợp tác kinh tế và xuất nhập cảnh, cam kết nối lại quan hệ chặt chẽ hơn sau thời gian dài bất đồng.</dd></div><div><dt>Bối cảnh</dt><dd>Kể từ khi rời EU, Anh đã trải qua nhiều vướng mắc pháp lý và rào cản thương mại kéo dài với khối liên minh.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Thỏa thuận giúp giảm bớt rào cản kiểm soát biên giới, tạo điều kiện thuận lợi hơn cho chuỗi cung ứng và đầu tư tại châu Âu.</dd></div>              </dl>
-              <a class="orig" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQaW9ETGFMaFhwLXBycnlkTXVlQmlReW5NSGdqVmNhbkVoeGZ3aEJ3cWlwdWZTb19QVVFGMTRJYkVUTHdrRHFtQjh0T05fRTVIUlE4RTdlUm03LVZGWEhBay1uU256NlUyRzZuLTZERExLb01lMHlSY1FDTHJETXVULVp1d0pnN3pvRmRpRTUxN3hNUW5peHlFM1Q4R3p6ekYyUF8tQUZhcw?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại AP News<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Hội nghị COP31 phải kéo dài sang thời gian hiệp phụ vì các nước rơi vào bế tắc khi đàm phán thỏa thuận khí hậu toàn cầu mới. Bản dự thảo vấp phải làn sóng chỉ trích mạnh mẽ do không đề cập rõ ràng việc loại bỏ nhiên liệu hóa thạch.</dd></div><div><dt>Bối cảnh</dt><dd>Các kỳ hội nghị thượng đỉnh khí hậu của Liên Hợp Quốc liên tục chứng kiến mâu thuẫn giữa cam kết bảo vệ môi trường và lợi ích kinh tế năng lượng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Kết quả đàm phán COP31 định hình các cam kết tài chính và quy chuẩn quốc tế mà các nước đang chuyển đổi xanh như Việt Nam phải tuân thủ.</dd></div>              </dl>
+              <a class="orig" href="https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại BBC<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -263,14 +258,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-04" data-num="4">
         <div class="no" aria-hidden="true">04</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Hội nghị COP bế tắc vì nhiên liệu hóa thạch</h4>
-          <p class="sum">Gần 200 quốc gia chưa thể đạt thỏa thuận khí hậu toàn cầu mới do bất đồng gay gắt về nhiên liệu hóa thạch.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Đan Mạch cáo buộc Nga lên kế hoạch ám sát trên lãnh…</h4>
+          <p class="sum">Đan Mạch đã trục xuất tùy viên quốc phòng Nga sau cáo buộc Moscow âm mưu ám sát một ca sĩ rap gốc Ukraine.</p>
           <details>
             <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Các cuộc đàm phán khí hậu COP31 phải bước vào thời gian làm việc bổ sung do các bên tranh cãi gay gắt về lộ trình cắt giảm phát thải.</dd></div><div><dt>Bối cảnh</dt><dd>Nhiều tổ chức và đại diện quốc gia chỉ trích gay gắt bản dự thảo mới nhất vì không đề cập trực tiếp đến việc loại bỏ nhiên liệu hóa thạch.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Kết quả đàm phán sẽ định hình chính sách tài chính khí hậu và lộ trình chuyển dịch năng lượng của các quốc gia đang phát triển như Việt Nam.</dd></div>              </dl>
-              <a class="orig" href="https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại BBC<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Đan Mạch tố cáo phía Nga lên kế hoạch ám sát một nghệ sĩ mang hai quốc tịch Mỹ và Ukraine. Vụ việc dẫn đến quyết định trục xuất tùy viên quốc phòng Nga tại Copenhagen, dù Đại sứ quán Nga đã lên tiếng bác bỏ.</dd></div><div><dt>Bối cảnh</dt><dd>Quan hệ giữa Nga và các nước châu Âu leo thang căng thẳng kể từ khi bùng phát xung đột tại Ukraine.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Cáo buộc làm sâu sắc thêm rạn nứt ngoại giao giữa phương Tây và Moscow, gia tăng rủi ro đối đầu an ninh trên lục địa châu Âu.</dd></div>              </dl>
+              <a class="orig" href="https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại BBC<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -323,8 +318,8 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
             </tr>
             <tr>
               <th scope="row">Bitcoin (USD)<small>Phiên 21/11</small></th>
-              <td>58.424</td>
-              <td class="chg down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 9L1 1h8z"/></svg>−0,64%</td>
+              <td>58.778</td>
+              <td class="chg down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 9L1 1h8z"/></svg>−0,04%</td>
             </tr>
             <tr><th scope="row">Vàng SJC</th><td colspan="2"><a href="https://sjc.com.vn/gia-vang-online" target="_blank" rel="noopener noreferrer">Xem giá tại SJC<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a></td></tr>
           </tbody>
@@ -333,14 +328,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-05" data-num="5">
         <div class="no" aria-hidden="true">05</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Ông Trump dọa đánh thuế trung tâm AI ngoại</h4>
-          <p class="sum">Tổng thống Donald Trump đe dọa áp thuế rất nặng với các doanh nghiệp Mỹ xây dựng trung tâm dữ liệu AI ở nước ngoài.</p>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Làn sóng bán tháo cổ phiếu công nghệ nhấn chìm Phố Wall</h4>
+          <p class="sum">Các chỉ số S&amp;P 500 và Dow Jones rơi vào vùng điều chỉnh khi cổ phiếu công nghệ và AI đồng loạt lao dốc.</p>
           <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Ông Trump cảnh báo trừng phạt các công ty công nghệ trong nước mang cơ sở hạ tầng trí tuệ nhân tạo ra ngoài lãnh thổ Mỹ.</dd></div><div><dt>Bối cảnh</dt><dd>Cơn sốt AI bùng nổ dẫn đến nhu cầu khổng lồ về trung tâm dữ liệu, khiến các hãng công nghệ Mỹ đẩy mạnh tìm kiếm địa điểm đặt máy chủ toàn cầu.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chính sách này có thể làm thay đổi dòng vốn đầu tư hạ tầng công nghệ và trung tâm dữ liệu đổ vào khu vực châu Á.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/ong-trump-doa-danh-thue-doanh-nghiep-xay-trung-tam-du-lieu-o-nuoc-ngoai-5147345.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Cổ phiếu công nghệ bị xả mạnh, trong đó cổ phiếu Anthropic giảm sâu khiến thị trường chứng khoán Mỹ chao đảo. S&amp;P 500 sụt 3,7% và đứng trước chuỗi ngày giảm điểm dài nhất trong nhiều năm.</dd></div><div><dt>Bối cảnh</dt><dd>Cơn sốt cổ phiếu trí tuệ nhân tạo toàn cầu đang chịu đợt tái định giá gắt gao sau chuỗi tăng nóng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Biến động mạnh tại Phố Wall có thể lan sang thị trường chứng khoán châu Á và tác động đến tâm lý nhà đầu tư tại Việt Nam.</dd></div>              </dl>
+              <a class="orig" href="https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại BBC<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -348,14 +343,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-06" data-num="6">
         <div class="no" aria-hidden="true">06</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Phố Wall lao dốc vì cổ phiếu công nghệ</h4>
-          <p class="sum">Chỉ số S&amp;P 500 giảm 3,7% trong khi Nasdaq xóa sạch mức tăng cả năm do làn sóng bán tháo công nghệ.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Bitcoin rơi xuống mức thấp nhất trong hơn hai năm</h4>
+          <p class="sum">Giá Bitcoin chịu áp lực bán tháo mạnh, có thời điểm lùi về sát mốc 55.000 USD do thị trường tài chính chao đảo.</p>
           <details>
-            <summary><span class="src">AP News</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Thị trường chứng khoán Mỹ ghi nhận phiên lao dốc sâu khi các mã cổ phiếu công nghệ và trí tuệ nhân tạo bị bán tháo trên diện rộng.</dd></div><div><dt>Bối cảnh</dt><dd>Cổ phiếu các công ty AI đối mặt áp lực chốt lời và điều tra quy định, kéo theo chuỗi ngày giảm điểm dài nhất của chỉ số S&amp;P 500.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Đà bán tháo tại thị trường Mỹ thường kích hoạt tâm lý thận trọng và ảnh hưởng tiêu cực tới dòng vốn trên thị trường chứng khoán toàn cầu.</dd></div>              </dl>
-              <a class="orig" href="https://news.google.com/rss/articles/CBMingFBVV95cUxQY09GMmxTYlpRMnQ3YVJ4Q3BUdmg3NEFJWG5lVlh4TC0zZGxxZVcydTkwSkpiZUZfS3BXdlRab05HSW5TS0h5TDY5NFRKajBDSWdFbUdhNFIxMzUxc3pLRnEtMXVNblBwZmgteFlUWVhuS0lRU3diRGpWQnkyeWtDMGJiS3hzd2xCdUtDVHIxc0hOWGkwTHdPZ1FfenUwQQ?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại AP News<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Lợi suất trái phiếu chính phủ Mỹ gia tăng đã gây sức ép lớn lên các loại tài sản rủi ro, khiến thị trường tiền số lao dốc. Bitcoin rơi xuống vùng giá thấp nhất trong hơn hai năm qua trong bối cảnh các thị trường tài chính đồng loạt thoái vốn.</dd></div><div><dt>Bối cảnh</dt><dd>Tâm lý thận trọng của giới đầu tư toàn cầu đang khiến dòng tiền rút khỏi các tài sản có tính đầu cơ cao.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Sự sụt giảm giá trị tiền mã hóa phản ánh xu hướng siết chặt thanh khoản toàn cầu, tạo cảnh báo cho giới đầu tư tài sản số.</dd></div>              </dl>
+              <a class="orig" href="https://vnexpress.net/bitcoin-giam-xuong-muc-thap-nhat-trong-hon-2-nam-5147439.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -363,14 +358,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-07" data-num="7">
         <div class="no" aria-hidden="true">07</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Bitcoin giảm xuống đáy trong hơn hai năm</h4>
-          <p class="sum">Đồng tiền số Bitcoin rơi về gần mốc 55.000 USD do áp lực từ đà tăng của trái phiếu chính phủ Mỹ.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Giá gạo xuất khẩu Ấn Độ và Thái Lan chạm đỉnh nhiều…</h4>
+          <p class="sum">Giá gạo từ Ấn Độ và Thái Lan tăng cao kỷ lục trong khi giá gạo xuất khẩu Việt Nam lại có xu hướng hạ…</p>
           <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Làn sóng bán tháo tài sản rủi ro đã kéo giá Bitcoin sụt giảm mạnh xuống mức thấp nhất trong hơn hai năm qua.</dd></div><div><dt>Bối cảnh</dt><dd>Lợi suất trái phiếu chính phủ Mỹ mạnh lên đang làm suy yếu sức hấp dẫn của các kênh đầu tư mang tính đầu cơ cao.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Biến động mạnh của Bitcoin phản ánh sự dịch chuyển vốn sang các tài sản trú ẩn an toàn, tác động đến thanh khoản tài chính quốc tế.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/bitcoin-giam-xuong-muc-thap-nhat-trong-hon-2-nam-5147439.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Giá gạo xuất khẩu của Ấn Độ và Thái Lan vọt lên mức cao nhất nhiều tháng qua, thể hiện sự phân hóa rõ rệt với giá gạo Việt Nam. Trong khi đó, giá các nông sản khác như đậu tương và ngô giảm do áp lực từ đồng USD mạnh.</dd></div><div><dt>Bối cảnh</dt><dd>Thị trường lương thực toàn cầu đối mặt nhiều biến động về nguồn cung và chính sách điều tiết của các nước sản xuất lớn.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Biến động giá gạo khu vực ảnh hưởng trực tiếp đến hợp đồng thương mại và năng lực cạnh tranh của ngành xuất khẩu gạo Việt Nam.</dd></div>              </dl>
+              <a class="orig" href="https://www.vietnamplus.vn/gia-gao-an-do-va-thai-lan-cham-dinh-nhieu-thang-post1149871.vnp" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VietnamPlus<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -378,14 +373,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-08" data-num="8">
         <div class="no" aria-hidden="true">08</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Giá gạo xuất khẩu châu Á tăng kỷ lục</h4>
-          <p class="sum">Giá gạo xuất khẩu của Ấn Độ và Thái Lan chạm đỉnh nhiều tháng, trái ngược với xu hướng hạ nhiệt tại Việt Nam.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Trump dọa phạt doanh nghiệp Mỹ xây trung tâm AI hải ngoại</h4>
+          <p class="sum">Tổng thống Mỹ đề xuất cấm hoặc phạt các công ty nội địa xây dựng hạ tầng trung tâm dữ liệu AI tại nước ngoài.</p>
           <details>
-            <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Trong khi giá gạo Ấn Độ và Thái Lan tăng vọt, giá đậu tương và ngô lại đồng loạt giảm do đồng USD mạnh lên.</dd></div><div><dt>Bối cảnh</dt><dd>Thị trường nông sản thế giới đang phân hóa mạnh dưới tác động của chính sách thương mại và diễn biến tỷ giá.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Biến động giá gạo khu vực ảnh hưởng trực tiếp đến chiến lược đàm phán hợp đồng và doanh thu của các doanh nghiệp xuất khẩu gạo Việt Nam.</dd></div>              </dl>
-              <a class="orig" href="https://www.vietnamplus.vn/gia-gao-an-do-va-thai-lan-cham-dinh-nhieu-thang-post1149871.vnp" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VietnamPlus<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Ông Trump tuyên bố ý định ngăn chặn các doanh nghiệp Mỹ đầu tư trung tâm dữ liệu AI ở nước ngoài để bảo đảm ưu thế công nghệ nội địa. Tuyên bố này gây nhiều chú ý nhưng chưa có chi tiết cụ thể về mặt chính sách triển khai.</dd></div><div><dt>Bối cảnh</dt><dd>Cuộc đua năng lực tính toán và công nghệ bán dẫn đang trở thành trọng tâm cạnh tranh kinh tế giữa các cường quốc.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chính sách hạn chế đầu tư hạ tầng dữ liệu của Mỹ có thể ảnh hưởng đến làn sóng thu hút vốn công nghệ cao của Việt Nam.</dd></div>              </dl>
+              <a class="orig" href="https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại BBC<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -396,14 +391,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-09" data-num="9">
         <div class="no" aria-hidden="true">09</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Quốc hội đặt mục tiêu tăng trưởng GDP hai số</h4>
-          <p class="sum">Quốc hội thông qua 38 luật và đặt mục tiêu phấn đấu tăng trưởng GDP từ 10% trở lên cho năm 2027.</p>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Bế mạc Kỳ họp thứ 2 Quốc hội khóa XVI</h4>
+          <p class="sum">Quốc hội khóa XVI hoàn thành chương trình kỳ họp sau khi thông qua hàng loạt luật và nghị quyết quan trọng.</p>
           <details>
-            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Kỳ họp thứ 2 Quốc hội khóa XVI bế mạc sau khi biểu quyết thông qua 38 luật cùng 5 nghị quyết quy phạm pháp luật quan trọng.</dd></div><div><dt>Bối cảnh</dt><dd>Nền kinh tế ghi nhận mức tăng trưởng GDP 9 tháng đạt 9,01%, tạo tiền đề để Quốc hội đặt ra các mục tiêu phát triển đột phá.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Hàng loạt đạo luật mới được ban hành sẽ tạo khuôn khổ pháp lý đồng bộ, thúc đẩy mạnh mẽ tăng trưởng kinh tế và xã hội đất nước.</dd></div>              </dl>
-              <a class="orig" href="https://tuoitre.vn/quoc-hoi-thong-qua-38-luat-dat-muc-tieu-tang-truong-gdp-nam-2027-dat-tu-10-tro-len-100261121161036949.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Tại ngày làm việc cuối cùng 21/11, Quốc hội đã biểu quyết thông qua nhiều dự án luật và nghị quyết thiết yếu trên nhiều lĩnh vực. Khối lượng công việc lập pháp tại kỳ họp được đánh giá là rất lớn và hoàn thành vượt tiến độ đề ra.</dd></div><div><dt>Bối cảnh</dt><dd>Kỳ họp diễn ra khi kinh tế vĩ mô 9 tháng đầu năm duy trì ổn định với tăng trưởng GDP đạt 9,01%.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Các luật mới được thông qua sẽ tạo hành lang pháp lý kịp thời thúc đẩy cải cách hành chính và phát triển kinh tế cả nước.</dd></div>              </dl>
+              <a class="orig" href="https://www.vietnamplus.vn/thong-cao-bao-chi-so-27-ky-hop-thu-2-quoc-hoi-khoa-xvi-post1149881.vnp" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VietnamPlus<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -411,14 +406,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-10" data-num="10">
         <div class="no" aria-hidden="true">10</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Chi hơn 162.000 tỷ đồng xây ba cao tốc</h4>
-          <p class="sum">Quốc hội thông qua chủ trương đầu tư ba tuyến cao tốc dài hơn 430 km kết nối Tây Bắc, Trung Bộ và Tây Nguyên.</p>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Chủ trương thành lập Khu kinh tế đặc biệt Vân Phong</h4>
+          <p class="sum">Bộ Chính trị đồng ý chủ trương thành lập Khu kinh tế đặc biệt Vân Phong với nhiều cơ chế ưu đãi tối đa.</p>
           <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Tổng mức đầu tư cho ba dự án trọng điểm đạt gần 162.400 tỷ đồng, nhằm mở rộng mạng lưới giao thông huyết mạch liên vùng.</dd></div><div><dt>Bối cảnh</dt><dd>Phát triển hạ tầng giao thông là khâu đột phá chiến lược để giải tỏa các điểm nghẽn kinh tế tại các vùng miền núi và cao nguyên.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Các tuyến cao tốc này sẽ rút ngắn thời gian vận chuyển hàng hóa, kích thích logistics và thu hút đầu tư cho các địa phương kết nối.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/hon-162-000-ty-dong-xay-ba-tuyen-cao-toc-5147392.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Bộ Chính trị đã thống nhất chủ trương thành lập Khu kinh tế đặc biệt Vân Phong tại tỉnh Khánh Hòa. Địa phương được phép áp dụng cơ chế và chính sách ưu đãi tối đa tương tự như Khu kinh tế Dung Quất.</dd></div><div><dt>Bối cảnh</dt><dd>Vân Phong có lợi thế chiến lược về cảng biển nước sâu và tiềm năng phát triển dịch vụ logistics quy mô quốc tế.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quyết định mở đường thu hút dòng vốn đầu tư lớn, tạo động lực đột phá cho kinh tế Nam Trung Bộ và kinh tế biển Việt Nam.</dd></div>              </dl>
+              <a class="orig" href="https://tuoitre.vn/bo-chinh-tri-dong-y-chu-truong-thanh-lap-khu-kinh-te-dac-biet-van-phong-100261121173802149.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -426,14 +421,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-11" data-num="11">
         <div class="no" aria-hidden="true">11</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Tạm dừng tuyển dụng công chức toàn quốc</h4>
-          <p class="sum">Các bộ ngành và địa phương tạm dừng tuyển dụng công chức trên cả nước để rà soát vị trí việc làm và biên chế.</p>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Thông qua hơn 162.000 tỷ đồng xây ba tuyến cao tốc</h4>
+          <p class="sum">Quốc hội thông qua chủ trương đầu tư ba tuyến cao tốc dài hơn 430 km kết nối Tây Bắc, Trung Bộ và Tây Nguyên.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Lệnh tạm dừng áp dụng cho tất cả cơ quan, bao gồm cả những trường hợp thí sinh đã thi tuyển nhưng chưa có quyết định tuyển dụng.</dd></div><div><dt>Bối cảnh</dt><dd>Chính phủ đang triển khai rà soát tổng thể nhằm tinh gọn bộ máy và chuẩn hóa cơ cấu biên chế trong khu vực công.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quyết định tác động trực tiếp tới kế hoạch thi tuyển của các ứng viên và công tác tuyển dụng nhân sự hành chính trên phạm vi cả nước.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/tam-dung-tuyen-dung-cong-chuc-tren-toan-quoc-5147400.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Quốc hội đã phê chuẩn chủ trương đầu tư ba dự án đường bộ cao tốc với tổng chiều dài hơn 430 km và tổng vốn đầu tư gần 162.400 tỷ đồng. Dự án nhằm tháo gỡ điểm nghẽn giao thông và tăng cường liên kết giữa các vùng kinh tế trọng điểm.</dd></div><div><dt>Bối cảnh</dt><dd>Hạ tầng giao thông tiếp tục là lĩnh vực được ưu tiên phân bổ nguồn vốn lớn trong kế hoạch đầu tư công trung hạn.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Các tuyến cao tốc khi hoàn thành sẽ rút ngắn thời gian lưu thông hàng hóa, thúc đẩy du lịch và giao thương liên vùng.</dd></div>              </dl>
+              <a class="orig" href="https://vnexpress.net/hon-162-000-ty-dong-xay-ba-tuyen-cao-toc-5147392.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -441,14 +436,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-12" data-num="12">
         <div class="no" aria-hidden="true">12</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Cấm thu tiền giữ chỗ mua nhà tương lai</h4>
-          <p class="sum">Luật mới quy định chủ đầu tư không được phép thu tiền đặt cọc giữ chỗ trước khi dự án đủ điều kiện bán.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Tạm dừng tuyển dụng công chức trên phạm vi cả nước</h4>
+          <p class="sum">Các cơ quan nhà nước tạm dừng thi tuyển công chức để rà soát lại vị trí việc làm và chỉ tiêu biên chế.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Chủ đầu tư bị nghiêm cấm thu tiền dưới mọi hình thức nhằm bảo đảm ký hợp đồng khi bất động sản chưa được phép kinh doanh.</dd></div><div><dt>Bối cảnh</dt><dd>Thị trường bất động sản từng chứng kiến nhiều rủi ro và tranh chấp khi doanh nghiệp lách luật huy động vốn dưới dạng hợp đồng giữ chỗ.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quy định mang tính bước ngoặt này giúp bảo vệ quyền lợi người mua nhà và ngăn ngừa nguy cơ gian lận, chiếm dụng vốn dự án.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/cam-thu-tien-giu-cho-mua-nha-hinh-thanh-trong-tuong-lai-5147383.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Bộ, ngành và địa phương được yêu cầu tạm dừng tuyển dụng công chức, bao gồm cả những trường hợp đã thi nhưng chưa có quyết định tiếp nhận. Đợt rà soát nhằm sắp xếp lại cơ cấu vị trí việc làm và biên chế hành chính một cách đồng bộ.</dd></div><div><dt>Bối cảnh</dt><dd>Việc tinh gọn bộ máy và nâng cao hiệu lực hoạt động công vụ đang là nhiệm vụ trọng tâm của Chính phủ.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chính sách này tác động trực tiếp đến kế hoạch nhân sự công và các ứng viên tham gia thi tuyển biên chế trên toàn quốc.</dd></div>              </dl>
+              <a class="orig" href="https://vnexpress.net/tam-dung-tuyen-dung-cong-chuc-tren-toan-quoc-5147400.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -456,14 +451,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-13" data-num="13">
         <div class="no" aria-hidden="true">13</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Hội đàm lãnh đạo Việt Nam và Azerbaijan</h4>
-          <p class="sum">Tổng Bí thư, Chủ tịch nước Tô Lâm hội đàm với Tổng thống Azerbaijan, thúc đẩy hợp tác các dự án năng lượng.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Cấm thu tiền giữ chỗ mua nhà hình thành tương lai</h4>
+          <p class="sum">Luật mới quy định chủ đầu tư tuyệt đối không được thu tiền giữ chỗ trước khi dự án đủ điều kiện kinh doanh.</p>
           <details>
-            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Tổng thống Ilham Aliyev đề nghị hai bên khuyến khích doanh nghiệp thành lập liên doanh đầu tư vào các dự án năng lượng trọng điểm.</dd></div><div><dt>Bối cảnh</dt><dd>Chuyến thăm và hội đàm là cơ hội để hai nước củng cố quan hệ ngoại giao truyền thống và mở rộng hợp tác kinh tế thiết thực.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Hợp tác trong lĩnh vực năng lượng với Azerbaijan góp phần đa dạng hóa đối tác chiến lược và bảo đảm nguồn lực phát triển cho Việt Nam.</dd></div>              </dl>
-              <a class="orig" href="https://tuoitre.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoi-dam-voi-tong-thong-azerbaijan-100261121151440524.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Theo luật mới được thông qua, các chủ đầu tư dự án bất động sản không được phép thu tiền dưới bất kỳ hình thức nào để bảo đảm việc ký hợp đồng mua bán khi chưa đủ điều kiện mở bán. Quy định nhằm chấm dứt tình trạng lách luật huy động vốn qua hợp đồng đặt cọc giữ chỗ.</dd></div><div><dt>Bối cảnh</dt><dd>Thị trường bất động sản từng chứng kiến nhiều tranh chấp phát sinh từ các giao dịch đặt cọc giữ chỗ sớm khi pháp lý dự án chưa hoàn thiện.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quy định bảo vệ quyền lợi tài chính hợp pháp của người mua nhà, giúp thị trường bất động sản vận hành minh bạch và an toàn hơn.</dd></div>              </dl>
+              <a class="orig" href="https://vnexpress.net/cam-thu-tien-giu-cho-mua-nha-hinh-thanh-trong-tuong-lai-5147383.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -472,17 +467,17 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
   </div>
   <div class="layer-group" id="lop-2">
     <details class="cat" id="tech_ai" open>
-      <summary><h3>Công nghệ – AI<small>4 tin</small></h3></summary>
+      <summary><h3>Công nghệ – AI<small>3 tin</small></h3></summary>
       <article class="item" id="tin-14" data-num="14">
         <div class="no" aria-hidden="true">14</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Đề xuất Luật Trí tuệ nhân tạo bảo vệ học sinh</h4>
-          <p class="sum">Dự thảo Luật Trí tuệ nhân tạo hướng tới phát triển AI đi đôi với kiểm soát rủi ro cho học sinh.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Quốc hội bàn dự thảo Luật Trí tuệ nhân tạo</h4>
+          <p class="sum">Dự thảo luật chú trọng thúc đẩy AI an toàn, kiểm soát rủi ro và bảo vệ năng lực tư duy sáng tạo của học…</p>
           <details>
             <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Kỳ họp thứ hai Quốc hội khóa XVI bàn thảo nhiều chính sách mới cho phát triển công nghệ. Trọng tâm dự luật hướng đến thúc đẩy ứng dụng AI an toàn và bảo vệ năng lực tư duy sáng tạo của người học.</dd></div><div><dt>Bối cảnh</dt><dd>Việt Nam đang hoàn thiện khung pháp lý nhằm điều chỉnh các công nghệ mới nổi.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Luật sẽ tạo hành lang pháp lý bảo vệ thế hệ trẻ trước tác động tiêu cực của trí tuệ nhân tạo.</dd></div>              </dl>
+<div><dt>Diễn biến chính</dt><dd>Tại Kỳ họp thứ 2 Quốc hội khóa XVI, dự thảo Luật Trí tuệ nhân tạo được thảo luận với định hướng phát triển AI đi đôi với kiểm soát rủi ro. Trọng tâm chính sách là bảo vệ an toàn và năng lực tư duy sáng tạo của học sinh.</dd></div><div><dt>Bối cảnh</dt><dd>AI đang thâm nhập sâu vào trường học, đặt ra yêu cầu xây dựng hành lang pháp lý phù hợp.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quy định mới sẽ tác động trực tiếp đến việc ứng dụng công nghệ và giảng dạy tại các trường học ở Việt Nam.</dd></div>              </dl>
               <a class="orig" href="https://www.vietnamplus.vn/luat-tri-tue-nhan-tao-huong-toi-bao-ve-tu-duy-sang-tao-cua-hoc-sinh-post1149878.vnp" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VietnamPlus<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
@@ -491,14 +486,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-15" data-num="15">
         <div class="no" aria-hidden="true">15</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Khánh Hòa hỗ trợ tối đa 12 tỷ đồng dự án chip</h4>
-          <p class="sum">Tỉnh Khánh Hòa ban hành chính sách hỗ trợ tối đa 12 tỷ đồng cho mỗi dự án thiết kế vi mạch.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Apple siết AI bên ngoài, phát triển agent riêng</h4>
+          <p class="sum">Bản thử nghiệm macOS mới siết chặt quyền kiểm soát của AI bên ngoài trong khi Apple xúc tiến phát triển agent riêng.</p>
           <details>
-            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Chính quyền tỉnh sẽ xem xét hỗ trợ tài chính cho doanh nghiệp nội địa lẫn doanh nghiệp FDI làm vi mạch theo Luật Đầu tư. Mức hỗ trợ cao nhất chạm mốc 12 tỷ đồng cho mỗi dự án.</dd></div><div><dt>Bối cảnh</dt><dd>Nhiều địa phương trên cả nước đang nỗ lực trải thảm đỏ thu hút ngành công nghiệp bán dẫn.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chính sách tạo động lực lớn giúp mở rộng hệ sinh thái vi mạch và thu hút nguồn lực công nghệ cao về địa phương.</dd></div>              </dl>
-              <a class="orig" href="https://tuoitre.vn/khanh-hoa-ho-tro-cac-doanh-nghiep-thiet-ke-chip-ban-dan-toi-da-12-ti-dong-du-an-100261121152915398.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Trên macOS 27.3 beta 2, việc cấp quyền cho các AI agent bên ngoài như ChatGPT điều khiển máy Mac không còn dễ dàng như trước. Đồng thời, các thông tin rò rỉ cho thấy Apple đang chủ động tự phát triển công nghệ AI agent riêng.</dd></div><div><dt>Bối cảnh</dt><dd>Các hãng công nghệ lớn đang nỗ lực phát triển trợ lý AI có khả năng tự động thực hiện tác vụ cho người dùng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Thay đổi này ảnh hưởng trực tiếp đến trải nghiệm tích hợp và độ an toàn của người dùng máy Mac.</dd></div>              </dl>
+              <a class="orig" href="https://tinhte.vn/thread/apple-siet-agent-ben-ngoai-tu-lam-agent-rieng.4194165/" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tinh tế<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -506,29 +501,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-16" data-num="16">
         <div class="no" aria-hidden="true">16</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Apple hạn chế AI agent ngoài trên macOS mới</h4>
-          <p class="sum">macOS 27.3 beta 2 siết chặt việc cấp quyền cho các AI agent bên thứ ba điều khiển máy tính.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Các nước thống nhất đàm phán quản lý robot sát thủ</h4>
+          <p class="sum">Các quốc gia đồng thuận xúc tiến đàm phán tại Liên Hợp Quốc nhằm xây dựng quy định quản lý robot sát thủ trước năm…</p>
           <details>
-            <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">Reuters</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Việc cấp quyền cho ChatGPT hay tác nhân AI bên ngoài điều hành máy Mac đã bị siết chặt đáng kể. Đồng thời, các nguồn tin cho thấy Apple đang đẩy nhanh tự phát triển AI agent riêng.</dd></div><div><dt>Bối cảnh</dt><dd>Các nền tảng công nghệ lớn đang cạnh tranh quyết liệt để giành quyền kiểm soát giao diện tác vụ AI trên máy tính.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Người dùng máy Mac sẽ phải cân nhắc lại thói quen sử dụng các công cụ tự động hóa do bên thứ ba cung cấp.</dd></div>              </dl>
-              <a class="orig" href="https://tinhte.vn/thread/apple-siet-agent-ben-ngoai-tu-lam-agent-rieng.4194165/" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tinh tế<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="item" id="tin-17" data-num="17">
-        <div class="no" aria-hidden="true">17</div>
-        <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Ông Trump dọa cấm xây trung tâm dữ liệu ngoài Mỹ</h4>
-          <p class="sum">Cựu Tổng thống Trump đe dọa cấm các công ty Mỹ xây dựng trung tâm dữ liệu AI tại nước ngoài.</p>
-          <details>
-            <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
-            <div class="full">
-              <dl>
-<div><dt>Diễn biến chính</dt><dd>Phát biểu được đưa ra mà không có nhiều thông tin chi tiết, trong khi đội ngũ cố vấn cũng mới nghe về đề xuất này. Kế hoạch nhắm vào các doanh nghiệp công nghệ Mỹ đầu tư hạ tầng ra quốc tế.</dd></div><div><dt>Bối cảnh</dt><dd>Cuộc đua hạ tầng AI toàn cầu đang khiến nhu cầu xây dựng trung tâm dữ liệu tăng vọt.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Động thái này nếu thành hiện thực có thể làm thay đổi dòng vốn đầu tư hạ tầng điện toán đám mây toàn cầu.</dd></div>              </dl>
-              <a class="orig" href="https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại BBC<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Nhiều nước đã đạt thỏa thuận khởi động các vòng đàm phán do Liên Hợp Quốc bảo trợ. Mục tiêu hướng tới là ban hành các quy định pháp lý kiểm soát vũ khí tự hành trước năm 2028.</dd></div><div><dt>Bối cảnh</dt><dd>Sự phát triển nhanh của AI trong khí tài quân sự đang tạo ra nhiều lo ngại về an ninh và đạo đức.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Đàm phán quốc tế giúp thiết lập khuôn khổ an toàn toàn cầu trước các mối đe dọa vũ khí tự động hóa.</dd></div>              </dl>
+              <a class="orig" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPZTFDeHY0QlBhU2dnNndMa1FhdmhtUDV2eF9HYmhHU0tzRlFoM0U1a0ZuaE8zbGduLUhoTU0tWWExeDkyOWYwRi1aXzVOd0NhRGszMlU5MWFyVmdLSUJOREtvaXNYY1p3YnRIaDR5X0RwZGVPTG1GeW5wZm1Hd0dlM0RoVDVBQlZ4WFV1bU9mM3YzcDJISEpEZkI5ekdsMy1xb1BkZ0JUYw?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Reuters<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -536,16 +516,31 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     </details>
     <details class="cat" id="mobile" open>
       <summary><h3>Điện thoại – Mobile<small>4 tin</small></h3></summary>
-      <article class="item" id="tin-18" data-num="18">
-        <div class="no" aria-hidden="true">18</div>
+      <article class="item" id="tin-17" data-num="17">
+        <div class="no" aria-hidden="true">17</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Google yêu cầu ứng dụng tối ưu cho máy gập</h4>
-          <p class="sum">Từ tháng 4/2027, app Android không đạt chuẩn máy gập sẽ không được cập nhật trên Google Play.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Rò rỉ ảnh iPhone Air 2 với cụm camera kép</h4>
+          <p class="sum">Hình ảnh rò rỉ cho thấy mẫu iPhone Air 2 sở hữu cụm camera kép đặt ngang thay vì camera đơn trước đó.</p>
           <details>
             <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Google thông báo mọi ứng dụng không đạt mức chuẩn tối ưu tối thiểu Tier 3 cho màn hình gập sẽ bị chặn cập nhật hoặc phát hành mới. Những ứng dụng này còn đối mặt nguy cơ bị giảm hiển thị trên kho Play Store.</dd></div><div><dt>Bối cảnh</dt><dd>Thị trường smartphone gập đang phát triển nhanh, đòi hỏi trải nghiệm phần mềm phải thích ứng đồng bộ.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Các lập trình viên và doanh nghiệp phần mềm tại Việt Nam phải chuẩn hóa ứng dụng trước thời hạn quy định.</dd></div>              </dl>
+<div><dt>Diễn biến chính</dt><dd>Hình ảnh mặt lưng màu đen của máy xuất hiện trên mạng với cụm camera hình viên thuốc nằm ngang ở góc trên bên trái. Thay vì trang bị ống kính đơn, thiết bị có hai ống kính lớn đặt cạnh nhau.</dd></div><div><dt>Bối cảnh</dt><dd>Mẫu iPhone Air thế hệ tiếp theo đang thu hút sự chú ý về những thay đổi trong thiết kế phần cứng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Thông tin rò rỉ giúp người tiêu dùng Việt Nam có thêm cơ sở cân nhắc lộ trình nâng cấp điện thoại mới.</dd></div>              </dl>
+              <a class="orig" href="https://tinhte.vn/thread/iphone-air-2-lo-anh-cum-camera-kep-thay-camera-don.4194697/" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tinh tế<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+            </div>
+          </details>
+        </div>
+      </article>
+      <article class="item" id="tin-18" data-num="18">
+        <div class="no" aria-hidden="true">18</div>
+        <div>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Google Play siết chuẩn hiển thị với thiết bị gập</h4>
+          <p class="sum">Từ tháng 4 năm 2027, ứng dụng Android không đạt chuẩn tối ưu cho màn hình gập sẽ bị dừng cập nhật trên Google Play.</p>
+          <details>
+            <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <div class="full">
+              <dl>
+<div><dt>Diễn biến chính</dt><dd>Google thông báo các ứng dụng không đáp ứng chuẩn tối thiểu Tier 3 cho máy gập sẽ không được duyệt cập nhật hoặc phát hành mới. Những phần mềm này cũng đối mặt với nguy cơ bị giảm tần suất hiển thị trên cửa hàng ứng dụng.</dd></div><div><dt>Bối cảnh</dt><dd>Google đang đẩy mạnh đồng bộ trải nghiệm người dùng trong bối cảnh các thiết bị gập ngày càng phổ biến.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quy định buộc các lập trình viên ứng dụng tại Việt Nam phải nhanh chóng tối ưu hóa giao diện cho thiết bị gập.</dd></div>              </dl>
               <a class="orig" href="https://tinhte.vn/thread/tu-thang-4-2027-app-android-khong-toi-uu-cho-may-gap-se-khong-duoc-cap-nhat-tren-google-play.4194421/" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tinh tế<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
@@ -554,14 +549,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-19" data-num="19">
         <div class="no" aria-hidden="true">19</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>iOS 27 hỗ trợ dùng hai iPhone chung số thuê bao</h4>
-          <p class="sum">Bản cập nhật iOS 27 bổ sung tính năng cho phép hai thiết bị iPhone cùng dùng chung một số điện thoại.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Samsung thay đổi lãnh đạo mảng di động</h4>
+          <p class="sum">Samsung tiến hành cải tổ ban lãnh đạo và tìm người thay thế vị trí phụ trách mảng thiết bị di động sau 7 năm.</p>
           <details>
-            <summary><span class="src">9to5Mac</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">GSMArena</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Tính năng mới giúp người dùng liên lạc liền mạch mà không cần đổi thẻ SIM giữa các máy. Nâng cấp này cải thiện đáng kể khả năng kết nối đa thiết bị của Apple.</dd></div><div><dt>Bối cảnh</dt><dd>Nhu cầu sử dụng song song nhiều điện thoại cho công việc và đời sống cá nhân ngày càng phổ biến.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Người dùng iPhone tại Việt Nam có thêm lựa chọn quản lý cuộc gọi và tin nhắn thuận tiện trên nhiều máy.</dd></div>              </dl>
-              <a class="orig" href="https://9to5mac.com/2026/11/20/ios-27-lets-you-use-two-iphones-with-the-same-phone-number/" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại 9to5Mac<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Tập đoàn Samsung vừa công bố thay đổi lãnh đạo, theo đó có nhân sự mới thay thế vị trí Head of Samsung MX. Dù vậy, ông TM Roh vẫn tiếp tục đảm nhiệm chức vụ CEO của tập đoàn.</dd></div><div><dt>Bối cảnh</dt><dd>Sau 7 năm lãnh đạo, bộ phận di động của Samsung cần chiến lược mới để duy trì vị thế trước áp lực cạnh tranh.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Động thái này có thể định hình lại chiến lược thiết kế và kinh doanh dòng điện thoại Galaxy tại các thị trường, gồm Việt Nam.</dd></div>              </dl>
+              <a class="orig" href="https://www.gsmarena.com/samsung_appoints_new_leadership_tm_roh_remains_ceo-news-75568.php" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại GSMArena<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -569,29 +564,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-20" data-num="20">
         <div class="no" aria-hidden="true">20</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Samsung cải tổ dàn lãnh đạo mảng di động</h4>
-          <p class="sum">Samsung thay thế vị trí phụ trách bộ phận di động MX dù ông TM Roh vẫn giữ chức Tổng giám đốc.</p>
+          <h4><span class="sev" aria-hidden="true">⚪</span>Honor rò rỉ smartphone pin khủng 13.500 mAh</h4>
+          <p class="sum">Honor được cho là đang chuẩn bị ra mắt mẫu smartphone sở hữu dung lượng pin lên tới 13.500 mAh.</p>
           <details>
             <summary><span class="src">GSMArena</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Sau 7 năm, Samsung quyết định thay đổi vị trí đứng đầu mảng thiết bị di động Samsung MX. Tuy vậy, ông TM Roh vẫn tiếp tục đảm nhiệm chức vụ CEO của tập đoàn.</dd></div><div><dt>Bối cảnh</dt><dd>Thị trường smartphone cao cấp đang chứng kiến sự cạnh tranh gay gắt về công nghệ AI và thiết bị gập.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Bộ máy lãnh đạo mới có thể mở ra những thay đổi chiến lược lớn cho các dòng sản phẩm Galaxy kế tiếp.</dd></div>              </dl>
-              <a class="orig" href="https://www.gsmarena.com/samsung_appoints_new_leadership_tm_roh_remains_ceo-news-75568.php" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại GSMArena<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="item" id="tin-21" data-num="21">
-        <div class="no" aria-hidden="true">21</div>
-        <div>
-          <h4><span class="sev" aria-hidden="true">⚪</span>Rò rỉ hình ảnh iPhone Air 2 với camera kép</h4>
-          <p class="sum">Hình ảnh rò rỉ cho thấy mẫu iPhone Air 2 sở hữu cụm hai camera sau nằm ngang thay vì camera đơn.</p>
-          <details>
-            <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
-            <div class="full">
-              <dl>
-<div><dt>Diễn biến chính</dt><dd>Hình ảnh thực tế cho thấy mặt lưng máy màu đen mang cụm camera hình viên thuốc nằm ngang ở góc trên bên trái. Khác với tin đồn một camera, máy trang bị hai ống kính lớn đặt cạnh nhau.</dd></div><div><dt>Bối cảnh</dt><dd>Các thông tin rò rỉ sớm về thiết kế phần cứng của Apple thường xuyên thu hút sự chú ý của giới công nghệ.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Giúp người tiêu dùng có thêm thông tin tham khảo về ngôn ngữ thiết kế mới trên các dòng iPhone tương lai.</dd></div>              </dl>
-              <a class="orig" href="https://tinhte.vn/thread/iphone-air-2-lo-anh-cum-camera-kep-thay-camera-don.4194697/" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tinh tế<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Theo nguồn tin rò rỉ, Honor đang phát triển điện thoại trang bị pin 13.500 mAh và mẫu máy Power3 cũng sắp ra mắt. Trước đó, hãng đã bắt đầu thử nghiệm sản xuất các khối pin có dung lượng từ 14.000 đến 15.000 mAh.</dd></div><div><dt>Bối cảnh</dt><dd>Các thương hiệu smartphone đang nỗ lực gia tăng dung lượng pin để giải quyết nỗi lo về thời lượng sử dụng của người dùng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Sản phẩm hứa hẹn mang đến lựa chọn smartphone thời lượng pin vượt trội cho người tiêu dùng có nhu cầu di chuyển nhiều.</dd></div>              </dl>
+              <a class="orig" href="https://www.gsmarena.com/honor_reportedly_has_a_13500_mah_phone_coming_and_the_power3_isnt_far_behind-news-75577.php" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại GSMArena<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -599,17 +579,32 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     </details>
     <details class="cat" id="science_health" open>
       <summary><h3>Khoa học – Y tế<small>4 tin</small></h3></summary>
+      <article class="item" id="tin-21" data-num="21">
+        <div class="no" aria-hidden="true">21</div>
+        <div>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Hải quan siết kiểm tra lô dâu tây nhiễm thuốc trừ sâu</h4>
+          <p class="sum">Một lô dâu tây tươi 4 tấn nhập từ Trung Quốc bị phát hiện dư lượng thuốc bảo vệ thực vật vượt ngưỡng gần 6…</p>
+          <details>
+            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <div class="full">
+              <dl>
+<div><dt>Diễn biến chính</dt><dd>Kết quả kiểm nghiệm mẫu dâu tây phát hiện dư lượng hóa chất bảo vệ thực vật cao gấp gần 6 lần mức cho phép. Cục Hải quan đã yêu cầu các chi cục khu vực chủ động phối hợp tăng cường kiểm tra nông sản nhập khẩu.</dd></div><div><dt>Bối cảnh</dt><dd>Công tác kiểm dịch và giám sát vệ sinh an toàn thực phẩm tại biên giới đang được siết chặt để bảo vệ thị trường trong nước.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Thông tin giúp người tiêu dùng Việt Nam thận trọng hơn khi lựa chọn trái cây nhập khẩu và nâng cao cảnh giác về an toàn thực phẩm.</dd></div>              </dl>
+              <a class="orig" href="https://tuoitre.vn/dau-tay-nhap-khau-co-du-luong-thuoc-tru-sau-vuot-nguong-gan-6-lan-hai-quan-siet-kiem-tra-10026112116342858.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+            </div>
+          </details>
+        </div>
+      </article>
       <article class="item" id="tin-22" data-num="22">
         <div class="no" aria-hidden="true">22</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Tòa phê chuẩn thỏa thuận 7,25 tỷ USD của Bayer</h4>
-          <p class="sum">Tòa án thông qua thỏa thuận dàn xếp 7,25 tỷ USD liên quan đến cáo buộc thuốc diệt cỏ Roundup gây ung thư.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Huế nội soi khâu phục hồi sụn khớp cổ tay</h4>
+          <p class="sum">Bệnh viện Trường Đại học Y - Dược Huế lần đầu phẫu thuật nội soi khâu phục hồi phức hợp sụn sợi tam giác cổ…</p>
           <details>
-            <summary><span class="src">AP News</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Phán quyết chính thức khép lại các khiếu nại pháp lý quy mô lớn nhắm vào sản phẩm diệt cỏ Roundup của tập đoàn Bayer. Thỏa thuận bồi thường đạt giá trị 7,25 tỷ USD.</dd></div><div><dt>Bối cảnh</dt><dd>Hóa chất diệt cỏ Roundup đã vướng vào nhiều vụ kiện tụng kéo dài do nguy cơ gây bệnh ung thư cho người sử dụng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Tác động lớn đến các quy chuẩn an toàn hóa chất nông nghiệp và bảo vệ sức khỏe người tiêu dùng thế giới.</dd></div>              </dl>
-              <a class="orig" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOdE1pUUZWQjVLZWF3bzVPQVZNOWFQZzNxSUVGdVFpeVY0d3d0TGE3Q2dsQ2RrYU5hQlI4Z2ROVkR2YnptQzFnRDFibExkNkptYzZzMGFZTlBWX3hsa21BSXVjNWxjWjNTR3lOOUxtX2owTmVzQk84NHg1eXB2TVNJNjFhRG05SDBRMVIwSS1DMW5WU2RjSC0xSk1zNHZhblRNdlAwQ05hcktTcThaXzhYWQ?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại AP News<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Các bác sĩ tại Huế đã triển khai thành công kỹ thuật nội soi khâu phục hồi phức hợp sụn sợi tam giác nhằm điều trị tổn thương cổ tay. Đây là lần đầu tiên kỹ thuật hiện đại này được áp dụng thành công tại bệnh viện.</dd></div><div><dt>Bối cảnh</dt><dd>Tổn thương sụn sợi tam giác cổ tay thường gây đau dai dẳng và khó điều trị triệt để nếu không can thiệp chính xác.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Bước tiến này giúp bệnh nhân tại khu vực miền Trung tiếp cận phương pháp điều trị chấn thương cổ tay ít xâm lấn và hiệu quả cao.</dd></div>              </dl>
+              <a class="orig" href="https://vnexpress.net/noi-soi-khau-phuc-hoi-sun-soi-co-tay-5146999.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -617,14 +612,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-23" data-num="23">
         <div class="no" aria-hidden="true">23</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Bệnh viện Huế lần đầu nội soi phục hồi sụn cổ tay</h4>
-          <p class="sum">Bệnh viện Đại học Y Dược Huế triển khai thành công kỹ thuật nội soi khâu phức hợp sụn sợi tam giác.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Cô đơn kéo dài tăng nguy cơ sa sút trí tuệ</h4>
+          <p class="sum">Nghiên cứu mới chỉ ra người trên 65 tuổi bị cô đơn nghiêm trọng có nguy cơ phát triển chứng sa sút trí tuệ cao…</p>
           <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Các bác sĩ đã điều trị tổn thương cổ tay cho người bệnh bằng kỹ thuật nội soi phục hồi tiên tiến. Đây là lần đầu tiên kỹ thuật ngoại khoa phức tạp này được tiến hành thành công tại viện.</dd></div><div><dt>Bối cảnh</dt><dd>Tổn thương sụn sợi tam giác ở cổ tay thường khó can thiệp và dễ để lại di chứng nếu không phẫu thuật chuẩn xác.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Nâng cao năng lực điều trị chấn thương chỉnh hình kỹ thuật cao cho ngành y tế khu vực miền Trung.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/noi-soi-khau-phuc-hoi-sun-soi-co-tay-5146999.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Nghiên cứu phát hiện tình trạng cô đơn nghiêm trọng ở người cao tuổi có mối liên hệ mật thiết với sự suy giảm trí nhớ. Nguy cơ mắc chứng sa sút trí tuệ ở nhóm đối tượng này cao hơn 38% so với người bình thường.</dd></div><div><dt>Bối cảnh</dt><dd>Sức khỏe tâm thần của người cao tuổi đang trở thành vấn đề y tế cộng đồng cấp bách trên toàn cầu.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Kết quả cảnh báo các gia đình cần chú trọng chăm sóc đời sống tinh thần cho người già để phòng ngừa bệnh tật sớm.</dd></div>              </dl>
+              <a class="orig" href="https://tuoitre.vn/nghien-cuu-tinh-trang-co-don-keo-dai-co-the-lam-tang-nguy-co-sa-sut-tri-tue-100261121120531881.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -632,29 +627,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-24" data-num="24">
         <div class="no" aria-hidden="true">24</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Nhà toán học tuyên bố dùng Claude giải bài toán Riemann</h4>
-          <p class="sum">Nhà toán học tại Anthropic cho biết đã phối hợp cùng mô hình Claude để giải giả thuyết toán học Riemann.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Nhà toán học dùng AI tuyên bố giải giả thuyết Riemann</h4>
+          <p class="sum">Một nhà toán học tại Anthropic tuyên bố đã cùng mô hình Claude tìm ra lời giải cho bài toán thiên niên kỷ giả thuyết…</p>
           <details>
             <summary><span class="src">Tinh tế</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Chuyên gia Levent Alpöge thông báo tin rằng ông đã chứng minh được giả thuyết thế kỷ nhờ Claude. Dẫu vậy, Viện Toán học Clay hiện vẫn giữ nguyên trạng thái bài toán là chưa có lời giải.</dd></div><div><dt>Bối cảnh</dt><dd>Giả thuyết Riemann là một trong 7 bài toán thiên niên kỷ hóc búa nhất của toán học hiện đại.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Cho thấy bước tiến mới của trí tuệ nhân tạo trong việc hỗ trợ giải quyết các bài toán khoa học trừu tượng.</dd></div>              </dl>
+<div><dt>Diễn biến chính</dt><dd>Nhà toán học Levent Alpöge cho biết ông tin mình đã tìm ra chứng minh cho giả thuyết Riemann khi làm việc cùng Claude. Tuy nhiên, Viện Toán học Clay vẫn tiếp tục ghi nhận bài toán này ở trạng thái chưa có lời giải chính thức.</dd></div><div><dt>Bối cảnh</dt><dd>Giả thuyết Riemann là một trong những bài toán hóc búa nhất lịch sử và đã thách thức các nhà toán học qua nhiều thế kỷ.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Sự việc đánh dấu bước ngoặt tiềm năng về khả năng hỗ trợ nghiên cứu khoa học cơ bản của các mô hình AI tiên tiến.</dd></div>              </dl>
               <a class="orig" href="https://tinhte.vn/thread/nha-toan-hoc-anthropic-cung-claude-cong-bo-chung-minh-gia-thuyet-riemann-clay-van-ghi-chua-giai.4194631/" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tinh tế<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="item" id="tin-25" data-num="25">
-        <div class="no" aria-hidden="true">25</div>
-        <div>
-          <h4><span class="sev" aria-hidden="true">⚪</span>Tuần lễ Khoa học công nghệ VinFuture 2026 sắp diễn ra</h4>
-          <p class="sum">Chuỗi sự kiện VinFuture quy tụ chuyên gia toàn cầu sẽ diễn ra tại Hà Nội vào đầu tháng 12.</p>
-          <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
-            <div class="full">
-              <dl>
-<div><dt>Diễn biến chính</dt><dd>Sự kiện được tổ chức từ ngày 2 đến 8/12, quy tụ đông đảo nhà khoa học trong nước và quốc tế. Diễn đàn sẽ giới thiệu các đột phá nghiên cứu trong lĩnh vực y tế, năng lượng và vật liệu thông minh.</dd></div><div><dt>Bối cảnh</dt><dd>VinFuture là chuỗi sự kiện khoa học công nghệ thường niên quy mô lớn tại Việt Nam.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Mở rộng cơ hội giao lưu học thuật và tiếp cận các giải pháp chăm sóc sức khỏe, công nghệ mới cho giới nghiên cứu trong nước.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/tuan-le-khoa-hoc-cong-nghe-vinfuture-2026-dien-ra-vao-thang-12-5147441.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -662,31 +642,31 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     </details>
     <details class="cat" id="environment" open>
       <summary><h3>Môi trường – Khí hậu<small>2 tin</small></h3></summary>
-      <article class="item" id="tin-26" data-num="26">
-        <div class="no" aria-hidden="true">26</div>
+      <article class="item" id="tin-25" data-num="25">
+        <div class="no" aria-hidden="true">25</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Đề xuất hạ nước hồ để giảm ngập úng ở Đà Nẵng</h4>
-          <p class="sum">Chuyên gia đề xuất chủ động hạ mực nước các hồ điều tiết nhằm hạn chế tình trạng ngập đường phố Đà Nẵng.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Kết tội thủ phạm gây thảm họa cháy rừng năm 2025</h4>
+          <p class="sum">Bồi thẩm đoàn liên bang Mỹ tuyên có tội với người đàn ông gây ra vụ cháy rừng gây chết người Palisades Fire năm 2025.</p>
           <details>
-            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">AP News</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Mưa lớn kéo dài khiến nhiều tuyến đường trung tâm đô thị Đà Nẵng bị ngập sâu. Các chuyên gia khuyến nghị địa phương cần chủ động xả bớt nước hồ để tăng dung tích trữ trước các đợt mưa lớn.</dd></div><div><dt>Bối cảnh</dt><dd>Thời tiết cực đoan khiến các đô thị ven biển thường xuyên đối mặt với nguy cơ quá tải hệ thống thoát nước.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Cung cấp giải pháp kỹ thuật cấp thiết giúp đô thị thích ứng và giảm thiểu rủi ro ngập lụt cục bộ.</dd></div>              </dl>
-              <a class="orig" href="https://tuoitre.vn/da-nang-can-chu-dong-ha-thap-muc-nuoc-ho-de-han-che-ngap-duong-pho-100261121163801033.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Bồi thẩm đoàn liên bang vừa đưa ra phán quyết kết tội bị cáo vì hành vi gây ra đám cháy chết người Palisades Fire ở Los Angeles năm 2025. Thảm họa này đã thiêu rụi diện tích rừng rộng lớn và cướp đi sinh mạng của nhiều người.</dd></div><div><dt>Bối cảnh</dt><dd>Hạn hán kéo dài cùng các vụ cháy do con người gây ra đã biến nhiều cánh rừng thành biển lửa tàn khốc trong những năm qua.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Bản án răn đe các hành vi thiếu trách nhiệm hoặc cố ý phá hoại tài nguyên rừng và đe dọa sinh mạng cộng đồng.</dd></div>              </dl>
+              <a class="orig" href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNY3kwWjlJb09rSWVXbmtfSl9mWU5xOVFGQ2wxLTR6NUMyZnZVX1VNdXpTUU9HWldWQlZ2dk5yMzNtMWtjdTlBSWdVWXkyZV9PUlo3RTEwOGtULXZFVDFHend6Nm10Ul85TVFiUkhFdmJCaWRYYm5hQnV0TW1xaGVHWHlrVV8xRTlDa3JxRFFIVGZBQXhaMnc?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại AP News<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
       </article>
-      <article class="item" id="tin-27" data-num="27">
-        <div class="no" aria-hidden="true">27</div>
+      <article class="item" id="tin-26" data-num="26">
+        <div class="no" aria-hidden="true">26</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">⚪</span>Đảo Jersey thành nơi trú ẩn quan trọng cho sóc đỏ</h4>
-          <p class="sum">Giới bảo tồn ghi nhận đảo Jersey đang là nơi trú ẩn an toàn cho loài sóc đỏ trước nguy cơ suy giảm.</p>
+          <h4><span class="sev" aria-hidden="true">⚪</span>Đảo Jersey trở thành nơi trú ẩn cho sóc đỏ</h4>
+          <p class="sum">Các nhà bảo tồn khẳng định đảo Jersey là nơi trú ngụ quan trọng khi loài sóc đỏ đang suy giảm nghiêm trọng tại Anh.</p>
           <details>
             <summary><span class="src">BBC</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Trong bối cảnh số lượng loài sóc đỏ suy giảm tại Vương quốc Anh, đảo Jersey đã trở thành địa bàn sinh tồn thiết yếu. Các nhà bảo tồn nhấn mạnh vai trò khu bảo tồn then chốt của hòn đảo này.</dd></div><div><dt>Bối cảnh</dt><dd>Hoạt động bảo vệ động vật hoang dã tại các môi trường đảo cô lập đóng vai trò quan trọng trong gìn giữ nguồn gen.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Cung cấp kinh nghiệm thực tiễn về công tác bảo tồn đa dạng sinh học và các loài có nguy cơ biến mất.</dd></div>              </dl>
+<div><dt>Diễn biến chính</dt><dd>Trước tình trạng số lượng sóc đỏ sụt giảm tại Anh, các chuyên gia bảo tồn cho biết đảo Jersey đóng vai trò là một nơi trú ẩn quan trọng. Môi trường tại đây giúp duy trì và bảo vệ sự tồn tại của loài sinh vật này.</dd></div><div><dt>Bối cảnh</dt><dd>Mất môi trường sống và dịch bệnh đang đe dọa trực tiếp đến sự sinh tồn của các loài động vật hoang dã bản địa.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Mô hình bảo tồn này cung cấp thêm kinh nghiệm thực tiễn cho công tác bảo vệ đa dạng sinh học các loài nguy cấp.</dd></div>              </dl>
               <a class="orig" href="https://www.bbc.co.uk/news/articles/c61k9mwxmplxo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại BBC<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
@@ -697,49 +677,64 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
   <div class="layer-group" id="lop-3">
     <details class="cat" id="cyber_digital" open>
       <summary><h3>An ninh mạng – Dữ liệu cá nhân &amp; Chuyển đổi số<small>2 tin</small></h3></summary>
-      <article class="item" id="tin-28" data-num="28">
-        <div class="no" aria-hidden="true">28</div>
+      <article class="item" id="tin-27" data-num="27">
+        <div class="no" aria-hidden="true">27</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Cơ sở dữ liệu tội phạm của FBI bị tin tặc tấn…</h4>
-          <p class="sum">Cơ sở dữ liệu thông tin tội phạm của FBI vừa bị tin tặc xâm nhập theo truyền thông Mỹ.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Thí điểm công chứng điện tử trực tuyến giữa các địa phương</h4>
+          <p class="sum">Dịch vụ công chứng điện tử cho phép các bên mua bán ở những tỉnh khác nhau ký giao dịch trực tuyến thuận tiện.</p>
           <details>
-            <summary><span class="src">Reuters</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Kênh CNN đưa tin hệ thống cơ sở dữ liệu thông tin tội phạm của Cục Điều tra Liên bang Mỹ (FBI) đã bị tấn công mạng. Vụ việc đang được điều tra làm rõ nhằm đánh giá phạm vi rủi ro.</dd></div><div><dt>Bối cảnh</dt><dd>Hạ tầng kỹ thuật số của các cơ quan thực thi pháp luật Mỹ liên tục đối mặt với các đợt tấn công mạng phức tạp.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Sự cố gióng lên hồi chuông cảnh báo về an ninh bảo mật của các cơ sở dữ liệu quốc gia trọng yếu.</dd></div>              </dl>
-              <a class="orig" href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNRE83U2NSQ2FlbllBaUxQUzl5UWdfWktnME85LVk1ZkJFczYwOUJEbXpoV0tzUXltYWhtTl8zT05jeW9yX29sREJwZkxCNWdxZWwxcGlUa2N1YzM4YjRZcVF6dWpNbGhfak5zWjNsdnpQcFAzVGdoSmZGLTN5R21KZlcxV2dUZU15czdSQU5fYXJLV1MzWTVuYkdTRi1weFU?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Reuters<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Mô hình công chứng trực tuyến giúp các bên tham gia giao dịch ở nhiều địa phương khác nhau kết nối từ xa. Quá trình ký kết được thực hiện dưới sự chứng kiến trực tiếp của công chứng viên tại từng điểm cầu.</dd></div><div><dt>Bối cảnh</dt><dd>Đây là bước tiến trong chuyển đổi số thủ tục tư pháp và hành chính công.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Giải pháp tiết kiệm đáng kể thời gian và chi phí đi lại cho cá nhân, doanh nghiệp khi thực hiện giao dịch dân sự.</dd></div>              </dl>
+              <a class="orig" href="https://tuoitre.vn/cong-chung-dien-tu-hai-ben-mua-ban-o-khac-tinh-van-co-the-ky-chung-giao-dich-100261121170516273.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
       </article>
-      <article class="item" id="tin-29" data-num="29">
-        <div class="no" aria-hidden="true">29</div>
+      <article class="item" id="tin-28" data-num="28">
+        <div class="no" aria-hidden="true">28</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Hưng Yên ứng dụng trí tuệ nhân tạo vào thực tiễn lâm…</h4>
-          <p class="sum">Tỉnh Hưng Yên đẩy mạnh triển khai trí tuệ nhân tạo trong y tế để nâng cao chất lượng khám chữa bệnh.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Cơ sở dữ liệu thông tin tội phạm FBI bị tin tặc…</h4>
+          <p class="sum">Cơ sở dữ liệu thông tin tội phạm của Cục Điều tra Liên bang Mỹ vừa bị tin tặc xâm nhập.</p>
           <details>
-            <summary><span class="src">VietnamPlus</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">Reuters</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Hưng Yên xác định chuyển đổi số và trí tuệ nhân tạo là giải pháp rút ngắn khoảng cách chất lượng dịch vụ y tế giữa các tuyến. Công nghệ AI được đưa vào phục vụ chăm sóc sức khỏe an toàn và kịp thời cho người dân.</dd></div><div><dt>Bối cảnh</dt><dd>Nhiều địa phương trên cả nước đang tích cực thí điểm ứng dụng công nghệ số vào hệ thống y tế công.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Ứng dụng AI giúp nâng cao chất lượng chẩn đoán y tế tuyến cơ sở và giảm tải cho các bệnh viện tuyến trên.</dd></div>              </dl>
-              <a class="orig" href="https://www.vietnamplus.vn/hung-yen-ung-dung-tri-tue-nhan-tao-bai-ban-tu-thuc-tien-lam-sang-post1149866.vnp" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VietnamPlus<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Hệ thống dữ liệu thông tin tội phạm của FBI bị tin tặc tấn công theo thông tin từ CNN. Sự cố làm dấy lên lo ngại về nguy cơ rò rỉ các thông tin điều tra nhạy cảm.</dd></div><div><dt>Bối cảnh</dt><dd>Các cơ quan thực thi pháp luật và an ninh tại Mỹ liên tục đối mặt với các nguy cơ gián đoạn hệ thống và tấn công mạng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Vụ việc gióng lên hồi chuông cảnh báo toàn cầu về an toàn cho các kho dữ liệu số của cơ quan quản lý nhà nước.</dd></div>              </dl>
+              <a class="orig" href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNRE83U2NSQ2FlbllBaUxQUzl5UWdfWktnME85LVk1ZkJFczYwOUJEbXpoV0tzUXltYWhtTl8zT05jeW9yX29sREJwZkxCNWdxZWwxcGlUa2N1YzM4YjRZcVF6dWpNbGhfak5zWjNsdnpQcFAzVGdoSmZGLTN5R21KZlcxV2dUZU15czdSQU5fYXJLV1MzWTVuYkdTRi1weFU?oc=5" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Reuters<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
       </article>
     </details>
     <details class="cat" id="sports" open>
-      <summary><h3>Thể thao<small>4 tin</small></h3></summary>
+      <summary><h3>Thể thao<small>3 tin</small></h3></summary>
+      <article class="item" id="tin-29" data-num="29">
+        <div class="no" aria-hidden="true">29</div>
+        <div>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Lê Quang Liêm trở lại top 15 cờ vua thế giới</h4>
+          <p class="sum">Lê Quang Liêm đánh bại kỳ thủ Ian Nepomniachtchi để chính thức trở lại top 15 thế giới tại giải cờ vua toàn năng.</p>
+          <details>
+            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <div class="full">
+              <dl>
+<div><dt>Diễn biến chính</dt><dd>Chiến thắng diễn ra ở ván cờ tiêu chuẩn nhanh cuối cùng tại giải cờ vua toàn năng thế giới 2026. Kết quả này giúp đại kiện tướng Việt Nam nuôi hy vọng giành quyền tham dự chuỗi giải đấu vào năm sau.</dd></div><div><dt>Bối cảnh</dt><dd>Ian Nepomniachtchi từng hai lần giành quyền thách đấu ngôi vô địch thế giới.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chiến thắng tiếp tục khẳng định vị thế và đẳng cấp cao nhất của cờ vua Việt Nam trên đấu trường quốc tế.</dd></div>              </dl>
+              <a class="orig" href="https://vnexpress.net/quang-liem-tro-lai-top-15-the-gioi-5147464.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+            </div>
+          </details>
+        </div>
+      </article>
       <article class="item" id="tin-30" data-num="30">
         <div class="no" aria-hidden="true">30</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Khai mạc Đại hội Thể thao toàn quốc lần thứ mười</h4>
-          <p class="sum">Đại hội Thể thao toàn quốc lần thứ mười năm 2026 đã chính thức khai mạc tại Thành phố Hồ Chí Minh.</p>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Khai mạc Đại hội Thể thao toàn quốc lần thứ 10</h4>
+          <p class="sum">Đại hội Thể thao toàn quốc lần thứ 10 năm 2026 đã khai mạc hoành tráng tại Thành phố Hồ Chí Minh.</p>
           <details>
             <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Lễ khai mạc mang chủ đề &#39;Khát vọng vinh quang&#39; diễn ra tại công viên bờ sông Sài Gòn với các màn nhạc cảnh mở màn. Sự kiện quy tụ đông đảo lực lượng thể thao từ nhiều tỉnh thành trên cả nước.</dd></div><div><dt>Bối cảnh</dt><dd>Đây là kỳ đại hội thể thao có quy mô lớn nhất Việt Nam, được tổ chức theo chu kỳ 4 năm một lần.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Đại hội là thước đo đánh giá sự phát triển phong trào thể dục thể thao và tuyển chọn tài năng cho các giải đấu quốc tế.</dd></div>              </dl>
+<div><dt>Diễn biến chính</dt><dd>Lễ khai mạc mang chủ đề &#39;Khát vọng vinh quang&#39; được tổ chức tại công viên bờ sông Sài Gòn với các màn nhạc cảnh đặc sắc. Sự kiện quy tụ đông đảo lực lượng thể thao từ khắp các tỉnh thành trên cả nước.</dd></div><div><dt>Bối cảnh</dt><dd>Trước giờ khai mạc, ban tổ chức và các đại biểu đã làm lễ dâng hoa, dâng hương Chủ tịch Hồ Chí Minh.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Đây là sự kiện thể thao lớn nhất cả nước theo chu kỳ 4 năm một lần nhằm đánh giá phong trào thể thao toàn quốc.</dd></div>              </dl>
               <a class="orig" href="https://tuoitre.vn/dai-hoi-the-thao-toan-quoc-2026-hang-ngan-khan-gia-hao-huc-cho-doi-le-khai-mac-100261121082605733.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
@@ -748,43 +743,13 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-31" data-num="31">
         <div class="no" aria-hidden="true">31</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Lê Quang Liêm trở lại top 15 cờ vua thế giới</h4>
-          <p class="sum">Đại kiện tướng Lê Quang Liêm đánh bại Nepomniachtchi để chính thức trở lại top 15 kỳ thủ mạnh nhất thế giới.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Alcaraz toàn thắng vòng bảng giải ATP Finals 2026</h4>
+          <p class="sum">Carlos Alcaraz nối dài mạch 12 trận thắng liên tiếp sau khi đánh bại Flavio Cobolli ở vòng bảng ATP Finals.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Quang Liêm giành chiến thắng trước Ian Nepomniachtchi ở ván cờ tiêu chuẩn nhanh tại giải cờ vua toàn năng thế giới 2026. Kết quả này giúp kỳ thủ Việt Nam thăng tiến trên bảng xếp hạng và mở ra hy vọng dự chuỗi giải năm sau.</dd></div><div><dt>Bối cảnh</dt><dd>Lê Quang Liêm hiện là kỳ thủ số một Việt Nam thi đấu đỉnh cao ở các giải quốc tế danh giá.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chiến thắng tiếp tục khẳng định vị thế vững chắc của cờ vua Việt Nam trên đấu trường đỉnh cao thế giới.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/quang-liem-tro-lai-top-15-the-gioi-5147464.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="item" id="tin-32" data-num="32">
-        <div class="no" aria-hidden="true">32</div>
-        <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Esports lần đầu tranh huy chương tại Đại hội Thể thao toàn…</h4>
-          <p class="sum">Môn thể thao điện tử chính thức khởi tranh tranh huy chương lần đầu tiên tại Đại hội Thể thao toàn quốc.</p>
-          <details>
-            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
-            <div class="full">
-              <dl>
-<div><dt>Diễn biến chính</dt><dd>Bộ môn Liên Quân Mobile chính thức mở màn các nội dung thi đấu esports tại Trường Đại học Thể dục Thể thao Thành phố Hồ Chí Minh. Đây là dấu mốc lịch sử khi thể thao điện tử được đưa vào chương trình huy chương chính thức.</dd></div><div><dt>Bối cảnh</dt><dd>Thể thao điện tử ngày càng được công nhận rộng rãi tại các kỳ đại hội thể thao cấp khu vực và thế giới.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Cột mốc này đánh dấu sự công nhận chính thức từ thể thao thành tích cao của quốc gia đối với thể thao điện tử.</dd></div>              </dl>
-              <a class="orig" href="https://tuoitre.vn/khoanh-khac-lich-su-cua-esports-tai-dai-hoi-the-thao-toan-quoc-2026-1002611211612462.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="item" id="tin-33" data-num="33">
-        <div class="no" aria-hidden="true">33</div>
-        <div>
-          <h4><span class="sev" aria-hidden="true">⚪</span>Alcaraz toàn thắng vòng bảng ATP Finals</h4>
-          <p class="sum">Carlos Alcaraz thắng Flavio Cobolli sau hai set để giành quyền vào bán kết giải ATP Finals 2026.</p>
-          <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
-            <div class="full">
-              <dl>
-<div><dt>Diễn biến chính</dt><dd>Alcaraz đánh bại Cobolli với tỷ số 6-4, 6-1 chỉ sau 65 phút thi đấu. Chiến thắng này giúp tay vợt người Tây Ban Nha nối dài chuỗi thắng lên 12 trận và giành vé gặp Ben Shelton ở bán kết.</dd></div><div><dt>Bối cảnh</dt><dd>ATP Finals là giải đấu thường niên quy tụ 8 tay vợt nam có thành tích tốt nhất trong năm của làng quần vợt thế giới.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Phong độ ấn tượng giúp Alcaraz củng cố vị thế dẫn đầu trong làng quần vợt nam quốc tế hiện nay.</dd></div>              </dl>
+<div><dt>Diễn biến chính</dt><dd>Tay vợt Tây Ban Nha chỉ mất 65 phút để giành thắng lợi 6-4, 6-1 trước Flavio Cobolli. Kết quả này đưa Alcaraz vào bán kết gặp tay vợt Ben Shelton.</dd></div><div><dt>Bối cảnh</dt><dd>ATP Finals là giải đấu danh giá quy tụ các tay vợt xuất sắc nhất mùa giải.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Phong độ ổn định giúp Alcaraz củng cố vững chắc vị thế hàng đầu trong làng quần vợt nam quốc tế.</dd></div>              </dl>
               <a class="orig" href="https://vnexpress.net/alcaraz-toan-thang-vong-bang-atp-finals-2026-5147419.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
@@ -792,18 +757,48 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       </article>
     </details>
     <details class="cat" id="culture_society" open>
-      <summary><h3>Văn hóa – Xã hội<small>5 tin</small></h3></summary>
-      <article class="item" id="tin-34" data-num="34">
-        <div class="no" aria-hidden="true">34</div>
+      <summary><h3>Văn hóa – Xã hội<small>4 tin</small></h3></summary>
+      <article class="item" id="tin-32" data-num="32">
+        <div class="no" aria-hidden="true">32</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Việt Nam bổ sung thêm hai ngày nghỉ lễ hàng năm</h4>
-          <p class="sum">Quốc hội thông qua quy định bổ sung hai ngày nghỉ lễ hưởng nguyên lương, nâng tổng số ngày nghỉ lên 13.</p>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Quốc hội bổ sung hai ngày nghỉ lễ có hưởng lương</h4>
+          <p class="sum">Quốc hội chính thức thông qua việc bổ sung ngày 27/7 và 24/11 vào danh sách các ngày nghỉ lễ hưởng nguyên lương.</p>
           <details>
             <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Quốc hội quyết định bổ sung ngày Tổ quốc tri ân 27/7 và Ngày Văn hóa Việt Nam 24/11 vào danh sách các ngày nghỉ lễ hưởng nguyên lương. Quyết định nâng tổng số ngày nghỉ lễ, Tết chính thức trong năm của người lao động lên 13 ngày.</dd></div><div><dt>Bối cảnh</dt><dd>Quy định được thông qua trong khuôn khổ đợt sửa đổi, bổ sung chính sách lao động của Quốc hội khóa XVI.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chính sách đem lại thêm thời gian nghỉ ngơi cho người lao động, đồng thời tôn vinh giá trị tri ân và bản sắc văn hóa dân tộc.</dd></div>              </dl>
+<div><dt>Diễn biến chính</dt><dd>Hai ngày nghỉ mới gồm ngày Tổ quốc tri ân 27/7 và Ngày Văn hóa Việt Nam 24/11. Quyết định này nâng tổng số ngày nghỉ lễ, Tết hằng năm của người lao động Việt Nam lên 13 ngày.</dd></div><div><dt>Bối cảnh</dt><dd>Chính sách này được thông qua tại Kỳ họp thứ hai của Quốc hội khóa XVI.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quy định mang lại lợi ích thiết thực cho người lao động cả nước, đồng thời khích lệ các giá trị văn hóa và tri ân dân tộc.</dd></div>              </dl>
               <a class="orig" href="https://vnexpress.net/nguoi-lao-dong-duoc-bo-sung-hai-ngay-nghi-le-5147309.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+            </div>
+          </details>
+        </div>
+      </article>
+      <article class="item" id="tin-33" data-num="33">
+        <div class="no" aria-hidden="true">33</div>
+        <div>
+          <h4><span class="sev" aria-hidden="true">🔴</span>Cấm lấy tạng của người dưới 18 tuổi để ghép</h4>
+          <p class="sum">Quốc hội quy định cấm lấy mô, tạng của người dưới 18 tuổi và siết chặt điều kiện hiến tạng người sống.</p>
+          <details>
+            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <div class="full">
+              <dl>
+<div><dt>Diễn biến chính</dt><dd>Luật vừa được thông qua cấm tuyệt đối việc lấy tạng người dưới 18 tuổi để ghép cho người khác. Đồng thời, việc hiến tạng khi còn sống của người từ 18 đến dưới 25 tuổi chỉ được giới hạn trong phạm vi gia đình.</dd></div><div><dt>Bối cảnh</dt><dd>Nội dung này nằm trong nỗ lực hoàn thiện hệ thống luật y tế và bảo vệ quyền trẻ em.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chính sách bảo vệ an toàn thể chất và quyền lợi cho thanh thiếu niên, ngăn ngừa nguy cơ trục lợi và buôn bán mô tạng.</dd></div>              </dl>
+              <a class="orig" href="https://vnexpress.net/cam-lay-tang-nguoi-duoi-18-tuoi-de-ghep-cho-nguoi-khac-5147304.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+            </div>
+          </details>
+        </div>
+      </article>
+      <article class="item" id="tin-34" data-num="34">
+        <div class="no" aria-hidden="true">34</div>
+        <div>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Cấm hút thuốc lá trong toàn bộ khuôn viên đại học</h4>
+          <p class="sum">Từ ngày 1/7/2027, hành vi hút thuốc lá sẽ bị cấm hoàn toàn trong khuôn viên các trường đại học và cao đẳng.</p>
+          <details>
+            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <div class="full">
+              <dl>
+<div><dt>Diễn biến chính</dt><dd>Quy định mở rộng phạm vi cấm ra toàn bộ khuôn viên của đại học, cao đẳng và học viện, thay vì chỉ giới hạn trong khu vực trong nhà như trước đây.</dd></div><div><dt>Bối cảnh</dt><dd>Biện pháp nhằm tăng cường kiểm soát tác hại của thuốc lá đối với giới trẻ và cộng đồng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quy định mới tác động trực tiếp đến môi trường sinh hoạt, học tập của hàng triệu giảng viên và sinh viên cả nước.</dd></div>              </dl>
+              <a class="orig" href="https://vnexpress.net/cam-hut-thuoc-trong-toan-bo-khuon-vien-dai-hoc-cao-dang-5147359.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -811,59 +806,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       <article class="item" id="tin-35" data-num="35">
         <div class="no" aria-hidden="true">35</div>
         <div>
-          <h4><span class="sev" aria-hidden="true">🔴</span>Cấm lấy tạng của người dưới 18 tuổi để ghép</h4>
-          <p class="sum">Quốc hội thông qua luật cấm lấy mô tạng từ người dưới 18 tuổi nhằm bảo vệ trẻ vị thành niên.</p>
+          <h4><span class="sev" aria-hidden="true">🟡</span>Phát hiện thêm 30 hài cốt liệt sĩ tại Thành phố Hồ…</h4>
+          <p class="sum">Lực lượng tìm kiếm vừa quy tập thêm 30 bộ hài cốt liệt sĩ tại khu vực công viên Lê Thị Riêng.</p>
           <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
+            <summary><span class="src">Tuổi Trẻ</span><span class="more">Xem đầy đủ ▾</span></summary>
             <div class="full">
               <dl>
-<div><dt>Diễn biến chính</dt><dd>Luật mới được Quốc hội thông qua nghiêm cấm hành vi lấy tạng của người dưới 18 tuổi để ghép cho người khác. Việc hiến tạng khi còn sống của người từ 18 đến dưới 25 tuổi cũng bị giới hạn chặt chẽ trong phạm vi gia đình.</dd></div><div><dt>Bối cảnh</dt><dd>Quy định mới nhằm hoàn thiện hành lang pháp lý y tế và đảm bảo đạo đức sinh học tại Việt Nam.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Quy định giúp ngăn ngừa nguy cơ trục lợi, bảo vệ sức khỏe và quyền lợi của người chưa thành niên.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/cam-lay-tang-nguoi-duoi-18-tuoi-de-ghep-cho-nguoi-khac-5147304.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="item" id="tin-36" data-num="36">
-        <div class="no" aria-hidden="true">36</div>
-        <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Cấm hút thuốc toàn bộ khuôn viên đại học từ năm 2027</h4>
-          <p class="sum">Từ tháng 7/2027, hành vi hút thuốc lá sẽ bị cấm hoàn toàn trong khuôn viên các trường đại học và cao đẳng.</p>
-          <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
-            <div class="full">
-              <dl>
-<div><dt>Diễn biến chính</dt><dd>Quy định mới mở rộng phạm vi cấm hút thuốc ra toàn bộ khuôn viên đại học, cao đẳng và học viện thay vì chỉ cấm trong nhà. Biện pháp này sẽ chính thức có hiệu lực thi hành từ ngày 1/7/2027.</dd></div><div><dt>Bối cảnh</dt><dd>Việt Nam đang từng bước siết chặt các biện pháp kiểm soát tác hại của thuốc lá tại nơi công cộng.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chính sách hướng tới xây dựng môi trường giáo dục không khói thuốc và nâng cao sức khỏe cộng đồng học đường.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/cam-hut-thuoc-trong-toan-bo-khuon-vien-dai-hoc-cao-dang-5147359.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="item" id="tin-37" data-num="37">
-        <div class="no" aria-hidden="true">37</div>
-        <div>
-          <h4><span class="sev" aria-hidden="true">🟡</span>Siết quy định chuyển nhượng nhà ở xã hội từ giữa 2027</h4>
-          <p class="sum">Nhà ở xã hội sau 5 năm chỉ được bán lại cho đúng đối tượng được thụ hưởng thay vì chuyển nhượng tự do.</p>
-          <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
-            <div class="full">
-              <dl>
-<div><dt>Diễn biến chính</dt><dd>Theo quy định mới áp dụng từ 1/7/2027, nhà ở xã hội đã trả đủ tiền sau 5 năm vẫn không được mua bán tự do ngoài thị trường. Người bán chỉ được phép chuyển nhượng lại cho các đối tượng đủ điều kiện hưởng chính sách nhà ở xã hội.</dd></div><div><dt>Bối cảnh</dt><dd>Biện pháp này nhằm giải quyết triệt để tình trạng đầu cơ và thương mại hóa nhà ở ưu đãi.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Chính sách giúp đảm bảo nguồn cung nhà ở xã hội tiếp cận đúng người dân có nhu cầu ở thực sự.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/nha-o-xa-hoi-khong-duoc-ban-lai-tu-do-tu-1-7-2027-5147341.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
-            </div>
-          </details>
-        </div>
-      </article>
-      <article class="item" id="tin-38" data-num="38">
-        <div class="no" aria-hidden="true">38</div>
-        <div>
-          <h4><span class="sev" aria-hidden="true">⚪</span>Đồng bào các dân tộc thiểu số ít người diễu hành văn…</h4>
-          <p class="sum">Đồng bào các dân tộc có dân số ít nhất Việt Nam cùng tham gia diễu hành trong ngày hội văn hóa tại Lai Châu.</p>
-          <details>
-            <summary><span class="src">VnExpress</span><span class="more">Xem đầy đủ ▾</span></summary>
-            <div class="full">
-              <dl>
-<div><dt>Diễn biến chính</dt><dd>Người dân các dân tộc Mảng, La Hủ, Si La cùng xuống đường nhảy múa và biểu diễn trong ngày hội văn hóa tại xã Bum Tở. Hoạt động thu hút sự quan tâm lớn với các màn trình diễn trang phục và âm nhạc truyền thống.</dd></div><div><dt>Bối cảnh</dt><dd>Đây là những cộng đồng thuộc nhóm các dân tộc có số lượng nhân khẩu ít nhất tại Việt Nam hiện nay.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Sự kiện góp phần giữ gìn, quảng bá và phát huy bản sắc văn hóa đặc sắc của các dân tộc rất ít người.</dd></div>              </dl>
-              <a class="orig" href="https://vnexpress.net/dong-bao-dan-toc-it-nguoi-nhat-viet-nam-dieu-hanh-tren-pho-5147415.html" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại VnExpress<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
+<div><dt>Diễn biến chính</dt><dd>Ngày 21/11, lực lượng làm nhiệm vụ tại công viên Lê Thị Riêng đã tìm thấy thêm 30 hài cốt liệt sĩ. Phát hiện mới này nâng tổng số hài cốt quy tập được tại khu vực công viên lên 1.091 bộ.</dd></div><div><dt>Bối cảnh</dt><dd>Công tác rà soát, tìm kiếm và quy tập hài cốt liệt sĩ tại địa điểm này vẫn đang được tiến hành khẩn trương.</dd></div><div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>Hoạt động mang ý nghĩa nhân văn sâu sắc, đáp ứng nguyện vọng tri ân của thân nhân liệt sĩ và toàn xã hội.</dd></div>              </dl>
+              <a class="orig" href="https://tuoitre.vn/ngay-21-11-tim-thay-them-30-hai-cot-liet-si-o-cong-vien-le-thi-rieng-100261121182857716.htm" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại Tuổi Trẻ<svg class="ic" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/></svg></a>
             </div>
           </details>
         </div>
@@ -877,7 +827,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 <svg class="guilloche" aria-hidden="true" focusable="false"><defs><pattern id="gp-end" width="72" height="44" patternUnits="userSpaceOnUse"><path d="M0.0 22.00L2.0 24.95L4.0 27.81L6.0 30.50L8.0 32.93L10.0 35.02L12.0 36.72L14.0 37.97L16.0 38.74L18.0 39.00L20.0 38.74L22.0 37.97L24.0 36.72L26.0 35.02L28.0 32.93L30.0 30.50L32.0 27.81L34.0 24.95L36.0 22.00L38.0 19.05L40.0 16.19L42.0 13.50L44.0 11.07L46.0 8.98L48.0 7.28L50.0 6.03L52.0 5.26L54.0 5.00L56.0 5.26L58.0 6.03L60.0 7.28L62.0 8.98L64.0 11.07L66.0 13.50L68.0 16.19L70.0 19.05L72.0 22.00"/><path d="M0.0 22.00L2.0 19.05L4.0 16.19L6.0 13.50L8.0 11.07L10.0 8.98L12.0 7.28L14.0 6.03L16.0 5.26L18.0 5.00L20.0 5.26L22.0 6.03L24.0 7.28L26.0 8.98L28.0 11.07L30.0 13.50L32.0 16.19L34.0 19.05L36.0 22.00L38.0 24.95L40.0 27.81L42.0 30.50L44.0 32.93L46.0 35.02L48.0 36.72L50.0 37.97L52.0 38.74L54.0 39.00L56.0 38.74L58.0 37.97L60.0 36.72L62.0 35.02L64.0 32.93L66.0 30.50L68.0 27.81L70.0 24.95L72.0 22.00"/><path d="M0.0 34.02L2.0 35.93L4.0 37.41L6.0 38.42L8.0 38.94L10.0 38.94L12.0 38.42L14.0 37.41L16.0 35.93L18.0 34.02L20.0 31.75L22.0 29.18L24.0 26.40L26.0 23.48L28.0 20.52L30.0 17.60L32.0 14.82L34.0 12.25L36.0 9.98L38.0 8.07L40.0 6.59L42.0 5.58L44.0 5.06L46.0 5.06L48.0 5.58L50.0 6.59L52.0 8.07L54.0 9.98L56.0 12.25L58.0 14.82L60.0 17.60L62.0 20.52L64.0 23.48L66.0 26.40L68.0 29.18L70.0 31.75L72.0 34.02"/><path d="M0.0 9.98L2.0 8.07L4.0 6.59L6.0 5.58L8.0 5.06L10.0 5.06L12.0 5.58L14.0 6.59L16.0 8.07L18.0 9.98L20.0 12.25L22.0 14.82L24.0 17.60L26.0 20.52L28.0 23.48L30.0 26.40L32.0 29.18L34.0 31.75L36.0 34.02L38.0 35.93L40.0 37.41L42.0 38.42L44.0 38.94L46.0 38.94L48.0 38.42L50.0 37.41L52.0 35.93L54.0 34.02L56.0 31.75L58.0 29.18L60.0 26.40L62.0 23.48L64.0 20.52L66.0 17.60L68.0 14.82L70.0 12.25L72.0 9.98"/><path d="M0.0 39.00L2.0 38.74L4.0 37.97L6.0 36.72L8.0 35.02L10.0 32.93L12.0 30.50L14.0 27.81L16.0 24.95L18.0 22.00L20.0 19.05L22.0 16.19L24.0 13.50L26.0 11.07L28.0 8.98L30.0 7.28L32.0 6.03L34.0 5.26L36.0 5.00L38.0 5.26L40.0 6.03L42.0 7.28L44.0 8.98L46.0 11.07L48.0 13.50L50.0 16.19L52.0 19.05L54.0 22.00L56.0 24.95L58.0 27.81L60.0 30.50L62.0 32.93L64.0 35.02L66.0 36.72L68.0 37.97L70.0 38.74L72.0 39.00"/><path d="M0.0 5.00L2.0 5.26L4.0 6.03L6.0 7.28L8.0 8.98L10.0 11.07L12.0 13.50L14.0 16.19L16.0 19.05L18.0 22.00L20.0 24.95L22.0 27.81L24.0 30.50L26.0 32.93L28.0 35.02L30.0 36.72L32.0 37.97L34.0 38.74L36.0 39.00L38.0 38.74L40.0 37.97L42.0 36.72L44.0 35.02L46.0 32.93L48.0 30.50L50.0 27.81L52.0 24.95L54.0 22.00L56.0 19.05L58.0 16.19L60.0 13.50L62.0 11.07L64.0 8.98L66.0 7.28L68.0 6.03L70.0 5.26L72.0 5.00"/><path d="M0.0 34.02L2.0 31.75L4.0 29.18L6.0 26.40L8.0 23.48L10.0 20.52L12.0 17.60L14.0 14.82L16.0 12.25L18.0 9.98L20.0 8.07L22.0 6.59L24.0 5.58L26.0 5.06L28.0 5.06L30.0 5.58L32.0 6.59L34.0 8.07L36.0 9.98L38.0 12.25L40.0 14.82L42.0 17.60L44.0 20.52L46.0 23.48L48.0 26.40L50.0 29.18L52.0 31.75L54.0 34.02L56.0 35.93L58.0 37.41L60.0 38.42L62.0 38.94L64.0 38.94L66.0 38.42L68.0 37.41L70.0 35.93L72.0 34.02"/><path d="M0.0 9.98L2.0 12.25L4.0 14.82L6.0 17.60L8.0 20.52L10.0 23.48L12.0 26.40L14.0 29.18L16.0 31.75L18.0 34.02L20.0 35.93L22.0 37.41L24.0 38.42L26.0 38.94L28.0 38.94L30.0 38.42L32.0 37.41L34.0 35.93L36.0 34.02L38.0 31.75L40.0 29.18L42.0 26.40L44.0 23.48L46.0 20.52L48.0 17.60L50.0 14.82L52.0 12.25L54.0 9.98L56.0 8.07L58.0 6.59L60.0 5.58L62.0 5.06L64.0 5.06L66.0 5.58L68.0 6.59L70.0 8.07L72.0 9.98"/></pattern></defs><rect width="100%" height="100%" fill="url(#gp-end)"/></svg>  <div class="wrap">
     <div class="closing-head"><h2 id="ghi-nho-h">3 điều cần&nbsp;nhớ hôm nay</h2><span>Thứ Bảy, 21/11/2026</span></div>
     <ol>
-<li><b>1</b><span>Việt Nam bổ sung thêm hai ngày nghỉ lễ hưởng nguyên lương hàng năm.</span></li><li><b>2</b><span>Cả nước tạm dừng tuyển dụng công chức để rà soát lại biên chế.</span></li><li><b>3</b><span>Cấm chủ đầu tư thu tiền giữ chỗ trước khi dự án đủ điều kiện.</span></li>    </ol>
+<li><b>1</b><span>Quốc hội bổ sung hai ngày nghỉ lễ hưởng nguyên lương 27/7 và 24/11.</span></li><li><b>2</b><span>Thông qua hơn 162.000 tỷ đồng làm ba tuyến cao tốc hơn 430 km.</span></li><li><b>3</b><span>Cấm chủ đầu tư thu tiền giữ chỗ mua nhà hình thành tương lai.</span></li>    </ol>
   </div>
 </section>
 
