@@ -1,0 +1,56 @@
+name: Trends Ticker
+
+# Chỉ cập nhật dòng chữ chạy (Google Trends RSS) rồi render lại trang từ data/page.json.
+# Không gọi Gemini, không cần secret nào.
+on:
+  schedule:
+    # Mỗi giờ phút 40, 06:40–23:40 giờ VN (= 23:40 và 00:40–16:40 UTC).
+    # Phút 40 để không trùng bản tin 07:10.
+    - cron: "40 0-16,23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: daily-briefing        # xếp hàng chung với bản tin để không đẩy đè nhau
+  cancel-in-progress: false
+
+jobs:
+  trends:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update trends and re-render
+        run: python -m src.trends
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/trends.json docs/index.html
+          if git diff --staged --quiet; then
+            echo "Không có thay đổi"
+            exit 0
+          fi
+          git commit -m "chore: update trends ticker [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      # [skip ci] cũng chặn build Pages tự động, nên gọi build thủ công.
+      - name: Trigger Pages build
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
