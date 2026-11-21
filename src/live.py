@@ -88,19 +88,101 @@ def rank(articles: list, trends_vn: list[dict], now: datetime, limit: int = MAX_
     return {"hot": hot, "latest": latest}
 
 
-def collect_articles(cfg: dict) -> list:
+def collect_articles(cfg: dict) -> list[tuple[str, object]]:
+    """[(feed_url, Article)] từ mọi RSS trừ Google News, bỏ trùng theo URL."""
     from .news import fetch_feed
 
     feeds = [f for f in cfg.get("feeds", []) if "news.google.com" not in f["url"]]
     with ThreadPoolExecutor(max_workers=8) as ex:
         res = list(ex.map(fetch_feed, feeds))
     seen, out = set(), []
-    for arts in res:
+    for f, arts in zip(feeds, res):
         for a in arts:
             if a.url not in seen:
                 seen.add(a.url)
-                out.append(a)
+                out.append((f["url"], a))
     return out
+
+
+# Chia tin mới vào chuyên mục mà không cần AI: theo mục RSS của báo, rồi theo từ khoá tiêu đề.
+CATEGORY_FEEDS = {
+    "geopolitics": ["/the-gioi"],
+    "economy": ["/kinh-doanh"],
+    "domestic": ["/thoi-su"],
+    "tech_ai": ["/so-hoa", "/cong-nghe", "tinhte.vn"],
+    "mobile": ["gsmarena.com", "9to5mac.com", "9to5google.com", "macrumors.com"],
+    "science_health": ["/khoa-hoc", "/suc-khoe"],
+    "sports": ["/the-thao"],
+    "culture_society": ["/van-hoa"],
+}
+CATEGORY_KEYWORDS = {
+    "mobile": ["iphone", "ipad", "ios", "android", "samsung", "galaxy", "xiaomi", "oppo", "vivo", "pixel",
+               "điện thoại", "smartphone", "máy tính bảng", "apple watch", "airpods"],
+    "tech_ai": [" ai ", "trí tuệ nhân tạo", "chatgpt", "openai", "gemini", "chip", "bán dẫn", "nvidia",
+                "công nghệ", "phần mềm", "robot"],
+    "cyber_digital": ["an ninh mạng", "lừa đảo", "hacker", "tin tặc", "mã độc", "dữ liệu cá nhân", "rò rỉ",
+                      "chuyển đổi số", "định danh", "vneid", "deepfake"],
+    "environment": ["môi trường", "khí hậu", "ô nhiễm", "bão", "lũ", "mưa lớn", "sạt lở", "nắng nóng",
+                    "hạn mặn", "động đất", "rác thải", "phát thải"],
+    "science_health": ["bệnh viện", "bác sĩ", "sức khỏe", "dịch", "vắc xin", "ung thư", "nghiên cứu",
+                       "nhà khoa học", "y tế"],
+    "economy": ["giá vàng", "lãi suất", "chứng khoán", "vn-index", "tỷ giá", "xuất khẩu", "gdp", "lạm phát",
+                "doanh nghiệp", "ngân hàng", "bất động sản"],
+    "sports": ["bóng đá", "tuyển việt nam", "v-league", "sea games", "world cup", "ngoại hạng", "hlv"],
+    "geopolitics": ["nga", "ukraine", "mỹ", "trung quốc", "iran", "israel", "nato", "liên hợp quốc", "eu "],
+    "domestic": ["quốc hội", "chính phủ", "thủ tướng", "bộ trưởng", "tp.hcm", "hà nội", "tỉnh"],
+    "culture_society": ["văn hóa", "nghệ sĩ", "ca sĩ", "phim", "lễ hội", "du lịch", "giáo dục", "học sinh"],
+}
+KEYWORD_ORDER = ["mobile", "cyber_digital", "tech_ai", "environment", "science_health", "economy", "sports",
+                 "geopolitics", "domestic", "culture_society"]
+
+
+def categorize(feed_url: str, title: str) -> str | None:
+    for key, marks in CATEGORY_FEEDS.items():
+        if any(m in feed_url for m in marks):
+            if key in ("tech_ai",) and any(k in f" {title.lower()} " for k in CATEGORY_KEYWORDS["mobile"]):
+                return "mobile"
+            return key
+    low = f" {title.lower()} "
+    for key in KEYWORD_ORDER:
+        if any(k in low for k in CATEGORY_KEYWORDS[key]):
+            return key
+    return None
+
+
+def by_category(pairs: list, exclude: list[dict], now: datetime, per_cat: int = 4,
+                hours: int = WINDOW_HOURS) -> dict[str, list[dict]]:
+    """Tin mới trong ngày cho từng chuyên mục, bỏ tin đã có trong bản tin (cùng URL hoặc cùng sự kiện)."""
+    seen_urls = {e.get("url") for e in exclude}
+    seen_titles = [e.get("title", "") for e in exclude]
+    out: dict[str, list[dict]] = {}
+    for feed_url, a in sorted(pairs, key=lambda p: p[1].published, reverse=True):
+        if not (now - timedelta(hours=hours) <= a.published <= now + timedelta(minutes=30)):
+            continue
+        cat = categorize(feed_url, a.title)
+        if not cat or a.url in seen_urls:
+            continue
+        if cat != "mobile" and not _VN_CHARS.search(a.title):
+            continue
+        if any(similar(a.title, t) for t in seen_titles):
+            continue
+        bucket = out.setdefault(cat, [])
+        if len(bucket) >= per_cat:
+            continue
+        bucket.append({"title": a.title, "url": a.url, "source": a.source, "image": a.image,
+                       "ts": _ago_iso(a.published), "sources": 1, "score": 0})
+        seen_urls.add(a.url)
+        seen_titles.append(a.title)
+    return out
+
+
+def _page_items() -> list[dict]:
+    """Tin đã có trong bản tin sáng (data/page.json) để không lặp lại."""
+    try:
+        page = json.loads((ROOT / "data" / "page.json").read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+    return [n for layer in page.get("layers", []) for c in layer.get("categories", []) for n in c.get("items", [])]
 
 
 def for_page(live: dict, tz_name: str = "Asia/Ho_Chi_Minh") -> dict:
@@ -115,7 +197,8 @@ def for_page(live: dict, tz_name: str = "Asia/Ho_Chi_Minh") -> dict:
             t = datetime.fromisoformat(it["ts"]).astimezone(ZoneInfo(tz_name)).strftime("%H:%M")
             out.append({**it, "time": t})
         return out
-    return {"hot": fmt(live.get("hot")), "latest": fmt(live.get("latest")), "updated": label, "updated_iso": upd or ""}
+    return {"hot": fmt(live.get("hot")), "latest": fmt(live.get("latest")), "updated": label, "updated_iso": upd or "",
+            "cats": {k: fmt(v) for k, v in (live.get("cats") or {}).items()}}
 
 
 def load_live(path: Path = LIVE_PATH) -> dict:
@@ -132,7 +215,9 @@ def update(now: datetime | None = None, path: Path = LIVE_PATH) -> dict:
     now = now or datetime.now(timezone.utc)
     cfg = load_config()
     trends = update_trends(now)
-    live = rank(collect_articles(cfg), trends.get("vn", []), now)
+    pairs = collect_articles(cfg)
+    live = rank([a for _, a in pairs], trends.get("vn", []), now)
+    live["cats"] = by_category(pairs, _page_items(), now)
     try:
         live["quotes"] = [asdict(q) for q in fetch_market(cfg)]
     except Exception as e:  # noqa: BLE001

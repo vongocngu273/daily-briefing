@@ -4,9 +4,9 @@ name: Live Refresh
 # Không gọi Gemini, không cần secret nào.
 on:
   schedule:
-    # Mỗi giờ phút 40, 06:40–23:40 giờ VN (= 23:40 và 00:40–16:40 UTC).
-    # Phút 40 để không trùng bản tin 07:10.
-    - cron: "40 0-16,23 * * *"
+    # Mỗi 30 phút (phút 25 và 55), 06:25–23:55 giờ VN (= 23:25 UTC hôm trước tới 16:55 UTC).
+    # Lệch phút để không trùng bản tin 07:10.
+    - cron: "25,55 0-16,23 * * *"
   workflow_dispatch:
 
 permissions:

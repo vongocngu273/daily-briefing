@@ -11,7 +11,7 @@ document.documentElement.setAttribute('data-view','card');
 try{var v=localStorage.getItem('banTinSang.view');if(v==='list'||v==='mag'||v==='card')document.documentElement.setAttribute('data-view',v);}catch(e){}</script>
 <title>Bản tin sáng · {{ serial }}</title>
 {% set site = site_url if site_url is defined else "" %}
-{% set lv = live if live is defined else {"hot": [], "latest": [], "updated": "", "updated_iso": ""} %}
+{% set lv = live if live is defined else {"hot": [], "latest": [], "updated": "", "updated_iso": "", "cats": {}} %}
 {% set share_desc = (takeaways|join(" · ")) if takeaways else "Tin tức, thời tiết, thị trường mỗi sáng." %}
 <meta name="description" content="{{ share_desc|truncate(200, true, "…") }}">
 <meta property="og:type" content="website">
@@ -324,7 +324,8 @@ html.sheet-open{overflow:hidden}
 @keyframes rfspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.rf.spin .ic-rf{animation:none}}
 .board caption .cap{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.board caption .rf{width:26px;height:26px}
+.board caption .rf{width:28px;height:28px}
+.board .rf svg{width:15px;height:15px;margin:0;fill:none}
 .hot{margin-top:18px;border:2px solid var(--rule);border-radius:var(--rL);corner-shape:squircle;overflow:hidden}
 .hot-head{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:2px solid var(--rule);background:var(--stub);color:var(--stub-ink)}
 .hot-head h2{margin:0;flex:1;font:800 22px/1 var(--cond);letter-spacing:.04em;text-transform:uppercase}
@@ -344,6 +345,17 @@ html.sheet-open{overflow:hidden}
 @media (min-width:700px){.hot-list{display:grid;grid-template-columns:1fr 1fr}.hot-list[hidden]{display:none}.hot-list li+li{border-top:0}.hot-list li{border-bottom:1px dashed var(--rule)}.hot-list li:nth-child(odd){border-right:1px dashed var(--rule)}}
 .toast{white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis;position:fixed;left:50%;bottom:calc(80px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:30;padding:10px 16px;border-radius:999px;background:var(--ink);color:var(--paper);font:600 14px var(--read);box-shadow:0 8px 24px rgba(0,0,0,.25);opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.show{opacity:1}
+
+/* ---------- per-category "Tin mới trong ngày" ---------- */
+.cat-live{margin-top:10px}
+.cl-btn{display:flex;align-items:center;gap:8px;width:100%;padding:9px 12px;border:1.5px dashed var(--rule);border-radius:var(--rM);corner-shape:squircle;background:none;color:var(--ink);cursor:pointer;text-align:left;font:700 14px/1.2 var(--cond);letter-spacing:.06em;text-transform:uppercase}
+.cl-btn .ic-rf{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cl-btn small{margin-left:auto;font:600 12px var(--cond);letter-spacing:.06em;color:var(--muted)}
+.cl-btn[aria-expanded="true"]{border-style:solid;background:var(--stub);color:var(--stub-ink)}
+.cl-btn[aria-expanded="true"] small{color:inherit}
+.cl-btn.spin .ic-rf{animation:rfspin .8s linear infinite}
+.cl-list{margin-top:8px;border:1.5px solid var(--rule);border-radius:var(--rM);corner-shape:squircle;overflow:hidden}
+.cl-empty{padding:12px;color:var(--muted);font-size:14px}
 </style>
 </head>
 {% macro sevicon(sev) %}{% if sev == "high" %}<svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg>{% elif sev == "medium" %}<svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg>{% else %}<svg class="sv sv-low" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="3.6"/></svg>{% endif %}{% endmacro %}
@@ -467,6 +479,20 @@ html.sheet-open{overflow:hidden}
     {% for cat in layer.categories %}
     <details class="cat" id="{{ cat.key }}" open>
       <summary><h3>{{ cat.label }}<small>{{ cat['items']|length }} tin</small></h3></summary>
+      {% set fresh = (lv.cats or {}).get(cat.key, []) %}
+      <div class="cat-live">
+        <button type="button" class="cl-btn" data-cat-refresh="{{ cat.key }}" aria-expanded="false" aria-controls="cl-{{ cat.key }}">{{ refreshicon() }}<span>Tin mới trong ngày</span><small>{% if fresh %}{{ fresh|length }} tin{% else %}chưa có{% endif %}{% if lv.updated %} · {{ lv.updated }}{% endif %}</small></button>
+        <ol class="hot-list cl-list" id="cl-{{ cat.key }}" hidden>
+          {% for h in fresh %}
+          <li><a href="{{ h.url }}" target="_blank" rel="noopener noreferrer">
+            {% if h.image %}<span class="hthumb"><img src="{{ h.image }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"></span>{% else %}<span class="hthumb ph"></span>{% endif %}
+            <span class="htxt"><b>{{ h.title }}</b><small>{{ h.source }} · <time datetime="{{ h.ts }}">{{ h.time }}</time></small></span>
+          </a></li>
+          {% else %}
+          <li class="cl-empty">Chưa có tin mới ngoài bản tin sáng.</li>
+          {% endfor %}
+        </ol>
+      </div>
       {% if cat.key == "economy" %}
       <div class="board" id="thi-truong">
         <table>
@@ -668,9 +694,32 @@ html.sheet-open{overflow:hidden}
           var srv=Date.parse(j.updated||'')||0;
           if(srv>mine){ say('Đang tải bản mới…'); location.replace(location.pathname+'?v='+srv+location.hash); return; }
           var hm=new Date(srv||mine).toLocaleTimeString('vi-VN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'});
-          say('Đã mới nhất lúc '+hm+' · tự làm mới mỗi giờ');
+          say('Đã mới nhất lúc '+hm+' · tự làm mới mỗi 30 phút');
         }).catch(function(){ say('Không kiểm tra được, thử lại sau'); })
         .then(function(){ setTimeout(function(){document.querySelectorAll('[data-refresh]').forEach(function(b){b.classList.remove('spin');});},400); });
+      });
+    });
+  })();
+  /* Nút ⟳ từng chuyên mục: kiểm tra bản mới trên máy chủ rồi mở "Tin mới trong ngày" */
+  (function(){
+    var OK='banTinSang.openCat';
+    function openCat(key){
+      var b=document.querySelector('[data-cat-refresh="'+key+'"]'); if(!b) return;
+      var l=document.getElementById('cl-'+key), c=b.closest('details.cat'); if(c) c.open=true;
+      l.hidden=false; b.setAttribute('aria-expanded','true');
+    }
+    try{var k=localStorage.getItem(OK); if(k){localStorage.removeItem(OK); openCat(k); var el=document.getElementById(k); if(el) setTimeout(function(){el.scrollIntoView();},50);}}catch(e){}
+    var sec=document.getElementById('tin-nong'), mine=Date.parse((sec&&sec.getAttribute('data-live'))||'')||0;
+    document.querySelectorAll('[data-cat-refresh]').forEach(function(b){
+      b.addEventListener('click',function(){
+        var key=b.getAttribute('data-cat-refresh'), l=document.getElementById('cl-'+key);
+        if(b.getAttribute('aria-expanded')==='true'){ l.hidden=true; b.setAttribute('aria-expanded','false'); return; }
+        b.classList.add('spin');
+        fetch('live.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+          var srv=Date.parse(j.updated||'')||0;
+          if(srv>mine){ try{localStorage.setItem(OK,key);}catch(e){} location.replace(location.pathname+'?v='+srv+'#'+key); return; }
+          openCat(key);
+        }).catch(function(){ openCat(key); }).then(function(){ setTimeout(function(){b.classList.remove('spin');},300); });
       });
     });
   })();

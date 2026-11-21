@@ -499,3 +499,21 @@ def test_live_rank_clusters_and_scores():
     titles = [h["title"] for h in out["hot"]] + [h["title"] for h in out["latest"]]
     assert "English only headline here" not in titles and "Tin quá cũ hôm qua đây" not in titles
     assert any("Giá vàng" in t for t in titles)
+
+
+def test_live_categorize_and_by_category():
+    from datetime import datetime, timezone
+    from src.live import by_category, categorize
+    from src.news import Article
+    assert categorize("https://vnexpress.net/rss/the-thao.rss", "Tuyển Việt Nam thắng") == "sports"
+    assert categorize("https://tinhte.vn/rss", "Màn hình phụ trên Xiaomi 18 Pro") == "mobile"
+    assert categorize("https://tinhte.vn/rss", "100 người ảnh hưởng nhất lịch sử") == "tech_ai"
+    assert categorize("https://vnexpress.net/rss/tin-moi-nhat.rss", "Cảnh báo lừa đảo qua mạng xã hội") == "cyber_digital"
+    assert categorize("https://vnexpress.net/rss/tin-moi-nhat.rss", "Chuyện không thuộc mục nào cả") is None
+    now = datetime(2026, 11, 21, 15, 0, tzinfo=timezone.utc)
+    a = lambda t, u, h: Article(title=t, url=u, source="VnExpress", published=datetime(2026, 11, 21, h, 0, tzinfo=timezone.utc))
+    pairs = [("https://vnexpress.net/rss/the-thao.rss", a("Tuyển Việt Nam thắng đậm Lào", "https://x/1", 14)),
+             ("https://vnexpress.net/rss/the-thao.rss", a("Alcaraz vào bán kết ATP Finals", "https://x/2", 13)),
+             ("https://vnexpress.net/rss/the-thao.rss", a("Đã có trong bản tin", "https://x/3", 12))]
+    out = by_category(pairs, [{"url": "https://x/3", "title": "Đã có trong bản tin"}], now)
+    assert [i["url"] for i in out["sports"]] == ["https://x/1", "https://x/2"]
