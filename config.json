@@ -1,6 +1,7 @@
 {
   "timezone": "Asia/Ho_Chi_Minh",
   "site_url": "https://vongocngu273.github.io/daily-briefing/",
+  "ai_worker_url": "",
   "weather": {
     "lat": 10.7769,
     "lon": 106.7009,

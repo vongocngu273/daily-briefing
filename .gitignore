@@ -6,3 +6,7 @@ __pycache__/
 .DS_Store
 data/latest_summary.json
 .claude/
+worker/.dev.vars
+worker/.wrangler/
+worker/node_modules/
+.secrets/

@@ -1,0 +1,11 @@
+name = "ban-tin-ai"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+# Bí mật (nạp bằng `wrangler secret put`, KHÔNG ghi vào file này):
+#   GEMINI_API_KEY, GEMINI_API_KEY_2, ACCESS_KEY
+[vars]
+ALLOWED_ORIGIN = "https://vongocngu273.github.io"
+GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-2.5-flash"
+DAILY_LIMIT = "80"

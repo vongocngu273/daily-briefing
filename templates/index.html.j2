@@ -351,13 +351,26 @@ html.sheet-open{overflow:hidden}
 .tag-new{display:inline-block;vertical-align:2px;margin-right:8px;padding:3px 7px 2px;font:800 12px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--red);border-radius:var(--rS);corner-shape:squircle}
 .cat>summary .rf-cat{flex:none;width:28px;height:28px;align-self:center;color:var(--ink)}
 .cat>summary .rf-cat.spin{color:var(--red)}
+
+/* ---------- on-demand AI summary (Cloudflare Worker) ---------- */
+.ai-box{margin:4px 0 10px}
+.ai-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:0;border-radius:var(--rM);corner-shape:squircle;cursor:pointer;
+  font:700 15px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#5e5ce6,#bf5af2)}
+.ai-btn svg{width:16px;height:16px;fill:currentColor}
+.ai-btn[aria-busy="true"]{opacity:.7;cursor:progress}
+.ai-btn[aria-busy="true"] svg{animation:rfspin 1.2s linear infinite}
+.ai-key{display:flex;gap:6px;margin-top:8px}
+.ai-key input{flex:1;min-width:0;padding:9px 10px;border:1.5px solid var(--rule);border-radius:var(--rS);background:var(--paper);color:var(--ink);font:400 15px var(--read)}
+.ai-key button{padding:9px 12px;border:0;border-radius:var(--rS);background:var(--ink);color:var(--paper);font:700 14px var(--cond);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.ai-note{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.ai-tag{display:inline-block;margin-bottom:8px;padding:3px 7px 2px;font:800 11px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#5e5ce6,#bf5af2);border-radius:var(--rS)}
 </style>
 </head>
 {% macro sevicon(sev) %}{% if sev == "high" %}<svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg>{% elif sev == "medium" %}<svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg>{% else %}<svg class="sv sv-low" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="3.6"/></svg>{% endif %}{% endmacro %}
 {% macro locicon() %}<svg class="ic-loc" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.3 2.2 2.8 8.4c-.8.3-.7 1.4.1 1.6l6.1 1.3 1.4 6.1c.2.8 1.3.9 1.6.1l6.2-14.5c.3-.6-.3-1.1-.9-.8z"/></svg>{% endmacro %}
 {% macro refreshicon() %}<svg class="ic-rf" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.2 10a6.2 6.2 0 1 1-1.9-4.47"/><path d="M15.6 2.8v3.4h-3.4"/></svg>{% endmacro %}
 {% macro arrow(kind) %}<svg class="ic" viewBox="0 0 12 12" aria-hidden="true">{% if kind == "out" %}<path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/>{% else %}<path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/>{% endif %}</svg>{% endmacro %}
-<body data-day="{{ weekday }}" data-date="{{ date_compact }}">
+<body data-day="{{ weekday }}" data-date="{{ date_compact }}"{% if ai_url is defined and ai_url %} data-ai="{{ ai_url }}"{% endif %}>
 
 <header class="stub" id="thoi-tiet">
   {% set gid = "top" %}{% include "_guilloche.svg.j2" %}
@@ -514,6 +527,7 @@ html.sheet-open{overflow:hidden}
                 {% if n.why_it_matters %}<div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>{{ n.why_it_matters }}</dd></div>{% endif %}
               </dl>
               {% endif %}
+              {% if n.fresh and ai_url is defined and ai_url %}<div class="ai-box"><button type="button" class="ai-btn" data-ai-sum data-url="{{ n.url }}" data-title="{{ n.title }}" data-source="{{ n.source }}" data-snippet="{{ n.summary }}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.8l1.7 4.6 4.6 1.7-4.6 1.7L10 14.4 8.3 9.8 3.7 8.1l4.6-1.7z"/><path d="M15.6 12.6l.8 2.1 2.1.8-2.1.8-.8 2.1-.8-2.1-2.1-.8 2.1-.8z"/></svg><span>Tóm tắt bằng AI</span></button></div>{% endif %}
               <a class="orig" href="{{ n.url }}" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại {{ n.source }}{{ arrow("out") }}</a>
             </div>
           </details>
@@ -699,6 +713,48 @@ html.sheet-open{overflow:hidden}
         }).catch(function(){ say('Không kiểm tra được, thử lại sau'); }).then(function(){ setTimeout(function(){b.classList.remove('spin');},400); });
       });
     });
+  })();
+  /* AI tóm tắt khi bấm: gọi Cloudflare Worker (giữ key Gemini), cần mã truy cập lưu trên máy này */
+  (function(){
+    var AI=document.body.getAttribute('data-ai'); if(!AI) return;
+    var KK='banTinSang.aiKey';
+    try{ var m=location.hash.match(/^#ai=([A-Za-z0-9_-]{16,})$/); if(m){ localStorage.setItem(KK,m[1]); history.replaceState(null,'',location.pathname+location.search); setTimeout(function(){var t=document.getElementById('toast'); if(t){t.textContent='Đã lưu mã AI trên máy này';t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2600);}},300);} }catch(e){}
+    function getKey(){try{return localStorage.getItem(KK)||'';}catch(e){return '';}}
+    function esc(t){return String(t||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+    function render(box,btn,d){
+      var html='<span class="ai-tag">Tóm tắt bằng AI</span><dl>';
+      [['Diễn biến chính',d.developments],['Bối cảnh',d.context],['Vì sao quan trọng · Ảnh hưởng tới Việt Nam',d.why_it_matters]].forEach(function(p){ if(p[1]) html+='<div><dt>'+p[0]+'</dt><dd>'+esc(p[1])+'</dd></div>'; });
+      box.innerHTML=html+'</dl>';
+      var root=box.closest('.sheet')||box.closest('.item');
+      var h=root&&(root.querySelector('#sheet-title')||root.querySelector('h4'));
+      if(h&&d.title){ var tag=h.querySelector('.tag-new'); h.textContent=d.title; if(tag) h.insertBefore(tag,h.firstChild); }
+      var sum=root&&root.querySelector('.sum'); if(sum&&d.summary) sum.textContent=d.summary;
+    }
+    function askKey(box,btn){
+      if(box.querySelector('.ai-key')) return;
+      var f=document.createElement('div'); f.className='ai-key';
+      f.innerHTML='<input type="password" autocomplete="off" placeholder="Mã truy cập AI" aria-label="Mã truy cập AI"><button type="button">Lưu</button>';
+      box.appendChild(f);
+      var n=document.createElement('p'); n.className='ai-note'; n.textContent='Chỉ cần nhập một lần trên mỗi máy.'; box.appendChild(n);
+      f.querySelector('button').addEventListener('click',function(){ var v=f.querySelector('input').value.trim(); if(!v) return; try{localStorage.setItem(KK,v);}catch(e){} f.remove(); n.remove(); run(btn); });
+    }
+    function run(btn){
+      var box=btn.closest('.ai-box'), url=btn.getAttribute('data-url'), CK='banTinSang.ai:'+url;
+      try{var c=JSON.parse(localStorage.getItem(CK)||'null'); if(c){render(box,btn,c);return;}}catch(e){}
+      var key=getKey(); if(!key){askKey(box,btn);return;}
+      btn.setAttribute('aria-busy','true'); btn.querySelector('span').textContent='Đang tóm tắt…';
+      fetch(AI.replace(/\/$/,'')+'/summarize',{method:'POST',headers:{'Content-Type':'application/json','X-Access-Key':key},
+        body:JSON.stringify({url:url,title:btn.getAttribute('data-title'),source:btn.getAttribute('data-source'),snippet:btn.getAttribute('data-snippet')})})
+      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok,status:r.status,j:j}; }); })
+      .then(function(res){
+        if(res.ok){ try{localStorage.setItem(CK,JSON.stringify(res.j));}catch(e){} render(box,btn,res.j); return; }
+        btn.removeAttribute('aria-busy'); btn.querySelector('span').textContent='Tóm tắt bằng AI';
+        var msg=res.status===401?'Mã truy cập sai, nhập lại':res.status===429?'Hết lượt tóm tắt hôm nay':'AI đang bận, thử lại sau';
+        if(res.status===401){ try{localStorage.removeItem(KK);}catch(e){} askKey(box,btn); }
+        var p=box.querySelector('.ai-note')||box.appendChild(document.createElement('p')); p.className='ai-note'; p.textContent=msg;
+      }).catch(function(){ btn.removeAttribute('aria-busy'); btn.querySelector('span').textContent='Tóm tắt bằng AI'; });
+    }
+    document.addEventListener('click',function(e){ var b=e.target.closest('[data-ai-sum]'); if(b&&!b.hasAttribute('aria-busy')){ e.preventDefault(); run(b); } });
   })();
   var root=document.documentElement, th=document.getElementById('theme');
   var vbs=document.querySelectorAll('.views button');

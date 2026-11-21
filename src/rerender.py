@@ -61,7 +61,9 @@ def load_snapshot(path: Path = SNAPSHOT_PATH, trends_path: Path | None = None, l
     # Trend luôn lấy bản mới nhất trong data/trends.json (cập nhật 2 giờ/lần)
     from .config import load_config
     from .trends import TRENDS_PATH, for_page, load_store
-    ctx.setdefault("site_url", load_config().get("site_url", ""))
+    _cfg = load_config()
+    ctx.setdefault("site_url", _cfg.get("site_url", ""))
+    ctx["ai_url"] = _cfg.get("ai_worker_url", "")
     ctx["trends"] = for_page(load_store(trends_path or TRENDS_PATH))
     # Làm mới trong ngày: tin nóng/mới + bảng giá mới nhất (không gọi Gemini)
     from . import live as _live

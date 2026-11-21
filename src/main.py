@@ -173,6 +173,7 @@ def run() -> int:
         "year": local.strftime("%Y"),
         "date_compact": local.strftime("%Y%m%d"),
         "site_url": cfg.get("site_url", ""),
+        "ai_url": cfg.get("ai_worker_url", ""),
     }
     try:
         lv = update_live(now)
