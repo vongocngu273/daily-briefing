@@ -1,0 +1,7 @@
+google-genai>=1.20
+feedparser>=6.0
+requests>=2.31
+Jinja2>=3.1
+pydantic>=2.6
+yfinance>=0.2.50
+pytest>=8.0

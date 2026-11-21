@@ -1,0 +1,63 @@
+name: Daily Briefing
+
+on:
+  schedule:
+    - cron: "10 0 * * *"   # 07:10 Asia/Ho_Chi_Minh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: daily-briefing
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Generate briefing
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WEATHER_LAT: ${{ secrets.WEATHER_LAT }}
+          WEATHER_LON: ${{ secrets.WEATHER_LON }}
+          WEATHER_LOCATION_NAME: ${{ secrets.WEATHER_LOCATION_NAME }}
+        run: python -m src.main
+
+      - name: Verify output
+        run: test -s docs/index.html
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html data/history.json
+          if git diff --staged --quiet; then
+            echo "Không có thay đổi"
+            exit 0
+          fi
+          git commit -m "chore: update daily briefing [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      # [skip ci] also skips the automatic Pages build, so request one explicitly.
+      - name: Trigger Pages build
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"

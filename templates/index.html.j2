@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Bản tin sáng · {{ date_str }}</title>
+<style>
+:root{
+  --bg:#fbfaf7;--fg:#1b1b1b;--muted:#6b6b6b;--rule:#d9d6cf;--accent:#8a1c1c;--link:#1d4f91;
+  --up:#1d7a3a;--down:#b3261e;
+  --serif:Georgia,"Times New Roman","Noto Serif",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#121212;--fg:#e8e6e1;--muted:#9a978f;--rule:#34322e;--accent:#e07a6e;--link:#8db4ea;--up:#6cc784;--down:#f08a80;}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 var(--sans)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 48px}
+a{color:var(--link)}
+header.mast{border-bottom:3px double var(--rule);padding:20px 0 12px;text-align:center}
+.mast h1{font:700 2rem/1.1 var(--serif);margin:0;letter-spacing:-.01em}
+.mast .meta{color:var(--muted);font-size:.85rem;margin-top:6px}
+nav.quick{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:12px 0;border-bottom:1px solid var(--rule)}
+nav.quick a,nav.quick button{font:600 .82rem var(--sans);color:var(--fg);background:none;border:1px solid var(--rule);
+  border-radius:3px;padding:6px 10px;text-decoration:none;cursor:pointer}
+nav.quick a:hover,nav.quick button:hover{border-color:var(--fg)}
+h2{font:700 1.35rem/1.25 var(--serif);margin:28px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--fg)}
+h3{font:700 1.05rem/1.3 var(--serif);margin:22px 0 6px;color:var(--accent);text-transform:uppercase;letter-spacing:.03em;font-size:.9rem}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{text-align:left;padding:6px 6px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+td.r,th.r{text-align:right}
+.up{color:var(--up)}.down{color:var(--down)}
+.advice{margin:10px 0 0;padding-left:0;list-style:none}
+.advice li{margin:4px 0;font-weight:500}
+.toc ol{margin:6px 0;padding-left:20px}
+.toc li{margin:2px 0}
+.toc ul{margin:2px 0 6px;padding-left:18px;font-size:.92rem}
+article.item{padding:12px 0;border-bottom:1px solid var(--rule)}
+article.item:last-child{border-bottom:0}
+.item .head{font:700 1.05rem/1.35 var(--serif);margin:0}
+.item .tag{display:inline-block;font:600 .7rem var(--sans);text-transform:uppercase;letter-spacing:.05em;
+  color:var(--accent);border:1px solid var(--accent);border-radius:2px;padding:0 4px;margin-left:4px;vertical-align:2px}
+.item .sum{margin:4px 0 2px}
+.item .src{font-size:.78rem;color:var(--muted)}
+details{margin-top:4px}
+summary{cursor:pointer;font-size:.85rem;color:var(--link);list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] summary{margin-bottom:6px}
+details dl{margin:0;font-size:.93rem}
+details dt{font-weight:600;margin-top:6px}
+details dd{margin:0}
+.empty{color:var(--muted);font-style:italic;font-size:.9rem}
+.notice{border-left:3px solid var(--accent);padding:6px 10px;font-size:.88rem;margin-top:14px}
+ol.takeaways{font:1.05rem/1.5 var(--serif);padding-left:22px}
+footer{margin-top:36px;padding-top:12px;border-top:3px double var(--rule);color:var(--muted);font-size:.8rem;text-align:center}
+@media (min-width:640px){.mast h1{font-size:2.5rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="mast">
+  <h1>Bản tin sáng</h1>
+  <div class="meta">{{ date_str }} · Cập nhật lúc <span class="num">{{ updated_at }}</span> (giờ Việt Nam) · {{ total_items }} tin</div>
+</header>
+
+<nav class="quick" aria-label="Lối tắt">
+  <a href="#thoi-tiet">Thời tiết</a>
+  <a href="#thi-truong">Thị trường</a>
+  <a href="#ghi-nho">3 điều cần nhớ</a>
+  <button type="button" id="toggle-all" aria-pressed="false">Mở tất cả</button>
+</nav>
+
+{% if ai_degraded %}
+<p class="notice">Một phần bản tin chưa được AI biên tập (lỗi kết nối) – đang hiển thị tiêu đề gốc.</p>
+{% endif %}
+
+<section id="thoi-tiet">
+  <h2>Thời tiết · {{ weather.location }}</h2>
+  <table class="num">
+    <thead><tr><th>Khung giờ</th><th>Trời</th><th class="r">Nhiệt độ</th><th class="r">Mưa</th><th class="r">UV</th></tr></thead>
+    <tbody>
+    {% for s in weather.slots %}
+      <tr>
+        <td><strong>{{ s.label }}</strong><br><span class="muted">{{ s.hours }}</span></td>
+        <td>{{ s.condition }}</td>
+        {% if s.has_data %}
+        <td class="r">{{ s.temp_min }}–{{ s.temp_max }}°C</td>
+        <td class="r">{{ s.rain_prob if s.rain_prob is not none else "–" }}%<br><span class="muted">{{ s.rain_mm if s.rain_mm is not none else "–" }} mm</span></td>
+        <td class="r">{{ s.uv_max if s.uv_max is not none else "–" }}</td>
+        {% else %}
+        <td class="r" colspan="3">Chưa có dữ liệu</td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <ul class="advice">
+  {% for line in weather.advice %}<li>{{ line }}</li>{% endfor %}
+  </ul>
+</section>
+
+<section class="toc" aria-label="Mục lục">
+  <h2>Mục lục</h2>
+  <ol>
+  {% for layer in layers %}
+    <li><a href="#lop-{{ layer.id }}">{{ layer.title }}</a>
+      <ul>
+      {% for cat in layer.categories %}
+        <li><a href="#{{ cat.key }}">{{ cat.label }}</a> <span class="muted num">({{ cat['items']|length }})</span></li>
+      {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+  </ol>
+</section>
+
+{% for layer in layers %}
+<section id="lop-{{ layer.id }}">
+  <h2>{{ layer.title }}</h2>
+  {% for cat in layer.categories %}
+  <div id="{{ cat.key }}">
+    <h3>{{ cat.label }}</h3>
+    {% if cat.key == "economy" %}
+    <div id="thi-truong">
+      <table class="num">
+        <thead><tr><th>Chỉ số</th><th class="r">Đóng cửa</th><th class="r">Thay đổi</th></tr></thead>
+        <tbody>
+        {% for q in quotes %}
+          <tr>
+            <td>{{ q.name }}{% if q.date %} <span class="muted">· {{ q.date }}</span>{% endif %}</td>
+            <td class="r">{{ q.close_str }}</td>
+            <td class="r {{ q.direction }}">{{ q.change_str }}</td>
+          </tr>
+        {% endfor %}
+          <tr><td>Vàng SJC</td><td class="r" colspan="2"><a href="{{ sjc_url }}" target="_blank" rel="noopener noreferrer">Xem giá tại SJC ↗</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+    {% for n in cat['items'] %}
+    <article class="item">
+      <p class="head">{{ n.emoji }} {{ n.title }}{% if n.is_update %}<span class="tag">Cập nhật</span>{% endif %}</p>
+      <p class="sum">{{ n.summary }}</p>
+      <div class="src">{{ n.source }}</div>
+      <details>
+        <summary>Xem đầy đủ ▾</summary>
+        <dl>
+          {% if n.developments %}<dt>Diễn biến chính</dt><dd>{{ n.developments }}</dd>{% endif %}
+          {% if n.context %}<dt>Bối cảnh</dt><dd>{{ n.context }}</dd>{% endif %}
+          {% if n.why_it_matters %}<dt>Vì sao quan trọng / Ảnh hưởng tới Việt Nam</dt><dd>{{ n.why_it_matters }}</dd>{% endif %}
+        </dl>
+        <p><a href="{{ n.url }}" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại {{ n.source }} ↗</a></p>
+      </details>
+    </article>
+    {% else %}
+    <p class="empty">Không có tin nổi bật mới.</p>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>
+{% endfor %}
+
+<section id="ghi-nho">
+  <h2>3 điều cần nhớ hôm nay</h2>
+  {% if takeaways %}
+  <ol class="takeaways">
+  {% for t in takeaways %}<li>{{ t }}</li>{% endfor %}
+  </ol>
+  {% else %}
+  <p class="empty">Chưa có dữ liệu.</p>
+  {% endif %}
+</section>
+
+<footer>
+  Tự động tổng hợp từ VnExpress, Tuổi Trẻ, VietnamPlus, BBC, Reuters, AP, Bloomberg · Thời tiết: Open-Meteo · Thị trường: Yahoo Finance.<br>
+  Tóm tắt do AI biên tập, có thể sai sót – hãy đọc bài gốc trước khi quyết định.
+</footer>
+</div>
+<script>
+(function(){
+  var btn=document.getElementById('toggle-all');
+  btn.addEventListener('click',function(){
+    var open=btn.getAttribute('aria-pressed')!=='true';
+    document.querySelectorAll('details').forEach(function(d){d.open=open;});
+    btn.setAttribute('aria-pressed',open?'true':'false');
+    btn.textContent=open?'Thu gọn tất cả':'Mở tất cả';
+  });
+})();
+</script>
+</body>
+</html>
