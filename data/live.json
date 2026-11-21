@@ -16,13 +16,13 @@
    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6n5iFvZmJRRXurY7dbfqeFqXstSVAIEQD-uB_h3Phb3P/360.jpg.avif",
    "ts": "2026-11-21T12:56:23+00:00",
    "sources": 2,
-   "score": 4.52
+   "score": 4.51
   },
   {
    "title": "Thủ tướng chỉ thị kích cầu tiêu dùng cuối năm",
    "url": "https://vnexpress.net/thu-tuong-chi-thi-kich-cau-tieu-dung-cuoi-nam-5147500.html",
    "source": "VnExpress",
-   "image": "https://i1-kinhdoanh.vnecdn.net/2026/11/21/img-1795264545-4321-1795264577.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yirqD19ta2l2YSM1MDF1FA",
+   "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/21/img-1795264545-4321-1795264577.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yirqD19ta2l2YSM1MDF1FA",
    "ts": "2026-11-21T12:51:24+00:00",
    "sources": 2,
    "score": 4.5
@@ -171,10 +171,10 @@
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin (USD)",
-   "close": 59921.5,
-   "change_pct": 1.9090799233272209,
+   "close": 59872.19140625,
+   "change_pct": 1.8252203166522274,
    "date": "21/11"
   }
  ],
- "updated": "2026-11-21T15:50:31.991027+00:00"
+ "updated": "2026-11-21T15:51:26.006657+00:00"
 }
