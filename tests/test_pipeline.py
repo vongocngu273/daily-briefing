@@ -404,6 +404,7 @@ def test_snapshot_roundtrip_renders_same_page(tmp_path):
                     "items": [item], "first": 1, "last": 1}]}],
         "weekday": 5, "weekday_name": "Thứ Bảy", "weekday_short": "T7", "serial": "21·11",
         "year": "2026", "date_compact": "20261121", "site_url": "https://x.github.io/daily-briefing/",
+        "ai_url": __import__("src.config", fromlist=["load_config"]).load_config().get("ai_worker_url", ""),
     }
     a, b, snap = tmp_path / "a.html", tmp_path / "b.html", tmp_path / "page.json"
     render(ctx, out_path=a)

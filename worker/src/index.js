@@ -90,7 +90,9 @@ async function callGemini(env, prompt) {
         try { return JSON.parse(text); } catch { last = "bad_json"; continue; }
       }
       last = String(r.status);
-      console.log(`gemini ${model} -> ${r.status}`);
+      let reason = "";
+      try { reason = (await r.json())?.error?.message?.slice(0, 160) || ""; } catch { /* body không phải JSON */ }
+      console.log(`gemini ${model} -> ${r.status} ${reason}`);
       if (r.status === 404) continue;                 // model không có -> thử model khác
       if ([401, 403, 429].includes(r.status)) break;  // key lỗi/hết lượt -> thử key khác
     }

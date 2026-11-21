@@ -9,3 +9,12 @@ workers_dev = true
 ALLOWED_ORIGIN = "https://vongocngu273.github.io"
 GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-2.5-flash"
 DAILY_LIMIT = "80"
+
+# Bộ đếm lượt tóm tắt mỗi ngày (DAILY_LIMIT)
+[[kv_namespaces]]
+binding = "LIMITS"
+id = "c6f0ade0939849f7bfaba8dd432b50fc"
+
+# Gemini API không phục vụ từ Hồng Kông (máy chủ Cloudflare gần VN nhất): ghim Worker chạy ở Mỹ
+[placement]
+region = "gcp:us-central1"
