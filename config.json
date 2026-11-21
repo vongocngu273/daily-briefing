@@ -1,5 +1,6 @@
 {
   "timezone": "Asia/Ho_Chi_Minh",
+  "site_url": "https://vongocngu273.github.io/daily-briefing/",
   "weather": {
     "lat": 10.7769,
     "lon": 106.7009,
@@ -15,9 +16,14 @@
     "recent_titles_for_ai": 150
   },
   "gemini": {
-    "model": "gemini-2.5-flash",
+    "model": "gemini-3.8-flash",
+    "fallback_models": [
+      "gemini-3.5-flash",
+      "gemini-2.5-flash"
+    ],
     "max_retries": 4,
-    "temperature": 0.3
+    "temperature": 0.3,
+    "thinking_level": "medium"
   },
   "feeds": [
     {"source": "VnExpress", "url": "https://vnexpress.net/rss/tin-moi-nhat.rss", "layers": [1, 2, 3]},

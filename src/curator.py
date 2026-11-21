@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import logging
 import random
+import threading
 import time
 from dataclasses import dataclass
 from typing import Literal
@@ -57,6 +58,8 @@ class NewsItem:
     url: str
     source: str
     published: str
+    ai: bool = True  # False = deterministic fallback, not recorded in history
+    num: int = 0  # continuous display number across the page (01..N)
 
     @property
     def emoji(self) -> str:
@@ -147,29 +150,82 @@ Danh sách ứng viên (JSON):
 """
 
 
+def is_key_problem(err: Exception) -> bool:
+    """Errors where another API key may succeed: quota (429), auth (401/403), invalid key (400)."""
+    code = getattr(err, "code", None)
+    msg = str(err).lower()
+    return code in (401, 403, 429) or (code == 400 and "api key" in msg)
+
+
+def is_retryable(err: Exception) -> bool:
+    """429 / 5xx / network & parse errors are retryable; other 4xx are permanent."""
+    code = getattr(err, "code", None)
+    if isinstance(code, int):
+        return code == 429 or code >= 500
+    return True
+
+
 class Curator:
-    def __init__(self, api_key: str, model: str = "gemini-2.5-flash", max_retries: int = 4,
-                 temperature: float = 0.3):
+    def __init__(self, api_keys: str | list[str], model: str = "gemini-3.8-flash", max_retries: int = 4,
+                 temperature: float = 0.3, fallback_models: list[str] | None = None,
+                 thinking_level: str | None = None, request_timeout_s: int = 300):
         from google import genai
 
-        self.client = genai.Client(api_key=api_key)
-        self.model = model
+        keys = [api_keys] if isinstance(api_keys, str) else list(api_keys)
+        keys = [k for k in dict.fromkeys(keys) if k]
+        if not keys:
+            raise ValueError("Cần ít nhất 1 Gemini API key")
+        # Key 1 lỗi quota/auth -> tự chuyển sang key 2 (không bao giờ log giá trị key)
+        from google.genai import types as _t
+
+        http = _t.HttpOptions(timeout=request_timeout_s * 1000)  # ms; stop hung requests
+        self.clients = [genai.Client(api_key=k, http_options=http) for k in keys]
+        self.key_idx = 0
+        self.thinking_level = (thinking_level or "").upper() or None
+        self._lock = threading.Lock()
+        # De-duplicated model chain; first one that is not 404 sticks for the run.
+        self.models = list(dict.fromkeys([model, *(fallback_models or [])]))
         self.max_retries = max_retries
         self.temperature = temperature
+
+    @property
+    def model(self) -> str:
+        return self.models[0]
+
+    def _next_model(self, failed: str) -> bool:
+        """Drop an exhausted model from the chain (shared across threads)."""
+        with self._lock:
+            if self.models and self.models[0] == failed and len(self.models) > 1:
+                self.models.pop(0)
+                log.warning("Model %s lỗi liên tục, chuyển sang %s", failed, self.models[0])
+            return bool(self.models) and self.models[0] != failed
+
+    def _switch_key(self, failed_idx: int) -> bool:
+        """Move to the next API key. True if a different key is now active."""
+        with self._lock:
+            if self.key_idx == failed_idx and failed_idx + 1 < len(self.clients):
+                self.key_idx = failed_idx + 1
+                log.warning("Gemini API key #%d lỗi, chuyển sang key dự phòng #%d", failed_idx + 1, self.key_idx + 1)
+            return self.key_idx != failed_idx
 
     def _generate(self, prompt: str, schema):
         from google.genai import types
 
-        config = types.GenerateContentConfig(
-            system_instruction=SYSTEM,
-            response_mime_type="application/json",
-            response_schema=schema,
-            temperature=self.temperature,
-        )
         last_err: Exception | None = None
-        for attempt in range(self.max_retries):
+        attempt = 0
+        while attempt < self.max_retries and self.models:
+            config = types.GenerateContentConfig(
+                system_instruction=SYSTEM,
+                response_mime_type="application/json",
+                response_schema=schema,
+                temperature=self.temperature,
+                thinking_config=types.ThinkingConfig(thinking_level=self.thinking_level)
+                if self.thinking_level else None,
+            )
+            current = self.model
+            key_idx = self.key_idx
             try:
-                resp = self.client.models.generate_content(model=self.model, contents=prompt, config=config)
+                resp = self.clients[key_idx].models.generate_content(model=current, contents=prompt, config=config)
                 parsed = resp.parsed
                 if parsed is None and resp.text:
                     parsed = schema.model_validate_json(resp.text)
@@ -178,12 +234,30 @@ class Curator:
                 return parsed
             except Exception as e:  # noqa: BLE001
                 last_err = e
+                code = getattr(e, "code", None)
+                if code == 404 and self._next_model(current):
+                    continue
+                if code == 400 and self.thinking_level and "thinking" in str(e).lower():
+                    log.warning("Model %s không hỗ trợ thinking_level, bỏ tham số này", self.model)
+                    self.thinking_level = None
+                    continue
+                if is_key_problem(e) and self._switch_key(key_idx):
+                    attempt = 0
+                    continue
+                if not is_retryable(e):
+                    log.error("Gemini lỗi không thể retry (%s): %s", code, str(e)[:160])
+                    break
+                attempt += 1
                 wait = min(60, 2 ** attempt * 3) + random.uniform(0, 1.5)
-                log.warning("Gemini lỗi (lần %d/%d): %s – chờ %.1fs", attempt + 1, self.max_retries,
-                            str(e)[:160], wait)
-                if attempt < self.max_retries - 1:
+                log.warning("Gemini lỗi (lần %d/%d, %s): %s – chờ %.1fs", attempt, self.max_retries,
+                            self.model, str(e)[:160], wait)
+                if attempt < self.max_retries:
                     time.sleep(wait)
-        raise RuntimeError(f"Gemini thất bại sau {self.max_retries} lần: {last_err}")
+                elif self._next_model(current):  # model overloaded for every retry -> next model
+                    attempt = 0
+                elif self._switch_key(key_idx):  # last model too -> try backup key
+                    attempt = 0
+        raise RuntimeError(f"Gemini thất bại: {str(last_err)[:300]}")
 
     def curate_layer(self, layer: int, candidates: list[Article], recent: list[str],
                      max_per_cat: int = 5) -> dict[str, list[NewsItem]]:
@@ -216,6 +290,6 @@ def fallback_layer(layer: int, candidates: list[Article], max_per_cat: int = 5) 
             cid=a.cid, category=first, severity="low", title=a.title,
             summary=truncate_words(a.summary, 25) or a.title, developments="", context="",
             why_it_matters="", is_update=False, url=a.url, source=a.source,
-            published=a.published.isoformat(),
+            published=a.published.isoformat(), ai=False,
         ))
     return out

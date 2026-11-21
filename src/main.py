@@ -1,22 +1,55 @@
 """Entry point: python -m src.main"""
 from __future__ import annotations
 
+import json
 import logging
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
-from .config import HISTORY_PATH, LAYER_TITLES, LAYERS, OUTPUT_PATH, load_config, tz, weather_location
+from .config import HISTORY_PATH, SUMMARY_PATH, LAYER_TITLES, LAYERS, OUTPUT_PATH, load_config, tz, weather_location
 from .curator import Curator, NewsItem, fallback_layer
 from .market import fetch_market
 from .news import (add_to_history, candidates_for_layer, collect, load_history, prune_history,
                    recent_titles, save_history)
 from .renderer import render
-from .weather import fetch_weather
+from .weather import fetch_weather, weather_severity
 
 log = logging.getLogger("daily-briefing")
 
+WEEKDAY_SHORT = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"]
 WEEKDAYS = ["Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật"]
+
+
+def build_summary(context: dict, local: datetime) -> dict:
+    """Compact data for notifications (src.notify). Not committed (.gitignore)."""
+    w = context["weather"]
+    return {
+        "date_str": context["date_str"],
+        "date_compact": local.strftime("%Y%m%d"),
+        "updated_at": context["updated_at"],
+        "total_articles": context["total_items"],
+        "weather": {
+            "location_name": w.location,
+            "severity": weather_severity(w.slots),
+            "advice": list(w.advice),
+            "windows": [
+                {"label": s.label, "hours": s.hours, "temp_min": s.temp_min, "temp_max": s.temp_max,
+                 "rain_prob": s.rain_prob, "condition": s.condition}
+                for s in w.slots
+            ],
+        },
+        "takeaways": list(context["takeaways"]),
+    }
+
+
+def write_summary(summary: dict, path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=1)
+    os.replace(tmp, path)
 
 
 def run() -> int:
@@ -28,8 +61,9 @@ def run() -> int:
     ncfg = cfg.get("news", {})
     max_per_cat = int(ncfg.get("max_per_category", 5))
 
-    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not api_key:
+    api_keys = [os.environ.get(n, "").strip() for n in ("GEMINI_API_KEY", "GEMINI_API_KEY_2")]
+    api_keys = [k for k in api_keys if k]
+    if not api_keys:
         log.error("Thiếu biến môi trường GEMINI_API_KEY")
         return 2
 
@@ -41,28 +75,42 @@ def run() -> int:
     recent = recent_titles(history, int(ncfg.get("recent_titles_for_ai", 150)))
 
     gcfg = cfg.get("gemini", {})
-    curator = Curator(api_key, gcfg.get("model", "gemini-2.5-flash"), int(gcfg.get("max_retries", 4)),
-                      float(gcfg.get("temperature", 0.3)))
+    model = os.environ.get("GEMINI_MODEL", "").strip() or gcfg.get("model", "gemini-3.8-flash")
+    curator = Curator(api_keys, model, int(gcfg.get("max_retries", 4)), float(gcfg.get("temperature", 0.3)),
+                      fallback_models=gcfg.get("fallback_models", []),
+                      thinking_level=gcfg.get("thinking_level"))
+
+    limit = int(ncfg.get("max_candidates_per_layer", 140))
+    cands_by_layer = {layer: candidates_for_layer(articles, layer, limit) for layer in LAYERS}
+    failed: set[int] = set()
+
+    def curate(layer: int):
+        try:
+            return curator.curate_layer(layer, cands_by_layer[layer], recent, max_per_cat)
+        except Exception as e:  # noqa: BLE001
+            failed.add(layer)
+            log.error("Lớp %d: Gemini thất bại, dùng fallback: %s", layer, str(e)[:200])
+            return fallback_layer(layer, cands_by_layer[layer], max_per_cat)
+
+    # 3 layer requests in parallel (each is slow); cross-layer dedup applied afterwards in order.
+    with ThreadPoolExecutor(max_workers=len(LAYERS)) as ex:
+        results = dict(zip(sorted(LAYERS), ex.map(curate, sorted(LAYERS))))
+    ai_failures = len(failed)
 
     layers_out = []
     all_items: list[NewsItem] = []
-    ai_failures = 0
     used_cids: set[int] = set()
     for layer in sorted(LAYERS):
-        cands = [a for a in candidates_for_layer(articles, layer, int(ncfg.get("max_candidates_per_layer", 140)))
-                 if a.cid not in used_cids]
-        try:
-            by_cat = curator.curate_layer(layer, cands, recent, max_per_cat)
-        except Exception as e:  # noqa: BLE001
-            ai_failures += 1
-            log.error("Lớp %d: Gemini thất bại, dùng fallback: %s", layer, str(e)[:200])
-            by_cat = fallback_layer(layer, cands, max_per_cat)
+        by_cat = results[layer]
         cats = []
         for key, label in LAYERS[layer]:
-            items = by_cat.get(key, [])
+            items = [i for i in by_cat.get(key, []) if i.cid not in used_cids]
             used_cids.update(i.cid for i in items)
-            all_items.extend(items)
-            cats.append({"key": key, "label": label, "items": items})
+            for it in items:
+                it.num = len(all_items) + 1
+                all_items.append(it)
+            cats.append({"key": key, "label": label, "items": items,
+                         "first": items[0].num if items else 0, "last": items[-1].num if items else 0})
         layers_out.append({"id": layer, "title": LAYER_TITLES[layer], "categories": cats})
 
     takeaways: list[str] = []
@@ -72,7 +120,8 @@ def run() -> int:
         log.error("Không tạo được 3 điều cần nhớ: %s", str(e)[:200])
 
     by_cid = {a.cid: a for a in articles}
-    published_articles = [by_cid[i.cid] for i in all_items if i.cid in by_cid]
+    # Only AI-curated items count as "published"; fallback headlines stay eligible next run.
+    published_articles = [by_cid[i.cid] for i in all_items if i.ai and i.cid in by_cid]
     history = add_to_history(history, published_articles, now)
 
     context = {
@@ -85,10 +134,17 @@ def run() -> int:
         "takeaways": takeaways,
         "total_items": len(all_items),
         "ai_degraded": ai_failures > 0,
+        "weekday": local.weekday(),
+        "weekday_name": WEEKDAYS[local.weekday()],
+        "weekday_short": WEEKDAY_SHORT[local.weekday()],
+        "serial": local.strftime("%d·%m"),
+        "year": local.strftime("%Y"),
+        "date_compact": local.strftime("%Y%m%d"),
     }
     render(context)
+    write_summary(build_summary(context, local), SUMMARY_PATH)
     save_history(history, HISTORY_PATH)
-    log.info("Đã xuất %d tin -> %s", len(all_items), OUTPUT_PATH)
+    log.info("Đã xuất %d tin (model %s) -> %s", len(all_items), curator.model, OUTPUT_PATH)
     if ai_failures == len(LAYERS):
         log.error("Cả %d lớp đều thất bại khi gọi Gemini", ai_failures)
         return 1

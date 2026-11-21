@@ -13,6 +13,7 @@ log = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config.json"
 HISTORY_PATH = ROOT / "data" / "history.json"
+SUMMARY_PATH = ROOT / "data" / "latest_summary.json"
 TEMPLATES_DIR = ROOT / "templates"
 OUTPUT_PATH = ROOT / "docs" / "index.html"
 

@@ -170,8 +170,116 @@ def test_render_is_atomic_and_escapes(tmp_path):
         "weather": WeatherReport(location="<b>HCM</b>", slots=[], advice=["ok"]),
         "quotes": [], "sjc_url": "https://sjc.com.vn/gia-vang-online", "layers": [],
         "takeaways": ["a", "b", "c"], "total_items": 0, "ai_degraded": False,
+        "weekday": 5, "weekday_name": "Thứ Bảy", "weekday_short": "T7", "serial": "21·11",
+        "year": "2026", "date_compact": "20261121",
     }
     render(ctx, out_path=out)
     html = out.read_text(encoding="utf-8")
     assert "&lt;b&gt;HCM&lt;/b&gt;" in html
     assert not (tmp_path / "docs" / "index.html.tmp").exists()
+
+
+# ---------- retry policy / fallback ----------
+
+class _Err(Exception):
+    def __init__(self, code):
+        self.code = code
+
+
+def test_retry_policy():
+    from src.curator import is_retryable
+
+    assert is_retryable(_Err(429)) and is_retryable(_Err(503))
+    assert not is_retryable(_Err(404)) and not is_retryable(_Err(400))
+    assert is_retryable(TimeoutError())
+
+
+def test_fallback_items_not_marked_ai():
+    from src.curator import fallback_layer
+
+    now = datetime(2026, 11, 21, tzinfo=timezone.utc)
+    cands = [Article(title="T", url="https://x.vn/1", source="X", published=now, cid=1)]
+    out = fallback_layer(1, cands)
+    assert out["geopolitics"][0].ai is False
+
+
+# ---------- Telegram notify ----------
+
+def _summary(**kw):
+    s = {
+        "date_str": "Thứ Bảy, 21/11/2026", "date_compact": "20261121", "updated_at": "07:12",
+        "total_articles": 38,
+        "weather": {"location_name": "Q.1 <HCM>", "severity": "alert",
+                    "advice": ["Nên mang áo mưa & áo khoác."],
+                    "windows": [{"label": "Sáng", "temp_min": 26, "temp_max": 29, "rain_prob": 10},
+                                {"label": "Trưa", "temp_min": 31, "temp_max": 33, "rain_prob": 40},
+                                {"label": "Chiều tối", "temp_min": 28, "temp_max": 30, "rain_prob": 80}]},
+        "takeaways": ["Fed <giữ> lãi suất", "Giá vàng & USD", "Bão số 9 > cấp 12"],
+    }
+    s.update(kw)
+    return s
+
+
+def test_build_message_escapes_and_has_all_blocks():
+    from src.notify import build_message
+
+    msg = build_message(_summary(), "https://user.github.io/daily-briefing/")
+    assert msg.startswith("<b>Bản tin sáng · Thứ Bảy, 21/11/2026</b> (07:12)")
+    assert "🚨" in msg
+    assert "Q.1 &lt;HCM&gt;" in msg and "áo mưa &amp; áo khoác" in msg
+    assert "Sáng 26–29° ☔10%" in msg and "Chiều 28–30° ☔80%" in msg
+    assert "• Fed &lt;giữ&gt; lãi suất" in msg and "• Bão số 9 &gt; cấp 12" in msg
+    assert msg.count("• ") == 3
+    assert '<a href="https://user.github.io/daily-briefing/?v=20261121">Đọc bản tin đầy đủ (38 tin) ↗</a>' in msg
+    # no raw dynamic '<' left except our own tags
+    import re
+    assert not re.search(r"<(?!/?b>|a href=|/a>)", msg)
+
+
+def test_cache_bust_replaces_existing_v():
+    from src.notify import with_cache_bust
+
+    assert with_cache_bust("https://x.io/p/?v=1&a=2", "20261121") == "https://x.io/p/?a=2&v=20261121"
+
+
+def test_notify_skips_safely_without_token(monkeypatch, tmp_path):
+    from src import notify
+
+    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "123")
+    called = []
+    monkeypatch.setattr(notify, "send", lambda *a, **k: called.append(1) or True)
+    assert notify.run(tmp_path / "missing.json") == 0
+    assert called == []
+
+
+def test_send_retries_and_never_logs_token(caplog):
+    import requests as rq
+    from src.notify import send
+
+    token = "123456:SECRET-TOKEN"
+    calls = []
+
+    def boom(url, **kw):
+        calls.append(url)
+        raise rq.ConnectionError(f"failed to reach {url}")
+
+    with caplog.at_level("INFO"):
+        ok = send(token, "1", "hi", post=boom, sleep=lambda s: None)
+    assert ok is False and len(calls) == 3
+    assert token not in caplog.text
+
+
+def test_weather_severity_levels():
+    from src.weather import weather_severity
+
+    assert weather_severity([_slot("Sáng", 1)]) == "ok"
+    assert weather_severity([_slot("Trưa", 2, uv=8)]) == "warn"
+    assert weather_severity([_slot("Chiều tối", 95, prob=80, mm=5)]) == "alert"
+
+
+def test_key_problem_detection():
+    from src.curator import is_key_problem
+
+    assert is_key_problem(_Err(429)) and is_key_problem(_Err(403))
+    assert not is_key_problem(_Err(503)) and not is_key_problem(_Err(404))

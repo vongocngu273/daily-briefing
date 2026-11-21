@@ -152,7 +152,7 @@ def make_advice(slots: list[Slot]) -> list[str]:
         when = ", ".join(dict.fromkeys(thunder + rainy)).lower()
         gear.append(f"mang áo mưa (khả năng mưa buổi {when})")
     if uv_max >= 6:
-        gear.append(f"mặc áo khoác chống nắng (UV tới {uv_max:g})")
+        gear.append(f"mặc áo khoác chống nắng (UV tới {uv_max:g})".replace(".", ","))
     if gear:
         lines.append("Nên " + "; ".join(gear) + ".")
     else:
@@ -194,3 +194,17 @@ def fetch_weather(loc: Location, timeout: int = 20) -> WeatherReport:
     report.slots = [Slot(key=k, label=l, hours=f"{a:02d}:00–{b:02d}:00") for k, l, a, b in SLOTS]
     report.advice = ["Chưa có dữ liệu thời tiết."]
     return report
+
+
+def weather_severity(slots: list[Slot]) -> str:
+    """'alert' (giông/ngập/gió giật mạnh) | 'warn' (mưa hoặc UV cao) | 'ok'."""
+    data = [s for s in slots if s.has_data]
+    if not data:
+        return "ok"
+    total_rain = sum(s.rain_mm or 0 for s in data)
+    if (any(s.code in THUNDER_CODES for s in data) or any((s.gust_max or 0) >= 50 for s in data)
+            or any((s.rain_mm or 0) >= 20 for s in data) or total_rain >= 30):
+        return "alert"
+    if any((s.rain_prob or 0) >= 50 or (s.rain_mm or 0) >= 1.0 for s in data) or max(s.uv_max or 0 for s in data) >= 6:
+        return "warn"
+    return "ok"

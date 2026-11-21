@@ -16,7 +16,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -34,6 +34,7 @@ jobs:
       - name: Generate briefing
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           WEATHER_LAT: ${{ secrets.WEATHER_LAT }}
           WEATHER_LON: ${{ secrets.WEATHER_LON }}
           WEATHER_LOCATION_NAME: ${{ secrets.WEATHER_LOCATION_NAME }}
@@ -61,3 +62,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
+
+      # Only reached after a successful push; give Pages time to deploy before pinging the phone.
+      - name: Wait for Pages deploy
+        run: sleep 45
+
+      - name: Notify Telegram
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BRIEFING_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python -m src.notify
