@@ -14,6 +14,7 @@ from .market import fetch_market
 from .news import (add_to_history, candidates_for_layer, collect, load_history, prune_history,
                    recent_titles, save_history)
 from .renderer import render
+from .extras import air_advice, fetch_air, fetch_tide, uv_level
 from .weather import fetch_weather, weather_severity
 
 log = logging.getLogger("daily-briefing")
@@ -34,6 +35,10 @@ def build_summary(context: dict, local: datetime) -> dict:
             "location_name": w.location,
             "severity": weather_severity(w.slots),
             "advice": list(w.advice),
+            "sunrise": w.sunrise,
+            "sunset": w.sunset,
+            "aqi": context["air"].aqi_max if context.get("air") else None,
+            "aqi_label": context["air"].label if context.get("air") else None,
             "windows": [
                 {"label": s.label, "hours": s.hours, "temp_min": s.temp_min, "temp_max": s.temp_max,
                  "rain_prob": s.rain_prob, "condition": s.condition}
@@ -67,7 +72,15 @@ def run() -> int:
         log.error("Thiếu biến môi trường GEMINI_API_KEY")
         return 2
 
-    weather = fetch_weather(weather_location(cfg))
+    loc = weather_location(cfg)
+    weather = fetch_weather(loc)
+    air = fetch_air(loc)
+    extra = air_advice(air)
+    if extra:
+        weather.advice = [a for a in weather.advice if a != "Chưa có dữ liệu thời tiết"][:2] + [extra]
+    tcfg = cfg.get("tide", {})
+    tide = fetch_tide(float(tcfg.get("lat", 10.38)), float(tcfg.get("lon", 106.98)),
+                      tcfg.get("place", "Cần Giờ"), local.strftime("%Y-%m-%d"))
     quotes = fetch_market(cfg)
 
     history = prune_history(load_history(HISTORY_PATH), now, int(ncfg.get("history_retention_days", 7)))
@@ -128,6 +141,9 @@ def run() -> int:
         "updated_at": local.strftime("%H:%M"),
         "date_str": f"{WEEKDAYS[local.weekday()]}, {local.strftime('%d/%m/%Y')}",
         "weather": weather,
+        "air": air,
+        "tide": tide,
+        "uv_label": uv_level(weather.uv_day),
         "quotes": quotes,
         "sjc_url": cfg.get("market", {}).get("sjc_url", "https://sjc.com.vn/gia-vang-online"),
         "layers": layers_out,

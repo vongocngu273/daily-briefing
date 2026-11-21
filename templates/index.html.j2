@@ -58,6 +58,24 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .wx .t{font:800 26px/1.1 var(--cond);color:var(--serial);white-space:nowrap}
 .wx p{margin:0;font-size:12px;line-height:1.35}
 .wx .na{font:600 14px var(--cond);color:var(--field-muted)}
+.idx{display:grid;grid-template-columns:repeat(2,1fr);background:var(--field);border:2px solid var(--stub-ink)}
+.idx>div{padding:7px 8px 8px;min-width:0;border-right:1px solid var(--stub-ink);border-bottom:1px solid var(--stub-ink)}
+.idx>div:nth-child(2n){border-right:0}
+.idx>div:nth-child(n+3){border-bottom:0}
+.idx h2{margin:0 0 2px;font:600 12px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase}
+.idx p{margin:0;font-size:12px;line-height:1.35}
+.idx .v{font:800 22px/1.1 var(--cond);color:var(--serial);white-space:nowrap}
+.idx .s{color:var(--field-muted)}
+.idx .na{font:600 14px var(--cond);color:var(--field-muted)}
+.idx .tide{font-size:13px;white-space:nowrap}
+.idx .tide b{font:800 14px var(--cond);letter-spacing:.04em;text-transform:uppercase;display:inline-block;min-width:3.2em}
+.idx .aq.warn .v::after,.idx .aq.alert .v::after{content:" ⚠️";font-size:.7em}
+@media (min-width:700px){
+  .idx{grid-column:1/-1;grid-template-columns:repeat(4,1fr)}
+  .idx>div{border-bottom:0}
+  .idx>div:nth-child(2n){border-right:1px solid var(--stub-ink)}
+  .idx>div:last-child{border-right:0}
+}
 .stub-row.loc{margin-bottom:6px;align-items:center}
 .geo{flex:none;font:600 13px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--stub-ink);background:var(--field);border:1.5px solid var(--stub-ink);padding:6px 8px;cursor:pointer;border-radius:0}
 .geo:hover{background:var(--stub-ink);color:var(--field)}
@@ -179,6 +197,28 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
           {% endif %}
         </div>
       {% endfor %}
+      </section>
+      <section class="idx" aria-label="Chỉ số trong ngày">
+        <div>
+          <h2>Mặt trời</h2>
+          {% if weather.sunrise %}<p class="v">↑&nbsp;<span id="ix-rise">{{ weather.sunrise }}</span></p><p class="v">↓&nbsp;<span id="ix-set">{{ weather.sunset }}</span></p>
+          {% else %}<p class="na">Chưa có dữ liệu</p>{% endif %}
+        </div>
+        <div>
+          <h2>UV cao nhất</h2>
+          {% if weather.uv_day is not none %}<p class="v" id="ix-uv">{{ weather.uv_day|string|replace(".", ",") }}</p><p id="ix-uvl">{{ uv_label if uv_label is defined else "" }}</p>
+          {% else %}<p class="na">Chưa có dữ liệu</p>{% endif %}
+        </div>
+        <div class="aq{% if air is defined and air.ok %} {{ air.tone }}{% endif %}" id="ix-air">
+          <h2>Không khí</h2>
+          {% if air is defined and air.ok %}<p class="v">AQI&nbsp;{{ air.aqi_max }}</p><p>{{ air.label }}</p>{% if air.pm25 is not none %}<p class="s">PM2.5&nbsp;{{ air.pm25|string|replace(".", ",") }}&nbsp;µg/m³</p>{% endif %}
+          {% else %}<p class="na">Chưa có dữ liệu</p>{% endif %}
+        </div>
+        <div>
+          <h2>Thủy triều{% if tide is defined %} · {{ tide.place }}{% endif %}</h2>
+          {% if tide is defined and tide.ok %}{% for t in tide.extremes[:4] %}<p class="tide"><b>{{ t.kind }}</b>&nbsp;{{ t.time }}&nbsp;·&nbsp;{{ t.height|string|replace(".", ",") }}&nbsp;m</p>{% endfor %}
+          {% else %}<p class="na">Chưa có dữ liệu</p>{% endif %}
+        </div>
       </section>
     </div>
     <div class="stub-row loc"><span id="wx-loc">{{ weather.location }}</span><button type="button" class="geo" id="geo">📍 Theo vị trí máy</button></div>
@@ -342,10 +382,33 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     document.getElementById('wx-advice').innerHTML=advice(ss).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
     document.getElementById('wx-loc').textContent=label;
   }
+  var AQ=[[50,'Tốt','ok'],[100,'Trung bình','ok'],[150,'Kém với người nhạy cảm','warn'],[200,'Kém','alert'],[300,'Rất kém','alert'],[1e9,'Nguy hại','alert']];
+  function uvLabel(u){return u<3?'Thấp':u<6?'Trung bình':u<8?'Cao':u<11?'Rất cao':'Cực độ';}
+  function paintDaily(d){
+    if(!d||!d.sunrise)return;
+    var r=document.getElementById('ix-rise'), st=document.getElementById('ix-set'), uv=document.getElementById('ix-uv'), ul=document.getElementById('ix-uvl');
+    if(r&&d.sunrise[0])r.textContent=d.sunrise[0].slice(11,16);
+    if(st&&d.sunset[0])st.textContent=d.sunset[0].slice(11,16);
+    if(uv&&d.uv_index_max[0]!=null){var u=Math.round(d.uv_index_max[0]*10)/10;uv.textContent=vn(u);ul.textContent=uvLabel(u);}
+  }
+  function airNote(a){return a>150?'Không khí '+lvl(a)[1].toLowerCase()+' (AQI '+a+'), nên đeo khẩu trang khi ra đường':a>100?'Không khí kém với người nhạy cảm (AQI '+a+'), nên đeo khẩu trang nếu đi xa':null;}
+  function lvl(a){for(var i=0;i<AQ.length;i++)if(a<=AQ[i][0])return AQ[i];return AQ[AQ.length-1];}
+  function fetchAir(lat,lon){
+    return fetch('https://air-quality-api.open-meteo.com/v1/air-quality?latitude='+lat+'&longitude='+lon+'&current=us_aqi,pm2_5&hourly=us_aqi&timezone=Asia%2FHo_Chi_Minh&forecast_days=1')
+      .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
+        var v=(j.hourly&&j.hourly.us_aqi||[]).filter(function(x){return x!=null;});
+        var now=j.current&&j.current.us_aqi, mx=v.length?Math.round(Math.max.apply(0,v)):(now!=null?Math.round(now):null);
+        if(mx==null)return null;
+        var L=lvl(mx), pm=j.current&&j.current.pm2_5;
+        var el=document.getElementById('ix-air'); el.className='aq '+L[2];
+        el.innerHTML='<h2>Không khí</h2><p class="v">AQI&nbsp;'+mx+'</p><p>'+L[1]+'</p>'+(pm!=null?'<p class="s">PM2.5&nbsp;'+vn(Math.round(pm*10)/10)+'&nbsp;µg/m³</p>':'');
+        return airNote(mx);
+      }).catch(function(){return null;});
+  }
   function vnToday(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Ho_Chi_Minh'}).format(new Date());}
   function openMeteo(lat,lon){
-    return fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&hourly=temperature_2m,precipitation_probability,precipitation,weather_code,uv_index,wind_gusts_10m&timezone=Asia%2FHo_Chi_Minh&forecast_days=1')
-      .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){return j.hourly;});
+    return fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&hourly=temperature_2m,precipitation_probability,precipitation,weather_code,uv_index,wind_gusts_10m&daily=sunrise,sunset,uv_index_max&timezone=Asia%2FHo_Chi_Minh&forecast_days=1')
+      .then(function(r){if(!r.ok)throw 0;return r.json();});
   }
   function metNo(lat,lon){
     var map={clearsky:0,fair:1,partlycloudy:2,cloudy:3,fog:45,lightrain:61,rain:63,heavyrain:65,lightrainshowers:80,rainshowers:81,heavyrainshowers:82};
@@ -361,7 +424,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
           h.weather_code.push(sym.indexOf('thunder')>=0?95:(sym in map?map[sym]:null));
           h.wind_gusts_10m.push(i.wind_speed_of_gust!=null?i.wind_speed_of_gust*3.6:null);
         });
-        return h;
+        return {hourly:h};
       });
   }
   function locate(){
@@ -369,8 +432,11 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     geoBtn.setAttribute('aria-busy','true'); geoBtn.textContent='Đang lấy vị trí…';
     navigator.geolocation.getCurrentPosition(function(pos){
       var lat=pos.coords.latitude.toFixed(4), lon=pos.coords.longitude.toFixed(4);
-      openMeteo(lat,lon).catch(function(){return metNo(lat,lon);}).then(function(h){
-        paint(slots(h),'Theo vị trí máy · '+new Intl.DateTimeFormat('vi-VN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'}).format(new Date()));
+      Promise.all([openMeteo(lat,lon).catch(function(){return metNo(lat,lon);}),fetchAir(lat,lon)]).then(function(res){
+        var j=res[0], note=res[1];
+        paint(slots(j.hourly),'Theo vị trí máy · '+new Intl.DateTimeFormat('vi-VN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'}).format(new Date()));
+        paintDaily(j.daily);
+        if(note){var ul=document.getElementById('wx-advice'), li=document.createElement('li'); li.textContent=note; ul.appendChild(li);}
         try{localStorage.setItem(GK,'1');}catch(e){}
         geoBtn.removeAttribute('aria-busy'); geoBtn.textContent='📍 Cập nhật';
       }).catch(function(){geoBtn.removeAttribute('aria-busy'); geoBtn.textContent='📍 Lỗi, thử lại';});

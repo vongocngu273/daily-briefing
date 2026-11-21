@@ -91,6 +91,9 @@ class WeatherReport:
     slots: list[Slot] = field(default_factory=list)
     advice: list[str] = field(default_factory=list)
     ok: bool = False
+    sunrise: str | None = None   # "HH:MM"
+    sunset: str | None = None
+    uv_day: float | None = None
 
 
 def _severity(code: int) -> int:
@@ -225,6 +228,18 @@ def _fetch_met(loc: Location, timeout: int) -> list[Slot]:
     return build_slots(met_to_hourly(r.json(), today))
 
 
+
+def apply_daily(report: "WeatherReport", daily: dict) -> None:
+    """Giờ mặt trời mọc/lặn và UV cao nhất trong ngày (Open-Meteo 'daily')."""
+    def first(name):
+        arr = daily.get(name) or []
+        return arr[0] if arr else None
+    rise, sset, uv = first("sunrise"), first("sunset"), first("uv_index_max")
+    report.sunrise = rise[11:16] if isinstance(rise, str) and len(rise) >= 16 else None
+    report.sunset = sset[11:16] if isinstance(sset, str) and len(sset) >= 16 else None
+    report.uv_day = round(uv, 1) if isinstance(uv, (int, float)) else None
+
+
 def fetch_weather(loc: Location, timeout: int = 30, attempts: int = 4,
                   backoff: tuple[int, ...] = (5, 15, 30)) -> WeatherReport:
     params = {
@@ -232,6 +247,7 @@ def fetch_weather(loc: Location, timeout: int = 30, attempts: int = 4,
         "longitude": loc.lon,
         "hourly": "temperature_2m,precipitation_probability,precipitation,weather_code,uv_index,wind_gusts_10m",
         "timezone": "Asia/Ho_Chi_Minh",
+        "daily": "sunrise,sunset,uv_index_max",
         "forecast_days": 1,
     }
     report = WeatherReport(location=loc.name)
@@ -239,7 +255,9 @@ def fetch_weather(loc: Location, timeout: int = 30, attempts: int = 4,
         try:
             r = requests.get(API_URL, params=params, timeout=timeout)
             r.raise_for_status()
-            report.slots = build_slots(r.json().get("hourly", {}))
+            payload = r.json()
+            report.slots = build_slots(payload.get("hourly", {}))
+            apply_daily(report, payload.get("daily", {}))
             report.advice = make_advice(report.slots)
             report.ok = any(s.has_data for s in report.slots)
             return report

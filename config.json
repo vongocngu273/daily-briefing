@@ -6,6 +6,11 @@
     "lon": 106.7009,
     "location_name": "Trung tâm TP.HCM"
   },
+  "tide": {
+    "lat": 10.38,
+    "lon": 106.98,
+    "place": "Cần Giờ"
+  },
   "news": {
     "window_hours": 26,
     "monday_window_hours": 50,

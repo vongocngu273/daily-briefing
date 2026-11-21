@@ -65,6 +65,13 @@ def build_message(summary: dict, url: str) -> str:
     windows = w.get("windows") or []
     if windows:
         lines.append(e(" · ".join(_window_line(x) for x in windows)))
+    extras = []
+    if w.get("sunrise") and w.get("sunset"):
+        extras.append(f"🌅 {w['sunrise']} · 🌇 {w['sunset']}")
+    if w.get("aqi") is not None:
+        extras.append(f"AQI {w['aqi']} ({w.get('aqi_label') or ''})".replace(" ()", ""))
+    if extras:
+        lines.append(e(" · ".join(extras)))
 
     takeaways = [t for t in (summary.get("takeaways") or []) if t][:3]
     if takeaways:

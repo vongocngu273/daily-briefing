@@ -312,3 +312,45 @@ def test_met_to_hourly_keeps_local_today_and_builds_slots():
     slots = build_slots(h)
     assert slots[0].temp_max == 27 and slots[1].code == 81 and slots[1].rain_mm == 2.5
     assert not slots[2].has_data
+
+
+# ---------- extras: AQI, tide, sun ----------
+def test_aqi_levels_and_advice():
+    from src.extras import AirReport, air_advice, aqi_level, parse_air
+    assert aqi_level(42) == ("Tốt", "ok")
+    assert aqi_level(114)[0] == "Kém với người nhạy cảm"
+    assert aqi_level(160)[1] == "alert"
+    rep = parse_air({"current": {"us_aqi": 94, "pm2_5": 33.24}, "hourly": {"us_aqi": [80, 115, None, 101]}})
+    assert rep.ok and rep.aqi_now == 94 and rep.aqi_max == 115 and rep.pm25 == 33.2
+    assert "khẩu trang" in air_advice(rep)
+    assert air_advice(AirReport(ok=True, aqi_max=60)) is None
+    assert not parse_air({}).ok
+
+
+def test_tide_extremes_finds_high_and_low_today():
+    from src.extras import tide_extremes
+    times = [f"2026-11-21T{h:02d}:00" for h in range(24)] + ["2026-11-22T00:00"]
+    heights = [1.65, 1.25, 0.85, 0.5, 0.26, 0.21, 0.37, 0.65, 0.93, 1.19, 1.41, 1.5, 1.41, 1.2, 0.98,
+               0.8, 0.69, 0.71, 0.92, 1.27, 1.63, 1.91, 2.07, 2.06, 1.82]
+    ex = tide_extremes(times, heights, "2026-11-21")
+    kinds = [e["kind"] for e in ex]
+    assert kinds == ["Thấp", "Cao", "Thấp", "Cao"]
+    assert ex[0]["time"] == "04:44" and ex[0]["height"] == 0.2  # nội suy giữa 04:00 và 05:00
+    assert ex[-1]["time"].startswith("22") and ex[-1]["height"] == 2.1
+
+
+def test_apply_daily_sun_and_uv():
+    from src.weather import WeatherReport, apply_daily
+    r = WeatherReport(location="x")
+    apply_daily(r, {"sunrise": ["2026-11-21T05:51"], "sunset": ["2026-11-21T17:26"], "uv_index_max": [7.44]})
+    assert (r.sunrise, r.sunset, r.uv_day) == ("05:51", "17:26", 7.4)
+    apply_daily(r, {})
+    assert r.sunrise is None
+
+
+def test_telegram_message_has_sun_and_aqi():
+    from src.notify import build_message
+    msg = build_message({"date_str": "Thứ Bảy, 21/11/2026", "updated_at": "07:10", "weather": {
+        "advice": ["Nên mặc áo khoác"], "sunrise": "05:51", "sunset": "17:26", "aqi": 114,
+        "aqi_label": "Kém với người nhạy cảm"}}, "")
+    assert "05:51" in msg and "AQI 114 (Kém với người nhạy cảm)" in msg
