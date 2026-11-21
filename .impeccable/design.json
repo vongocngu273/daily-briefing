@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T09:41:38+00:00",
+  "title": "Design System: Bản tin sáng",
+  "extensions": {
+    "colorMeta": {
+      "serial-red": {
+        "role": "primary",
+        "displayName": "Serial Red",
+        "canonical": "#d0021b",
+        "tonalRamp": [
+          "#3d0f15",
+          "#6d121d",
+          "#a21022",
+          "#ea0622",
+          "#f24056",
+          "#ed838f",
+          "#efbdc3",
+          "#f9eced"
+        ]
+      },
+      "ink-navy": {
+        "role": "neutral",
+        "displayName": "Ink Navy",
+        "canonical": "#1b1f4a",
+        "tonalRamp": [
+          "#1b1d31",
+          "#2a2e55",
+          "#373c7c",
+          "#424bae",
+          "#6f76c3",
+          "#9ea3d1",
+          "#cacce2",
+          "#eff0f5"
+        ]
+      },
+      "paper-white": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#404040",
+          "#595959",
+          "#787878",
+          "#999999",
+          "#b8b8b8",
+          "#d6d6d6",
+          "#f2f2f2"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#4a4e78",
+        "tonalRamp": [
+          "#21222c",
+          "#35374b",
+          "#484b6b",
+          "#5c6193",
+          "#8387af",
+          "#abadc4",
+          "#d0d1dc",
+          "#f1f1f4"
+        ]
+      },
+      "engrave-light": {
+        "role": "neutral",
+        "displayName": "Engraving",
+        "canonical": "rgba(255,255,255,.42)"
+      },
+      "stub-monday-sky": {
+        "role": "secondary",
+        "displayName": "Monday Sky Stub",
+        "canonical": "#5bbbe9",
+        "tonalRamp": [
+          "#142d38",
+          "#1c4c63",
+          "#206d92",
+          "#1f97d0",
+          "#54b1de",
+          "#8ec6e1",
+          "#c3ddea",
+          "#edf4f7"
+        ]
+      },
+      "stub-tuesday-lime": {
+        "role": "secondary",
+        "displayName": "Tuesday Lime Stub",
+        "canonical": "#a6d64a",
+        "tonalRamp": [
+          "#2b3517",
+          "#495d23",
+          "#68882a",
+          "#8fc12f",
+          "#abd260",
+          "#c2da95",
+          "#dbe6c6",
+          "#f4f6ee"
+        ]
+      },
+      "stub-wednesday-orange": {
+        "role": "secondary",
+        "displayName": "Wednesday Orange Stub",
+        "canonical": "#f7a440",
+        "tonalRamp": [
+          "#3c2811",
+          "#6a4415",
+          "#9e6015",
+          "#e2820d",
+          "#eca146",
+          "#e9bc86",
+          "#eed8bf",
+          "#f8f3ec"
+        ]
+      },
+      "stub-thursday-violet": {
+        "role": "secondary",
+        "displayName": "Thursday Violet Stub",
+        "canonical": "#a98ddc",
+        "tonalRamp": [
+          "#231a33",
+          "#392758",
+          "#4e3281",
+          "#663ab5",
+          "#8b69c9",
+          "#af9bd4",
+          "#d2c9e4",
+          "#f1eff6"
+        ]
+      },
+      "stub-friday-aqua": {
+        "role": "secondary",
+        "displayName": "Friday Aqua Stub",
+        "canonical": "#3ccdbf",
+        "tonalRamp": [
+          "#183431",
+          "#245b56",
+          "#2d857d",
+          "#33bcaf",
+          "#63cfc4",
+          "#98d8d1",
+          "#c7e5e2",
+          "#eef6f5"
+        ]
+      },
+      "stub-saturday-pink": {
+        "role": "secondary",
+        "displayName": "Saturday Pink Stub",
+        "canonical": "#f06e98",
+        "tonalRamp": [
+          "#39131f",
+          "#651a32",
+          "#961d44",
+          "#d61a57",
+          "#e34f7f",
+          "#e48ca8",
+          "#ebc1cf",
+          "#f7edf0"
+        ]
+      },
+      "stub-sunday-yellow": {
+        "role": "secondary",
+        "displayName": "Sunday Yellow Stub",
+        "canonical": "#f6cf3a",
+        "tonalRamp": [
+          "#3c3311",
+          "#6a5816",
+          "#9d8115",
+          "#e2b60e",
+          "#ecc946",
+          "#e9d486",
+          "#eee4bf",
+          "#f8f6ec"
+        ]
+      },
+      "dark-serial-red": {
+        "role": "primary",
+        "displayName": "Lifted Serial Red (dark)",
+        "canonical": "#ff5d6c",
+        "tonalRamp": [
+          "#3e0f13",
+          "#6e121a",
+          "#a40f1d",
+          "#ec0419",
+          "#f43e4f",
+          "#ee818c",
+          "#f0bdc1",
+          "#f9eced"
+        ]
+      },
+      "dark-ink": {
+        "role": "neutral",
+        "displayName": "Moon Ink (dark)",
+        "canonical": "#ecebf7",
+        "tonalRamp": [
+          "#1e1c30",
+          "#2f2c54",
+          "#3f3979",
+          "#4e46aa",
+          "#7972c0",
+          "#a4a0cf",
+          "#cdcbe1",
+          "#f0eff5"
+        ]
+      },
+      "dark-paper": {
+        "role": "neutral",
+        "displayName": "Deep Ink Paper (dark)",
+        "canonical": "#12142c",
+        "tonalRamp": [
+          "#1c1e30",
+          "#2c2f53",
+          "#3a3f79",
+          "#474fa8",
+          "#7379bf",
+          "#a1a4ce",
+          "#cbcde1",
+          "#f0f0f5"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink (dark)",
+        "canonical": "#b4b6d8",
+        "tonalRamp": [
+          "#1f202e",
+          "#31334e",
+          "#424471",
+          "#53579c",
+          "#7c80b6",
+          "#a7a8c9",
+          "#cecfde",
+          "#f0f0f4"
+        ]
+      },
+      "dark-rule": {
+        "role": "neutral",
+        "displayName": "Night Rule (dark)",
+        "canonical": "#5d6194",
+        "tonalRamp": [
+          "#21222c",
+          "#35374a",
+          "#484b6a",
+          "#5d6192",
+          "#8487ae",
+          "#abadc4",
+          "#d0d1dc",
+          "#f1f1f4"
+        ]
+      },
+      "dark-stub-ink": {
+        "role": "neutral",
+        "displayName": "Stub White (dark)",
+        "canonical": "#f4f2fb",
+        "tonalRamp": [
+          "#1f1a33",
+          "#322758",
+          "#433281",
+          "#563ab5",
+          "#7e69c9",
+          "#a89bd4",
+          "#cfc9e4",
+          "#f0eff6"
+        ]
+      },
+      "dark-engrave": {
+        "role": "neutral",
+        "displayName": "Engraving (dark)",
+        "canonical": "rgba(255,255,255,.14)"
+      },
+      "dark-stub-monday": {
+        "role": "secondary",
+        "displayName": "Monday Stub (dark)",
+        "canonical": "#1f4f73",
+        "tonalRamp": [
+          "#192834",
+          "#25445a",
+          "#2e5f84",
+          "#3581bb",
+          "#65a0cd",
+          "#98bcd7",
+          "#c8d8e5",
+          "#eff3f6"
+        ]
+      },
+      "dark-stub-tuesday": {
+        "role": "secondary",
+        "displayName": "Tuesday Stub (dark)",
+        "canonical": "#3d5716",
+        "tonalRamp": [
+          "#293418",
+          "#455b24",
+          "#62862d",
+          "#86bd33",
+          "#a4cf63",
+          "#bed897",
+          "#d9e5c7",
+          "#f3f6ee"
+        ]
+      },
+      "dark-stub-wednesday": {
+        "role": "secondary",
+        "displayName": "Wednesday Stub (dark)",
+        "canonical": "#7a4310",
+        "tonalRamp": [
+          "#382614",
+          "#633e1c",
+          "#925720",
+          "#d1741f",
+          "#df9653",
+          "#e1b68e",
+          "#ead5c3",
+          "#f7f2ed"
+        ]
+      },
+      "dark-stub-thursday": {
+        "role": "secondary",
+        "displayName": "Thursday Stub (dark)",
+        "canonical": "#46336f",
+        "tonalRamp": [
+          "#231e2f",
+          "#392f51",
+          "#4f3e75",
+          "#684da3",
+          "#8d77bb",
+          "#b0a4cc",
+          "#d3cde0",
+          "#f1f0f5"
+        ]
+      },
+      "dark-stub-friday": {
+        "role": "secondary",
+        "displayName": "Friday Stub (dark)",
+        "canonical": "#12534d",
+        "tonalRamp": [
+          "#173533",
+          "#225d58",
+          "#298980",
+          "#2dc2b5",
+          "#5fd3c9",
+          "#95dad4",
+          "#c6e7e4",
+          "#eef6f6"
+        ]
+      },
+      "dark-stub-saturday": {
+        "role": "secondary",
+        "displayName": "Saturday Stub (dark)",
+        "canonical": "#74203f",
+        "tonalRamp": [
+          "#341923",
+          "#5a2639",
+          "#842f4e",
+          "#ba3667",
+          "#cd658c",
+          "#d699b0",
+          "#e5c8d2",
+          "#f6eff1"
+        ]
+      },
+      "dark-stub-sunday": {
+        "role": "secondary",
+        "displayName": "Sunday Stub (dark)",
+        "canonical": "#665108",
+        "tonalRamp": [
+          "#3a3112",
+          "#675618",
+          "#997c1a",
+          "#dbaf15",
+          "#e7c44b",
+          "#e6d189",
+          "#ece2c0",
+          "#f8f5ed"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Serial",
+        "purpose": "The serial date only, serial red in its white field box."
+      },
+      "headline": {
+        "displayName": "Layer Heading",
+        "purpose": "Layer headings, uppercase, with a muted Lớp tag."
+      },
+      "title": {
+        "displayName": "Category Heading",
+        "purpose": "Category headings underlined 3px serial red; stub and section titles."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Item numbers 01–N and weather temperatures, serial red."
+      },
+      "figure": {
+        "displayName": "Board Figure",
+        "purpose": "Results-board closes, right-aligned tabular."
+      },
+      "item-title": {
+        "displayName": "Item Title",
+        "purpose": "Headline of each numbered item, reading face, 68ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Summaries and details; all AI-written text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Caps rows, strip buttons, summary line, captions."
+      },
+      "label-small": {
+        "displayName": "Small Label",
+        "purpose": "Weather slot names, definition terms, Lớp tags."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "perforation-tear",
+        "value": "clip-path inset(0 100% 0 0) to inset(0); 0.9s, delay 0.15s, cubic-bezier(.16,1,.3,1); once on load",
+        "purpose": "The only motion: the top perforation tears in, under prefers-reduced-motion: no-preference only."
+      },
+      {
+        "name": "anchor-scroll",
+        "value": "scroll-behavior: smooth; scroll-padding-top: 56px",
+        "purpose": "Quick-strip and contents jumps; auto under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "700px"
+      }
+    ],
+    "weekdayStubs": {
+      "source": "body[data-day] = Python date.weekday() (0 = Monday)",
+      "light": {
+        "0": "#5bbbe9",
+        "1": "#a6d64a",
+        "2": "#f7a440",
+        "3": "#a98ddc",
+        "4": "#3ccdbf",
+        "5": "#f06e98",
+        "6": "#f6cf3a"
+      },
+      "dark": {
+        "0": "#1f4f73",
+        "1": "#3d5716",
+        "2": "#7a4310",
+        "3": "#46336f",
+        "4": "#12534d",
+        "5": "#74203f",
+        "6": "#665108"
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Ticket Stub",
+      "kind": "custom",
+      "refersTo": "serial-box",
+      "description": "Weekday-coloured stub with guilloche, caps row, serial box and microprint; tops and closes the page.",
+      "html": "<header class=\"ds-stub\"><svg class=\"ds-gl\" aria-hidden=\"true\"><defs><pattern id=\"ds-gp\" width=\"72\" height=\"44\" patternUnits=\"userSpaceOnUse\"><path d=\"M0 22C9 39 27 39 36 22S63 5 72 22\"/><path d=\"M0 22C9 5 27 5 36 22S63 39 72 22\"/></pattern></defs><rect width=\"100%\" height=\"100%\" fill=\"url(#ds-gp)\"/></svg><div class=\"ds-row\"><b>Bản tin sáng</b><span>Cập nhật 07:12</span></div><div class=\"ds-serial\"><b>21·11</b><span>Thứ Bảy<small>2026 · 38 tin</small></span></div><div class=\"ds-micro\">Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026 · Bản tin sáng · 21·11 · 2026</div></header><div class=\"ds-perf\"></div>",
+      "css": ":root{--stub:#f06e98;--stub-ink:#1b1f4a;--field:#fff;--serial:#d0021b;--red:#d0021b;--ink:#1b1f4a;--paper:#fff;--muted:#4a4e78;--rule:#1b1f4a;--engrave:rgba(255,255,255,.42);--cond:\"Barlow Condensed\",\"Arial Narrow\",sans-serif;--read:\"Be Vietnam Pro\",-apple-system,\"Segoe UI\",sans-serif}.ds-stub{position:relative;isolation:isolate;overflow:hidden;background:var(--stub);color:var(--stub-ink);padding:14px 16px 18px}.ds-gl{position:absolute;inset:0;width:100%;height:100%;z-index:-1}.ds-gl path{fill:none;stroke:var(--engrave);stroke-width:.6px;vector-effect:non-scaling-stroke}.ds-row{display:flex;justify-content:space-between;align-items:baseline;font:600 13px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase}.ds-row b{font:800 20px/1 var(--cond);letter-spacing:.08em}.ds-serial{display:flex;align-items:flex-end;justify-content:space-between;background:var(--field);border:2px solid var(--stub-ink);padding:4px 12px 2px;margin-top:12px}.ds-serial b{font:800 88px/.95 var(--cond);color:var(--serial);letter-spacing:-.02em}.ds-serial span{font:800 24px/1 var(--cond);text-transform:uppercase;letter-spacing:.06em;padding-bottom:12px;text-align:right}.ds-serial small{display:block;font:600 13px var(--cond);letter-spacing:.12em}.ds-micro{overflow:hidden;white-space:nowrap;font:600 7px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin-top:14px}.ds-perf{height:12px;background:var(--stub);-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12'%3E%3Cpath d='M0 0H16V12H13.5A5.5 5.5 0 0 0 2.5 12H0Z'/%3E%3C/svg%3E\") 0 0/16px 12px repeat-x;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12'%3E%3Cpath d='M0 0H16V12H13.5A5.5 5.5 0 0 0 2.5 12H0Z'/%3E%3C/svg%3E\") 0 0/16px 12px repeat-x}@media (prefers-reduced-motion:no-preference){.ds-perf{animation:ds-tear .9s .15s cubic-bezier(.16,1,.3,1) both}@keyframes ds-tear{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}}"
+    },
+    {
+      "name": "Weather Box",
+      "kind": "card",
+      "refersTo": "weather-box",
+      "description": "Three ruled cells on the stub: slot, hours, red temperature range, sky and rain.",
+      "html": "<div class=\"ds-stubbg\"><section class=\"ds-wx\"><div><h2>Sáng</h2><p class=\"h\">07–09</p><div class=\"t\">24–27°</div><p>Nhiều mây</p><p>Mưa 20%</p></div><div><h2>Trưa</h2><p class=\"h\">11–14</p><div class=\"t\">29–31°</div><p>Nắng</p><p>Mưa 10%</p></div><div><h2>Chiều tối</h2><p class=\"h\">17–20</p><p class=\"na\">Chưa có dữ liệu</p></div></section></div>",
+      "css": ":root{--stub:#f06e98;--stub-ink:#1b1f4a;--field:#fff;--serial:#d0021b;--red:#d0021b;--ink:#1b1f4a;--paper:#fff;--muted:#4a4e78;--rule:#1b1f4a;--engrave:rgba(255,255,255,.42);--cond:\"Barlow Condensed\",\"Arial Narrow\",sans-serif;--read:\"Be Vietnam Pro\",-apple-system,\"Segoe UI\",sans-serif}.ds-stubbg{background:var(--stub);padding:12px}.ds-wx{display:grid;grid-template-columns:repeat(3,1fr);background:var(--field);border:2px solid var(--stub-ink);color:var(--stub-ink);font-family:var(--read)}.ds-wx>div{padding:7px 8px 8px;border-right:1px solid var(--stub-ink)}.ds-wx>div:last-child{border-right:0}.ds-wx h2{margin:0;font:600 12px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase}.ds-wx .h{font:600 11px/1.2 var(--cond);letter-spacing:.06em;margin:0 0 2px}.ds-wx .t{font:800 26px/1.1 var(--cond);color:var(--serial)}.ds-wx p{margin:0;font-size:12px;line-height:1.35}.ds-wx .na{font:600 14px var(--cond);color:#4a4e78}"
+    },
+    {
+      "name": "Quick Strip",
+      "kind": "nav",
+      "refersTo": "strip-link",
+      "description": "Sticky square outline chips; hover and pressed invert to ink.",
+      "html": "<nav class=\"ds-strip\"><a href=\"#\">Thời tiết</a><a href=\"#\">Thị trường</a><a href=\"#\">3 điều</a><button type=\"button\" aria-pressed=\"true\">Thu gọn tất cả</button></nav>",
+      "css": ":root{--stub:#f06e98;--stub-ink:#1b1f4a;--field:#fff;--serial:#d0021b;--red:#d0021b;--ink:#1b1f4a;--paper:#fff;--muted:#4a4e78;--rule:#1b1f4a;--engrave:rgba(255,255,255,.42);--cond:\"Barlow Condensed\",\"Arial Narrow\",sans-serif;--read:\"Be Vietnam Pro\",-apple-system,\"Segoe UI\",sans-serif}.ds-strip{display:flex;flex-wrap:wrap;gap:6px;padding:8px 0;background:var(--paper);border-bottom:2px solid var(--rule)}.ds-strip a,.ds-strip button{font:600 14px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:none;border:1.5px solid var(--rule);padding:8px 10px;text-decoration:none;cursor:pointer;border-radius:0}.ds-strip a:hover,.ds-strip button:hover,.ds-strip button[aria-pressed=\"true\"]{background:var(--ink);color:var(--paper)}.ds-strip :focus-visible{outline:2px solid var(--red);outline-offset:3px}"
+    },
+    {
+      "name": "Numbered Item",
+      "kind": "custom",
+      "refersTo": "item-number",
+      "description": "Red numeral gutter, reading-face title and summary, condensed source line with native details.",
+      "html": "<article class=\"ds-item\"><div class=\"no\">07</div><div><h4><span class=\"sev\">🟡</span>Ngân hàng Nhà nước điều chỉnh lãi suất<span class=\"tag\">Cập nhật</span></h4><p class=\"sum\">Tóm tắt hai câu do AI viết về diễn biến chính.</p><details><summary><span class=\"src\">VnExpress</span><span class=\"more\">Xem đầy đủ ▾</span></summary><dl><dt>Bối cảnh</dt><dd>Chi tiết bối cảnh.</dd></dl><a class=\"orig\" href=\"#\">Đọc bài gốc tại VnExpress</a></details></div></article>",
+      "css": ":root{--stub:#f06e98;--stub-ink:#1b1f4a;--field:#fff;--serial:#d0021b;--red:#d0021b;--ink:#1b1f4a;--paper:#fff;--muted:#4a4e78;--rule:#1b1f4a;--engrave:rgba(255,255,255,.42);--cond:\"Barlow Condensed\",\"Arial Narrow\",sans-serif;--read:\"Be Vietnam Pro\",-apple-system,\"Segoe UI\",sans-serif}.ds-item{display:grid;grid-template-columns:42px minmax(0,1fr);gap:0 10px;padding:14px 0;border-bottom:1px dashed var(--rule);color:var(--ink);font:400 16px/1.6 var(--read)}.ds-item .no{font:800 26px/1 var(--cond);color:var(--red);padding-top:2px}.ds-item h4{margin:0;font:600 17px/1.4 var(--read)}.ds-item .sev{display:inline-block;width:1.45em}.ds-item .tag{display:inline-block;vertical-align:2px;margin-left:6px;font:800 11px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--red);padding:3px 5px}.ds-item .sum{margin:3px 0 0}.ds-item details{margin-top:6px}.ds-item summary{display:inline-flex;gap:8px;cursor:pointer;list-style:none;font:600 13px var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.ds-item summary::-webkit-details-marker{display:none}.ds-item .src{color:var(--ink)}.ds-item summary:hover .more,.ds-item details[open] .more{color:var(--red)}.ds-item dt{font:600 12px var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.ds-item dd{margin:0;font-size:15px}.ds-item .orig{display:inline-block;margin-top:10px;font:800 15px var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--red)}"
+    },
+    {
+      "name": "Reading Flag",
+      "kind": "chip",
+      "refersTo": "resume-flag",
+      "description": "Inverted ink resume button on the stub and a stub-coloured corner tag on the flagged item.",
+      "html": "<div class=\"ds-stubbg\"><a class=\"ds-resume\" href=\"#\">Đọc tiếp từ tin 07 <svg viewBox=\"0 0 12 12\" aria-hidden=\"true\"><path d=\"M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z\"/></svg></a></div><div class=\"ds-flagged\">Item 07<span>Đang đọc dở</span></div>",
+      "css": ":root{--stub:#f06e98;--stub-ink:#1b1f4a;--field:#fff;--serial:#d0021b;--red:#d0021b;--ink:#1b1f4a;--paper:#fff;--muted:#4a4e78;--rule:#1b1f4a;--engrave:rgba(255,255,255,.42);--cond:\"Barlow Condensed\",\"Arial Narrow\",sans-serif;--read:\"Be Vietnam Pro\",-apple-system,\"Segoe UI\",sans-serif}.ds-stubbg{background:var(--stub);padding:12px}.ds-resume{display:inline-block;font:800 15px var(--cond);letter-spacing:.06em;text-transform:uppercase;background:var(--stub-ink);color:var(--stub);padding:5px 10px;text-decoration:none}.ds-resume svg{width:.72em;height:.72em;fill:currentColor}.ds-resume:focus-visible{outline:2px solid var(--red);outline-offset:3px}.ds-flagged{position:relative;padding:14px 0;border-bottom:1px dashed var(--rule);font:600 17px var(--read);color:var(--ink)}.ds-flagged span{position:absolute;right:0;top:-1px;font:800 11px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;background:var(--stub);color:var(--stub-ink);padding:4px 6px}"
+    },
+    {
+      "name": "Results Board",
+      "kind": "card",
+      "refersTo": "board-figure",
+      "description": "Ruled market table with a stub-coloured caption; down-moves in serial red.",
+      "html": "<div class=\"ds-board\"><table><caption>Bảng giá đóng cửa</caption><tbody><tr><th>VN-Index<small>Phiên 20/11</small></th><td>1.268,42</td><td class=\"c\">+0,84%</td></tr><tr><th>Brent</th><td>73,10</td><td class=\"c d\">−1,12%</td></tr><tr><th>BTC</th><td class=\"na\" colspan=\"2\">Chưa có dữ liệu</td></tr></tbody></table></div>",
+      "css": ":root{--stub:#f06e98;--stub-ink:#1b1f4a;--field:#fff;--serial:#d0021b;--red:#d0021b;--ink:#1b1f4a;--paper:#fff;--muted:#4a4e78;--rule:#1b1f4a;--engrave:rgba(255,255,255,.42);--cond:\"Barlow Condensed\",\"Arial Narrow\",sans-serif;--read:\"Be Vietnam Pro\",-apple-system,\"Segoe UI\",sans-serif}.ds-board{border:2px solid var(--rule);color:var(--ink)}.ds-board table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}.ds-board caption{caption-side:top;text-align:left;background:var(--stub);color:var(--stub-ink);font:800 14px var(--cond);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-bottom:2px solid var(--rule)}.ds-board th,.ds-board td{padding:7px 10px;border-bottom:1px solid var(--rule);text-align:left}.ds-board tr:last-child>*{border-bottom:0}.ds-board th{font:600 15px/1.25 var(--read)}.ds-board th small{display:block;font:600 11px var(--cond);letter-spacing:.1em;color:var(--muted)}.ds-board td{font:800 20px/1.1 var(--cond);text-align:right;white-space:nowrap}.ds-board .c{font-size:17px;width:1%}.ds-board .d{color:var(--red)}.ds-board .na{font:600 14px var(--cond);letter-spacing:.06em;color:var(--muted)}"
+    },
+    {
+      "name": "Closing Stub List",
+      "kind": "custom",
+      "refersTo": "serial-box",
+      "description": "The 3 takeaways as a white ruled list on the closing stub, repeating the morning serial.",
+      "html": "<section class=\"ds-close\"><div class=\"hd\"><h2>3 điều cần nhớ hôm nay</h2><span>Cuống 21·11</span></div><ol><li><b>1</b><span>Mưa chiều tối, mang áo mưa.</span></li><li><b>2</b><span>VN-Index tăng nhẹ.</span></li><li><b>3</b><span>Giá dầu giảm.</span></li></ol></section>",
+      "css": ":root{--stub:#f06e98;--stub-ink:#1b1f4a;--field:#fff;--serial:#d0021b;--red:#d0021b;--ink:#1b1f4a;--paper:#fff;--muted:#4a4e78;--rule:#1b1f4a;--engrave:rgba(255,255,255,.42);--cond:\"Barlow Condensed\",\"Arial Narrow\",sans-serif;--read:\"Be Vietnam Pro\",-apple-system,\"Segoe UI\",sans-serif}.ds-close{background:var(--stub);color:var(--stub-ink);padding:18px 16px 22px}.ds-close .hd{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}.ds-close h2{margin:0;font:800 26px/1.1 var(--cond);letter-spacing:.04em;text-transform:uppercase}.ds-close .hd span{font:800 18px var(--cond);letter-spacing:.06em;white-space:nowrap}.ds-close ol{list-style:none;margin:0;padding:0;background:var(--field);border:2px solid var(--stub-ink)}.ds-close li{display:grid;grid-template-columns:44px 1fr;align-items:center}.ds-close li+li{border-top:1px solid var(--stub-ink)}.ds-close b{font:800 30px/1 var(--cond);color:var(--serial);text-align:center;border-right:2px solid var(--stub-ink);padding:8px 0}.ds-close li span{padding:8px 12px;font:600 17px/1.35 var(--read)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Morning Ticket Stub",
+    "overview": "Every morning the page is printed as a fresh vé số kiến thiết stub. The date is the serial number, set huge in serial red inside a white ruled box; today's weather sits in the ticket's ruled cells; the market closes are the posted results board. The stub wears the weekday's colour the way provincial tickets do, under a fine guilloche security engraving and a microprint line, and is torn from the reading body along a punched perforation. Below the tear, the page is plain paper: navy ink, numbered items, dashed rules between them.\n\nThe system is flat, ruled and printed. Depth comes from colour fields and 2px ink borders, never from shadow, gradient, glow or rounded cards. Heavy condensed numerals carry everything countable or scannable (serial, temperatures, item numbers, figures, labels); a calm Vietnamese-first humanist sans carries everything you read. It refuses both the broadsheet-hairline digest and the app-card feed. No gambling vocabulary: it is a ticket you read, not one you play.",
+    "keyCharacteristics": [
+      "Locked four-colour palette: weekday stub colour, serial red, ink navy, paper white.",
+      "Two typefaces with fixed jobs: Barlow Condensed for numbers and labels, Be Vietnam Pro for reading.",
+      "Ruled boxes (2px ink borders, 1px inner dividers), square corners everywhere.",
+      "Ticket devices live on stubs only: guilloche, microprint, perforation, field boxes.",
+      "Continuous 01–N numbering that the contents, the reading flag and the closing stub all speak.",
+      "One motion: the top perforation tears in once on load."
+    ],
+    "rules": [
+      {
+        "name": "The Four-Colour Lock Rule",
+        "body": "A screen uses the day's stub, serial red, ink and paper. No fifth hue, no tints of red as fills, no gradients. A new state finds its colour inside the lock.",
+        "section": "colors"
+      },
+      {
+        "name": "The Red On White Rule",
+        "body": "Serial red sits on paper or on a white field box, never directly on the stub colour. That is why the Sunday slot, which tickets print red, is yellow here: a red stub would swallow the serial.",
+        "section": "colors"
+      },
+      {
+        "name": "The Stub Owns The Colour Rule",
+        "body": "The weekday colour appears on stub-world surfaces and on the few elements that point back to them (board caption, reading flag, hover, selection). The reading column itself stays ink on paper.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Anything countable, scannable or a control speaks Barlow Condensed in caps; anything to be read as prose speaks Be Vietnam Pro in sentence case. AI-written text is always in the reading face; the original-source link is always in the condensed red caps voice, so the summary and the source never look alike.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Everywhere Rule",
+        "body": "`font-variant-numeric: tabular-nums` is set on body; numbers line up in every box and column.",
+        "section": "typography"
+      },
+      {
+        "name": "The Printed Not Lifted Rule",
+        "body": "Separation comes from colour fields, ink rules and the perforation. No box-shadow, no glow, no gradient, no blur.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Ruled Box Rule",
+        "body": "A container is a 2px ink rectangle with 1px inner rules, or it is not a container. No cards, no fills behind content in the reading column, no rounded corners.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** pick the stub colour from `body[data-day]` and the weekday's light or dark twin; never hard-code one weekday's colour into a component.",
+      "**Do** put serial red on paper or a white field box (serial, temperatures, numerals, takeaway numbers).",
+      "**Do** draw every container as a 2px ink ruled box with 1px inner rules and square corners.",
+      "**Do** number items continuously 01–N across the page and reuse those numbers in the contents, the reading flag and links.",
+      "**Do** set numbers, labels and controls in Barlow Condensed caps and all reading text in Be Vietnam Pro, at a 68ch measure.",
+      "**Do** show missing data explicitly as \"Chưa có dữ liệu\" in muted condensed, never a blank or an invented value.",
+      "**Do** keep ticket devices (guilloche, microprint, perforation, field boxes) on stubs, and gate any motion behind `prefers-reduced-motion: no-preference`.",
+      "**Do** draw icons as small inline SVG in currentColor (arrows, triangles)."
+    ],
+    "donts": [
+      "**Don't** use shadows, gradients, glow, blur or rounded cards.",
+      "**Don't** add a fifth hue or fill areas with tints of serial red.",
+      "**Don't** set serial red directly on a stub colour, and don't give a weekday a red stub.",
+      "**Don't** spread guilloche or perforation into the reading column.",
+      "**Don't** use gambling vocabulary (\"giải\", \"trúng\") or any shop branding.",
+      "**Don't** add motion beyond the one-time perforation tear-in."
+    ]
+  }
+}
