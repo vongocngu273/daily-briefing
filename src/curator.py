@@ -67,6 +67,13 @@ class NewsItem:
         return SEVERITY_EMOJI.get(self.severity, "⚪")
 
 
+def even_count(items: list) -> list:
+    """Giữ số tin chẵn để lưới thẻ 2 cột không bị hở: bỏ tin cuối (ít quan trọng nhất).
+
+    Chuyên mục chỉ có 1 tin thì giữ nguyên (thẻ đó trải hết chiều ngang)."""
+    return items if len(items) <= 1 else items[: len(items) // 2 * 2]
+
+
 def truncate_words(text: str, n: int) -> str:
     words = (text or "").split()
     if len(words) <= n:
@@ -137,7 +144,7 @@ def _layer_prompt(layer: int, candidates: list[Article], recent: list[str], max_
 {cats}
 
 Quy tắc:
-1. Mỗi chuyên mục tối đa {max_per_cat} tin, ưu tiên tầm ảnh hưởng lớn và tác động tới Việt Nam. Có thể ít hơn nếu thiếu tin xứng đáng.
+1. Mỗi chuyên mục tối đa {max_per_cat} tin, ưu tiên tầm ảnh hưởng lớn và tác động tới Việt Nam. Có thể ít hơn nếu thiếu tin xứng đáng, nhưng số tin mỗi chuyên mục nên là số chẵn (2, 4, 6) để trang hiển thị cân đối.
 2. candidate_id PHẢI là một cid có trong danh sách. Mỗi cid dùng tối đa một lần. Không trả URL.
 3. Gộp các bài cùng một sự kiện: chỉ chọn 1 cid đại diện (ưu tiên nguồn uy tín, chi tiết hơn).
 4. So với "Tiêu đề đã đăng gần đây": nếu cùng sự kiện mà không có gì mới thì BỎ; nếu có diễn biến mới đáng kể thì chọn và đặt is_update=true.

@@ -196,27 +196,10 @@
        "ai": true,
        "num": 2,
        "image": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/3686/live/9ee585d0-e5a6-11f1-99b6-a35a62fa4264.jpg"
-      },
-      {
-       "cid": 3,
-       "category": "geopolitics",
-       "severity": "medium",
-       "title": "LHQ hướng tới quy định kiểm soát robot sát thủ AI",
-       "summary": "Các quốc gia nhất trí khởi động đàm phán tại Liên Hợp Quốc nhằm quản lý vũ khí sát thương tự động trước năm 2028.",
-       "developments": "Hội nghị của Liên Hợp Quốc đã thống nhất tiếp tục nhóm họp để tìm tiếng nói chung về khuôn khổ pháp lý điều chỉnh khí tài tự hành.",
-       "context": "Sự phát triển nhanh chóng của trí tuệ nhân tạo trong quân sự làm dấy lên cảnh báo về nguy cơ chiến tranh mất kiểm soát.",
-       "why_it_matters": "Thỏa thuận tương lai sẽ định hình quy chuẩn tác chiến quốc tế và tác động đến chiến lược hiện đại hóa quốc phòng toàn cầu.",
-       "is_update": false,
-       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZTFDeHY0QlBhU2dnNndMa1FhdmhtUDV2eF9HYmhHU0tzRlFoM0U1a0ZuaE8zbGduLUhoTU0tWWExeDkyOWYwRi1aXzVOd0NhRGszMlU5MWFyVmdLSUJOREtvaXNYY1p3YnRIaDR5X0RwZGVPTG1GeW5wZm1Hd0dlM0RoVDVBQlZ4WFV1bU9mM3YzcDJISEpEZkI5ekdsMy1xb1BkZ0JUYw?oc=5",
-       "source": "Reuters",
-       "published": "",
-       "ai": true,
-       "num": 3,
-       "image": ""
       }
      ],
      "first": 1,
-     "last": 3
+     "last": 2
     },
     {
      "key": "economy",
@@ -236,7 +219,7 @@
        "source": "Reuters",
        "published": "",
        "ai": true,
-       "num": 4,
+       "num": 3,
        "image": ""
       },
       {
@@ -253,7 +236,7 @@
        "source": "AP News",
        "published": "",
        "ai": true,
-       "num": 5,
+       "num": 4,
        "image": ""
       },
       {
@@ -270,7 +253,7 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 6,
+       "num": 5,
        "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/21/107167409175551915013610716740-4557-4906-1795247774.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=0d1Fojw1N96EfgMxc6izVQ"
       },
       {
@@ -287,12 +270,12 @@
        "source": "BBC Tiếng Việt",
        "published": "",
        "ai": true,
-       "num": 7,
+       "num": 6,
        "image": "https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/208b/live/666ff4b0-e4b6-11f1-a094-5fdc692f3e33.jpg"
       }
      ],
-     "first": 4,
-     "last": 7
+     "first": 3,
+     "last": 6
     },
     {
      "key": "domestic",
@@ -312,7 +295,7 @@
        "source": "VietnamPlus",
        "published": "",
        "ai": true,
-       "num": 8,
+       "num": 7,
        "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6s8uF23gfSmj-tMrde6W1FlO1fnhlsuYh7LKpGncqeTR0eMe-pMBmMCBLw2AgyujI-HixheQPAKIrKjfqyfYMvv_Nrd7uAYOHts1O1K5NFBZzbV_65Aa6oaOVuikAjVqcw/ttxvn-quoc-hoi-bieu-quyet-thong-qua-cac-luat-va-nghi-quyet-9169650-6.jpg.avif"
       },
       {
@@ -329,7 +312,7 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 9,
+       "num": 8,
        "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/202611210903110023-g3194982797-4551-1982-1795236027.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Adu8l3zV8Hufs8jKtAm7SQ"
       },
       {
@@ -346,7 +329,7 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 10,
+       "num": 9,
        "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/1792545690945b11941319c9749b6b-9414-3482-1795237172.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=JnE1xwHSwAnsYOayHqmazA"
       },
       {
@@ -363,29 +346,12 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 11,
+       "num": 10,
        "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/DJI0914-1795236441-7593-1795236774.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=wF_r0JJFWlFnyadiGhvWkg"
-      },
-      {
-       "cid": 12,
-       "category": "domestic",
-       "severity": "medium",
-       "title": "Thủ tướng chỉ thị triển khai giải pháp kích cầu tiêu dùng",
-       "summary": "Thủ tướng yêu cầu điều hành chính sách thuế, phí linh hoạt nhằm giảm chi phí sinh hoạt và thúc đẩy sức mua cuối năm.",
-       "developments": "Bộ Tài chính được chỉ đạo chủ động phương án tài khóa thích hợp để hỗ trợ khả năng chi tiêu của hộ gia đình.",
-       "context": "Kích cầu tiêu dùng nội địa là một trong những động lực quan trọng để cán đích chỉ tiêu tăng trưởng năm.",
-       "why_it_matters": "Chính sách này hỗ trợ trực tiếp cho đời sống người tiêu dùng và thúc đẩy doanh thu ngành sản xuất, bán lẻ trong nước.",
-       "is_update": false,
-       "url": "https://vnexpress.net/thu-tuong-chi-thi-kich-cau-tieu-dung-cuoi-nam-5147500.html",
-       "source": "VnExpress",
-       "published": "",
-       "ai": true,
-       "num": 12,
-       "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/21/img-1795264545-4321-1795264577.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yirqD19ta2l2YSM1MDF1FA"
       }
      ],
-     "first": 8,
-     "last": 12
+     "first": 7,
+     "last": 10
     }
    ]
   },
@@ -411,7 +377,7 @@
        "source": "Tinh tế",
        "published": "",
        "ai": true,
-       "num": 13,
+       "num": 11,
        "image": "https://photo2.tinhte.vn/data/attachment-files/2026/11/9139488_cover-nvidia-giam-14-7-tuan.jpg"
       },
       {
@@ -428,7 +394,7 @@
        "source": "Tinh tế",
        "published": "",
        "ai": true,
-       "num": 14,
+       "num": 12,
        "image": "https://photo2.tinhte.vn/data/attachment-files/2026/11/9138608_anh-1-apple-ai-agent.jpg"
       },
       {
@@ -445,7 +411,7 @@
        "source": "BBC",
        "published": "",
        "ai": true,
-       "num": 15,
+       "num": 13,
        "image": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/5eb0/live/a9cadc20-e529-11f1-99a1-253766e7ad8b.jpg"
       },
       {
@@ -462,12 +428,12 @@
        "source": "VietnamPlus",
        "published": "",
        "ai": true,
-       "num": 16,
+       "num": 14,
        "image": "https://media.vietnamplus.vn/images/kpYwUNVIdmktOA6PhcDOMbaU9mZu3VrlvFMhbGgXTkAtaC2ZE8vuUNYj3wS8EIXw/ttxvn-youtube.jpg.avif"
       }
      ],
-     "first": 13,
-     "last": 16
+     "first": 11,
+     "last": 14
     },
     {
      "key": "mobile",
@@ -487,7 +453,7 @@
        "source": "Tinh tế",
        "published": "",
        "ai": true,
-       "num": 17,
+       "num": 15,
        "image": "https://imgproxy7.tinhte.vn/F-a0REAIVTi0E6DL4rAfJmDHigwpdeZplE7Xj9UqAPI/w:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9139219_body01.jpg"
       },
       {
@@ -504,7 +470,7 @@
        "source": "GSMArena",
        "published": "",
        "ai": true,
-       "num": 18,
+       "num": 16,
        "image": "https://fdn.gsmarena.com/imgroot/news/26/08/samsung-dram-market-q2-2026/-184x111/gsmarena_000.jpg"
       },
       {
@@ -521,7 +487,7 @@
        "source": "Tinh tế",
        "published": "",
        "ai": true,
-       "num": 19,
+       "num": 17,
        "image": "https://imgproxy7.tinhte.vn/ReFy89vmu8Op6oQ6zzpd-wvigHesUYBDW24p2oSI0Dc/h:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9140007_itechapples-air2-02.jpg"
       },
       {
@@ -538,29 +504,12 @@
        "source": "9to5Mac",
        "published": "",
        "ai": true,
-       "num": 20,
+       "num": 18,
        "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/11/signal-app-icon-fi.jpg?quality=82&strip=all&w=1600"
-      },
-      {
-       "cid": 21,
-       "category": "mobile",
-       "severity": "low",
-       "title": "Honor phát triển điện thoại trang bị pin dung lượng 13.500 mAh",
-       "summary": "Nguồn tin rò rỉ tiết lộ Honor đang chuẩn bị đưa ra thị trường smartphone sở hữu dung lượng pin lên tới 13.500 mAh.",
-       "developments": "Theo leaker Digital Chat Station, Honor sắp giới thiệu mẫu điện thoại thông minh tích hợp viên pin dung lượng khổng lồ 13.500 mAh. Trước đó các nguồn tin cũng cho biết hãng đã đưa vào sản xuất thử nghiệm loại pin có dung lượng từ 14.000 đến 15.000 mAh.",
-       "context": "Các nhà sản xuất di động đang liên tục đẩy mạnh công nghệ pin để kéo dài thời lượng sử dụng vượt bậc.",
-       "why_it_matters": "Bước đột phá về pin dung lượng siêu lớn có thể tạo nên chuẩn mực thời lượng sử dụng mới cho phân khúc smartphone tầm trung và cao cấp.",
-       "is_update": false,
-       "url": "https://www.gsmarena.com/honor_reportedly_has_a_13500_mah_phone_coming_and_the_power3_isnt_far_behind-news-75577.php",
-       "source": "GSMArena",
-       "published": "",
-       "ai": true,
-       "num": 21,
-       "image": "https://fdn.gsmarena.com/imgroot/news/26/11/honor-13500-mah-battery-phone-rumor/-184x111/gsmarena_000.jpg"
       }
      ],
-     "first": 17,
-     "last": 21
+     "first": 15,
+     "last": 18
     },
     {
      "key": "science_health",
@@ -580,7 +529,7 @@
        "source": "VietnamPlus",
        "published": "",
        "ai": true,
-       "num": 22,
+       "num": 19,
        "image": "https://media.vietnamplus.vn/images/5MmeNhjhPqt12F-DZRmYgT8PoTvVEjmj_vAuB2PFwB1wRIgpL0kOSbsoYIZM6gByzlpf0mOUNtNcmcBOor2Fng/ttxvn-2006-ngo-doc-ruou-34.jpg.avif"
       },
       {
@@ -597,7 +546,7 @@
        "source": "Tuổi Trẻ",
        "published": "",
        "ai": true,
-       "num": 23,
+       "num": 20,
        "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/phau-thuat-cu-ba-100-17952661026591649121277-40-0-790-1200-crop-17952662085511319180672.jpg"
       },
       {
@@ -614,7 +563,7 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 24,
+       "num": 21,
        "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/image001-1795249058-8739-1795249322.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=sWQgZ1cfboC1zp9ZYtCg3g"
       },
       {
@@ -631,12 +580,12 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 25,
+       "num": 22,
        "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/20/1795142950728c796975d6ccca8987-5425-9531-1795148970.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=HsAbxN19jTt6gsXDjXYMPQ"
       }
      ],
-     "first": 22,
-     "last": 25
+     "first": 19,
+     "last": 22
     },
     {
      "key": "environment",
@@ -656,7 +605,7 @@
        "source": "BBC",
        "published": "",
        "ai": true,
-       "num": 26,
+       "num": 23,
        "image": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/5253/live/c9ca5500-e579-11f1-a5f6-b3028adf2d6d.jpg"
       },
       {
@@ -673,7 +622,7 @@
        "source": "VietnamPlus",
        "published": "",
        "ai": true,
-       "num": 27,
+       "num": 24,
        "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6vvsrEidkcDHg-Vr-aZX_tAgHKdetU_IFA5hnT1sANPoc06cZm6F7DMzJiPBxBtRQfEzmnIwAZzaxukbbXGnySeu9AJXnetKtZ0fJEjC4xIxhitaiIjtktLy9O5jSnwfm-OUoG6pUtw__ttUCY4wOlI/ttxvn_gia-lai-mua-lu-gay-ngap-gan-1900-ho-dan-hon-500-nguoi-duoc-so-tan-khoi-vung-nguy-hiem-9150214.jpg.avif"
       },
       {
@@ -690,7 +639,7 @@
        "source": "Tuổi Trẻ",
        "published": "",
        "ai": true,
-       "num": 28,
+       "num": 25,
        "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/ap26296032875804-1792726562422583368468-17952661409431821649315-29-0-485-730-crop-1795266221647364645426.png"
       },
       {
@@ -707,12 +656,12 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 29,
+       "num": 26,
        "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/VNECrab-1795267693-2928-1795267993.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GiahiD_8FZWZdXOESiGZEw"
       }
      ],
-     "first": 26,
-     "last": 29
+     "first": 23,
+     "last": 26
     }
    ]
   },
@@ -738,7 +687,7 @@
        "source": "VietnamPlus",
        "published": "",
        "ai": true,
-       "num": 30,
+       "num": 27,
        "image": "https://media.vietnamplus.vn/images/QcJaCVoYMCKXsPQ_Rprjc_U5e5g8S31T8e0yv5YfeR6rzNg3nqwNr-Ub9Bms5q0amNMTHFohxdAguCk395tLlw/ttxvn-tang-cuong-tin-hoc-31.jpg.avif"
       },
       {
@@ -755,7 +704,7 @@
        "source": "Reuters",
        "published": "",
        "ai": true,
-       "num": 31,
+       "num": 28,
        "image": ""
       },
       {
@@ -772,7 +721,7 @@
        "source": "VietnamPlus",
        "published": "",
        "ai": true,
-       "num": 32,
+       "num": 29,
        "image": "https://media.vietnamplus.vn/images/_RfA0Lv7xigOosrBfIuLk5haAjKSlqNdhlpw5ZXrwb529blwf-aiKLX_yAOjUEyD/tan-cong-mang.jpg.avif"
       },
       {
@@ -789,12 +738,12 @@
        "source": "Reuters",
        "published": "",
        "ai": true,
-       "num": 33,
+       "num": 30,
        "image": ""
       }
      ],
-     "first": 30,
-     "last": 33
+     "first": 27,
+     "last": 30
     },
     {
      "key": "sports",
@@ -814,7 +763,7 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 34,
+       "num": 31,
        "image": "https://vcdn1-thethao.vnecdn.net/2026/11/21/quang-lie-m-1795252550-2480-1795252654.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=BBp084rFCBsl678cwblPzg"
       },
       {
@@ -831,7 +780,7 @@
        "source": "Tuổi Trẻ",
        "published": "",
        "ai": true,
-       "num": 35,
+       "num": 32,
        "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/83c77d95-d348-4bad-b581-88da5ca4ce27-17952694024061061492699-84-0-1364-2048-crop-1795270075179409401224.jpeg"
       },
       {
@@ -848,7 +797,7 @@
        "source": "Tuổi Trẻ",
        "published": "",
        "ai": true,
-       "num": 36,
+       "num": 33,
        "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/capture-17952653638951709367739.jpg"
       },
       {
@@ -865,29 +814,12 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 37,
+       "num": 34,
        "image": "https://vcdn1-thethao.vnecdn.net/2026/11/21/afp-d86a6ek-v2-highres-topshot-1335-3181-1795242858.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=e3u__VpEGg1aUVxi-LDOPQ"
-      },
-      {
-       "cid": 38,
-       "category": "sports",
-       "severity": "low",
-       "title": "Khai mạc giải đua ghe Ngo trên sông Láng Thé",
-       "summary": "Giải đua ghe Ngo tỉnh Vĩnh Long mở rộng 2026 chính thức khởi tranh với 13 đội tham gia tranh tài.",
-       "developments": "Lần đầu tiên giải đua ghe Ngo diễn ra trên sông Láng Thé với khán đài 4.000 chỗ ngồi và tổng giải thưởng 900 triệu đồng. Các đội đua đến từ Vĩnh Long, An Giang và Cà Mau cùng hội tụ thi thố.",
-       "context": "Đua ghe Ngo là môn thể thao truyền thống đặc sắc gắn liền với đời sống văn hóa đồng bào Khmer Nam Bộ.",
-       "why_it_matters": "Hoạt động thúc đẩy phong trào thể thao truyền thống và gắn kết cộng đồng các dân tộc Tây Nam Bộ.",
-       "is_update": false,
-       "url": "https://tuoitre.vn/lan-dau-dua-ghe-ngo-tren-song-lang-the-co-khan-dai-4000-cho-ngoi-100261121174049327.htm",
-       "source": "Tuổi Trẻ",
-       "published": "",
-       "ai": true,
-       "num": 38,
-       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/17952504828546639888629926041346g277783781348259837f9db10672a42ccbd9df6aa0eb4f222d3-1795255958879830722744-246-163-1246-1763-crop-179526178026685329526.jpg"
       }
      ],
-     "first": 34,
-     "last": 38
+     "first": 31,
+     "last": 34
     },
     {
      "key": "culture_society",
@@ -907,7 +839,7 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 39,
+       "num": 35,
        "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/233a2725-1795235673-8774-1795236123.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SZigu-VnWVK_XKsM_E8Vew"
       },
       {
@@ -924,7 +856,7 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 40,
+       "num": 36,
        "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/917691243-n-1795232600-4418-1795232606.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UgUdJyraJby6Z1lixDzu-w"
       },
       {
@@ -941,7 +873,7 @@
        "source": "VietnamPlus",
        "published": "",
        "ai": true,
-       "num": 41,
+       "num": 37,
        "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6kLhaVBOy2CNjjqFpFf9pQ6B4CHYWMPxmOR5HFCfgJ505UxpgpggD5bGgvPcdBsJ_RMzW9lyKLQ7Y-metq1IyViwIeGBe4lgeEhMc4UOeppomlJlsiHFInhP5NUnLggup8cRPM616WkWecsn-gZhfSBJqq-OPyn-VYx1d8A72dfdalhn6mnL6qtzYYlSMD3kmA/ttxvn-chien-dich-500-ngay-dem-quy-tap-duoc-148-hai-cot-liet-si-sau-nua-thang-trien-khai-dot-2-tai-cong-vien-le-thi-rieng-9124369.jpg.avif"
       },
       {
@@ -958,29 +890,12 @@
        "source": "VnExpress",
        "published": "",
        "ai": true,
-       "num": 42,
+       "num": 38,
        "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/hu-t-thuo-c-hn-of-1795231167-7135-1795231372.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=bjOYzuHJCBJnUsoNGufT-Q"
-      },
-      {
-       "cid": 43,
-       "category": "culture_society",
-       "severity": "medium",
-       "title": "Quốc hội thông qua cơ chế đặc thù phát triển du lịch",
-       "summary": "Quốc hội biểu quyết thông qua nghị quyết về các cơ chế, chính sách đặc thù nhằm tạo động lực phát triển du lịch.",
-       "developments": "Nghị quyết số 59/2026/QH16 được thông qua tại kỳ họp thứ 2, Quốc hội khóa XVI nhằm mở rộng dư địa cho ngành du lịch. Các chính sách kỳ vọng sẽ tháo gỡ điểm nghẽn và thu hút nguồn lực phát triển bền vững.",
-       "context": "Ngành du lịch Việt Nam đang nỗ lực đa dạng hóa sản phẩm và gia tăng sức cạnh tranh trong khu vực.",
-       "why_it_matters": "Khung cơ chế mới mở đường cho du lịch bứt phá, đóng góp lớn hơn vào tăng trưởng kinh tế xã hội cả nước.",
-       "is_update": false,
-       "url": "https://tuoitre.vn/quoc-hoi-thong-qua-co-che-dac-thu-mo-them-du-dia-phat-trien-du-lich-viet-nam-100261121203732469.htm",
-       "source": "Tuổi Trẻ",
-       "published": "",
-       "ai": true,
-       "num": 43,
-       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/photo-1795266374215-1795266374905427111813-17952697871141009078838-0-0-1125-1800-crop-17952698071261383039597.jpeg"
       }
      ],
-     "first": 39,
-     "last": 43
+     "first": 35,
+     "last": 38
     }
    ]
   }
@@ -990,7 +905,7 @@
   "Quốc hội duyệt hơn 162.000 tỷ đồng xây ba tuyến cao tốc mới.",
   "Việt Nam cấm tuyệt đối việc lấy tạng người dưới 18 tuổi để ghép."
  ],
- "total_items": 43,
+ "total_items": 38,
  "ai_degraded": false,
  "weekday": 5,
  "weekday_name": "Thứ Bảy",

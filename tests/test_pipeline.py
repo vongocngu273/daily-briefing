@@ -440,3 +440,11 @@ def test_trends_merge_keeps_24h_dedups_and_ranks():
     page = for_page({**store, "updated": now.isoformat()})
     assert page["vn"][0]["term"] == "Lazio" and page["vn"][0]["url"].startswith("https://www.google.com/search?q=lazio")
     assert page["updated"] == "22:00"
+
+
+def test_even_count_per_category():
+    from src.curator import even_count
+    assert even_count([1, 2, 3, 4, 5]) == [1, 2, 3, 4]
+    assert even_count([1, 2, 3]) == [1, 2]
+    assert even_count([1, 2]) == [1, 2]
+    assert even_count([1]) == [1] and even_count([]) == []

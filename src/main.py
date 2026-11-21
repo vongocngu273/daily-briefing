@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 from .config import HISTORY_PATH, SUMMARY_PATH, LAYER_TITLES, LAYERS, OUTPUT_PATH, load_config, tz, weather_location
-from .curator import Curator, NewsItem, fallback_layer
+from .curator import Curator, NewsItem, even_count, fallback_layer
 from .market import fetch_market
 from .news import (add_to_history, fill_missing_images, candidates_for_layer, collect, load_history, prune_history,
                    recent_titles, save_history)
@@ -129,7 +129,7 @@ def run() -> int:
         by_cat = results[layer]
         cats = []
         for key, label in LAYERS[layer]:
-            items = [i for i in by_cat.get(key, []) if i.cid not in used_cids]
+            items = even_count([i for i in by_cat.get(key, []) if i.cid not in used_cids])
             used_cids.update(i.cid for i in items)
             for it in items:
                 it.num = len(all_items) + 1

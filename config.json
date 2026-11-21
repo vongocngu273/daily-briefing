@@ -15,7 +15,7 @@
     "window_hours": 26,
     "monday_window_hours": 50,
     "monday_anchor": "Saturday 07:30",
-    "max_per_category": 5,
+    "max_per_category": 6,
     "max_candidates_per_layer": 160,
     "history_retention_days": 7,
     "recent_titles_for_ai": 150

@@ -144,7 +144,7 @@ main{padding:4px 0 8px}
 [data-view="mag"] .thumb{display:block;align-self:start;aspect-ratio:4/3;margin-top:3px}
 @media (max-width:519px){[data-view="mag"] .item{grid-template-columns:34px minmax(0,1fr) 88px;gap:0 8px}[data-view="mag"] .no{font-size:22px}}
 [data-view="card"] .items{display:grid;gap:14px;margin-top:14px}
-@media (min-width:640px){[data-view="card"] .items{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:640px){[data-view="card"] .items{grid-template-columns:repeat(2,minmax(0,1fr))}[data-view="card"] .items>.item:only-child{grid-column:1/-1}}
 [data-view="card"] .item,[data-view="card"] .item:last-child{display:flex;flex-direction:column;padding:0 0 12px;border:1.5px solid var(--rule);
   --r:24px;border-radius:var(--r);overflow:hidden;background:var(--paper);corner-shape:squircle}
 @supports (corner-shape:squircle){[data-view="card"] .item,[data-view="card"] .item:last-child{--r:34px}}
