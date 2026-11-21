@@ -178,7 +178,6 @@ main{padding:4px 0 8px}
 .item details[open] summary .more{color:var(--red)}
 .full{margin-top:8px;max-width:var(--measure)}
 .full dl{margin:0;display:grid;gap:14px}
-.full dl>div{border-left:4px solid var(--stub);padding:2px 0 2px 12px}
 .full dt{display:inline-block;margin-bottom:6px;padding:5px 10px 4px;font:800 15px/1.1 var(--cond);letter-spacing:.08em;text-transform:uppercase;background:var(--stub);color:var(--stub-ink);border-radius:var(--rS);corner-shape:squircle}
 .full dd{margin:0;font-size:15px}
 .orig{display:inline-block;margin-top:10px;font:800 15px var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
@@ -211,8 +210,9 @@ main{padding:4px 0 8px}
 .closing li b{font:800 30px/1 var(--cond);color:var(--serial);text-align:center;border-right:2px solid var(--stub-ink);padding:8px 0}
 .closing li span{padding:8px 12px;font:600 17px/1.35 var(--read);color:var(--stub-ink)}
 .closing .na{font-weight:600}
-footer{padding:16px 0 calc(28px + env(safe-area-inset-bottom));font-size:12px;color:var(--muted)}
-footer p{margin:0 0 4px;max-width:var(--measure)}
+footer{padding:14px 0 calc(24px + env(safe-area-inset-bottom));font-size:12px;line-height:1.55;color:var(--muted)}
+footer p{margin:0}
+footer b{color:var(--ink);font-weight:600}
 
 /* ---------- rounded corners (Apple-style continuous corners) ---------- */
 :root{--rL:18px;--rM:10px;--rS:6px}
@@ -456,8 +456,7 @@ html.sheet-open{overflow:hidden}
 </section>
 
 <footer class="wrap">
-  <p>Tổng hợp tự động từ VnExpress, Tuổi Trẻ, VietnamPlus, BBC, Reuters, AP, Bloomberg, Tinh tế, GSMArena, 9to5Mac, 9to5Google, MacRumors. Thời tiết: Open-Meteo. Giá: Yahoo Finance.</p>
-  <p>Tóm tắt do AI viết và có thể sai. Đọc bài gốc trước khi quyết định điều gì.</p>
+  <p>Bản tin cá nhân của <b>Ngự Võ</b>, chỉ để đọc nhanh mỗi sáng, phi thương mại, không nhằm mục đích tuyên truyền · Tin tóm tắt ngắn kèm liên kết về VnExpress, Tuổi Trẻ, VietnamPlus, BBC, Reuters, AP, Bloomberg, Tinh tế, GSMArena, 9to5Mac, 9to5Google, MacRumors; bản quyền nội dung thuộc các nguồn gốc · Thời tiết Open-Meteo, MET Norway · Giá Yahoo Finance · Xu hướng Google Trends · Tóm tắt do AI viết, có thể sai, hãy đọc bài gốc trước khi quyết định điều gì.</p>
 </footer>
 
 <dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
