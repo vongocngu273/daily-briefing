@@ -347,16 +347,10 @@ html.sheet-open{overflow:hidden}
 .toast{white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis;position:fixed;left:50%;bottom:calc(80px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:30;padding:10px 16px;border-radius:999px;background:var(--ink);color:var(--paper);font:600 14px var(--read);box-shadow:0 8px 24px rgba(0,0,0,.25);opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.show{opacity:1}
 
-/* ---------- per-category "Tin mới trong ngày" ---------- */
-.cat-live{margin-top:10px}
-.cl-btn{display:flex;align-items:center;gap:8px;width:100%;padding:9px 12px;border:1.5px dashed var(--rule);border-radius:var(--rM);corner-shape:squircle;background:none;color:var(--ink);cursor:pointer;text-align:left;font:700 14px/1.2 var(--cond);letter-spacing:.06em;text-transform:uppercase}
-.cl-btn .ic-rf{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.cl-btn small{margin-left:auto;font:600 12px var(--cond);letter-spacing:.06em;color:var(--muted)}
-.cl-btn[aria-expanded="true"]{border-style:solid;background:var(--stub);color:var(--stub-ink)}
-.cl-btn[aria-expanded="true"] small{color:inherit}
-.cl-btn.spin .ic-rf{animation:rfspin .8s linear infinite}
-.cl-list{margin-top:8px;border:1.5px solid var(--rule);border-radius:var(--rM);corner-shape:squircle;overflow:hidden}
-.cl-empty{padding:12px;color:var(--muted);font-size:14px}
+/* ---------- fresh items + per-category refresh ---------- */
+.tag-new{display:inline-block;vertical-align:2px;margin-right:8px;padding:3px 7px 2px;font:800 12px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--red);border-radius:var(--rS);corner-shape:squircle}
+.cat>summary .rf-cat{flex:none;width:28px;height:28px;align-self:center;color:var(--ink)}
+.cat>summary .rf-cat.spin{color:var(--red)}
 </style>
 </head>
 {% macro sevicon(sev) %}{% if sev == "high" %}<svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg>{% elif sev == "medium" %}<svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg>{% else %}<svg class="sv sv-low" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="3.6"/></svg>{% endif %}{% endmacro %}
@@ -479,21 +473,7 @@ html.sheet-open{overflow:hidden}
   <div class="layer-group" id="lop-{{ layer.id }}">
     {% for cat in layer.categories %}
     <details class="cat" id="{{ cat.key }}" open>
-      <summary><h3>{{ cat.label }}<small>{{ cat['items']|length }} tin</small></h3></summary>
-      {% set fresh = (lv.cats or {}).get(cat.key, []) %}
-      <div class="cat-live">
-        <button type="button" class="cl-btn" data-cat-refresh="{{ cat.key }}" aria-expanded="false" aria-controls="cl-{{ cat.key }}">{{ refreshicon() }}<span>Tin mới trong ngày</span><small>{% if fresh %}{{ fresh|length }} tin{% else %}chưa có{% endif %}{% if lv.updated %} · {{ lv.updated }}{% endif %}</small></button>
-        <ol class="hot-list cl-list" id="cl-{{ cat.key }}" hidden>
-          {% for h in fresh %}
-          <li><a href="{{ h.url }}" target="_blank" rel="noopener noreferrer">
-            {% if h.image %}<span class="hthumb"><img src="{{ h.image }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"></span>{% else %}<span class="hthumb ph"></span>{% endif %}
-            <span class="htxt"><b>{{ h.title }}</b><small>{{ h.source }} · <time datetime="{{ h.ts }}">{{ h.time }}</time></small></span>
-          </a></li>
-          {% else %}
-          <li class="cl-empty">Chưa có tin mới ngoài bản tin sáng.</li>
-          {% endfor %}
-        </ol>
-      </div>
+      <summary><h3>{{ cat.label }}<small>{{ cat['items']|length }} tin</small></h3><button type="button" class="rf rf-cat" data-cat-refresh="{{ cat.key }}" aria-label="Cập nhật tin mới cho {{ cat.label }}">{{ refreshicon() }}</button></summary>
       {% if cat.key == "economy" %}
       <div class="board" id="thi-truong">
         <table>
@@ -522,7 +502,7 @@ html.sheet-open{overflow:hidden}
         {% if n.image %}<a class="thumb" href="{{ n.url }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="{{ n.image }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"><span class="ph-src">{{ n.source }}</span></a>
         {% else %}<span class="thumb ph" aria-hidden="true"><span class="ph-src">{{ n.source }}</span></span>{% endif %}
         <div class="body">
-          <h4><span class="sev" title="{{ {"high": "Quan trọng", "medium": "Đáng chú ý"}.get(n.severity, "Tham khảo") }}">{{ sevicon(n.severity) }}</span>{{ n.title }}{% if n.is_update %}<span class="tag">Cập nhật</span>{% endif %}</h4>
+          <h4>{% if n.fresh %}<span class="tag-new">Mới · {{ n.fresh }}</span>{% else %}<span class="sev" title="{{ {"high": "Quan trọng", "medium": "Đáng chú ý"}.get(n.severity, "Tham khảo") }}">{{ sevicon(n.severity) }}</span>{% endif %}{{ n.title }}{% if n.is_update %}<span class="tag">Cập nhật</span>{% endif %}</h4>
           <p class="sum">{{ n.summary }}</p>
           <details>
             <summary><span class="src">{{ n.source }}</span><span class="more">Xem đầy đủ ▾</span></summary>
@@ -701,26 +681,22 @@ html.sheet-open{overflow:hidden}
       });
     });
   })();
-  /* Nút ⟳ từng chuyên mục: kiểm tra bản mới trên máy chủ rồi mở "Tin mới trong ngày" */
+  /* Nút ⟳ từng chuyên mục: có bản mới trên máy chủ thì tải lại và quay về đúng chuyên mục */
   (function(){
-    var OK='banTinSang.openCat';
-    function openCat(key){
-      var b=document.querySelector('[data-cat-refresh="'+key+'"]'); if(!b) return;
-      var l=document.getElementById('cl-'+key), c=b.closest('details.cat'); if(c) c.open=true;
-      l.hidden=false; b.setAttribute('aria-expanded','true');
-    }
-    try{var k=localStorage.getItem(OK); if(k){localStorage.removeItem(OK); openCat(k); var el=document.getElementById(k); if(el) setTimeout(function(){el.scrollIntoView();},50);}}catch(e){}
     var sec=document.getElementById('tin-nong'), mine=Date.parse((sec&&sec.getAttribute('data-live'))||'')||0;
+    var toast=document.getElementById('toast'), tt;
+    function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show');},2600);}
     document.querySelectorAll('[data-cat-refresh]').forEach(function(b){
-      b.addEventListener('click',function(){
-        var key=b.getAttribute('data-cat-refresh'), l=document.getElementById('cl-'+key);
-        if(b.getAttribute('aria-expanded')==='true'){ l.hidden=true; b.setAttribute('aria-expanded','false'); return; }
-        b.classList.add('spin');
+      b.addEventListener('click',function(e){
+        e.preventDefault(); e.stopPropagation();
+        if(b.classList.contains('spin')) return;
+        var key=b.getAttribute('data-cat-refresh'); b.classList.add('spin');
         fetch('live.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
           var srv=Date.parse(j.updated||'')||0;
-          if(srv>mine){ try{localStorage.setItem(OK,key);}catch(e){} location.replace(location.pathname+'?v='+srv+'#'+key); return; }
-          openCat(key);
-        }).catch(function(){ openCat(key); }).then(function(){ setTimeout(function(){b.classList.remove('spin');},300); });
+          if(srv>mine){ location.replace(location.pathname+'?v='+srv+'#'+key); return; }
+          var hm=new Date(srv||mine).toLocaleTimeString('vi-VN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'});
+          say('Mục này đã mới nhất lúc '+hm);
+        }).catch(function(){ say('Không kiểm tra được, thử lại sau'); }).then(function(){ setTimeout(function(){b.classList.remove('spin');},400); });
       });
     });
   })();

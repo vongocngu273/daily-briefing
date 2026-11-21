@@ -55,6 +55,24 @@
    "news": "West Ham United v Preston North End: Championship stats & head-to-head"
   },
   {
+   "term": "emmanuel emegha",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-21T14:50:00+00:00",
+   "url": "https://sports.yahoo.com/articles/emegha-starts-martinez-returns-chelsea-140400702.html",
+   "news": "Emegha starts and Martinez returns for Chelsea vs Leeds"
+  },
+  {
+   "term": "coventry – crystal palace",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-21T15:00:00+00:00",
+   "url": "https://www.skysports.com/football/live-blog/13610683/coventry-vs-crystal-palace-live-premier-league-match-updates-news-and-score",
+   "news": "Coventry vs Crystal Palace LIVE! Premier League match updates, news and score"
+  },
+  {
    "term": "como vs",
    "geo": "VN",
    "traffic": "200+",
@@ -80,24 +98,6 @@
    "ts": "2026-11-21T14:40:00+00:00",
    "url": "",
    "news": ""
-  },
-  {
-   "term": "emmanuel emegha",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T14:50:00+00:00",
-   "url": "https://www.skysports.com/football/live-blog/13610684/chelsea-vs-leeds-live-premier-league-match-updates-news-score-and-line-ups",
-   "news": "Chelsea vs Leeds LIVE! Premier League match updates, news, score and line-ups"
-  },
-  {
-   "term": "coventry – crystal palace",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:00:00+00:00",
-   "url": "https://www.skysports.com/football/live-blog/13610683/coventry-vs-crystal-palace-live-premier-league-match-updates-news-and-score",
-   "news": "Coventry vs Crystal Palace LIVE! Premier League match updates, news and score"
   },
   {
    "term": "atp finals",
@@ -156,6 +156,15 @@
  ],
  "world": [
   {
+   "term": "nasdaq composite index drop 2026",
+   "geo": "US",
+   "traffic": "100000+",
+   "score": 100000,
+   "ts": "2026-11-21T15:40:00+00:00",
+   "url": "https://www.nytimes.com/2026/11/20/business/anthropic-ai-stocks-sp500.html",
+   "news": "Stocks Skid Into a Correction, as A.I. Worries Intensify"
+  },
+  {
    "term": "dwayne johnson",
    "geo": "US",
    "traffic": "10000+",
@@ -163,6 +172,15 @@
    "ts": "2026-11-21T15:10:00+00:00",
    "url": "https://www.wwe.com/videos/hollywood-rock-entered-the-building-30-years-of-the-rock",
    "news": "Hollywood Rock entered the building: 30 Years of The Rock"
+  },
+  {
+   "term": "current black friday deals",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-21T15:40:00+00:00",
+   "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
+   "news": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now"
   },
   {
    "term": "best tech black friday deals",
@@ -235,6 +253,33 @@
    "ts": "2026-11-21T15:20:00+00:00",
    "url": "https://www.forbes.com/sites/paultassi/2026/11/21/grand-theft-auto-6-is-being-review-bombed-on-metacritic/",
    "news": "‘Grand Theft Auto 6’ Is Being Review Bombed On Metacritic"
+  },
+  {
+   "term": "nations championship rugby fixtures",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://www.walesonline.co.uk/sport/rugby/rugby-news/what-time-nations-championship-rugby-34941120",
+   "news": "What time do Nations Championship rugby matches kick off as TV channels change"
+  },
+  {
+   "term": "vanderbilt vs florida",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T16:00:00+00:00",
+   "url": "https://floridagators.com/news/2026/11/19/football-the-opening-kickoff-no-24-gators-vs-vanderbilt-momentum-into-home-finale",
+   "news": "The Opening Kickoff: No. 24 Gators vs. Vanderbilt — Momentum Into Home Finale"
+  },
+  {
+   "term": "wake forest vs georgia tech",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T16:00:00+00:00",
+   "url": "https://sports.yahoo.com/articles/watch-wake-forest-vs-georgia-154000212.html",
+   "news": "How to watch Wake Forest vs Georgia Tech: Live stream College Football, TV channel"
   },
   {
    "term": "rayo vallecano - valencia c. f.",
@@ -336,6 +381,42 @@
    "news": "Tottenham vs Ipswich LIVE! Premier League match updates, news and score"
   },
   {
+   "term": "kocaelispor vs fenerbahçe",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-21T15:30:00+00:00",
+   "url": "https://cwibc.co.id/en/kocaelispor-fenerbahce-super-lig",
+   "news": "Fenerbahce Face Kocaelispor in Turkish Super Lig Clash"
+  },
+  {
+   "term": "ireland vs south africa",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://www.bbc.com/sport/rugby-union/articles/cm930nj435dvo",
+   "news": "'No-one is going to break us' - defiant Boks face Ireland without Erasmus"
+  },
+  {
+   "term": "ireland rugby",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cm930nj435dvo",
+   "news": "'No-one is going to break us' - defiant Boks face Ireland without Erasmus"
+  },
+  {
+   "term": "colorado vs cincinnati",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-21T16:00:00+00:00",
+   "url": "https://247sports.com/college/cincinnati/article/how-to-watch-and-staff-predictions-colorado-293030456/",
+   "news": "How To Watch and Staff Predictions: Colorado"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -381,15 +462,6 @@
    "news": "Flood warning service expanded in Tewkesbury area"
   },
   {
-   "term": "kocaelispor vs fenerbahçe",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T15:30:00+00:00",
-   "url": "https://www.goal.com/en-sg/news/kocaelispor-vs-fenerbahce-live-today-where-to-watch-on-tv-and-online/blt5aed1c826beb0e33",
-   "news": "Kocaelispor vs Fenerbahçe live today: Where to watch on TV and online"
-  },
-  {
    "term": "henry cavill as james bond",
    "geo": "US",
    "traffic": "500+",
@@ -406,6 +478,15 @@
    "ts": "2026-11-21T15:40:00+00:00",
    "url": "https://www.exeterchiefs.co.uk/news/team-news-zambonin-returns-as-mcleod-debuts-for-chiefs",
    "news": "Team news: Zambonin returns as McLeod debuts for Chiefs"
+  },
+  {
+   "term": "kocaelispor - fenerbahçe",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-21T15:40:00+00:00",
+   "url": "https://www.sozcu.com.tr/canli-veya-kocaelispor-fenerbahce-maci-canli-anlatim-p383267",
+   "news": "Canlı | Kocaelispor-Fenerbahçe maçı canlı anlatım"
   },
   {
    "term": "harvard yale game",
@@ -597,6 +678,69 @@
    "news": "Diyar Nurgozhay vs. Alik Lorenz prediction, odds, pick for UFC Doha"
   },
   {
+   "term": "ben earl rugby",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T15:40:00+00:00",
+   "url": "https://www.theguardian.com/sport/2026/nov/17/rugby-union-ben-earl-england-future-nations-championship-finals-las-vegas",
+   "news": "Ben Earl calls for future Nations Championship finals in Las Vegas, Hong Kong or Brazil"
+  },
+  {
+   "term": "auli'i cravalho",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://variety.com/2026/film/news/serendipity-reboot-cast-aulii-cravalho-1236953411/",
+   "news": "New ‘Serendipity’ Movie Casts Auli‘i Cravalho (EXCLUSIVE)"
+  },
+  {
+   "term": "ross county vs cove rangers",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/football/live/cw99exk99e1mt",
+   "news": "Ross County vs Cove Rangers: Scottish League One stats & head-to-head"
+  },
+  {
+   "term": "swansea manager",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/football/articles/ckq6eyppzqgpo",
+   "news": "Vitor Matos accepts Swansea City fans' anger over shock exit to RC Strasbourg"
+  },
+  {
+   "term": "nations cup rugby",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://www.world.rugby/nations-cup/en/news/1049572/world-rugby-nations-cup-2026-round-six-preview",
+   "news": "World Rugby Nations Cup 2026 round six preview"
+  },
+  {
+   "term": "aleksandre topuria",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://www.ufc.com/video/162216",
+   "news": "Aleksandre Topuria: 'I Don't Plan On Letting Him Win' | UFC Qatar"
+  },
+  {
+   "term": "wisconsin vs purdue",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T16:00:00+00:00",
+   "url": "https://www.cbssports.com/betting/news/wisconsin-purdue-prediction-odds-time-2026-week-12-college-football-picks-best-bets/",
+   "news": "Wisconsin vs. Purdue prediction, odds, time: Week 12 college football picks from proven model"
+  },
+  {
    "term": "sufc",
    "geo": "GB",
    "traffic": "100+",
@@ -604,7 +748,16 @@
    "ts": "2026-11-21T14:50:00+00:00",
    "url": "https://www.bbc.co.uk/sport/football/articles/c3rrgdxedjz5o",
    "news": "Femi Seriki: Sheffield United full-back facing year out with knee injury"
+  },
+  {
+   "term": "carrick vs coleraine",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-21T15:50:00+00:00",
+   "url": "https://www.belfasttelegraph.co.uk/sport/football/irish-league/when-you-visualise-going-up-to-the-premier-league-this-venue-springs-to-mind-boss-insists-limavady-wont-be-overawed-by-windsor-park-duel/a/164799048.html",
+   "news": "‘When you visualise going up to the Premier League, this venue springs to mind’: Boss insists Limavady won’t be overawed by Windsor Park duel"
   }
  ],
- "updated": "2026-11-21T16:00:23.813081+00:00"
+ "updated": "2026-11-21T16:14:28.526704+00:00"
 }

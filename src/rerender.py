@@ -73,7 +73,43 @@ def load_snapshot(path: Path = SNAPSHOT_PATH, trends_path: Path | None = None, l
     for layer in ctx.get("layers", []):
         for cat in layer.get("categories", []):
             cat["items"] = [_build(NewsItem, n) for n in cat.get("items", [])]
+    merge_fresh(ctx, lv.get("cats") or {})
     return ctx
+
+
+def merge_fresh(ctx: dict, cats: dict, cap: int = 6) -> None:
+    """Thay tin mới trong ngày vào từng chuyên mục: tin mới đứng đầu, đẩy tin buổi sáng cũ nhất ra.
+
+    Giữ số tin chẵn (lưới 2 cột) và đánh số lại toàn trang."""
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+
+    from .curator import even_count
+
+    tz_vn = ZoneInfo("Asia/Ho_Chi_Minh")
+    n = 0
+    for layer in ctx.get("layers", []):
+        for cat in layer.get("categories", []):
+            old = cat["items"]
+            fresh = []
+            for i, f in enumerate(cats.get(cat["key"], [])):
+                ts = datetime.fromisoformat(f["ts"])
+                fresh.append(NewsItem(cid=-(i + 1), category=cat["key"], severity="low", title=f["title"],
+                                      summary=f.get("summary", ""), developments="", context="", why_it_matters="",
+                                      is_update=False, url=f["url"], source=f["source"], published=f["ts"],
+                                      ai=False, image=f.get("image", ""), fresh=ts.astimezone(tz_vn).strftime("%H:%M")))
+            if fresh:
+                target = min(cap, max(len(old), 2))
+                items = even_count((fresh + old)[:target])
+            else:
+                items = old
+            for it in items:
+                n += 1
+                it.num = n
+            cat["items"] = items
+            cat["first"] = items[0].num if items else 0
+            cat["last"] = items[-1].num if items else 0
+    ctx["total_items"] = n
 
 
 def run(path: Path = SNAPSHOT_PATH, out: Path = OUTPUT_PATH) -> int:

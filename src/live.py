@@ -150,14 +150,16 @@ def categorize(feed_url: str, title: str) -> str | None:
     return None
 
 
-def by_category(pairs: list, exclude: list[dict], now: datetime, per_cat: int = 4,
-                hours: int = WINDOW_HOURS) -> dict[str, list[dict]]:
+def by_category(pairs: list, exclude: list[dict], now: datetime, per_cat: int = 6,
+                hours: int = WINDOW_HOURS, since: datetime | None = None) -> dict[str, list[dict]]:
     """Tin mới trong ngày cho từng chuyên mục, bỏ tin đã có trong bản tin (cùng URL hoặc cùng sự kiện)."""
     seen_urls = {e.get("url") for e in exclude}
     seen_titles = [e.get("title", "") for e in exclude]
     out: dict[str, list[dict]] = {}
     for feed_url, a in sorted(pairs, key=lambda p: p[1].published, reverse=True):
         if not (now - timedelta(hours=hours) <= a.published <= now + timedelta(minutes=30)):
+            continue
+        if since and a.published <= since:
             continue
         cat = categorize(feed_url, a.title)
         if not cat or a.url in seen_urls:
@@ -170,10 +172,32 @@ def by_category(pairs: list, exclude: list[dict], now: datetime, per_cat: int = 
         if len(bucket) >= per_cat:
             continue
         bucket.append({"title": a.title, "url": a.url, "source": a.source, "image": a.image,
-                       "ts": _ago_iso(a.published), "sources": 1, "score": 0})
+                       "ts": _ago_iso(a.published), "sources": 1, "score": 0, "summary": _snippet(a)})
         seen_urls.add(a.url)
         seen_titles.append(a.title)
     return out
+
+
+def _snippet(a, n: int = 40) -> str:
+    """Đoạn mô tả ngắn của báo (RSS), bỏ phần lặp tiêu đề; giữ trọn câu nếu được."""
+    from .curator import soft_limit
+
+    text = (a.summary or "").strip()
+    if text.lower().startswith(a.title.lower()):
+        text = text[len(a.title):].lstrip(" .:-–")
+    return soft_limit(text, n)
+
+
+def _edition_time() -> datetime | None:
+    """Giờ bản tin sáng được tạo (từ data/page.json), để chỉ lấy tin đăng sau đó."""
+    from zoneinfo import ZoneInfo
+
+    try:
+        page = json.loads((ROOT / "data" / "page.json").read_text(encoding="utf-8"))
+        local = datetime.strptime(page["date_compact"] + page["updated_at"], "%Y%m%d%H:%M")
+        return local.replace(tzinfo=ZoneInfo("Asia/Ho_Chi_Minh")).astimezone(timezone.utc)
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def _page_items() -> list[dict]:
@@ -217,7 +241,7 @@ def update(now: datetime | None = None, path: Path = LIVE_PATH) -> dict:
     trends = update_trends(now)
     pairs = collect_articles(cfg)
     live = rank([a for _, a in pairs], trends.get("vn", []), now)
-    live["cats"] = by_category(pairs, _page_items(), now)
+    live["cats"] = by_category(pairs, _page_items(), now, since=_edition_time())
     try:
         live["quotes"] = [asdict(q) for q in fetch_market(cfg)]
     except Exception as e:  # noqa: BLE001

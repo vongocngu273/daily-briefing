@@ -61,6 +61,7 @@ class NewsItem:
     ai: bool = True  # False = deterministic fallback, not recorded in history
     num: int = 0  # continuous display number across the page (01..N)
     image: str = ""  # https URL ảnh minh hoạ (có thể rỗng)
+    fresh: str = ""  # "HH:MM" nếu là tin mới thay vào trong ngày (không có tóm tắt AI)
 
     @property
     def emoji(self) -> str:

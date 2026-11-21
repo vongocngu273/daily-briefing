@@ -527,3 +527,22 @@ def test_soft_limit_never_leaves_dangling_ellipsis():
     assert soft_limit(long_no_break, 22) == long_no_break          # giữ nguyên, không "…"
     cut = soft_limit("Một hai ba bốn năm sáu bảy tám chín mười, mười một mười hai mười ba mười bốn", 12)
     assert cut == "Một hai ba bốn năm sáu bảy tám chín mười" and "…" not in cut
+
+
+def test_merge_fresh_replaces_oldest_and_keeps_even():
+    from src.curator import NewsItem
+    from src.rerender import merge_fresh
+    def ai(i):
+        return NewsItem(cid=i, category="sports", severity="medium", title=f"Sáng {i}", summary="s", developments="d",
+                        context="", why_it_matters="", is_update=False, url=f"https://x/{i}", source="VnExpress",
+                        published="", num=i)
+    ctx = {"layers": [{"categories": [{"key": "sports", "items": [ai(1), ai(2), ai(3), ai(4)]},
+                                      {"key": "geopolitics", "items": [ai(5), ai(6)]}]}]}
+    fresh = {"sports": [{"title": "Mới A", "url": "https://n/a", "source": "Tuổi Trẻ", "ts": "2026-11-21T15:21:00+00:00",
+                         "summary": "Đoạn ngắn"}]}
+    merge_fresh(ctx, fresh)
+    sports = ctx["layers"][0]["categories"][0]["items"]
+    assert [i.title for i in sports] == ["Mới A", "Sáng 1", "Sáng 2", "Sáng 3"]
+    assert sports[0].fresh == "22:21" and sports[0].summary == "Đoạn ngắn" and not sports[0].ai
+    assert [i.num for l in ctx["layers"] for c in l["categories"] for i in c["items"]] == [1, 2, 3, 4, 5, 6]
+    assert ctx["total_items"] == 6
