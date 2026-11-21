@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="vi" data-theme="dark" data-view="mag">
+<html lang="vi" data-theme="dark" data-view="card">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
 <script>/* Giao diện: mặc định tối; nhớ lựa chọn trên thiết bị này */
 try{var t=localStorage.getItem('banTinSang.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}
-/* Kiểu xem: list | mag | card, mặc định Tạp chí */
-document.documentElement.setAttribute('data-view','mag');
+/* Kiểu xem: list | mag | card, mặc định Thẻ */
+document.documentElement.setAttribute('data-view','card');
 try{var v=localStorage.getItem('banTinSang.view');if(v==='list'||v==='mag'||v==='card')document.documentElement.setAttribute('data-view',v);}catch(e){}</script>
 <title>Bản tin sáng · {{ serial }}</title>
 <link rel="preload" href="fonts/BarlowCondensed-800-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -145,10 +145,14 @@ main{padding:4px 0 8px}
 @media (max-width:519px){[data-view="mag"] .item{grid-template-columns:34px minmax(0,1fr) 88px;gap:0 8px}[data-view="mag"] .no{font-size:22px}}
 [data-view="card"] .items{display:grid;gap:14px;margin-top:14px}
 @media (min-width:640px){[data-view="card"] .items{grid-template-columns:repeat(2,minmax(0,1fr))}}
-[data-view="card"] .item,[data-view="card"] .item:last-child{display:flex;flex-direction:column;padding:0 0 12px;border:2px solid var(--rule)}
-[data-view="card"] .thumb{display:block;order:-1;aspect-ratio:16/9;border:0;border-bottom:2px solid var(--rule)}
+[data-view="card"] .item,[data-view="card"] .item:last-child{display:flex;flex-direction:column;padding:0 0 12px;border:1.5px solid var(--rule);
+  --r:24px;border-radius:var(--r);overflow:hidden;background:var(--paper);corner-shape:squircle}
+@supports (corner-shape:squircle){[data-view="card"] .item,[data-view="card"] .item:last-child{--r:34px}}
+[data-view="card"] .thumb{display:block;order:-1;aspect-ratio:16/9;border:0;border-bottom:1.5px solid var(--rule)}
 [data-view="card"] .thumb.ph .ph-src{font-size:22px}
-[data-view="card"] .no{position:absolute;top:8px;left:8px;z-index:1;background:var(--paper);padding:3px 6px 1px;font-size:22px;border:1.5px solid var(--rule)}
+[data-view="card"] .no{position:absolute;top:10px;left:10px;z-index:1;background:var(--paper);padding:4px 9px 2px;font-size:22px;border:0;
+  border-radius:calc(var(--r) - 10px);corner-shape:squircle;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+[data-view="card"] .item[data-flag]::before{top:10px;right:10px;border-radius:calc(var(--r) - 14px);corner-shape:squircle;z-index:1}
 [data-view="card"] .body{padding:10px 12px 0}
 [data-view="card"] .item h4{text-wrap:pretty}
 .no{font:800 26px/1 var(--cond);color:var(--red);padding-top:2px}
