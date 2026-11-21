@@ -1,6 +1,15 @@
 {
  "vn": [
   {
+   "term": "real madrid đấu với celta",
+   "geo": "VN",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-21T19:20:00+00:00",
+   "url": "https://bongdaplus.vn/la-liga/nhan-dinh-bong-da-real-madrid-vs-celta-vigo-03h00-ngay-22-11-chien-thang-chat-vat-cho-chu-nha-5294742611.html",
+   "news": "Nhận định bóng đá Real Madrid vs Celta Vigo, 03h00 ngày 22/11: Chiến thắng chật vật cho chủ nhà!"
+  },
+  {
    "term": "tottenham đấu với ipswich town",
    "geo": "VN",
    "traffic": "2000+",
@@ -17,6 +26,24 @@
    "ts": "2026-11-21T15:20:00+00:00",
    "url": "https://bongdaplus.vn/ligue-1/nhan-dinh-bong-da-nice-vs-psg-23h15-ngay-21-11-thien-duong-thu-12-5294612611.html",
    "news": "Nhận định bóng đá Nice vs PSG, 23h15 ngày 21/11: Thiên đường thứ 12"
+  },
+  {
+   "term": "thứ hạng của ogc nice gặp psg",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T18:30:00+00:00",
+   "url": "https://www.goal.com/en/news/video-hakimi-leads-paris-comeback-at-nice-despite-algerian-touch/blt944a7cfec548ee71",
+   "news": "Video: Hakimi leads Paris comeback at Nice despite Algerian touch"
+  },
+  {
+   "term": "real madrid",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T19:20:00+00:00",
+   "url": "https://as.com/futbol/alineacion-confirmada-del-real-madrid-hoy-contra-el-celta-en-laliga-ea-sports-f202611-n/",
+   "news": "Alineación confirmada del Real Madrid hoy contra el Celta en LaLiga EA Sports"
   },
   {
    "term": "man city vs fulham f.c. standings",
@@ -73,6 +100,24 @@
    "news": "Coventry vs Crystal Palace LIVE! Premier League match updates, news and score"
   },
   {
+   "term": "napoli đấu với torino",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-21T19:40:00+00:00",
+   "url": "https://bongdaplus.vn/serie-a/nhan-dinh-bong-da-napoli-vs-torino-02h45-ngay-22-11-tin-vao-chu-nha-5294842611.html",
+   "news": "Nhận định bóng đá Napoli vs Torino, 02h45 ngày 22/11: Tin vào chủ nhà!"
+  },
+  {
+   "term": "real",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-21T19:50:00+00:00",
+   "url": "https://www.bbc.com/sport/football/live/c6205wg000g8t",
+   "news": "Real Madrid vs Celta Vigo: Spanish La Liga stats & head-to-head"
+  },
+  {
    "term": "como vs",
    "geo": "VN",
    "traffic": "200+",
@@ -118,6 +163,24 @@
    "news": "‘You’re going to be like Glenn Hoddle’ – Micky Hazard reveals what he told Williams-Barnett"
   },
   {
+   "term": "napoli",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T19:40:00+00:00",
+   "url": "https://www.virgilio.it/sport/dirette/live/serie-a/21-11-2026/napoli-torino/2638239/",
+   "news": "LIVE Napoli-Torino 1-0 Serie A 2026/2027: Vlasic sfiora il gol"
+  },
+  {
+   "term": "lương hưu",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://laodong.vn/tu-van-phap-luat/nguoi-don-than-ngheo-nuoi-con-co-the-duoc-huong-dong-thoi-nhieu-khoan-tro-cap-xa-hoi-1803136.ldo",
+   "news": "Người đơn thân nghèo nuôi con có thể được hưởng đồng thời nhiều khoản trợ cấp xã hội"
+  },
+  {
    "term": "ben shelton",
    "geo": "VN",
    "traffic": "100+",
@@ -152,6 +215,33 @@
    "ts": "2026-11-21T15:00:00+00:00",
    "url": "https://vnexpress.net/carragher-pochettino-va-man-utd-co-the-tro-thanh-lien-minh-cong-sinh-ly-tuong-5147298.html",
    "news": "Carragher: 'Pochettino và Man Utd có thể trở thành liên minh cộng sinh lý tưởng'"
+  },
+  {
+   "term": "real betis",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-21T18:20:00+00:00",
+   "url": "https://mundobetis.com/2026/11/21/pellegrini-valora-la-actuacion-de-sanchez-martinez-y-lamenta-el-empate-estamos-muy-amargados/",
+   "news": "Pellegrini valora la actuación de Sánchez Martínez y lamenta el empate: “Estamos muy amargados”"
+  },
+  {
+   "term": "thứ hạng của sevilla fc gặp real betis",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-21T20:50:00+00:00",
+   "url": "https://www.bbc.com/sport/football/live/cr2klx9kkkvwt",
+   "news": "Sevilla vs Real Betis: Spanish La Liga stats & head-to-head"
+  },
+  {
+   "term": "bão áp thấp nhiệt đới",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-21T21:00:00+00:00",
+   "url": "",
+   "news": ""
   }
  ],
  "world": [
@@ -181,6 +271,24 @@
    "ts": "2026-11-21T15:40:00+00:00",
    "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
    "news": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now"
+  },
+  {
+   "term": "mariella frostrup",
+   "geo": "GB",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.independent.co.uk/arts-entertainment/tv/news/im-a-celeb-aj-odudu-mariella-frostrup-feud-b3089124.html",
+   "news": "I’m A Celeb fans rally behind AJ Odudu after emotional confrontation with Mariella Frostrup"
+  },
+  {
+   "term": "i play rocky cast",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-21T21:30:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/movies/article/how-did-i-play-rocky-star-anthony-ippolito-transform-into-sylvester-stallone-raw-eggs-a-40-pound-weight-gain-and-some-x-rated-homework-171914757.html",
+   "news": "How did 'I Play Rocky' star Anthony Ippolito transform into Sylvester Stallone? Raw eggs, a 40-pound weight gain and some X-rated homework."
   },
   {
    "term": "best tech black friday deals",
@@ -280,6 +388,60 @@
    "ts": "2026-11-21T16:00:00+00:00",
    "url": "https://sports.yahoo.com/articles/watch-wake-forest-vs-georgia-154000212.html",
    "news": "How to watch Wake Forest vs Georgia Tech: Live stream College Football, TV channel"
+  },
+  {
+   "term": "bob chesney",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T21:00:00+00:00",
+   "url": "https://www.latimes.com/sports/ucla/story/2026-11-20/on-brand-bob-chesney-has-ucla-football-alums-fired-up-can-bruins-keep-him",
+   "news": "‘On brand’ Bob Chesney has UCLA football alums fired up. Can the Bruins keep him?"
+  },
+  {
+   "term": "syracuse basketball",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T21:10:00+00:00",
+   "url": "https://www.syracuse.com/orangebasketball/2026/11/syracuse-basketball-vs-lafayette-live-score-updates.html",
+   "news": "Syracuse basketball has to empty the tank to hold off Lafayette: Final score, recap, photos"
+  },
+  {
+   "term": "leigh francis",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.thesun.co.uk/tv/41089831/im-a-celeb-leigh-francis-celebrity-juice-axe-reveal/",
+   "news": "I'm A Celeb's Leigh Francis reveals brutal way he was told Celebrity Juice had been axed and Brit who refused to go on"
+  },
+  {
+   "term": "gta vi review bombed",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.forbes.com/sites/paultassi/2026/11/21/grand-theft-auto-6-is-being-review-bombed-on-metacritic/",
+   "news": "‘Grand Theft Auto 6’ Is Being Review Bombed On Metacritic"
+  },
+  {
+   "term": "keith lemon",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T21:30:00+00:00",
+   "url": "https://www.telegraph.co.uk/tv/2026/11/18/im-a-celebrity-2026-line-up/",
+   "news": "I’m a Celebrity 2026 line-up: who’s going into the jungle?"
+  },
+  {
+   "term": "airport",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-21T21:30:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/c8vg2pd5707wo",
+   "news": "Serious crash closes M42 near Birmingham Airport"
   },
   {
    "term": "rayo vallecano - valencia c. f.",
@@ -417,6 +579,24 @@
    "news": "How To Watch and Staff Predictions: Colorado"
   },
   {
+   "term": "indiana fever",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.espn.com/wnba/story/_/id/50515575/fever-finalists-head-basketball-operations",
+   "news": "Sources: Fever working through finalists to head basketball operations"
+  },
+  {
+   "term": "julio iglesias",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-21T21:30:00+00:00",
+   "url": "https://www.eleconomista.es/informalia/famosos/noticias/14029744/11/26/julio-iglesias-vende-su-mansion-en-galicia-y-prepara-la-navidad-con-miranda-y-sus-hijos-en-punta-cana-en-plena-investigacion-judicial.html",
+   "news": "Julio Iglesias vende su mansión en Galicia y prepara la Navidad con Miranda y sus hijos en Punta Cana en plena investigación judicial"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -487,6 +667,15 @@
    "ts": "2026-11-21T15:40:00+00:00",
    "url": "https://www.sozcu.com.tr/canli-veya-kocaelispor-fenerbahce-maci-canli-anlatim-p383267",
    "news": "Canlı | Kocaelispor-Fenerbahçe maçı canlı anlatım"
+  },
+  {
+   "term": "byrum brown",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.al.com/auburnfootball/2026/11/how-tristan-tia-is-developing-behind-byrum-brown.html",
+   "news": "How Tristan Ti’a is developing behind Byrum Brown this season"
   },
   {
    "term": "harvard yale game",
@@ -741,6 +930,87 @@
    "news": "Wisconsin vs. Purdue prediction, odds, time: Week 12 college football picks from proven model"
   },
   {
+   "term": "wake forest college football standings",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:10:00+00:00",
+   "url": "https://www.espn.com/college-football/story/_/id/50503628/cfp-playoff-2026-bubble-watch-week-third-ranking",
+   "news": "Who's on College Football Playoff bubble after the committee's third ranking?"
+  },
+  {
+   "term": "hill dickinson stadium",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:10:00+00:00",
+   "url": "https://readeverton.com/everton-stadium-name-change-euro-2028-confirmed/",
+   "news": "Everton stadium name change for Euro 2028 confirmed by Liverpool council"
+  },
+  {
+   "term": "colin simmons",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.burntorangenation.com/texas-longhorns-football/107581/texas-longhorns-injury-report-arkansas-razorbacks",
+   "news": "Only one change on the Friday Texas injury report"
+  },
+  {
+   "term": "mbappe",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.imdb.com/news/ni66122122/?ref_=nwc_art_perm",
+   "news": "Kylian Mbappé Impersonator Leads Colorful Roster of Doubles in Egyptian Doc ‘The Lookalike’"
+  },
+  {
+   "term": "nathan mackinnon",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.denverpost.com/2026/11/21/avalanche-mackinnon-injury-12-weeks/",
+   "news": "Avalanche superstar Nathan MacKinnon is now out 12 weeks"
+  },
+  {
+   "term": "magnus carlsen",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:20:00+00:00",
+   "url": "https://www.fide.com/fide-statement-on-the-conclusion-of-the-total-chess-world-championship-tour-pilot-2026/",
+   "news": "FIDE Statement on the Conclusion of the Total Chess World Championship Tour Pilot 2026"
+  },
+  {
+   "term": "bret bielema",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:30:00+00:00",
+   "url": "https://247sports.com/college/illinois/article/fighting-illini-football-senior-defensive-back-xavier-scott-illinois-iowa-jake-renfro-juice-clarke-interception-292946628/",
+   "news": "Notebook: Scott 'grateful' for Illini opportunity; preparing for '60-minute fist fight' against Iowa"
+  },
+  {
+   "term": "marcus rashford",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:30:00+00:00",
+   "url": "https://www.manutd.com/en/news/inside-story-mauricio-pochettino-first-training-session",
+   "news": "Inside Story: Pochettino's first training session"
+  },
+  {
+   "term": "enrique iglesias",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-21T21:30:00+00:00",
+   "url": "https://www.nytimes.com/2026/11/18/arts/music/julio-iglesias-spain-sexual-offenses.html",
+   "news": "Julio Iglesias Is Under Criminal Investigation for Sexual Offenses"
+  },
+  {
    "term": "sufc",
    "geo": "GB",
    "traffic": "100+",
@@ -759,5 +1029,5 @@
    "news": "‘When you visualise going up to the Premier League, this venue springs to mind’: Boss insists Limavady won’t be overawed by Windsor Park duel"
   }
  ],
- "updated": "2026-11-21T16:14:28.526704+00:00"
+ "updated": "2026-11-21T21:45:00.885121+00:00"
 }
