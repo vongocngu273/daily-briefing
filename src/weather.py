@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import time
 from dataclasses import dataclass, field
 
 import requests
@@ -172,7 +173,8 @@ def make_advice(slots: list[Slot]) -> list[str]:
     return lines[:2]
 
 
-def fetch_weather(loc: Location, timeout: int = 20) -> WeatherReport:
+def fetch_weather(loc: Location, timeout: int = 30, attempts: int = 5,
+                  backoff: tuple[int, ...] = (5, 15, 30, 60)) -> WeatherReport:
     params = {
         "latitude": loc.lat,
         "longitude": loc.lon,
@@ -181,7 +183,7 @@ def fetch_weather(loc: Location, timeout: int = 20) -> WeatherReport:
         "forecast_days": 1,
     }
     report = WeatherReport(location=loc.name)
-    for attempt in range(3):
+    for attempt in range(attempts):
         try:
             r = requests.get(API_URL, params=params, timeout=timeout)
             r.raise_for_status()
@@ -191,6 +193,8 @@ def fetch_weather(loc: Location, timeout: int = 20) -> WeatherReport:
             return report
         except Exception as e:  # noqa: BLE001
             log.warning("Open-Meteo lỗi (lần %d): %s", attempt + 1, type(e).__name__)
+            if attempt < attempts - 1:
+                time.sleep(backoff[min(attempt, len(backoff) - 1)])
     report.slots = [Slot(key=k, label=l, hours=f"{a:02d}:00–{b:02d}:00") for k, l, a, b in SLOTS]
     report.advice = ["Chưa có dữ liệu thời tiết"]
     return report
