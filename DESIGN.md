@@ -2,12 +2,32 @@
 name: Bản tin sáng
 description: A personal Vietnamese morning briefing printed as a fresh lottery-ticket stub every day.
 colors:
-  bigman-black: "#000000"
-  bigman-lime: "#C5FF2D"
-  bigman-white: "#FFFFFF"
-  muted-on-white: "rgba(0,0,0,.62)"
-  muted-on-black: "rgba(255,255,255,.64)"
-  engrave-lime: "rgba(197,255,45,.16)"
+  serial-red: "#d0021b"
+  ink-navy: "#1b1f4a"
+  paper-white: "#ffffff"
+  ink-muted: "#4a4e78"
+  engrave-light: "rgba(255,255,255,.42)"
+  stub-monday-sky: "#5bbbe9"
+  stub-tuesday-lime: "#a6d64a"
+  stub-wednesday-orange: "#f7a440"
+  stub-thursday-violet: "#a98ddc"
+  stub-friday-aqua: "#3ccdbf"
+  stub-saturday-pink: "#f06e98"
+  stub-sunday-yellow: "#f6cf3a"
+  dark-serial-red: "#ff5d6c"
+  dark-ink: "#ecebf7"
+  dark-paper: "#12142c"
+  dark-muted: "#b4b6d8"
+  dark-rule: "#5d6194"
+  dark-stub-ink: "#f4f2fb"
+  dark-engrave: "rgba(255,255,255,.14)"
+  dark-stub-monday: "#1f4f73"
+  dark-stub-tuesday: "#3d5716"
+  dark-stub-wednesday: "#7a4310"
+  dark-stub-thursday: "#46336f"
+  dark-stub-friday: "#12534d"
+  dark-stub-saturday: "#74203f"
+  dark-stub-sunday: "#665108"
 typography:
   display:
     fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
@@ -108,9 +128,6 @@ components:
     rounded: "{rounded.none}"
     padding: "5px 10px"
 ---
-
-> **Palette update (2026-11-21):** the page now uses the Bigman Backcom identity: black, lime `#C5FF2D`, white only, typography unchanged (Barlow Condensed 600/800 for display, labels and numbers; Be Vietnam Pro 400/600 for reading text). The ticket stubs are always black with lime accents; the weekday stub colours and serial red are retired. Light mode: white paper, black ink, lime only as a highlighter or label background behind black text (never lime text on white). Dark mode: black paper, white ink, lime text accents and a lime perforation edge. Market moves read by arrow plus tone: up is accent (black/lime), down is muted. Sections below that mention weekday colours, serial red describe the previous palette; layout and components are unchanged.
-
 
 # Design System: Bản tin sáng
 
