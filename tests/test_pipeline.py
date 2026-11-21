@@ -403,7 +403,7 @@ def test_snapshot_roundtrip_renders_same_page(tmp_path):
         "layers": [{"id": 1, "title": "Lớp 1", "categories": [{"key": "geopolitics", "label": "Địa chính trị",
                     "items": [item], "first": 1, "last": 1}]}],
         "weekday": 5, "weekday_name": "Thứ Bảy", "weekday_short": "T7", "serial": "21·11",
-        "year": "2026", "date_compact": "20261121",
+        "year": "2026", "date_compact": "20261121", "site_url": "https://x.github.io/daily-briefing/",
     }
     a, b, snap = tmp_path / "a.html", tmp_path / "b.html", tmp_path / "page.json"
     render(ctx, out_path=a)
@@ -462,3 +462,15 @@ def test_vnindex_parsers():
                           Quote(symbol="^VNINDEX", name="VN-Index"))
     assert v.close == 1688.79 and round(v.change_pct, 2) == -0.05 and v.date == "20/11"
     assert not parse_vps_history({"s": "no_data"}, Quote(symbol="x", name="x")).ok
+
+
+def test_share_image_and_og_tags(tmp_path):
+    from PIL import Image
+    from src.ogimage import make_og
+    from src.weather import Slot, WeatherReport
+    ctx = {"weekday": 5, "serial": "21·11", "weekday_name": "Thứ Bảy", "year": "2026", "total_items": 38,
+           "updated_at": "07:10", "takeaways": ["Một câu rất dài " * 8, "Hai", "Ba"],
+           "weather": WeatherReport(location="x", slots=[Slot(key="m", label="Sáng", hours="", temp_min=26, temp_max=32)],
+                                    uv_day=7.5)}
+    out = make_og(ctx, tmp_path / "og.png")
+    assert Image.open(out).size == (1200, 630)

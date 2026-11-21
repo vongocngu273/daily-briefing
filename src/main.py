@@ -15,6 +15,7 @@ from .news import (add_to_history, fill_missing_images, candidates_for_layer, co
                    recent_titles, save_history)
 from .renderer import render
 from .extras import air_advice, fetch_air, fetch_tide, uv_level
+from .ogimage import make_og
 from .rerender import save_snapshot
 from .trends import for_page, update as update_trends
 from .weather import fetch_weather, weather_severity
@@ -170,6 +171,7 @@ def run() -> int:
         "serial": local.strftime("%d·%m"),
         "year": local.strftime("%Y"),
         "date_compact": local.strftime("%Y%m%d"),
+        "site_url": cfg.get("site_url", ""),
     }
     try:
         context["trends"] = for_page(update_trends())
@@ -177,6 +179,7 @@ def run() -> int:
         log.warning("Google Trends lỗi: %s", type(e).__name__)
         context["trends"] = {"vn": [], "world": [], "updated": ""}
     render(context)
+    make_og(context)
     save_snapshot(context)
     write_summary(build_summary(context, local), SUMMARY_PATH)
     save_history(history, HISTORY_PATH)

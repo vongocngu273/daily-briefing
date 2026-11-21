@@ -10,6 +10,21 @@ try{var t=localStorage.getItem('banTinSang.theme');if(t==='light'||t==='dark')do
 document.documentElement.setAttribute('data-view','card');
 try{var v=localStorage.getItem('banTinSang.view');if(v==='list'||v==='mag'||v==='card')document.documentElement.setAttribute('data-view',v);}catch(e){}</script>
 <title>Bản tin sáng · {{ serial }}</title>
+{% set site = site_url if site_url is defined else "" %}
+{% set share_desc = (takeaways|join(" · ")) if takeaways else "Tin tức, thời tiết, thị trường mỗi sáng." %}
+<meta name="description" content="{{ share_desc|truncate(200, true, "…") }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bản tin sáng">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Bản tin sáng · {{ date_str }}">
+<meta property="og:description" content="{{ share_desc|truncate(200, true, "…") }}">
+{% if site %}<meta property="og:url" content="{{ site }}">
+<meta property="og:image" content="{{ site }}og.png?v={{ date_compact }}{{ updated_at|replace(":", "") }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bản tin sáng {{ date_str }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site }}og.png?v={{ date_compact }}{{ updated_at|replace(":", "") }}">{% endif %}
 <link rel="preload" href="fonts/BarlowCondensed-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/BeVietnamPro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <style>

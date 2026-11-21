@@ -60,7 +60,9 @@ def load_snapshot(path: Path = SNAPSHOT_PATH, trends_path: Path | None = None) -
         ctx["tide"] = _build(TideReport, ctx["tide"])
     ctx["quotes"] = [_build(Quote, q) for q in ctx.get("quotes", [])]
     # Trend luôn lấy bản mới nhất trong data/trends.json (cập nhật 2 giờ/lần)
+    from .config import load_config
     from .trends import TRENDS_PATH, for_page, load_store
+    ctx.setdefault("site_url", load_config().get("site_url", ""))
     ctx["trends"] = for_page(load_store(trends_path or TRENDS_PATH))
     for layer in ctx.get("layers", []):
         for cat in layer.get("categories", []):
@@ -73,7 +75,11 @@ def run(path: Path = SNAPSHOT_PATH, out: Path = OUTPUT_PATH) -> int:
     if not Path(path).exists():
         log.error("Chưa có %s – cần một lần chạy pipeline đầy đủ trước", path)
         return 1
-    render(load_snapshot(path), out_path=out)
+    ctx = load_snapshot(path)
+    render(ctx, out_path=out)
+    if Path(out).resolve() == OUTPUT_PATH.resolve():
+        from .ogimage import make_og
+        make_og(ctx)
     log.info("Đã render lại %s từ %s", out, path)
     return 0
 
