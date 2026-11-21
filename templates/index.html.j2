@@ -241,6 +241,47 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 @keyframes tkscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.tk-viewport{overflow-x:auto}}
 @media (max-width:519px){.tk-label{padding:9px 9px;font-size:13px;letter-spacing:.06em}}
+
+/* ---------- iOS-style sheet for "Xem đầy đủ" in card view ---------- */
+.sheet{border:0;padding:0;margin:auto auto 0;width:100%;max-width:100%;max-height:88vh;max-height:88dvh;background:var(--paper);color:var(--ink);
+  border-radius:var(--rL) var(--rL) 0 0;corner-shape:squircle;box-shadow:0 -10px 40px rgba(0,0,0,.35);overflow:hidden;display:flex;flex-direction:column}
+.sheet:not([open]){display:none}
+.sheet::backdrop{background:rgba(10,12,30,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.sh-grab{flex:none;display:flex;justify-content:center;padding:8px 0 4px;cursor:grab;touch-action:none}
+.sh-grab i{width:38px;height:5px;border-radius:3px;background:var(--muted);opacity:.5}
+.sh-close{position:absolute;top:10px;right:12px;z-index:2;width:32px;height:32px;border:0;border-radius:50%;background:color-mix(in srgb,var(--ink) 12%,transparent);color:var(--ink);cursor:pointer;display:grid;place-items:center;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.sh-close svg{width:14px;height:14px;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;fill:none}
+.sh-body{overflow-y:auto;overscroll-behavior:contain;padding:0 var(--gut) calc(24px + env(safe-area-inset-bottom))}
+.sh-img{margin:4px calc(-1 * var(--gut)) 14px;aspect-ratio:16/9;background:var(--stub);overflow:hidden}
+.sh-img img{width:100%;height:100%;object-fit:cover;display:block}
+.sh-meta{display:flex;align-items:center;gap:10px;font:600 13px var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sh-meta b{font:800 22px/1 var(--cond);color:var(--red);letter-spacing:0}
+.sh-body h3{margin:8px 0 6px;font:600 21px/1.35 var(--read);text-wrap:balance}
+.sh-body .sum{font-size:17px}
+.sh-body .full{margin-top:14px}
+.sh-body .full dd{font-size:16px}
+.sh-body .orig{display:inline-flex;align-items:center;justify-content:center;gap:6px;margin-top:18px;width:100%;padding:13px 16px;background:var(--red);color:#fff;text-decoration:none;border-radius:var(--rM);corner-shape:squircle;font-size:16px}
+@media (prefers-reduced-motion:no-preference){
+  .sheet[open]{animation:shUp .38s cubic-bezier(.32,.72,0,1)}
+  .sheet[open]::backdrop{animation:shFade .3s ease}
+  .sheet.closing{animation:shDown .25s cubic-bezier(.32,.72,0,1) forwards}
+}
+@keyframes shUp{from{transform:translateY(100%)}to{transform:none}}
+@keyframes shDown{to{transform:translateY(100%)}}
+@keyframes shFade{from{opacity:0}}
+@media (min-width:700px){
+  .sheet{margin:auto;width:min(600px,calc(100vw - 48px));max-height:86vh;border-radius:var(--rL);box-shadow:0 24px 70px rgba(0,0,0,.4)}
+  .sh-grab{display:none}
+  .sh-body{padding:0 26px 26px}
+  .sh-img{margin:0 -26px 16px}
+  @media (prefers-reduced-motion:no-preference){
+    .sheet[open]{animation:shPop .3s cubic-bezier(.32,.72,0,1)}
+    .sheet.closing{animation:shOut .2s ease forwards}
+  }
+}
+@keyframes shPop{from{opacity:0;transform:scale(.94)}}
+@keyframes shOut{to{opacity:0;transform:scale(.96)}}
+html.sheet-open{overflow:hidden}
 </style>
 </head>
 {% macro sevicon(sev) %}{% if sev == "high" %}<svg class="sv sv-high" viewBox="0 0 20 20" aria-hidden="true"><path class="sv-bg" d="M10 2.3c.6 0 1.1.3 1.4.8l7 12.1c.6 1-.1 2.4-1.3 2.4H2.9c-1.2 0-1.9-1.4-1.3-2.4l7-12.1c.3-.5.8-.8 1.4-.8z"/><rect class="sv-fg" x="9.1" y="6.6" width="1.8" height="5.6" rx=".9"/><circle class="sv-fg" cx="10" cy="14.6" r="1.05"/></svg>{% elif sev == "medium" %}<svg class="sv sv-med" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="8.4"/><rect class="sv-fg" x="9.1" y="5.2" width="1.8" height="6.3" rx=".9"/><circle class="sv-fg" cx="10" cy="14.3" r="1.05"/></svg>{% else %}<svg class="sv sv-low" viewBox="0 0 20 20" aria-hidden="true"><circle class="sv-bg" cx="10" cy="10" r="3.6"/></svg>{% endif %}{% endmacro %}
@@ -416,6 +457,12 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
   <p>Tóm tắt do AI viết và có thể sai. Đọc bài gốc trước khi quyết định điều gì.</p>
 </footer>
 
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+  <div class="sh-grab" aria-hidden="true"><i></i></div>
+  <button type="button" class="sh-close" id="sheet-close" aria-label="Đóng"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.2 5.2l9.6 9.6M14.8 5.2l-9.6 9.6"/></svg></button>
+  <div class="sh-body" id="sheet-body"></div>
+</dialog>
+
 <script>
 (function(){
   /* Dòng chữ chạy: nhân đôi nội dung để lặp liền mạch, tốc độ ~55px/giây cho dễ đọc */
@@ -429,6 +476,52 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     tk.style.setProperty('--tk-dur',Math.max(20,Math.round(run.offsetWidth/55))+'s');
     tk.classList.add('run');
     tk.addEventListener('touchstart',function(){tk.classList.toggle('paused');},{passive:true});
+  })();
+  /* Kiểu Thẻ: "Xem đầy đủ" mở bảng trượt kiểu iOS thay vì kéo dài thẻ */
+  (function(){
+    var sh=document.getElementById('sheet'), body=document.getElementById('sheet-body');
+    if(!sh||typeof sh.showModal!=='function') return;
+    function close(){
+      if(!sh.open) return;
+      var done=function(){sh.classList.remove('closing');sh.close();};
+      if(matchMedia('(prefers-reduced-motion: reduce)').matches){done();return;}
+      sh.classList.add('closing'); setTimeout(done,240);
+    }
+    sh.addEventListener('close',function(){document.documentElement.classList.remove('sheet-open');sh.style.transform='';});
+    sh.addEventListener('cancel',function(e){e.preventDefault();close();});
+    sh.addEventListener('click',function(e){if(e.target===sh)close();});
+    document.getElementById('sheet-close').addEventListener('click',close);
+    document.querySelectorAll('.item details > summary').forEach(function(sm){
+      sm.addEventListener('click',function(e){
+        if(document.documentElement.getAttribute('data-view')!=='card') return;
+        e.preventDefault();
+        var it=sm.closest('.item'), img=it.querySelector('.thumb img'), num=it.querySelector('.no').textContent;
+        var h=it.querySelector('h4').cloneNode(true), full=it.querySelector('.full').cloneNode(true);
+        body.innerHTML='';
+        if(img){var f=document.createElement('div');f.className='sh-img';var im=img.cloneNode();im.loading='eager';f.appendChild(im);body.appendChild(f);}
+        else body.appendChild(document.createElement('div')).style.height='40px';
+        var meta=document.createElement('div');meta.className='sh-meta';
+        meta.innerHTML='<b>'+num+'</b><span></span>';meta.querySelector('span').textContent=it.querySelector('.src').textContent;
+        body.appendChild(meta);
+        var t=document.createElement('h3');t.id='sheet-title';t.innerHTML=h.innerHTML;body.appendChild(t);
+        var sum=it.querySelector('.sum');if(sum)body.appendChild(sum.cloneNode(true));
+        body.appendChild(full);
+        body.scrollTop=0;
+        document.documentElement.classList.add('sheet-open');
+        sh.showModal();
+        var n=+it.getAttribute('data-num'); try{localStorage.setItem('banTinSang.flag',JSON.stringify({d:document.body.getAttribute('data-date'),n:n}));}catch(err){}
+      });
+    });
+    /* Vuốt xuống ở thanh kéo để đóng (điện thoại) */
+    var g=sh.querySelector('.sh-grab'), y0=null, dy=0;
+    function start(y){y0=y;dy=0;sh.style.transition='none';}
+    function move(y){if(y0===null)return;dy=Math.max(0,y-y0);sh.style.transform='translateY('+dy+'px)';}
+    function end(){if(y0===null)return;sh.style.transition='';y0=null;if(dy>90){close();}else{sh.style.transform='';}}
+    [g,body].forEach(function(el){
+      el.addEventListener('touchstart',function(e){if(el===body&&body.scrollTop>0)return;start(e.touches[0].clientY);},{passive:true});
+      el.addEventListener('touchmove',function(e){move(e.touches[0].clientY);},{passive:true});
+      el.addEventListener('touchend',end);
+    });
   })();
   var root=document.documentElement, th=document.getElementById('theme');
   var vbs=document.querySelectorAll('.views button');
