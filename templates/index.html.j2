@@ -58,7 +58,10 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .wx .t{font:800 26px/1.1 var(--cond);color:var(--serial);white-space:nowrap}
 .wx p{margin:0;font-size:12px;line-height:1.35}
 .wx .na{font:600 14px var(--cond);color:var(--field-muted)}
-.stub-row.loc{margin-bottom:6px}
+.stub-row.loc{margin-bottom:6px;align-items:center}
+.geo{flex:none;font:600 13px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--stub-ink);background:var(--field);border:1.5px solid var(--stub-ink);padding:6px 8px;cursor:pointer;border-radius:0}
+.geo:hover{background:var(--stub-ink);color:var(--field)}
+.geo[aria-busy="true"]{opacity:.6;cursor:progress}
 .advice{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:6px}
 .advice li{background:var(--field);color:var(--stub-ink);border:2px solid var(--stub-ink);border-left:8px solid var(--serial);padding:7px 12px 9px;font:600 17px/1.4 var(--read)}
 .advice li::before{content:"Nhắc nhở";display:block;margin-bottom:1px;font:800 12px/1.2 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--serial)}
@@ -161,7 +164,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     <div class="stub-row"><h1>Bản tin sáng</h1><span>Cập nhật {{ updated_at }}</span></div>
     <div class="ticket">
       <div class="serial" aria-label="{{ date_str }}"><b>{{ serial }}</b><span>{{ weekday_name }}<small>{{ year }} · {{ total_items }} tin</small></span></div>
-      <section class="wx" aria-label="Thời tiết {{ weather.location }}">
+      <section class="wx" id="wx" aria-label="Thời tiết {{ weather.location }}">
       {% for s in weather.slots %}
         <div>
           <h2>{{ s.label }}</h2>
@@ -169,7 +172,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
           {% if s.has_data %}
           <div class="t">{{ s.temp_min }}–{{ s.temp_max }}°</div>
           <p>{{ s.condition }}</p>
-          <p>Mưa&nbsp;{{ s.rain_prob if s.rain_prob is not none else "–" }}%{% if s.rain_mm %}<br>{{ s.rain_mm|string|replace(".", ",") }}&nbsp;mm{% endif %}</p>
+          <p>{% if s.rain_prob is not none %}Mưa&nbsp;{{ s.rain_prob }}%{% if s.rain_mm %}<br>{{ s.rain_mm|string|replace(".", ",") }}&nbsp;mm{% endif %}{% else %}Mưa&nbsp;{{ (s.rain_mm or 0)|string|replace(".", ",") }}&nbsp;mm{% endif %}</p>
           {% if s.uv_max is not none and s.uv_max >= 3 %}<p>UV&nbsp;{{ s.uv_max|string|replace(".", ",") }}</p>{% endif %}
           {% else %}
           <p class="na">Chưa có dữ liệu</p>
@@ -178,8 +181,8 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       {% endfor %}
       </section>
     </div>
-    <div class="stub-row loc"><span>{{ weather.location }}</span></div>
-    <ul class="advice">{% for line in weather.advice %}<li>{{ line }}</li>{% endfor %}</ul>
+    <div class="stub-row loc"><span id="wx-loc">{{ weather.location }}</span><button type="button" class="geo" id="geo">📍 Theo vị trí máy</button></div>
+    <ul class="advice" id="wx-advice">{% for line in weather.advice %}<li>{{ line }}</li>{% endfor %}</ul>
     <a class="resume" id="resume" href="#" hidden><span>Đọc tiếp</span>{{ arrow("next") }}</a>
     <div class="micro" aria-hidden="true">{% for _ in range(14) %}Bản tin sáng · {{ serial }} · {{ year }} · {% endfor %}</div>
   </div>
@@ -287,6 +290,98 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     root.setAttribute('data-theme',t); label();
     try{localStorage.setItem('banTinSang.theme',t);}catch(e){}
   });
+  /* Thời tiết theo vị trí máy: Open-Meteo, dự phòng MET Norway. Toạ độ chỉ gửi tới 2 dịch vụ thời tiết này. */
+  var GK='banTinSang.geo', geoBtn=document.getElementById('geo');
+  var SL=[['Sáng',7,9],['Trưa',11,14],['Chiều tối',17,20]];
+  var WMO={0:'Trời quang',1:'Ít mây',2:'Có mây',3:'Nhiều mây, u ám',45:'Sương mù',48:'Sương mù đóng băng',51:'Mưa phùn nhẹ',53:'Mưa phùn',55:'Mưa phùn dày',61:'Mưa nhỏ',63:'Mưa vừa',65:'Mưa to',73:'Tuyết',80:'Mưa rào nhẹ',81:'Mưa rào',82:'Mưa rào rất to',95:'Dông',96:'Dông kèm mưa đá',99:'Dông mạnh kèm mưa đá'};
+  var THUNDER=[95,96,99];
+  function vn(x){return String(x).replace('.',',');}
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function sev(c){return THUNDER.indexOf(c)>=0?100+c:c;}
+  function slots(h){
+    return SL.map(function(d){
+      var idx=[];(h.time||[]).forEach(function(t,i){var hr=+t.slice(11,13);if(hr>=d[1]&&hr<=d[2])idx.push(i);});
+      function v(n){var a=h[n]||[];return idx.map(function(i){return a[i];}).filter(function(x){return x!=null;});}
+      var s={label:d[0],hours:('0'+d[1]).slice(-2)+':00–'+('0'+d[2]).slice(-2)+':00'};
+      var t=v('temperature_2m'); if(t.length){s.tmin=Math.round(Math.min.apply(0,t));s.tmax=Math.round(Math.max.apply(0,t));}
+      var c=v('weather_code'); if(c.length){s.code=c.reduce(function(a,b){return sev(b)>sev(a)?b:a;});}
+      var p=v('precipitation_probability'); if(p.length)s.prob=Math.max.apply(0,p);
+      var r=v('precipitation'); if(r.length)s.mm=Math.round(r.reduce(function(a,b){return a+b;},0)*10)/10;
+      var u=v('uv_index'); if(u.length)s.uv=Math.round(Math.max.apply(0,u)*10)/10;
+      var g=v('wind_gusts_10m'); if(g.length)s.gust=Math.round(Math.max.apply(0,g));
+      return s;
+    });
+  }
+  function advice(ss){
+    var d=ss.filter(function(s){return s.tmin!=null;}); if(!d.length)return['Chưa có dữ liệu thời tiết'];
+    var th=d.filter(function(s){return THUNDER.indexOf(s.code)>=0;}).map(function(s){return s.label;});
+    var rn=d.filter(function(s){return (s.prob||0)>=50||(s.mm||0)>=1;}).map(function(s){return s.label;});
+    var tot=d.reduce(function(a,s){return a+(s.mm||0);},0);
+    var flood=d.some(function(s){return (s.mm||0)>=20||([65,67,82].indexOf(s.code)>=0&&(s.mm||0)>=10);})||tot>=30;
+    var gust=d.some(function(s){return (s.gust||0)>=50;});
+    var uv=Math.max.apply(0,d.map(function(s){return s.uv||0;}));
+    var out=[],gear=[];
+    if(rn.length||th.length){var w=th.concat(rn).filter(function(x,i,a){return a.indexOf(x)===i;}).join(', ').toLowerCase();gear.push('mang áo mưa (khả năng mưa buổi '+w+')');}
+    if(uv>=6)gear.push('mặc áo khoác chống nắng (UV tới '+vn(uv)+')');
+    out.push(gear.length?'Nên '+gear.join('; '):'Thời tiết ổn định, không cần áo mưa');
+    var warn=[];
+    if(th.length||gust)warn.push('⚠️ Cảnh báo giông lốc ('+(th.length?th.join(', ').toLowerCase():'trong ngày')+') – tránh trú dưới cây lớn, biển quảng cáo');
+    if(flood)warn.push('nguy cơ ngập cục bộ, hạn chế đi qua đường trũng');
+    if(warn.length){var l=warn.join('; ');if(l.indexOf('⚠️')!==0)l='⚠️ Cảnh báo '+l;out.push(l);}
+    return out.slice(0,2);
+  }
+  function paint(ss,label){
+    document.getElementById('wx').innerHTML=ss.map(function(s){
+      var b='<div><h2>'+s.label+'</h2><p class="hrs">'+s.hours+'</p>';
+      if(s.tmin==null)return b+'<p class="na">Chưa có dữ liệu</p></div>';
+      b+='<div class="t">'+s.tmin+'–'+s.tmax+'°</div><p>'+esc(WMO[s.code]||'Chưa có dữ liệu')+'</p>';
+      b+='<p>'+(s.prob!=null?'Mưa&nbsp;'+s.prob+'%'+(s.mm?'<br>'+vn(s.mm)+'&nbsp;mm':''):'Mưa&nbsp;'+vn(s.mm||0)+'&nbsp;mm')+'</p>';
+      if(s.uv!=null&&s.uv>=3)b+='<p>UV&nbsp;'+vn(s.uv)+'</p>';
+      return b+'</div>';
+    }).join('');
+    document.getElementById('wx-advice').innerHTML=advice(ss).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
+    document.getElementById('wx-loc').textContent=label;
+  }
+  function vnToday(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Ho_Chi_Minh'}).format(new Date());}
+  function openMeteo(lat,lon){
+    return fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&hourly=temperature_2m,precipitation_probability,precipitation,weather_code,uv_index,wind_gusts_10m&timezone=Asia%2FHo_Chi_Minh&forecast_days=1')
+      .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){return j.hourly;});
+  }
+  function metNo(lat,lon){
+    var map={clearsky:0,fair:1,partlycloudy:2,cloudy:3,fog:45,lightrain:61,rain:63,heavyrain:65,lightrainshowers:80,rainshowers:81,heavyrainshowers:82};
+    return fetch('https://api.met.no/weatherapi/locationforecast/2.0/complete?lat='+lat+'&lon='+lon)
+      .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
+        var h={time:[],temperature_2m:[],precipitation_probability:[],precipitation:[],weather_code:[],uv_index:[],wind_gusts_10m:[]}, day=vnToday();
+        var fmt=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Ho_Chi_Minh',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
+        j.properties.timeseries.forEach(function(row){
+          var loc=fmt.format(new Date(row.time)).replace(' ','T'); if(loc.slice(0,10)!==day)return;
+          var i=row.data.instant.details, n=row.data.next_1_hours||{summary:{},details:{}}, sym=(n.summary.symbol_code||'').split('_')[0];
+          h.time.push(loc); h.temperature_2m.push(i.air_temperature); h.precipitation_probability.push(n.details.probability_of_precipitation);
+          h.precipitation.push(n.details.precipitation_amount); h.uv_index.push(i.ultraviolet_index_clear_sky);
+          h.weather_code.push(sym.indexOf('thunder')>=0?95:(sym in map?map[sym]:null));
+          h.wind_gusts_10m.push(i.wind_speed_of_gust!=null?i.wind_speed_of_gust*3.6:null);
+        });
+        return h;
+      });
+  }
+  function locate(){
+    if(!navigator.geolocation){geoBtn.textContent='Máy không hỗ trợ định vị';return;}
+    geoBtn.setAttribute('aria-busy','true'); geoBtn.textContent='Đang lấy vị trí…';
+    navigator.geolocation.getCurrentPosition(function(pos){
+      var lat=pos.coords.latitude.toFixed(4), lon=pos.coords.longitude.toFixed(4);
+      openMeteo(lat,lon).catch(function(){return metNo(lat,lon);}).then(function(h){
+        paint(slots(h),'Theo vị trí máy · '+new Intl.DateTimeFormat('vi-VN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'}).format(new Date()));
+        try{localStorage.setItem(GK,'1');}catch(e){}
+        geoBtn.removeAttribute('aria-busy'); geoBtn.textContent='📍 Cập nhật';
+      }).catch(function(){geoBtn.removeAttribute('aria-busy'); geoBtn.textContent='📍 Lỗi, thử lại';});
+    },function(err){
+      geoBtn.removeAttribute('aria-busy');
+      if(err.code===1){try{localStorage.removeItem(GK);}catch(e){} geoBtn.textContent='📍 Chưa cho phép vị trí';}
+      else geoBtn.textContent='📍 Lỗi, thử lại';
+    },{enableHighAccuracy:false,timeout:15000,maximumAge:600000});
+  }
+  geoBtn.addEventListener('click',locate);
+  try{if(localStorage.getItem(GK)==='1')locate();}catch(e){}
   var btn=document.getElementById('toggle-all');
   /* Mục thu gọn: nhớ các chuyên mục đã đóng */
   var CK='banTinSang.closed', closed=[];

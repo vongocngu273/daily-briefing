@@ -4,6 +4,8 @@ from __future__ import annotations
 import logging
 import time
 from dataclasses import dataclass, field
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -12,6 +14,10 @@ from .config import Location
 log = logging.getLogger(__name__)
 
 API_URL = "https://api.open-meteo.com/v1/forecast"
+MET_URL = "https://api.met.no/weatherapi/locationforecast/2.0/complete"
+# MET Norway yêu cầu User-Agent định danh ứng dụng (không chứa thông tin cá nhân)
+MET_UA = "daily-briefing/1.0 (+https://github.com/vongocngu273/daily-briefing)"
+LOCAL_TZ = "Asia/Ho_Chi_Minh"
 
 # (key, nhãn, giờ bắt đầu, giờ kết thúc) - bao gồm cả 2 đầu
 SLOTS = [
@@ -173,8 +179,54 @@ def make_advice(slots: list[Slot]) -> list[str]:
     return lines[:2]
 
 
-def fetch_weather(loc: Location, timeout: int = 30, attempts: int = 5,
-                  backoff: tuple[int, ...] = (5, 15, 30, 60)) -> WeatherReport:
+
+def met_symbol_to_wmo(symbol: str | None) -> int | None:
+    """MET Norway symbol_code (vd 'lightrainshowers_day') -> mã WMO gần nhất."""
+    if not symbol:
+        return None
+    s = symbol.split("_")[0]
+    if "thunder" in s:
+        return 95
+    if "sleet" in s or "snow" in s:
+        return 73
+    table = {"clearsky": 0, "fair": 1, "partlycloudy": 2, "cloudy": 3, "fog": 45,
+             "lightrain": 61, "rain": 63, "heavyrain": 65,
+             "lightrainshowers": 80, "rainshowers": 81, "heavyrainshowers": 82}
+    return table.get(s)
+
+
+def met_to_hourly(payload: dict, today: str) -> dict:
+    """Chuyển timeseries MET Norway (UTC) sang dạng 'hourly' của Open-Meteo, chỉ giữ giờ hôm nay (giờ VN)."""
+    tzinfo = ZoneInfo(LOCAL_TZ)
+    out: dict[str, list] = {k: [] for k in ("time", "temperature_2m", "precipitation_probability",
+                                            "precipitation", "weather_code", "uv_index", "wind_gusts_10m")}
+    for row in payload.get("properties", {}).get("timeseries", []):
+        local = datetime.fromisoformat(row["time"].replace("Z", "+00:00")).astimezone(tzinfo)
+        if local.strftime("%Y-%m-%d") != today:
+            continue
+        inst = row.get("data", {}).get("instant", {}).get("details", {})
+        nxt = row.get("data", {}).get("next_1_hours") or {}
+        out["time"].append(local.strftime("%Y-%m-%dT%H:%M"))
+        out["temperature_2m"].append(inst.get("air_temperature"))
+        out["precipitation_probability"].append(nxt.get("details", {}).get("probability_of_precipitation"))
+        out["precipitation"].append(nxt.get("details", {}).get("precipitation_amount"))
+        out["weather_code"].append(met_symbol_to_wmo(nxt.get("summary", {}).get("symbol_code")))
+        out["uv_index"].append(inst.get("ultraviolet_index_clear_sky"))
+        gust = inst.get("wind_speed_of_gust")
+        out["wind_gusts_10m"].append(round(gust * 3.6, 1) if gust is not None else None)  # m/s -> km/h
+    return out
+
+
+def _fetch_met(loc: Location, timeout: int) -> list[Slot]:
+    r = requests.get(MET_URL, params={"lat": round(loc.lat, 4), "lon": round(loc.lon, 4)},
+                     headers={"User-Agent": MET_UA}, timeout=timeout)
+    r.raise_for_status()
+    today = datetime.now(ZoneInfo(LOCAL_TZ)).strftime("%Y-%m-%d")
+    return build_slots(met_to_hourly(r.json(), today))
+
+
+def fetch_weather(loc: Location, timeout: int = 30, attempts: int = 4,
+                  backoff: tuple[int, ...] = (5, 15, 30)) -> WeatherReport:
     params = {
         "latitude": loc.lat,
         "longitude": loc.lon,
@@ -195,6 +247,17 @@ def fetch_weather(loc: Location, timeout: int = 30, attempts: int = 5,
             log.warning("Open-Meteo lỗi (lần %d): %s", attempt + 1, type(e).__name__)
             if attempt < attempts - 1:
                 time.sleep(backoff[min(attempt, len(backoff) - 1)])
+    # Dự phòng: MET Norway (viện khí tượng Na Uy), không cần API key
+    for attempt in range(2):
+        try:
+            report.slots = _fetch_met(loc, timeout)
+            report.ok = any(x.has_data for x in report.slots)
+            if report.ok:
+                log.info("Thời tiết lấy từ MET Norway (dự phòng)")
+                report.advice = make_advice(report.slots)
+                return report
+        except Exception as e:  # noqa: BLE001
+            log.warning("MET Norway lỗi (lần %d): %s", attempt + 1, type(e).__name__)
     report.slots = [Slot(key=k, label=l, hours=f"{a:02d}:00–{b:02d}:00") for k, l, a, b in SLOTS]
     report.advice = ["Chưa có dữ liệu thời tiết"]
     return report

@@ -6,7 +6,7 @@ import pytest
 from src.curator import CuratedItem, hydrate
 from src.news import Article, add_to_history, normalize_url, prune_history, url_hash, window_start
 from src.renderer import render
-from src.weather import Slot, build_slots, make_advice
+from src.weather import Slot, build_slots, make_advice, met_symbol_to_wmo, met_to_hourly
 
 VN = ZoneInfo("Asia/Ho_Chi_Minh")
 
@@ -283,3 +283,32 @@ def test_key_problem_detection():
 
     assert is_key_problem(_Err(429)) and is_key_problem(_Err(403))
     assert not is_key_problem(_Err(503)) and not is_key_problem(_Err(404))
+
+
+# ---------- MET Norway fallback ----------
+def test_met_symbol_mapping():
+    assert met_symbol_to_wmo("rainandthunder_day") == 95
+    assert met_symbol_to_wmo("lightrainshowers_night") == 80
+    assert met_symbol_to_wmo("cloudy") == 3
+    assert met_symbol_to_wmo(None) is None
+
+
+def test_met_to_hourly_keeps_local_today_and_builds_slots():
+    def row(utc, temp, mm, sym, gust=None):
+        inst = {"air_temperature": temp, "ultraviolet_index_clear_sky": 7.0}
+        if gust is not None:
+            inst["wind_speed_of_gust"] = gust
+        return {"time": utc, "data": {"instant": {"details": inst},
+                "next_1_hours": {"summary": {"symbol_code": sym}, "details": {"precipitation_amount": mm}}}}
+    payload = {"properties": {"timeseries": [
+        row("2026-11-20T23:00:00Z", 26, 0, "fair_day"),            # 06:00 VN 21/11
+        row("2026-11-21T00:00:00Z", 27, 0, "fair_day"),            # 07:00 VN
+        row("2026-11-21T05:00:00Z", 33, 2.5, "rainshowers_day", gust=15),  # 12:00 VN
+        row("2026-11-21T17:00:00Z", 25, 0, "clearsky_night"),      # 00:00 VN 22/11 -> bỏ
+    ]}}
+    h = met_to_hourly(payload, "2026-11-21")
+    assert h["time"][0] == "2026-11-21T06:00" and len(h["time"]) == 3
+    assert h["wind_gusts_10m"][2] == 54.0
+    slots = build_slots(h)
+    assert slots[0].temp_max == 27 and slots[1].code == 81 and slots[1].rain_mm == 2.5
+    assert not slots[2].has_data
