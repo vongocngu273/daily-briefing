@@ -135,17 +135,6 @@ main{padding:4px 0 8px}
 .board svg{width:9px;height:9px;margin-right:4px;fill:currentColor}
 .board td a{font:800 15px var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
 
-/* ---------- contents ---------- */
-.toc{margin-top:22px;border:2px solid var(--rule)}
-.toc h2{margin:0;font:800 16px var(--cond);letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border-bottom:2px solid var(--rule)}
-.toc-layer+.toc-layer{border-top:2px solid var(--rule)}
-.toc ol{list-style:none;margin:0;padding:0}
-.toc li+li{border-top:1px solid var(--rule)}
-.toc li a{display:grid;grid-template-columns:58px 1fr;gap:8px;align-items:baseline;padding:8px 12px;text-decoration:none;line-height:1.35}
-.toc li a:hover{background:var(--stub);color:var(--stub-ink)}
-.toc .r{font:800 17px var(--cond);color:var(--red)}
-.toc li a:hover .r{color:var(--stub-ink)}
-@media (min-width:700px){.toc-grid{display:grid;grid-template-columns:repeat(3,1fr)}.toc-layer+.toc-layer{border-top:0;border-left:2px solid var(--rule)}}
 
 /* ---------- closing stub ---------- */
 .closing .wrap{padding-top:18px;padding-bottom:22px}
@@ -210,21 +199,6 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
   {% if ai_degraded %}
   <p class="notice">Một phần bản tin chưa được AI biên tập (lỗi kết nối Gemini), đang hiện tiêu đề gốc.</p>
   {% endif %}
-
-  <nav class="toc" id="muc-luc" aria-label="Mục lục">
-    <h2>Mục lục</h2>
-    <div class="toc-grid">
-    {% for layer in layers %}
-      <div class="toc-layer">
-        <ol>
-        {% for cat in layer.categories %}
-          <li><a href="#{{ cat.key }}"><span class="r">{% if cat.first %}{{ "%02d"|format(cat.first) }}{% if cat.last != cat.first %}–{{ "%02d"|format(cat.last) }}{% endif %}{% else %}––{% endif %}</span><span>{{ cat.label }}</span></a></li>
-        {% endfor %}
-        </ol>
-      </div>
-    {% endfor %}
-    </div>
-  </nav>
 
   {% for layer in layers %}
   <div class="layer-group" id="lop-{{ layer.id }}">
