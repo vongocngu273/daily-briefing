@@ -174,7 +174,8 @@ main{padding:4px 0 8px}
 [data-view="card"] .no{position:absolute;top:10px;left:10px;z-index:1;background:var(--paper);padding:4px 9px 2px;font-size:22px;border:0;
   border-radius:calc(var(--r) - 10px);corner-shape:squircle;box-shadow:0 1px 3px rgba(0,0,0,.25)}
 [data-view="card"] .item[data-flag]::before{top:10px;right:10px;border-radius:calc(var(--r) - 14px);corner-shape:squircle;z-index:1}
-[data-view="card"] .body{padding:10px 12px 0}
+[data-view="card"] .body{padding:10px 12px 0;flex:1;display:flex;flex-direction:column}
+[data-view="card"] .body>details{margin-top:auto;padding-top:10px}
 [data-view="card"] .item h4{text-wrap:pretty;font-size:20px}
 .no{font:800 26px/1 var(--cond);color:var(--red);padding-top:2px}
 .item h4{margin:0;font:700 19px/1.32 var(--read);letter-spacing:-.01em;max-width:var(--measure);text-wrap:balance}
@@ -190,8 +191,8 @@ main{padding:4px 0 8px}
 .item summary{display:inline-flex;gap:8px;align-items:baseline;cursor:pointer;list-style:none;font:600 13px var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .item summary::-webkit-details-marker{display:none}
 .item summary .src{color:var(--ink)}
-.item summary:hover .more{color:var(--red)}
-.item details[open] summary .more{color:var(--red)}
+.item summary .more{color:var(--red);font-weight:700}
+.item summary:hover .more{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .full{margin-top:8px;max-width:var(--measure)}
 .full dl{margin:0;display:grid;gap:14px}
 .full dt{display:inline-block;margin-bottom:6px;padding:5px 10px 4px;font:800 15px/1.1 var(--cond);letter-spacing:.08em;text-transform:uppercase;background:var(--stub);color:var(--stub-ink);border-radius:var(--rS);corner-shape:squircle}
