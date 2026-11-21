@@ -11,7 +11,7 @@
 {% include "_fonts.css.j2" %}
 :root{
   /* Locked ticket palette: stub (by weekday) · serial red · ink · paper */
-  --stub:#f06e98; --stub-ink:#1b1f4a; --field:#ffffff;
+  --stub:#f06e98; --stub-ink:#1b1f4a; --field:#ffffff; --serial:#d0021b; --field-muted:#4a4e78; --engrave:rgba(255,255,255,.42);
   --red:#d0021b; --ink:#1b1f4a; --paper:#ffffff; --muted:#4a4e78; --rule:#1b1f4a;
   --cond:"Barlow Condensed","Arial Narrow",sans-serif;
   --read:"Be Vietnam Pro",-apple-system,"Segoe UI",sans-serif;
@@ -22,7 +22,11 @@ body[data-day="0"]{--stub:#5bbbe9} body[data-day="1"]{--stub:#a6d64a} body[data-
 body[data-day="3"]{--stub:#a98ddc} body[data-day="4"]{--stub:#3ccdbf} body[data-day="5"]{--stub:#f06e98}
 body[data-day="6"]{--stub:#f6cf3a}
 @media (prefers-color-scheme:dark){
-  :root{--red:#ff5d6c; --ink:#ecebf7; --paper:#12142c; --muted:#b4b6d8; --rule:#5d6194; color-scheme:dark}
+  :root{--red:#ff5d6c; --ink:#ecebf7; --paper:#12142c; --muted:#b4b6d8; --rule:#5d6194; color-scheme:dark;
+        --stub-ink:#f4f2fb; --field:#12142c; --serial:#ff5d6c; --field-muted:#b4b6d8; --engrave:rgba(255,255,255,.14)}
+  body[data-day="0"]{--stub:#1f4f73} body[data-day="1"]{--stub:#3d5716} body[data-day="2"]{--stub:#7a4310}
+  body[data-day="3"]{--stub:#46336f} body[data-day="4"]{--stub:#12534d} body[data-day="5"]{--stub:#74203f}
+  body[data-day="6"]{--stub:#665108}
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:56px;scrollbar-color:var(--rule) var(--paper)}
@@ -35,35 +39,38 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 
 /* ---------- ticket stub ---------- */
 .stub{position:relative;background:var(--stub);color:var(--stub-ink);overflow:hidden;isolation:isolate}
-.guilloche{position:absolute;inset:0;width:100%;height:100%;z-index:-1;fill:none;stroke:#fff;stroke-width:.6;opacity:.45}
+.guilloche{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.guilloche path{fill:none;stroke:var(--engrave);stroke-width:.6px;vector-effect:non-scaling-stroke}
+.micro{overflow:hidden;white-space:nowrap;font:600 7px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin-top:14px;user-select:none}
 .stub .wrap{padding-top:calc(14px + env(safe-area-inset-top));padding-bottom:18px}
 .stub-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font:600 13px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase}
 .stub h1{margin:0;font:800 20px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase}
 .ticket{display:grid;gap:12px;margin:12px 0 10px}
 .serial{display:flex;align-items:flex-end;justify-content:space-between;background:var(--field);border:2px solid var(--stub-ink);padding:4px 12px 2px}
-.serial b{font:800 clamp(72px,24vw,96px)/.95 var(--cond);color:#d0021b;letter-spacing:-.02em}
-.serial span{font:800 28px/1 var(--cond);letter-spacing:.06em;padding-bottom:12px;text-align:right}
+.serial b{font:800 clamp(72px,24vw,96px)/.95 var(--cond);color:var(--serial);letter-spacing:-.02em}
+.serial span{font:800 24px/1 var(--cond);text-transform:uppercase;letter-spacing:.06em;padding-bottom:12px;text-align:right}
 .serial span small{display:block;font:600 13px var(--cond);letter-spacing:.12em;text-transform:uppercase}
 .wx{display:grid;grid-template-columns:repeat(3,1fr);background:var(--field);border:2px solid var(--stub-ink)}
 .wx>div{padding:7px 8px 8px;border-right:1px solid var(--stub-ink);min-width:0}
 .wx>div:last-child{border-right:0}
 .wx h2{margin:0;font:600 12px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase}
 .wx .hrs{font:600 11px/1.2 var(--cond);letter-spacing:.06em;margin-bottom:2px}
-.wx .t{font:800 26px/1.1 var(--cond);color:#d0021b;white-space:nowrap}
+.wx .t{font:800 26px/1.1 var(--cond);color:var(--serial);white-space:nowrap}
 .wx p{margin:0;font-size:12px;line-height:1.35}
-.wx .na{font:600 14px var(--cond);color:#4a4e78}
+.wx .na{font:600 14px var(--cond);color:var(--field-muted)}
 .stub-row.loc{margin-bottom:6px}
 .advice{margin:0;padding:0;list-style:none;font-weight:600;font-size:14px;line-height:1.45}
 .advice li+li{margin-top:2px}
 .resume{display:inline-block;margin-top:10px;font:800 15px var(--cond);letter-spacing:.06em;text-transform:uppercase;background:var(--stub-ink);color:var(--stub);padding:5px 10px;text-decoration:none}
 .resume[hidden]{display:none}
+.ic{width:.72em;height:.72em;fill:currentColor;margin-left:.3em;vertical-align:.02em}
 @media (min-width:700px){
   .ticket{grid-template-columns:minmax(260px,1fr) 1.4fr;align-items:stretch}
   .wx .t{font-size:30px}
 }
 @media (prefers-reduced-motion:no-preference){
-  .serial b{animation:stamp .6s cubic-bezier(.16,1,.3,1) both}
-  @keyframes stamp{from{opacity:.35;transform:scale(1.07);filter:blur(1.5px)}to{opacity:1;transform:none;filter:none}}
+  .perf.top{animation:tear .9s .15s cubic-bezier(.16,1,.3,1) both}
+  @keyframes tear{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 }
 /* perforation: punched half circles */
 .perf{height:12px;background:var(--stub);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12'%3E%3Cpath d='M0 0H16V12H13.5A5.5 5.5 0 0 0 2.5 12H0Z'/%3E%3C/svg%3E") 0 0/16px 12px repeat-x;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12'%3E%3Cpath d='M0 0H16V12H13.5A5.5 5.5 0 0 0 2.5 12H0Z'/%3E%3C/svg%3E") 0 0/16px 12px repeat-x}
@@ -71,8 +78,8 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 
 /* ---------- quick strip ---------- */
 .strip{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--rule)}
-.strip .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
-.strip a,.strip button{flex:none;font:600 14px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:none;border:1.5px solid var(--rule);padding:8px 10px;text-decoration:none;cursor:pointer;border-radius:0}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:6px;padding-top:8px;padding-bottom:8px}
+.strip a,.strip button{flex:none;font:600 14px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:none;border:1.5px solid var(--rule);padding:8px 10px;text-decoration:none;cursor:pointer;border-radius:0}
 .strip a:hover,.strip button:hover{background:var(--ink);color:var(--paper)}
 .strip button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 
@@ -89,7 +96,7 @@ h2.layer span{font:600 14px var(--cond);letter-spacing:.12em;color:var(--muted)}
 .item:last-child{border-bottom:0}
 .no{font:800 26px/1 var(--cond);color:var(--red);padding-top:2px}
 .item h4{margin:0;font:600 17px/1.4 var(--read);max-width:var(--measure);text-wrap:balance}
-.sev{margin-right:.35em;font-size:.85em;vertical-align:1px}
+.sev{display:inline-block;width:1.45em;font-size:1em;line-height:1;vertical-align:-.05em}
 .tag{display:inline-block;vertical-align:2px;margin-left:6px;font:800 11px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--red);padding:3px 5px}
 .sum{margin:3px 0 0;max-width:var(--measure);color:var(--ink)}
 .item details{margin-top:6px}
@@ -137,24 +144,28 @@ h2.layer span{font:600 14px var(--cond);letter-spacing:.12em;color:var(--muted)}
 
 /* ---------- closing stub ---------- */
 .closing .wrap{padding-top:18px;padding-bottom:22px}
-.closing h2{margin:0 0 10px;font:800 26px/1.1 var(--cond);letter-spacing:.04em;text-transform:uppercase}
-.closing ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.closing li{display:grid;grid-template-columns:44px 1fr;align-items:center;background:var(--field);border:2px solid var(--stub-ink)}
-.closing li b{font:800 30px/1 var(--cond);color:#d0021b;text-align:center;border-right:2px solid var(--stub-ink);padding:8px 0}
-.closing li span{padding:8px 12px;font:600 17px/1.35 var(--read)}
+.closing-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.closing-head span{font:800 18px var(--cond);letter-spacing:.06em;color:var(--stub-ink);white-space:nowrap}
+.closing h2{margin:0;text-wrap:balance;font:800 26px/1.1 var(--cond);letter-spacing:.04em;text-transform:uppercase}
+.closing ol{list-style:none;margin:0;padding:0;background:var(--field);border:2px solid var(--stub-ink)}
+.closing li{display:grid;grid-template-columns:44px 1fr;align-items:center}
+.closing li+li{border-top:1px solid var(--stub-ink)}
+.closing li b{font:800 30px/1 var(--cond);color:var(--serial);text-align:center;border-right:2px solid var(--stub-ink);padding:8px 0}
+.closing li span{padding:8px 12px;font:600 17px/1.35 var(--read);color:var(--stub-ink)}
 .closing .na{font-weight:600}
 footer{padding:16px 0 calc(28px + env(safe-area-inset-bottom));font-size:12px;color:var(--muted)}
 footer p{margin:0 0 4px;max-width:var(--measure)}
 </style>
 </head>
+{% macro arrow(kind) %}<svg class="ic" viewBox="0 0 12 12" aria-hidden="true">{% if kind == "out" %}<path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/>{% else %}<path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/>{% endif %}</svg>{% endmacro %}
 <body data-day="{{ weekday }}" data-date="{{ date_compact }}">
 
 <header class="stub" id="thoi-tiet">
-  {% include "_guilloche.svg.j2" %}
+  {% set gid = "top" %}{% include "_guilloche.svg.j2" %}
   <div class="wrap">
     <div class="stub-row"><h1>Bản tin sáng</h1><span>Cập nhật {{ updated_at }}</span></div>
     <div class="ticket">
-      <div class="serial" aria-label="{{ date_str }}"><b>{{ serial }}</b><span>{{ weekday_short }}<small>{{ year }} · {{ total_items }} tin</small></span></div>
+      <div class="serial" aria-label="{{ date_str }}"><b>{{ serial }}</b><span>{{ weekday_name }}<small>{{ year }} · {{ total_items }} tin</small></span></div>
       <section class="wx" aria-label="Thời tiết {{ weather.location }}">
       {% for s in weather.slots %}
         <div>
@@ -163,8 +174,8 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
           {% if s.has_data %}
           <div class="t">{{ s.temp_min }}–{{ s.temp_max }}°</div>
           <p>{{ s.condition }}</p>
-          <p>Mưa {{ s.rain_prob if s.rain_prob is not none else "–" }}%{% if s.rain_mm %} · {{ s.rain_mm|string|replace(".", ",") }} mm{% endif %}</p>
-          {% if s.uv_max is not none and s.uv_max >= 3 %}<p>UV {{ s.uv_max|string|replace(".", ",") }}</p>{% endif %}
+          <p>Mưa&nbsp;{{ s.rain_prob if s.rain_prob is not none else "–" }}%{% if s.rain_mm %}<br>{{ s.rain_mm|string|replace(".", ",") }}&nbsp;mm{% endif %}</p>
+          {% if s.uv_max is not none and s.uv_max >= 3 %}<p>UV&nbsp;{{ s.uv_max|string|replace(".", ",") }}</p>{% endif %}
           {% else %}
           <p class="na">Chưa có dữ liệu</p>
           {% endif %}
@@ -172,19 +183,19 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       {% endfor %}
       </section>
     </div>
-    <div class="stub-row loc"><span>{{ weather.location }}</span><span>{{ weekday_name }}</span></div>
+    <div class="stub-row loc"><span>{{ weather.location }}</span></div>
     <ul class="advice">{% for line in weather.advice %}<li>{{ line }}</li>{% endfor %}</ul>
-    <a class="resume" id="resume" href="#" hidden>Đọc tiếp</a>
+    <a class="resume" id="resume" href="#" hidden><span>Đọc tiếp</span>{{ arrow("next") }}</a>
+    <div class="micro" aria-hidden="true">{% for _ in range(14) %}Bản tin sáng · {{ serial }} · {{ year }} · {% endfor %}</div>
   </div>
 </header>
-<div class="perf" aria-hidden="true"></div>
+<div class="perf top" aria-hidden="true"></div>
 
 <nav class="strip" aria-label="Lối tắt">
   <div class="wrap">
     <a href="#thoi-tiet">Thời tiết</a>
     <a href="#thi-truong">Thị trường</a>
-    <a href="#ghi-nho">3 điều cần nhớ</a>
-    <a href="#muc-luc">Mục lục</a>
+    <a href="#ghi-nho">3 điều</a>
     <button type="button" id="toggle-all" aria-pressed="false">Mở tất cả</button>
   </div>
 </nav>
@@ -232,7 +243,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
               {% endif %}
             </tr>
           {% endfor %}
-            <tr><th scope="row">Vàng SJC</th><td colspan="2"><a href="{{ sjc_url }}" target="_blank" rel="noopener noreferrer">Xem giá tại SJC ↗</a></td></tr>
+            <tr><th scope="row">Vàng SJC</th><td colspan="2"><a href="{{ sjc_url }}" target="_blank" rel="noopener noreferrer">Xem giá tại SJC{{ arrow("out") }}</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -253,7 +264,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
                 {% if n.why_it_matters %}<div><dt>Vì sao quan trọng · Ảnh hưởng tới Việt Nam</dt><dd>{{ n.why_it_matters }}</dd></div>{% endif %}
               </dl>
               {% endif %}
-              <a class="orig" href="{{ n.url }}" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại {{ n.source }} ↗</a>
+              <a class="orig" href="{{ n.url }}" target="_blank" rel="noopener noreferrer">Đọc bài gốc tại {{ n.source }}{{ arrow("out") }}</a>
             </div>
           </details>
         </div>
@@ -269,9 +280,9 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 
 <div class="perf up" aria-hidden="true"></div>
 <section class="stub closing" id="ghi-nho" aria-labelledby="ghi-nho-h">
-  {% include "_guilloche.svg.j2" %}
+  {% set gid = "end" %}{% include "_guilloche.svg.j2" %}
   <div class="wrap">
-    <h2 id="ghi-nho-h">3 điều cần nhớ hôm nay</h2>
+    <div class="closing-head"><h2 id="ghi-nho-h">3 điều cần nhớ hôm nay</h2><span>Cuống {{ serial }}</span></div>
     {% if takeaways %}
     <ol>
     {% for t in takeaways %}<li><b>{{ loop.index }}</b><span>{{ t }}</span></li>{% endfor %}
@@ -308,7 +319,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     if(el){
       el.setAttribute('data-flag','');
       var r=document.getElementById('resume');
-      r.href='#'+id; r.textContent='Đọc tiếp từ tin '+(flag.n<10?'0':'')+flag.n+' →'; r.hidden=false;
+      r.href='#'+id; r.querySelector('span').textContent='Đọc tiếp từ tin '+(flag.n<10?'0':'')+flag.n; r.hidden=false;
     }
   }
 })();
