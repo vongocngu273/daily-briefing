@@ -59,8 +59,9 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .wx p{margin:0;font-size:12px;line-height:1.35}
 .wx .na{font:600 14px var(--cond);color:var(--field-muted)}
 .stub-row.loc{margin-bottom:6px}
-.advice{margin:0;padding:0;list-style:none;font-weight:600;font-size:14px;line-height:1.45}
-.advice li+li{margin-top:2px}
+.advice{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.advice li{background:var(--field);color:var(--stub-ink);border:2px solid var(--stub-ink);border-left:8px solid var(--serial);padding:7px 12px 9px;font:600 17px/1.4 var(--read)}
+.advice li::before{content:"Nhắc nhở";display:block;margin-bottom:1px;font:800 12px/1.2 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--serial)}
 .resume{display:inline-block;margin-top:10px;font:800 15px var(--cond);letter-spacing:.06em;text-transform:uppercase;background:var(--stub-ink);color:var(--stub);padding:5px 10px;text-decoration:none}
 .resume[hidden]{display:none}
 .ic{width:.72em;height:.72em;fill:currentColor;margin-left:.3em;vertical-align:.02em}
