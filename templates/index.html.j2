@@ -88,8 +88,15 @@ main{padding:4px 0 8px}
 h2.layer{margin:40px 0 0;font:800 30px/1.05 var(--cond);letter-spacing:.02em;text-transform:uppercase;display:flex;align-items:baseline;gap:10px}
 h2.layer span{font:600 14px/1 var(--cond);letter-spacing:.12em;background:var(--lime);color:var(--on-lime);padding:3px 6px;align-self:center}
 .cat{margin-top:28px}
-.cat>h3{margin:0;font:800 22px/1.15 var(--cond);letter-spacing:.04em;text-transform:uppercase;padding-bottom:4px;border-bottom:3px solid var(--accent);display:flex;justify-content:space-between;gap:12px}
-.cat>h3 small{font:600 14px var(--cond);letter-spacing:.08em;color:var(--muted);align-self:flex-end;white-space:nowrap}
+.cat>summary{list-style:none;cursor:pointer;border-bottom:3px solid var(--accent);padding-bottom:4px;display:flex;align-items:baseline;gap:10px}
+.cat>summary::-webkit-details-marker{display:none}
+.cat>summary h3{margin:0;flex:1;font:800 22px/1.15 var(--cond);letter-spacing:.04em;text-transform:uppercase;display:flex;justify-content:space-between;gap:12px}
+.cat>summary::after{content:"";flex:none;width:9px;height:9px;border:solid currentColor;border-width:0 2.5px 2.5px 0;transform:translateY(-3px) rotate(45deg);transition:transform .2s}
+.cat:not([open])>summary::after{transform:translateY(1px) rotate(-45deg)}
+.cat:not([open])>summary{border-bottom-width:1px;border-bottom-color:var(--rule)}
+.cat>summary:hover h3{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+@media (prefers-reduced-motion:reduce){.cat>summary::after{transition:none}}
+.cat>summary h3 small{font:600 14px var(--cond);letter-spacing:.08em;color:var(--muted);align-self:flex-end;white-space:nowrap}
 .empty{margin:10px 0 0;color:var(--muted);font-size:14px}
 .item{display:grid;grid-template-columns:42px minmax(0,1fr);gap:0 10px;padding:14px 0;border-bottom:1px dashed var(--rule);position:relative}
 .item:last-child{border-bottom:0}
@@ -225,8 +232,8 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
   <section id="lop-{{ layer.id }}" aria-labelledby="lop-{{ layer.id }}-h">
     <h2 class="layer" id="lop-{{ layer.id }}-h">{{ layer.title.split(" · ")[1] if " · " in layer.title else layer.title }} <span>Lớp {{ layer.id }}</span></h2>
     {% for cat in layer.categories %}
-    <section class="cat" id="{{ cat.key }}">
-      <h3>{{ cat.label }}{% if cat['items'] %}<small>{{ cat['items']|length }} tin</small>{% endif %}</h3>
+    <details class="cat" id="{{ cat.key }}" open>
+      <summary><h3>{{ cat.label }}<small>{{ cat['items']|length }} tin</small></h3></summary>
       {% if cat.key == "economy" %}
       <div class="board" id="thi-truong">
         <table>
@@ -272,7 +279,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       {% else %}
       <p class="empty">Không có tin nổi bật mới.</p>
       {% endfor %}
-    </section>
+    </details>
     {% endfor %}
   </section>
   {% endfor %}
@@ -282,7 +289,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 <section class="stub closing" id="ghi-nho" aria-labelledby="ghi-nho-h">
   {% set gid = "end" %}{% include "_guilloche.svg.j2" %}
   <div class="wrap">
-    <div class="closing-head"><h2 id="ghi-nho-h">3 điều cần&nbsp;nhớ hôm nay</h2><span>Cuống {{ serial }}</span></div>
+    <div class="closing-head"><h2 id="ghi-nho-h">3 điều cần&nbsp;nhớ hôm nay</h2><span>{{ date_str }}</span></div>
     {% if takeaways %}
     <ol>
     {% for t in takeaways %}<li><b>{{ loop.index }}</b><span>{{ t }}</span></li>{% endfor %}
@@ -294,15 +301,37 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 </section>
 
 <footer class="wrap">
-  <p>Tổng hợp tự động từ VnExpress, Tuổi Trẻ, VietnamPlus, BBC, Reuters, AP, Bloomberg. Thời tiết: Open-Meteo. Giá: Yahoo Finance.</p>
+  <p>Tổng hợp tự động từ VnExpress, Tuổi Trẻ, VietnamPlus, BBC, Reuters, AP, Bloomberg, Tinh tế, GSMArena, 9to5Mac, 9to5Google, MacRumors. Thời tiết: Open-Meteo. Giá: Yahoo Finance.</p>
   <p>Tóm tắt do AI viết và có thể sai. Đọc bài gốc trước khi quyết định điều gì.</p>
 </footer>
 
 <script>
 (function(){
   var btn=document.getElementById('toggle-all');
+  /* Mục thu gọn: nhớ các chuyên mục đã đóng */
+  var CK='banTinSang.closed', closed=[];
+  try{closed=JSON.parse(localStorage.getItem(CK)||'[]')||[];}catch(e){}
+  var cats=document.querySelectorAll('details.cat');
+  cats.forEach(function(c){
+    if(closed.indexOf(c.id)>=0) c.open=false;
+    c.addEventListener('toggle',function(){
+      var i=closed.indexOf(c.id);
+      if(c.open && i>=0) closed.splice(i,1); else if(!c.open && i<0) closed.push(c.id);
+      try{localStorage.setItem(CK,JSON.stringify(closed));}catch(e){}
+    });
+  });
+  function reveal(id){
+    var el=id && document.getElementById(id); if(!el) return;
+    var c=el.closest('details.cat'); if(c && !c.open) c.open=true;
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="#"]'); if(a) reveal(a.getAttribute('href').slice(1));
+  });
+  window.addEventListener('hashchange',function(){reveal(location.hash.slice(1));});
+  if(location.hash) reveal(location.hash.slice(1));
   btn.addEventListener('click',function(){
     var open=btn.getAttribute('aria-pressed')!=='true';
+    if(open) cats.forEach(function(c){c.open=true;});
     document.querySelectorAll('.item details').forEach(function(d){d.open=open;});
     btn.setAttribute('aria-pressed',open?'true':'false');
     btn.textContent=open?'Thu gọn tất cả':'Mở tất cả';

@@ -31,6 +31,7 @@ LAYERS: dict[int, list[tuple[str, str]]] = {
     ],
     2: [
         ("tech_ai", "Công nghệ – AI"),
+        ("mobile", "Điện thoại – Mobile"),
         ("science_health", "Khoa học – Y tế"),
         ("environment", "Môi trường – Khí hậu"),
     ],
@@ -40,6 +41,14 @@ LAYERS: dict[int, list[tuple[str, str]]] = {
         ("culture_society", "Văn hóa – Xã hội"),
     ],
 }
+# Gợi ý phạm vi cho AI khi chia chuyên mục (không hiển thị trên trang)
+CATEGORY_HINTS: dict[str, str] = {
+    "tech_ai": "AI, phần mềm, bán dẫn, Big Tech, internet; tin điện thoại đưa sang mobile",
+    "mobile": ("điện thoại & máy tính bảng, đồng hồ/tai nghe đi kèm: Apple/iPhone/iOS, Android, Samsung, "
+               "Google Pixel, Xiaomi, OPPO, vivo…; ra mắt máy, cập nhật hệ điều hành, chip di động, rò rỉ đáng tin. "
+               "Bỏ tin khuyến mãi/giảm giá/Black Friday và bài hướng dẫn mua hàng"),
+}
+
 LAYER_TITLES = {
     1: "Lớp 1 · Trọng tâm",
     2: "Lớp 2 · Tri thức & Tương lai",

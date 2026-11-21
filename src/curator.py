@@ -11,7 +11,7 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
-from .config import LAYERS
+from .config import CATEGORY_HINTS, LAYERS
 from .news import Article
 
 log = logging.getLogger(__name__)
@@ -124,7 +124,8 @@ SYSTEM = (
 
 
 def _layer_prompt(layer: int, candidates: list[Article], recent: list[str], max_per_cat: int) -> str:
-    cats = "\n".join(f"- {k}: {label}" for k, label in LAYERS[layer])
+    cats = "\n".join(f"- {k}: {label}" + (f" ({CATEGORY_HINTS[k]})" if k in CATEGORY_HINTS else "")
+                     for k, label in LAYERS[layer])
     rows = [
         {"cid": a.cid, "source": a.source, "title": a.title, "snippet": a.summary[:220],
          "time_utc": a.published.strftime("%Y-%m-%d %H:%M")}
