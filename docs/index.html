@@ -295,6 +295,17 @@ footer b{color:var(--ink);font-weight:600}
 @keyframes shPop{from{opacity:0;transform:scale(.94)}}
 @keyframes shOut{to{opacity:0;transform:scale(.96)}}
 html.sheet-open{overflow:hidden}
+
+/* ---------- back to top ---------- */
+.to-top{position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(18px + env(safe-area-inset-bottom));z-index:20;width:48px;height:48px;display:grid;place-items:center;
+  border:1.5px solid var(--rule);border-radius:var(--rM);corner-shape:squircle;cursor:pointer;color:var(--ink);
+  background:color-mix(in srgb,var(--paper) 78%,transparent);-webkit-backdrop-filter:blur(14px) saturate(1.6);backdrop-filter:blur(14px) saturate(1.6);
+  box-shadow:0 6px 20px rgba(0,0,0,.22);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .2s,transform .25s cubic-bezier(.32,.72,0,1)}
+.to-top[hidden]{display:grid}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top:hover{background:var(--ink);color:var(--paper)}
+.to-top svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+@media (prefers-reduced-motion:reduce){.to-top{transition:none}}
 </style>
 </head>
 <body data-day="5" data-date="20261121">
@@ -1094,6 +1105,8 @@ html.sheet-open{overflow:hidden}
   <p>Bản tin cá nhân của <b>Ngự Võ</b>, chỉ để đọc nhanh mỗi sáng, phi thương mại, không nhằm mục đích tuyên truyền · Tin tóm tắt ngắn kèm liên kết về VnExpress, Tuổi Trẻ, VietnamPlus, BBC, Reuters, AP, Bloomberg, Tinh tế, GSMArena, 9to5Mac, 9to5Google, MacRumors; bản quyền nội dung thuộc các nguồn gốc · Thời tiết Open-Meteo, MET Norway · Giá Yahoo Finance · Xu hướng Google Trends · Tóm tắt do AI viết, có thể sai, hãy đọc bài gốc trước khi quyết định điều gì.</p>
 </footer>
 
+<button type="button" class="to-top" id="to-top" aria-label="Lên đầu trang" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V4.5M4.8 9.6 10 4.4l5.2 5.2"/></svg></button>
+
 <dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
   <div class="sh-grab" aria-hidden="true"><i></i></div>
   <button type="button" class="sh-close" id="sheet-close" aria-label="Đóng"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.2 5.2l9.6 9.6M14.8 5.2l-9.6 9.6"/></svg></button>
@@ -1158,6 +1171,19 @@ html.sheet-open{overflow:hidden}
       el.addEventListener('touchstart',function(e){if(el===body&&body.scrollTop>0)return;start(e.touches[0].clientY);},{passive:true});
       el.addEventListener('touchmove',function(e){move(e.touches[0].clientY);},{passive:true});
       el.addEventListener('touchend',end);
+    });
+  })();
+  /* Nút lên đầu trang: hiện khi đã cuộn quá ~1 màn hình */
+  (function(){
+    var b=document.getElementById('to-top'); if(!b) return;
+    b.hidden=false;
+    var on=false;
+    function tick(){var v=scrollY>innerHeight*0.8; if(v!==on){on=v;b.classList.toggle('show',v);b.tabIndex=v?0:-1;}}
+    addEventListener('scroll',tick,{passive:true}); tick();
+    b.addEventListener('click',function(){
+      var smooth=!(matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
+      scrollTo({top:0,behavior:smooth?'smooth':'auto'});
+      if(location.hash) history.replaceState(null,'',location.pathname+location.search);
     });
   })();
   var root=document.documentElement, th=document.getElementById('theme');
