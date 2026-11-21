@@ -1,9 +1,11 @@
 <!doctype html>
-<html lang="vi">
+<html lang="vi" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="dark light">
+<script>/* Giao diện: mặc định tối; nhớ lựa chọn trên thiết bị này */
+try{var t=localStorage.getItem('banTinSang.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <title>Bản tin sáng · {{ serial }}</title>
 <link rel="preload" href="fonts/BarlowCondensed-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/BeVietnamPro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
@@ -21,13 +23,11 @@
 body[data-day="0"]{--stub:#5bbbe9} body[data-day="1"]{--stub:#a6d64a} body[data-day="2"]{--stub:#f7a440}
 body[data-day="3"]{--stub:#a98ddc} body[data-day="4"]{--stub:#3ccdbf} body[data-day="5"]{--stub:#f06e98}
 body[data-day="6"]{--stub:#f6cf3a}
-@media (prefers-color-scheme:dark){
-  :root{--red:#ff5d6c; --ink:#ecebf7; --paper:#12142c; --muted:#b4b6d8; --rule:#5d6194; color-scheme:dark;
-        --stub-ink:#f4f2fb; --field:#12142c; --serial:#ff5d6c; --field-muted:#b4b6d8; --engrave:rgba(255,255,255,.14)}
-  body[data-day="0"]{--stub:#1f4f73} body[data-day="1"]{--stub:#3d5716} body[data-day="2"]{--stub:#7a4310}
-  body[data-day="3"]{--stub:#46336f} body[data-day="4"]{--stub:#12534d} body[data-day="5"]{--stub:#74203f}
-  body[data-day="6"]{--stub:#665108}
-}
+:root[data-theme="dark"]{--red:#ff5d6c; --ink:#ecebf7; --paper:#12142c; --muted:#b4b6d8; --rule:#5d6194; color-scheme:dark;
+  --stub-ink:#f4f2fb; --field:#12142c; --serial:#ff5d6c; --field-muted:#b4b6d8; --engrave:rgba(255,255,255,.14)}
+[data-theme="dark"] body[data-day="0"]{--stub:#1f4f73} [data-theme="dark"] body[data-day="1"]{--stub:#3d5716} [data-theme="dark"] body[data-day="2"]{--stub:#7a4310}
+[data-theme="dark"] body[data-day="3"]{--stub:#46336f} [data-theme="dark"] body[data-day="4"]{--stub:#12534d} [data-theme="dark"] body[data-day="5"]{--stub:#74203f}
+[data-theme="dark"] body[data-day="6"]{--stub:#665108}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:56px;scrollbar-color:var(--rule) var(--paper)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -78,10 +78,13 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 
 /* ---------- quick strip ---------- */
 .strip{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--rule)}
-.strip .wrap{display:flex;flex-wrap:wrap;gap:6px;padding-top:8px;padding-bottom:8px}
-.strip a,.strip button{flex:none;font:600 14px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:none;border:1.5px solid var(--rule);padding:8px 10px;text-decoration:none;cursor:pointer;border-radius:0}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:5px;padding-top:8px;padding-bottom:8px}
+.strip a,.strip button{flex:none;font:600 14px/1 var(--cond);letter-spacing:.03em;text-transform:uppercase;color:var(--ink);background:none;border:1.5px solid var(--rule);padding:8px 7px;text-decoration:none;cursor:pointer;border-radius:0}
 .strip a:hover,.strip button:hover{background:var(--ink);color:var(--paper)}
 .strip button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.strip .theme{margin-left:auto;padding:6px 7px;line-height:0}
+.strip .theme svg{width:16px;height:16px;fill:currentColor}
+[data-theme="dark"] .strip .theme .moon,:root:not([data-theme="dark"]) .strip .theme .sun{display:none}
 
 /* ---------- reading column ---------- */
 main{padding:4px 0 8px}
@@ -199,6 +202,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     <a href="#thi-truong">Thị trường</a>
     <a href="#ghi-nho">3 điều</a>
     <button type="button" id="toggle-all" aria-pressed="false">Mở tất cả</button>
+    <button type="button" id="theme" class="theme" aria-label="Chuyển sang giao diện sáng"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.2"/><path d="M8 0.8v2.2M8 13v2.2M0.8 8h2.2M13 8h2.2M2.9 2.9l1.6 1.6M11.5 11.5l1.6 1.6M2.9 13.1l1.6-1.6M11.5 4.5l1.6-1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.6 10.4A6.2 6.2 0 0 1 5.6 2.4a6.2 6.2 0 1 0 8 8z"/></svg></button>
   </div>
 </nav>
 
@@ -300,6 +304,14 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
 
 <script>
 (function(){
+  var root=document.documentElement, th=document.getElementById('theme');
+  function label(){th.setAttribute('aria-label',root.getAttribute('data-theme')==='dark'?'Chuyển sang giao diện sáng':'Chuyển sang giao diện tối');}
+  label();
+  th.addEventListener('click',function(){
+    var t=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',t); label();
+    try{localStorage.setItem('banTinSang.theme',t);}catch(e){}
+  });
   var btn=document.getElementById('toggle-all');
   /* Mục thu gọn: nhớ các chuyên mục đã đóng */
   var CK='banTinSang.closed', closed=[];
