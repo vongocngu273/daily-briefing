@@ -408,7 +408,7 @@ def test_snapshot_roundtrip_renders_same_page(tmp_path):
     a, b, snap = tmp_path / "a.html", tmp_path / "b.html", tmp_path / "page.json"
     render(ctx, out_path=a)
     save_snapshot(ctx, snap)
-    render(load_snapshot(snap), out_path=b)
+    render(load_snapshot(snap, trends_path=tmp_path / "none.json"), out_path=b)
     assert a.read_text(encoding="utf-8") == b.read_text(encoding="utf-8")
 
 
