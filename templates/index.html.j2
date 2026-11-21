@@ -86,8 +86,6 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 /* ---------- reading column ---------- */
 main{padding:4px 0 8px}
 .notice{border:2px solid var(--rule);padding:8px 12px;margin:16px 0 0;font-size:14px}
-h2.layer{margin:40px 0 0;font:800 30px/1.05 var(--cond);letter-spacing:.02em;text-transform:uppercase;display:flex;align-items:baseline;gap:10px}
-h2.layer span{font:600 14px var(--cond);letter-spacing:.12em;color:var(--muted)}
 .cat{margin-top:28px}
 .cat>summary{list-style:none;cursor:pointer;border-bottom:3px solid var(--red);padding-bottom:4px;display:flex;align-items:baseline;gap:10px}
 .cat>summary::-webkit-details-marker{display:none}
@@ -138,9 +136,6 @@ h2.layer span{font:600 14px var(--cond);letter-spacing:.12em;color:var(--muted)}
 .toc{margin-top:22px;border:2px solid var(--rule)}
 .toc h2{margin:0;font:800 16px var(--cond);letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border-bottom:2px solid var(--rule)}
 .toc-layer+.toc-layer{border-top:2px solid var(--rule)}
-.toc h3{margin:0;padding:7px 12px 6px;display:flex;justify-content:space-between;align-items:baseline;gap:8px;font:800 17px/1.15 var(--cond);letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule)}
-.toc h3 a{text-decoration:none}
-.toc h3 span{font:600 12px var(--cond);letter-spacing:.12em;color:var(--muted)}
 .toc ol{list-style:none;margin:0;padding:0}
 .toc li+li{border-top:1px solid var(--rule)}
 .toc li a{display:grid;grid-template-columns:58px 1fr;gap:8px;align-items:baseline;padding:8px 12px;text-decoration:none;line-height:1.35}
@@ -217,7 +212,6 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
     <div class="toc-grid">
     {% for layer in layers %}
       <div class="toc-layer">
-        <h3><a href="#lop-{{ layer.id }}">{{ layer.title.split(" · ")[1] if " · " in layer.title else layer.title }}</a> <span>Lớp {{ layer.id }}</span></h3>
         <ol>
         {% for cat in layer.categories %}
           <li><a href="#{{ cat.key }}"><span class="r">{% if cat.first %}{{ "%02d"|format(cat.first) }}{% if cat.last != cat.first %}–{{ "%02d"|format(cat.last) }}{% endif %}{% else %}––{% endif %}</span><span>{{ cat.label }}</span></a></li>
@@ -229,8 +223,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
   </nav>
 
   {% for layer in layers %}
-  <section id="lop-{{ layer.id }}" aria-labelledby="lop-{{ layer.id }}-h">
-    <h2 class="layer" id="lop-{{ layer.id }}-h">{{ layer.title.split(" · ")[1] if " · " in layer.title else layer.title }} <span>Lớp {{ layer.id }}</span></h2>
+  <div class="layer-group" id="lop-{{ layer.id }}">
     {% for cat in layer.categories %}
     <details class="cat" id="{{ cat.key }}" open>
       <summary><h3>{{ cat.label }}<small>{{ cat['items']|length }} tin</small></h3></summary>
@@ -281,7 +274,7 @@ footer p{margin:0 0 4px;max-width:var(--measure)}
       {% endfor %}
     </details>
     {% endfor %}
-  </section>
+  </div>
   {% endfor %}
 </main>
 
