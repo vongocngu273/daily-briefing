@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/index.html docs/og.png data/history.json data/page.json data/trends.json
+          git add docs/index.html docs/og.png docs/live.json data/history.json data/page.json data/trends.json data/live.json
           if git diff --staged --quiet; then
             echo "Không có thay đổi"
             exit 0

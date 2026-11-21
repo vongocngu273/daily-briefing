@@ -408,7 +408,7 @@ def test_snapshot_roundtrip_renders_same_page(tmp_path):
     a, b, snap = tmp_path / "a.html", tmp_path / "b.html", tmp_path / "page.json"
     render(ctx, out_path=a)
     save_snapshot(ctx, snap)
-    render(load_snapshot(snap, trends_path=tmp_path / "none.json"), out_path=b)
+    render(load_snapshot(snap, trends_path=tmp_path / "none.json", live_path=tmp_path / "none2.json"), out_path=b)
     assert a.read_text(encoding="utf-8") == b.read_text(encoding="utf-8")
 
 
@@ -474,3 +474,28 @@ def test_share_image_and_og_tags(tmp_path):
                                     uv_day=7.5)}
     out = make_og(ctx, tmp_path / "og.png")
     assert Image.open(out).size == (1200, 630)
+
+
+# ---------- Tin nóng (live) ----------
+def test_live_rank_clusters_and_scores():
+    from datetime import datetime, timezone
+    from src.live import rank, similar
+    from src.news import Article
+    now = datetime(2026, 11, 21, 15, 0, tzinfo=timezone.utc)
+    def art(title, src, h, img=""):
+        return Article(title=title, url=f"https://{src}.vn/{abs(hash(title))}", source=src,
+                       published=datetime(2026, 11, 21, h, 0, tzinfo=timezone.utc), image=img)
+    arts = [
+        art("Khai mạc Đại hội Thể thao toàn quốc lần thứ 10", "VnExpress", 14),
+        art("Khai mạc Đại hội Thể thao toàn quốc lần thứ 10 năm 2026", "VietnamPlus", 13, "https://i/x.jpg"),
+        art("Chính thức khai mạc Đại hội Thể thao toàn quốc lần thứ 10", "Tuổi Trẻ", 12),
+        art("Giá vàng hôm nay tăng mạnh", "VnExpress", 14),
+        art("English only headline here", "BBC", 14),
+        art("Tin quá cũ hôm qua đây", "VnExpress", 1),
+    ]
+    assert similar(arts[0].title, arts[1].title)
+    out = rank(arts, [{"term": "giá vàng", "score": 20000}], now, limit=6)
+    assert out["hot"][0]["sources"] == 3 and out["hot"][0]["image"] == "https://i/x.jpg"
+    titles = [h["title"] for h in out["hot"]] + [h["title"] for h in out["latest"]]
+    assert "English only headline here" not in titles and "Tin quá cũ hôm qua đây" not in titles
+    assert any("Giá vàng" in t for t in titles)

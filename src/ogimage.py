@@ -76,7 +76,8 @@ def make_og(ctx: dict, out: Path = OG_PATH) -> Path | None:
 
     cond, cond6 = _font("BarlowCondensed-ExtraBold.ttf", 54), _font("BarlowCondensed-SemiBold.ttf", 30)
     d.text((60, 40), "BẢN TIN SÁNG", font=cond, fill=INK)
-    upd = f"CẬP NHẬT {ctx.get('updated_at', '')}"
+    live = ctx.get("live") or {}
+    upd = f"CẬP NHẬT {live.get('updated') or ctx.get('updated_at', '')}"
     d.text((W - 60 - d.textlength(upd, font=cond6), 56), upd, font=cond6, fill=INK)
 
     # ô ngày
@@ -95,10 +96,13 @@ def make_og(ctx: dict, out: Path = OG_PATH) -> Path | None:
     # ô "Cần nhớ"
     box2 = (600, 130, W - 60, 470)
     d.rounded_rectangle(box2, radius=34, fill=WHITE, outline=INK, width=5)
-    d.text((box2[0] + 30, box2[1] + 22), "CẦN NHỚ HÔM NAY", font=_font("BarlowCondensed-ExtraBold.ttf", 34), fill=RED)
+    hot = [h.get("title", "") for h in (live.get("hot") or []) if h.get("title")][:3]
+    heading = f"TIN NÓNG LÚC {live.get('updated')}" if hot and live.get("updated") else "CẦN NHỚ HÔM NAY"
+    lines_src = hot or [t for t in (ctx.get("takeaways") or []) if t][:3]
+    d.text((box2[0] + 30, box2[1] + 22), heading, font=_font("BarlowCondensed-ExtraBold.ttf", 34), fill=RED)
     body = _font("BeVietnamPro-SemiBold.ttf", 27)
     y = box2[1] + 70
-    for i, t in enumerate([t for t in (ctx.get("takeaways") or []) if t][:3], 1):
+    for i, t in enumerate(lines_src, 1):
         lines = _wrap(d, t, body, box2[2] - box2[0] - 90, 2)
         d.text((box2[0] + 30, y), str(i), font=_font("BarlowCondensed-ExtraBold.ttf", 36), fill=RED)
         for ln in lines:

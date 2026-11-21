@@ -50,7 +50,7 @@ def save_snapshot(context: dict, path: Path = SNAPSHOT_PATH) -> None:
     os.replace(tmp, path)
 
 
-def load_snapshot(path: Path = SNAPSHOT_PATH, trends_path: Path | None = None) -> dict:
+def load_snapshot(path: Path = SNAPSHOT_PATH, trends_path: Path | None = None, live_path: Path | None = None) -> dict:
     ctx = json.loads(Path(path).read_text(encoding="utf-8"))
     w = ctx["weather"]
     ctx["weather"] = _build(WeatherReport, {**w, "slots": [_build(Slot, s) for s in w.get("slots", [])]})
@@ -58,12 +58,18 @@ def load_snapshot(path: Path = SNAPSHOT_PATH, trends_path: Path | None = None) -
         ctx["air"] = _build(AirReport, ctx["air"])
     if ctx.get("tide") is not None:
         ctx["tide"] = _build(TideReport, ctx["tide"])
-    ctx["quotes"] = [_build(Quote, q) for q in ctx.get("quotes", [])]
     # Trend luôn lấy bản mới nhất trong data/trends.json (cập nhật 2 giờ/lần)
     from .config import load_config
     from .trends import TRENDS_PATH, for_page, load_store
     ctx.setdefault("site_url", load_config().get("site_url", ""))
     ctx["trends"] = for_page(load_store(trends_path or TRENDS_PATH))
+    # Làm mới trong ngày: tin nóng/mới + bảng giá mới nhất (không gọi Gemini)
+    from . import live as _live
+    lv = _live.load_live(live_path or _live.LIVE_PATH)
+    ctx["live"] = _live.for_page(lv)
+    if lv.get("quotes"):
+        ctx["quotes"] = lv["quotes"]
+    ctx["quotes"] = [_build(Quote, q) for q in ctx.get("quotes", [])]
     for layer in ctx.get("layers", []):
         for cat in layer.get("categories", []):
             cat["items"] = [_build(NewsItem, n) for n in cat.get("items", [])]

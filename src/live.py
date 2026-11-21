@@ -1,0 +1,160 @@
+"""Làm mới trong ngày (không gọi Gemini): Tin nóng / Tin mới, bảng giá, trend, ảnh chia sẻ.
+
+"Nóng" = cùng một sự kiện được nhiều báo đưa + khớp từ khoá Google Trends VN + còn mới.
+Chỉ dùng tiêu đề gốc của báo (không tóm tắt AI). Run: python -m src.live
+"""
+from __future__ import annotations
+
+import json
+import logging
+import math
+import os
+import re
+import sys
+import unicodedata
+from concurrent.futures import ThreadPoolExecutor
+from dataclasses import asdict
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+from .config import ROOT, load_config
+
+log = logging.getLogger("daily-briefing.live")
+
+LIVE_PATH = ROOT / "data" / "live.json"
+WINDOW_HOURS = 12
+MAX_ITEMS = 6
+VN_SOURCES = {"VnExpress", "Tuổi Trẻ", "VietnamPlus", "BBC Tiếng Việt", "Tinh tế"}
+_VN_CHARS = re.compile(r"[ăâđêôơưàáạảãằắặẳẵầấậẩẫèéẹẻẽềếệểễìíịỉĩòóọỏõồốộổỗờớợởỡùúụủũừứựửữỳýỵỷỹ]", re.I)
+
+
+def _syllables(title: str) -> list[str]:
+    t = unicodedata.normalize("NFC", title.lower())
+    return [w for w in re.findall(r"\w+", t) if not w.isdigit()]
+
+
+def _bigrams(title: str) -> set[tuple[str, str]]:
+    s = _syllables(title)
+    return set(zip(s, s[1:]))
+
+
+def similar(a: str, b: str, threshold: float = 0.3) -> bool:
+    x, y = _bigrams(a), _bigrams(b)
+    if not x or not y:
+        return False
+    return len(x & y) / min(len(x), len(y)) >= threshold
+
+
+def _ago_iso(dt: datetime) -> str:
+    return dt.astimezone(timezone.utc).isoformat()
+
+
+def rank(articles: list, trends_vn: list[dict], now: datetime, limit: int = MAX_ITEMS) -> dict:
+    """Gom bài cùng sự kiện, chấm điểm nóng; trả về {'hot': [...], 'latest': [...]}."""
+    fresh = [a for a in articles
+             if now - timedelta(hours=WINDOW_HOURS) <= a.published <= now + timedelta(minutes=30)
+             and _VN_CHARS.search(a.title)]
+    fresh.sort(key=lambda a: a.published, reverse=True)
+
+    clusters: list[list] = []
+    for a in fresh:
+        for c in clusters:
+            if similar(a.title, c[0].title):
+                c.append(a)
+                break
+        else:
+            clusters.append([a])
+
+    terms = [(t["term"].lower(), t.get("score", 0)) for t in trends_vn if len(t["term"].split()) >= 2]
+
+    def item(a, sources: int = 1, score: float = 0.0) -> dict:
+        return {"title": a.title, "url": a.url, "source": a.source, "image": a.image,
+                "ts": _ago_iso(a.published), "sources": sources, "score": round(score, 2)}
+
+    scored = []
+    for c in clusters:
+        rep = max(c, key=lambda a: (bool(a.image), a.source in VN_SOURCES, a.published))
+        n_src = len({a.source for a in c})
+        newest = max(a.published for a in c)
+        age_h = (now - newest).total_seconds() / 3600
+        text = " ".join(a.title.lower() for a in c)
+        trend = max((math.log10(max(s, 10)) for term, s in terms if term in text), default=0.0)
+        score = 3.0 * (n_src - 1) + 1.0 * trend + max(0.0, 2.0 * (1 - age_h / WINDOW_HOURS))
+        scored.append((score, item(rep, n_src, score)))
+    scored.sort(key=lambda x: -x[0])
+    hot = [it for _, it in scored[:limit]]
+    hot_urls = {h["url"] for h in hot}
+    latest = [item(c[0], len({a.source for a in c})) for c in clusters if c[0].url not in hot_urls][:limit]
+    return {"hot": hot, "latest": latest}
+
+
+def collect_articles(cfg: dict) -> list:
+    from .news import fetch_feed
+
+    feeds = [f for f in cfg.get("feeds", []) if "news.google.com" not in f["url"]]
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        res = list(ex.map(fetch_feed, feeds))
+    seen, out = set(), []
+    for arts in res:
+        for a in arts:
+            if a.url not in seen:
+                seen.add(a.url)
+                out.append(a)
+    return out
+
+
+def for_page(live: dict, tz_name: str = "Asia/Ho_Chi_Minh") -> dict:
+    from zoneinfo import ZoneInfo
+
+    upd = live.get("updated")
+    label = datetime.fromisoformat(upd).astimezone(ZoneInfo(tz_name)).strftime("%H:%M") if upd else ""
+
+    def fmt(items):
+        out = []
+        for it in items or []:
+            t = datetime.fromisoformat(it["ts"]).astimezone(ZoneInfo(tz_name)).strftime("%H:%M")
+            out.append({**it, "time": t})
+        return out
+    return {"hot": fmt(live.get("hot")), "latest": fmt(live.get("latest")), "updated": label, "updated_iso": upd or ""}
+
+
+def load_live(path: Path = LIVE_PATH) -> dict:
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def update(now: datetime | None = None, path: Path = LIVE_PATH) -> dict:
+    from .market import fetch_market
+    from .trends import update as update_trends
+
+    now = now or datetime.now(timezone.utc)
+    cfg = load_config()
+    trends = update_trends(now)
+    live = rank(collect_articles(cfg), trends.get("vn", []), now)
+    try:
+        live["quotes"] = [asdict(q) for q in fetch_market(cfg)]
+    except Exception as e:  # noqa: BLE001
+        log.warning("Bảng giá lỗi: %s", type(e).__name__)
+    live["updated"] = now.isoformat()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(live, ensure_ascii=False, indent=1), encoding="utf-8")
+    os.replace(tmp, path)
+    # bản nhỏ cho nút ⟳ trên trang kiểm tra (cùng origin, không vướng CORS)
+    stamp = ROOT / "docs" / "live.json"
+    stamp.write_text(json.dumps({"updated": live["updated"]}), encoding="utf-8")
+    log.info("Tin nóng %d, tin mới %d, giá %d mã", len(live["hot"]), len(live["latest"]), len(live.get("quotes", [])))
+    return live
+
+
+def run() -> int:
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
+    update()
+    from .rerender import SNAPSHOT_PATH, run as rerender
+    return rerender() if SNAPSHOT_PATH.exists() else 0
+
+
+if __name__ == "__main__":
+    sys.exit(run())

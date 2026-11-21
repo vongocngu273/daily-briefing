@@ -17,7 +17,8 @@ from .renderer import render
 from .extras import air_advice, fetch_air, fetch_tide, uv_level
 from .ogimage import make_og
 from .rerender import save_snapshot
-from .trends import for_page, update as update_trends
+from .live import for_page as live_for_page, update as update_live
+from .trends import for_page, load_store as load_trends
 from .weather import fetch_weather, weather_severity
 
 log = logging.getLogger("daily-briefing")
@@ -174,9 +175,12 @@ def run() -> int:
         "site_url": cfg.get("site_url", ""),
     }
     try:
-        context["trends"] = for_page(update_trends())
+        lv = update_live(now)
+        context["live"] = live_for_page(lv)
+        context["trends"] = for_page(load_trends())
     except Exception as e:  # noqa: BLE001
-        log.warning("Google Trends lỗi: %s", type(e).__name__)
+        log.warning("Tin nóng / Google Trends lỗi: %s", type(e).__name__)
+        context.setdefault("live", {"hot": [], "latest": [], "updated": "", "updated_iso": ""})
         context["trends"] = {"vn": [], "world": [], "updated": ""}
     render(context)
     make_og(context)

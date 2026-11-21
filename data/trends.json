@@ -28,6 +28,15 @@
    "news": "Chelsea vs Leeds LIVE! Premier League match updates, news, score and line-ups"
   },
   {
+   "term": "nice đấu với psg",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-21T15:20:00+00:00",
+   "url": "https://bongdaplus.vn/ligue-1/nhan-dinh-bong-da-nice-vs-psg-23h15-ngay-21-11-thien-duong-thu-12-5294612611.html",
+   "news": "Nhận định bóng đá Nice vs PSG, 23h15 ngày 21/11: Thiên đường thứ 12"
+  },
+  {
    "term": "rayo đấu với valencia",
    "geo": "VN",
    "traffic": "500+",
@@ -35,15 +44,6 @@
    "ts": "2026-11-21T14:30:00+00:00",
    "url": "https://baonghean.vn/nhan-dinh-rayo-vallecano-vs-valencia-cuoc-doi-dau-kho-phan-dinh-10356325.html",
    "news": "Nhận định Rayo Vallecano vs Valencia: Cuộc đối đầu khó phân định"
-  },
-  {
-   "term": "nice đấu với psg",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T15:20:00+00:00",
-   "url": "https://bongdaplus.vn/ligue-1/nhan-dinh-bong-da-nice-vs-psg-23h15-ngay-21-11-thien-duong-thu-12-5294612611.html",
-   "news": "Nhận định bóng đá Nice vs PSG, 23h15 ngày 21/11: Thiên đường thứ 12"
   },
   {
    "term": "como vs",
@@ -318,6 +318,15 @@
    "news": "Pete Rose posthumously pardoned by President Donald Trump"
   },
   {
+   "term": "spurs score",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-21T15:30:00+00:00",
+   "url": "https://www.skysports.com/football/live-blog/13610687/tottenham-vs-ipswich-live-premier-league-match-updates-news-and-score",
+   "news": "Tottenham vs Ipswich LIVE! Premier League match updates, news and score"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -534,5 +543,5 @@
    "news": "Femi Seriki: Sheffield United full-back facing year out with knee injury"
   }
  ],
- "updated": "2026-11-21T15:44:37.901238+00:00"
+ "updated": "2026-11-21T15:50:31.991027+00:00"
 }
