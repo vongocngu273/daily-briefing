@@ -220,9 +220,12 @@ main{padding:4px 0 8px}
 .closing li b{font:800 30px/1 var(--cond);color:var(--serial);text-align:center;border-right:2px solid var(--stub-ink);padding:8px 0}
 .closing li span{padding:8px 12px;font:600 17px/1.35 var(--read);color:var(--stub-ink)}
 .closing .na{font-weight:600}
-footer{padding:14px 0 calc(24px + env(safe-area-inset-bottom));font-size:12px;line-height:1.55;color:var(--muted)}
+footer{padding:14px 0 calc(24px + env(safe-area-inset-bottom));font-size:13px;line-height:1.5;color:var(--muted)}
 footer p{margin:0}
 footer b{color:var(--ink);font-weight:600}
+.about-btn{font:inherit;color:var(--ink);background:none;border:0;padding:2px 0;cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;display:inline-flex;align-items:center;gap:3px}
+.about-btn svg{width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.about-btn:hover{color:var(--red)}
 
 /* ---------- rounded corners (Apple-style continuous corners) ---------- */
 :root{--rL:18px;--rM:10px;--rS:6px}
@@ -1102,8 +1105,18 @@ html.sheet-open{overflow:hidden}
 </section>
 
 <footer class="wrap">
-  <p>Bản tin cá nhân của <b>Ngự Võ</b>, chỉ để đọc nhanh mỗi sáng, phi thương mại, không nhằm mục đích tuyên truyền · Tin tóm tắt ngắn kèm liên kết về VnExpress, Tuổi Trẻ, VietnamPlus, BBC, Reuters, AP, Bloomberg, Tinh tế, GSMArena, 9to5Mac, 9to5Google, MacRumors; bản quyền nội dung thuộc các nguồn gốc · Thời tiết Open-Meteo, MET Norway · Giá Yahoo Finance · Xu hướng Google Trends · Tóm tắt do AI viết, có thể sai, hãy đọc bài gốc trước khi quyết định điều gì.</p>
+  <p>Bản tin cá nhân của <b>Ngự Võ</b> · <button type="button" class="about-btn" id="about-btn">Nguồn &amp; thông tin<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5"/></svg></button></p>
 </footer>
+<template id="about-tpl">
+  <div style="height:36px"></div>
+  <h3 id="sheet-title">Về bản tin này</h3>
+  <p class="sum">Bản tin cá nhân của <b>Ngự Võ</b>, chỉ để đọc nhanh mỗi sáng. Phi thương mại, không nhằm mục đích tuyên truyền.</p>
+  <div class="full"><dl>
+    <div><dt>Nguồn tin</dt><dd>VnExpress, Tuổi Trẻ, VietnamPlus, BBC, Reuters, AP, Bloomberg, Tinh tế, GSMArena, 9to5Mac, 9to5Google, MacRumors. Mỗi tin chỉ là tóm tắt ngắn kèm liên kết; bản quyền nội dung thuộc các nguồn gốc.</dd></div>
+    <div><dt>Dữ liệu</dt><dd>Thời tiết: Open-Meteo, MET Norway · Không khí, thủy triều: Open-Meteo · Giá: Yahoo Finance, SSI · Xu hướng: Google Trends.</dd></div>
+    <div><dt>Lưu ý</dt><dd>Tóm tắt do AI viết và có thể sai. Hãy đọc bài gốc trước khi quyết định điều gì.</dd></div>
+  </dl></div>
+</template>
 
 <button type="button" class="to-top" id="to-top" aria-label="Lên đầu trang" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V4.5M4.8 9.6 10 4.4l5.2 5.2"/></svg></button>
 
@@ -1141,6 +1154,11 @@ html.sheet-open{overflow:hidden}
     sh.addEventListener('cancel',function(e){e.preventDefault();close();});
     sh.addEventListener('click',function(e){if(e.target===sh)close();});
     document.getElementById('sheet-close').addEventListener('click',close);
+    var ab=document.getElementById('about-btn'), tpl=document.getElementById('about-tpl');
+    if(ab&&tpl) ab.addEventListener('click',function(){
+      body.innerHTML=''; body.appendChild(tpl.content.cloneNode(true)); body.scrollTop=0;
+      document.documentElement.classList.add('sheet-open'); sh.showModal();
+    });
     document.querySelectorAll('.item details > summary').forEach(function(sm){
       sm.addEventListener('click',function(e){
         if(document.documentElement.getAttribute('data-view')!=='card') return;
