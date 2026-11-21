@@ -20,7 +20,6 @@ from .config import SUMMARY_PATH, load_config
 log = logging.getLogger("daily-briefing.notify")
 
 API = "https://api.telegram.org/bot{token}/sendMessage"
-SEVERITY_ICON = {"ok": "✅", "warn": "⚠️", "alert": "🚨"}
 SHORT_LABEL = {"Chiều tối": "Chiều"}
 
 
@@ -43,46 +42,60 @@ def resolve_briefing_url(cfg: dict | None = None) -> str:
     return (cfg or {}).get("site_url", "")
 
 
+SLOT_ICON = {"Sáng": "🌄", "Trưa": "☀️", "Chiều": "🌆"}
+
+
+def _vn(x) -> str:
+    return str(x).replace(".", ",")
+
+
 def _window_line(w: dict) -> str:
     label = SHORT_LABEL.get(w.get("label", ""), w.get("label", ""))
+    icon = SLOT_ICON.get(label, "•")
     if w.get("temp_min") is None:
-        return f"{label} –"
-    temp = f"{w['temp_min']}–{w['temp_max']}°"
-    rain = f"☔{w['rain_prob']}%" if w.get("rain_prob") is not None else ""
-    return f"{label} {temp} {rain}".strip()
+        return f"{icon} {label}: chưa có dữ liệu"
+    line = f"{icon} {label}  <b>{w['temp_min']}–{w['temp_max']}°</b>"
+    if w.get("rain_prob") is not None:
+        line += f"  ·  mưa {w['rain_prob']}%"
+    elif w.get("rain_mm") is not None:
+        line += f"  ·  mưa {_vn(w['rain_mm'])} mm"
+    return line
 
 
 def build_message(summary: dict, url: str) -> str:
+    """Tin Telegram (parse_mode=HTML). Mọi chuỗi động đều qua html.escape."""
     e = html.escape
     w = summary.get("weather", {})
-    icon = SEVERITY_ICON.get(w.get("severity", "ok"), "✅")
-    lines = [f"<b>Bản tin sáng · {e(summary.get('date_str', ''))}</b> ({e(summary.get('updated_at', ''))})", ""]
+    out = ["<b>☀️ BẢN TIN SÁNG</b>",
+           e(" · ".join(x for x in (summary.get("date_str", ""), summary.get("updated_at", "")) if x))]
 
     loc = w.get("location_name", "")
-    advice = "\n".join(w.get("advice") or []) or "Chưa có dữ liệu thời tiết"
-    lines.append(f"{icon} <b>Thời tiết{(' · ' + e(loc)) if loc else ''}</b>")
-    lines.append(e(advice))
+    out += ["", f"<b>📍 {e(loc) if loc else 'Thời tiết'}</b>"]
     windows = w.get("windows") or []
-    if windows:
-        lines.append(e(" · ".join(_window_line(x) for x in windows)))
-    extras = []
+    out += [_window_line({k: (e(v) if isinstance(v, str) else v) for k, v in x.items()}) for x in windows]
     if w.get("sunrise") and w.get("sunset"):
-        extras.append(f"🌅 {w['sunrise']} · 🌇 {w['sunset']}")
+        out.append(f"🌅 Mặt trời  {e(w['sunrise'])} – {e(w['sunset'])}")
     if w.get("aqi") is not None:
-        extras.append(f"AQI {w['aqi']} ({w.get('aqi_label') or ''})".replace(" ()", ""))
-    if extras:
-        lines.append(e(" · ".join(extras)))
+        label = f" · {e(w['aqi_label'])}" if w.get("aqi_label") else ""
+        out.append(f"😷 AQI <b>{int(w['aqi'])}</b>{label}")
+    tide = w.get("tide_high")
+    if tide:
+        out.append(f"🌊 Triều cao {e(tide.get('place', ''))}  {e(tide['time'])} ({_vn(tide['height'])} m)")
+
+    advice = [a for a in (w.get("advice") or []) if a]
+    if advice:
+        head = "🚨 Cảnh báo" if w.get("severity") == "alert" else "💡 Nhắc nhở"
+        out += ["", f"<b>{head}</b>"] + [f"• {e(a)}" for a in advice]
 
     takeaways = [t for t in (summary.get("takeaways") or []) if t][:3]
     if takeaways:
-        lines += ["", "<b>3 điều cần nhớ hôm nay</b>"]
-        lines += [f"• {e(t)}" for t in takeaways]
+        out += ["", "<b>📌 3 điều cần nhớ</b>"] + [f"{i}. {e(t)}" for i, t in enumerate(takeaways, 1)]
 
     if url:
         full = with_cache_bust(url, str(summary.get("date_compact", "")))
         total = int(summary.get("total_articles") or 0)
-        lines += ["", f'<a href="{e(full, quote=True)}">Đọc bản tin đầy đủ ({total} tin) ↗</a>']
-    return "\n".join(lines)
+        out += ["", f'👉 <a href="{e(full, quote=True)}">Đọc bản tin đầy đủ · {total} tin</a>']
+    return "\n".join(out)
 
 
 def send(token: str, chat_id: str, text: str, retries: int = 3, timeout: int = 15,

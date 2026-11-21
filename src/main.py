@@ -23,6 +23,15 @@ WEEKDAY_SHORT = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"]
 WEEKDAYS = ["Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật"]
 
 
+def _tide_high(tide) -> dict | None:
+    """Đỉnh triều cao nhất trong ngày (để nhắc triều cường)."""
+    highs = [t for t in (getattr(tide, "extremes", None) or []) if t.get("kind") == "Cao"]
+    if not highs:
+        return None
+    top = max(highs, key=lambda t: t["height"])
+    return {"place": tide.place, "time": top["time"], "height": top["height"]}
+
+
 def build_summary(context: dict, local: datetime) -> dict:
     """Compact data for notifications (src.notify). Not committed (.gitignore)."""
     w = context["weather"]
@@ -39,9 +48,10 @@ def build_summary(context: dict, local: datetime) -> dict:
             "sunset": w.sunset,
             "aqi": context["air"].aqi_max if context.get("air") else None,
             "aqi_label": context["air"].label if context.get("air") else None,
+            "tide_high": _tide_high(context.get("tide")),
             "windows": [
                 {"label": s.label, "hours": s.hours, "temp_min": s.temp_min, "temp_max": s.temp_max,
-                 "rain_prob": s.rain_prob, "condition": s.condition}
+                 "rain_prob": s.rain_prob, "rain_mm": s.rain_mm, "condition": s.condition}
                 for s in w.slots
             ],
         },

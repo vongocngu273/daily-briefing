@@ -224,13 +224,12 @@ def test_build_message_escapes_and_has_all_blocks():
     from src.notify import build_message
 
     msg = build_message(_summary(), "https://user.github.io/daily-briefing/")
-    assert msg.startswith("<b>Bản tin sáng · Thứ Bảy, 21/11/2026</b> (07:12)")
-    assert "🚨" in msg
-    assert "Q.1 &lt;HCM&gt;" in msg and "áo mưa &amp; áo khoác" in msg
-    assert "Sáng 26–29° ☔10%" in msg and "Chiều 28–30° ☔80%" in msg
-    assert "• Fed &lt;giữ&gt; lãi suất" in msg and "• Bão số 9 &gt; cấp 12" in msg
-    assert msg.count("• ") == 3
-    assert '<a href="https://user.github.io/daily-briefing/?v=20261121">Đọc bản tin đầy đủ (38 tin) ↗</a>' in msg
+    assert msg.startswith("<b>☀️ BẢN TIN SÁNG</b>\nThứ Bảy, 21/11/2026 · 07:12")
+    assert "🚨 Cảnh báo" in msg
+    assert "📍 Q.1 &lt;HCM&gt;" in msg and "• Nên mang áo mưa &amp; áo khoác." in msg
+    assert "🌄 Sáng  <b>26–29°</b>  ·  mưa 10%" in msg and "🌆 Chiều  <b>28–30°</b>  ·  mưa 80%" in msg
+    assert "1. Fed &lt;giữ&gt; lãi suất" in msg and "3. Bão số 9 &gt; cấp 12" in msg
+    assert '👉 <a href="https://user.github.io/daily-briefing/?v=20261121">Đọc bản tin đầy đủ · 38 tin</a>' in msg
     # no raw dynamic '<' left except our own tags
     import re
     assert not re.search(r"<(?!/?b>|a href=|/a>)", msg)
@@ -353,4 +352,5 @@ def test_telegram_message_has_sun_and_aqi():
     msg = build_message({"date_str": "Thứ Bảy, 21/11/2026", "updated_at": "07:10", "weather": {
         "advice": ["Nên mặc áo khoác"], "sunrise": "05:51", "sunset": "17:26", "aqi": 114,
         "aqi_label": "Kém với người nhạy cảm"}}, "")
-    assert "05:51" in msg and "AQI 114 (Kém với người nhạy cảm)" in msg
+    assert "🌅 Mặt trời  05:51 – 17:26" in msg and "😷 AQI <b>114</b> · Kém với người nhạy cảm" in msg
+    assert "💡 Nhắc nhở" in msg
