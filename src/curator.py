@@ -81,6 +81,21 @@ def truncate_words(text: str, n: int) -> str:
     return " ".join(words[:n]).rstrip(",;:") + "…"
 
 
+def soft_limit(text: str, n: int) -> str:
+    """Giữ trọn ý: chỉ rút gọn khi quá n chữ, và chỉ cắt ở chỗ ngắt tự nhiên (dấu câu).
+
+    Không có chỗ ngắt hợp lý thì giữ nguyên câu, vì câu dài còn hơn câu bị bỏ lửng bằng "…"."""
+    words = (text or "").split()
+    if len(words) <= n:
+        return " ".join(words)
+    head = " ".join(words[:n])
+    for mark in (". ", "; ", ": ", " – ", " - ", ", "):
+        i = head.rfind(mark)
+        if i >= len(head) // 2:
+            return head[:i].rstrip(" ,;:–-") + ("." if mark == ". " else "")
+    return " ".join(words)
+
+
 # ---------- hydration ----------
 
 def hydrate(result_items: list[CuratedItem], candidates: list[Article], layer: int,
@@ -107,8 +122,8 @@ def hydrate(result_items: list[CuratedItem], candidates: list[Article], layer: i
             cid=art.cid,
             category=it.category,
             severity=it.severity if it.severity in SEVERITY_EMOJI else "low",
-            title=truncate_words(it.title, 12),
-            summary=truncate_words(it.summary, 25),
+            title=soft_limit(it.title, 22),
+            summary=soft_limit(it.summary, 45),
             developments=it.developments.strip(),
             context=it.context.strip(),
             why_it_matters=it.why_it_matters.strip(),
@@ -149,7 +164,7 @@ Quy tắc:
 3. Gộp các bài cùng một sự kiện: chỉ chọn 1 cid đại diện (ưu tiên nguồn uy tín, chi tiết hơn).
 4. So với "Tiêu đề đã đăng gần đây": nếu cùng sự kiện mà không có gì mới thì BỎ; nếu có diễn biến mới đáng kể thì chọn và đặt is_update=true.
 5. severity: high = khẩn cấp/tác động lớn; medium = đáng chú ý; low = tham khảo.
-6. title ≤ 12 chữ; summary đúng 1 câu ≤ 25 chữ; developments, context, why_it_matters mỗi phần 1–2 câu, chỉ dựa trên tiêu đề/snippet, không suy diễn số liệu.
+6. title 8–14 chữ, đủ ý, KHÔNG bỏ lửng hay kết thúc giữa cụm từ; summary đúng 1 câu trọn vẹn ≤ 30 chữ; developments, context, why_it_matters mỗi phần 1–2 câu, chỉ dựa trên tiêu đề/snippet, không suy diễn số liệu.
 7. category phải là một trong các mã: {", ".join(k for k, _ in LAYERS[layer])}.
 
 Tiêu đề đã đăng gần đây:

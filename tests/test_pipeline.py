@@ -517,3 +517,13 @@ def test_live_categorize_and_by_category():
              ("https://vnexpress.net/rss/the-thao.rss", a("Đã có trong bản tin", "https://x/3", 12))]
     out = by_category(pairs, [{"url": "https://x/3", "title": "Đã có trong bản tin"}], now)
     assert [i["url"] for i in out["sports"]] == ["https://x/1", "https://x/2"]
+
+
+def test_soft_limit_never_leaves_dangling_ellipsis():
+    from src.curator import soft_limit
+    short = "Samsung thay đổi lãnh đạo mảng thiết bị di động sau 7 năm"
+    assert soft_limit(short, 22) == short
+    long_no_break = " ".join(["chữ"] * 30)
+    assert soft_limit(long_no_break, 22) == long_no_break          # giữ nguyên, không "…"
+    cut = soft_limit("Một hai ba bốn năm sáu bảy tám chín mười, mười một mười hai mười ba mười bốn", 12)
+    assert cut == "Một hai ba bốn năm sáu bảy tám chín mười" and "…" not in cut
