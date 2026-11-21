@@ -15,6 +15,7 @@ from .news import (add_to_history, fill_missing_images, candidates_for_layer, co
                    recent_titles, save_history)
 from .renderer import render
 from .extras import air_advice, fetch_air, fetch_tide, uv_level
+from .rerender import save_snapshot
 from .weather import fetch_weather, weather_severity
 
 log = logging.getLogger("daily-briefing")
@@ -170,6 +171,7 @@ def run() -> int:
         "date_compact": local.strftime("%Y%m%d"),
     }
     render(context)
+    save_snapshot(context)
     write_summary(build_summary(context, local), SUMMARY_PATH)
     save_history(history, HISTORY_PATH)
     log.info("Đã xuất %d tin (model %s) -> %s", len(all_items), curator.model, OUTPUT_PATH)

@@ -49,9 +49,9 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .stub-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font:600 13px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase}
 .stub h1{margin:0;font:800 20px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase}
 .ticket{display:grid;gap:12px;margin:12px 0 10px}
-.serial{display:flex;align-items:flex-end;justify-content:space-between;background:var(--field);border:2px solid var(--stub-ink);padding:4px 12px 2px}
+.serial{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--field);border:2px solid var(--stub-ink);padding:8px 16px}
 .serial b{font:800 clamp(72px,24vw,96px)/.95 var(--cond);color:var(--serial);letter-spacing:-.02em}
-.serial span{font:800 24px/1 var(--cond);text-transform:uppercase;letter-spacing:.06em;padding-bottom:12px;text-align:right}
+.serial span{font:800 24px/1 var(--cond);text-transform:uppercase;letter-spacing:.06em;text-align:right}
 .serial span small{display:block;font:600 13px var(--cond);letter-spacing:.12em;text-transform:uppercase}
 .wx{display:grid;grid-template-columns:repeat(3,1fr);background:var(--field);border:2px solid var(--stub-ink)}
 .wx>div{padding:7px 8px 8px;border-right:1px solid var(--stub-ink);min-width:0}
@@ -62,7 +62,7 @@ a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
 .wx p{margin:0;font-size:12px;line-height:1.35}
 .wx .na{font:600 14px var(--cond);color:var(--field-muted)}
 .idx{display:grid;grid-template-columns:repeat(2,1fr);background:var(--field);border:2px solid var(--stub-ink)}
-.idx>div{padding:7px 8px 8px;min-width:0;border-right:1px solid var(--stub-ink);border-bottom:1px solid var(--stub-ink)}
+.idx>div{display:flex;flex-direction:column;justify-content:center;padding:9px 10px 10px;min-width:0;border-right:1px solid var(--stub-ink);border-bottom:1px solid var(--stub-ink)}
 .idx>div:nth-child(2n){border-right:0}
 .idx>div:nth-child(n+3){border-bottom:0}
 .idx h2{margin:0 0 2px;font:600 12px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase}

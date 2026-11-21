@@ -378,3 +378,35 @@ def test_parse_feed_keeps_image_but_not_for_google_news():
     assert arts[0].image == "https://i1-vnexpress.vnecdn.net/a.jpg"
     arts = parse_feed(rss, {"source": "Reuters", "url": "https://news.google.com/rss/search?q=x"})
     assert arts[0].image == ""
+
+
+# ---------- snapshot / rerender ----------
+def test_snapshot_roundtrip_renders_same_page(tmp_path):
+    from src.curator import NewsItem
+    from src.extras import AirReport, TideReport
+    from src.market import Quote
+    from src.renderer import render
+    from src.rerender import load_snapshot, save_snapshot
+    from src.weather import Slot, WeatherReport
+
+    item = NewsItem(cid=1, category="geopolitics", severity="high", title="Tin <A>", summary="Tóm tắt",
+                    developments="", context="", why_it_matters="", is_update=False, url="https://x.vn/a",
+                    source="VnExpress", published="2026-11-21T00:00:00+00:00", num=1, image="https://x.vn/a.jpg")
+    ctx = {
+        "updated_at": "07:10", "date_str": "Thứ Bảy, 21/11/2026",
+        "weather": WeatherReport(location="HCM", slots=[Slot(key="m", label="Sáng", hours="07:00–09:00",
+                                 temp_min=26, temp_max=29)], advice=["ok"], ok=True, sunrise="05:51"),
+        "air": AirReport(ok=True, aqi_max=80, label="Trung bình"), "uv_label": "Cao",
+        "tide": TideReport(place="Cần Giờ", ok=True, extremes=[{"kind": "Cao", "time": "22:26", "height": 2.1}]),
+        "quotes": [Quote(symbol="^DJI", name="Dow Jones", close=48147.0, change_pct=-1.9)],
+        "sjc_url": "https://sjc.com.vn", "takeaways": ["a", "b", "c"], "total_items": 1, "ai_degraded": False,
+        "layers": [{"id": 1, "title": "Lớp 1", "categories": [{"key": "geopolitics", "label": "Địa chính trị",
+                    "items": [item], "first": 1, "last": 1}]}],
+        "weekday": 5, "weekday_name": "Thứ Bảy", "weekday_short": "T7", "serial": "21·11",
+        "year": "2026", "date_compact": "20261121",
+    }
+    a, b, snap = tmp_path / "a.html", tmp_path / "b.html", tmp_path / "page.json"
+    render(ctx, out_path=a)
+    save_snapshot(ctx, snap)
+    render(load_snapshot(snap), out_path=b)
+    assert a.read_text(encoding="utf-8") == b.read_text(encoding="utf-8")
