@@ -2,12 +2,16 @@ name: Daily Briefing
 
 on:
   schedule:
-    # GitHub có thể trễ hoặc bỏ lịch lúc đông máy: đặt 3 lần, lần chạy được đầu tiên làm bản tin,
-    # các lần sau tự bỏ qua (job "check"). Giờ VN: 06:53, 07:17, 07:41.
-    - cron: "53 23 * * *"
+    # Chính: Cloudflare Worker gọi lúc 07:05 VN (worker/wrangler.toml).
+    # Dự phòng khi GitHub/Cloudflare trục trặc: 07:17 và 07:41 VN; job "check" bỏ qua nếu đã có bản tin.
     - cron: "17 0 * * *"
     - cron: "41 0 * * *"
   workflow_dispatch:
+    inputs:
+      auto:
+        description: "Gọi tự động (Cloudflare) – bỏ qua nếu hôm nay đã có bản tin"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -32,7 +36,9 @@ jobs:
         run: |
           today=$(TZ=Asia/Ho_Chi_Minh date +%Y%m%d)
           have=$(python3 -c "import json;print(json.load(open('data/page.json')).get('date_compact',''))" 2>/dev/null || true)
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$have" = "$today" ]; then
+          auto=false
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.auto }}" = "true" ]; then auto=true; fi
+          if [ "$auto" = "true" ] && [ "$have" = "$today" ]; then
             echo "Hôm nay ($today) đã có bản tin, bỏ qua lần chạy theo lịch."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi

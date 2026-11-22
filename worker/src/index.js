@@ -149,4 +149,33 @@ ${text || "(không lấy được nội dung, chỉ dựa vào tiêu đề và m
       return json({ error: "ai_unavailable" }, 502, cors);
     }
   },
+
+  // Hẹn giờ của Cloudflare (đúng giờ hơn lịch GitHub): gọi GitHub Actions chạy bản tin / làm mới.
+  // Token GitHub (fine-grained, chỉ repo daily-briefing, quyền Actions) nằm trong secret GH_DISPATCH_TOKEN.
+  async scheduled(event, env, ctx) {
+    const job = CRON_JOBS[event.cron];
+    if (!job) { console.log(`cron lạ: ${event.cron}`); return; }
+    ctx.waitUntil(dispatch(env, job));
+  },
 };
+
+const REPO = "vongocngu273/daily-briefing";
+const CRON_JOBS = {
+  "5 0 * * *": "daily-briefing.yml",        // 07:05 VN: bản tin sáng (job "check" chặn chạy trùng)
+  "25,55 0-16,23 * * *": "trends.yml",      // 30 phút/lần 06:25–23:55 VN: tin nóng, giá, trend
+};
+
+async function dispatch(env, workflow) {
+  if (!env.GH_DISPATCH_TOKEN) { console.log("thiếu GH_DISPATCH_TOKEN"); return; }
+  const r = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${workflow}/dispatches`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`,
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+      "User-Agent": "ban-tin-ai-cron",
+    },
+    body: JSON.stringify({ ref: "main", inputs: { auto: "true" } }),
+  });
+  console.log(`dispatch ${workflow} -> ${r.status}`);
+}

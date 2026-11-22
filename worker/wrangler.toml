@@ -4,7 +4,11 @@ compatibility_date = "2026-11-01"
 workers_dev = true
 
 # Bí mật (nạp bằng `wrangler secret put`, KHÔNG ghi vào file này):
-#   GEMINI_API_KEY, GEMINI_API_KEY_2, ACCESS_KEY
+#   GEMINI_API_KEY, GEMINI_API_KEY_2, ACCESS_KEY, GH_DISPATCH_TOKEN
+# Hẹn giờ (UTC) gọi GitHub Actions; xem CRON_JOBS trong src/index.js
+[triggers]
+crons = ["5 0 * * *", "25,55 0-16,23 * * *"]
+
 [vars]
 ALLOWED_ORIGIN = "https://vongocngu273.github.io"
 GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-2.5-flash"
