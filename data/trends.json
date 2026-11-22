@@ -271,6 +271,15 @@
    "news": "Nhận định bóng đá Đà Nẵng vs Ninh Bình, 18h00 ngày 22/11: Thay tướng có đổi vận?"
   },
   {
+   "term": "biển baltic",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T06:40:00+00:00",
+   "url": "https://vnexpress.net/tau-hang-nga-boc-chay-sau-don-tap-kich-tren-bien-baltic-5147554.html",
+   "news": "Tàu hàng Nga bốc cháy sau đòn tập kích trên biển Baltic"
+  },
+  {
    "term": "vinfast",
    "geo": "VN",
    "traffic": "500+",
@@ -433,13 +442,22 @@
    "news": "Mexico bắt trùm ma túy khét tiếng sau cuộc đấu súng đẫm máu"
   },
   {
-   "term": "biển baltic",
+   "term": "elon musk",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-22T06:40:00+00:00",
-   "url": "https://vnexpress.net/tau-hang-nga-boc-chay-sau-don-tap-kich-tren-bien-baltic-5147554.html",
-   "news": "Tàu hàng Nga bốc cháy sau đòn tập kích trên biển Baltic"
+   "ts": "2026-11-22T07:50:00+00:00",
+   "url": "https://eu.36kr.com/en/p/4078984565003138",
+   "news": "Elon Musk Proposes Amazon Rival, Netizens Already Suggest Brand Names"
+  },
+  {
+   "term": "bất động sản",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T08:30:00+00:00",
+   "url": "https://tienphong.vn/su-that-ve-tin-rao-ban-cat-lo-bat-dong-san-post1896533.tpo",
+   "news": "Sự thật về tin rao bán cắt lỗ bất động sản"
   },
   {
    "term": "ben shelton",
@@ -548,15 +566,6 @@
    "ts": "2026-11-22T06:20:00+00:00",
    "url": "https://mashable.com/entertainment/gta-6-vs-gta-5-comparisons",
    "news": "'GTA 6' vs 'GTA 5' comparisons: See how the visuals stack up"
-  },
-  {
-   "term": "elon musk",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T07:50:00+00:00",
-   "url": "https://eu.36kr.com/en/p/4078984565003138",
-   "news": "Elon Musk Proposes Amazon Rival, Netizens Already Suggest Brand Names"
   }
  ],
  "world": [
@@ -1011,6 +1020,15 @@
    "news": "NYT Connections hints today: Meanings for each word for Nov. 22, 2026"
   },
   {
+   "term": "world rugby rankings",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T08:00:00+00:00",
+   "url": "https://www.planetrugby.com/news/latest-world-rugby-rankings-significant-changes-after-springboks-and-all-blacks-defeats",
+   "news": "Latest World Rugby rankings: Significant changes after Springboks and All Blacks defeats"
+  },
+  {
    "term": "rayo vallecano - valencia c. f.",
    "geo": "US",
    "traffic": "1000+",
@@ -1308,15 +1326,6 @@
    "news": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'"
   },
   {
-   "term": "world rugby rankings",
-   "geo": "GB",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T08:00:00+00:00",
-   "url": "https://www.sarugbymag.co.za/blacks-plummet-rankings/",
-   "news": "All Blacks plummet down rankings"
-  },
-  {
    "term": "leandro paredes",
    "geo": "GB",
    "traffic": "1000+",
@@ -1324,6 +1333,15 @@
    "ts": "2026-11-22T08:10:00+00:00",
    "url": "https://as.com/futbol/internacional/boca-atl-mineiro-en-directo-final-de-copa-sudamericana-hoy-en-vivo-f202611-d/",
    "news": "Boca 2-0 Atl. Mineiro : goles, resumen y resultado"
+  },
+  {
+   "term": "leclerc hamilton las vegas gp clash",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T08:20:00+00:00",
+   "url": "https://www.skysports.com/f1/news/13615085/ferrari-boss-frederic-vasseur-blames-charles-leclerc-for-unacceptable-collision-with-lewis-hamilton-in-las-vegas-gp",
+   "news": "Ferrari boss Frederic Vasseur blames Charles Leclerc for 'unacceptable' collision with Lewis Hamilton in Las Vegas GP"
   },
   {
    "term": "rayo vs valencia",
@@ -2649,6 +2667,24 @@
    "news": "Patriots QB Drake Maye has fractured fibula, sources say"
   },
   {
+   "term": "bruno fernandes manchester united contract",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T08:20:00+00:00",
+   "url": "https://www.skysports.com/football/news/13614990/bruno-fernandes-man-utd-captain-confirms-contract-offer-but-says-negotiations-are-on-hold",
+   "news": "Bruno Fernandes: Man Utd captain confirms contract offer but says negotiations are on hold"
+  },
+  {
+   "term": "hamish falconer",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T08:40:00+00:00",
+   "url": "https://www.thetimes.com/uk/politics/article/hamish-falconer-eu-talks-interview-mmvp9vpnd",
+   "news": "He negotiated with the Taliban. Can he strike a deal with the EU?"
+  },
+  {
    "term": "sufc",
    "geo": "GB",
    "traffic": "100+",
@@ -2829,6 +2865,15 @@
    "news": "Dan Osborne & Gabby Allen KISS on night out - 7 years after cheating rumours"
   },
   {
+   "term": "human evolution",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:00:00+00:00",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261118074039.htm",
+   "news": "Scientists say the human family tree may need a radical rewrite"
+  },
+  {
    "term": "sun newspaper",
    "geo": "GB",
    "traffic": "100+",
@@ -2836,7 +2881,52 @@
    "ts": "2026-11-22T08:10:00+00:00",
    "url": "https://www.thesun.co.uk/news/41103898/tiktok-deletes-taliban-martyr-rant/",
    "news": "TikTok deletes sick rank by terrorist praising dead Taliban fighter after alert from The Sun on Sunday"
+  },
+  {
+   "term": "travel",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:20:00+00:00",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
+   "news": "Storms expected on both coasts threatens Thanksgiving travel"
+  },
+  {
+   "term": "nations league quarter finals 2027",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:20:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/football/live/cx8dv4y3nm8et",
+   "news": "England to face Norway in Nations League quarter-finals; Wales to play Slovenia in play-offs"
+  },
+  {
+   "term": "gta 6 money glitch",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:30:00+00:00",
+   "url": "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
+   "news": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game"
+  },
+  {
+   "term": "jfk",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:40:00+00:00",
+   "url": "https://www.theguardian.com/film/2026/nov/19/who-killed-jfk-rob-reiner",
+   "news": "‘Perhaps we are safer not knowing’: a year after his death, Rob Reiner’s JFK assassination book is revealed"
+  },
+  {
+   "term": "nordvpn",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:40:00+00:00",
+   "url": "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
+   "news": "NordVPN at $2.99 a Month Costs Less Than Your Airport Coffee This Thanksgiving"
   }
  ],
- "updated": "2026-11-22T08:25:21.160900+00:00"
+ "updated": "2026-11-22T08:55:21.471702+00:00"
 }
