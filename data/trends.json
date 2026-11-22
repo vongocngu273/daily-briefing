@@ -109,6 +109,15 @@
    "news": "U17 Việt Nam đấu New Zealand: HLV Cristiano Roland cần một lời giải khác"
   },
   {
+   "term": "viên chức",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://dantri.com.vn/noi-vu/nhom-can-bo-vien-chuc-duoc-de-xuat-huong-tro-cap-mot-lan-36-trieu-dong-20261121162153268.htm",
+   "news": "Nhóm cán bộ, viên chức được đề xuất hưởng trợ cấp một lần 36 triệu đồng"
+  },
+  {
    "term": "rayo đấu với valencia",
    "geo": "VN",
    "traffic": "500+",
@@ -163,13 +172,13 @@
    "news": "Real Madrid vs Celta Vigo: Spanish La Liga stats & head-to-head"
   },
   {
-   "term": "viên chức",
+   "term": "musiala",
    "geo": "VN",
    "traffic": "500+",
    "score": 500,
    "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://dantri.com.vn/noi-vu/nhom-can-bo-vien-chuc-duoc-de-xuat-huong-tro-cap-mot-lan-36-trieu-dong-20261121162153268.htm",
-   "news": "Nhóm cán bộ, viên chức được đề xuất hưởng trợ cấp một lần 36 triệu đồng"
+   "url": "https://znews.vn/bayern-bi-to-quay-lung-voi-musiala-vi-tien-post1698204.html",
+   "news": "Bayern bị tố quay lưng với Musiala vì tiền"
   },
   {
    "term": "como vs",
@@ -262,15 +271,6 @@
    "news": "Nhận định UNAM Pumas vs Monterrey: Vé đi tiếp trong tầm tay ai, 8h00 ngày 22/11/2026"
   },
   {
-   "term": "musiala",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://znews.vn/bayern-bi-to-quay-lung-voi-musiala-vi-tien-post1698204.html",
-   "news": "Bayern bị tố quay lưng với Musiala vì tiền"
-  },
-  {
    "term": "vàng sjc giá vàng",
    "geo": "VN",
    "traffic": "200+",
@@ -350,6 +350,15 @@
    "ts": "2026-11-22T00:40:00+00:00",
    "url": "https://thethao247.vn/63-nhan-dinh-pachuca-vs-toluca-cang-thang-tai-hidalgo-05h50-ngay-22-11-2026-c288-d446416.html",
    "news": "Nhận định Pachuca vs Toluca: Căng thẳng tại Hidalgo, 05h50 ngày 22/11/2026"
+  },
+  {
+   "term": "hồng đào",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T02:30:00+00:00",
+   "url": "https://vietnamnet.vn/hong-dao-tuoi-64-o-nha-to-chua-co-ban-trai-va-khong-co-chuyen-cat-se-2-ty-2575180.html",
+   "news": "Diễn viên Hồng Đào tuổi 64: Ở nhà to, chưa có bạn trai và 'không có chuyện cát-sê 2 tỷ'"
   }
  ],
  "world": [
@@ -579,6 +588,15 @@
    "news": "Raiders' Mark Davis unhappy with 'unfair' image of his father in 'Madden' movie"
   },
   {
+   "term": "utah state vs oregon state",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T02:30:00+00:00",
+   "url": "https://www.oregonlive.com/beavers/2026/11/oregon-state-beavers-vs-utah-state-aggies-preview-who-wins-in-the-trenches-could-be-the-difference.html",
+   "news": "Oregon State Beavers vs. Utah State Aggies preview: Who wins in the trenches could be the difference"
+  },
+  {
    "term": "rayo vallecano - valencia c. f.",
    "geo": "US",
    "traffic": "1000+",
@@ -786,6 +804,24 @@
    "news": "NHL On Tap: White-hot Wild eye sixth win in row, point in 14th straight"
   },
   {
+   "term": "product recall",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T02:30:00+00:00",
+   "url": "https://www.foxbusiness.com/lifestyle/over-51000-units-kids-adult-toothpaste-mouthwash-recalled-nationwide-over-hormone-contamination",
+   "news": "Over 51,000 units of kids' and adult toothpaste, mouthwash recalled nationwide over hormone contamination"
+  },
+  {
+   "term": "wemby",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T02:40:00+00:00",
+   "url": "https://www.espn.com/nba/story/_/id/50538594/spurs-victor-wembanyama-shunk-done-due-blister",
+   "news": "Spurs' Victor Wembanyama says new-look 'shunk' done because of blister on hand"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -955,6 +991,51 @@
    "ts": "2026-11-22T02:10:00+00:00",
    "url": "https://www.deseret.com/sports/2026/11/21/cougars-and-utes-hit-the-road-saturday-a-dangerous-place-for-the-hunted/",
    "news": "Cougars and Utes hit the road Saturday — a place where no guarantees are granted"
+  },
+  {
+   "term": "josh hart",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T02:30:00+00:00",
+   "url": "https://www.nba.com/news/josh-hart-toughest-battle-is-mental",
+   "news": "The Athletic: Josh Hart’s toughest battle is mental"
+  },
+  {
+   "term": "hawaii vs nevada",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T02:40:00+00:00",
+   "url": "https://sports.yahoo.com/articles/watch-hawaii-vs-nevada-live-023000007.html",
+   "news": "How to watch Hawaii vs Nevada: Live stream NCAA College Football, TV channel"
+  },
+  {
+   "term": "donovan clingan",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T02:40:00+00:00",
+   "url": "https://ripcityproject.com/donovan-clingan-25-under-25-snub-undersells-anchoring-blazers",
+   "news": "Donovan Clingan’s 25-under-25 snub undersells how much he’s anchoring Blazers"
+  },
+  {
+   "term": "u of u football",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T02:40:00+00:00",
+   "url": "https://utahutes.com/news/2026/11/19/utah-football-season-ticket-renewal-period-opens-today",
+   "news": "Utah Football Season Ticket Renewal Period Opens Today"
+  },
+  {
+   "term": "toronto maple leafs",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T02:40:00+00:00",
+   "url": "https://www.tsn.ca/nhl/article/thought-youd-at-least-maybe-hear-something-lorentz-on-not-receiving-call-from-new-leafs-regime/",
+   "news": "‘Thought you’d at least maybe hear something’: Lorentz on not receiving call from new Leafs regime"
   },
   {
    "term": "harvard yale game",
@@ -1317,6 +1398,24 @@
    "news": "Beauty queen stripped of Miss USA crown over hidden husband, kids gets unexpected spotlight decades later"
   },
   {
+   "term": "ridley scott",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T01:20:00+00:00",
+   "url": "https://collider.com/alien-ridley-scott-leaving-netflix-december-2026/",
+   "news": "Ridley Scott’s Sci-Fi Masterpiece Is Officially Being Removed From Netflix"
+  },
+  {
+   "term": "timberwolves vs grizzlies",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T01:40:00+00:00",
+   "url": "https://www.tradingview.com/news/binance_news:3e190fa4b094b:0-polymarket-s-grizzlies-vs-timberwolves-market-sees-lamelo-ball-yes-odds-fall-25-5-points/",
+   "news": "Polymarket’s Grizzlies vs. Timberwolves Market Sees LaMelo Ball Yes Odds Fall 25.5 Points"
+  },
+  {
    "term": "erin cahill",
    "geo": "US",
    "traffic": "200+",
@@ -1380,6 +1479,24 @@
    "news": "Grading Ashton Daniels' two-interception performance in Week 12 against NC State"
   },
   {
+   "term": "emergency operations center",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T02:30:00+00:00",
+   "url": "https://www.nytimes.com/2026/11/21/climate/army-lead-azide-blast.html",
+   "news": "The Army Rejected a Cleaner Option to Destroy Lead-Laced Explosives in Iowa"
+  },
+  {
+   "term": "carlos salcedo",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T02:30:00+00:00",
+   "url": "https://www.marca.com/mx/futbol/liga-mx/2026/11/22/titan-carlos-salcedo-expulsar-pone-almeyda-rayados-pared.html",
+   "news": "El 'Titán' Carlos Salcedo se hace expulsar y pone a sufrir a Almeyda y Rayados"
+  },
+  {
    "term": "sufc",
    "geo": "GB",
    "traffic": "100+",
@@ -1425,23 +1542,14 @@
    "news": "GTA 6 Safe Codes for Illegal Operations – All Known Combinations"
   },
   {
-   "term": "ridley scott",
+   "term": "dele alli",
    "geo": "GB",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-22T01:20:00+00:00",
-   "url": "https://collider.com/alien-ridley-scott-leaving-netflix-december-2026/",
-   "news": "Ridley Scott’s Sci-Fi Masterpiece Is Officially Being Removed From Netflix"
-  },
-  {
-   "term": "timberwolves vs grizzlies",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T01:40:00+00:00",
-   "url": "https://www.sportsgambler.com/betting-tips/basketball/memphis-grizzlies-vs-minnesota-timberwolves-prediction-odds-6019831/",
-   "news": "Memphis Grizzlies vs Minnesota Timberwolves Prediction, Picks & Odds | NBA Saturday"
+   "ts": "2026-11-22T02:20:00+00:00",
+   "url": "https://www.theguardian.com/football/2026/nov/20/dele-alli-tottenham-mk-dons-england",
+   "news": "Training hard and biding his time, Dele Alli has not given up on football yet"
   }
  ],
- "updated": "2026-11-22T02:24:07.891130+00:00"
+ "updated": "2026-11-22T02:55:27.929331+00:00"
 }
