@@ -190,6 +190,15 @@
    "news": "Bayern bị tố quay lưng với Musiala vì tiền"
   },
   {
+   "term": "tigres đấu với américa",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T02:50:00+00:00",
+   "url": "https://thethao247.vn/63-nhan-dinh-tigres-uanl-vs-club-america-cuoc-chien-ban-linh-10h00-ngay-22-11-2026-c288-d446429.html",
+   "news": "Nhận định Tigres UANL vs Club America: Cuộc chiến bản lĩnh, 10h00 ngày 22/11/2026"
+  },
+  {
    "term": "como vs",
    "geo": "VN",
    "traffic": "200+",
@@ -280,13 +289,13 @@
    "news": "Giá vàng hôm nay 22/11: SJC mất 6 triệu đồng/lượng chỉ trong ít ngày"
   },
   {
-   "term": "tigres đấu với américa",
+   "term": "hồng đào",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-22T02:50:00+00:00",
-   "url": "https://thethao247.vn/63-nhan-dinh-tigres-uanl-vs-club-america-cuoc-chien-ban-linh-10h00-ngay-22-11-2026-c288-d446429.html",
-   "news": "Nhận định Tigres UANL vs Club America: Cuộc chiến bản lĩnh, 10h00 ngày 22/11/2026"
+   "ts": "2026-11-22T02:30:00+00:00",
+   "url": "https://vietnamnet.vn/hong-dao-tuoi-64-o-nha-to-chua-co-ban-trai-va-khong-co-chuyen-cat-se-2-ty-2575180.html",
+   "news": "Diễn viên Hồng Đào tuổi 64: Ở nhà to, chưa có bạn trai và 'không có chuyện cát-sê 2 tỷ'"
   },
   {
    "term": "đội tuyển bóng đá quốc gia thái lan",
@@ -370,13 +379,13 @@
    "news": "Nhận định Pachuca vs Toluca: Căng thẳng tại Hidalgo, 05h50 ngày 22/11/2026"
   },
   {
-   "term": "hồng đào",
+   "term": "doue",
    "geo": "VN",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-22T02:30:00+00:00",
-   "url": "https://vietnamnet.vn/hong-dao-tuoi-64-o-nha-to-chua-co-ban-trai-va-khong-co-chuyen-cat-se-2-ty-2575180.html",
-   "news": "Diễn viên Hồng Đào tuổi 64: Ở nhà to, chưa có bạn trai và 'không có chuyện cát-sê 2 tỷ'"
+   "ts": "2026-11-22T01:30:00+00:00",
+   "url": "https://www.tufutbolero.com/en/news/desire-doue-stretchered-off-in-tears-psg-fear-cruciate-12a8a3",
+   "news": "Désiré Doué stretchered off in tears: PSG fear cruciate damage"
   },
   {
    "term": "game gta6",
@@ -505,6 +514,24 @@
    "ts": "2026-11-22T02:00:00+00:00",
    "url": "https://sports.yahoo.com/articles/celtics-receive-favorable-injury-news-010128201.html",
    "news": "Celtics Receive Favorable Injury News Just Before Kings Game"
+  },
+  {
+   "term": "victor wembanyama",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-22T03:30:00+00:00",
+   "url": "https://www.espn.com/nba/recap/_/gameId/401910027",
+   "news": "Spurs 114-91 Pelicans (Nov 21, 2026) Game Recap"
+  },
+  {
+   "term": "apple tv",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-22T03:40:00+00:00",
+   "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/",
+   "news": "A Guide to the Best Black Friday Streaming Deals: See Platforms, Prices & Plans for Less"
   },
   {
    "term": "posiciones de manchester city contra fulham",
@@ -649,6 +676,33 @@
    "ts": "2026-11-22T02:50:00+00:00",
    "url": "https://www.espn.com/nhl/story/_/id/50532384/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings-fantasy-hockey",
    "news": "NHL Power Rankings: Updated poll, plus fantasy hockey add/drops for all 32 teams"
+  },
+  {
+   "term": "keanu reeves",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T03:30:00+00:00",
+   "url": "https://www.vogue.com/article/kim-kardashian-is-dressing-for-team-lewis-hamilton-2026-11-21",
+   "news": "Kim Kardashian Is Dressing for Team Lewis Hamilton"
+  },
+  {
+   "term": "f1 schedule",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T03:40:00+00:00",
+   "url": "https://www.formula1.com/en/latest/article/strategy-guide-what-are-the-tactical-options-for-the-las-vegas-gp.4k41CN1CbogRoqk1kkOb9C",
+   "news": "What are the tyre strategy options for the Las Vegas GP?"
+  },
+  {
+   "term": "las vegas gp",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T03:40:00+00:00",
+   "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
+   "news": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix"
   },
   {
    "term": "rayo vallecano - valencia c. f.",
@@ -892,6 +946,24 @@
    "ts": "2026-11-22T03:00:00+00:00",
    "url": "https://www.foxnews.com/outkick-sports/cowboys-great-michael-irvin-outlines-franchises-timeline-retain-americas-team-status",
    "news": "Cowboys great Michael Irvin outlines franchise's timeline to retain 'America’s Team' status"
+  },
+  {
+   "term": "jack whitehall",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T03:40:00+00:00",
+   "url": "https://www.chad.co.uk/whats-on/jack-whitehall-ending-2026-by-being-a-bad-influence-in-nottingham-9365050",
+   "news": "Jack Whitehall ending 2026 by being a Bad Influence in Nottingham"
+  },
+  {
+   "term": "donald sutherland",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T03:40:00+00:00",
+   "url": "https://www.toy-people.com/en/?p=116835",
+   "news": "\"Ad Astra\" Earned Raves, but James Gray Has Disowned It for Years — Now He Wants a Shorter Director's Cut After Brad Pitt Pushed Changes"
   },
   {
    "term": "rayo vs valencia",
@@ -1153,6 +1225,33 @@
    "ts": "2026-11-22T03:10:00+00:00",
    "url": "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
    "news": "Hughes to miss remainder of Wild road trip with injury"
+  },
+  {
+   "term": "boubacar traore",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T03:30:00+00:00",
+   "url": "https://sports.yahoo.com/articles/way-too-early-2027-nfl-170006243.html",
+   "news": "Way-Too-Early 2027 NFL Draft EDGE Rankings: 2 Elite Prospects Stealing the Spotlight"
+  },
+  {
+   "term": "las vegas weather",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T03:40:00+00:00",
+   "url": "https://www.mercedesamgf1.com/news/rain-clouds-opening-day-picture-in-las-vegas",
+   "news": "2026 Las Vegas Grand Prix: Rain Clouds Opening Day Picture in Las Vegas"
+  },
+  {
+   "term": "zach lavine",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T03:40:00+00:00",
+   "url": "https://www.fantasypros.com/nba/news/621666/zach-lavine-fills-stat-sheet-friday-against-lakers.php",
+   "news": "Zach LaVine fills stat sheet Friday against Lakers"
   },
   {
    "term": "harvard yale game",
@@ -1596,6 +1695,15 @@
    "news": "Grading Ashton Daniels' two-interception performance in Week 12 against NC State"
   },
   {
+   "term": "dele alli",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T02:20:00+00:00",
+   "url": "https://www.theguardian.com/football/2026/nov/20/dele-alli-tottenham-mk-dons-england",
+   "news": "Training hard and biding his time, Dele Alli has not given up on football yet"
+  },
+  {
    "term": "emergency operations center",
    "geo": "US",
    "traffic": "200+",
@@ -1630,6 +1738,15 @@
    "ts": "2026-11-22T03:10:00+00:00",
    "url": "https://www.theguardian.com/environment/2026/nov/21/climate-talks-stall-countries-mull-showdown-saudi-arabia-over-fossil-fuels",
    "news": "Climate talks stall as countries mull showdown with Saudi Arabia over fossil fuel phaseout | Cop31"
+  },
+  {
+   "term": "avery johnson",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T03:30:00+00:00",
+   "url": "https://247sports.com/college/kansas-state/article/kansas-state-college-football-basketball-k-state-big-12-daily-delivery-collin-klein-tim-fitzgerald-big-12-nil-avery-johnson-fifth-year-292953836/",
+   "news": "Will Avery Johnson return to Kansas State for his final season? | Daily Delivery"
   },
   {
    "term": "sufc",
@@ -1677,14 +1794,14 @@
    "news": "GTA 6 Safe Codes for Illegal Operations – All Known Combinations"
   },
   {
-   "term": "dele alli",
+   "term": "colin farrell",
    "geo": "GB",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-22T02:20:00+00:00",
-   "url": "https://www.theguardian.com/football/2026/nov/20/dele-alli-tottenham-mk-dons-england",
-   "news": "Training hard and biding his time, Dele Alli has not given up on football yet"
+   "ts": "2026-11-22T03:40:00+00:00",
+   "url": "https://www.theguardian.com/tv-and-radio/2026/nov/20/the-seven-best-films-to-watch-on-tv-this-week",
+   "news": "The Slightest Touch to California Schemin’: the seven best films to watch on TV this week"
   }
  ],
- "updated": "2026-11-22T03:25:27.517105+00:00"
+ "updated": "2026-11-22T03:55:24.506663+00:00"
 }
