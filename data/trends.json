@@ -28,6 +28,15 @@
    "news": "Thủy Tiên gây tiếc nuối"
   },
   {
+   "term": "barcelona đấu với villarreal",
+   "geo": "VN",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T12:20:00+00:00",
+   "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-barcelona-villarreal-diem-tua-san-nha-la-liga-c48a1813129.html",
+   "news": "Trực tiếp bóng đá Barcelona - Villarreal: Yamal đá chính, Gordon dự bị (La Liga)"
+  },
+  {
    "term": "real madrid đấu với celta",
    "geo": "VN",
    "traffic": "5000+",
@@ -35,6 +44,24 @@
    "ts": "2026-11-21T19:20:00+00:00",
    "url": "https://bongdaplus.vn/la-liga/nhan-dinh-bong-da-real-madrid-vs-celta-vigo-03h00-ngay-22-11-chien-thang-chat-vat-cho-chu-nha-5294742611.html",
    "news": "Nhận định bóng đá Real Madrid vs Celta Vigo, 03h00 ngày 22/11: Chiến thắng chật vật cho chủ nhà!"
+  },
+  {
+   "term": "juventus đấu với venezia",
+   "geo": "VN",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-22T10:40:00+00:00",
+   "url": "https://bongdaplus.vn/serie-a/nhan-dinh-bong-da-juventus-vs-venezia-18h30-ngay-22-11-lao-ba-thang-nhe-5295502611.html",
+   "news": "Nhận định bóng đá Juventus vs Venezia, 18h30 ngày 22/11: Lão bà thắng nhẹ"
+  },
+  {
+   "term": "hồng lĩnh hà tĩnh đấu với catphcm",
+   "geo": "VN",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-22T10:40:00+00:00",
+   "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-ha-tinh-cong-an-tphcm-quyet-dau-vi-3-diem-v-league-c48a1813062.html",
+   "news": "Trực tiếp bóng đá Hà Tĩnh - Công an TP.HCM: Miệt mài tìm bàn mở tỉ số (V-League)"
   },
   {
    "term": "tottenham đấu với ipswich town",
@@ -125,24 +152,6 @@
    "ts": "2026-11-22T09:00:00+00:00",
    "url": "https://vov.vn/thi-truong/gia-ca-phe-hom-nay-2211-gia-ca-phe-trong-nuoc-giam-ve-72000-dongkg-post1352207.vov",
    "news": "Giá cà phê hôm nay 22/11: Giá cà phê trong nước giảm về 72.000 đồng/kg"
-  },
-  {
-   "term": "juventus đấu với venezia",
-   "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T10:40:00+00:00",
-   "url": "https://bongdaplus.vn/serie-a/nhan-dinh-bong-da-juventus-vs-venezia-18h30-ngay-22-11-lao-ba-thang-nhe-5295502611.html",
-   "news": "Nhận định bóng đá Juventus vs Venezia, 18h30 ngày 22/11: Lão bà thắng nhẹ"
-  },
-  {
-   "term": "hồng lĩnh hà tĩnh đấu với catphcm",
-   "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T10:40:00+00:00",
-   "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-ha-tinh-cong-an-tphcm-quyet-dau-vi-3-diem-v-league-c48a1813062.html",
-   "news": "Trực tiếp bóng đá Hà Tĩnh - Công an TP.HCM: Quyết đấu vì 3 điểm (V-League)"
   },
   {
    "term": "man city vs fulham f.c. standings",
@@ -260,6 +269,15 @@
    "ts": "2026-11-22T10:20:00+00:00",
    "url": "https://laodong.vn/ldt/an-choi/lich-thi-dau-u17-world-cup-2026-hom-nay-2211-1804544.ldo",
    "news": "Lịch thi đấu U17 World Cup 2026 hôm nay 22.11"
+  },
+  {
+   "term": "juventus – venezia",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T11:30:00+00:00",
+   "url": "https://www.virgilio.it/sport/dirette/live/serie-a/22-11-2026/juventus-venezia/2638235/",
+   "news": "LIVE Juventus-Venezia 2-0 Serie A 2026/2027: Gol di Teun Koopmeiners"
   },
   {
    "term": "juventus",
@@ -397,15 +415,6 @@
    "news": "Giá xe VinFast Nerio Green cập nhật tháng 11/2026"
   },
   {
-   "term": "juventus – venezia",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T11:30:00+00:00",
-   "url": "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/11/22-152750499/juve-venezia_diretta_formazioni_e_risultato_in_tempo_reale_spalletti_per_ridurre_il_gap_dal_quarto_posto",
-   "news": "Juve-Venezia, diretta: formazioni e risultato in tempo reale. Spalletti per ridurre il gap dal quarto posto"
-  },
-  {
    "term": "đội tuyển bóng đá u-17 quốc gia đan mạch đấu với u-17 úc",
    "geo": "VN",
    "traffic": "500+",
@@ -422,6 +431,15 @@
    "ts": "2026-11-22T12:10:00+00:00",
    "url": "https://laodong.vn/lao-dong-cuoi-tuan/tu-soi-duong-cho-quoc-dan-di-den-tru-cot-phat-trien-cua-dat-nuoc-1803455.ldo",
    "news": "Từ “soi đường cho quốc dân đi” đến trụ cột phát triển của đất nước"
+  },
+  {
+   "term": "barcelona vs villarreal",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T12:20:00+00:00",
+   "url": "https://www.vietnam.vn/es/nhan-dinh-barcelona-vs-villarreal-diem-tua-san-nha",
+   "news": "Pronóstico Barcelona vs Villarreal: Ventaja de jugar en casa"
   },
   {
    "term": "como vs",
@@ -640,15 +658,6 @@
    "news": "Trực tiếp SV Elversberg vs SC Freiburg: Freiburg nhỉnh hơn trong thế trận cân bằng, chưa có bàn thắng"
   },
   {
-   "term": "mu vs liv",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-21T15:00:00+00:00",
-   "url": "https://vnexpress.net/carragher-pochettino-va-man-utd-co-the-tro-thanh-lien-minh-cong-sinh-ly-tuong-5147298.html",
-   "news": "Carragher: 'Pochettino và Man Utd có thể trở thành liên minh cộng sinh lý tưởng'"
-  },
-  {
    "term": "real betis",
    "geo": "VN",
    "traffic": "100+",
@@ -719,6 +728,24 @@
    "ts": "2026-11-22T06:20:00+00:00",
    "url": "https://mashable.com/entertainment/gta-6-vs-gta-5-comparisons",
    "news": "'GTA 6' vs 'GTA 5' comparisons: See how the visuals stack up"
+  },
+  {
+   "term": "mu vs liv",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T12:30:00+00:00",
+   "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-liverpool-mu-ruc-lua-derby-nuoc-anh-ngoai-hang-anh-c48a1813227.html",
+   "news": "Trực tiếp bóng đá Liverpool - MU: Rực lửa derby nước Anh (Ngoại hạng Anh)"
+  },
+  {
+   "term": "núi nưa",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://www.24h.com.vn/tin-tuc-trong-ngay/tren-dinh-nui-nua-o-xu-thanh-se-dung-len-tuong-phat-lon-nhat-the-gioi-c46a1812841.html",
+   "news": "Trên đỉnh núi Nưa ở xứ Thanh sẽ dựng lên tượng Phật lớn nhất thế giới"
   }
  ],
  "world": [
@@ -766,6 +793,24 @@
    "ts": "2026-11-22T05:50:00+00:00",
    "url": "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls",
    "news": "Latest Heisman Trophy 2026 Odds as Jeremiah Smith Rises, Mestemaker Falls"
+  },
+  {
+   "term": "clima",
+   "geo": "US",
+   "traffic": "20000+",
+   "score": 20000,
+   "ts": "2026-11-22T12:30:00+00:00",
+   "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-yonkers-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-la-semana-del-23-de-noviembre-al-nid22112026/",
+   "news": "Clima en Yonkers, New York hoy: cuál es el pronóstico del tiempo para la semana del 23 de noviembre al 23 de noviembre"
+  },
+  {
+   "term": "atp finals 2026",
+   "geo": "US",
+   "traffic": "20000+",
+   "score": 20000,
+   "ts": "2026-11-22T12:30:00+00:00",
+   "url": "https://www.nytimes.com/athletic/7802181/2026/11/22/atp-finals-alcaraz-zverev-final/",
+   "news": "The ATP Finals ends with Carlos Alcaraz, Alexander Zverev and an emblem of a strange season - The Athletic"
   },
   {
    "term": "dwayne johnson",
@@ -836,6 +881,33 @@
    "traffic": "10000+",
    "score": 10000,
    "ts": "2026-11-22T12:00:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/football/live/crgqx1eqq0zqt",
+   "news": "Sheffield United 4-0 Watford - Ben Brereton Diaz double in Blades win"
+  },
+  {
+   "term": "barcelona vs villarreal",
+   "geo": "GB",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T12:10:00+00:00",
+   "url": "https://as.com/futbol/primera/barcelona-villarreal-en-directo-previa-y-ultima-hora-de-laliga-ea-sports-hoy-en-vivo-f202611-d/",
+   "news": "Barcelona - Villarreal, en directo: previa y última hora de LaLiga EA Sports, hoy en vivo"
+  },
+  {
+   "term": "was snl new last night",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
+   "news": "Is Saturday Night Live New Tonight? About the November 21 Host and Musical Guest"
+  },
+  {
+   "term": "watford",
+   "geo": "GB",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T12:40:00+00:00",
    "url": "https://www.bbc.co.uk/sport/football/live/crgqx1eqq0zqt",
    "news": "Sheffield United 4-0 Watford - Ben Brereton Diaz double in Blades win"
   },
@@ -2217,13 +2289,40 @@
    "news": "Chicago reaches third warmest fall in 150 years, says National Weather Service"
   },
   {
-   "term": "barcelona vs villarreal",
+   "term": "juventus",
    "geo": "GB",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-22T12:10:00+00:00",
-   "url": "https://www.elmundo.es/como/2026/11/22/6b0037f4fdddff467e8b45c2.html",
-   "news": "Barcelona - Villarreal: horario y dónde ver hoy por TV el partido de LaLiga"
+   "ts": "2026-11-22T12:00:00+00:00",
+   "url": "https://www.gazzetta.it/Calcio/Serie-A/Juventus/22-11-2026/live-juve-venezia-risultato-e-gol-in-diretta-serie-a.shtml",
+   "news": "LIVE Juve-Venezia 2-0: Koop raddoppia dopo il vantaggio di Woltemade"
+  },
+  {
+   "term": "ronny hallin laverne shirley actress",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T12:30:00+00:00",
+   "url": "https://www.foxnews.com/entertainment/ronny-hallin-played-maxine-laverne-shirley-dies-88-decades-television-report",
+   "news": "Ronny Hallin, who played Maxine on 'Laverne & Shirley,' dies at 88 after decades in television: report"
+  },
+  {
+   "term": "connections today",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T12:30:00+00:00",
+   "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-22-2026",
+   "news": "NYT Connections hints today: Meanings for each word for Nov. 22, 2026"
+  },
+  {
+   "term": "david dunn",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://www.lancashirebusinessview.co.uk/latest-news-and-features/david-dunn-joins-nybble-as-business-ambassador",
+   "news": "David Dunn joins Nybble as business ambassador"
   },
   {
    "term": "harvard yale game",
@@ -3252,15 +3351,6 @@
    "news": "Shop Walmart's best early Black Friday deals on Apple AirPods, Ninja air fryers, Shark vacuums and more"
   },
   {
-   "term": "juventus",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T12:00:00+00:00",
-   "url": "https://www.gazzetta.it/Calcio/Serie-A/Juventus/22-11-2026/live-juve-venezia-risultato-e-gol-in-diretta-serie-a.shtml",
-   "news": "LIVE Juve-Venezia 0-0: Stankovic respinge un tiro di Zhegrova, Vicario attento su Busio"
-  },
-  {
    "term": "nick cannon",
    "geo": "US",
    "traffic": "200+",
@@ -3277,6 +3367,42 @@
    "ts": "2026-11-22T12:10:00+00:00",
    "url": "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/",
    "news": "Coming to XBOX Game Pass: Hela: of Mice & Magic, The Outlast Trials, Sniper Ghost Warrior Contracts 2, and More"
+  },
+  {
+   "term": "derbyshire police m1 safety warning",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T12:30:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cwj3kxr4eyk0o",
+   "news": "Warning after stone thrown at police vehicle on M1"
+  },
+  {
+   "term": "jack campbell text kelvin sheppard",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://sports.yahoo.com/articles/jack-campbell-sent-detroit-lions-100408895.html",
+   "news": "Jack Campbell sent Detroit Lions DC a text that fired him up"
+  },
+  {
+   "term": "jared padalecki guarding stars movie",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
+   "news": "Guarding Stars review – Leighton Meester is a delight in fizzy Netflix holiday romance"
+  },
+  {
+   "term": "konyaspor vs beşiktaş",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://www.beyazbelgehaber.com/haber/besiktasin-maci-var-besiktas-t-konyaspor-ile-karsilasacak",
+   "news": "Beşiktaşın Maçı Var: Beşiktaş, T. Konyaspor ile Karşılaşacak"
   },
   {
    "term": "sufc",
@@ -3664,7 +3790,43 @@
    "ts": "2026-11-22T12:10:00+00:00",
    "url": "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/",
    "news": "Exclusive | Teen killer who held down Tessa Majors while pal plunged knife into her heart freed early — despite violence behind bars"
+  },
+  {
+   "term": "carnell tate",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T12:30:00+00:00",
+   "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-21/cbs-carnell-tate-shoulder-likely-to-play-vs-dal",
+   "news": "CBS: Carnell Tate (shoulder) likely to play vs. DAL"
+  },
+  {
+   "term": "marshawn lynch",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://sports.yahoo.com/articles/49ers-rookie-kaelon-black-draws-023936889.html",
+   "news": "49ers Rookie Kaelon Black Draws Eye-Opening Comparison to Marshawn Lynch"
+  },
+  {
+   "term": "andrew tate",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
+   "news": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary"
+  },
+  {
+   "term": "commonhold",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T12:40:00+00:00",
+   "url": "https://www.bbc.co.uk/news/videos/cm782ee9lp32o",
+   "news": "Leasehold system set to be scrapped in England and Wales"
   }
  ],
- "updated": "2026-11-22T12:25:26.764655+00:00"
+ "updated": "2026-11-22T12:55:26.928031+00:00"
 }
