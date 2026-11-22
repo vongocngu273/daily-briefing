@@ -1,6 +1,15 @@
 {
  "vn": [
   {
+   "term": "xsmn",
+   "geo": "VN",
+   "traffic": "200000+",
+   "score": 200000,
+   "ts": "2026-11-22T09:30:00+00:00",
+   "url": "https://laodong.vn/ldt/tin-tuc/ket-qua-xo-so-hau-giang-ngay-2111-1804294.ldo",
+   "news": "Kết quả xổ số Hậu Giang ngày 21.11"
+  },
+  {
    "term": "real madrid đấu với celta",
    "geo": "VN",
    "traffic": "5000+",
@@ -181,6 +190,15 @@
    "news": "Trúng số 'hy hữu': 12 tờ vé số Bình Phước vừa trúng đặc biệt vừa trúng giải tư, hơn 24 tỉ"
   },
   {
+   "term": "bất động sản",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T08:30:00+00:00",
+   "url": "https://www.24h.com.vn/kinh-doanh/su-that-ve-tin-rao-ban-cat-lo-bat-dong-san-c161a1813208.html",
+   "news": "Sự thật về tin rao bán cắt lỗ bất động sản"
+  },
+  {
    "term": "giá vàng 22 11 2026",
    "geo": "VN",
    "traffic": "1000+",
@@ -316,13 +334,13 @@
    "news": "Giá xe VinFast Nerio Green cập nhật tháng 11/2026"
   },
   {
-   "term": "bất động sản",
+   "term": "câu lạc bộ bóng đá bournemouth",
    "geo": "VN",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-22T08:30:00+00:00",
-   "url": "https://znews.vn/ly-do-bo-sua-bay-co-doanh-thu-thap-nguy-co-thua-lo-post1697645.html",
-   "news": "Lý do 'Bò sữa bay' có doanh thu thấp, nguy cơ thua lỗ"
+   "ts": "2026-11-22T08:50:00+00:00",
+   "url": "https://znews.vn/doi-bong-ngoai-hang-anh-thang-9-tran-lien-tiep-post1698246.html",
+   "news": "Đội bóng Ngoại hạng Anh thắng 9 trận liên tiếp"
   },
   {
    "term": "como vs",
@@ -496,13 +514,13 @@
    "news": "Elon Musk Proposes Amazon Rival, Netizens Already Suggest Brand Names"
   },
   {
-   "term": "câu lạc bộ bóng đá bournemouth",
+   "term": "chặt cây",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-22T08:50:00+00:00",
-   "url": "https://znews.vn/doi-bong-ngoai-hang-anh-thang-9-tran-lien-tiep-post1698246.html",
-   "news": "Đội bóng Ngoại hạng Anh thắng 9 trận liên tiếp"
+   "ts": "2026-11-22T09:30:00+00:00",
+   "url": "https://dantri.com.vn/giao-duc/vu-tu-y-to-chuc-cua-cay-trong-san-truong-canh-cao-hieu-truong-20261122151738422.htm",
+   "news": "Vụ tự ý tổ chức cưa cây trong sân trường: Cảnh cáo hiệu trưởng"
   },
   {
    "term": "ben shelton",
@@ -611,15 +629,6 @@
    "ts": "2026-11-22T06:20:00+00:00",
    "url": "https://mashable.com/entertainment/gta-6-vs-gta-5-comparisons",
    "news": "'GTA 6' vs 'GTA 5' comparisons: See how the visuals stack up"
-  },
-  {
-   "term": "chặt cây",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T09:30:00+00:00",
-   "url": "https://dantri.com.vn/giao-duc/vu-tu-y-to-chuc-cua-cay-trong-san-truong-canh-cao-hieu-truong-20261122151738422.htm",
-   "news": "Vụ tự ý tổ chức cưa cây trong sân trường: Cảnh cáo hiệu trưởng"
   }
  ],
  "world": [
@@ -1434,6 +1443,15 @@
    "news": "Paredes se desmaya en directo en mitad de una entrevista"
   },
   {
+   "term": "pakistan a vs india a",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T10:00:00+00:00",
+   "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-pakistan-a-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-west-end-park-international-cricket-stadium/liveblog/136068901.cms",
+   "news": "India A vs Pakistan A Live Score, ACC Mens Asia Cup Rising Stars 2026: Pakistan win toss, choose to bat against Tilak Varma's India"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -1927,6 +1945,15 @@
    "ts": "2026-11-22T07:50:00+00:00",
    "url": "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
    "news": "Can you romance Vicki in GTA 6. How to see her naked in strip club and order a private dance"
+  },
+  {
+   "term": "christmas tree",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T09:30:00+00:00",
+   "url": "https://www.foxnews.com/video/6408668869112",
+   "news": "WATCH LIVE: The ‘All-American Christmas Tree’ brings holiday cheer to FOX Square"
   },
   {
    "term": "harvard yale game",
@@ -2793,6 +2820,15 @@
    "news": "He negotiated with the Taliban. Can he strike a deal with the EU?"
   },
   {
+   "term": "jfk",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T08:40:00+00:00",
+   "url": "https://www.today.com/video/see-how-today-covered-the-jfk-assassination-in-1963-273660997794",
+   "news": "See How TODAY Covered the JFK Assassination in 1963"
+  },
+  {
    "term": "childcare",
    "geo": "GB",
    "traffic": "200+",
@@ -2802,6 +2838,15 @@
    "news": "‘If it’s the crèche now, what’s next?’: Fears for future of border village as sole childcare centre set to close"
   },
   {
+   "term": "liam hemsworth",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T09:00:00+00:00",
+   "url": "https://www.aol.com/articles/miley-cyrus-dating-history-ex-044032000.html",
+   "news": "Miley Cyrus’ Dating History: From Ex Liam Hemsworth to Husband Maxx Morando"
+  },
+  {
    "term": "daycare",
    "geo": "GB",
    "traffic": "200+",
@@ -2809,6 +2854,24 @@
    "ts": "2026-11-22T09:10:00+00:00",
    "url": "https://www.bbc.co.uk/news/articles/cvkg58d7z10ro",
    "news": "Indonesian daycare principal jailed for five years over child abuse case"
+  },
+  {
+   "term": "piers morgan",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T09:50:00+00:00",
+   "url": "https://www.aol.co.uk/articles/charlotte-hawkins-breaks-silence-piers-133700000.html",
+   "news": "Charlotte Hawkins breaks silence on Piers Morgan's GMB return"
+  },
+  {
+   "term": "zimbabwe vs ireland",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T10:00:00+00:00",
+   "url": "https://www.cricbuzz.com/live-cricket-scores/177580/irew-vs-zimw-26th-match-super-six-a3-v-b3-icc-womens-emerging-nations-trophy-2026",
+   "news": "IREW vs ZIMW, 26th Match, Super Six (A3 v B3), ICC Women's Emerging Nations Trophy, 2026 - Commentary"
   },
   {
    "term": "sufc",
@@ -3018,15 +3081,6 @@
    "news": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game"
   },
   {
-   "term": "jfk",
-   "geo": "US",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T08:40:00+00:00",
-   "url": "https://www.theguardian.com/film/2026/nov/19/who-killed-jfk-rob-reiner",
-   "news": "‘Perhaps we are safer not knowing’: a year after his death, Rob Reiner’s JFK assassination book is revealed"
-  },
-  {
    "term": "nordvpn",
    "geo": "US",
    "traffic": "100+",
@@ -3063,15 +3117,6 @@
    "news": "College Football Prediction Markets Apps: Get Best Offers For NCAAF Week 12 Games"
   },
   {
-   "term": "liam hemsworth",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T09:00:00+00:00",
-   "url": "https://www.aol.com/articles/miley-cyrus-dating-history-ex-044032000.html",
-   "news": "Miley Cyrus’ Dating History: From Ex Liam Hemsworth to Husband Maxx Morando"
-  },
-  {
    "term": "unemployment",
    "geo": "US",
    "traffic": "100+",
@@ -3106,7 +3151,25 @@
    "ts": "2026-11-22T09:30:00+00:00",
    "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-pakistan-a-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-west-end-park-international-cricket-stadium/liveblog/136068901.cms",
    "news": "India A vs Pakistan A Live Score, ACC Mens Asia Cup Rising Stars 2026: Pakistan win toss, opt to bat against Tilak Varma's India"
+  },
+  {
+   "term": "you can see everything where to watch",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T09:50:00+00:00",
+   "url": "https://www.theguardian.com/commentisfree/2026/nov/20/watch-you-can-see-everything-for-the-culture-cringe-comedy-film",
+   "news": "I will watch Nathan Fielder’s You Can See Everything – even if it makes me vomit into my popcorn mid-screening"
+  },
+  {
+   "term": "is taylor swift pregnant",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T10:00:00+00:00",
+   "url": "https://people.com/patrick-and-brittany-mahomes-reveal-the-sex-of-baby-no-4-12261760",
+   "news": "Patrick and Brittany Mahomes Are Expecting a Boy! See Their Gender Reveal"
   }
  ],
- "updated": "2026-11-22T09:55:23.654340+00:00"
+ "updated": "2026-11-22T10:25:25.722654+00:00"
 }
