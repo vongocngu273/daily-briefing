@@ -253,6 +253,33 @@
    "news": ""
   },
   {
+   "term": "ninh bình",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T06:30:00+00:00",
+   "url": "https://bongdaplus.vn/v-league/nhan-dinh-bong-da-da-nang-vs-ninh-binh-18h00-ngay-22-11-thay-tuong-co-doi-van-5295492611.html",
+   "news": "Nhận định bóng đá Đà Nẵng vs Ninh Bình, 18h00 ngày 22/11: Thay tướng có đổi vận?"
+  },
+  {
+   "term": "công vinh thủy tiên chia tay",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T07:30:00+00:00",
+   "url": "https://www.saostar.vn/dien-anh/thuy-tien-gay-tiec-nuoi-202611201617355403.html",
+   "news": "Thủy Tiên gây tiếc nuối"
+  },
+  {
+   "term": "vinfast",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T07:40:00+00:00",
+   "url": "https://www.24h.com.vn/o-to/gia-xe-vinfast-nerio-green-cap-nhat-thang-11-2026-c747a1812782.html",
+   "news": "Giá xe VinFast Nerio Green cập nhật tháng 11/2026"
+  },
+  {
    "term": "como vs",
    "geo": "VN",
    "traffic": "200+",
@@ -404,15 +431,6 @@
    "ts": "2026-11-22T06:10:00+00:00",
    "url": "https://vnexpress.net/mexico-bat-trum-ma-tuy-khet-tieng-sau-cuoc-dau-sung-dam-mau-5147559.html",
    "news": "Mexico bắt trùm ma túy khét tiếng sau cuộc đấu súng đẫm máu"
-  },
-  {
-   "term": "ninh bình",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T06:30:00+00:00",
-   "url": "https://vietnamnet.vn/nhan-dinh-da-nang-vs-ninh-binh-18h-ngay-22-12-2577401.html",
-   "news": "Nhận định SHB Đà Nẵng vs Ninh Bình: Trợ lý cũ của thầy Park ra mắt"
   },
   {
    "term": "biển baltic",
@@ -1272,6 +1290,15 @@
    "news": "Ferrari's Lewis Hamilton and Charles Leclerc clash at Las Vegas Grand Prix"
   },
   {
+   "term": "theresa may",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T06:40:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cvj6l8y3x1x4o",
+   "news": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -1686,6 +1713,15 @@
    "news": "GTA 6: A guide to every mission and chapter"
   },
   {
+   "term": "donnie gta 6",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T06:20:00+00:00",
+   "url": "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
+   "news": "GTA 6's First Major Death Might Be The Most Disturbing In The Entire Franchise"
+  },
+  {
    "term": "vicki gta 6 voice actor",
    "geo": "US",
    "traffic": "500+",
@@ -1693,15 +1729,6 @@
    "ts": "2026-11-22T06:40:00+00:00",
    "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
    "news": "Who is Taryn Manning? GTA 6 Vicki actor and singer"
-  },
-  {
-   "term": "theresa may",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T06:40:00+00:00",
-   "url": "https://www.bbc.co.uk/news/articles/cvj6l8y3x1x4o",
-   "news": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'"
   },
   {
    "term": "lucia voice actor",
@@ -1720,6 +1747,24 @@
    "ts": "2026-11-22T06:50:00+00:00",
    "url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
    "news": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history"
+  },
+  {
+   "term": "russian missiles poland",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T07:10:00+00:00",
+   "url": "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
+   "news": "NATO will defend every inch of Polish territory, Rutte says"
+  },
+  {
+   "term": "president trump",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T07:20:00+00:00",
+   "url": "https://thehill.com/homenews/campaign/6234314-trump-maga-split-midterms/",
+   "news": "Trump’s grip on GOP tested as MAGA allies head for exit"
   },
   {
    "term": "harvard yale game",
@@ -2451,15 +2496,6 @@
    "news": "Resolve and timely stops powers WSU to much-needed 79-63 victory over Hawaii"
   },
   {
-   "term": "donnie gta 6",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T06:20:00+00:00",
-   "url": "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
-   "news": "GTA 6's First Major Death Might Be The Most Disturbing In The Entire Franchise"
-  },
-  {
    "term": "john wick",
    "geo": "US",
    "traffic": "200+",
@@ -2467,6 +2503,24 @@
    "ts": "2026-11-22T06:20:00+00:00",
    "url": "https://www.imdb.com/news/ni66121814/?ref_=nmnw_art_perm",
    "news": "John Wick Franchise Officially Returning In New Prequel Set Years Before The Impossible Task"
+  },
+  {
+   "term": "uae vs nep",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:30:00+00:00",
+   "url": "https://www.cricketworld.com/match-predictions-acc-mens-asia-cup-rising-stars-2026-india-a-vs-pakistan-a-and-uae-vs-nepal-matches-7-and-8-november-22/114475.htm",
+   "news": "ACC Men's Asia Cup Rising Stars 2026: Nov 22 Predictions"
+  },
+  {
+   "term": "playstation plus",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:30:00+00:00",
+   "url": "https://www.pushsquare.com/guides/these-11plus-ps5-and-ps-plus-games-are-coming-out-next-week-23rd-29th-november",
+   "news": "These 11+ PS5 and PS Plus Games Are Coming Out Next Week (23rd-29th November)"
   },
   {
    "term": "robert downey jr",
@@ -2494,6 +2548,42 @@
    "ts": "2026-11-22T06:50:00+00:00",
    "url": "https://www.bbc.co.uk/sport/formula1/articles/c9gklmdmnzydo",
    "news": "Las Vegas Grand Prix: George Russell fastest in second practice after rain"
+  },
+  {
+   "term": "prince william foreign visits 2027",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:50:00+00:00",
+   "url": "https://www.thetimes.com/uk/royal-family/article/prince-william-government-request-overseas-trips-gnffrqzxq",
+   "news": "Prince William to step up on world stage with more royal trips"
+  },
+  {
+   "term": "rhun ap iorwerth",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T07:10:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/ck9874vydr83o",
+   "news": "First minister 'gobsmacked' by Burnham's devolution calls rejection"
+  },
+  {
+   "term": "actor",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T07:40:00+00:00",
+   "url": "https://deadline.com/2026/11/e-j-carroll-dead-deuce-boardwalk-empire-blue-bloods-1237230599/",
+   "news": "E.J. Carroll Dies: ‘The Deuce,’ ‘Boardwalk Empire,’ ‘Law & Order’ Actor Was 66"
+  },
+  {
+   "term": "alexander haskin",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T07:40:00+00:00",
+   "url": "https://nypost.com/2026/11/18/us-news/netflix-actor-idd-as-man-who-hit-woman-drowned-at-santa-monica-pier/",
+   "news": "Netflix actor, 38, ID’d after slapping woman then drowning off Santa Monica Pier as his dad calls it ‘a big mystery’"
   },
   {
    "term": "sufc",
@@ -2595,24 +2685,6 @@
    "news": "2026 Las Vegas Grand Prix: Russell and Verstappen trade lead"
   },
   {
-   "term": "uae vs nep",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T06:30:00+00:00",
-   "url": "https://www.cricketworld.com/match-predictions-acc-mens-asia-cup-rising-stars-2026-india-a-vs-pakistan-a-and-uae-vs-nepal-matches-7-and-8-november-22/114475.htm",
-   "news": "ACC Men's Asia Cup Rising Stars 2026: Nov 22 Predictions"
-  },
-  {
-   "term": "prince william foreign visits 2027",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T06:50:00+00:00",
-   "url": "https://www.thetimes.com/uk/royal-family/article/prince-william-government-request-overseas-trips-gnffrqzxq",
-   "news": "Prince William to step up on world stage with more royal trips"
-  },
-  {
    "term": "powerball winner",
    "geo": "US",
    "traffic": "100+",
@@ -2629,7 +2701,25 @@
    "ts": "2026-11-22T07:00:00+00:00",
    "url": "https://deadline.com/2026/11/e-j-carroll-dead-deuce-boardwalk-empire-blue-bloods-1237230599/",
    "news": "E.J. Carroll Dies: ‘The Deuce,’ ‘Boardwalk Empire,’ ‘Law & Order’ Actor Was 66"
+  },
+  {
+   "term": "selena gomez",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T07:20:00+00:00",
+   "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/selena-gomez-martin-short-wedding-cake-jimmy-kimmel-live-1235661552/",
+   "news": "Selena Gomez Shares Her Reaction to Martin Short Ruining Her Wedding Cake"
+  },
+  {
+   "term": "aeropuerto",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T07:40:00+00:00",
+   "url": "https://elpais.com/us/migracion/2026-11-22/agentes-del-ice-causan-terror-al-detener-a-dos-personas-en-el-embarque-de-un-vuelo-en-seattle.html",
+   "news": "Agentes del ICE causan terror al detener a dos personas en el embarque de un vuelo en Seattle"
   }
  ],
- "updated": "2026-11-22T07:25:21.607882+00:00"
+ "updated": "2026-11-22T07:55:25.773915+00:00"
 }
