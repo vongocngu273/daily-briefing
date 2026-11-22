@@ -100,6 +100,15 @@
    "news": "U17 Việt Nam đấu New Zealand: HLV Cristiano Roland cần một lời giải khác"
   },
   {
+   "term": "đội tuyển bóng đá u 17 quốc gia new zealand",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T00:50:00+00:00",
+   "url": "https://vietnamnet.vn/u17-viet-nam-dau-new-zealand-hlv-roland-can-mot-loi-giai-khac-2577447.html",
+   "news": "U17 Việt Nam đấu New Zealand: HLV Cristiano Roland cần một lời giải khác"
+  },
+  {
    "term": "rayo đấu với valencia",
    "geo": "VN",
    "traffic": "500+",
@@ -152,6 +161,15 @@
    "ts": "2026-11-21T19:50:00+00:00",
    "url": "https://www.bbc.com/sport/football/live/c6205wg000g8t",
    "news": "Real Madrid vs Celta Vigo: Spanish La Liga stats & head-to-head"
+  },
+  {
+   "term": "viên chức",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://dantri.com.vn/noi-vu/nhom-can-bo-vien-chuc-duoc-de-xuat-huong-tro-cap-mot-lan-36-trieu-dong-20261121162153268.htm",
+   "news": "Nhóm cán bộ, viên chức được đề xuất hưởng trợ cấp một lần 36 triệu đồng"
   },
   {
    "term": "como vs",
@@ -226,6 +244,15 @@
    "news": "Khối ngoại bán ròng chứng khoán vượt kỷ lục năm 2025"
   },
   {
+   "term": "động đất",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T00:20:00+00:00",
+   "url": "https://tuoitre.vn/dong-dat-lon-lien-tiep-o-trung-quoc-indonesia-va-peru-100261121200540904.htm",
+   "news": "Động đất lớn liên tiếp ở Trung Quốc, Indonesia và Peru"
+  },
+  {
    "term": "pumas unam đấu với monterrey",
    "geo": "VN",
    "traffic": "200+",
@@ -235,13 +262,22 @@
    "news": "Nhận định UNAM Pumas vs Monterrey: Vé đi tiếp trong tầm tay ai, 8h00 ngày 22/11/2026"
   },
   {
-   "term": "viên chức",
+   "term": "musiala",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
    "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://dantri.com.vn/noi-vu/nhom-can-bo-vien-chuc-duoc-de-xuat-huong-tro-cap-mot-lan-36-trieu-dong-20261121162153268.htm",
-   "news": "Nhóm cán bộ, viên chức được đề xuất hưởng trợ cấp một lần 36 triệu đồng"
+   "url": "https://znews.vn/bayern-bi-to-quay-lung-voi-musiala-vi-tien-post1698204.html",
+   "news": "Bayern bị tố quay lưng với Musiala vì tiền"
+  },
+  {
+   "term": "vàng sjc giá vàng",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T01:30:00+00:00",
+   "url": "https://vietnamnet.vn/gia-vang-hom-nay-22-11-sjc-mat-6-trieu-dong-luong-chieu-mua-2577390.html",
+   "news": "Giá vàng hôm nay 22/11: SJC mất 6 triệu đồng/lượng chỉ trong ít ngày"
   },
   {
    "term": "ben shelton",
@@ -307,15 +343,6 @@
    "news": ""
   },
   {
-   "term": "động đất",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T00:20:00+00:00",
-   "url": "https://tuoitre.vn/dong-dat-lon-lien-tiep-o-trung-quoc-indonesia-va-peru-100261121200540904.htm",
-   "news": "Động đất lớn liên tiếp ở Trung Quốc, Indonesia và Peru"
-  },
-  {
    "term": "pachuca đấu với toluca",
    "geo": "VN",
    "traffic": "100+",
@@ -323,15 +350,6 @@
    "ts": "2026-11-22T00:40:00+00:00",
    "url": "https://thethao247.vn/63-nhan-dinh-pachuca-vs-toluca-cang-thang-tai-hidalgo-05h50-ngay-22-11-2026-c288-d446416.html",
    "news": "Nhận định Pachuca vs Toluca: Căng thẳng tại Hidalgo, 05h50 ngày 22/11/2026"
-  },
-  {
-   "term": "musiala",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://znews.vn/bayern-bi-to-quay-lung-voi-musiala-vi-tien-post1698204.html",
-   "news": "Bayern bị tố quay lưng với Musiala vì tiền"
   }
  ],
  "world": [
@@ -343,6 +361,15 @@
    "ts": "2026-11-21T15:40:00+00:00",
    "url": "https://www.nytimes.com/2026/11/20/business/anthropic-ai-stocks-sp500.html",
    "news": "Stocks Skid Into a Correction, as A.I. Worries Intensify"
+  },
+  {
+   "term": "strictly come dancing blackpool disruption",
+   "geo": "GB",
+   "traffic": "20000+",
+   "score": 20000,
+   "ts": "2026-11-22T00:30:00+00:00",
+   "url": "https://www.theguardian.com/tv-and-radio/2026/nov/21/police-called-strictly-come-dancing-after-disruption-during-live-show",
+   "news": "Police called to Strictly Come Dancing after ‘disruption’ during live show"
   },
   {
    "term": "dwayne johnson",
@@ -424,6 +451,15 @@
    "ts": "2026-11-21T15:40:00+00:00",
    "url": "https://www.thesun.co.uk/sport/41075157/lauren-price-vs-michaela-kotaskova-live-results-time-updates/",
    "news": "Lauren Price vs Michaela Kotaskova LIVE: Welsh star becomes undisputed champion"
+  },
+  {
+   "term": "celtics vs kings",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-22T02:00:00+00:00",
+   "url": "https://sports.yahoo.com/articles/celtics-receive-favorable-injury-news-010128201.html",
+   "news": "Celtics Receive Favorable Injury News Just Before Kings Game"
   },
   {
    "term": "posiciones de manchester city contra fulham",
@@ -741,6 +777,15 @@
    "news": "New movies to watch this weekend: See 'The Hunger Games: Sunrise on the Reaping' in theaters, rent or buy 'The Odyssey,' stream 'Madden' on Prime Video"
   },
   {
+   "term": "wild vs canucks",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T02:10:00+00:00",
+   "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-21-2026",
+   "news": "NHL On Tap: White-hot Wild eye sixth win in row, point in 14th straight"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -883,6 +928,33 @@
    "ts": "2026-11-22T01:10:00+00:00",
    "url": "https://www.yahoo.com/entertainment/tv/articles/tracey-edmonds-previews-love-vineyard-182427793.html",
    "news": "Tracey Edmonds previews ‘Love on the Vineyard’ premiering 11/21 on Lifetime"
+  },
+  {
+   "term": "spurs vs pelicans",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://cwibc.co.id/en/spurs-adjust-rotations-harper-injury",
+   "news": "Spurs Adjust Rotations as Harper Misses Pelicans Matchup"
+  },
+  {
+   "term": "kraken vs sharks",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T02:10:00+00:00",
+   "url": "https://sports.yahoo.com/articles/seattle-kraken-travel-san-jose-231017347.html",
+   "news": "Seattle Kraken Travel to San Jose: Projected Lines, Game Notes, and How to Watch (Nov. 21)"
+  },
+  {
+   "term": "university of utah football",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T02:10:00+00:00",
+   "url": "https://www.deseret.com/sports/2026/11/21/cougars-and-utes-hit-the-road-saturday-a-dangerous-place-for-the-hunted/",
+   "news": "Cougars and Utes hit the road Saturday — a place where no guarantees are granted"
   },
   {
    "term": "harvard yale game",
@@ -1227,6 +1299,15 @@
    "news": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history"
   },
   {
+   "term": "chris hemsworth",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T00:50:00+00:00",
+   "url": "https://pagesix.com/2026/11/20/celebrity-news/teen-arrested-over-alleged-break-in-at-chris-hemsworths-australian-home/",
+   "news": "Teen, 16, arrested over alleged break-in at Chris Hemsworth’s Australian home"
+  },
+  {
    "term": "miss universo 2026",
    "geo": "US",
    "traffic": "200+",
@@ -1236,13 +1317,67 @@
    "news": "Beauty queen stripped of Miss USA crown over hidden husband, kids gets unexpected spotlight decades later"
   },
   {
-   "term": "spurs vs pelicans",
+   "term": "erin cahill",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T01:50:00+00:00",
+   "url": "https://www.justjared.com/2026/11/21/is-erin-cahill-married-or-single-all-about-the-hallmark-channel-stars-real-life-husband/",
+   "news": "Is Erin Cahill Married or Single? All About the Hallmark Channel Star’s Real-Life Husband!"
+  },
+  {
+   "term": "is zion williamson playing tonight",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T02:00:00+00:00",
+   "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/nor-starts-fears-jones-bey-queen-missi",
+   "news": "NOR starts Fears, Jones, Bey, Queen, Missi"
+  },
+  {
+   "term": "morelia vs la paz",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T02:00:00+00:00",
+   "url": "https://www.soyfutbol.com/en/leagues/silver-throne-showdown-morelia-and-la-paz-kick-off-the-expansion-league-finalwhos-taking-the-crown-20261121-0062.html",
+   "news": "Silver Throne Showdown: Morelia and La Paz Kick Off the Expansion League Final—Who’s Taking the Crown?"
+  },
+  {
+   "term": "ryan garcia",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T02:00:00+00:00",
+   "url": "https://www.si.com/prediction-markets/floyd-mayweather-jr-vs-ryan-garcia-fight-date-waiting-game-continues-01m7wmj4hhgr",
+   "news": "Floyd Mayweather Jr. vs Ryan Garcia Fight Date: Waiting Game Continues"
+  },
+  {
+   "term": "kurt russell",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T02:00:00+00:00",
+   "url": "https://movieweb.com/rivals-of-amziah-king-hulu-date/",
+   "news": "Matthew McConaughey's New R-Rated Western Thriller Officially Confirms Streaming Release Date"
+  },
+  {
+   "term": "gta 6 mission list",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://cwibc.co.id/en/spurs-adjust-rotations-harper-injury",
-   "news": "Spurs Adjust Rotations as Harper Misses Pelicans Matchup"
+   "ts": "2026-11-22T02:00:00+00:00",
+   "url": "https://www.radiotimes.com/technology/gaming/gta-6-how-long-hours/",
+   "news": "How long is GTA 6? We asked the developers how many hours it'll take to beat"
+  },
+  {
+   "term": "ashton daniels",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T02:10:00+00:00",
+   "url": "https://chopchat.com/grading-ashton-daniels-two-interception-performance-in-week-12-against-nc-state",
+   "news": "Grading Ashton Daniels' two-interception performance in Week 12 against NC State"
   },
   {
    "term": "sufc",
@@ -1290,14 +1425,23 @@
    "news": "GTA 6 Safe Codes for Illegal Operations – All Known Combinations"
   },
   {
-   "term": "chris hemsworth",
+   "term": "ridley scott",
    "geo": "GB",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-22T00:50:00+00:00",
-   "url": "https://pagesix.com/2026/11/20/celebrity-news/teen-arrested-over-alleged-break-in-at-chris-hemsworths-australian-home/",
-   "news": "Teen, 16, arrested over alleged break-in at Chris Hemsworth’s Australian home"
+   "ts": "2026-11-22T01:20:00+00:00",
+   "url": "https://collider.com/alien-ridley-scott-leaving-netflix-december-2026/",
+   "news": "Ridley Scott’s Sci-Fi Masterpiece Is Officially Being Removed From Netflix"
+  },
+  {
+   "term": "timberwolves vs grizzlies",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T01:40:00+00:00",
+   "url": "https://www.sportsgambler.com/betting-tips/basketball/memphis-grizzlies-vs-minnesota-timberwolves-prediction-odds-6019831/",
+   "news": "Memphis Grizzlies vs Minnesota Timberwolves Prediction, Picks & Odds | NBA Saturday"
   }
  ],
- "updated": "2026-11-22T01:28:28.079112+00:00"
+ "updated": "2026-11-22T02:24:07.891130+00:00"
 }
