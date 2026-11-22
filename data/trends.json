@@ -118,6 +118,15 @@
    "news": "Nhóm cán bộ, viên chức được đề xuất hưởng trợ cấp một lần 36 triệu đồng"
   },
   {
+   "term": "mỹ tâm",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T04:30:00+00:00",
+   "url": "https://vnexpress.net/see-the-light-2-suc-hut-cua-my-tam-5147410.html",
+   "news": "'See The Light 2': Sức hút của Mỹ Tâm"
+  },
+  {
    "term": "rayo đấu với valencia",
    "geo": "VN",
    "traffic": "500+",
@@ -199,13 +208,22 @@
    "news": "Nhận định Tigres UANL vs Club America: Cuộc chiến bản lĩnh, 10h00 ngày 22/11/2026"
   },
   {
-   "term": "mỹ tâm",
+   "term": "game gta6",
    "geo": "VN",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-22T04:30:00+00:00",
-   "url": "https://vnexpress.net/see-the-light-2-suc-hut-cua-my-tam-5147410.html",
-   "news": "'See The Light 2': Sức hút của Mỹ Tâm"
+   "ts": "2026-11-22T02:50:00+00:00",
+   "url": "https://www.24h.com.vn/cong-nghe-thong-tin/chia-tay-trong-mua-vao-game-gta-6-ca-si-phuong-thanh-cung-ngo-ngang-c55a1812679.html",
+   "news": "\"Chia tay trong mưa\" vào game GTA 6, ca sĩ Phương Thanh cũng... ngỡ ngàng"
+  },
+  {
+   "term": "sạt lở",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T04:40:00+00:00",
+   "url": "https://laodong.vn/moi-truong/canh-bao-2-tinh-co-mua-to-nguy-co-lu-quet-sat-lo-trong-6-gio-toi-1804563.ldo",
+   "news": "Cảnh báo 2 tỉnh có mưa to, nguy cơ lũ quét, sạt lở trong 6 giờ tới"
   },
   {
    "term": "como vs",
@@ -325,15 +343,6 @@
    "news": "Việt Nam không thể tạo bất ngờ trước nhà vô địch bóng đá bãi biển châu Á Iran"
   },
   {
-   "term": "game gta6",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T02:50:00+00:00",
-   "url": "https://www.24h.com.vn/cong-nghe-thong-tin/chia-tay-trong-mua-vao-game-gta-6-ca-si-phuong-thanh-cung-ngo-ngang-c55a1812679.html",
-   "news": "\"Chia tay trong mưa\" vào game GTA 6, ca sĩ Phương Thanh cũng... ngỡ ngàng"
-  },
-  {
    "term": "thể dục",
    "geo": "VN",
    "traffic": "200+",
@@ -350,15 +359,6 @@
    "ts": "2026-11-22T04:30:00+00:00",
    "url": "https://laodong.vn/xa-hoi/gia-lai-khan-truong-di-doi-dan-khoi-vung-nguy-co-lu-lut-1803834.ldo",
    "news": "Gia Lai khẩn trương di dời dân khỏi vùng nguy cơ lũ lụt"
-  },
-  {
-   "term": "sạt lở",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:40:00+00:00",
-   "url": "https://laodong.vn/moi-truong/canh-bao-2-tinh-co-mua-to-nguy-co-lu-quet-sat-lo-trong-6-gio-toi-1804563.ldo",
-   "news": "Cảnh báo 2 tỉnh có mưa to, nguy cơ lũ quét, sạt lở trong 6 giờ tới"
   },
   {
    "term": "ben shelton",
@@ -458,6 +458,15 @@
    "ts": "2026-11-22T04:40:00+00:00",
    "url": "https://www.rolls-royce.com/media/press-releases/2026/19-11-2026-rr-welcomes-royal-brunei-airlines-order-for-eight-trent-1000-xe-engines.aspx",
    "news": "Rolls-Royce welcomes Royal Brunei Airlines order for eight Trent 1000 XE engines"
+  },
+  {
+   "term": "nguyễn phương hằng",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T05:00:00+00:00",
+   "url": "",
+   "news": ""
   }
  ],
  "world": [
@@ -822,6 +831,15 @@
    "news": "‘Obsession’ Breakout Inde Navarrette to Receive Spotlight Tribute at Gotham Film Awards (Exclusive)"
   },
   {
+   "term": "what is the last mission of chapter 1 gta 6",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T04:50:00+00:00",
+   "url": "https://www.redbull.com/int-en/gta-6-daily-routine-guide",
+   "news": "GTA 6 daily routine: What you should do every day and why it matters"
+  },
+  {
    "term": "rayo vallecano - valencia c. f.",
    "geo": "US",
    "traffic": "1000+",
@@ -1090,6 +1108,15 @@
    "ts": "2026-11-22T04:10:00+00:00",
    "url": "https://www.caranddriver.com/features/a74470597/liam-lawson-driver-2026-las-vegas-grand-prix-interview/",
    "news": "Racing Bulls Driver Liam Lawson Talks Raptors and Country Songs Ahead of 2026 Vegas GP"
+  },
+  {
+   "term": "hospital",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T04:50:00+00:00",
+   "url": "https://news.sky.com/story/nhs-warns-of-alarming-rise-in-hospital-admissions-for-high-blood-pressure-13614403",
+   "news": "NHS warns of 'alarming' rise in hospital admissions for high blood pressure"
   },
   {
    "term": "rayo vs valencia",
@@ -1389,6 +1416,15 @@
    "news": "Zach LaVine fills stat sheet Friday against Lakers"
   },
   {
+   "term": "nba scores",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T03:50:00+00:00",
+   "url": "https://www.nytimes.com/athletic/7792284/2026/11/19/this-week-in-sports-trivia-november-19-2026/",
+   "news": "This Week in Sports Trivia: Nov. 19, 2026"
+  },
+  {
    "term": "sam hauser",
    "geo": "US",
    "traffic": "500+",
@@ -1407,6 +1443,15 @@
    "news": "Brock Osweiler gives ASU quarterback Jake Fette high praise"
   },
   {
+   "term": "stock market today",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T04:10:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo",
+   "news": "Tech stock sell-off drags markets down as Anthropic shares slide"
+  },
+  {
    "term": "isack hadjar",
    "geo": "US",
    "traffic": "500+",
@@ -1414,6 +1459,24 @@
    "ts": "2026-11-22T04:20:00+00:00",
    "url": "https://www.motorsport.com/f1/news/isack-hadjar-red-bull-looked-a-bit-stupid-in-vegas-qualifying-tow-game/10876319/",
    "news": "Isack Hadjar: Red Bull \"looked a bit stupid\" in Vegas qualifying tow game"
+  },
+  {
+   "term": "lando norris",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T05:00:00+00:00",
+   "url": "https://www.formula1.com/en/latest/article/its-going-to-be-a-tough-day-norris-wary-of-mclarens-straight-line-speed-deficit-ahead-of-las-vegas-gp.43WdQWgZsqQaofWDF0E1l3",
+   "news": "Norris expects tough Vegas GP amid McLaren speed struggles"
+  },
+  {
+   "term": "f1 vote",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T05:10:00+00:00",
+   "url": "https://www.espn.com/f1/story/_/id/50472097/v8-engine-confirmed-formula-1",
+   "news": "F1 bosses reach agreement to introduce V8 engines in 2030"
   },
   {
    "term": "harvard yale game",
@@ -1902,15 +1965,6 @@
    "news": "Will Avery Johnson return to Kansas State for his final season? | Daily Delivery"
   },
   {
-   "term": "nba scores",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T03:50:00+00:00",
-   "url": "https://www.nytimes.com/athletic/7792284/2026/11/19/this-week-in-sports-trivia-november-19-2026/",
-   "news": "This Week in Sports Trivia: Nov. 19, 2026"
-  },
-  {
    "term": "nina dobrev",
    "geo": "US",
    "traffic": "200+",
@@ -1918,6 +1972,15 @@
    "ts": "2026-11-22T04:00:00+00:00",
    "url": "https://deadline.com/2026/11/kathryn-newton-nina-dobrev-adam-devine-sorry-about-my-friends-1237228476/",
    "news": "Kathryn Newton, Nina Dobrev, Adam Devine & Scott Eastwood To Star In Rom-Com ‘Sorry About My Friends’"
+  },
+  {
+   "term": "tallulah willis",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T04:00:00+00:00",
+   "url": "https://people.com/bruce-willis-seen-in-new-photo-shared-by-daughter-tallulah-12270959",
+   "news": "Bruce Willis Seen in New Photo with Daughter Tallulah amid His Dementia Diagnosis"
   },
   {
    "term": "whitney peak",
@@ -1938,15 +2001,6 @@
    "news": "Bethune-Cookman University Parts Ways with Head Football Coach Raymond Woodie, Jr."
   },
   {
-   "term": "stock market today",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:10:00+00:00",
-   "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo",
-   "news": "Tech stock sell-off drags markets down as Anthropic shares slide"
-  },
-  {
    "term": "ben wang",
    "geo": "US",
    "traffic": "200+",
@@ -1954,6 +2008,78 @@
    "ts": "2026-11-22T04:30:00+00:00",
    "url": "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
    "news": "Northfield’s Ben Wang takes us behind the scenes of ‘Hunger Games’ film"
+  },
+  {
+   "term": "homelessness",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T04:50:00+00:00",
+   "url": "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html",
+   "news": "Judge Blocks Trump Administration’s Effort to Transform Homelessness Policy"
+  },
+  {
+   "term": "chadwick boseman",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T04:50:00+00:00",
+   "url": "https://www.foxcarolina.com/2026/11/21/family-says-leroy-boseman-father-actor-chadwick-boseman-has-died/",
+   "news": "Family says Leroy Boseman, father of actor Chadwick Boseman, has died"
+  },
+  {
+   "term": "pierre gasly",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T04:50:00+00:00",
+   "url": "https://www.formula1.com/en/latest/article/alpine-left-disappointed-after-gasly-had-shone-with-perfect-lap-in-q2.48hDMDkgL0meTLKg3usEg6",
+   "news": "Alpine left disappointed despite Gasly’s ‘perfect’ Q2 lap"
+  },
+  {
+   "term": "news today",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T04:50:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cw8dvgg8v4nvo",
+   "news": "Man dies in two-car crash on A415 in Oxfordshire"
+  },
+  {
+   "term": "vancouver canucks",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:00:00+00:00",
+   "url": "https://www.nhl.com/wild/news/projected-lineup-wild-at-canucks-112126",
+   "news": "Projected Lineup: Wild at Canucks"
+  },
+  {
+   "term": "devin carter",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:00:00+00:00",
+   "url": "https://www.masslive.com/celtics/2026/11/celtics-guard-lost-10-pounds-while-sick-but-returns-to-make-boston-debut.html",
+   "news": "Celtics guard lost 10 pounds while sick, but returns to make Boston debut"
+  },
+  {
+   "term": "mahershala ali oscar wins career impact",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:00:00+00:00",
+   "url": "https://variety.com/2026/film/news/mahershala-ali-oscars-wins-hollywood-1236955111/",
+   "news": "Mahershala Ali Says It ‘Doesn’t Matter’ That He’s Won 2 Oscars Because ‘There Are Not Roles for Me’ in ‘the Vast Majority of Projects’: ‘You’re Like Everybody Else Waiting’"
+  },
+  {
+   "term": "juan brunetta",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:10:00+00:00",
+   "url": "https://www.sportsgambler.com/betting-tips/football/tigres-vs-club-america-prediction-lineups-odds-2026-11-21/",
+   "news": "Tigres vs América Prediction, Betting Tips, Lineups & Odds | 21 Nov 2026"
   },
   {
    "term": "sufc",
@@ -2010,6 +2136,15 @@
    "news": "Scarlett Johansson's $869 Million Sci-Fi Action Epic Is Officially Being Cut From Netflix"
   },
   {
+   "term": "mavericks vs clippers",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T03:30:00+00:00",
+   "url": "https://www.espn.co.uk/nba/game/_/gameId/401910025",
+   "news": "Mavericks 110-100 Clippers (22 Nov, 2026) Final Score"
+  },
+  {
    "term": "colin farrell",
    "geo": "GB",
    "traffic": "100+",
@@ -2017,15 +2152,6 @@
    "ts": "2026-11-22T03:40:00+00:00",
    "url": "https://www.theguardian.com/tv-and-radio/2026/nov/20/the-seven-best-films-to-watch-on-tv-this-week",
    "news": "The Slightest Touch to California Schemin’: the seven best films to watch on TV this week"
-  },
-  {
-   "term": "tallulah willis",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T04:00:00+00:00",
-   "url": "https://people.com/bruce-willis-seen-in-new-photo-shared-by-daughter-tallulah-12270959",
-   "news": "Bruce Willis Seen in New Photo with Daughter Tallulah amid His Dementia Diagnosis"
   },
   {
    "term": "kings vs celtics",
@@ -2037,5 +2163,5 @@
    "news": "How to watch Celtics vs. Kings: TV channel and streaming options for November 21"
   }
  ],
- "updated": "2026-11-22T04:55:26.102953+00:00"
+ "updated": "2026-11-22T05:25:22.105294+00:00"
 }
