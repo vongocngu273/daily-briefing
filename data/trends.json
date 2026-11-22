@@ -37,6 +37,15 @@
    "news": "Thủy Tiên gây tiếc nuối"
   },
   {
+   "term": "liverpool đấu với man utd",
+   "geo": "VN",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T15:30:00+00:00",
+   "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-liverpool-mu-ruc-lua-derby-nuoc-anh-ngoai-hang-anh-c48a1813227.html",
+   "news": "Trực tiếp bóng đá Liverpool - MU: Fernandes hết lời khen Pochettino (Ngoại hạng Anh)"
+  },
+  {
    "term": "real madrid đấu với celta",
    "geo": "VN",
    "traffic": "5000+",
@@ -280,6 +289,33 @@
    "news": "Nhận định bóng đá U17 Đan Mạch vs U17 Australia, 19h30 ngày 22/11: Thừa thắng xông lên"
   },
   {
+   "term": "brighton vs",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T13:50:00+00:00",
+   "url": "https://laodong.vn/bong-da-quoc-te/nhan-dinh-tran-hull-city-vs-brighton-tai-premier-league-1804521.ldo",
+   "news": "Nhận định trận Hull City vs Brighton tại Premier League"
+  },
+  {
+   "term": "arsenal w.f.c. đấu với west ham",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T14:20:00+00:00",
+   "url": "https://www.bbc.com/sport/football/live/cm879ddeq2jet",
+   "news": "Manchester City vs Tottenham Hotspur: Women's Super League stats & head-to-head"
+  },
+  {
+   "term": "lamine yamal",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T15:00:00+00:00",
+   "url": "https://www.reutersconnect.com/item/soccer-2026-laliga-fc-barcelona-villarreal-cf/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBPWlVWNUQ",
+   "news": "Licensable picture: Soccer 2026: LaLiga: FC Barcelona - Villarreal CF"
+  },
+  {
    "term": "napoli đấu với torino",
    "geo": "VN",
    "traffic": "500+",
@@ -451,15 +487,6 @@
    "news": "Đặc vụ ICE bắt người ngay tại cửa lên máy bay"
   },
   {
-   "term": "arsenal w.f.c. đấu với west ham",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T14:20:00+00:00",
-   "url": "https://www.bbc.com/sport/football/live/cm879ddeq2jet",
-   "news": "Manchester City vs Tottenham Hotspur: Women's Super League stats & head-to-head"
-  },
-  {
    "term": "racing santander đấu với real sociedad",
    "geo": "VN",
    "traffic": "500+",
@@ -467,6 +494,15 @@
    "ts": "2026-11-22T14:30:00+00:00",
    "url": "https://bongdaplus.vn/la-liga/nhan-dinh-bong-da-racing-vs-real-sociedad-22h15-ngay-22-11-khach-lan-at-5295522611.html",
    "news": "Nhận định bóng đá Racing vs Real Sociedad, 22h15 ngày 22/11: Khách lấn át"
+  },
+  {
+   "term": "liverpool vs man utd",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T15:30:00+00:00",
+   "url": "https://www.skysports.com/football/live-blog/13610924/liverpool-vs-man-utd-live-premier-league-match-updates-free-highlights-news-and-score",
+   "news": "Liverpool vs Man Utd LIVE! Premier League match updates, free highlights, news and score"
   },
   {
    "term": "napoli",
@@ -613,15 +649,6 @@
    "news": "3 di tích nổi tiếng ở Hải Phòng mở cửa miễn phí ngày 24.11"
   },
   {
-   "term": "brighton vs",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T13:50:00+00:00",
-   "url": "https://bongdaplus.vn/ngoai-hang-anh/nhan-dinh-bong-da-hull-vs-brighton-21h00-ngay-22-11-brighton-thang-tien-5293672611.html",
-   "news": "Nhận định bóng đá Hull vs Brighton, 21h00 ngày 22/11: Brighton thẳng tiến"
-  },
-  {
    "term": "pau navarro",
    "geo": "VN",
    "traffic": "200+",
@@ -741,19 +768,10 @@
  ],
  "world": [
   {
-   "term": "nasdaq composite index drop 2026",
+   "term": "tom jackson espn",
    "geo": "US",
    "traffic": "100000+",
    "score": 100000,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.nytimes.com/2026/11/20/business/anthropic-ai-stocks-sp500.html",
-   "news": "Stocks Skid Into a Correction, as A.I. Worries Intensify"
-  },
-  {
-   "term": "tom jackson espn",
-   "geo": "US",
-   "traffic": "50000+",
-   "score": 50000,
    "ts": "2026-11-22T15:00:00+00:00",
    "url": "https://www.espn.com/nfl/story/_/id/50561778/tom-jackson-broncos-star-espn-legend-dies-75",
    "news": "Tom Jackson, Broncos star LB and Hall of Fame broadcaster at ESPN, dies at 75"
@@ -811,15 +829,6 @@
    "ts": "2026-11-22T12:30:00+00:00",
    "url": "https://www.nytimes.com/athletic/7802181/2026/11/22/atp-finals-alcaraz-zverev-final/",
    "news": "The ATP Finals ends with Carlos Alcaraz, Alexander Zverev and an emblem of a strange season - The Athletic"
-  },
-  {
-   "term": "current black friday deals",
-   "geo": "US",
-   "traffic": "10000+",
-   "score": 10000,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
-   "news": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now"
   },
   {
    "term": "mariella frostrup",
@@ -912,13 +921,31 @@
    "news": "Grand Slam of Darts 2026 LIVE: Gerwyn Price vs Kevin Doets in semi-final - updates, scores & results"
   },
   {
-   "term": "stoke score",
+   "term": "fc barcelona vs villarreal cf standings",
    "geo": "GB",
-   "traffic": "5000+",
-   "score": 5000,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.thesun.co.uk/sport/41075157/lauren-price-vs-michaela-kotaskova-live-results-time-updates/",
-   "news": "Lauren Price vs Michaela Kotaskova LIVE: Welsh star becomes undisputed champion"
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T15:10:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/football/live/cqe87553peegt",
+   "news": "Barcelona 3-2 Villarreal: Barca score three in 10 minutes to return to top of La Liga"
+  },
+  {
+   "term": "liverpool vs man utd",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T15:20:00+00:00",
+   "url": "https://www.theguardian.com/football/live/2026/nov/22/liverpool-v-manchester-united-premier-league-live",
+   "news": "Liverpool v Manchester United: Premier League – live"
+  },
+  {
+   "term": "grand slam of darts",
+   "geo": "GB",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T15:20:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/darts/live/c9gkljvv65ldt",
+   "news": "Grand Slam of Darts 2026 LIVE: Michael van Gerwen vs Gian van Veen in semi-final - updates, scores & results"
   },
   {
    "term": "celtics vs kings",
@@ -1009,24 +1036,6 @@
    "ts": "2026-11-22T13:40:00+00:00",
    "url": "https://www.bbc.co.uk/sport/darts/live/c9gkljvv65ldt",
    "news": "Grand Slam of Darts 2026 LIVE: Gerwyn Price vs Kevin Doets in semi-final - updates, scores & results"
-  },
-  {
-   "term": "fc barcelona vs villarreal cf standings",
-   "geo": "GB",
-   "traffic": "5000+",
-   "score": 5000,
-   "ts": "2026-11-22T15:10:00+00:00",
-   "url": "https://www.tntsports.co.uk/football/la-liga/2026-2027/fc-barcelona-villarreal-cf_mtc21891371/live-commentary.shtml",
-   "news": "FC Barcelona 0-2 Villarreal LIVE – La Liga latest as Lamine Yamal misses penalty with hosts behind at Camp Nou"
-  },
-  {
-   "term": "nations championship rugby fixtures",
-   "geo": "GB",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://www.walesonline.co.uk/sport/rugby/rugby-news/what-time-nations-championship-rugby-34941120",
-   "news": "What time do Nations Championship rugby matches kick off as TV channels change"
   },
   {
    "term": "vanderbilt vs florida",
@@ -1389,40 +1398,13 @@
    "news": "Predicting every at-large team for the 2026 FCS playoffs"
   },
   {
-   "term": "spurs score",
-   "geo": "GB",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-21T15:30:00+00:00",
-   "url": "https://www.skysports.com/football/live-blog/13610687/tottenham-vs-ipswich-live-premier-league-match-updates-news-and-score",
-   "news": "Tottenham vs Ipswich LIVE! Premier League match updates, news and score"
-  },
-  {
-   "term": "kocaelispor vs fenerbahçe",
+   "term": "delta flights",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-21T15:30:00+00:00",
-   "url": "https://cwibc.co.id/en/kocaelispor-fenerbahce-super-lig",
-   "news": "Fenerbahce Face Kocaelispor in Turkish Super Lig Clash"
-  },
-  {
-   "term": "ireland vs south africa",
-   "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://www.bbc.com/sport/rugby-union/articles/cm930nj435dvo",
-   "news": "'No-one is going to break us' - defiant Boks face Ireland without Erasmus"
-  },
-  {
-   "term": "ireland rugby",
-   "geo": "GB",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cm930nj435dvo",
-   "news": "'No-one is going to break us' - defiant Boks face Ireland without Erasmus"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T15:20:00+00:00",
+   "url": "https://www.fox5atlanta.com/news/delta-air-lines-automation-issue-triggers-hundreds-thanksgiving-travel-delays-atlanta",
+   "news": "Delta Air Lines automation issue triggers hundreds of Thanksgiving travel delays in Atlanta"
   },
   {
    "term": "colorado vs cincinnati",
@@ -1713,40 +1695,31 @@
    "news": "U.S. Attorney in Texas warns Democratic lawmakers about investigating Trump associates, faces pushback"
   },
   {
-   "term": "flood warning",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T15:30:00+00:00",
-   "url": "https://www.gov.uk/government/news/flood-warning-service-expanded-in-tewkesbury-area",
-   "news": "Flood warning service expanded in Tewkesbury area"
-  },
-  {
-   "term": "henry cavill as james bond",
+   "term": "walmart black friday",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T15:30:00+00:00",
-   "url": "https://collider.com/henry-cavill-netflix-spy-thriller-first-look/",
-   "news": "Netflix Officially Finds Its James Bond Replacement in Henry Cavill"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T15:20:00+00:00",
+   "url": "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-store-hours-2026-when-do-doors-open-at-walmart-target-kohls-macys-best-buy-costco-and-other-retailers-182104117.html",
+   "news": "Black Friday store hours 2026: When do doors open at Walmart, Target, Kohl's, Macy's, Best Buy, Costco and other retailers?"
   },
   {
-   "term": "exeter vs gloucester",
+   "term": "man u v liverpool",
    "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.exeterchiefs.co.uk/news/team-news-zambonin-returns-as-mcleod-debuts-for-chiefs",
-   "news": "Team news: Zambonin returns as McLeod debuts for Chiefs"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T15:20:00+00:00",
+   "url": "https://www.liverpoolfc.com/news/liverpool-premier-league-fixture-updates-january-manchester-united-everton",
+   "news": "Two Premier League fixture updates for Liverpool in January"
   },
   {
-   "term": "kocaelispor - fenerbahçe",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.sozcu.com.tr/canli-veya-kocaelispor-fenerbahce-maci-canli-anlatim-p383267",
-   "news": "Canlı | Kocaelispor-Fenerbahçe maçı canlı anlatım"
+   "term": "bruno guimaraes newcastle return boos",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T15:30:00+00:00",
+   "url": "https://www.telegraph.co.uk/football/2026/11/21/inside-bruno-guimaraes-controversial-move-arsenal-newcastle/",
+   "news": "The truth about Bruno Guimaraes’ controversial move to Arsenal"
   },
   {
    "term": "byrum brown",
@@ -2379,6 +2352,15 @@
    "news": "\"Sunday Morning\" 2026 \"Food Issue\" recipe index"
   },
   {
+   "term": "pau navarro",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T14:50:00+00:00",
+   "url": "https://www.wvnews.com/sports/pro/spain-la-liga-soccer/image_552c346d-a83b-5d80-90a8-4e686fd75c13.html",
+   "news": "Spain La Liga Soccer"
+  },
+  {
    "term": "lisa baum",
    "geo": "GB",
    "traffic": "500+",
@@ -2388,121 +2370,31 @@
    "news": ""
   },
   {
-   "term": "m42",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:30:00+00:00",
-   "url": "https://www.bbc.co.uk/news/articles/c8vg2pd5707wo",
-   "news": "Serious crash closes M42 near Birmingham Airport"
-  },
-  {
-   "term": "fc halifax town vs woking",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:30:00+00:00",
-   "url": "https://www.bbc.co.uk/sport/football/live/cwkgr9jggxxjt",
-   "news": "Halifax Town vs Woking: National League stats & head-to-head"
-  },
-  {
-   "term": "lcfc",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.telegraph.co.uk/football/2026/11/19/leicester-city-not-for-sale-as-owners-take-club-off-market/",
-   "news": "Leicester City not for sale as owners take club off market"
-  },
-  {
-   "term": "alex oxlade-chamberlain",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://readceltic.com/2026/11/19/celtics-midfield-crisis-puts-more-pressure-than-ever-on-oxlade-chamberlain/",
-   "news": "Celtic’s Midfield Crisis Puts More Pressure Than Ever on Oxlade-Chamberlain"
-  },
-  {
-   "term": "ireland south africa",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cm930nj435dvo",
-   "news": "'No-one is going to break us' - defiant Boks face Ireland without Erasmus"
-  },
-  {
-   "term": "spurs game",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.poundingtherock.com/spurs-game-previews/110497/game-preview-san-antonio-spurs-vs-new-orleans-pelicans",
-   "news": "Game Preview: San Antonio Spurs vs New Orleans Pelicans"
-  },
-  {
-   "term": "diyar nurgozhay",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://sports.yahoo.com/articles/diyar-nurgozhay-vs-alik-lorenz-224756832.html",
-   "news": "Diyar Nurgozhay vs. Alik Lorenz prediction, odds, pick for UFC Doha"
-  },
-  {
-   "term": "ben earl rugby",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:40:00+00:00",
-   "url": "https://www.theguardian.com/sport/2026/nov/17/rugby-union-ben-earl-england-future-nations-championship-finals-las-vegas",
-   "news": "Ben Earl calls for future Nations Championship finals in Las Vegas, Hong Kong or Brazil"
-  },
-  {
-   "term": "auli'i cravalho",
+   "term": "trabzonspor vs eyüpspor",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://variety.com/2026/film/news/serendipity-reboot-cast-aulii-cravalho-1236953411/",
-   "news": "New ‘Serendipity’ Movie Casts Auli‘i Cravalho (EXCLUSIVE)"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T15:20:00+00:00",
+   "url": "https://www.haber.tr/trendyol-super-ligde-12-haftanin-var-hakemleri-aciklandi",
+   "news": "Trendyol Süper Lig'de 12. haftanın VAR hakemleri açıklandı"
   },
   {
-   "term": "ross county vs cove rangers",
+   "term": "uta arad - universitatea craiova",
    "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://www.bbc.co.uk/sport/football/live/cw99exk99e1mt",
-   "news": "Ross County vs Cove Rangers: Scottish League One stats & head-to-head"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T15:30:00+00:00",
+   "url": "https://www.digisport.ro/fotbal/liga-1/probleme-la-universitatea-craiova-inainte-de-meciul-cu-uta-filipe-coelho-a-facut-anuntul-4618069",
+   "news": "Probleme la Universitatea Craiova, înainte de meciul cu UTA! Filipe Coelho a făcut anunțul"
   },
   {
-   "term": "swansea manager",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://www.bbc.co.uk/sport/football/articles/ckq6eyppzqgpo",
-   "news": "Vitor Matos accepts Swansea City fans' anger over shock exit to RC Strasbourg"
-  },
-  {
-   "term": "nations cup rugby",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://www.world.rugby/nations-cup/en/news/1049572/world-rugby-nations-cup-2026-round-six-preview",
-   "news": "World Rugby Nations Cup 2026 round six preview"
-  },
-  {
-   "term": "aleksandre topuria",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://www.ufc.com/video/162216",
-   "news": "Aleksandre Topuria: 'I Don't Plan On Letting Him Win' | UFC Qatar"
+   "term": "scott bessent",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T15:40:00+00:00",
+   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+   "news": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged"
   },
   {
    "term": "wisconsin vs purdue",
@@ -3666,13 +3558,58 @@
    "news": "🚨 Racing Santander-Real Sociedad: both sides rotate their starting XIs"
   },
   {
-   "term": "carrick vs coleraine",
+   "term": "jet2 new seat upgrade kestrel",
    "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-21T15:50:00+00:00",
-   "url": "https://www.belfasttelegraph.co.uk/sport/football/irish-league/when-you-visualise-going-up-to-the-premier-league-this-venue-springs-to-mind-boss-insists-limavady-wont-be-overawed-by-windsor-park-duel/a/164799048.html",
-   "news": "‘When you visualise going up to the Premier League, this venue springs to mind’: Boss insists Limavady won’t be overawed by Windsor Park duel"
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T15:10:00+00:00",
+   "url": "https://www.jet2.com/news/2026/11/Jet2_s_new_ultra_lightweight_seats_featuring_in_seat_power_come_into_operation",
+   "news": "Jet2’s new ultra-lightweight seats featuring in-seat power come into operation"
+  },
+  {
+   "term": "sen john kennedy",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T15:20:00+00:00",
+   "url": "",
+   "news": ""
+  },
+  {
+   "term": "denver weather",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T15:20:00+00:00",
+   "url": "https://kdvr.com/weather/weather-forecast/denver-weather-afternoon-sun-and-much-colder-stretch-ahead/",
+   "news": "Denver weather: Afternoon sun and much colder stretch ahead"
+  },
+  {
+   "term": "falmouth flooding",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T15:30:00+00:00",
+   "url": "https://www.bbc.co.uk/weather/articles/ckvg251xz51do",
+   "news": "UK weather: More frost and a warning of heavy rain"
+  },
+  {
+   "term": "bologna fc",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T15:30:00+00:00",
+   "url": "https://www.gazzetta.it/Calcio/Serie-A/Bologna/22-11-2026/bologna-udinese-live-serie-a-risultato-e-gol-in-diretta.shtml",
+   "news": "LIVE Alle 15 Bologna-Udinese, le ufficiali: Palladino con Cambiaghi, Zanetti lascia Davis in tribuna"
+  },
+  {
+   "term": "sutton park",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T15:40:00+00:00",
+   "url": "https://www.itv.com/news/central/2026-11-22/massive-sutton-park-search-operation-in-progress-by-police",
+   "news": "Massive Sutton Park search operation in progress by police"
   },
   {
    "term": "josh hutcherson",
@@ -4096,16 +4033,7 @@
    "ts": "2026-11-22T15:00:00+00:00",
    "url": "https://villarrealcf.es/ferriols-tenemos-que-hacernos-fuertes-en-casa/",
    "news": "Ferriols: “Tenemos que hacernos fuertes en casa”"
-  },
-  {
-   "term": "jet2 new seat upgrade kestrel",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T15:10:00+00:00",
-   "url": "https://www.jet2.com/news/2026/11/Jet2_s_new_ultra_lightweight_seats_featuring_in_seat_power_come_into_operation",
-   "news": "Jet2’s new ultra-lightweight seats featuring in-seat power come into operation"
   }
  ],
- "updated": "2026-11-22T15:25:26.790980+00:00"
+ "updated": "2026-11-22T15:55:27.860402+00:00"
 }
