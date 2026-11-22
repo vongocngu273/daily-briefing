@@ -127,6 +127,24 @@
    "news": "'See The Light 2': Sức hút của Mỹ Tâm"
   },
   {
+   "term": "sạt lở",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T04:40:00+00:00",
+   "url": "https://laodong.vn/moi-truong/canh-bao-2-tinh-co-mua-to-nguy-co-lu-quet-sat-lo-trong-6-gio-toi-1804563.ldo",
+   "news": "Cảnh báo 2 tỉnh có mưa to, nguy cơ lũ quét, sạt lở trong 6 giờ tới"
+  },
+  {
+   "term": "lich thi dau u17",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T05:30:00+00:00",
+   "url": "https://tuoitre.vn/lich-truc-tiep-u17-world-cup-2026-ngay-22-11-phap-dau-saudi-arabia-100261121195540106.htm",
+   "news": "Lịch trực tiếp U17 World Cup 2026 ngày 22-11: Pháp đấu Saudi Arabia"
+  },
+  {
    "term": "rayo đấu với valencia",
    "geo": "VN",
    "traffic": "500+",
@@ -215,15 +233,6 @@
    "ts": "2026-11-22T02:50:00+00:00",
    "url": "https://www.24h.com.vn/cong-nghe-thong-tin/chia-tay-trong-mua-vao-game-gta-6-ca-si-phuong-thanh-cung-ngo-ngang-c55a1812679.html",
    "news": "\"Chia tay trong mưa\" vào game GTA 6, ca sĩ Phương Thanh cũng... ngỡ ngàng"
-  },
-  {
-   "term": "sạt lở",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T04:40:00+00:00",
-   "url": "https://laodong.vn/moi-truong/canh-bao-2-tinh-co-mua-to-nguy-co-lu-quet-sat-lo-trong-6-gio-toi-1804563.ldo",
-   "news": "Cảnh báo 2 tỉnh có mưa to, nguy cơ lũ quét, sạt lở trong 6 giờ tới"
   },
   {
    "term": "como vs",
@@ -361,6 +370,24 @@
    "news": "Gia Lai khẩn trương di dời dân khỏi vùng nguy cơ lũ lụt"
   },
   {
+   "term": "nguyễn phương hằng",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:00:00+00:00",
+   "url": "",
+   "news": ""
+  },
+  {
+   "term": "giá vàng ngày 22 tháng 11 năm 2026",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:10:00+00:00",
+   "url": "https://laodong.vn/the-gioi/du-bao-thoi-diem-gia-vang-cham-moc-5000-usdounce-bat-chap-da-giam-manh-1804311.ldo",
+   "news": "Dự báo thời điểm giá vàng chạm mốc 5.000 USD/ounce bất chấp đà giảm mạnh"
+  },
+  {
    "term": "ben shelton",
    "geo": "VN",
    "traffic": "100+",
@@ -458,15 +485,6 @@
    "ts": "2026-11-22T04:40:00+00:00",
    "url": "https://www.rolls-royce.com/media/press-releases/2026/19-11-2026-rr-welcomes-royal-brunei-airlines-order-for-eight-trent-1000-xe-engines.aspx",
    "news": "Rolls-Royce welcomes Royal Brunei Airlines order for eight Trent 1000 XE engines"
-  },
-  {
-   "term": "nguyễn phương hằng",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T05:00:00+00:00",
-   "url": "",
-   "news": ""
   }
  ],
  "world": [
@@ -1119,6 +1137,33 @@
    "news": "NHS warns of 'alarming' rise in hospital admissions for high blood pressure"
   },
   {
+   "term": "tank davis",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T05:30:00+00:00",
+   "url": "https://www.boxingscene.com/articles/gervonta-davis-and-jesse-bam-rodriguez-tease-unlikely-catchweight-showdown",
+   "news": "Gervonta Davis and Jesse ‘Bam’ Rodriguez tease unlikely catchweight showdown"
+  },
+  {
+   "term": "devon dampier",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T05:40:00+00:00",
+   "url": "https://www.foxsports.com/stories/college-football/utah-utes-devon-dampier-heisman-trophy",
+   "news": "The Perfect Pairing Fueling A Heisman Trophy Campaign"
+  },
+  {
+   "term": "darius acuff jr.",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T05:40:00+00:00",
+   "url": "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
+   "news": "Damian Lillard respects Darius Acuff Jr.’s mentality. He also knows the test ahead"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -1477,6 +1522,24 @@
    "ts": "2026-11-22T05:10:00+00:00",
    "url": "https://www.espn.com/f1/story/_/id/50472097/v8-engine-confirmed-formula-1",
    "news": "F1 bosses reach agreement to introduce V8 engines in 2030"
+  },
+  {
+   "term": "kieran culkin",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T05:20:00+00:00",
+   "url": "https://deadline.com/2026/11/kieran-culkin-reunite-succession-jesse-armstrong-movie-1237230018/",
+   "news": "Kieran Culkin Reveals He’s Reuniting With ‘Succession’ Creator Jesse Armstrong On Movie"
+  },
+  {
+   "term": "domantas sabonis",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T05:40:00+00:00",
+   "url": "https://www.espn.com/video/clip/_/id/50559241/domantas-sabonis-fights-defender-1",
+   "news": "Domantas Sabonis fights off defender for and-1"
   },
   {
    "term": "harvard yale game",
@@ -2001,6 +2064,15 @@
    "news": "Bethune-Cookman University Parts Ways with Head Football Coach Raymond Woodie, Jr."
   },
   {
+   "term": "kings vs celtics",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T04:20:00+00:00",
+   "url": "https://sports.yahoo.com/articles/celtics-announce-starting-lineup-against-025351353.html",
+   "news": "Celtics announce new starting lineup against Kings in wake of injuries"
+  },
+  {
    "term": "ben wang",
    "geo": "US",
    "traffic": "200+",
@@ -2008,6 +2080,15 @@
    "ts": "2026-11-22T04:30:00+00:00",
    "url": "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
    "news": "Northfield’s Ben Wang takes us behind the scenes of ‘Hunger Games’ film"
+  },
+  {
+   "term": "bbc f1",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T04:40:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/formula1/articles/c34gnrvl9zvro",
+   "news": "'Somebody has to stand up to that guy' - Verstappen-Russell rivalry blows up again"
   },
   {
    "term": "homelessness",
@@ -2082,6 +2163,60 @@
    "news": "Tigres vs América Prediction, Betting Tips, Lineups & Odds | 21 Nov 2026"
   },
   {
+   "term": "neemias queta",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:20:00+00:00",
+   "url": "https://www.bostonglobe.com/2026/11/20/sports/celtics-road-trip-sacramento-kings/",
+   "news": "What the Celtics must clean up in Sacramento to make sure their first skid of the season ends at two games"
+  },
+  {
+   "term": "who won miss universe 2026",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:20:00+00:00",
+   "url": "https://news.tuoitre.vn/nguyen-quynh-anh-stripped-of-miss-universe-vietnam-title-103261119131743126.htm",
+   "news": "Nguyen Quynh Anh stripped of Miss Universe Vietnam title"
+  },
+  {
+   "term": "sonny dykes",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:30:00+00:00",
+   "url": "https://sports.yahoo.com/articles/elko-dykes-real-jeopardy-college-151713268.html",
+   "news": "Are Elko and Dykes in real jeopardy? Our college football panel weighs in on Hear Me Out"
+  },
+  {
+   "term": "ben stiller",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:30:00+00:00",
+   "url": "https://ew.com/john-legend-reacts-to-ben-stiller-singing-all-of-me-focker-in-law-12267582",
+   "news": "John Legend reacts to Ben Stiller singing ‘All of Me’ in Focker-in-Law : ‘They had Ariana Grande right there’"
+  },
+  {
+   "term": "mattia gta 6",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:30:00+00:00",
+   "url": "https://egamers.io/gta-6-day-release-yacht-guide-where-mattia-is-and-how-to-hit-all-three-champagne-bottles/",
+   "news": "GTA 6 Day Release yacht guide: where Mattia is and how to hit all three champagne bottles"
+  },
+  {
+   "term": "f1 standings",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:40:00+00:00",
+   "url": "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b027eb58f08268116cd51da",
+   "news": "Max Verstappen wins Las Vegas Grand Prix: Formula One 2026 – reaction"
+  },
+  {
    "term": "sufc",
    "geo": "GB",
    "traffic": "100+",
@@ -2154,14 +2289,23 @@
    "news": "The Slightest Touch to California Schemin’: the seven best films to watch on TV this week"
   },
   {
-   "term": "kings vs celtics",
+   "term": "nicola coughlan",
    "geo": "GB",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-22T04:20:00+00:00",
-   "url": "https://www.nytimes.com/athletic/7800983/2026/11/21/celtics-vs-kings-stream-how-to-watch-nov-21/",
-   "news": "How to watch Celtics vs. Kings: TV channel and streaming options for November 21"
+   "ts": "2026-11-22T04:10:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cj4gn7x05yygo",
+   "news": "I Am Helen: Nicola Coughlan on her uncomfortable new TV drama"
+  },
+  {
+   "term": "chris pratt",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T05:20:00+00:00",
+   "url": "https://www.independent.co.uk/arts-entertainment/films/news/jennifer-lawrence-kiss-films-ranking-b3088673.html",
+   "news": "Jennifer Lawrence ranks Chris Pratt as ‘worst’ on-screen kiss"
   }
  ],
- "updated": "2026-11-22T05:25:22.105294+00:00"
+ "updated": "2026-11-22T05:55:20.880670+00:00"
 }

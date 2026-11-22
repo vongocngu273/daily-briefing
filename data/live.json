@@ -7,7 +7,7 @@
    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/ap263257503790861-1795301893-1417-1795301912.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=eQudcRgTo6HTBGYNeNNHRg",
    "ts": "2026-11-21T23:33:00+00:00",
    "sources": 2,
-   "score": 7.32
+   "score": 7.24
   },
   {
    "title": "Cháy nhà máy ở Indonesia, hơn 30 người mất tích",
@@ -16,7 +16,7 @@
    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/6057799991327134063-jpeg-17953-5613-9164-1795317169.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ZwiRP4UkjbqqAUsfN219XA",
    "ts": "2026-11-22T04:41:55+00:00",
    "sources": 2,
-   "score": 4.88
+   "score": 4.8
   },
   {
    "title": "Miền Bắc rét trở lại từ ngày 24/11",
@@ -25,7 +25,7 @@
    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/hn-gio-mu-a-of-1795319453-9496-1795319463.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=e4GGEydPfXoFbZnzhNX4ng",
    "ts": "2026-11-22T03:51:32+00:00",
    "sources": 2,
-   "score": 4.74
+   "score": 4.66
   },
   {
    "title": "Inter Miami thua tan nát trong ngày Messi nhận danh hiệu Vua phá lưới",
@@ -34,7 +34,7 @@
    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/messi-17953173366381612114417-582-512-1534-2035-crop-17953173886331593117351.jpg",
    "ts": "2026-11-22T03:09:00+00:00",
    "sources": 2,
-   "score": 4.62
+   "score": 4.54
   },
   {
    "title": "HAUS Da Lat nhận giải kiến trúc cảnh quan xuất sắc nhất châu Á",
@@ -43,7 +43,7 @@
    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/1-17952702768921133197160-0-0-1627-2603-crop-1795270295182363244545.jpg",
    "ts": "2026-11-22T02:00:00+00:00",
    "sources": 2,
-   "score": 4.43
+   "score": 4.35
   },
   {
    "title": "Ngọc Sơn bị loại ở 'Ca sĩ mặt nạ 2026'",
@@ -52,10 +52,37 @@
    "image": "https://vcdn1-giaitri.vnecdn.net/2026/11/22/NgcSn11-1795304031-9076-1795304813.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SXZ2RSsIUVFj6e-r1Pyd3A",
    "ts": "2026-11-22T01:59:12+00:00",
    "sources": 2,
-   "score": 4.43
+   "score": 4.34
   }
  ],
  "latest": [
+  {
+   "title": "Màn hình phụ 2.9-inch trên Xiaomi 18 Pro Max làm được gì?",
+   "url": "https://tinhte.vn/thread/man-hinh-phu-2-9-inch-tren-xiaomi-18-pro-max-lam-duoc-gi.4194628/",
+   "source": "Tinh tế",
+   "image": "",
+   "ts": "2026-11-22T05:53:42+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
+  {
+   "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
+   "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
+   "source": "Tinh tế",
+   "image": "",
+   "ts": "2026-11-22T05:27:11+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
+  {
+   "title": "Gia vị quen thuộc trong bếp giúp ổn định đường huyết, hỗ trợ giảm cân",
+   "url": "https://vnexpress.net/gia-vi-quen-thuoc-trong-bep-giup-on-dinh-duong-huyet-ho-tro-giam-can-5147532.html",
+   "source": "VnExpress",
+   "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/gung1-1795279059-9425-1795279336.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UbyORMG5TYxJ-prQGGnWzA",
+   "ts": "2026-11-22T05:09:28+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
   {
    "title": "Phó Thủ tướng Hồ Quốc Dũng dự Ngày hội Văn hóa công nhân cấp Tổng Liên đoàn",
    "url": "https://www.vietnamplus.vn/pho-thu-tuong-ho-quoc-dung-du-ngay-hoi-van-hoa-cong-nhan-cap-tong-lien-doan-post1149954.vnp",
@@ -75,44 +102,27 @@
    "score": 0.0
   },
   {
-   "title": "Đào tạo nghề mỏ, tạo việc làm ổn định cho thanh niên dân tộc thiểu số",
-   "url": "https://www.vietnamplus.vn/dao-tao-nghe-mo-tao-viec-lam-on-dinh-cho-thanh-nien-dan-toc-thieu-so-post1148855.vnp",
-   "source": "VietnamPlus",
-   "image": "https://media.vietnamplus.vn/images/_RfA0Lv7xigOosrBfIuLk27X9yHRslaTgDFHUDYnas29dtkU8iIORz91X42zBUC0/hoc-nghe.png.avif",
+   "title": "Phụ nữ nên làm gì để giảm nguy cơ loãng xương sớm?",
+   "url": "https://vnexpress.net/phu-nu-nen-lam-gi-de-giam-nguy-co-loang-xuong-som-5147422.html",
+   "source": "VnExpress",
+   "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/yoga-thu-y-linh-1795243705-3885-1795245197.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=jD1Sa3kZMuWPcXAh-wjwUQ",
    "ts": "2026-11-22T05:00:00+00:00",
-   "sources": 1,
-   "score": 0.0
-  },
-  {
-   "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
-   "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
-   "source": "Tinh tế",
-   "image": "",
-   "ts": "2026-11-22T04:45:15+00:00",
-   "sources": 1,
-   "score": 0.0
-  },
-  {
-   "title": "Hà Nội: Hàng nghìn người tham gia diễu hành áo dài mừng Ngày Văn hóa Việt Nam",
-   "url": "https://www.vietnamplus.vn/ha-noi-hang-nghin-nguoi-tham-gia-dieu-hanh-ao-dai-mung-ngay-van-hoa-viet-nam-post1149952.vnp",
-   "source": "VietnamPlus",
-   "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2OKSK3oGVQZQHrJXphuy7-0y9PqxMDk-Ty9P0eilkf6LWppboWvQwZTTKtjA_CglIWcUk-YduOdpbcx8uBo-UdwLMLBX8oDGbunaRy3jepM-/ttxvn_2211-dieu-hanh-ao-dai-ngay-van-hoa-viet-nam-tai-ha-noi-2.jpg.avif",
-   "ts": "2026-11-22T04:44:54+00:00",
-   "sources": 1,
-   "score": 0.0
-  },
-  {
-   "title": "Trước Chu Ngọc Nguyễn Lực, Việt Nam cũng có những siêu phẩm phạt góc",
-   "url": "https://tuoitre.vn/truoc-chu-ngoc-nguyen-luc-viet-nam-cung-co-nhung-sieu-pham-phat-goc-100261122095357394.htm",
-   "source": "Tuổi Trẻ",
-   "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/u17-viet-nam-1-1763820938464190713881-54-657-773-1807-crop-17953160149561455355251.jpeg",
-   "ts": "2026-11-22T04:40:00+00:00",
    "sources": 1,
    "score": 0.0
   }
  ],
  "cats": {
   "mobile": [
+   {
+    "title": "Màn hình phụ 2.9-inch trên Xiaomi 18 Pro Max làm được gì?",
+    "url": "https://tinhte.vn/thread/man-hinh-phu-2-9-inch-tren-xiaomi-18-pro-max-lam-duoc-gi.4194628/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T05:53:42+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Mình từng hoài nghi về màn hình phụ của Xiaomi 17 Pro Max năm ngoái, liệu Xiaomi có duy trì nó không"
+   },
    {
     "title": "Weekly poll results: people keep entry-level phones for 3 years, higher-end models for longer",
     "url": "https://www.gsmarena.com/weekly_poll_results_people_keep_entrylevel_phones_for_3_years_higherend_models_for_longer-news-75563.php",
@@ -162,16 +172,130 @@
     "sources": 1,
     "score": 0,
     "summary": "Vivo will apparently be flushing out its budget lineup in India soon with at least three new devices. These are not particularly exciting in any meaningful way, but might just offer a good value proposition."
+   }
+  ],
+  "tech_ai": [
+   {
+    "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
+    "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T05:27:11+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Porsche Cayenne thuần điện vừa chính thức ra mắt tại thị trường Việt Nam với giá khởi điểm từ 4,72 tỷ đồng."
    },
    {
-    "title": "Cúi đầu xem điện thoại có gây thoái hóa đốt sống cổ?",
-    "url": "https://vnexpress.net/cui-dau-xem-dien-thoai-co-gay-thoai-hoa-dot-song-co-5147507.html",
+    "title": "MacBook bấm nút nguồn không lên: sạc, giữ nút nguồn 10 giây, rút hết phụ kiện",
+    "url": "https://tinhte.vn/thread/macbook-bam-nut-nguon-khong-len-sac-giu-nut-nguon-10-giay-rut-het-phu-kien.4194451/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T03:52:50+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Áp dụng cho: mọi MacBook, cả Apple silicon (M1 trở lên) lẫn Intel. Bước reset SMC chỉ dành cho máy Intel."
+   },
+   {
+    "title": "Hagia Sophia: mái vòm 32 m đặt lên khối nhà vuông bằng cách nào mà đứng gần 1.500 năm",
+    "url": "https://tinhte.vn/thread/hagia-sophia-mai-vom-32-m-dat-len-khoi-nha-vuong-bang-cach-nao-ma-dung-gan-1-500-nam.4194498/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T03:09:37+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Hagia Sophia ở Istanbul đặt một mái vòm tròn rộng khoảng 32 m lên một khoảng không gian vuông, chỉ dựa vào bốn trụ lớn ở bốn góc."
+   },
+   {
+    "title": "Uống cà phê còn có những lợi ích to lớn ít ai biết",
+    "url": "https://tuoitre.vn/uong-ca-phe-con-co-nhung-loi-ich-to-lon-it-ai-biet-100261122075858819.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/ql-caphe-sua-1-1794885435028534958669-1296-0-2896-2560-crop-17953089725931145825256.jpeg",
+    "ts": "2026-11-22T02:10:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Cà phê được cho là thức uống khi muốn tỉnh táo hơn, nhưng ít người để ý đến một số lợi ích cũng như tác dụng phụ từ thói quen uống cà phê mỗi ngày như tác dụng giảm táo bón hay hỗ trợ ngăn ngừa nguy cơ tiểu đường."
+   },
+   {
+    "title": "Nên trẻ hóa da bằng công nghệ nào?",
+    "url": "https://vnexpress.net/nen-tre-hoa-da-bang-cong-nghe-nao-5147509.html",
     "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/bao-1795266660-1204-1795267208.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=jbosYWlLINmCLtr4EkdPYQ",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/dsc01237-jpg-1795267477-7794-1795267520.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=uf7n9Ca-y2mIO26m13NE6A",
     "ts": "2026-11-22T02:00:00+00:00",
     "sources": 1,
     "score": 0,
-    "summary": "Tôi vừa đi vừa sử dụng điện thoại, đầu cúi xuống nhìn màn hình, gần đây cổ rất mỏi kể cả khi nghỉ ngơi."
+    "summary": "Tôi 40 tuổi, da có dấu hiệu chảy xệ, muốn thực hiện trẻ hóa không xâm lấn. HIFU hay laser 6D hiệu quả hơn? (Ngọc Linh, Hà Nội)"
+   },
+   {
+    "title": "Chia sẻ kinh nghiệm: Dùng màn hình vi tính làm khung ảnh KTS",
+    "url": "https://tinhte.vn/thread/chia-se-kinh-nghiem-dung-man-hinh-vi-tinh-lam-khung-anh-kts.4192853/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T01:46:16+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Nhà mình rất thường xuyên chụp ảnh để lưu giữ kỉ niệm, hồi xưa khi còn xài máy phim thì chụp hết cuộn là đem đi rửa xong bỏ vô album, bây giờ thì lưu trữ trên đám mây...."
+   }
+  ],
+  "science_health": [
+   {
+    "title": "Gia vị quen thuộc trong bếp giúp ổn định đường huyết, hỗ trợ giảm cân",
+    "url": "https://vnexpress.net/gia-vi-quen-thuoc-trong-bep-giup-on-dinh-duong-huyet-ho-tro-giam-can-5147532.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/gung1-1795279059-9425-1795279336.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UbyORMG5TYxJ-prQGGnWzA",
+    "ts": "2026-11-22T05:09:28+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Bác sĩ chuyên khoa giảm cân Đài Loan cho biết nghiên cứu ghi nhận bổ sung bột gừng hàng ngày cải thiện đường huyết lúc đói"
+   },
+   {
+    "title": "Phụ nữ nên làm gì để giảm nguy cơ loãng xương sớm?",
+    "url": "https://vnexpress.net/phu-nu-nen-lam-gi-de-giam-nguy-co-loang-xuong-som-5147422.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/yoga-thu-y-linh-1795243705-3885-1795245197.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=jD1Sa3kZMuWPcXAh-wjwUQ",
+    "ts": "2026-11-22T05:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Phụ nữ nên bổ sung đủ canxi và vitamin D, duy trì vận động, kiểm soát cân nặng, hạn chế thuốc lá để bảo vệ xương, phòng loãng xương từ sớm."
+   },
+   {
+    "title": "Dấu hiệu giảm cân quá nhanh",
+    "url": "https://vnexpress.net/dau-hieu-giam-can-qua-nhanh-5147462.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/rungtoc-1795252268-6930-1795252346.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=QqvPYw3I5IJYMYEkN0QhLA",
+    "ts": "2026-11-22T04:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Mệt mỏi kéo dài, rụng tóc nhiều, thường xuyên ngủ không ngon giấc có thể là dấu hiệu giảm cân quá nhanh gây thiếu hụt năng lượng."
+   },
+   {
+    "title": "Điều gì xảy ra với não khi ngủ trưa?",
+    "url": "https://vnexpress.net/dieu-gi-xay-ra-voi-nao-khi-ngu-trua-5147459.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/nao-1795251663-8228-1795251671.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=U97Nc36rWuduHpnKrE23Vw",
+    "ts": "2026-11-22T04:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Giấc ngủ ngắn vào buổi trưa có thể hỗ trợ não bộ củng cố và chuyển trí nhớ ngắn hạn sang dài hạn."
+   },
+   {
+    "title": "Vì sao người cao tuổi mắc cúm không sốt cao?",
+    "url": "https://vnexpress.net/vi-sao-nguoi-cao-tuoi-mac-cum-khong-sot-cao-5147434.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/image001-1795301096-7287-1795301210.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=dNdv8qZ5QB_MgJanHTCM3g",
+    "ts": "2026-11-22T04:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Bố tôi ho, mệt mỏi, ăn uống kém nhưng không sốt cao, bác sĩ chẩn đoán mắc cúm A. Vì sao người cao tuổi mắc cúm nhưng không sốt cao? (Hoàng Minh, TP HCM)"
+   },
+   {
+    "title": "Quảng Ninh đẩy mạnh phân cấp, phân quyền, đưa dịch vụ công sát dân hơn",
+    "url": "https://www.vietnamplus.vn/quang-ninh-day-manh-phan-cap-phan-quyen-dua-dich-vu-cong-sat-dan-hon-post1149937.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/dZT0STogUg1N0wbnIQQTYHTyS-yC8vrLzpFgbwbFutVU4LMv36DebiLfMRc7fS2HOuiUB4aI5Pmfry7JCUNUOA/ttxvn-quang-ninh-chinh-quyen-2-cap.jpg.avif",
+    "ts": "2026-11-22T02:58:29+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Việc phân cấp, phân quyền ở Quảng Ninh giúp giảm khâu trung gian, rút ngắn thời gian xử lý và đưa thẩm quyền, trách nhiệm giải quyết công việc đến gần người dân, doanh nghiệp hơn."
    }
   ],
   "domestic": [
@@ -234,68 +358,6 @@
     "sources": 1,
     "score": 0,
     "summary": "Một đợt không khí lạnh mới tràn xuống miền Bắc từ rạng sáng 24/11 khiến trời chuyển rét, vùng núi có nơi rét đậm, miền Trung mưa giông gia tăng."
-   }
-  ],
-  "tech_ai": [
-   {
-    "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
-    "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T04:45:15+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Porsche Cayenne thuần điện vừa chính thức ra mắt tại thị trường Việt Nam với giá khởi điểm từ 4,72 tỷ đồng."
-   },
-   {
-    "title": "MacBook bấm nút nguồn không lên: sạc, giữ nút nguồn 10 giây, rút hết phụ kiện",
-    "url": "https://tinhte.vn/thread/macbook-bam-nut-nguon-khong-len-sac-giu-nut-nguon-10-giay-rut-het-phu-kien.4194451/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T03:52:50+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Áp dụng cho: mọi MacBook, cả Apple silicon (M1 trở lên) lẫn Intel. Bước reset SMC chỉ dành cho máy Intel."
-   },
-   {
-    "title": "Hagia Sophia: mái vòm 32 m đặt lên khối nhà vuông bằng cách nào mà đứng gần 1.500 năm",
-    "url": "https://tinhte.vn/thread/hagia-sophia-mai-vom-32-m-dat-len-khoi-nha-vuong-bang-cach-nao-ma-dung-gan-1-500-nam.4194498/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T03:09:37+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Hagia Sophia ở Istanbul đặt một mái vòm tròn rộng khoảng 32 m lên một khoảng không gian vuông, chỉ dựa vào bốn trụ lớn ở bốn góc."
-   },
-   {
-    "title": "Uống cà phê còn có những lợi ích to lớn ít ai biết",
-    "url": "https://tuoitre.vn/uong-ca-phe-con-co-nhung-loi-ich-to-lon-it-ai-biet-100261122075858819.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/ql-caphe-sua-1-1794885435028534958669-1296-0-2896-2560-crop-17953089725931145825256.jpeg",
-    "ts": "2026-11-22T02:10:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Cà phê được cho là thức uống khi muốn tỉnh táo hơn, nhưng ít người để ý đến một số lợi ích cũng như tác dụng phụ từ thói quen uống cà phê mỗi ngày như tác dụng giảm táo bón hay hỗ trợ ngăn ngừa nguy cơ tiểu đường."
-   },
-   {
-    "title": "Nên trẻ hóa da bằng công nghệ nào?",
-    "url": "https://vnexpress.net/nen-tre-hoa-da-bang-cong-nghe-nao-5147509.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/dsc01237-jpg-1795267477-7794-1795267520.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=uf7n9Ca-y2mIO26m13NE6A",
-    "ts": "2026-11-22T02:00:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Tôi 40 tuổi, da có dấu hiệu chảy xệ, muốn thực hiện trẻ hóa không xâm lấn. HIFU hay laser 6D hiệu quả hơn? (Ngọc Linh, Hà Nội)"
-   },
-   {
-    "title": "Chia sẻ kinh nghiệm: Dùng màn hình vi tính làm khung ảnh KTS",
-    "url": "https://tinhte.vn/thread/chia-se-kinh-nghiem-dung-man-hinh-vi-tinh-lam-khung-anh-kts.4192853/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T01:46:16+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Nhà mình rất thường xuyên chụp ảnh để lưu giữ kỉ niệm, hồi xưa khi còn xài máy phim thì chụp hết cuộn là đem đi rửa xong bỏ vô album, bây giờ thì lưu trữ trên đám mây...."
    }
   ],
   "geopolitics": [
@@ -392,130 +454,6 @@
     "summary": "Lúc 23h30 ngày 22-11 (giờ Việt Nam), HLV Mauricio Pochettino sẽ ra mắt Man United trên sân Anfield ở vòng 11 Ngoại hạng Anh. Chờ ông là Liverpool, đối thủ ông đã 8 trận liền chưa thắng."
    }
   ],
-  "economy": [
-   {
-    "title": "Bộ Chính trị đồng ý chủ trương thành lập Khu kinh tế đặc biệt Vân Phong: Đòn bẩy phát triển kinh tế biển",
-    "url": "https://tuoitre.vn/bo-chinh-tri-dong-y-chu-truong-thanh-lap-khu-kinh-te-dac-biet-van-phong-don-bay-phat-trien-kinh-te-bien-100261122082523387.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/hinh-anh-12-1795308465181922237178-0-210-1328-2335-crop-17953089466081850919464.jpeg",
-    "ts": "2026-11-22T04:27:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Theo nhìn nhận của ông Nguyễn Tấn Tuân - nguyên Phó Bí thư Tỉnh ủy, nguyên Chủ tịch UBND tỉnh Khánh Hòa"
-   },
-   {
-    "title": "Đi cà phê người tìm góc xanh, người săn khoảng lặng",
-    "url": "https://tuoitre.vn/di-ca-phe-nguoi-tim-goc-xanh-nguoi-san-khoang-lang-10026111818301758.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/18/img9917-1795001215970207357939-76-0-1676-2560-crop-17950015211101523393167.jpg",
-    "ts": "2026-11-22T04:26:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Không phải lúc nào cũng cần tụ họp hay ồn ào, đôi khi bạn trẻ tìm đến quán cà phê chỉ để tìm một chỗ ngồi dễ chịu"
-   },
-   {
-    "title": "Bitcoin có lúc rơi còn 17.000 USD trên một sàn giao dịch",
-    "url": "https://vnexpress.net/bitcoin-co-luc-roi-con-17-000-usd-tren-mot-san-giao-dich-5147611.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/xoz5nrhvdjjwpoiu6gbnac6vte-179-3294-3177-1795317554.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=xd-lR-tzgxqss_qLYJKr-g",
-    "ts": "2026-11-22T03:35:36+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Bitcoin trên sàn Kraken có thời điểm \"sập\" về 17.000 USD, thấp hơn 70% so với thị trường, do biến động bất thường ở cặp giao dịch bằng đôla Canada."
-   },
-   {
-    "title": "Jensen Huang mất gần 30% tài sản sau bê bối ngoại tình",
-    "url": "https://vnexpress.net/jensen-huang-mat-gan-30-tai-san-sau-be-boi-ngoai-tinh-5147541.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/jensen-huang-ceo-nvidia-comput-2336-6581-1795284996.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=P-gZbbTC_CcdzR-cOMt-Rg",
-    "ts": "2026-11-22T03:26:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Sau bê bối đời tư, tài sản của Jensen Huang, cựu CEO Nvidia, đã giảm 47,9 tỷ USD, tương đương khoảng 29,5%."
-   },
-   {
-    "title": "Giá vàng thế giới giảm mạnh nhất trong 8 tháng, tuần tới có nhích lên?",
-    "url": "https://tuoitre.vn/gia-vang-the-gioi-giam-manh-nhat-trong-8-thang-tuan-toi-co-nhich-len-100261122094553541.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/17919394810002145362399469602018214536239946960201897482ede4d3b9847ca8726d45baeaac6-17953147084801468307806-13-0-1613-2560-crop-1795315317641314468727.jpg",
-    "ts": "2026-11-22T03:16:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Giá vàng thế giới vừa trải qua tuần giảm mạnh nhất 8 tháng, lùi về sát mốc 3.500 USD/ounce. Khảo sát của Kitco cho thấy 60% chuyên gia Phố Wall dự báo kim loại quý còn đi xuống trong tuần tới."
-   },
-   {
-    "title": "Động lực mới đưa xuất khẩu rau quả hướng tới mốc 20 tỷ USD",
-    "url": "https://www.vietnamplus.vn/dong-luc-moi-dua-xuat-khau-rau-qua-huong-toi-moc-20-ty-usd-post1149933.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/dZT0STogUg1N0wbnIQQTYD77wNMMXq88ycelhUJRFNcYKNHJnOny2AElvQNkqiIn/ttxvn-xoai-xuat-khau.jpg.avif",
-    "ts": "2026-11-22T02:32:38+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Để duy trì tăng trưởng ở mức hai con số, ngành rau quả cần chuyển mạnh sang phát triển theo chiều sâu, chú trọng các mặt hàng có lợi thế cạnh tranh, ứng dụng khoa học công nghệ"
-   }
-  ],
-  "science_health": [
-   {
-    "title": "Dấu hiệu giảm cân quá nhanh",
-    "url": "https://vnexpress.net/dau-hieu-giam-can-qua-nhanh-5147462.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/rungtoc-1795252268-6930-1795252346.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=QqvPYw3I5IJYMYEkN0QhLA",
-    "ts": "2026-11-22T04:00:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Mệt mỏi kéo dài, rụng tóc nhiều, thường xuyên ngủ không ngon giấc có thể là dấu hiệu giảm cân quá nhanh gây thiếu hụt năng lượng."
-   },
-   {
-    "title": "Điều gì xảy ra với não khi ngủ trưa?",
-    "url": "https://vnexpress.net/dieu-gi-xay-ra-voi-nao-khi-ngu-trua-5147459.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/nao-1795251663-8228-1795251671.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=U97Nc36rWuduHpnKrE23Vw",
-    "ts": "2026-11-22T04:00:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Giấc ngủ ngắn vào buổi trưa có thể hỗ trợ não bộ củng cố và chuyển trí nhớ ngắn hạn sang dài hạn."
-   },
-   {
-    "title": "Vì sao người cao tuổi mắc cúm không sốt cao?",
-    "url": "https://vnexpress.net/vi-sao-nguoi-cao-tuoi-mac-cum-khong-sot-cao-5147434.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/image001-1795301096-7287-1795301210.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=dNdv8qZ5QB_MgJanHTCM3g",
-    "ts": "2026-11-22T04:00:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Bố tôi ho, mệt mỏi, ăn uống kém nhưng không sốt cao, bác sĩ chẩn đoán mắc cúm A. Vì sao người cao tuổi mắc cúm nhưng không sốt cao? (Hoàng Minh, TP HCM)"
-   },
-   {
-    "title": "Quảng Ninh đẩy mạnh phân cấp, phân quyền, đưa dịch vụ công sát dân hơn",
-    "url": "https://www.vietnamplus.vn/quang-ninh-day-manh-phan-cap-phan-quyen-dua-dich-vu-cong-sat-dan-hon-post1149937.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/dZT0STogUg1N0wbnIQQTYHTyS-yC8vrLzpFgbwbFutVU4LMv36DebiLfMRc7fS2HOuiUB4aI5Pmfry7JCUNUOA/ttxvn-quang-ninh-chinh-quyen-2-cap.jpg.avif",
-    "ts": "2026-11-22T02:58:29+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Việc phân cấp, phân quyền ở Quảng Ninh giúp giảm khâu trung gian, rút ngắn thời gian xử lý và đưa thẩm quyền, trách nhiệm giải quyết công việc đến gần người dân, doanh nghiệp hơn."
-   },
-   {
-    "title": "Phần bắp cải mọi người vứt đi lại chứa nhiều dưỡng chất nhất",
-    "url": "https://vnexpress.net/phan-bap-cai-moi-nguoi-vut-di-lai-chua-nhieu-duong-chat-nhat-5147266.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/phpwdmcae-1795195812-5003-1795196027.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=KtQSWHjJ-XOvBxw4A6dAXA",
-    "ts": "2026-11-22T02:11:46+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Dù lá ngoài cùng của bắp cải thường bị bóc bỏ vì già cứng kém ngon, chuyên gia dinh dưỡng Đài Loan Chen Pei-Chun cho biết đây lại là lớp tích lũy nhiều chất chống oxy hóa nhất nhờ quang hợp mạnh."
-   },
-   {
-    "title": "Trực thăng nã đạn dữ dội, dân tháo chạy trong chiến dịch bắt trùm ma túy Mexico",
-    "url": "https://tuoitre.vn/truc-thang-na-dan-du-doi-dan-thao-chay-trong-chien-dich-bat-trum-ma-tuy-mexico-10026112207010371.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/1000020022-1795307837771153738013-0-0-623-997-crop-179530787627429589506.jpg",
-    "ts": "2026-11-22T01:31:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Chính phủ Mexico cho biết thông tin tình báo từ chính quyền Tổng thống Donald Trump đã giúp lực lượng chức năng bắt giữ trùm ma túy Meza Flores."
-   }
-  ],
   "culture_society": [
    {
     "title": "Đưa di sản văn hóa hòa vào nhịp sống cộng đồng Đà Nẵng",
@@ -588,6 +526,48 @@
     "sources": 1,
     "score": 0,
     "summary": "Lực lượng chức năng phường Hải Vân (Đà Nẵng) đã xuyên đêm ứng cứu thành công đôi nam nữ đi cắm trại nhưng không may bị mắc kẹt giữa khe Suối Cày do nước lũ dâng cao."
+   }
+  ],
+  "economy": [
+   {
+    "title": "Bitcoin có lúc rơi còn 17.000 USD trên một sàn giao dịch",
+    "url": "https://vnexpress.net/bitcoin-co-luc-roi-con-17-000-usd-tren-mot-san-giao-dich-5147611.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/xoz5nrhvdjjwpoiu6gbnac6vte-179-3294-3177-1795317554.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=xd-lR-tzgxqss_qLYJKr-g",
+    "ts": "2026-11-22T03:35:36+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Bitcoin trên sàn Kraken có thời điểm \"sập\" về 17.000 USD, thấp hơn 70% so với thị trường, do biến động bất thường ở cặp giao dịch bằng đôla Canada."
+   },
+   {
+    "title": "Jensen Huang mất gần 30% tài sản sau bê bối ngoại tình",
+    "url": "https://vnexpress.net/jensen-huang-mat-gan-30-tai-san-sau-be-boi-ngoai-tinh-5147541.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/jensen-huang-ceo-nvidia-comput-2336-6581-1795284996.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=P-gZbbTC_CcdzR-cOMt-Rg",
+    "ts": "2026-11-22T03:26:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Sau bê bối đời tư, tài sản của Jensen Huang, cựu CEO Nvidia, đã giảm 47,9 tỷ USD, tương đương khoảng 29,5%."
+   },
+   {
+    "title": "Giá vàng thế giới giảm mạnh nhất trong 8 tháng, tuần tới có nhích lên?",
+    "url": "https://tuoitre.vn/gia-vang-the-gioi-giam-manh-nhat-trong-8-thang-tuan-toi-co-nhich-len-100261122094553541.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/17919394810002145362399469602018214536239946960201897482ede4d3b9847ca8726d45baeaac6-17953147084801468307806-13-0-1613-2560-crop-1795315317641314468727.jpg",
+    "ts": "2026-11-22T03:16:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Giá vàng thế giới vừa trải qua tuần giảm mạnh nhất 8 tháng, lùi về sát mốc 3.500 USD/ounce. Khảo sát của Kitco cho thấy 60% chuyên gia Phố Wall dự báo kim loại quý còn đi xuống trong tuần tới."
+   },
+   {
+    "title": "Động lực mới đưa xuất khẩu rau quả hướng tới mốc 20 tỷ USD",
+    "url": "https://www.vietnamplus.vn/dong-luc-moi-dua-xuat-khau-rau-qua-huong-toi-moc-20-ty-usd-post1149933.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/dZT0STogUg1N0wbnIQQTYD77wNMMXq88ycelhUJRFNcYKNHJnOny2AElvQNkqiIn/ttxvn-xoai-xuat-khau.jpg.avif",
+    "ts": "2026-11-22T02:32:38+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Để duy trì tăng trưởng ở mức hai con số, ngành rau quả cần chuyển mạnh sang phát triển theo chiều sâu, chú trọng các mặt hàng có lợi thế cạnh tranh, ứng dụng khoa học công nghệ"
    }
   ],
   "cyber_digital": [
@@ -673,10 +653,10 @@
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin (USD)",
-   "close": 58824.33984375,
-   "change_pct": 0.04312893658671139,
+   "close": 58798.5703125,
+   "change_pct": -0.0006975567377702858,
    "date": "22/11"
   }
  ],
- "updated": "2026-11-22T05:25:22.105294+00:00"
+ "updated": "2026-11-22T05:55:20.880670+00:00"
 }
