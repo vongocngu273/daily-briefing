@@ -163,6 +163,15 @@
    "news": "Nhận định bóng đá Milan vs Frosinone, 00h00 ngày 23/11: Bắt nạt tân binh"
   },
   {
+   "term": "lich am",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T23:40:00+00:00",
+   "url": "https://thanhnien.vn/lich-am-hom-nay-2111-ngay-ky-hoi-thang-ky-hoi-18526112010241135.htm",
+   "news": "Lịch âm hôm nay 21.11: Ngày Kỷ Hợi, tháng Kỷ Hợi"
+  },
+  {
    "term": "đội tuyển bóng đá u-17 quốc gia new zealand",
    "geo": "VN",
    "traffic": "1000+",
@@ -350,6 +359,15 @@
    "ts": "2026-11-22T22:40:00+00:00",
    "url": "https://vietnamnet.vn/van-khan-ram-thang-10-am-lich-nam-2026-theo-truyen-thong-2577550.html",
    "news": "Văn khấn Rằm tháng 10 năm Bính Ngọ 2026 theo truyền thống"
+  },
+  {
+   "term": "giá cà phê hôm nay",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T23:40:00+00:00",
+   "url": "https://vov.vn/thi-truong/gia-ca-phe-hom-nay-2311-gia-ca-phe-trong-nuoc-va-the-gioi-on-dinh-post1352445.vov",
+   "news": "Giá cà phê hôm nay 23/11: Giá cà phê trong nước và thế giới ổn định"
   },
   {
    "term": "pumas unam đấu với monterrey",
@@ -557,6 +575,24 @@
    "ts": "2026-11-22T22:40:00+00:00",
    "url": "https://vnexpress.net/uy-quyen-nhan-luong-huu-khong-con-gioi-han-12-thang-5147725.html",
    "news": "Ủy quyền nhận lương hưu không còn giới hạn 12 tháng"
+  },
+  {
+   "term": "park hang-seo",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T23:20:00+00:00",
+   "url": "https://www.saostar.vn/sao-sport/hlv-park-hang-seo-bao-tin-vui-giua-luc-hlv-kim-sang-sik-sap-chia-tay-202611222357511234.html",
+   "news": "HLV Park Hang Seo báo tin vui giữa lúc HLV Kim Sang Sik hết hợp đồng"
+  },
+  {
+   "term": "nhiệt độ hà nội hôm nay",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T23:20:00+00:00",
+   "url": "https://laodong.vn/du-lich/cong-dong/thoi-tiet-mien-bac-sap-mua-tro-lai-ret-nhat-duoi-10-do-c-1804588.html",
+   "news": "Thời tiết miền Bắc sắp mưa trở lại, rét nhất dưới 10 độ C"
   },
   {
    "term": "chứng khoán",
@@ -775,6 +811,24 @@
    "news": "Chỉ 1 nền bóng đá Đông Nam Á giành vé dự đủ 4 vòng chung kết châu Á năm 2027"
   },
   {
+   "term": "quang lê",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T23:20:00+00:00",
+   "url": "https://www.saostar.vn/dien-anh/quang-le-hoi-ngo-cung-than-tuong-nsut-thanh-loc-202611200500150628.html",
+   "news": "Quang Lê hội ngộ cùng thần tượng NSƯT Thành Lộc"
+  },
+  {
+   "term": "chivas đấu với cruz azul",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://thethao247.vn/63-nhan-dinh-guadalajara-chivas-vs-cruz-azul-dai-chien-ngoi-dau-6h07-ngay-23-11-2026-c288-d446527.html",
+   "news": "Nhận định Guadalajara Chivas vs Cruz Azul: Đại chiến ngôi đầu, 6h07 ngày 23/11/2026"
+  },
+  {
    "term": "pachuca đấu với toluca",
    "geo": "VN",
    "traffic": "100+",
@@ -955,6 +1009,15 @@
    "news": "Giếng khoan ở Gia Lai phun cột khí và nước cao gần 20m suốt 2 năm, phát hiện thứ có hàm lượng tới 81,9%"
   },
   {
+   "term": "the thao",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T23:00:00+00:00",
+   "url": "https://znews.vn/anh-vien-thua-my-tien-o-noi-dung-so-truong-post1698328.html",
+   "news": "Ánh Viên thua Mỹ Tiên ở nội dung sở trường"
+  },
+  {
    "term": "nashville đấu với cincinnati",
    "geo": "VN",
    "traffic": "100+",
@@ -962,6 +1025,15 @@
    "ts": "2026-11-22T23:10:00+00:00",
    "url": "https://baonghean.vn/truc-tiep-nashville-sc-vs-fc-cincinnati-hiep-2-bat-dau-fc-cincinnati-dan-1-0-10356420.html",
    "news": "Trực tiếp Nashville SC vs FC Cincinnati: Hiệp 2 bắt đầu, FC Cincinnati dẫn 1-0"
+  },
+  {
+   "term": "anthropic",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T23:40:00+00:00",
+   "url": "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html",
+   "news": "Stocks are 'on fire sale' as Anthropic IPO fails to calm AI trade jitters"
   }
  ],
  "world": [
@@ -1668,6 +1740,15 @@
    "news": "What To Look For As Franz Wagner, Magic Take On AJ Dybantsa, Wizards"
   },
   {
+   "term": "mario lopez",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://www.instyle.com/mario-lopez-kids-12240278",
+   "news": "Meet Mario Lopez’s 3 Kids, Including Their Impressive Acting Careers"
+  },
+  {
    "term": "iran war",
    "geo": "GB",
    "traffic": "1000+",
@@ -2082,13 +2163,49 @@
    "news": "Giants’ schedule ramps up in difficulty with Sunday’s game against Jaguars - The Athletic"
   },
   {
-   "term": "brussels airport",
+   "term": "strait of hormuz",
    "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T23:50:00+00:00",
-   "url": "https://www.independent.co.uk/travel/news-and-advice/brussels-airport-flights-cancelled-nationwide-strike-b3089235.html",
-   "news": "Major European airport ‘cancels majority of flights’ and warns of travel chaos"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T23:10:00+00:00",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue",
+   "news": "Iran war live: Navy says two tankers ablaze near Hormuz after hitting mines"
+  },
+  {
+   "term": "disney discontinues hulu standalone app",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://variety.com/2026/tv/news/disney-hulu-app-merger-completed-in-december-1236949981/",
+   "news": "Disney+ and Hulu App Merger Slated to Be Completed in December"
+  },
+  {
+   "term": "geno smith",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://www.espn.com/nfl/story/_/id/50543665/jets-qb-geno-smith-ankle-cleared-start-vs-chargers",
+   "news": "Jets QB Geno Smith (ankle) cleared to start vs. Chargers"
+  },
+  {
+   "term": "nasdaq futures",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html",
+   "news": "Stocks are 'on fire sale' as Anthropic IPO fails to calm AI trade jitters"
+  },
+  {
+   "term": "wage",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://www.cnbc.com/make-it/2026/11/22/google-worker-earns-323000-a-yearbut-he-lives-on-minimum-wage.html",
+   "news": "26-year-old Google worker earns $323,000 a year—but lives on less than minimum wage"
   },
   {
    "term": "knicks vs trail blazers",
@@ -2854,6 +2971,42 @@
    "ts": "2026-11-22T23:10:00+00:00",
    "url": "https://cwibc.co.id/en/cimini-garrett-wilson-jets-trade",
    "news": "Cimini Warns Jets Losing Streak Could Push Garrett Wilson Out"
+  },
+  {
+   "term": "jets schedule",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://www.sportsnet.ca/nhl/article/jets-quarter-mark-report-card-winnipeg-still-searching-for-identity/",
+   "news": "Jets quarter-mark report card: Winnipeg still searching for identity"
+  },
+  {
+   "term": "josh holloway",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://www.tvline.com/2321595/what-to-watch-november-22-2026-tv-shows-movies-streaming/",
+   "news": "What To Watch Sunday: Josh Holloway On Tracker, Rachael Leigh Cook Hallmark Movie, And More"
+  },
+  {
+   "term": "pedro pascal",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T23:40:00+00:00",
+   "url": "https://www.sfgate.com/food/article/pedro-pascal-tosca-sf-22541881.php",
+   "news": "'Women were screaming': Pedro Pascal dines at SF's historic Tosca Cafe"
+  },
+  {
+   "term": "bill hader",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T23:40:00+00:00",
+   "url": "https://www.rte.ie/entertainment/2026/1122/1600201-america-ferrera/",
+   "news": "America Ferrera says Cat In The Hat is 'an institution'"
   },
   {
    "term": "rockstar games gta vi",
@@ -4233,13 +4386,31 @@
    "news": "Audley Harrison has backed Anthony Joshua and Tyson Fury to deliver when they fight on December 11 in Cardiff."
   },
   {
-   "term": "josh hutcherson",
+   "term": "amanda seyfried",
    "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-21T23:50:00+00:00",
-   "url": "https://www.yahoo.com/entertainment/movies/article/josh-hutcherson-reveals-top-secret-call-that-reunited-him-with-jennifer-lawrence-in-sunrise-on-the-reaping-161353596.html",
-   "news": "Josh Hutcherson reveals 'top-secret' call that reunited him with Jennifer Lawrence in 'Sunrise on the Reaping'"
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T23:20:00+00:00",
+   "url": "https://www.imdb.com/it/news/ni66122764/?ref_=nm_nwr_2",
+   "news": "The Tonight Show Starring Jimmy Fallon: Tim Allen, Amanda Seyfried"
+  },
+  {
+   "term": "men",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T23:30:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cm1dvrwqvv5qo",
+   "news": "Two arrested and man sought over 'altercation' by roadside in Fife"
+  },
+  {
+   "term": "theo johnson",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T23:40:00+00:00",
+   "url": "",
+   "news": ""
   },
   {
    "term": "maysilee donner",
@@ -4663,7 +4834,16 @@
    "ts": "2026-11-22T16:00:00+00:00",
    "url": "https://www.skysports.com/football/news/13613485/fabian-hurzeler-how-brighton-boss-won-fans-over-as-seagulls-relish-in-more-controlled-football",
    "news": "Fabian Hurzeler: How Brighton boss won fans over as Seagulls relish in more controlled football"
+  },
+  {
+   "term": "sterling shepard",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T23:20:00+00:00",
+   "url": "https://www.nfl.com/videos/sterling-shepard-s-26th-career-td-catch-boosts-jets-lead-to-16-3-against-chargers",
+   "news": "Sterling Shepard's 26th career TD catch boosts Jets' lead to 16-3 against Chargers"
   }
  ],
- "updated": "2026-11-22T23:25:27.500996+00:00"
+ "updated": "2026-11-22T23:55:29.442571+00:00"
 }
