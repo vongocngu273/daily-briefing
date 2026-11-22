@@ -82,6 +82,15 @@
    "news": "Cảnh báo 2 tỉnh có mưa to, nguy cơ lũ quét, sạt lở trong 6 giờ tới"
   },
   {
+   "term": "công vinh thủy tiên chia tay",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T07:30:00+00:00",
+   "url": "https://www.saostar.vn/dien-anh/thuy-tien-gay-tiec-nuoi-202611201617355403.html",
+   "news": "Thủy Tiên gây tiếc nuối"
+  },
+  {
    "term": "man city vs fulham f.c. standings",
    "geo": "VN",
    "traffic": "1000+",
@@ -260,15 +269,6 @@
    "ts": "2026-11-22T06:30:00+00:00",
    "url": "https://bongdaplus.vn/v-league/nhan-dinh-bong-da-da-nang-vs-ninh-binh-18h00-ngay-22-11-thay-tuong-co-doi-van-5295492611.html",
    "news": "Nhận định bóng đá Đà Nẵng vs Ninh Bình, 18h00 ngày 22/11: Thay tướng có đổi vận?"
-  },
-  {
-   "term": "công vinh thủy tiên chia tay",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T07:30:00+00:00",
-   "url": "https://www.saostar.vn/dien-anh/thuy-tien-gay-tiec-nuoi-202611201617355403.html",
-   "news": "Thủy Tiên gây tiếc nuối"
   },
   {
    "term": "vinfast",
@@ -548,6 +548,15 @@
    "ts": "2026-11-22T06:20:00+00:00",
    "url": "https://mashable.com/entertainment/gta-6-vs-gta-5-comparisons",
    "news": "'GTA 6' vs 'GTA 5' comparisons: See how the visuals stack up"
+  },
+  {
+   "term": "elon musk",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T07:50:00+00:00",
+   "url": "https://eu.36kr.com/en/p/4078984565003138",
+   "news": "Elon Musk Proposes Amazon Rival, Netizens Already Suggest Brand Names"
   }
  ],
  "world": [
@@ -1299,6 +1308,24 @@
    "news": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'"
   },
   {
+   "term": "world rugby rankings",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T08:00:00+00:00",
+   "url": "https://www.sarugbymag.co.za/blacks-plummet-rankings/",
+   "news": "All Blacks plummet down rankings"
+  },
+  {
+   "term": "leandro paredes",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T08:10:00+00:00",
+   "url": "https://as.com/futbol/internacional/boca-atl-mineiro-en-directo-final-de-copa-sudamericana-hoy-en-vivo-f202611-d/",
+   "news": "Boca 2-0 Atl. Mineiro : goles, resumen y resultado"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -1765,6 +1792,24 @@
    "ts": "2026-11-22T07:20:00+00:00",
    "url": "https://thehill.com/homenews/campaign/6234314-trump-maga-split-midterms/",
    "news": "Trump’s grip on GOP tested as MAGA allies head for exit"
+  },
+  {
+   "term": "jagiellonia białystok",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T07:50:00+00:00",
+   "url": "https://przegladsportowy.onet.pl/pilka-nozna/ekstraklasa/cracovia-jagiellonia-bialystok-relacja-na-zywo-pko-bp-ekstraklasa-live/8341p2n",
+   "news": "Ekstraklasa: Cracovia - Jagiellonia Białystok [RELACJA NA ŻYWO]"
+  },
+  {
+   "term": "stock market",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T07:50:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo",
+   "news": "Tech stock sell-off drags markets down as Anthropic shares slide"
   },
   {
    "term": "harvard yale game",
@@ -2586,6 +2631,24 @@
    "news": "Netflix actor, 38, ID’d after slapping woman then drowning off Santa Monica Pier as his dad calls it ‘a big mystery’"
   },
   {
+   "term": "aeropuerto",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T07:40:00+00:00",
+   "url": "https://elpais.com/us/migracion/2026-11-22/agentes-del-ice-causan-terror-al-detener-a-dos-personas-en-el-embarque-de-un-vuelo-en-seattle.html",
+   "news": "Agentes del ICE causan terror al detener a dos personas en el embarque de un vuelo en Seattle"
+  },
+  {
+   "term": "drake",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T07:50:00+00:00",
+   "url": "https://www.espn.com/nfl/story/_/id/50542578/patriots-qb-drake-maye-fractured-fibula-sources-say",
+   "news": "Patriots QB Drake Maye has fractured fibula, sources say"
+  },
+  {
    "term": "sufc",
    "geo": "GB",
    "traffic": "100+",
@@ -2712,14 +2775,68 @@
    "news": "Selena Gomez Shares Her Reaction to Martin Short Ruining Her Wedding Cake"
   },
   {
-   "term": "aeropuerto",
+   "term": "ian wright",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T07:50:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/football/articles/c6e9kgn532gxo",
+   "news": "Football gossip: Nusa, Fernandes Rayan, Ruiz, De Bruyne, Rudoni, Martins"
+  },
+  {
+   "term": "rosebank oil and gas field",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T07:50:00+00:00",
+   "url": "https://www.thetimes.com/uk/politics/article/rosebank-energy-bills-miatta-fahnbulleh-kdn2wmkcp",
+   "news": "Rosebank oilfield won’t cut bills, warns energy secretary"
+  },
+  {
+   "term": "skip bayless",
    "geo": "US",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-22T07:40:00+00:00",
-   "url": "https://elpais.com/us/migracion/2026-11-22/agentes-del-ice-causan-terror-al-detener-a-dos-personas-en-el-embarque-de-un-vuelo-en-seattle.html",
-   "news": "Agentes del ICE causan terror al detener a dos personas en el embarque de un vuelo en Seattle"
+   "ts": "2026-11-22T08:00:00+00:00",
+   "url": "https://www.espn.com/watch/player/_/id/50541403",
+   "news": "Stephen A.'s DISGUSTED to agree with Skip Bayless on this 49ers-Vikings debate"
+  },
+  {
+   "term": "la",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:00:00+00:00",
+   "url": "https://www.nbclosangeles.com/news/local/palisades-arson-trial-jonathan-rinderknecht/3972494/",
+   "news": "Man found guilty of starting Palisades Fire in federal prosecutors' second attempt"
+  },
+  {
+   "term": "schettino",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:00:00+00:00",
+   "url": "https://www.rainews.it/articoli/2026/11/naufragio-della-costa-concordia-schettino-lascia-il-carcere-dopo-nove-anni-266ff0d9-ed96-4266-bce9-32f4adac23fc.html",
+   "news": "Naufragio della Costa Concordia, Schettino lascia il carcere dopo nove anni: libero da luglio 2030"
+  },
+  {
+   "term": "gabby allen",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:00:00+00:00",
+   "url": "https://www.thesun.co.uk/tvandshowbiz/41091876/dan-osborne-gabby-allen-kiss-winter-wonderland/",
+   "news": "Dan Osborne & Gabby Allen KISS on night out - 7 years after cheating rumours"
+  },
+  {
+   "term": "sun newspaper",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T08:10:00+00:00",
+   "url": "https://www.thesun.co.uk/news/41103898/tiktok-deletes-taliban-martyr-rant/",
+   "news": "TikTok deletes sick rank by terrorist praising dead Taliban fighter after alert from The Sun on Sunday"
   }
  ],
- "updated": "2026-11-22T07:55:25.773915+00:00"
+ "updated": "2026-11-22T08:25:21.160900+00:00"
 }
