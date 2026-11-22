@@ -136,6 +136,15 @@
    "news": "'See The Light 2': Sức hút của Mỹ Tâm"
   },
   {
+   "term": "giá vàng ngày 22 tháng 11 năm 2026",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T05:10:00+00:00",
+   "url": "https://laodong.vn/the-gioi/du-bao-thoi-diem-gia-vang-cham-moc-5000-usdounce-bat-chap-da-giam-manh-1804311.ldo",
+   "news": "Dự báo thời điểm giá vàng chạm mốc 5.000 USD/ounce bất chấp đà giảm mạnh"
+  },
+  {
    "term": "lich thi dau u17",
    "geo": "VN",
    "traffic": "1000+",
@@ -235,13 +244,13 @@
    "news": "\"Chia tay trong mưa\" vào game GTA 6, ca sĩ Phương Thanh cũng... ngỡ ngàng"
   },
   {
-   "term": "giá vàng ngày 22 tháng 11 năm 2026",
+   "term": "nguyễn phương hằng",
    "geo": "VN",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-22T05:10:00+00:00",
-   "url": "https://tuoitre.vn/gia-vang-the-gioi-giam-manh-nhat-trong-8-thang-tuan-toi-co-nhich-len-100261122094553541.htm",
-   "news": "Giá vàng thế giới giảm mạnh nhất trong 8 tháng, tuần tới có nhích lên?"
+   "ts": "2026-11-22T05:00:00+00:00",
+   "url": "",
+   "news": ""
   },
   {
    "term": "como vs",
@@ -388,15 +397,6 @@
    "news": "Rolls-Royce welcomes Royal Brunei Airlines order for eight Trent 1000 XE engines"
   },
   {
-   "term": "nguyễn phương hằng",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:00:00+00:00",
-   "url": "",
-   "news": ""
-  },
-  {
    "term": "bắt giữ",
    "geo": "VN",
    "traffic": "200+",
@@ -413,6 +413,15 @@
    "ts": "2026-11-22T06:30:00+00:00",
    "url": "https://vietnamnet.vn/nhan-dinh-da-nang-vs-ninh-binh-18h-ngay-22-12-2577401.html",
    "news": "Nhận định SHB Đà Nẵng vs Ninh Bình: Trợ lý cũ của thầy Park ra mắt"
+  },
+  {
+   "term": "biển baltic",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:40:00+00:00",
+   "url": "https://vnexpress.net/tau-hang-nga-boc-chay-sau-don-tap-kich-tren-bien-baltic-5147554.html",
+   "news": "Tàu hàng Nga bốc cháy sau đòn tập kích trên biển Baltic"
   },
   {
    "term": "ben shelton",
@@ -521,15 +530,6 @@
    "ts": "2026-11-22T06:20:00+00:00",
    "url": "https://mashable.com/entertainment/gta-6-vs-gta-5-comparisons",
    "news": "'GTA 6' vs 'GTA 5' comparisons: See how the visuals stack up"
-  },
-  {
-   "term": "biển baltic",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T06:40:00+00:00",
-   "url": "https://vnexpress.net/tau-hang-nga-boc-chay-sau-don-tap-kich-tren-bien-baltic-5147554.html",
-   "news": "Tàu hàng Nga bốc cháy sau đòn tập kích trên biển Baltic"
   }
  ],
  "world": [
@@ -1263,6 +1263,15 @@
    "news": "Gervonta Davis and Jesse ‘Bam’ Rodriguez tease unlikely catchweight showdown"
   },
   {
+   "term": "charles leclerc",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T05:50:00+00:00",
+   "url": "https://www.espn.co.uk/f1/story/_/id/50472109/lewis-hamilton-charles-leclerc-ferrari-las-vegas-grand-prix-formula-1",
+   "news": "Ferrari's Lewis Hamilton and Charles Leclerc clash at Las Vegas Grand Prix"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -1650,15 +1659,6 @@
    "news": "Las Vegas Grand Prix result: Max Verstappen wins extraordinary race as Lewis Hamilton and Charles Leclerc collide"
   },
   {
-   "term": "charles leclerc",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T05:50:00+00:00",
-   "url": "https://www.crash.net/f1/news/1110692/1/lewis-hamilton-fumes-10-second-penalty-las-vegas-grand-prix",
-   "news": "Lewis Hamilton fumes at 10-second penalty at Las Vegas Grand Prix"
-  },
-  {
    "term": "lewis hamilton",
    "geo": "GB",
    "traffic": "500+",
@@ -1677,6 +1677,15 @@
    "news": "Late-night test: Duke looks for a response against Washington State"
   },
   {
+   "term": "gta 6 chapter 2 mission list",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T06:20:00+00:00",
+   "url": "https://www.redbull.com/int-en/gta-6-complete-mission-list",
+   "news": "GTA 6: A guide to every mission and chapter"
+  },
+  {
    "term": "vicki gta 6 voice actor",
    "geo": "US",
    "traffic": "500+",
@@ -1684,6 +1693,33 @@
    "ts": "2026-11-22T06:40:00+00:00",
    "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
    "news": "Who is Taryn Manning? GTA 6 Vicki actor and singer"
+  },
+  {
+   "term": "theresa may",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T06:40:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cvj6l8y3x1x4o",
+   "news": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'"
+  },
+  {
+   "term": "lucia voice actor",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T06:50:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/celebrity/article/the-gta-6-cast-has-been-revealed-meet-the-voice-actors-behind-lucia-jason-and-more-155230217.html",
+   "news": "The ‘GTA 6’ cast has been revealed: Meet the voice actors behind Lucia, Jason and more"
+  },
+  {
+   "term": "gta vi game",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T06:50:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
+   "news": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history"
   },
   {
    "term": "harvard yale game",
@@ -2442,13 +2478,22 @@
    "news": "WWII Ghost Rider joins Hasbro's Marvel Legends Series with Hellhunters figure & motorcycle set"
   },
   {
-   "term": "theresa may",
+   "term": "criminal profile gta 6",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:50:00+00:00",
+   "url": "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
+   "news": "GTA 6 Criminal Profile: How the system works"
+  },
+  {
+   "term": "f1 results today",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-22T06:40:00+00:00",
-   "url": "https://www.bbc.co.uk/news/articles/cvj6l8y3x1x4o",
-   "news": "May warns Burnham 'Brexit is done' after PM's EU talks"
+   "ts": "2026-11-22T06:50:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/formula1/articles/c9gklmdmnzydo",
+   "news": "Las Vegas Grand Prix: George Russell fastest in second practice after rain"
   },
   {
    "term": "sufc",
@@ -2541,6 +2586,15 @@
    "news": "Jennifer Lawrence ranks Chris Pratt as ‘worst’ on-screen kiss"
   },
   {
+   "term": "george russell",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T05:50:00+00:00",
+   "url": "https://www.formula1.com/en/video/2026-las-vegas-grand-prix-russell-and-verstappen-trade-lead.1882531463419115202",
+   "news": "2026 Las Vegas Grand Prix: Russell and Verstappen trade lead"
+  },
+  {
    "term": "uae vs nep",
    "geo": "GB",
    "traffic": "100+",
@@ -2548,7 +2602,34 @@
    "ts": "2026-11-22T06:30:00+00:00",
    "url": "https://www.cricketworld.com/match-predictions-acc-mens-asia-cup-rising-stars-2026-india-a-vs-pakistan-a-and-uae-vs-nepal-matches-7-and-8-november-22/114475.htm",
    "news": "ACC Men's Asia Cup Rising Stars 2026: Nov 22 Predictions"
+  },
+  {
+   "term": "prince william foreign visits 2027",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T06:50:00+00:00",
+   "url": "https://www.thetimes.com/uk/royal-family/article/prince-william-government-request-overseas-trips-gnffrqzxq",
+   "news": "Prince William to step up on world stage with more royal trips"
+  },
+  {
+   "term": "powerball winner",
+   "geo": "US",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T07:00:00+00:00",
+   "url": "https://www.usatoday.com/story/money/lottery/2026/11/21/powerball-winning-numbers-november-21-2026/92884986007/",
+   "news": "Powerball winning numbers for Nov. 21: $114M jackpot"
+  },
+  {
+   "term": "e.j. carroll",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T07:00:00+00:00",
+   "url": "https://deadline.com/2026/11/e-j-carroll-dead-deuce-boardwalk-empire-blue-bloods-1237230599/",
+   "news": "E.J. Carroll Dies: ‘The Deuce,’ ‘Boardwalk Empire,’ ‘Law & Order’ Actor Was 66"
   }
  ],
- "updated": "2026-11-22T06:55:29.122146+00:00"
+ "updated": "2026-11-22T07:25:21.607882+00:00"
 }
