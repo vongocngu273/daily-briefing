@@ -2,7 +2,11 @@ name: Daily Briefing
 
 on:
   schedule:
-    - cron: "10 0 * * *"   # 07:10 Asia/Ho_Chi_Minh
+    # GitHub có thể trễ hoặc bỏ lịch lúc đông máy: đặt 3 lần, lần chạy được đầu tiên làm bản tin,
+    # các lần sau tự bỏ qua (job "check"). Giờ VN: 06:53, 07:17, 07:41.
+    - cron: "53 23 * * *"
+    - cron: "17 0 * * *"
+    - cron: "41 0 * * *"
   workflow_dispatch:
 
 permissions:
