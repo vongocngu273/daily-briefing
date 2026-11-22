@@ -7,7 +7,7 @@
    "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPjuwU16n-kfs_b8roH-oVnsdF1BY2aWdTiEQDdtBxUxF/ttxvn-bi.jpg.avif",
    "ts": "2026-11-22T15:39:23+00:00",
    "sources": 2,
-   "score": 7.49
+   "score": 6.9
   },
   {
    "title": "Liên danh Việt - Pháp - Hàn trúng gói tư vấn lớn nhất đường sắt tốc độ cao Bắc Nam",
@@ -16,7 +16,7 @@
    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/395afd4a-ee7da30d70b0fe0-17953-8878-3722-1795353176.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=dvtE8qrf55-4hwz73-pgJQ",
    "ts": "2026-11-22T13:47:24+00:00",
    "sources": 3,
-   "score": 7.48
+   "score": 6.89
   },
   {
    "title": "Tuổi 43, Nguyễn Tiến Minh đánh cầu 'không cần nhìn' gây sốt Đại hội Thể thao toàn quốc",
@@ -25,16 +25,16 @@
    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/nguyen-tien-minh-cau-long-dai-hoi-the-thao-toan-quoc-1795363378611877488441-1795365098032713623765-68-18-935-1406-crop-1795365133833405420036.jpeg",
    "ts": "2026-11-22T16:18:00+00:00",
    "sources": 2,
-   "score": 4.9
+   "score": 4.31
   },
   {
-   "title": "Indonesia: Cháy nhà máy bánh kẹo, ít nhất 3 người thiệt mạng",
-   "url": "https://www.vietnamplus.vn/indonesia-chay-nha-may-banh-keo-it-nhat-3-nguoi-thiet-mang-post1150023.vnp",
-   "source": "VietnamPlus",
-   "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPkcbkZZ6cmJ-b5QWwtESi6qjrdLotsnt-pub38h03x6L/ttxvn-chay.jpg.avif",
-   "ts": "2026-11-22T15:37:52+00:00",
-   "sources": 2,
-   "score": 4.78
+   "title": "Ủy quyền nhận lương hưu không còn giới hạn 12 tháng",
+   "url": "https://vnexpress.net/uy-quyen-nhan-luong-huu-khong-con-gioi-han-12-thang-5147725.html",
+   "source": "VnExpress",
+   "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/IMG2442JPG-1795355228-9612-1795355236.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DNQiNCXwC93OhBYWZxKTcA",
+   "ts": "2026-11-22T18:00:00+00:00",
+   "sources": 1,
+   "score": 3.89
   },
   {
    "title": "Ngày Văn hóa Việt Nam 2026: Cầu nối từ những thanh âm và hương vị đời thường",
@@ -43,7 +43,7 @@
    "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPhL31u_-tleLcjNZa4gQju0lpNxaEs-K2TFAUhUxi2Pv/ttxvn-han-quoc.jpg.avif",
    "ts": "2026-11-22T13:08:33+00:00",
    "sources": 1,
-   "score": 4.07
+   "score": 3.48
   },
   {
    "title": "Đặc vụ ICE bắt người khi đang lên máy bay, Thống đốc Washington phẫn nộ",
@@ -52,67 +52,211 @@
    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/1000020041-17953419340322098537695-0-82-510-898-crop-17953460015101461420368.jpg",
    "ts": "2026-11-22T11:08:00+00:00",
    "sources": 2,
-   "score": 4.03
+   "score": 3.45
   }
  ],
  "latest": [
-  {
-   "title": "Samsung đang cho Now Bar học Dynamic Island, có thể ra mắt cùng Galaxy S27",
-   "url": "https://tinhte.vn/thread/samsung-dang-cho-now-bar-hoc-dynamic-island-co-the-ra-mat-cung-galaxy-s27.4194746/",
-   "source": "Tinh tế",
-   "image": "https://photo2.tinhte.vn/data/attachment-files/2026/11/9140364_body01.jpg",
-   "ts": "2026-11-22T16:53:37+00:00",
-   "sources": 1,
-   "score": 0.0
-  },
   {
    "title": "Amazon Kindle 2026 vào một ngày mưa, khi việc đọc sách quay trở về với bản ngã gốc rễ của nó",
    "url": "https://tinhte.vn/thread/amazon-kindle-2026-vao-mot-ngay-mua-khi-viec-doc-sach-quay-tro-ve-voi-ban-nga-goc-re-cua-no.4192655/",
    "source": "Tinh tế",
    "image": "",
-   "ts": "2026-11-22T16:43:58+00:00",
+   "ts": "2026-11-22T19:48:55+00:00",
    "sources": 1,
    "score": 0.0
   },
   {
-   "title": "AMD ra mắt EPYC 9006 \"Venice\": CPU Zen 6 2nm, tối đa 256 nhân, thay đổi triệt để từ trong ra ngoài",
-   "url": "https://tinhte.vn/thread/amd-ra-mat-epyc-9006-venice-cpu-zen-6-2nm-toi-da-256-nhan-thay-doi-triet-de-tu-trong-ra-ngoai.4194819/",
+   "title": "SoftBank từng tính mua SK Hynix với giá khoảng 1.000 tỉ USD, nay nói không còn xem xét",
+   "url": "https://tinhte.vn/thread/softbank-tung-tinh-mua-sk-hynix-voi-gia-khoang-1-000-ti-usd-nay-noi-khong-con-xem-xet.4194684/",
    "source": "Tinh tế",
    "image": "",
-   "ts": "2026-11-22T16:36:40+00:00",
+   "ts": "2026-11-22T19:21:55+00:00",
    "sources": 1,
    "score": 0.0
   },
   {
-   "title": "Bảng xếp hạng V-League sau vòng 8: CLB Thành phố Đồng Nai nằm cuối bảng",
-   "url": "https://tuoitre.vn/bang-xep-hang-v-league-sau-vong-8-clb-thanh-pho-dong-nai-nam-cuoi-bang-10026112223002096.htm",
+   "title": "Tin tức sáng 23-11: Từ tháng 7-2027, nhà - đất chung của vợ chồng phải ghi tên cả hai trên sổ đỏ",
+   "url": "https://tuoitre.vn/tin-tuc-sang-23-11-tu-thang-7-2027-nha-dat-chung-cua-vo-chong-phai-ghi-ten-ca-hai-tren-so-do-10026112222200145.htm",
    "source": "Tuổi Trẻ",
-   "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/huynh-tan-sinh-truong-tuoi-dong-nai-6-2327-1790052966903369336720-0-233-637-1252-crop-1795364555740120536078.jpg",
-   "ts": "2026-11-22T16:20:00+00:00",
+   "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/bds-gia-nha-dat-edit-1793005648743217697408-0-0-1600-2560-crop-17953604751322019163658.jpg",
+   "ts": "2026-11-22T18:45:00+00:00",
    "sources": 1,
    "score": 0.0
   },
   {
-   "title": "Thành phố Hồ Chí Minh: Phát huy tinh thần đại đoàn kết và văn hóa dân tộc",
-   "url": "https://www.vietnamplus.vn/thanh-pho-ho-chi-minh-phat-huy-tinh-than-dai-doan-ket-va-van-hoa-dan-toc-post1150027.vnp",
-   "source": "VietnamPlus",
-   "image": "https://media.vietnamplus.vn/images/QcJaCVoYMCKXsPQ_Rprjc-38c4IPtjh1ZKRzCeHmR-5PlX63DVpUz6hkZRjwfuGi/logo-vietnamplus.jpg.avif",
-   "ts": "2026-11-22T16:04:57+00:00",
+   "title": "Đương kim vô địch bị cầm hòa trận ra quân môn bóng đá nam",
+   "url": "https://tuoitre.vn/duong-kim-vo-dich-bi-cam-hoa-tran-ra-quan-mon-bong-da-nam-100261123001417369.htm",
+   "source": "Tuổi Trẻ",
+   "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/hoang-minh-hoi-an-mung-cho-slna-17953674293311163310829-0-0-938-1500-crop-179536766901633046345.jpeg",
+   "ts": "2026-11-22T18:40:00+00:00",
    "sources": 1,
    "score": 0.0
   },
   {
-   "title": "Nổ tại quân cảng Libya, nghi do tàu Nga bị tập kích",
-   "url": "https://vnexpress.net/no-tai-quan-cang-libya-nghi-do-tau-nga-bi-tap-kich-5147730.html",
+   "title": "Bên trong máy bay 'ngày tận thế' của Mỹ",
+   "url": "https://vnexpress.net/ben-trong-may-bay-ngay-tan-the-cua-my-5147436.html",
    "source": "VnExpress",
-   "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/Settop-1795361093-7113-1795361652.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=32PaR6kfgP59DWippte7Mw&t=image",
-   "ts": "2026-11-22T16:03:02+00:00",
+   "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/Settop-1795247367-5163-1795247581.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=cBLDBL048khqGlWe5TcRew",
+   "ts": "2026-11-22T18:00:00+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
+  {
+   "title": "Thức uống giúp giảm acid uric",
+   "url": "https://vnexpress.net/thuc-uong-giup-giam-acid-uric-5147519.html",
+   "source": "VnExpress",
+   "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/cafe4-1795269058.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=uAgy-WU_UHCDcWHiGckDPw",
+   "ts": "2026-11-22T18:00:00+00:00",
    "sources": 1,
    "score": 0.0
   }
  ],
  "cats": {
+  "tech_ai": [
+   {
+    "title": "Amazon Kindle 2026 vào một ngày mưa, khi việc đọc sách quay trở về với bản ngã gốc rễ của nó",
+    "url": "https://tinhte.vn/thread/amazon-kindle-2026-vao-mot-ngay-mua-khi-viec-doc-sach-quay-tro-ve-voi-ban-nga-goc-re-cua-no.4192655/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T19:48:55+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Đó là một buổi sáng chủ nhật âm u, khác hẳn với cái thời tiết nắng ấm thường nhật. Đường xá vắng vẻ"
+   },
+   {
+    "title": "SoftBank từng tính mua SK Hynix với giá khoảng 1.000 tỉ USD, nay nói không còn xem xét",
+    "url": "https://tinhte.vn/thread/softbank-tung-tinh-mua-sk-hynix-voi-gia-khoang-1-000-ti-usd-nay-noi-khong-con-xem-xet.4194684/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T19:21:55+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Báo The Information ngày 20/11, dẫn người am hiểu vụ việc, viết rằng CEO SoftBank Group Masayoshi Son gần đây đã tiếp cận các định chế phố Wall để hỏi về việc tài trợ một thương vụ mua lại có thể..."
+   },
+   {
+    "title": "Kia Telluride Hybrid tới LA Auto Show 2026: 329 mã lực, đi được 1.025 km mỗi bình xăng",
+    "url": "https://tinhte.vn/thread/kia-telluride-hybrid-toi-la-auto-show-2026-329-ma-luc-di-duoc-1-025-km-moi-binh-xang.4194219/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T17:55:34+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Kia mang Telluride Hybrid, bản hybrid đầu tiên của mẫu SUV 3 hàng ghế này, tới LA Auto Show 2026 tại Los Angeles (Mỹ)."
+   },
+   {
+    "title": "AMD ra mắt EPYC 9006 \"Venice\": CPU Zen 6 2nm, tối đa 256 nhân, thay đổi triệt để từ trong ra ngoài",
+    "url": "https://tinhte.vn/thread/amd-ra-mat-epyc-9006-venice-cpu-zen-6-2nm-toi-da-256-nhan-thay-doi-triet-de-tu-trong-ra-ngoai.4194819/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T16:36:40+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Với EPYC 9006, AMD đã chính thức có CPU Zen 6 đầu tiên và cũng là con chip 2nm tiên tiến nhất hiện tại của hãng."
+   },
+   {
+    "title": "Phải chuyển từ xuất khẩu nông sản sang xuất khẩu công nghệ nông nghiệp",
+    "url": "https://tuoitre.vn/phai-chuyen-tu-xuat-khau-nong-san-sang-xuat-khau-cong-nghe-nong-nghiep-100261122212648165.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/chu-tich-quoc-hoi-2211-17953608519432005012996-17953656685851285717453-271-223-1332-1920-crop-1795365702286457343400.jpg",
+    "ts": "2026-11-22T16:34:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Chủ tịch Quốc hội Trần Thanh Mẫn đã dẫn lời Tổng Bí thư, Chủ tịch nước Tô Lâm chỉ đạo phải chuyển từ xuất khẩu nông sản sang xuất khẩu công nghệ nông nghiệp tại Festival quốc tế ngành hàng lúa gạo Việt Nam lần thứ 2."
+   },
+   {
+    "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
+    "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T15:44:08+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Porsche Cayenne thuần điện vừa chính thức ra mắt tại thị trường Việt Nam với giá khởi điểm từ 4,72 tỷ đồng."
+   }
+  ],
+  "sports": [
+   {
+    "title": "Đương kim vô địch bị cầm hòa trận ra quân môn bóng đá nam",
+    "url": "https://tuoitre.vn/duong-kim-vo-dich-bi-cam-hoa-tran-ra-quan-mon-bong-da-nam-100261123001417369.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/hoang-minh-hoi-an-mung-cho-slna-17953674293311163310829-0-0-938-1500-crop-179536766901633046345.jpeg",
+    "ts": "2026-11-22T18:40:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Đương kim vô địch Sông Lam Nghệ An đã bị Công an Nhân dân cầm hòa 1-1 trong ngày ra quân môn bóng đá nam Đại hội Thể thao toàn quốc 2026."
+   },
+   {
+    "title": "Bảng xếp hạng V-League sau vòng 8: CLB Thành phố Đồng Nai nằm cuối bảng",
+    "url": "https://tuoitre.vn/bang-xep-hang-v-league-sau-vong-8-clb-thanh-pho-dong-nai-nam-cuoi-bang-10026112223002096.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/huynh-tan-sinh-truong-tuoi-dong-nai-6-2327-1790052966903369336720-0-233-637-1252-crop-1795364555740120536078.jpg",
+    "ts": "2026-11-22T16:20:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "CLB Thành phố Đồng Nai tiếp tục ở vị trí cuối cùng bảng xếp hạng V-League 2026-2027 sau vòng 8 kết thúc."
+   },
+   {
+    "title": "Yamal lần thứ ba hỏng phạt đền tại La Liga",
+    "url": "https://vnexpress.net/yamal-lan-thu-ba-hong-phat-den-tai-la-liga-5147741.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/afp-d8an42g-v1-highres-fblespl-8077-4086-1795360571.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=1ULZd01_VEokCp0Srcb_Pg",
+    "ts": "2026-11-22T15:16:11+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Lamine Yamal trở thành cầu thủ trẻ nhất sút hỏng ba quả phạt đền tại La Liga, khi Barca thắng ngược Villarreal 3-2 ở vòng 13 tối 22/11."
+   },
+   {
+    "title": "Nhiều chuyên trang bóng đá quốc tế dự đoán Việt Nam thắng trận lịch sử ở World Cup U17",
+    "url": "https://tuoitre.vn/nhieu-chuyen-trang-bong-da-quoc-te-du-doan-viet-nam-thang-tran-lich-su-o-world-cup-u17-100261122215803077.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/u17-vietnam-1-1795359227375841940749-16-0-656-1024-crop-17953592481681622454909.jpg",
+    "ts": "2026-11-22T15:15:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Sau màn trình diễn ấn tượng trước Bỉ, U17 Việt Nam bất ngờ được nhiều chuyên trang thống kê bóng đá quốc tế đánh giá cao hơn New Zealand ở lượt trận thứ hai World Cup U17 2026."
+   },
+   {
+    "title": "Tuyển thủ Việt Nam cúi đầu xin lỗi sau thẻ đỏ ở V-League",
+    "url": "https://vnexpress.net/tuyen-thu-viet-nam-cui-dau-xin-loi-sau-the-do-o-v-league-5147731.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/1795351508674-g428685043937662-3435-3159-1795357081.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=mDkoimoo2UHQJQyflU71QA",
+    "ts": "2026-11-22T14:51:45+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Tân binh đội tuyển Việt Nam Nguyễn Hồng Phúc nhận thẻ đỏ trực tiếp sau pha phạm lỗi với Nguyễn Lê Phát trong trận Đà Nẵng thua Ninh Bình 0-1 ở vòng 8 V-League 2026-2027."
+   },
+   {
+    "title": "Cựu trợ lý của HLV Park Hang Seo ra mắt V-League bằng thất bại",
+    "url": "https://tuoitre.vn/cuu-tro-ly-cua-hlv-park-hang-seo-ra-mat-v-league-bang-that-bai-100261122210007107.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/hlv-lee-young-jin-17953607260331758216283-58-0-1035-1562-crop-17953607475551557523914.jpg",
+    "ts": "2026-11-22T14:11:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Cựu trợ lý của HLV Park Hang Seo ở đội tuyển Việt Nam, HLV Lee Young Jin đã ra mắt CLB SHB Đà Nẵng bằng một thất bại ở vòng 8 V-League 2026-2027."
+   }
+  ],
   "mobile": [
+   {
+    "title": "The rumored vivo I2606 is powered by the Snapdragon 8s Gen 4",
+    "url": "https://www.gsmarena.com/the_rumored_vivo_i2606_is_powered_by_the_snapdragon_8s_gen_4-news-75586.php",
+    "source": "GSMArena",
+    "image": "https://fdn.gsmarena.com/imgroot/news/26/11/iqoo-16r-16s-geekbench-leak/-184x111/gsmarena_001.jpg",
+    "ts": "2026-11-22T18:11:03+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "A few days ago, we saw a BIS certification listing for the vivo I2606. Since we already know the iQOO 16 family is coming to the country, likely at an unfortunately high price"
+   },
+   {
+    "title": "Apple tested a ‘complication column’ for the iPhone Duo Lock Screen, per leak",
+    "url": "https://9to5mac.com/2026/11/22/apple-tested-a-complication-column-for-the-iphone-duo-lock-screen-per-leak/",
+    "source": "9to5Mac",
+    "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/iphone-duo-23.jpg?quality=82&strip=all&w=1600",
+    "ts": "2026-11-22T17:13:56+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Apple made a bunch of changes to iOS to optimize it for the iPhone Duo’s form factor, including revamping the Lock Screen."
+   },
    {
     "title": "Samsung đang cho Now Bar học Dynamic Island, có thể ra mắt cùng Galaxy S27",
     "url": "https://tinhte.vn/thread/samsung-dang-cho-now-bar-hoc-dynamic-island-co-the-ra-mat-cung-galaxy-s27.4194746/",
@@ -152,150 +296,192 @@
     "sources": 1,
     "score": 0,
     "summary": "Apple plans to unveil an iPhone 18e, iPhone 18, updated entry-level iPad, and new MacBook Neo and MacBook Air models around February or March next year, according to the latest word from Bloomberg 's Mark Gurman."
-   },
-   {
-    "title": "Apple Watch SE 3 Lineup Sees Record Low Prices Starting at Just $179",
-    "url": "https://www.macrumors.com/2026/11/22/apple-watch-se-3-179/",
-    "source": "MacRumors",
-    "image": "https://images.macrumors.com/article-new/2026/11/apple-watch-se-3-blue-snow.jpeg",
-    "ts": "2026-11-22T15:24:42+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "New Black Friday deals are rolling in today , including fresh all-time low prices across the entire Apple Watch SE 3 lineup."
-   },
-   {
-    "title": "Ulefone Armor 35 Pro with a 1.2 km laser rangefinder and 11,000 mAh battery goes on sale next month for $430",
-    "url": "https://www.gsmarena.com/ulefone_armor_35_pro_features_price_sale_date-news-75579.php",
-    "source": "GSMArena",
-    "image": "https://fdn.gsmarena.com/imgroot/news/26/11/ulefone-armor-35-pro-price-sale-date/-184x111/gsmarena_001.jpg",
-    "ts": "2026-11-22T15:21:03+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Ulefone introduced the Armor 35 Pro in September at IFA without revealing its pricing and availability. We now know from a reliable source that it will go on sale on December 7 for $429.99 in Mecha Black."
    }
   ],
-  "tech_ai": [
+  "geopolitics": [
    {
-    "title": "Amazon Kindle 2026 vào một ngày mưa, khi việc đọc sách quay trở về với bản ngã gốc rễ của nó",
-    "url": "https://tinhte.vn/thread/amazon-kindle-2026-vao-mot-ngay-mua-khi-viec-doc-sach-quay-tro-ve-voi-ban-nga-goc-re-cua-no.4192655/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T16:43:58+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Đó là một buổi sáng chủ nhật âm u, khác hẳn với cái thời tiết nắng ấm thường nhật. Đường xá vắng vẻ"
-   },
-   {
-    "title": "AMD ra mắt EPYC 9006 \"Venice\": CPU Zen 6 2nm, tối đa 256 nhân, thay đổi triệt để từ trong ra ngoài",
-    "url": "https://tinhte.vn/thread/amd-ra-mat-epyc-9006-venice-cpu-zen-6-2nm-toi-da-256-nhan-thay-doi-triet-de-tu-trong-ra-ngoai.4194819/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T16:36:40+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Với EPYC 9006, AMD đã chính thức có CPU Zen 6 đầu tiên và cũng là con chip 2nm tiên tiến nhất hiện tại của hãng."
-   },
-   {
-    "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
-    "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T15:44:08+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Porsche Cayenne thuần điện vừa chính thức ra mắt tại thị trường Việt Nam với giá khởi điểm từ 4,72 tỷ đồng."
-   },
-   {
-    "title": "MacBook Pro OLED: nhấp nháy 240 Hz khiến nhiều người trả máy",
-    "url": "https://tinhte.vn/thread/macbook-pro-oled-nhap-nhay-240-hz-khien-nhieu-nguoi-tra-may.4194852/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T15:02:28+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "MacBook Pro mới dùng màn hình OLED hai lớp PROLED XDR có cảm ứng, được nhiều bài đánh giá khen về chất lượng hiển thị. Nhưng trên MacRumors, Reddit và Hacker News xuất hiện nhiều phản ánh: người..."
-   },
-   {
-    "title": "Tech Awards 2026 đã mở bình chọn, anh em vào chọn sản phẩm và kênh công nghệ yêu thích",
-    "url": "https://tinhte.vn/thread/tech-awards-2026-da-mo-binh-chon-anh-em-vao-chon-san-pham-va-kenh-cong-nghe-yeu-thich.4194630/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T14:52:13+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "VnExpress đã mở bình chọn đồ công nghệ Tech Awards 2026 để người dùng có thể vào bình chọn. Năm nay ngoài các sản phẩm công nghệ anh em còn có hạng mục bình chọn kênh công nghệ nữa."
-   },
-   {
-    "title": "Nhật Bản: AI hỗ trợ trả lời chất vấn tại Quốc hội",
-    "url": "https://www.vietnamplus.vn/nhat-ban-ai-ho-tro-tra-loi-chat-van-tai-quoc-hoi-post1150009.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6gmEwxGPZXon0IKhGsgHGL7MoiVPwkTpK0KdSX5fzWQI/ttxvn-nhat-ban.jpg.avif",
-    "ts": "2026-11-22T14:23:56+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Nhằm rút ngắn thời gian chuẩn bị tài liệu và giảm tình trạng làm việc ngoài giờ, Nhật Bản dự kiến triển khai ứng dụng AI hỗ trợ soạn thảo nội dung trả lời chất vấn tại Quốc hội từ tháng 1/2027. Quốc hội Nhật Bản kéo dài kỳ họp đặc biệt để thông qua các dự luật quan trọng Nhật Bản: Bùng nổ giao dịch ký quỹ nhờ cổ phiếu Trí tuệ Nhân tạo Microsoft ra mắt loạt mô hình Trí tuệ Nhân tạo chuyên biệt"
-   }
-  ],
-  "sports": [
-   {
-    "title": "Bảng xếp hạng V-League sau vòng 8: CLB Thành phố Đồng Nai nằm cuối bảng",
-    "url": "https://tuoitre.vn/bang-xep-hang-v-league-sau-vong-8-clb-thanh-pho-dong-nai-nam-cuoi-bang-10026112223002096.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/huynh-tan-sinh-truong-tuoi-dong-nai-6-2327-1790052966903369336720-0-233-637-1252-crop-1795364555740120536078.jpg",
-    "ts": "2026-11-22T16:20:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "CLB Thành phố Đồng Nai tiếp tục ở vị trí cuối cùng bảng xếp hạng V-League 2026-2027 sau vòng 8 kết thúc."
-   },
-   {
-    "title": "Tuổi 43, Nguyễn Tiến Minh đánh cầu 'không cần nhìn' gây sốt Đại hội Thể thao toàn quốc",
-    "url": "https://tuoitre.vn/tuoi-43-nguyen-tien-minh-danh-cau-khong-can-nhin-gay-sot-dai-hoi-the-thao-toan-quoc-100261122230359161.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/nguyen-tien-minh-cau-long-dai-hoi-the-thao-toan-quoc-1795363378611877488441-1795365098032713623765-68-18-935-1406-crop-1795365133833405420036.jpeg",
-    "ts": "2026-11-22T16:18:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Dù đã ở độ tuổi 43, huyền thoại cầu lông Nguyễn Tiến Minh vẫn ghi dấu ấn bằng pha xử lý đẳng cấp, tinh tế khi tham dự Đại hội Thể thao toàn quốc năm 2026."
-   },
-   {
-    "title": "Quy Nhơn United ngược dòng đánh bại Đại Học Văn Hiến",
-    "url": "https://tuoitre.vn/quy-nhon-united-nguoc-dong-danh-bai-dai-hoc-van-hien-10026112220193087.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/anh-chup-man-hinh-2026-11-22-200916-17953529658201867066111-0-58-252-462-crop-17953628724981736721261.png",
-    "ts": "2026-11-22T15:45:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Tối 22-11, đội khách Quy Nhơn United đánh bại Đại Học Văn Hiến với tỉ số 2-1 ở vòng 8 Giải hạng nhất 2026-2027, sau khi để cho đội chủ nhà dẫn trước 1-0 trong hiệp 1."
-   },
-   {
-    "title": "Trần Minh Vương tái xuất giúp Công An Nhân Dân ngắt mạch thua",
-    "url": "https://tuoitre.vn/tran-minh-vuong-tai-xuat-giup-cong-an-nhan-dan-ngat-mach-thua-100261122222018984.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/minh-vuong-17953607466571039664145-0-0-550-880-crop-17953607488582131641760.jpeg",
-    "ts": "2026-11-22T15:41:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Trong ngày có sự phục vụ trở lại của tiền vệ Trần Minh Vương, CLB Công An Nhân Dân tấn công khởi sắc và thắng Thép Cần Thơ 2-1 ở vòng 8 Giải hạng nhất 2026 - 2027."
-   },
-   {
-    "title": "Yamal lần thứ ba hỏng phạt đền tại La Liga",
-    "url": "https://vnexpress.net/yamal-lan-thu-ba-hong-phat-den-tai-la-liga-5147741.html",
+    "title": "Bên trong máy bay 'ngày tận thế' của Mỹ",
+    "url": "https://vnexpress.net/ben-trong-may-bay-ngay-tan-the-cua-my-5147436.html",
     "source": "VnExpress",
-    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/afp-d8an42g-v1-highres-fblespl-8077-4086-1795360571.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=1ULZd01_VEokCp0Srcb_Pg",
-    "ts": "2026-11-22T15:16:11+00:00",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/Settop-1795247367-5163-1795247581.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=cBLDBL048khqGlWe5TcRew",
+    "ts": "2026-11-22T18:00:00+00:00",
     "sources": 1,
     "score": 0,
-    "summary": "Lamine Yamal trở thành cầu thủ trẻ nhất sút hỏng ba quả phạt đền tại La Liga, khi Barca thắng ngược Villarreal 3-2 ở vòng 13 tối 22/11."
+    "summary": "E-4B Nightwatch có thể bố trí chỗ ngồi cho hơn 100 người, với nhiều khu vực chức năng để trở thành trung tâm chỉ huy chiến tranh lưu động."
    },
    {
-    "title": "Nhiều chuyên trang bóng đá quốc tế dự đoán Việt Nam thắng trận lịch sử ở World Cup U17",
-    "url": "https://tuoitre.vn/nhieu-chuyen-trang-bong-da-quoc-te-du-doan-viet-nam-thang-tran-lich-su-o-world-cup-u17-100261122215803077.htm",
+    "title": "Ông Zelensky lại than Mỹ chưa cho bàn giao tên lửa Patriot",
+    "url": "https://tuoitre.vn/ong-zelensky-lai-than-my-chua-cho-ban-giao-ten-lua-patriot-100261122235240769.htm",
     "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/u17-vietnam-1-1795359227375841940749-16-0-656-1024-crop-17953592481681622454909.jpg",
-    "ts": "2026-11-22T15:15:00+00:00",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/1000020018-17953055197121373045092-26-0-701-1080-crop-17953662758241153208034.jpg",
+    "ts": "2026-11-22T16:58:00+00:00",
     "sources": 1,
     "score": 0,
-    "summary": "Sau màn trình diễn ấn tượng trước Bỉ, U17 Việt Nam bất ngờ được nhiều chuyên trang thống kê bóng đá quốc tế đánh giá cao hơn New Zealand ở lượt trận thứ hai World Cup U17 2026."
+    "summary": "Tổng thống Ukraine một lần nữa kêu gọi Mỹ sớm cho phép chuyển giao số tên lửa Patriot được các đối tác của nước này đứng ra mua nhưng vẫn cần được Mỹ đồng ý."
+   },
+   {
+    "title": "Ông Rubio có muốn tranh cử Tổng thống Mỹ?",
+    "url": "https://tuoitre.vn/ong-rubio-co-muon-tranh-cu-tong-thong-my-100261122232005558.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/ap26324662046860-1795363907718365466407-17953654323271480397733-0-323-1347-2479-crop-1795365460941536313370.jpg",
+    "ts": "2026-11-22T16:33:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Sau thất bại của Đảng Cộng hòa trong bầu cử giữa kỳ, Ngoại trưởng Marco Rubio bất ngờ vượt lên Phó Tổng thống JD Vance trên đường đua ứng viên Cộng hòa kế nhiệm ông Donald Trump năm 2028."
+   },
+   {
+    "title": "Nổ tại quân cảng Libya, nghi do tàu Nga bị tập kích",
+    "url": "https://vnexpress.net/no-tai-quan-cang-libya-nghi-do-tau-nga-bi-tap-kich-5147730.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/Settop-1795361093-7113-1795361652.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=32PaR6kfgP59DWippte7Mw&t=image",
+    "ts": "2026-11-22T16:03:02+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Chính quyền ở miền đông Libya nói rằng cháy nổ xảy ra trên một tàu Nga neo ở quân cảng tại Benghazi, nghi do bị tập kích."
+   },
+   {
+    "title": "Việt Nam tham dự Lễ hội giao lưu văn hóa châu Á tại Hong Kong (Trung Quốc)",
+    "url": "https://www.vietnamplus.vn/viet-nam-tham-du-le-hoi-giao-luu-van-hoa-chau-a-tai-hong-kong-trung-quoc-post1150005.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPrjPJsX_LPI_Q3pbchYSX3C8pOm3RUTDd3ufukpFiX-J/ttxvn-le-hoi-van-hoa.jpg.avif",
+    "ts": "2026-11-22T15:11:12+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Lễ hội giao lưu văn hóa châu Á năm 2026 tại Khu hành chính đặc biệt Hong Kong (Trung Quốc) khai mạc ngày 22/11, qua đó, thúc đẩy giao lưu"
+   },
+   {
+    "title": "Còi báo động không kích lần đầu vang lên tại vùng Kaliningrad của Nga",
+    "url": "https://tuoitre.vn/coi-bao-dong-khong-kich-lan-dau-vang-len-tai-vung-kaliningrad-cua-nga-100261122211214981.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/kaliningrad-1795360137425243217540-23-223-1048-1863-crop-1795360159067135909615.png",
+    "ts": "2026-11-22T14:56:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Thống đốc vùng Kaliningrad Alexei Bezprozvannykh xác nhận hệ thống cảnh báo mối đe dọa trên không đã được kích hoạt tại vùng này sau khi phát hiện một vật thể đáng ngờ di chuyển từ hướng Lithuania."
+   }
+  ],
+  "domestic": [
+   {
+    "title": "Ủy quyền nhận lương hưu không còn giới hạn 12 tháng",
+    "url": "https://vnexpress.net/uy-quyen-nhan-luong-huu-khong-con-gioi-han-12-thang-5147725.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/IMG2442JPG-1795355228-9612-1795355236.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DNQiNCXwC93OhBYWZxKTcA",
+    "ts": "2026-11-22T18:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Từ tháng 3/2027, người hưởng lương hưu được thỏa thuận thời hạn ủy quyền nhận tiền, thay vì tối đa 12 tháng; cơ quan bảo hiểm xã hội chậm giải quyết chế độ gây thiệt hại phải bồi thường."
+   },
+   {
+    "title": "12 dự án liên quan đến Tập đoàn Mường Thanh sẽ được xử lý thế nào?",
+    "url": "https://vnexpress.net/12-du-an-lien-quan-den-tap-doan-muong-thanh-se-duoc-xu-ly-the-nao-5147720.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/TOP-1-1795353343.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=A-plyMIl3y_QWQ1XcNDxnA",
+    "ts": "2026-11-22T17:00:12+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Để xử lý sai phạm trong các dự án liên quan đến tập đoàn Mường Thanh trên địa bàn, HĐND TP Hà Nội đã thông qua nghị quyết về cơ chế, chính sách đặc thù."
+   },
+   {
+    "title": "Bảng xếp hạng huy chương Đại hội Thể thao toàn quốc ngày 22-11: TP.HCM dẫn đầu",
+    "url": "https://tuoitre.vn/bang-xep-hang-huy-chuong-dai-hoi-the-thao-toan-quoc-ngay-22-11-tphcm-dan-dau-10026112222472988.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/17952600173483603893094286800030g3109916775877084853bf68e59acff437ea959cbf390a6c5b4e-1795260424921464368574-233-76-1661-2361-crop-17953622726691735220680.jpg",
+    "ts": "2026-11-22T15:55:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Cuối ngày 22-11, đoàn thể thao TP.HCM tạm vươn lên dẫn đầu bảng xếp hạng huy chương Đại hội Thể thao toàn quốc lần thứ X năm 2026."
+   },
+   {
+    "title": "Phó Thủ tướng Phạm Thị Thanh Trà dự Gala nghệ thuật “Hải Phòng - Nơi những câu chuyện bắt đầu”",
+    "url": "https://www.vietnamplus.vn/pho-thu-tuong-pham-thi-thanh-tra-du-gala-nghe-thuat-hai-phong-noi-nhung-cau-chuyen-bat-dau-post1150026.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPrZoLG7QoLI1JNupFdUqBUwG1Pt1VUm6Q39A56yj_TCJ/ttxvn-thanh-tra.jpg.avif",
+    "ts": "2026-11-22T15:52:35+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Tối 22/11, Phó Thủ tướng Phạm Thị Thanh Trà đã dự Gala nghệ thuật “Hải Phòng- Nơi những câu chuyện bắt đầu,” góp phần thực hiện hiệu quả Nghị quyết số 80 về phát triển văn hóa Việt Nam."
+   },
+   {
+    "title": "Phó Chủ tịch Quốc hội Đỗ Văn Chiến đề nghị phát triển các mô hình trợ giúp nhân đạo bền vững",
+    "url": "https://www.vietnamplus.vn/pho-chu-tich-quoc-hoi-do-van-chien-de-nghi-phat-trien-cac-mo-hinh-tro-giup-nhan-dao-ben-vung-post1149995.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/0f-btEj60lGt0BFs9lOY196MKhvb_i2iBmzXiI-tW51ErrMEq9LhsQyMGHkvQA0D/hoi-ctd-ha-noi.jpg.avif",
+    "ts": "2026-11-22T15:38:58+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Phó Chủ tịch Thường trực Quốc hội Đỗ Văn Chiến đề nghị Hội Chữ thập đỏ Hà Nội chuyển từ cứu trợ đơn thuần sang hỗ trợ sinh kế"
+   },
+   {
+    "title": "Mãn nhãn màn trình diễn nghệ thuật 3D mapping trên nền kiến trúc trụ sở UBND TP.HCM",
+    "url": "https://tuoitre.vn/man-nhan-man-trinh-dien-nghe-thuat-3d-mapping-tren-nen-kien-truc-tru-so-ubnd-tphcm-100261122174029107.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/2aoboreqhc7guarq1yntyrwdlalpvuof3znhho9a-17953530933811042335972-17953596856221109872529-74-60-1613-2523-crop-1795359842868906074269.jpg",
+    "ts": "2026-11-22T14:45:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Tối 22-11, chương trình trình diễn nghệ thuật 3D mapping tuyệt đẹp trên nền kiến trúc trụ sở UBND TP.HCM đã chính thức mở màn cho chuỗi hoạt động chào mừng Ngày Văn hóa Việt Nam năm 2026."
+   }
+  ],
+  "science_health": [
+   {
+    "title": "Thức uống giúp giảm acid uric",
+    "url": "https://vnexpress.net/thuc-uong-giup-giam-acid-uric-5147519.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/cafe4-1795269058.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=uAgy-WU_UHCDcWHiGckDPw",
+    "ts": "2026-11-22T18:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Nước lọc, nước chanh, trà xanh và cà phê có thể hỗ trợ kiểm soát acid uric thông qua bổ sung nước hoặc tác động đến chuyển hóa."
+   },
+   {
+    "title": "Cô đơn kéo dài không tốt cho não bộ",
+    "url": "https://vnexpress.net/co-don-keo-dai-khong-tot-cho-nao-bo-5147522.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/khoa-nh-kha-c-tra-m-tu-be-n-kh-8872-1524-1795271838.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Wj23edmE1bj1N27I3SxBIA",
+    "ts": "2026-11-22T17:04:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Cảm giác cô đơn kéo dài có liên quan đến nguy cơ suy giảm nhận thức và sa sút trí tuệ, thông qua những thay đổi về giấc ngủ, tương tác xã hội."
+   },
+   {
+    "title": "Thuốc hỗ trợ cương dương có giúp người đồng tính nam quan hệ với vợ?",
+    "url": "https://vnexpress.net/thuoc-ho-tro-cuong-duong-co-giup-nguoi-dong-tinh-nam-quan-he-voi-vo-5147598.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/gemini-generated-image-vgf7h3v-6694-7948-1795315295.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=3zcYxJUdBZHXHaDrBmqZlA",
+    "ts": "2026-11-22T17:03:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Tôi gần 40 nam, đồng tính nam, vì nguyện vọng của bố mẹ nên sắp kết hôn với một phụ nữ qua giới thiệu của họ hàng"
+   },
+   {
+    "title": "PhenikaaMec tiếp nhận 500.000 lượt khám, chữa bệnh trong hai năm",
+    "url": "https://vnexpress.net/phenikaamec-tiep-nhan-500-000-luot-kham-chua-benh-trong-hai-nam-5147708.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/a-nh-1795352484-1393-1795352497.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=08jad3Hk8CeJCIGKWBmj-g",
+    "ts": "2026-11-22T13:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "PhenikaaMec có 500.000 lượt thăm khám - điều trị, 5.500 ca phẫu thuật, đón 3.500 em bé chào đời, phát triển 30 chuyên khoa và trung tâm chuyên sâu, trong hai năm đi vào hoạt động."
+   },
+   {
+    "title": "Đã tiêm ngừa dại, bị chó cắn có cần tiêm lại?",
+    "url": "https://vnexpress.net/da-tiem-ngua-dai-bi-cho-can-co-can-tiem-lai-5147662.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/medium-vecteezy-group-of-playf-2373-7116-1795330334.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DcaxQyhavViCytb3AHMErg",
+    "ts": "2026-11-22T12:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Tôi bị chó cắn và tiêm vaccine dại cách đây 5 tháng. Nay lại bị cắn, tôi có cần tiêm tiếp không? (Thái Bảo, TP HCM)"
+   },
+   {
+    "title": "Áp chảo cá hồi - thói quen tai hại khiến Omega-3 bốc hơi sạch",
+    "url": "https://vnexpress.net/ap-chao-ca-hoi-thoi-quen-tai-hai-khien-omega-3-boc-hoi-sach-5147129.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/20/screenshot-at-1795164510-4003-1795164556.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=5dHNaPA9aojZpc_vV4yNPg",
+    "ts": "2026-11-22T11:00:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Áp chảo hay nướng cá hồi ở nhiệt độ cao dễ làm thất thoát dinh dưỡng và sinh chất độc hại, chuyên gia khuyên nên chuyển sang hấp, luộc hoặc chần."
    }
   ],
   "culture_society": [
@@ -308,6 +494,16 @@
     "sources": 1,
     "score": 0,
     "summary": "Tối 22/11, Thành phố Hồ Chí Minh khai mạc Ngày hội Đại đoàn kết toàn dân tộc - Sắc màu văn hóa Việt"
+   },
+   {
+    "title": "1.000 drone trình diễn di sản văn hóa và APEC 2027 rực sáng giữa biển trời Tây Nam",
+    "url": "https://tuoitre.vn/1000-drone-trinh-dien-di-san-van-hoa-va-apec-2027-ruc-sang-giua-bien-troi-tay-nam-100261122222522503.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/hvm7-1795360983227964638811-0-172-3080-5100-crop-1795362747760564418726.jpg",
+    "ts": "2026-11-22T15:44:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Hàng ngàn người dân và du khách mãn nhãn xem hơn 1.000 drone xếp hình di sản văn hóa và APEC 2027 ở Phú Quốc rực sáng giữa biển trời Tây Nam."
    },
    {
     "title": "Ngày Văn hóa Việt Nam 2026: Gìn giữ hồn Việt qua câu chuyện giữa lòng Brussels",
@@ -348,140 +544,6 @@
     "sources": 1,
     "score": 0,
     "summary": "Giáo sư Hàn Quốc khẳng định vẻ đẹp của tiếng Việt và gợi mở hướng đi thiết thực để lan tỏa bản sắc Việt Nam đến với bạn bè quốc tế"
-   },
-   {
-    "title": "'Vượt trên cả hương vị': Việt Nam kể chuyện văn hóa ẩm thực, kết nối tình hữu nghị các nước",
-    "url": "https://tuoitre.vn/vuot-tren-ca-huong-vi-viet-nam-ke-chuyen-van-hoa-am-thuc-ket-noi-tinh-huu-nghi-cac-nuoc-100261122165921146.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/phu-nhan-ngo-phuong-ly-lien-hoan-am-thuc-33-179534185876787526041-306-1101-2474-4570-crop-17953521790051804199007-50-23-1226-1905-crop-1795352199850471485361.jpg",
-    "ts": "2026-11-22T12:52:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Việt Nam kể câu chuyện về đất nước, con người bằng văn hóa ẩm thực và kết nối bạn bè năm châu cũng bằng sợi dây ấy."
-   }
-  ],
-  "geopolitics": [
-   {
-    "title": "Nổ tại quân cảng Libya, nghi do tàu Nga bị tập kích",
-    "url": "https://vnexpress.net/no-tai-quan-cang-libya-nghi-do-tau-nga-bi-tap-kich-5147730.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/Settop-1795361093-7113-1795361652.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=32PaR6kfgP59DWippte7Mw&t=image",
-    "ts": "2026-11-22T16:03:02+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Chính quyền ở miền đông Libya nói rằng cháy nổ xảy ra trên một tàu Nga neo ở quân cảng tại Benghazi, nghi do bị tập kích."
-   },
-   {
-    "title": "Việt Nam tham dự Lễ hội giao lưu văn hóa châu Á tại Hong Kong (Trung Quốc)",
-    "url": "https://www.vietnamplus.vn/viet-nam-tham-du-le-hoi-giao-luu-van-hoa-chau-a-tai-hong-kong-trung-quoc-post1150005.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPrjPJsX_LPI_Q3pbchYSX3C8pOm3RUTDd3ufukpFiX-J/ttxvn-le-hoi-van-hoa.jpg.avif",
-    "ts": "2026-11-22T15:11:12+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Lễ hội giao lưu văn hóa châu Á năm 2026 tại Khu hành chính đặc biệt Hong Kong (Trung Quốc) khai mạc ngày 22/11, qua đó, thúc đẩy giao lưu"
-   },
-   {
-    "title": "Còi báo động không kích lần đầu vang lên tại vùng Kaliningrad của Nga",
-    "url": "https://tuoitre.vn/coi-bao-dong-khong-kich-lan-dau-vang-len-tai-vung-kaliningrad-cua-nga-100261122211214981.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/2026-10-05t110129z963588205mt1anadl0008aqyo8rtrmadp3anadolu-179144245466381800340-0-0-1080-1728-crop-1795356695392879129222.jpg",
-    "ts": "2026-11-22T14:56:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Thống đốc vùng Kaliningrad Alexei Bezprozvannykh xác nhận hệ thống cảnh báo mối đe dọa trên không đã được kích hoạt tại vùng này sau khi phát hiện một vật thể đáng ngờ di chuyển từ hướng Lithuania."
-   },
-   {
-    "title": "Đoàn xe tăng Đức đổi đường tới Litva 'vì lo ngại Nga'",
-    "url": "https://vnexpress.net/doan-xe-tang-duc-doi-duong-toi-litva-vi-lo-ngai-nga-5147717.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/Xetng-1795355934-4730-1795356411.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=IfGYi-4dbMHl7P5MWbx_mw",
-    "ts": "2026-11-22T14:19:22+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Sư đoàn xe tăng Đức di chuyển bằng đường sắt, thay vì cơ động bằng đường bộ qua Ba Lan như kế hoạch, nhằm tránh khiêu khích Nga, theo Bild."
-   },
-   {
-    "title": "Ánh Viên thua Mỹ Tiên ở chung kết nội dung bơi sở trường",
-    "url": "https://tuoitre.vn/anh-vien-thua-my-tien-o-chung-ket-noi-dung-boi-so-truong-10026112220230381.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/my-tien-5-read-only-1766938450278731222206-177-180-1219-1847-crop-17953532988151160162739.jpg",
-    "ts": "2026-11-22T13:30:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Tối 22-11, kình ngư Nguyễn Thị Ánh Viên không thể bảo vệ ngôi vô địch 200m hỗn hợp nữ tại Đại hội Thể thao toàn quốc 2026"
-   },
-   {
-    "title": "Trung Quốc: Khu bảo tồn thiên nhiên quốc gia ở Quý Châu đón mùa chim di cư",
-    "url": "https://www.vietnamplus.vn/trung-quoc-khu-bao-ton-thien-nhien-quoc-gia-o-quy-chau-don-mua-chim-di-cu-post1150001.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPv1fE3zTnUJuGI0C74D7YNRhN-UqCvfODdHwsyfhKEM4/ttxvn-seutq1.jpg.avif",
-    "ts": "2026-11-22T13:28:43+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Khi mùa Đông đến, Khu bảo tồn thiên nhiên quốc gia Caohai ở tỉnh Quý Châu, Tây Nam Trung Quốc, đón lượng lớn chim di cư tìm về tránh rét"
-   }
-  ],
-  "domestic": [
-   {
-    "title": "Phó Thủ tướng Phạm Thị Thanh Trà dự Gala nghệ thuật “Hải Phòng - Nơi những câu chuyện bắt đầu”",
-    "url": "https://www.vietnamplus.vn/pho-thu-tuong-pham-thi-thanh-tra-du-gala-nghe-thuat-hai-phong-noi-nhung-cau-chuyen-bat-dau-post1150026.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPrZoLG7QoLI1JNupFdUqBUwG1Pt1VUm6Q39A56yj_TCJ/ttxvn-thanh-tra.jpg.avif",
-    "ts": "2026-11-22T15:52:35+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Tối 22/11, Phó Thủ tướng Phạm Thị Thanh Trà đã dự Gala nghệ thuật “Hải Phòng- Nơi những câu chuyện bắt đầu,” góp phần thực hiện hiệu quả Nghị quyết số 80 về phát triển văn hóa Việt Nam."
-   },
-   {
-    "title": "Phó Chủ tịch Quốc hội Đỗ Văn Chiến đề nghị phát triển các mô hình trợ giúp nhân đạo bền vững",
-    "url": "https://www.vietnamplus.vn/pho-chu-tich-quoc-hoi-do-van-chien-de-nghi-phat-trien-cac-mo-hinh-tro-giup-nhan-dao-ben-vung-post1149995.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/0f-btEj60lGt0BFs9lOY196MKhvb_i2iBmzXiI-tW51ErrMEq9LhsQyMGHkvQA0D/hoi-ctd-ha-noi.jpg.avif",
-    "ts": "2026-11-22T15:38:58+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Phó Chủ tịch Thường trực Quốc hội Đỗ Văn Chiến đề nghị Hội Chữ thập đỏ Hà Nội chuyển từ cứu trợ đơn thuần sang hỗ trợ sinh kế"
-   },
-   {
-    "title": "Mãn nhãn màn trình diễn nghệ thuật 3D mapping trên nền kiến trúc trụ sở UBND TP.HCM",
-    "url": "https://tuoitre.vn/man-nhan-man-trinh-dien-nghe-thuat-3d-mapping-tren-nen-kien-truc-tru-so-ubnd-tphcm-100261122174029107.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/2aoboreqhc7guarq1yntyrwdlalpvuof3znhho9a-17953530933811042335972-56-0-1656-2560-crop-17953555842721462369757.jpg",
-    "ts": "2026-11-22T14:45:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Tối 22-11, chương trình trình diễn nghệ thuật 3D mapping tuyệt đẹp trên nền kiến trúc trụ sở UBND TP.HCM đã chính thức mở màn cho chuỗi hoạt động chào mừng Ngày Văn hóa Việt Nam năm 2026."
-   },
-   {
-    "title": "Chủ tịch Quốc hội Trần Thanh Mẫn: Đẩy mạnh chuyển đổi xanh, xây dựng và bảo vệ thương hiệu gạo Việt Nam",
-    "url": "https://www.vietnamplus.vn/chu-tich-quoc-hoi-tran-thanh-man-day-manh-chuyen-doi-xanh-xay-dung-va-bao-ve-thuong-hieu-gao-viet-nam-post1150012.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/0f-btEj60lGt0BFs9lOY19UuYnSwhaOt7VJ0BzNiOrYMuTIuH5-pWa35gHMrE-fgcZvv1mWzL957Vsx6Y0y79qON5KPsxnNbpO1jJ_OdRqDAfAyRjDJgqQ3ZECPjWRGgM4BfLUEr243amep-1PgaOB-ghhT_G-zHservdxz3NkHYXwknhcBeSjg2ddyvMvfdT577DIlyJl9J2PhhZIZ5kg/ttxvn_chu-tich-quoc-hoi-tran-thanh-man-du-le-khai-mac-festival-quoc-te-nganh-hang-lua-gao-viet-nam-lan-thu-ii-can-tho3.jpg.avif",
-    "ts": "2026-11-22T14:35:41+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Dự Festival quốc tế ngành hàng lúa gạo Việt Nam lần thứ II, Chủ tịch Quốc hội Trần Thanh Mẫn đề nghị đẩy mạnh ứng dụng khoa học công nghệ, giảm phát thải"
-   },
-   {
-    "title": "Đinh Quang Kiệt mắc lỗi khiến Công An TP.HCM thua Hà Tĩnh",
-    "url": "https://tuoitre.vn/dinh-quang-kiet-mac-loi-khien-cong-an-tphcm-thua-ha-tinh-100261122210212122.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/quang-kiet-2-17892907827041380971269-0-58-519-889-crop-17953574761461035543860.jpeg",
-    "ts": "2026-11-22T14:21:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Trong ngày hàng thủ chơi tệ, CLB Công An TP.HCM thua Hà Tĩnh ở vòng 8 LPBank V-League 2026 - 2027."
-   },
-   {
-    "title": "Liên danh Việt - Pháp - Hàn trúng gói tư vấn lớn nhất đường sắt tốc độ cao Bắc Nam",
-    "url": "https://vnexpress.net/lien-danh-viet-phap-han-trung-goi-tu-van-lon-nhat-duong-sat-toc-do-cao-bac-nam-5147718.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/395afd4a-ee7da30d70b0fe0-17953-8878-3722-1795353176.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=dvtE8qrf55-4hwz73-pgJQ",
-    "ts": "2026-11-22T13:47:24+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Liên danh 8 doanh nghiệp Việt Nam, Pháp và Hàn Quốc trúng gói thầu tư vấn lớn nhất dự án đường sắt tốc độ cao Bắc Nam, trị giá hơn 10.243 tỷ đồng."
    }
   ],
   "environment": [
@@ -489,21 +551,11 @@
     "title": "Lần đầu tiên sau 17 năm, thế giới không đạt đồng thuận chung về khí hậu",
     "url": "https://tuoitre.vn/lan-dau-tien-sau-17-nam-the-gioi-khong-dat-dong-thuan-chung-ve-khi-hau-100261122203148899.htm",
     "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/bs4pgw3obfgbu-17953539992302009565991-196-586-699-1391-crop-17953573720331141250097-10-13-495-788-crop-1795357385840753742286-2-84-331-610-crop-1795358111936543448537.jpg",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/murat-kurum-17953608945941031994832-91-373-820-1541-crop-17953609723801325046530.jpeg",
     "ts": "2026-11-22T14:19:00+00:00",
     "sources": 1,
     "score": 0,
     "summary": "Chủ tịch COP31 thừa nhận hội nghị năm nay kết thúc mà không thể thống nhất được một văn kiện chung về nỗ lực chống biến đổi khí hậu."
-   },
-   {
-    "title": "Thái Lan dự kiến cấm xuất khẩu hóa chất khai thác đất hiếm để ngăn ô nhiễm",
-    "url": "https://www.vietnamplus.vn/thai-lan-du-kien-cam-xuat-khau-hoa-chat-khai-thac-dat-hiem-de-ngan-o-nhiem-post1149974.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/_RfA0Lv7xigOosrBfIuLk1Mybz4QLft227UudluyTLa832MsNYdwkPpwKjSTJCV3/dat-hiem.png.avif",
-    "ts": "2026-11-22T07:33:20+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Trước tình trạng nồng độ asen tại các sông Kok và Sai tăng cao gấp 30 lần tiêu chuẩn cho phép"
    }
   ],
   "cyber_digital": [
@@ -528,68 +580,6 @@
     "summary": "Công an tỉnh Đắk Lắk ra thông báo tìm bị hại trong vụ lừa đảo tại viện thẩm mỹ JK, nơi người không có chuyên môn được thuê đóng giả bác sĩ để dụ khách mua dịch vụ."
    }
   ],
-  "science_health": [
-   {
-    "title": "PhenikaaMec tiếp nhận 500.000 lượt khám, chữa bệnh trong hai năm",
-    "url": "https://vnexpress.net/phenikaamec-tiep-nhan-500-000-luot-kham-chua-benh-trong-hai-nam-5147708.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/a-nh-1795352484-1393-1795352497.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=08jad3Hk8CeJCIGKWBmj-g",
-    "ts": "2026-11-22T13:00:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "PhenikaaMec có 500.000 lượt thăm khám - điều trị, 5.500 ca phẫu thuật, đón 3.500 em bé chào đời, phát triển 30 chuyên khoa và trung tâm chuyên sâu, trong hai năm đi vào hoạt động."
-   },
-   {
-    "title": "Đã tiêm ngừa dại, bị chó cắn có cần tiêm lại?",
-    "url": "https://vnexpress.net/da-tiem-ngua-dai-bi-cho-can-co-can-tiem-lai-5147662.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/medium-vecteezy-group-of-playf-2373-7116-1795330334.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DcaxQyhavViCytb3AHMErg",
-    "ts": "2026-11-22T12:00:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Tôi bị chó cắn và tiêm vaccine dại cách đây 5 tháng. Nay lại bị cắn, tôi có cần tiêm tiếp không? (Thái Bảo, TP HCM)"
-   },
-   {
-    "title": "Áp chảo cá hồi - thói quen tai hại khiến Omega-3 bốc hơi sạch",
-    "url": "https://vnexpress.net/ap-chao-ca-hoi-thoi-quen-tai-hai-khien-omega-3-boc-hoi-sach-5147129.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/20/screenshot-at-1795164510-4003-1795164556.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=5dHNaPA9aojZpc_vV4yNPg",
-    "ts": "2026-11-22T11:00:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Áp chảo hay nướng cá hồi ở nhiệt độ cao dễ làm thất thoát dinh dưỡng và sinh chất độc hại, chuyên gia khuyên nên chuyển sang hấp, luộc hoặc chần."
-   },
-   {
-    "title": "Apple bí mật phát triển trợ lý AI tự điều khiển máy tính",
-    "url": "https://vnexpress.net/apple-bi-mat-phat-trien-tro-ly-ai-tu-dieu-khien-may-tinh-5147686.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/a2-1795340999-5549-1795341032.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Qm3TEUGtv5--W9tm1Xt_Tw",
-    "ts": "2026-11-22T09:54:42+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Apple được cho là đang phát triển trợ lý AI có thể thao tác trên máy tính giống con người như duyệt web, lập trình, làm việc với nhiều ứng dụng cùng lúc."
-   },
-   {
-    "title": "Thanh niên 22 tuổi yếu liệt hai chân sau khi uống thuốc ho",
-    "url": "https://vnexpress.net/thanh-nien-22-tuoi-yeu-liet-hai-chan-sau-khi-uong-thuoc-ho-5147679.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/images-jpeg-1795337243-2721-1795337262.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=9gWiFTZP7q59DGHtNq9adw",
-    "ts": "2026-11-22T09:34:17+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Sau một đêm tự mua thuốc ho về uống, thanh niên đột ngột yếu liệt hai chân, không thể tự ngồi dậy, phải nhập viện cấp cứu."
-   },
-   {
-    "title": "Apple chuẩn bị sản xuất hàng loạt iPhone Air 2, iPhone 18",
-    "url": "https://vnexpress.net/apple-chuan-bi-san-xuat-hang-loat-iphone-air-2-iphone-18-5147678.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/a2-1795338063-7151-1795338067.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=PwsZWV94_IHbGtolgeaHvw",
-    "ts": "2026-11-22T08:45:40+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Apple cùng các nhà cung cấp tấm nền màn hình như LG, Samsung đang bước vào giai đoạn nước rút để chuẩn bị cho iPhone Air thế hệ hai, iPhone 18."
-   }
-  ],
   "economy": [
    {
     "title": "Techcombank huy động 7.500 tỉ đồng trái phiếu, lãi suất cao nhất lên tới 9%/năm",
@@ -602,6 +592,46 @@
     "summary": "Chỉ trong một tuần, Techcombank đã phát hành thành công ba lô trái phiếu riêng lẻ với tổng giá trị 7.500 tỉ đồng, kỳ hạn 3 năm."
    },
    {
+    "title": "THACO AGRI tăng vốn 'khủng' trước khi 'đại gia' 'Khoa Khàn' làm chủ tịch",
+    "url": "https://tuoitre.vn/thaco-agri-tang-von-khung-truoc-khi-dai-gia-khoa-khan-lam-chu-tich-100261122143518122.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/tran-dang-khoa-17953437367661576203733-12-277-552-1141-crop-1795343789167626393274.jpg",
+    "ts": "2026-11-22T10:31:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Chỉ ba ngày trước khi ông Trần Đăng Khoa, còn được biết đến với biệt danh \"Khoa Khàn\", thay ông Trần Bá Dương giữ ghế chủ tịch, THACO AGRI đã tăng vốn điều lệ thêm 4.000 tỉ đồng"
+   },
+   {
+    "title": "Liên danh 8 doanh nghiệp Pháp - Hàn Quốc - Việt Nam trúng thầu gói tư vấn đường sắt tốc độ cao Bắc - Nam",
+    "url": "https://tuoitre.vn/lien-danh-8-doanh-nghiep-phap-han-quoc-viet-nam-trung-thau-goi-tu-van-duong-sat-toc-do-cao-bac-nam-100261122170451116.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/duong-sat-cao-toc-1795344471118777247933-0-87-784-1341-crop-1795344482878591720812.jpg",
+    "ts": "2026-11-22T10:29:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Dự án đường sắt tốc độ cao Bắc - Nam đã chọn được tư vấn khảo sát, lập báo cáo nghiên cứu khả thi (bao gồm thiết kế FEED, lập hồ sơ mời thầu)."
+   },
+   {
+    "title": "5 quỹ cổ phiếu sinh lời tốt nhất 3 năm qua rót tiền vào những mã nào?",
+    "url": "https://tuoitre.vn/5-quy-co-phieu-sinh-loi-tot-nhat-3-nam-qua-rot-tien-vao-nhung-ma-nao-100261122151822586.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/img0736-1-1795334504953416314912-258-0-2181-3076-crop-17953430430041566088715.jpg",
+    "ts": "2026-11-22T10:16:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Trong 3 tháng gần đây, nhóm quỹ mở cổ phiếu có hiệu suất đầu tư tốt nhất 3 năm qua ghi nhận động thái mua ròng đáng chú ý tại một số cổ phiếu như DXG, HPG, HDB, IDC."
+   },
+   {
+    "title": "Dâu tây nhập có dư lượng thuốc trừ sâu gần 6 lần: Nên công khai tên công ty, xuất xứ lô hàng?",
+    "url": "https://tuoitre.vn/dau-tay-nhap-co-du-luong-thuoc-tru-sau-gan-6-lan-nen-cong-khai-ten-cong-ty-xuat-xu-lo-hang-100261122141329636.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/dau-tay-nk-1795252838826352313975-236-172-814-1096-crop-1795343178335716421968.jpg",
+    "ts": "2026-11-22T10:15:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Sau thông tin một lô dâu tây nhập khẩu từ Trung Quốc có dư lượng thuốc trừ sâu vượt ngưỡng gần 6 lần, nhiều bạn đọc bày tỏ lo ngại về an toàn thực phẩm"
+   },
+   {
     "title": "Nhiều loại rau xanh và gia vị giảm giá một nửa",
     "url": "https://vnexpress.net/nhieu-loai-rau-xanh-va-gia-vi-giam-gia-mot-nua-5147620.html",
     "source": "VnExpress",
@@ -610,46 +640,6 @@
     "sources": 1,
     "score": 0,
     "summary": "Sau thời gian dài neo cao, giá nhiều loại rau xanh, gia vị tại TP HCM giảm 15-50%, riêng ngò rí giảm đến 75%."
-   },
-   {
-    "title": "Nhộn nhịp cảnh thu hoạch cá tra khi giá ở mức cao nhất 3 năm",
-    "url": "https://tuoitre.vn/nhon-nhip-canh-thu-hoach-ca-tra-khi-gia-o-muc-cao-nhat-3-nam-100261122162548008.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/thu-cac-tra-2-17953384176411927371795-17953420015721621828425-0-0-1441-2306-crop-1795342025416961895137-64-0-1250-1898-crop-1795342041021517253500.jpg",
-    "ts": "2026-11-22T10:01:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Hiện giá cá tra thương phẩm ở mức 38.000 - 38.500 đồng/kg, người nuôi cá ở Đồng Tháp phấn khởi."
-   },
-   {
-    "title": "Công ty bầu Đức muốn phát hành 400 tỷ đồng trái phiếu",
-    "url": "https://vnexpress.net/cong-ty-bau-duc-muon-phat-hanh-400-ty-dong-trai-phieu-5147667.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/wm1-wm1-ca-phe-1795333420-4090-1795333783.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=opMsRP0R_YPDRENiWLfQdw",
-    "ts": "2026-11-22T09:53:34+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "HAGL dự kiến phát hành riêng lẻ tối đa 4.000 trái phiếu, kỳ hạn 48 tháng, mệnh giá 100 triệu đồng mỗi trái phiếu, tương ứng tổng giá trị tối đa 400 tỷ đồng."
-   },
-   {
-    "title": "30 năm chứng khoán: Lời gửi gắm từ những người đặt nền móng thị trường",
-    "url": "https://tuoitre.vn/30-nam-chung-khoan-loi-gui-gam-tu-nhung-nguoi-dat-nen-mong-thi-truong-100261118131613521.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/ngo-van-tuan-17953388070281730701242-84-77-771-1177-crop-1795339093670263354617.jpg",
-    "ts": "2026-11-22T09:08:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Ba mươi năm sau ngày Ủy ban Chứng khoán Nhà nước được thành lập, những người từng tham gia xây dựng và quản lý thị trường chứng khoán Việt Nam nhìn lại hành trình nhiều thử thách"
-   },
-   {
-    "title": "Mỹ và EU giảm nhập tôm Việt, dự báo xuất khẩu 2027 ra sao?",
-    "url": "https://tuoitre.vn/my-va-eu-giam-nhap-tom-viet-du-bao-xuat-khau-2027-ra-sao-100261122132159534.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/cac-cong-nhan-phan-co-tom-o-nha-may-che-bien-thuy-san-o-bac-lieu-17952743172261283052633-0-45-1440-2349-crop-1795328095253739586283.jpg",
-    "ts": "2026-11-22T08:47:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Hiệp hội Chế biến và Xuất khẩu thủy sản Việt Nam (VASEP) dự báo năm 2027, xuất khẩu tôm Việt Nam có thể giảm hơn 2% so với năm nay"
    }
   ]
  },
@@ -713,10 +703,10 @@
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin (USD)",
-   "close": 61138.48828125,
-   "change_pct": 1.7379386895042912,
+   "close": 60508.46875,
+   "change_pct": 0.6895501826010214,
    "date": "22/11"
   }
  ],
- "updated": "2026-11-22T16:55:28.065328+00:00"
+ "updated": "2026-11-22T20:27:41.600192+00:00"
 }

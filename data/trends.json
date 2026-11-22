@@ -46,13 +46,13 @@
    "news": "Thủy Tiên gây tiếc nuối"
   },
   {
-   "term": "real madrid đấu với celta",
+   "term": "giải bóng đá vô địch thế giới",
    "geo": "VN",
-   "traffic": "5000+",
-   "score": 5000,
-   "ts": "2026-11-21T19:20:00+00:00",
-   "url": "https://bongdaplus.vn/la-liga/nhan-dinh-bong-da-real-madrid-vs-celta-vigo-03h00-ngay-22-11-chien-thang-chat-vat-cho-chu-nha-5294742611.html",
-   "news": "Nhận định bóng đá Real Madrid vs Celta Vigo, 03h00 ngày 22/11: Chiến thắng chật vật cho chủ nhà!"
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T19:50:00+00:00",
+   "url": "https://vnexpress.net/tien-dao-viet-nam-u17-world-cup-khong-kho-nhu-tuong-tuong-5147710.html",
+   "news": "Tiền đạo Việt Nam: 'U17 World Cup không khó như tưởng tượng'"
   },
   {
    "term": "juventus đấu với venezia",
@@ -71,24 +71,6 @@
    "ts": "2026-11-22T10:40:00+00:00",
    "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-ha-tinh-cong-an-tphcm-quyet-dau-vi-3-diem-v-league-c48a1813062.html",
    "news": "Trực tiếp bóng đá Hà Tĩnh - Công an TP.HCM: Miệt mài tìm bàn mở tỉ số (V-League)"
-  },
-  {
-   "term": "thứ hạng của ogc nice gặp psg",
-   "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-21T18:30:00+00:00",
-   "url": "https://www.goal.com/en/news/video-hakimi-leads-paris-comeback-at-nice-despite-algerian-touch/blt944a7cfec548ee71",
-   "news": "Video: Hakimi leads Paris comeback at Nice despite Algerian touch"
-  },
-  {
-   "term": "real madrid",
-   "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-21T19:20:00+00:00",
-   "url": "https://as.com/futbol/alineacion-confirmada-del-real-madrid-hoy-contra-el-celta-en-laliga-ea-sports-f202611-n/",
-   "news": "Alineación confirmada del Real Madrid hoy contra el Celta en LaLiga EA Sports"
   },
   {
    "term": "cristiano roland",
@@ -170,6 +152,15 @@
    "ts": "2026-11-22T16:10:00+00:00",
    "url": "https://znews.vn/toi-do-cua-brighton-post1698356.html",
    "news": "Tội đồ của Brighton"
+  },
+  {
+   "term": "thứ hạng của ac milan gặp frosinone",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T19:10:00+00:00",
+   "url": "https://bongdaplus.vn/serie-a/nhan-dinh-bong-da-milan-vs-frosinone-00h00-ngay-23-11-bat-nat-tan-binh-5295462611.html",
+   "news": "Nhận định bóng đá Milan vs Frosinone, 00h00 ngày 23/11: Bắt nạt tân binh"
   },
   {
    "term": "đội tuyển bóng đá u-17 quốc gia new zealand",
@@ -352,24 +343,6 @@
    "news": "Liverpool v Manchester United: Premier League – live"
   },
   {
-   "term": "napoli đấu với torino",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T19:40:00+00:00",
-   "url": "https://bongdaplus.vn/serie-a/nhan-dinh-bong-da-napoli-vs-torino-02h45-ngay-22-11-tin-vao-chu-nha-5294842611.html",
-   "news": "Nhận định bóng đá Napoli vs Torino, 02h45 ngày 22/11: Tin vào chủ nhà!"
-  },
-  {
-   "term": "real",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-21T19:50:00+00:00",
-   "url": "https://www.bbc.com/sport/football/live/c6205wg000g8t",
-   "news": "Real Madrid vs Celta Vigo: Spanish La Liga stats & head-to-head"
-  },
-  {
    "term": "pumas unam đấu với monterrey",
    "geo": "VN",
    "traffic": "500+",
@@ -541,13 +514,31 @@
    "news": "Nhận định bóng đá Milan vs Frosinone, 00h00 ngày 23/11: Bắt nạt tân binh"
   },
   {
-   "term": "napoli",
+   "term": "carlos alcaraz",
    "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-21T19:40:00+00:00",
-   "url": "https://www.virgilio.it/sport/dirette/live/serie-a/21-11-2026/napoli-torino/2638239/",
-   "news": "LIVE Napoli-Torino 1-0 Serie A 2026/2027: Vlasic sfiora il gol"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T17:40:00+00:00",
+   "url": "https://es-us.noticias.yahoo.com/deportes/zverev-bromea-alcaraz-te-retiras-194455498.html",
+   "news": "Zverev bromea con Alcaraz: \"Si te retiras mañana, está bien\""
+  },
+  {
+   "term": "atalanta đấu với inter",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T19:00:00+00:00",
+   "url": "https://bongdaplus.vn/serie-a/nhan-dinh-bong-da-atalanta-vs-inter-02h45-ngay-23-11-triet-ha-nu-than-5295472611.html",
+   "news": "Nhận định bóng đá Atalanta vs Inter, 02h45 ngày 23/11: Triệt hạ Nữ thần"
+  },
+  {
+   "term": "getafe đấu với atlético madrid",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T19:10:00+00:00",
+   "url": "https://www.espn.com/soccer/player-stats/_/gameId/401878755",
+   "news": "Liverpool 4-0 Man Utd (Nov 22, 2026) Player Stats"
   },
   {
    "term": "lương hưu",
@@ -712,13 +703,31 @@
    "news": "'90 Day Fiancé' Star Sheila Mangubat Dead at 35"
   },
   {
-   "term": "real betis",
+   "term": "nhập",
    "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-21T18:20:00+00:00",
-   "url": "https://mundobetis.com/2026/11/21/pellegrini-valora-la-actuacion-de-sanchez-martinez-y-lamenta-el-empate-estamos-muy-amargados/",
-   "news": "Pellegrini valora la actuación de Sánchez Martínez y lamenta el empate: “Estamos muy amargados”"
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T18:00:00+00:00",
+   "url": "https://laodong.vn/the-gioi/phat-hien-bien-the-covid-19-moi-co-kha-nang-xam-nhap-te-bao-vuot-troi-lay-lan-nhanh-1804856.ldo",
+   "news": "Phát hiện biến thể COVID-19 mới có khả năng xâm nhập tế bào vượt trội, lây lan nhanh"
+  },
+  {
+   "term": "inter milan",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T18:20:00+00:00",
+   "url": "https://www.goal.com/en/news/inter-chivu-i-don-t-experiment-i-manage-a-group-and-its-problems/blta8b1ee970deacdf4",
+   "news": "Inter, Chivu: \"I don't experiment, I manage a group and its problems\""
+  },
+  {
+   "term": "atletico madrid",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T18:30:00+00:00",
+   "url": "https://news.laodong.vn/bong-da-quoc-te/nhan-dinh-tran-getafe-vs-atletico-madrid-tai-la-liga-1804670.ldo",
+   "news": "Getafe vs Atletico Madrid match prediction in La Liga"
   },
   {
    "term": "thứ hạng của sevilla fc gặp real betis",
@@ -872,6 +881,24 @@
    "ts": "2026-11-22T16:40:00+00:00",
    "url": "https://laodong.vn/bong-chuyen/bong-chuyen-viet-nam-ngay-2211-chu-cong-thanh-thuy-ve-nuoc-tranh-tai-1804796.ldo",
    "news": "Bóng chuyền Việt Nam ngày 22.11: Chủ công Thanh Thúy về nước tranh tài"
+  },
+  {
+   "term": "fc",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T17:50:00+00:00",
+   "url": "https://www.vietnam.vn/hung-yen-fc-gianh-chien-thang-3-1-truoc-khatoco-khanh-hoa",
+   "news": "Hưng Yên FC giành chiến thắng 3 - 1 trước Khatoco Khánh Hòa"
+  },
+  {
+   "term": "liverpool vs man u",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T18:00:00+00:00",
+   "url": "https://www.skysports.com/football/news/13614990/bruno-fernandes-man-utd-captain-confirms-contract-offer-but-says-negotiations-are-on-hold",
+   "news": "Bruno Fernandes: Man Utd captain confirms contract offer but says negotiations are on hold"
   }
  ],
  "world": [
@@ -1065,6 +1092,24 @@
    "news": "Gerwyn Price sets up Grand Slam final showdown with Gian van Veen with Michael van Gerwen defeated in semis"
   },
   {
+   "term": "pistons vs hawks",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T19:40:00+00:00",
+   "url": "https://sports.yahoo.com/articles/pistons-vs-hawks-prediction-pick-120443901.html",
+   "news": "Pistons vs Hawks Prediction, Pick, NBA Odds for Sunday, November 22"
+  },
+  {
+   "term": "dk metcalf",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-22T19:40:00+00:00",
+   "url": "https://www.nfl.com/videos/dk-metcalf-and-cooper-dejean-engage-in-a-bit-of-a-skirmish-during-steelers-eagles-game",
+   "news": "DK Metcalf and Cooper DeJean engage in a bit of a skirmish during Steelers-Eagles game"
+  },
+  {
    "term": "celtics vs kings",
    "geo": "US",
    "traffic": "5000+",
@@ -1171,6 +1216,15 @@
    "ts": "2026-11-22T16:40:00+00:00",
    "url": "https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po",
    "news": "'Not the right time' - Fernandes pauses Man Utd contract talks"
+  },
+  {
+   "term": "bucky irving",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-22T20:00:00+00:00",
+   "url": "https://sports.yahoo.com/articles/bucky-irving-week-11-expectations-120245039.html",
+   "news": "Bucky Irving Week 11 Expectations: What to Expect From Bucs RB at Lions"
   },
   {
    "term": "bob chesney",
@@ -1911,6 +1965,51 @@
    "news": "Chaos takes over the Big Ten: UCLA, Indiana and Ohio State all lose in Week 12"
   },
   {
+   "term": "johannes radebe",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T19:30:00+00:00",
+   "url": "https://www.bbc.co.uk/newsround/articles/c63eg3vy7y31o",
+   "news": "Strictly Come Dancing 2026: What score do you give the new format?"
+  },
+  {
+   "term": "trevor lawrence",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T19:40:00+00:00",
+   "url": "https://www.foxnews.com/outkick-sports/nfl-star-trevor-lawrence-talks-possibility-getting-aew-ring-one-day",
+   "news": "NFL star Trevor Lawrence talks possibility of getting into an AEW ring one day"
+  },
+  {
+   "term": "is im a celebrity on tonight",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T19:40:00+00:00",
+   "url": "https://www.thesun.co.uk/tv/41083544/im-a-celeb-start-time-tonight/",
+   "news": "When I’m A Celeb is on tonight – start time and schedule as jungle epic kicks on"
+  },
+  {
+   "term": "jamie strictly",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T19:50:00+00:00",
+   "url": "https://www.express.co.uk/showbiz/tv-radio/2267259/strictly-come-dancing-2026-jaime-winstone-carlos-gu",
+   "news": "Strictly Come Dancing fans say 1 couple 'hasn't been given fair shot' at show"
+  },
+  {
+   "term": "van veen",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T19:50:00+00:00",
+   "url": "https://www.nu.nl/darts/6417430/gian-van-veen-naar-derde-grote-finale-in-carriere-na-zege-op-michael-van-gerwen.html",
+   "news": "Gian van Veen naar derde grote finale in carrière na zege op Michael van Gerwen"
+  },
+  {
    "term": "byrum brown",
    "geo": "US",
    "traffic": "500+",
@@ -2611,6 +2710,42 @@
    "ts": "2026-11-22T16:40:00+00:00",
    "url": "https://onefootball.com/de/news/ronaldo-henry-und-co-warum-wirtz-noch-hoffnung-haben-darf-43818242",
    "news": "Ronaldo, Henry und Co.: Warum Wirtz noch Hoffnung haben darf!"
+  },
+  {
+   "term": "marseille vs le mans",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T19:30:00+00:00",
+   "url": "https://www.lequipe.fr/Football/Article/-c-etait-un-reve-de-gosse-antoine-rabillard-l-olympien-de-coeur-devenu-chouchou-des-manceaux-de-retour-au-velodrome-pour-affronter-l-om/1745168",
+   "news": "« C'était un rêve de gosse » : Antoine Rabillard, un minot devenu Manceau de retour au Vélodrome"
+  },
+  {
+   "term": "george karlaftis",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T19:40:00+00:00",
+   "url": "https://www.arrowheadpride.com/nfl-reacts-survey/217030/week-11-results-chiefs-fans-praise-george-karlaftis",
+   "news": "In Week 11’s ‘Reacts’ poll, Chiefs fans praise George Karlaftis"
+  },
+  {
+   "term": "taylor sheridan",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T19:40:00+00:00",
+   "url": "https://www.imdb.com/fr/news/ni66122515/?ref_=nwc_art_perm",
+   "news": "Before Lioness, Elizaveta Neretin Was In A Taylor Sheridan Crime Thriller Series"
+  },
+  {
+   "term": "calley means",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T20:00:00+00:00",
+   "url": "https://www.politico.com/news/2026/11/22/rfk-jr-ally-calley-means-glyphosate-study-maha-01179587",
+   "news": "RFK Jr. ally says new glyphosate study 'backs EPA into a corner'"
   },
   {
    "term": "wake forest college football standings",
@@ -3972,6 +4107,78 @@
    "news": "Mauricio Pochettino warns Man Utd players over running stats amid Bryan Mbeumo GTA 6 post"
   },
   {
+   "term": "atalanta - inter",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T19:30:00+00:00",
+   "url": "https://www.gazzetta.it/Calcio/Serie-A/Inter/22-11-2026/atalanta-inter-live-serie-a-risultato-e-gol-in-diretta.shtml",
+   "news": "LIVE Alle 20.45 Atalanta-Inter, le ufficiali: c'è l'ex Zalewski, dal 1' Pavard, Spence e Pio"
+  },
+  {
+   "term": "jeff bezos",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T19:40:00+00:00",
+   "url": "https://www.thestreet.com/retail/jeff-bezos-predicts-amazon-will-eventually-go-bankrupt-30-year-rule",
+   "news": "Jeff Bezos predicts Amazon will eventually ‘go bankrupt’ and shares 30-year rule behind it"
+  },
+  {
+   "term": "sporting cristal - cienciano",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T20:00:00+00:00",
+   "url": "https://www.365scores.com/es/news/sporting-cristal-que-diferencia-de-goles/",
+   "news": "Sporting Cristal: qué diferencia de goles necesita para ganar el Torneo Clausura de la Liga 1 2026"
+  },
+  {
+   "term": "bond girl",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T20:00:00+00:00",
+   "url": "https://www.bbc.com/news/articles/cr4g1l7x52jno",
+   "news": "James Bond: Could Zendaya, Sydney Sweeney or Jodie Comer be the next Bond girl opposite Robert Pattinson?"
+  },
+  {
+   "term": "makai lemon",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T20:10:00+00:00",
+   "url": "https://www.nytimes.com/athletic/7799229/2026/11/21/eagles-steelers-questions-makai-lemon-2027-nfl-draft-preview/",
+   "news": "Eagles-Steelers questions: Reflecting on the Makai Lemon pick, previewing 2027 NFL Draft - The Athletic"
+  },
+  {
+   "term": "tj tampa",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T20:10:00+00:00",
+   "url": "https://sports.yahoo.com/nfl/article/carmelo-anthony-calls-on-marlon-humphrey-to-do-more-after-baltimore-criminals-comment-apologies-dont-build-anything-presence-does-144124740.html",
+   "news": "Carmelo Anthony calls on Marlon Humphrey to do more after Baltimore 'criminals' comment: 'Apologies don't build anything. Presence does'"
+  },
+  {
+   "term": "leighton meester",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T20:10:00+00:00",
+   "url": "https://www.imdb.com/es-es/news/ni66121642/?ref_=ttnw_art_perm",
+   "news": "‘Guarding Stars’ Writers on ‘The Bodyguard’ Title Change & Honoring Key Book Moments"
+  },
+  {
+   "term": "umar nurmagomedov",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T20:10:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cqlyjkl8xz0go",
+   "news": "UFC: Eight released from prison following Usman Nurmagomedov-Merab Dvalishvili brawl"
+  },
+  {
    "term": "josh hutcherson",
    "geo": "GB",
    "traffic": "100+",
@@ -4404,5 +4611,5 @@
    "news": "Fabian Hurzeler: How Brighton boss won fans over as Seagulls relish in more controlled football"
   }
  ],
- "updated": "2026-11-22T16:55:28.065328+00:00"
+ "updated": "2026-11-22T20:27:41.600192+00:00"
 }
