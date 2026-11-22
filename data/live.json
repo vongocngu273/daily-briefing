@@ -7,7 +7,16 @@
    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/ap263257503790861-1795301893-1417-1795301912.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=eQudcRgTo6HTBGYNeNNHRg",
    "ts": "2026-11-21T23:33:00+00:00",
    "sources": 2,
-   "score": 7.24
+   "score": 7.16
+  },
+  {
+   "title": "Nvidia rơi khỏi top 3 công ty giá trị nhất thế giới sau bê bối của tỉ phú Jensen Huang",
+   "url": "https://tuoitre.vn/nvidia-roi-khoi-top-3-cong-ty-gia-tri-nhat-the-gioi-sau-be-boi-cua-ti-phu-jensen-huang-100261122103847411.htm",
+   "source": "Tuổi Trẻ",
+   "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/logo-nvidia-17953160087461017076119-31-0-487-730-crop-17953160131711456569906.png",
+   "ts": "2026-11-22T05:34:00+00:00",
+   "sources": 2,
+   "score": 4.86
   },
   {
    "title": "Cháy nhà máy ở Indonesia, hơn 30 người mất tích",
@@ -16,7 +25,7 @@
    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/6057799991327134063-jpeg-17953-5613-9164-1795317169.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ZwiRP4UkjbqqAUsfN219XA",
    "ts": "2026-11-22T04:41:55+00:00",
    "sources": 2,
-   "score": 4.8
+   "score": 4.71
   },
   {
    "title": "Miền Bắc rét trở lại từ ngày 24/11",
@@ -25,7 +34,7 @@
    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/hn-gio-mu-a-of-1795319453-9496-1795319463.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=e4GGEydPfXoFbZnzhNX4ng",
    "ts": "2026-11-22T03:51:32+00:00",
    "sources": 2,
-   "score": 4.66
+   "score": 4.57
   },
   {
    "title": "Inter Miami thua tan nát trong ngày Messi nhận danh hiệu Vua phá lưới",
@@ -34,7 +43,7 @@
    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/messi-17953173366381612114417-582-512-1534-2035-crop-17953173886331593117351.jpg",
    "ts": "2026-11-22T03:09:00+00:00",
    "sources": 2,
-   "score": 4.54
+   "score": 4.45
   },
   {
    "title": "HAUS Da Lat nhận giải kiến trúc cảnh quan xuất sắc nhất châu Á",
@@ -43,75 +52,314 @@
    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/21/1-17952702768921133197160-0-0-1627-2603-crop-1795270295182363244545.jpg",
    "ts": "2026-11-22T02:00:00+00:00",
    "sources": 2,
-   "score": 4.35
-  },
-  {
-   "title": "Ngọc Sơn bị loại ở 'Ca sĩ mặt nạ 2026'",
-   "url": "https://vnexpress.net/ngoc-son-bi-loai-o-ca-si-mat-na-2026-5147555.html",
-   "source": "VnExpress",
-   "image": "https://vcdn1-giaitri.vnecdn.net/2026/11/22/NgcSn11-1795304031-9076-1795304813.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SXZ2RSsIUVFj6e-r1Pyd3A",
-   "ts": "2026-11-22T01:59:12+00:00",
-   "sources": 2,
-   "score": 4.34
+   "score": 4.26
   }
  ],
  "latest": [
   {
-   "title": "Màn hình phụ 2.9-inch trên Xiaomi 18 Pro Max làm được gì?",
-   "url": "https://tinhte.vn/thread/man-hinh-phu-2-9-inch-tren-xiaomi-18-pro-max-lam-duoc-gi.4194628/",
-   "source": "Tinh tế",
-   "image": "",
-   "ts": "2026-11-22T05:53:42+00:00",
-   "sources": 1,
-   "score": 0.0
-  },
-  {
-   "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
-   "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
-   "source": "Tinh tế",
-   "image": "",
-   "ts": "2026-11-22T05:27:11+00:00",
-   "sources": 1,
-   "score": 0.0
-  },
-  {
-   "title": "Gia vị quen thuộc trong bếp giúp ổn định đường huyết, hỗ trợ giảm cân",
-   "url": "https://vnexpress.net/gia-vi-quen-thuoc-trong-bep-giup-on-dinh-duong-huyet-ho-tro-giam-can-5147532.html",
-   "source": "VnExpress",
-   "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/gung1-1795279059-9425-1795279336.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UbyORMG5TYxJ-prQGGnWzA",
-   "ts": "2026-11-22T05:09:28+00:00",
-   "sources": 1,
-   "score": 0.0
-  },
-  {
-   "title": "Phó Thủ tướng Hồ Quốc Dũng dự Ngày hội Văn hóa công nhân cấp Tổng Liên đoàn",
-   "url": "https://www.vietnamplus.vn/pho-thu-tuong-ho-quoc-dung-du-ngay-hoi-van-hoa-cong-nhan-cap-tong-lien-doan-post1149954.vnp",
+   "title": "Liên hoan Văn hóa Ẩm thực Quốc tế năm 2026",
+   "url": "https://www.vietnamplus.vn/lien-hoan-van-hoa-am-thuc-quoc-te-nam-2026-post1149961.vnp",
    "source": "VietnamPlus",
-   "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2ByniBKh6lh3heGQ2FNKMtjBjslaYxtdOzvsZXKYuMmXu1nQwEIfJBCkFS1uXMPmJ81Y_toLNvU3LZlj05YC7nOumCmAbg5C6QMZpipEHAAJnu-Q0RmPHX_G3uQvvdvMyQ/ttxvn_pho-thu-tuong-ho-quoc-dung-ngay-hoi-van-hoa-cong-nhan-cap-tong-lien-doan.jpg.avif",
-   "ts": "2026-11-22T05:03:01+00:00",
+   "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6oqMDWWxVJYY9nkxWvpXMiUksuX-GO0q8MxvtuGOYySC-2NY8DKbnikdwvykSG6c1-PA5D3dHdhX8BlabhXPNZNOtTVJy9EEQORSIxz2Zxzr/ttxvn_lien-hoan-van-hoa-am-thuc-quoc-te-nam-2026-9171656-2.jpg.avif",
+   "ts": "2026-11-22T06:21:10+00:00",
    "sources": 1,
    "score": 0.0
   },
   {
-   "title": "Kỳ họp thứ 2, Quốc hội khóa XVI: Đà bứt phá cho mục tiêu tăng trưởng hai con số",
-   "url": "https://www.vietnamplus.vn/ky-hop-thu-2-quoc-hoi-khoa-xvi-da-but-pha-cho-muc-tieu-tang-truong-hai-con-so-post1149955.vnp",
-   "source": "VietnamPlus",
-   "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eYoWWh1IVNkchTt2kxgKEhW_gBdKI0Wby8jRIxOMdfjOkuwxQWBl9dQmba-yA9puq87PBzWizlY4grd1Kcb9Bpg/ttxvn_be-mac-ky-hop-thu-hai-quoc-hoi-khoa-xvi-4.jpg.avif",
-   "ts": "2026-11-22T05:02:25+00:00",
-   "sources": 1,
-   "score": 0.0
-  },
-  {
-   "title": "Phụ nữ nên làm gì để giảm nguy cơ loãng xương sớm?",
-   "url": "https://vnexpress.net/phu-nu-nen-lam-gi-de-giam-nguy-co-loang-xuong-som-5147422.html",
+   "title": "Diện mạo trung tâm triển lãm với hai khối nhà nghiêng ở Thủ Thiêm",
+   "url": "https://vnexpress.net/dien-mao-trung-tam-trien-lam-voi-hai-khoi-nha-nghieng-o-thu-thiem-5147624.html",
    "source": "VnExpress",
-   "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/yoga-thu-y-linh-1795243705-3885-1795245197.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=jD1Sa3kZMuWPcXAh-wjwUQ",
-   "ts": "2026-11-22T05:00:00+00:00",
+   "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/wm1-dji-1795326915.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=sAsRZOHqtzp07Bfw3I63kw",
+   "ts": "2026-11-22T06:18:12+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
+  {
+   "title": "100 người ảnh hưởng nhất lịch sử #12: Louis Pasteur, bình cổ thiên nga và 13 mũi tiêm năm 1885",
+   "url": "https://tinhte.vn/thread/100-nguoi-anh-huong-nhat-lich-su-12-louis-pasteur-binh-co-thien-nga-va-13-mui-tiem-nam-1885.4194653/",
+   "source": "Tinh tế",
+   "image": "https://imgproxy7.tinhte.vn/0FNViWdxUEHbHs2eI_TqGsHw224dFnQGh6iEmoUiQbo/h:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9139855_01-pasteur-edelfelt-1885.jpg",
+   "ts": "2026-11-22T06:07:50+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
+  {
+   "title": "Bahrain cáo buộc Iran tập kích cơ sở công nghiệp dân sự",
+   "url": "https://vnexpress.net/bahrain-cao-buoc-iran-tap-kich-co-so-cong-nghiep-dan-su-5147627.html",
+   "source": "VnExpress",
+   "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/69d2291dcde588e445b67bef6ae152-7424-2387-1795324644.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=cwhfovuZnsIRY_MLQpTUjg",
+   "ts": "2026-11-22T06:05:30+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
+  {
+   "title": "Đại tướng Phan Văn Giang dự Ngày hội Đại đoàn kết toàn dân tộc tại Thái Nguyên",
+   "url": "https://www.vietnamplus.vn/dai-tuong-phan-van-giang-du-ngay-hoi-dai-doan-ket-toan-dan-toc-tai-thai-nguyen-post1149957.vnp",
+   "source": "VietnamPlus",
+   "image": "https://media.vietnamplus.vn/images/kpYwUNVIdmktOA6PhcDOMUiMoO-XS-Tmx7nJnSktVU1_LsO-RUUSoexWAGScD46t1LSmd5YTPZP93WSqBNKWghGtdB-_aLZqx4o3FaHPlbLTdPyozE2xnDiTM2uHdCenEMe57m4jGE1LMVc38K9IWRItKa7P7kL3qThQU-wYQswh2Wr8Iv1jM0tBL6UuHAr5EMm-BGlZMvGjwZKGwY8a2g/ttxvn_dai-tuong-phan-van-giang-du-ngay-hoi-dai-doan-ket-toan-dan-toc-va-ngay-van-hoa-viet-nam-tai-tinh-thai-nguyen-9171679-1.jpg.avif",
+   "ts": "2026-11-22T05:59:05+00:00",
+   "sources": 1,
+   "score": 0.0
+  },
+  {
+   "title": "Tạp chí Cuba ca ngợi tinh thần Việt Nam “luôn tiến về phía trước”",
+   "url": "https://www.vietnamplus.vn/tap-chi-cuba-ca-ngoi-tinh-than-viet-nam-luon-tien-ve-phia-truoc-post1149956.vnp",
+   "source": "VietnamPlus",
+   "image": "https://media.vietnamplus.vn/images/kpYwUNVIdmktOA6PhcDOMc5PepIlwNc2FHlIm8G4FKjaUNJ8tT5hIvkQdIARJIKG/vnp_co-vietnam-cuba.png.avif",
+   "ts": "2026-11-22T05:58:45+00:00",
    "sources": 1,
    "score": 0.0
   }
  ],
  "cats": {
+  "culture_society": [
+   {
+    "title": "Liên hoan Văn hóa Ẩm thực Quốc tế năm 2026",
+    "url": "https://www.vietnamplus.vn/lien-hoan-van-hoa-am-thuc-quoc-te-nam-2026-post1149961.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6oqMDWWxVJYY9nkxWvpXMiUksuX-GO0q8MxvtuGOYySC-2NY8DKbnikdwvykSG6c1-PA5D3dHdhX8BlabhXPNZNOtTVJy9EEQORSIxz2Zxzr/ttxvn_lien-hoan-van-hoa-am-thuc-quoc-te-nam-2026-9171656-2.jpg.avif",
+    "ts": "2026-11-22T06:21:10+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Sáng 22/11/2026, tại Hà Nội Bộ Ngoại giao tổ chức Liên hoan Văn hóa Ẩm thực Quốc tế năm 2026 với chủ đề “Giao lộ Văn hóa - Beyond Flavors”."
+   },
+   {
+    "title": "Đưa di sản văn hóa hòa vào nhịp sống cộng đồng Đà Nẵng",
+    "url": "https://www.vietnamplus.vn/dua-di-san-van-hoa-hoa-vao-nhip-song-cong-dong-da-nang-post1149943.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/WW7Im0xJeJvOYK8b76eE8OQLC0RW1iS1jmxEDrB4LBsuIbrIZsTkAlXibDXuqxC4AJjvaTG2gsRfXSQjRL41ljPO0rGxuulTYGhhNeFlL5o/vnp_20261121-ngayhoi-disan-vanhoa-danang-714.jpg.avif",
+    "ts": "2026-11-22T03:58:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Từ khung cửi Bàn Thạch, bếp bánh tráng Túy Loan đến cồng chiêng Ca Dong và nét vẽ Họa sắc Nam Ô"
+   },
+   {
+    "title": "Đắk Lắk: Trưng bày Di sản tư liệu sắc phong - Mạch nguồn lịch sử, văn hóa",
+    "url": "https://www.vietnamplus.vn/dak-lak-trung-bay-di-san-tu-lieu-sac-phong-mach-nguon-lich-su-van-hoa-post1149945.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2OKSK3oGVQZQHrJXphuy7-34Sw9dGKkzVWq5Y_5b_XoxnE2APsOuu9FG2cFAyWQ2Sw/ttxvn_2211-di-san-tu-lieu-sac-phong.jpg.avif",
+    "ts": "2026-11-22T03:52:59+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Thông qua trưng bày, Bảo tàng Đắk Lắk mong muốn công chúng tiếp cận rõ hơn giá trị lịch sử, văn hóa, mỹ thuật và kỹ thuật chế tác của loại hình di sản tư liệu sắc phong."
+   },
+   {
+    "title": "Hội tụ muôn sắc màu văn hóa, lan tỏa bản sắc Việt",
+    "url": "https://www.vietnamplus.vn/hoi-tu-muon-sac-mau-van-hoa-lan-toa-ban-sac-viet-post1149942.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2OKSK3oGVQZQHrJXphuy7-2djIajwhZi7klPpFxKXmGUuSI3TL2Nz-djRDm3yxlh2r9fe0JkV0ztYL5HFfbZeKI/ttxvn_2211-ngay-van-hoa-viet-nam-tai-ha-noi.jpg.avif",
+    "ts": "2026-11-22T03:39:58+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Chuỗi hoạt động văn hóa, nghệ thuật được tổ chức sôi nổi ở nhiều địa phương với hình thức phong phú, góp phần tôn vinh di sản, khơi dậy niềm tự hào dân tộc"
+   },
+   {
+    "title": "Du lịch: Khi người Thái từ bỏ cuộc đua số lượng",
+    "url": "https://tuoitre.vn/du-lich-khi-nguoi-thai-tu-bo-cuoc-dua-so-luong-100261019161541906.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/19/tourist-visit-wat-phra-that-doi-suthep-one-of-the-tourist-destination-in-chiangmai-reuters-1792400341854429432789-0-0-441-705-crop-17924011156681370628964.png",
+    "ts": "2026-11-22T03:29:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Sau hơn nửa thế kỷ mở cửa phát triển du lịch đại chúng, Thái Lan đang thực hiện một bước chuyển mình mang tính chiến lược đối với ngành du lịch."
+   },
+   {
+    "title": "Ngọc Sơn bị loại ở 'Ca sĩ mặt nạ 2026'",
+    "url": "https://vnexpress.net/ngoc-son-bi-loai-o-ca-si-mat-na-2026-5147555.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-giaitri.vnecdn.net/2026/11/22/NgcSn11-1795304031-9076-1795304813.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SXZ2RSsIUVFj6e-r1Pyd3A",
+    "ts": "2026-11-22T01:59:12+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Ca sĩ Ngọc Sơn, 58 tuổi, tháo lớp mascot Rabibuum tại show âm nhạc \"Ca sĩ mặt nạ\", khiến nhiều khán giả tiếc nuối."
+   }
+  ],
+  "domestic": [
+   {
+    "title": "Diện mạo trung tâm triển lãm với hai khối nhà nghiêng ở Thủ Thiêm",
+    "url": "https://vnexpress.net/dien-mao-trung-tam-trien-lam-voi-hai-khoi-nha-nghieng-o-thu-thiem-5147624.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/wm1-dji-1795326915.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=sAsRZOHqtzp07Bfw3I63kw",
+    "ts": "2026-11-22T06:18:12+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Sau 13 năm xây dựng với vốn đầu tư 800 tỷ đồng, Trung tâm triển lãm quy hoạch TP HCM hoàn thành, nổi bật với kiến trúc hai khối nhà đặt nghiêng, mở cửa từ 23/11."
+   },
+   {
+    "title": "Cứu 6 người khỏi nhà cháy",
+    "url": "https://vnexpress.net/cuu-6-nguoi-khoi-nha-chay-5147645.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/chaynhaCatTienLamDong-17953247-7370-3069-1795324766.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=a4AC2ATOBjmjaWhe8M0fxg&t=image",
+    "ts": "2026-11-22T05:27:14+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Ngôi nhà ở xã Cát Tiên bùng cháy lúc rạng sáng, lực lượng chức năng và người dân phá cửa sau, cứu 5 người lớn và một trẻ em bên trong."
+   },
+   {
+    "title": "Phó Thủ tướng Hồ Quốc Dũng dự Ngày hội Văn hóa công nhân cấp Tổng Liên đoàn",
+    "url": "https://www.vietnamplus.vn/pho-thu-tuong-ho-quoc-dung-du-ngay-hoi-van-hoa-cong-nhan-cap-tong-lien-doan-post1149954.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2ByniBKh6lh3heGQ2FNKMtjBjslaYxtdOzvsZXKYuMmXu1nQwEIfJBCkFS1uXMPmJ81Y_toLNvU3LZlj05YC7nOumCmAbg5C6QMZpipEHAAJnu-Q0RmPHX_G3uQvvdvMyQ/ttxvn_pho-thu-tuong-ho-quoc-dung-ngay-hoi-van-hoa-cong-nhan-cap-tong-lien-doan.jpg.avif",
+    "ts": "2026-11-22T05:03:01+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Phó Thủ tướng Chính phủ Hồ Quốc Dũng dự khai trương mô hình “Không gian văn hóa công nhân” tại Công ty trách nhiệm hữu hạn Pearl Global Việt Nam, phường Bắc Giang."
+   },
+   {
+    "title": "Kỳ họp thứ 2, Quốc hội khóa XVI: Đà bứt phá cho mục tiêu tăng trưởng hai con số",
+    "url": "https://www.vietnamplus.vn/ky-hop-thu-2-quoc-hoi-khoa-xvi-da-but-pha-cho-muc-tieu-tang-truong-hai-con-so-post1149955.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eYoWWh1IVNkchTt2kxgKEhW_gBdKI0Wby8jRIxOMdfjOkuwxQWBl9dQmba-yA9puq87PBzWizlY4grd1Kcb9Bpg/ttxvn_be-mac-ky-hop-thu-hai-quoc-hoi-khoa-xvi-4.jpg.avif",
+    "ts": "2026-11-22T05:02:25+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Xuyên suốt 27 ngày làm việc với tinh thần \"bối cảnh mới - tư duy mới - cách làm mới,\" Quốc hội đã tập trung trí tuệ, thảo luận kỹ lưỡng và quyết định nhiều vấn đề hệ trọng."
+   },
+   {
+    "title": "Hà Nội: Hàng nghìn người tham gia diễu hành áo dài mừng Ngày Văn hóa Việt Nam",
+    "url": "https://www.vietnamplus.vn/ha-noi-hang-nghin-nguoi-tham-gia-dieu-hanh-ao-dai-mung-ngay-van-hoa-viet-nam-post1149952.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2OKSK3oGVQZQHrJXphuy7-0y9PqxMDk-Ty9P0eilkf6LWppboWvQwZTTKtjA_CglIWcUk-YduOdpbcx8uBo-UdwLMLBX8oDGbunaRy3jepM-/ttxvn_2211-dieu-hanh-ao-dai-ngay-van-hoa-viet-nam-tai-ha-noi-2.jpg.avif",
+    "ts": "2026-11-22T04:44:54+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Sáng 22/11/2026, tại khu vực hồ Hoàn Kiếm (Hà Nội), trong khuôn khổ Ngày hội Văn hóa Việt Nam lần thứ nhất"
+   },
+   {
+    "title": "Hà Nội: Từ 24/11, điều chỉnh tổ chức giao thông trên đường Võ Chí Công",
+    "url": "https://www.vietnamplus.vn/ha-noi-tu-2411-dieu-chinh-to-chuc-giao-thong-tren-duong-vo-chi-cong-post1149948.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/XYcVGR54G-FLXrshPLIAl3eROb5X3r2Zun0EoAa8bpv7wf8Qq38ryEVqDVXGVugoRnUewubZV49Qoc3M2LMumA/ttxvn-dieu-chinh-giao-thong-1309.jpg.avif",
+    "ts": "2026-11-22T04:08:38+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Tại các nút giao Võ Chí Công-Nguyễn Hoàng Tôn và nút giao Võ Chí Công-Xuân La, điều chỉnh tổ chức giao thông cho phép xe ôtô từ làn hỗn hợp được đi thẳng, rẽ phải."
+   }
+  ],
+  "tech_ai": [
+   {
+    "title": "100 người ảnh hưởng nhất lịch sử #12: Louis Pasteur, bình cổ thiên nga và 13 mũi tiêm năm 1885",
+    "url": "https://tinhte.vn/thread/100-nguoi-anh-huong-nhat-lich-su-12-louis-pasteur-binh-co-thien-nga-va-13-mui-tiem-nam-1885.4194653/",
+    "source": "Tinh tế",
+    "image": "https://imgproxy7.tinhte.vn/0FNViWdxUEHbHs2eI_TqGsHw224dFnQGh6iEmoUiQbo/h:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9139855_01-pasteur-edelfelt-1885.jpg",
+    "ts": "2026-11-22T06:07:50+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "[ATTACH] \"Louis Pasteur trong phòng thí nghiệm\", tranh của Albert Edelfelt năm 1885, Bảo tàng Orsay, Paris. Ảnh: Wikimedia Commons, phạm vi công cộng. Kỳ 12 của series \"100 người ảnh hưởng nhất..."
+   },
+   {
+    "title": "Nvidia rơi khỏi top 3 công ty giá trị nhất thế giới sau bê bối của tỉ phú Jensen Huang",
+    "url": "https://tuoitre.vn/nvidia-roi-khoi-top-3-cong-ty-gia-tri-nhat-the-gioi-sau-be-boi-cua-ti-phu-jensen-huang-100261122103847411.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/logo-nvidia-17953160087461017076119-31-0-487-730-crop-17953160131711456569906.png",
+    "ts": "2026-11-22T05:34:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Nvidia đã rời nhóm ba doanh nghiệp có giá trị vốn hóa lớn nhất thế giới sau khi ông Jensen Huang từ chức CEO vì bê bối tình cảm."
+   },
+   {
+    "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
+    "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T05:27:11+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Porsche Cayenne thuần điện vừa chính thức ra mắt tại thị trường Việt Nam với giá khởi điểm từ 4,72 tỷ đồng."
+   },
+   {
+    "title": "MacBook bấm nút nguồn không lên: sạc, giữ nút nguồn 10 giây, rút hết phụ kiện",
+    "url": "https://tinhte.vn/thread/macbook-bam-nut-nguon-khong-len-sac-giu-nut-nguon-10-giay-rut-het-phu-kien.4194451/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T03:52:50+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Áp dụng cho: mọi MacBook, cả Apple silicon (M1 trở lên) lẫn Intel. Bước reset SMC chỉ dành cho máy Intel."
+   },
+   {
+    "title": "Hagia Sophia: mái vòm 32 m đặt lên khối nhà vuông bằng cách nào mà đứng gần 1.500 năm",
+    "url": "https://tinhte.vn/thread/hagia-sophia-mai-vom-32-m-dat-len-khoi-nha-vuong-bang-cach-nao-ma-dung-gan-1-500-nam.4194498/",
+    "source": "Tinh tế",
+    "image": "",
+    "ts": "2026-11-22T03:09:37+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Hagia Sophia ở Istanbul đặt một mái vòm tròn rộng khoảng 32 m lên một khoảng không gian vuông, chỉ dựa vào bốn trụ lớn ở bốn góc."
+   },
+   {
+    "title": "Uống cà phê còn có những lợi ích to lớn ít ai biết",
+    "url": "https://tuoitre.vn/uong-ca-phe-con-co-nhung-loi-ich-to-lon-it-ai-biet-100261122075858819.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/ql-caphe-sua-1-1794885435028534958669-1296-0-2896-2560-crop-17953089725931145825256.jpeg",
+    "ts": "2026-11-22T02:10:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Cà phê được cho là thức uống khi muốn tỉnh táo hơn, nhưng ít người để ý đến một số lợi ích cũng như tác dụng phụ từ thói quen uống cà phê mỗi ngày như tác dụng giảm táo bón hay hỗ trợ ngăn ngừa nguy cơ tiểu đường."
+   }
+  ],
+  "geopolitics": [
+   {
+    "title": "Bahrain cáo buộc Iran tập kích cơ sở công nghiệp dân sự",
+    "url": "https://vnexpress.net/bahrain-cao-buoc-iran-tap-kich-co-so-cong-nghiep-dan-su-5147627.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/69d2291dcde588e445b67bef6ae152-7424-2387-1795324644.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=cwhfovuZnsIRY_MLQpTUjg",
+    "ts": "2026-11-22T06:05:30+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Bahrain nói rằng Iran tấn công một cơ sở công nghiệp dân sự gần thủ đô Manama, gây hỏa hoạn và thiệt hại, không có thương vong."
+   },
+   {
+    "title": "Cháy nhà máy ở Indonesia, hơn 30 người mất tích",
+    "url": "https://vnexpress.net/chay-nha-may-o-indonesia-hon-30-nguoi-mat-tich-5147600.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/6057799991327134063-jpeg-17953-5613-9164-1795317169.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ZwiRP4UkjbqqAUsfN219XA",
+    "ts": "2026-11-22T04:41:55+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Ít nhất 3 người chết và 36 người mất tích sau khi hỏa hoạn xảy ra tại nhà máy sản xuất bánh kẹo ở phía tây Jakarta."
+   },
+   {
+    "title": "Ảnh vệ tinh 'trận địa trực chiến' của siêu tên lửa Sarmat Nga",
+    "url": "https://vnexpress.net/anh-ve-tinh-tran-dia-truc-chien-cua-sieu-ten-lua-sarmat-nga-5147547.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/5563187178137269588a-179529362-2771-4445-1795293877.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=vAaCsQgRo7J7FavIFGDJIg",
+    "ts": "2026-11-22T04:37:20+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Ảnh vệ tinh thương mại cho thấy dấu hiệu Nga triển khai tên lửa xuyên lục địa RS-28 Sarmat, với tầm bắn 18.000 km, trong trạng thái trực chiến."
+   },
+   {
+    "title": "Đan Mạch trục xuất nhà ngoại giao Nga sau vụ rapper Ukraine, Nga tuyên bố sẽ có phản ứng",
+    "url": "https://tuoitre.vn/dan-mach-truc-xuat-nha-ngoai-giao-nga-sau-vu-rapper-ukraine-nga-tuyen-bo-se-co-phan-ung-100261122092634355.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/denmark-17953135502891538962203-0-0-1200-1920-crop-1795313561400392668168.png",
+    "ts": "2026-11-22T02:56:00+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Đan Mạch đã quyết định trục xuất nhà ngoại giao Nga sau nghi vấn tình báo Nga âm mưu ám sát rapper Ukraine."
+   },
+   {
+    "title": "Ông Zelensky: Ukraine cần văn bản cam kết an ninh kiểu NATO",
+    "url": "https://vnexpress.net/ong-zelensky-ukraine-can-van-ban-cam-ket-an-ninh-kieu-nato-5147574.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/ap26323612969063-1795313038-3920-1795313142.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=j6JeNhFbl_UAWTkFs8A24w",
+    "ts": "2026-11-22T02:37:08+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Tổng thống Zelensky tuyên bố muốn thấy những cam kết bằng văn bản về các đảm bảo an ninh kiểu NATO dành cho Ukraine."
+   },
+   {
+    "title": "Dâu tây Trung Quốc có mẫu vượt ngưỡng thuốc bảo vệ thực vật gần 6 lần",
+    "url": "https://vnexpress.net/dau-tay-trung-quoc-co-mau-vuot-nguong-thuoc-bao-ve-thuc-vat-gan-6-lan-5147587.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/screen-shot-at-am-1795313160-2174-1795313297.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=crNaHA_JzfIn8rsE0sh7Fw",
+    "ts": "2026-11-22T02:34:06+00:00",
+    "sources": 1,
+    "score": 0,
+    "summary": "Một lô dâu tây tươi nhập khẩu từ Trung Quốc vừa bị phát hiện có dư lượng thuốc trừ sâu vượt ngưỡng gần 6 lần, khiến nhà chức trách yêu cầu tăng kiểm tra các lô hàng liên quan."
+   }
+  ],
   "mobile": [
    {
     "title": "Màn hình phụ 2.9-inch trên Xiaomi 18 Pro Max làm được gì?",
@@ -154,16 +402,6 @@
     "summary": "Những hình ảnh được cho là của iPhone Air 2 vừa xuất hiện trên mạng. Trong ảnh, mặt lưng máy màu đen có cụm camera hình viên thuốc nằm ngang ở góc trên bên trái"
    },
    {
-    "title": "Thị trường smartphone Đông Nam Á lao dốc",
-    "url": "https://vnexpress.net/thi-truong-smartphone-dong-nam-a-lao-doc-5147543.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/iphone-pro-max-the-bang-179528-7467-6424-1795290121.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Trp-uzh6VCMzMbkJDK_Nlg",
-    "ts": "2026-11-22T03:00:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Lượng smartphone xuất xưởng tại khu vực Đông Nam Á giảm 36% trong quý III/2026 so với cùng kỳ năm ngoái, riêng thị trường Việt Nam tăng trưởng 1%."
-   },
-   {
     "title": "vivo Y21s 5G, Y11s 5G, Y05s 4G specs and images leak",
     "url": "https://www.gsmarena.com/vivo_y21s_5g_y11s_5g_y05s_4g_specs_and_images_leak-news-75584.php",
     "source": "GSMArena",
@@ -172,68 +410,16 @@
     "sources": 1,
     "score": 0,
     "summary": "Vivo will apparently be flushing out its budget lineup in India soon with at least three new devices. These are not particularly exciting in any meaningful way, but might just offer a good value proposition."
-   }
-  ],
-  "tech_ai": [
-   {
-    "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
-    "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T05:27:11+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Porsche Cayenne thuần điện vừa chính thức ra mắt tại thị trường Việt Nam với giá khởi điểm từ 4,72 tỷ đồng."
    },
    {
-    "title": "MacBook bấm nút nguồn không lên: sạc, giữ nút nguồn 10 giây, rút hết phụ kiện",
-    "url": "https://tinhte.vn/thread/macbook-bam-nut-nguon-khong-len-sac-giu-nut-nguon-10-giay-rut-het-phu-kien.4194451/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T03:52:50+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Áp dụng cho: mọi MacBook, cả Apple silicon (M1 trở lên) lẫn Intel. Bước reset SMC chỉ dành cho máy Intel."
-   },
-   {
-    "title": "Hagia Sophia: mái vòm 32 m đặt lên khối nhà vuông bằng cách nào mà đứng gần 1.500 năm",
-    "url": "https://tinhte.vn/thread/hagia-sophia-mai-vom-32-m-dat-len-khoi-nha-vuong-bang-cach-nao-ma-dung-gan-1-500-nam.4194498/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T03:09:37+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Hagia Sophia ở Istanbul đặt một mái vòm tròn rộng khoảng 32 m lên một khoảng không gian vuông, chỉ dựa vào bốn trụ lớn ở bốn góc."
-   },
-   {
-    "title": "Uống cà phê còn có những lợi ích to lớn ít ai biết",
-    "url": "https://tuoitre.vn/uong-ca-phe-con-co-nhung-loi-ich-to-lon-it-ai-biet-100261122075858819.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/ql-caphe-sua-1-1794885435028534958669-1296-0-2896-2560-crop-17953089725931145825256.jpeg",
-    "ts": "2026-11-22T02:10:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Cà phê được cho là thức uống khi muốn tỉnh táo hơn, nhưng ít người để ý đến một số lợi ích cũng như tác dụng phụ từ thói quen uống cà phê mỗi ngày như tác dụng giảm táo bón hay hỗ trợ ngăn ngừa nguy cơ tiểu đường."
-   },
-   {
-    "title": "Nên trẻ hóa da bằng công nghệ nào?",
-    "url": "https://vnexpress.net/nen-tre-hoa-da-bang-cong-nghe-nao-5147509.html",
+    "title": "Cúi đầu xem điện thoại có gây thoái hóa đốt sống cổ?",
+    "url": "https://vnexpress.net/cui-dau-xem-dien-thoai-co-gay-thoai-hoa-dot-song-co-5147507.html",
     "source": "VnExpress",
-    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/dsc01237-jpg-1795267477-7794-1795267520.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=uf7n9Ca-y2mIO26m13NE6A",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/bao-1795266660-1204-1795267208.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=jbosYWlLINmCLtr4EkdPYQ",
     "ts": "2026-11-22T02:00:00+00:00",
     "sources": 1,
     "score": 0,
-    "summary": "Tôi 40 tuổi, da có dấu hiệu chảy xệ, muốn thực hiện trẻ hóa không xâm lấn. HIFU hay laser 6D hiệu quả hơn? (Ngọc Linh, Hà Nội)"
-   },
-   {
-    "title": "Chia sẻ kinh nghiệm: Dùng màn hình vi tính làm khung ảnh KTS",
-    "url": "https://tinhte.vn/thread/chia-se-kinh-nghiem-dung-man-hinh-vi-tinh-lam-khung-anh-kts.4192853/",
-    "source": "Tinh tế",
-    "image": "",
-    "ts": "2026-11-22T01:46:16+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Nhà mình rất thường xuyên chụp ảnh để lưu giữ kỉ niệm, hồi xưa khi còn xài máy phim thì chụp hết cuộn là đem đi rửa xong bỏ vô album, bây giờ thì lưu trữ trên đám mây...."
+    "summary": "Tôi vừa đi vừa sử dụng điện thoại, đầu cúi xuống nhìn màn hình, gần đây cổ rất mỏi kể cả khi nghỉ ngơi."
    }
   ],
   "science_health": [
@@ -288,98 +474,26 @@
     "summary": "Bố tôi ho, mệt mỏi, ăn uống kém nhưng không sốt cao, bác sĩ chẩn đoán mắc cúm A. Vì sao người cao tuổi mắc cúm nhưng không sốt cao? (Hoàng Minh, TP HCM)"
    },
    {
-    "title": "Quảng Ninh đẩy mạnh phân cấp, phân quyền, đưa dịch vụ công sát dân hơn",
-    "url": "https://www.vietnamplus.vn/quang-ninh-day-manh-phan-cap-phan-quyen-dua-dich-vu-cong-sat-dan-hon-post1149937.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/dZT0STogUg1N0wbnIQQTYHTyS-yC8vrLzpFgbwbFutVU4LMv36DebiLfMRc7fS2HOuiUB4aI5Pmfry7JCUNUOA/ttxvn-quang-ninh-chinh-quyen-2-cap.jpg.avif",
-    "ts": "2026-11-22T02:58:29+00:00",
+    "title": "Thị trường smartphone Đông Nam Á lao dốc",
+    "url": "https://vnexpress.net/thi-truong-smartphone-dong-nam-a-lao-doc-5147543.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/iphone-pro-max-the-bang-179528-7467-6424-1795290121.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Trp-uzh6VCMzMbkJDK_Nlg",
+    "ts": "2026-11-22T03:00:00+00:00",
     "sources": 1,
     "score": 0,
-    "summary": "Việc phân cấp, phân quyền ở Quảng Ninh giúp giảm khâu trung gian, rút ngắn thời gian xử lý và đưa thẩm quyền, trách nhiệm giải quyết công việc đến gần người dân, doanh nghiệp hơn."
+    "summary": "Lượng smartphone xuất xưởng tại khu vực Đông Nam Á giảm 36% trong quý III/2026 so với cùng kỳ năm ngoái, riêng thị trường Việt Nam tăng trưởng 1%."
    }
   ],
-  "domestic": [
+  "sports": [
    {
-    "title": "Phó Thủ tướng Hồ Quốc Dũng dự Ngày hội Văn hóa công nhân cấp Tổng Liên đoàn",
-    "url": "https://www.vietnamplus.vn/pho-thu-tuong-ho-quoc-dung-du-ngay-hoi-van-hoa-cong-nhan-cap-tong-lien-doan-post1149954.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2ByniBKh6lh3heGQ2FNKMtjBjslaYxtdOzvsZXKYuMmXu1nQwEIfJBCkFS1uXMPmJ81Y_toLNvU3LZlj05YC7nOumCmAbg5C6QMZpipEHAAJnu-Q0RmPHX_G3uQvvdvMyQ/ttxvn_pho-thu-tuong-ho-quoc-dung-ngay-hoi-van-hoa-cong-nhan-cap-tong-lien-doan.jpg.avif",
-    "ts": "2026-11-22T05:03:01+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Phó Thủ tướng Chính phủ Hồ Quốc Dũng dự khai trương mô hình “Không gian văn hóa công nhân” tại Công ty trách nhiệm hữu hạn Pearl Global Việt Nam, phường Bắc Giang."
-   },
-   {
-    "title": "Kỳ họp thứ 2, Quốc hội khóa XVI: Đà bứt phá cho mục tiêu tăng trưởng hai con số",
-    "url": "https://www.vietnamplus.vn/ky-hop-thu-2-quoc-hoi-khoa-xvi-da-but-pha-cho-muc-tieu-tang-truong-hai-con-so-post1149955.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eYoWWh1IVNkchTt2kxgKEhW_gBdKI0Wby8jRIxOMdfjOkuwxQWBl9dQmba-yA9puq87PBzWizlY4grd1Kcb9Bpg/ttxvn_be-mac-ky-hop-thu-hai-quoc-hoi-khoa-xvi-4.jpg.avif",
-    "ts": "2026-11-22T05:02:25+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Xuyên suốt 27 ngày làm việc với tinh thần \"bối cảnh mới - tư duy mới - cách làm mới,\" Quốc hội đã tập trung trí tuệ, thảo luận kỹ lưỡng và quyết định nhiều vấn đề hệ trọng."
-   },
-   {
-    "title": "Hà Nội: Hàng nghìn người tham gia diễu hành áo dài mừng Ngày Văn hóa Việt Nam",
-    "url": "https://www.vietnamplus.vn/ha-noi-hang-nghin-nguoi-tham-gia-dieu-hanh-ao-dai-mung-ngay-van-hoa-viet-nam-post1149952.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2OKSK3oGVQZQHrJXphuy7-0y9PqxMDk-Ty9P0eilkf6LWppboWvQwZTTKtjA_CglIWcUk-YduOdpbcx8uBo-UdwLMLBX8oDGbunaRy3jepM-/ttxvn_2211-dieu-hanh-ao-dai-ngay-van-hoa-viet-nam-tai-ha-noi-2.jpg.avif",
-    "ts": "2026-11-22T04:44:54+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Sáng 22/11/2026, tại khu vực hồ Hoàn Kiếm (Hà Nội), trong khuôn khổ Ngày hội Văn hóa Việt Nam lần thứ nhất"
-   },
-   {
-    "title": "Hà Nội: Từ 24/11, điều chỉnh tổ chức giao thông trên đường Võ Chí Công",
-    "url": "https://www.vietnamplus.vn/ha-noi-tu-2411-dieu-chinh-to-chuc-giao-thong-tren-duong-vo-chi-cong-post1149948.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/XYcVGR54G-FLXrshPLIAl3eROb5X3r2Zun0EoAa8bpv7wf8Qq38ryEVqDVXGVugoRnUewubZV49Qoc3M2LMumA/ttxvn-dieu-chinh-giao-thong-1309.jpg.avif",
-    "ts": "2026-11-22T04:08:38+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Tại các nút giao Võ Chí Công-Nguyễn Hoàng Tôn và nút giao Võ Chí Công-Xuân La, điều chỉnh tổ chức giao thông cho phép xe ôtô từ làn hỗn hợp được đi thẳng, rẽ phải."
-   },
-   {
-    "title": "Những chính sách lớn vừa được Quốc hội thông qua",
-    "url": "https://vnexpress.net/nhung-chinh-sach-lon-vua-duoc-quoc-hoi-thong-qua-5147625.html",
+    "title": "Messi gây tranh cãi vì ném bóng vào mặt đối thủ ở MLS",
+    "url": "https://vnexpress.net/messi-gay-tranh-cai-vi-nem-bong-vao-mat-doi-thu-o-mls-5147619.html",
     "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/2aOboRE9HSCJgWFMZj53rwI9EJNLw0-9114-8344-1795320712.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=oBMdEb2EPYYAiw5iSH2QTA",
-    "ts": "2026-11-22T04:00:00+00:00",
+    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/messi-1795318292-4836-1795319375.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=6PLo1TWtqUp6eQ9IJiXwvA&t=image",
+    "ts": "2026-11-22T04:04:51+00:00",
     "sources": 1,
     "score": 0,
-    "summary": "Quốc hội thông qua 38 luật, 18 nghị quyết với nhiều chính sách mới về đất đai, nhà ở, thuế, đầu tư, an sinh xã hội, tư pháp và phát triển hạ tầng, sau 27 ngày làm việc."
-   },
-   {
-    "title": "Miền Bắc rét trở lại từ ngày 24/11",
-    "url": "https://vnexpress.net/mien-bac-ret-tro-lai-tu-ngay-24-11-5147608.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/hn-gio-mu-a-of-1795319453-9496-1795319463.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=e4GGEydPfXoFbZnzhNX4ng",
-    "ts": "2026-11-22T03:51:32+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Một đợt không khí lạnh mới tràn xuống miền Bắc từ rạng sáng 24/11 khiến trời chuyển rét, vùng núi có nơi rét đậm, miền Trung mưa giông gia tăng."
-   }
-  ],
-  "geopolitics": [
-   {
-    "title": "Cháy nhà máy ở Indonesia, hơn 30 người mất tích",
-    "url": "https://vnexpress.net/chay-nha-may-o-indonesia-hon-30-nguoi-mat-tich-5147600.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/6057799991327134063-jpeg-17953-5613-9164-1795317169.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ZwiRP4UkjbqqAUsfN219XA",
-    "ts": "2026-11-22T04:41:55+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Ít nhất 3 người chết và 36 người mất tích sau khi hỏa hoạn xảy ra tại nhà máy sản xuất bánh kẹo ở phía tây Jakarta."
-   },
-   {
-    "title": "Ảnh vệ tinh 'trận địa trực chiến' của siêu tên lửa Sarmat Nga",
-    "url": "https://vnexpress.net/anh-ve-tinh-tran-dia-truc-chien-cua-sieu-ten-lua-sarmat-nga-5147547.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/5563187178137269588a-179529362-2771-4445-1795293877.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=vAaCsQgRo7J7FavIFGDJIg",
-    "ts": "2026-11-22T04:37:20+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Ảnh vệ tinh thương mại cho thấy dấu hiệu Nga triển khai tên lửa xuyên lục địa RS-28 Sarmat, với tầm bắn 18.000 km, trong trạng thái trực chiến."
+    "summary": "HLV của Columbus Crew, Laurent Courtois cho rằng Lionel Messi đáng bị đuổi vì ném bóng vào mặt Gonzalo Tapia trong trận Inter Miami thua 0-3 ở vòng play-off MLS Cup."
    },
    {
     "title": "Việt kiều Mỹ phá sâu kỷ lục bơi Việt Nam",
@@ -392,58 +506,6 @@
     "summary": "Kình ngư Nguyễn Hoa Watson đạt 27 giây 16 ở vòng loại 50m ếch nam Đại hội Thể thao toàn quốc sáng 22/11, phá sâu kỷ lục giải tồn tại 16 năm của cố VĐV Nguyễn Hữu Việt."
    },
    {
-    "title": "Đan Mạch trục xuất nhà ngoại giao Nga sau vụ rapper Ukraine, Nga tuyên bố sẽ có phản ứng",
-    "url": "https://tuoitre.vn/dan-mach-truc-xuat-nha-ngoai-giao-nga-sau-vu-rapper-ukraine-nga-tuyen-bo-se-co-phan-ung-100261122092634355.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/denmark-17953135502891538962203-0-0-1200-1920-crop-1795313561400392668168.png",
-    "ts": "2026-11-22T02:56:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Đan Mạch đã quyết định trục xuất nhà ngoại giao Nga sau nghi vấn tình báo Nga âm mưu ám sát rapper Ukraine."
-   },
-   {
-    "title": "Ông Zelensky: Ukraine cần văn bản cam kết an ninh kiểu NATO",
-    "url": "https://vnexpress.net/ong-zelensky-ukraine-can-van-ban-cam-ket-an-ninh-kieu-nato-5147574.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/ap26323612969063-1795313038-3920-1795313142.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=j6JeNhFbl_UAWTkFs8A24w",
-    "ts": "2026-11-22T02:37:08+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Tổng thống Zelensky tuyên bố muốn thấy những cam kết bằng văn bản về các đảm bảo an ninh kiểu NATO dành cho Ukraine."
-   },
-   {
-    "title": "Dâu tây Trung Quốc có mẫu vượt ngưỡng thuốc bảo vệ thực vật gần 6 lần",
-    "url": "https://vnexpress.net/dau-tay-trung-quoc-co-mau-vuot-nguong-thuoc-bao-ve-thuc-vat-gan-6-lan-5147587.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/screen-shot-at-am-1795313160-2174-1795313297.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=crNaHA_JzfIn8rsE0sh7Fw",
-    "ts": "2026-11-22T02:34:06+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Một lô dâu tây tươi nhập khẩu từ Trung Quốc vừa bị phát hiện có dư lượng thuốc trừ sâu vượt ngưỡng gần 6 lần, khiến nhà chức trách yêu cầu tăng kiểm tra các lô hàng liên quan."
-   }
-  ],
-  "sports": [
-   {
-    "title": "Trước Chu Ngọc Nguyễn Lực, Việt Nam cũng có những siêu phẩm phạt góc",
-    "url": "https://tuoitre.vn/truoc-chu-ngoc-nguyen-luc-viet-nam-cung-co-nhung-sieu-pham-phat-goc-100261122095357394.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/u17-viet-nam-1-1763820938464190713881-54-657-773-1807-crop-17953160149561455355251.jpeg",
-    "ts": "2026-11-22T04:40:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Trước khi Chu Ngọc Nguyễn Lực ghi bàn từ chấm phạt góc vào lưới U17 Bỉ tại U17 World Cup 2026"
-   },
-   {
-    "title": "Messi gây tranh cãi vì ném bóng vào mặt đối thủ ở MLS",
-    "url": "https://vnexpress.net/messi-gay-tranh-cai-vi-nem-bong-vao-mat-doi-thu-o-mls-5147619.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/messi-1795318292-4836-1795319375.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=6PLo1TWtqUp6eQ9IJiXwvA&t=image",
-    "ts": "2026-11-22T04:04:51+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "HLV của Columbus Crew, Laurent Courtois cho rằng Lionel Messi đáng bị đuổi vì ném bóng vào mặt Gonzalo Tapia trong trận Inter Miami thua 0-3 ở vòng play-off MLS Cup."
-   },
-   {
     "title": "Dự đoán tỉ số Ngoại hạng Anh: Liverpool gieo sầu ngày ra mắt của HLV Pochettino",
     "url": "https://tuoitre.vn/du-doan-ti-so-ngoai-hang-anh-liverpool-gieo-sau-ngay-ra-mat-cua-hlv-pochettino-100261120214839986.htm",
     "source": "Tuổi Trẻ",
@@ -452,68 +514,6 @@
     "sources": 1,
     "score": 0,
     "summary": "Lúc 23h30 ngày 22-11 (giờ Việt Nam), HLV Mauricio Pochettino sẽ ra mắt Man United trên sân Anfield ở vòng 11 Ngoại hạng Anh. Chờ ông là Liverpool, đối thủ ông đã 8 trận liền chưa thắng."
-   }
-  ],
-  "culture_society": [
-   {
-    "title": "Đưa di sản văn hóa hòa vào nhịp sống cộng đồng Đà Nẵng",
-    "url": "https://www.vietnamplus.vn/dua-di-san-van-hoa-hoa-vao-nhip-song-cong-dong-da-nang-post1149943.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/WW7Im0xJeJvOYK8b76eE8OQLC0RW1iS1jmxEDrB4LBsuIbrIZsTkAlXibDXuqxC4AJjvaTG2gsRfXSQjRL41ljPO0rGxuulTYGhhNeFlL5o/vnp_20261121-ngayhoi-disan-vanhoa-danang-714.jpg.avif",
-    "ts": "2026-11-22T03:58:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Từ khung cửi Bàn Thạch, bếp bánh tráng Túy Loan đến cồng chiêng Ca Dong và nét vẽ Họa sắc Nam Ô"
-   },
-   {
-    "title": "Đắk Lắk: Trưng bày Di sản tư liệu sắc phong - Mạch nguồn lịch sử, văn hóa",
-    "url": "https://www.vietnamplus.vn/dak-lak-trung-bay-di-san-tu-lieu-sac-phong-mach-nguon-lich-su-van-hoa-post1149945.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2OKSK3oGVQZQHrJXphuy7-34Sw9dGKkzVWq5Y_5b_XoxnE2APsOuu9FG2cFAyWQ2Sw/ttxvn_2211-di-san-tu-lieu-sac-phong.jpg.avif",
-    "ts": "2026-11-22T03:52:59+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Thông qua trưng bày, Bảo tàng Đắk Lắk mong muốn công chúng tiếp cận rõ hơn giá trị lịch sử, văn hóa, mỹ thuật và kỹ thuật chế tác của loại hình di sản tư liệu sắc phong."
-   },
-   {
-    "title": "Hội tụ muôn sắc màu văn hóa, lan tỏa bản sắc Việt",
-    "url": "https://www.vietnamplus.vn/hoi-tu-muon-sac-mau-van-hoa-lan-toa-ban-sac-viet-post1149942.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2OKSK3oGVQZQHrJXphuy7-2djIajwhZi7klPpFxKXmGUuSI3TL2Nz-djRDm3yxlh2r9fe0JkV0ztYL5HFfbZeKI/ttxvn_2211-ngay-van-hoa-viet-nam-tai-ha-noi.jpg.avif",
-    "ts": "2026-11-22T03:39:58+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Chuỗi hoạt động văn hóa, nghệ thuật được tổ chức sôi nổi ở nhiều địa phương với hình thức phong phú, góp phần tôn vinh di sản, khơi dậy niềm tự hào dân tộc"
-   },
-   {
-    "title": "Du lịch: Khi người Thái từ bỏ cuộc đua số lượng",
-    "url": "https://tuoitre.vn/du-lich-khi-nguoi-thai-tu-bo-cuoc-dua-so-luong-100261019161541906.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/19/tourist-visit-wat-phra-that-doi-suthep-one-of-the-tourist-destination-in-chiangmai-reuters-1792400341854429432789-0-0-441-705-crop-17924011156681370628964.png",
-    "ts": "2026-11-22T03:29:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Sau hơn nửa thế kỷ mở cửa phát triển du lịch đại chúng, Thái Lan đang thực hiện một bước chuyển mình mang tính chiến lược đối với ngành du lịch."
-   },
-   {
-    "title": "Ngọc Sơn bị loại ở 'Ca sĩ mặt nạ 2026'",
-    "url": "https://vnexpress.net/ngoc-son-bi-loai-o-ca-si-mat-na-2026-5147555.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-giaitri.vnecdn.net/2026/11/22/NgcSn11-1795304031-9076-1795304813.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SXZ2RSsIUVFj6e-r1Pyd3A",
-    "ts": "2026-11-22T01:59:12+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Ca sĩ Ngọc Sơn, 58 tuổi, tháo lớp mascot Rabibuum tại show âm nhạc \"Ca sĩ mặt nạ\", khiến nhiều khán giả tiếc nuối."
-   },
-   {
-    "title": "Văn hóa kết nối cộng đồng, lan tỏa sức mạnh đại đoàn kết ở Nghệ An",
-    "url": "https://www.vietnamplus.vn/van-hoa-ket-noi-cong-dong-lan-toa-suc-manh-dai-doan-ket-o-nghe-an-post1149927.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2OKSK3oGVQZQHrJXphuy7-2djIajwhZi7klPpFxKXmGULYhkSr2uSmAvU_4s18wedQ/ttxvn_2211-ngay-van-hoa-nghe-an.jpg.avif",
-    "ts": "2026-11-22T01:37:45+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Gắn Ngày hội Đại đoàn kết toàn dân tộc (18/11) với Ngày Văn hóa Việt Nam (24/11) giúp khơi dậy ý thức gìn giữ bản sắc, phát huy sức mạnh đoàn kết"
    }
   ],
   "environment": [
@@ -538,16 +538,6 @@
     "sources": 1,
     "score": 0,
     "summary": "Bitcoin trên sàn Kraken có thời điểm \"sập\" về 17.000 USD, thấp hơn 70% so với thị trường, do biến động bất thường ở cặp giao dịch bằng đôla Canada."
-   },
-   {
-    "title": "Jensen Huang mất gần 30% tài sản sau bê bối ngoại tình",
-    "url": "https://vnexpress.net/jensen-huang-mat-gan-30-tai-san-sau-be-boi-ngoai-tinh-5147541.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/jensen-huang-ceo-nvidia-comput-2336-6581-1795284996.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=P-gZbbTC_CcdzR-cOMt-Rg",
-    "ts": "2026-11-22T03:26:00+00:00",
-    "sources": 1,
-    "score": 0,
-    "summary": "Sau bê bối đời tư, tài sản của Jensen Huang, cựu CEO Nvidia, đã giảm 47,9 tỷ USD, tương đương khoảng 29,5%."
    },
    {
     "title": "Giá vàng thế giới giảm mạnh nhất trong 8 tháng, tuần tới có nhích lên?",
@@ -653,10 +643,10 @@
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin (USD)",
-   "close": 58798.5703125,
-   "change_pct": -0.0006975567377702858,
+   "close": 58887.98828125,
+   "change_pct": 0.15137645549365458,
    "date": "22/11"
   }
  ],
- "updated": "2026-11-22T05:55:20.880670+00:00"
+ "updated": "2026-11-22T06:25:25.399273+00:00"
 }

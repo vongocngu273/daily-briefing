@@ -73,6 +73,15 @@
    "news": "Inter Miami suffered a heavy defeat at Nu Stadium, while Columbus Crew celebrated a victory."
   },
   {
+   "term": "sạt lở",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T04:40:00+00:00",
+   "url": "https://laodong.vn/moi-truong/canh-bao-2-tinh-co-mua-to-nguy-co-lu-quet-sat-lo-trong-6-gio-toi-1804563.ldo",
+   "news": "Cảnh báo 2 tỉnh có mưa to, nguy cơ lũ quét, sạt lở trong 6 giờ tới"
+  },
+  {
    "term": "man city vs fulham f.c. standings",
    "geo": "VN",
    "traffic": "1000+",
@@ -125,15 +134,6 @@
    "ts": "2026-11-22T04:30:00+00:00",
    "url": "https://vnexpress.net/see-the-light-2-suc-hut-cua-my-tam-5147410.html",
    "news": "'See The Light 2': Sức hút của Mỹ Tâm"
-  },
-  {
-   "term": "sạt lở",
-   "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T04:40:00+00:00",
-   "url": "https://laodong.vn/moi-truong/canh-bao-2-tinh-co-mua-to-nguy-co-lu-quet-sat-lo-trong-6-gio-toi-1804563.ldo",
-   "news": "Cảnh báo 2 tỉnh có mưa to, nguy cơ lũ quét, sạt lở trong 6 giờ tới"
   },
   {
    "term": "lich thi dau u17",
@@ -233,6 +233,15 @@
    "ts": "2026-11-22T02:50:00+00:00",
    "url": "https://www.24h.com.vn/cong-nghe-thong-tin/chia-tay-trong-mua-vao-game-gta-6-ca-si-phuong-thanh-cung-ngo-ngang-c55a1812679.html",
    "news": "\"Chia tay trong mưa\" vào game GTA 6, ca sĩ Phương Thanh cũng... ngỡ ngàng"
+  },
+  {
+   "term": "giá vàng ngày 22 tháng 11 năm 2026",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T05:10:00+00:00",
+   "url": "https://tuoitre.vn/gia-vang-the-gioi-giam-manh-nhat-trong-8-thang-tuan-toi-co-nhich-len-100261122094553541.htm",
+   "news": "Giá vàng thế giới giảm mạnh nhất trong 8 tháng, tuần tới có nhích lên?"
   },
   {
    "term": "como vs",
@@ -370,6 +379,15 @@
    "news": "Gia Lai khẩn trương di dời dân khỏi vùng nguy cơ lũ lụt"
   },
   {
+   "term": "boeing 787 dreamliner",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T04:40:00+00:00",
+   "url": "https://www.rolls-royce.com/media/press-releases/2026/19-11-2026-rr-welcomes-royal-brunei-airlines-order-for-eight-trent-1000-xe-engines.aspx",
+   "news": "Rolls-Royce welcomes Royal Brunei Airlines order for eight Trent 1000 XE engines"
+  },
+  {
    "term": "nguyễn phương hằng",
    "geo": "VN",
    "traffic": "200+",
@@ -379,13 +397,13 @@
    "news": ""
   },
   {
-   "term": "giá vàng ngày 22 tháng 11 năm 2026",
+   "term": "bắt giữ",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-22T05:10:00+00:00",
-   "url": "https://laodong.vn/the-gioi/du-bao-thoi-diem-gia-vang-cham-moc-5000-usdounce-bat-chap-da-giam-manh-1804311.ldo",
-   "news": "Dự báo thời điểm giá vàng chạm mốc 5.000 USD/ounce bất chấp đà giảm mạnh"
+   "ts": "2026-11-22T06:10:00+00:00",
+   "url": "https://vnexpress.net/mexico-bat-trum-ma-tuy-khet-tieng-sau-cuoc-dau-sung-dam-mau-5147559.html",
+   "news": "Mexico bắt trùm ma túy khét tiếng sau cuộc đấu súng đẫm máu"
   },
   {
    "term": "ben shelton",
@@ -478,13 +496,13 @@
    "news": ""
   },
   {
-   "term": "boeing 787 dreamliner",
+   "term": "s27 ultra",
    "geo": "VN",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-22T04:40:00+00:00",
-   "url": "https://www.rolls-royce.com/media/press-releases/2026/19-11-2026-rr-welcomes-royal-brunei-airlines-order-for-eight-trent-1000-xe-engines.aspx",
-   "news": "Rolls-Royce welcomes Royal Brunei Airlines order for eight Trent 1000 XE engines"
+   "ts": "2026-11-22T05:50:00+00:00",
+   "url": "https://www.thegioididong.com/tin-tuc/galaxy-s27-pro-dung-chip-exynos-2700-lo-diem-geekbench-6595686",
+   "news": "Galaxy S27 Pro dùng chip Exynos 2700 lộ điểm Geekbench ấn tượng, vượt mặt Snapdragon"
   }
  ],
  "world": [
@@ -514,6 +532,24 @@
    "ts": "2026-11-22T04:00:00+00:00",
    "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
    "news": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix"
+  },
+  {
+   "term": "strictly come dancing week 9 results",
+   "geo": "GB",
+   "traffic": "20000+",
+   "score": 20000,
+   "ts": "2026-11-22T05:30:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cvx2xprxp5ryo",
+   "news": "Why is Blackpool such a Strictly highlight?"
+  },
+  {
+   "term": "heisman odds",
+   "geo": "US",
+   "traffic": "20000+",
+   "score": 20000,
+   "ts": "2026-11-22T05:50:00+00:00",
+   "url": "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls",
+   "news": "Latest Heisman Trophy 2026 Odds as Jeremiah Smith Rises, Mestemaker Falls"
   },
   {
    "term": "dwayne johnson",
@@ -858,6 +894,42 @@
    "news": "GTA 6 daily routine: What you should do every day and why it matters"
   },
   {
+   "term": "devon dampier",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T05:40:00+00:00",
+   "url": "https://www.foxsports.com/stories/college-football/utah-utes-devon-dampier-heisman-trophy",
+   "news": "The Perfect Pairing Fueling A Heisman Trophy Campaign"
+  },
+  {
+   "term": "darius acuff jr.",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T05:40:00+00:00",
+   "url": "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
+   "news": "Damian Lillard respects Darius Acuff Jr.’s mentality. He also knows the test ahead"
+  },
+  {
+   "term": "big 12 championship game",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T05:40:00+00:00",
+   "url": "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/22/buy-utah-big-12-championship-game-tickets/92909891007/",
+   "news": "Utah clinches spot in Big 12 Championship Game, here's how to buy tickets"
+  },
+  {
+   "term": "mn wild",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T06:10:00+00:00",
+   "url": "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
+   "news": "Hughes to miss remainder of Wild road trip with injury"
+  },
+  {
    "term": "rayo vallecano - valencia c. f.",
    "geo": "US",
    "traffic": "1000+",
@@ -1144,24 +1216,6 @@
    "ts": "2026-11-22T05:30:00+00:00",
    "url": "https://www.boxingscene.com/articles/gervonta-davis-and-jesse-bam-rodriguez-tease-unlikely-catchweight-showdown",
    "news": "Gervonta Davis and Jesse ‘Bam’ Rodriguez tease unlikely catchweight showdown"
-  },
-  {
-   "term": "devon dampier",
-   "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T05:40:00+00:00",
-   "url": "https://www.foxsports.com/stories/college-football/utah-utes-devon-dampier-heisman-trophy",
-   "news": "The Perfect Pairing Fueling A Heisman Trophy Campaign"
-  },
-  {
-   "term": "darius acuff jr.",
-   "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T05:40:00+00:00",
-   "url": "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
-   "news": "Damian Lillard respects Darius Acuff Jr.’s mentality. He also knows the test ahead"
   },
   {
    "term": "rayo vs valencia",
@@ -1540,6 +1594,24 @@
    "ts": "2026-11-22T05:40:00+00:00",
    "url": "https://www.espn.com/video/clip/_/id/50559241/domantas-sabonis-fights-defender-1",
    "news": "Domantas Sabonis fights off defender for and-1"
+  },
+  {
+   "term": "f1 standings",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T05:40:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/formula1/articles/cqx2ex25pvn9o",
+   "news": "Las Vegas Grand Prix result: Max Verstappen wins extraordinary race as Lewis Hamilton and Charles Leclerc collide"
+  },
+  {
+   "term": "lewis hamilton",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T06:00:00+00:00",
+   "url": "https://www.espn.co.uk/f1/story/_/id/50472109/lewis-hamilton-charles-leclerc-ferrari-las-vegas-grand-prix-formula-1",
+   "news": "Ferrari's Lewis Hamilton and Charles Leclerc clash at Las Vegas Grand Prix"
   },
   {
    "term": "harvard yale game",
@@ -2208,13 +2280,58 @@
    "news": "GTA 6 Day Release yacht guide: where Mattia is and how to hit all three champagne bottles"
   },
   {
-   "term": "f1 standings",
+   "term": "stevie wonder",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T05:50:00+00:00",
+   "url": "https://www.nytimes.com/2026/11/20/arts/music/stevie-wonder-songs-in-the-key-of-life-tour.html",
+   "news": "Playing ‘Key of Life,’ Stevie Wonder Invites All to Match His Joy"
+  },
+  {
+   "term": "poland russian missiles",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-22T05:40:00+00:00",
-   "url": "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b027eb58f08268116cd51da",
-   "news": "Max Verstappen wins Las Vegas Grand Prix: Formula One 2026 – reaction"
+   "ts": "2026-11-22T06:00:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
+   "news": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk"
+  },
+  {
+   "term": "christmas",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:00:00+00:00",
+   "url": "https://www.liverpoolecho.co.uk/whats-on/whats-on-news/spot-yourself-11-fantastic-photos-34948817",
+   "news": "Spot yourself in 11 fantastic photos from opening day at Liverpool Christmas Market"
+  },
+  {
+   "term": "pac 12",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:10:00+00:00",
+   "url": "https://www.seattletimes.com/sports/wsu-cougar-football/wsu-football-gives-up-6-unanswered-tds-in-blowout-loss-vs-texas-state/",
+   "news": "Reality comes crashing for WSU football in blowout loss vs. Texas State"
+  },
+  {
+   "term": "pac 12 championship game",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:10:00+00:00",
+   "url": "https://www.cbssports.com/college-football/news/pac-12-championship-game-scenarios-boise-state-texas-state-oregon-state-san-diego-state/",
+   "news": "Pac-12 Championship Game scenarios: Three teams alive for a date with No. 1 seed Boise State"
+  },
+  {
+   "term": "brandin cooks",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T06:10:00+00:00",
+   "url": "https://sports.yahoo.com/articles/49ers-waive-ex-bills-saints-214011514.html",
+   "news": "49ers waive ex-Bills, Saints WR with 9,869 career receiving yards"
   },
   {
    "term": "sufc",
@@ -2307,5 +2424,5 @@
    "news": "Jennifer Lawrence ranks Chris Pratt as ‘worst’ on-screen kiss"
   }
  ],
- "updated": "2026-11-22T05:55:20.880670+00:00"
+ "updated": "2026-11-22T06:25:25.399273+00:00"
 }
