@@ -14,7 +14,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # GitHub có thể chạy lịch hẹn trễ cả tiếng. Nếu hôm nay đã có bản tin (chạy tay hoặc chạy sớm hơn)
+  # thì lần chạy theo lịch đến trễ bỏ qua, để không gọi Gemini và không gửi Telegram hai lần.
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.done.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: data/page.json
+      - id: done
+        run: |
+          today=$(TZ=Asia/Ho_Chi_Minh date +%Y%m%d)
+          have=$(python3 -c "import json;print(json.load(open('data/page.json')).get('date_compact',''))" 2>/dev/null || true)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$have" = "$today" ]; then
+            echo "Hôm nay ($today) đã có bản tin, bỏ qua lần chạy theo lịch."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
+    needs: check
+    if: needs.check.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
