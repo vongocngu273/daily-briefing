@@ -46,6 +46,33 @@
    "news": "Alineación confirmada del Real Madrid hoy contra el Celta en LaLiga EA Sports"
   },
   {
+   "term": "cristiano roland",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T00:40:00+00:00",
+   "url": "https://vnexpress.net/bao-bi-tuong-chung-se-thang-de-viet-nam-o-u17-world-cup-5147481.html",
+   "news": "Báo Bỉ: 'Tưởng chừng sẽ thắng dễ Việt Nam ở U17 World Cup'"
+  },
+  {
+   "term": "lịch âm",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T00:50:00+00:00",
+   "url": "https://thanhnien.vn/lich-am-hom-nay-2211-tiet-lap-dong-da-ket-thuc-185261121084040081.htm",
+   "news": "Lịch âm hôm nay 22.11: Tiết Lập đông đã kết thúc"
+  },
+  {
+   "term": "lionel messi",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T01:00:00+00:00",
+   "url": "https://baonghean.vn/en/inter-miami-thua-dam-tai-nu-stadium-columbus-crew-huong-niem-vui-10356355.html",
+   "news": "Inter Miami suffered a heavy defeat at Nu Stadium, while Columbus Crew celebrated a victory."
+  },
+  {
    "term": "man city vs fulham f.c. standings",
    "geo": "VN",
    "traffic": "1000+",
@@ -62,6 +89,15 @@
    "ts": "2026-11-21T15:10:00+00:00",
    "url": "https://www.skysports.com/football/live-blog/13610684/chelsea-vs-leeds-live-premier-league-match-updates-news-score-and-line-ups",
    "news": "Chelsea vs Leeds LIVE! Premier League match updates, news, score and line-ups"
+  },
+  {
+   "term": "đội tuyển bóng đá u-17 quốc gia new zealand",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T00:10:00+00:00",
+   "url": "https://vietnamnet.vn/u17-viet-nam-dau-new-zealand-hlv-roland-can-mot-loi-giai-khac-2577447.html",
+   "news": "U17 Việt Nam đấu New Zealand: HLV Cristiano Roland cần một lời giải khác"
   },
   {
    "term": "rayo đấu với valencia",
@@ -181,6 +217,33 @@
    "news": "Người đơn thân nghèo nuôi con có thể được hưởng đồng thời nhiều khoản trợ cấp xã hội"
   },
   {
+   "term": "chứng khoán",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T00:00:00+00:00",
+   "url": "https://vnexpress.net/khoi-ngoai-ban-rong-chung-khoan-vuot-ky-luc-nam-2025-5147536.html",
+   "news": "Khối ngoại bán ròng chứng khoán vượt kỷ lục năm 2025"
+  },
+  {
+   "term": "pumas unam đấu với monterrey",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T01:00:00+00:00",
+   "url": "https://thethao247.vn/63-nhan-dinh-unam-pumas-vs-monterrey-ve-di-tiep-trong-tam-tay-ai-8h00-ngay-22-11-2026-c288-d446452.html",
+   "news": "Nhận định UNAM Pumas vs Monterrey: Vé đi tiếp trong tầm tay ai, 8h00 ngày 22/11/2026"
+  },
+  {
+   "term": "viên chức",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://dantri.com.vn/noi-vu/nhom-can-bo-vien-chuc-duoc-de-xuat-huong-tro-cap-mot-lan-36-trieu-dong-20261121162153268.htm",
+   "news": "Nhóm cán bộ, viên chức được đề xuất hưởng trợ cấp một lần 36 triệu đồng"
+  },
+  {
    "term": "ben shelton",
    "geo": "VN",
    "traffic": "100+",
@@ -242,6 +305,33 @@
    "ts": "2026-11-21T21:00:00+00:00",
    "url": "",
    "news": ""
+  },
+  {
+   "term": "động đất",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T00:20:00+00:00",
+   "url": "https://tuoitre.vn/dong-dat-lon-lien-tiep-o-trung-quoc-indonesia-va-peru-100261121200540904.htm",
+   "news": "Động đất lớn liên tiếp ở Trung Quốc, Indonesia và Peru"
+  },
+  {
+   "term": "pachuca đấu với toluca",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T00:40:00+00:00",
+   "url": "https://thethao247.vn/63-nhan-dinh-pachuca-vs-toluca-cang-thang-tai-hidalgo-05h50-ngay-22-11-2026-c288-d446416.html",
+   "news": "Nhận định Pachuca vs Toluca: Căng thẳng tại Hidalgo, 05h50 ngày 22/11/2026"
+  },
+  {
+   "term": "musiala",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://znews.vn/bayern-bi-to-quay-lung-voi-musiala-vi-tien-post1698204.html",
+   "news": "Bayern bị tố quay lưng với Musiala vì tiền"
   }
  ],
  "world": [
@@ -444,6 +534,15 @@
    "news": "Serious crash closes M42 near Birmingham Airport"
   },
   {
+   "term": "madden cast",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T01:00:00+00:00",
+   "url": "https://www.espn.com/nfl/story/_/id/50549761/mark-davis-upset-father-portrayal-movie-madden",
+   "news": "Raiders' Mark Davis unhappy with 'unfair' image of his father in 'Madden' movie"
+  },
+  {
    "term": "rayo vallecano - valencia c. f.",
    "geo": "US",
    "traffic": "1000+",
@@ -597,6 +696,51 @@
    "news": "Julio Iglesias vende su mansión en Galicia y prepara la Navidad con Miranda y sus hijos en Punta Cana en plena investigación judicial"
   },
   {
+   "term": "iran war",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T00:10:00+00:00",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
+   "news": "Iran war updates: Iran says US radar targeted in attacks on Bahrain bases | US-Israel war on Iran News"
+  },
+  {
+   "term": "miley cyrus",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T00:50:00+00:00",
+   "url": "https://people.com/miley-cyrus-marries-maxx-morando-11877139",
+   "news": "Miley Cyrus Marries Maxx Morando in Palm Springs Wedding: Report"
+  },
+  {
+   "term": "tony danza",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T01:00:00+00:00",
+   "url": "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
+   "news": "Mario Lopez on working with his son and Tony Danza in 'Three Generations, One Christmas'"
+  },
+  {
+   "term": "tony",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T01:00:00+00:00",
+   "url": "https://decider.com/2026/11/20/tony-hbo-max-review/",
+   "news": "Stream It Or Skip It: ‘Tony’ on HBO Max, a slice-of-a-life biopic starring Dominic Sessa as young Anthony Bourdain"
+  },
+  {
+   "term": "new movies to stream",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/movies/article/new-movies-to-watch-this-weekend-see-the-hunger-games-sunrise-on-the-reaping-in-theaters-rent-or-buy-the-odyssey-stream-madden-on-prime-video-151646229.html",
+   "news": "New movies to watch this weekend: See 'The Hunger Games: Sunrise on the Reaping' in theaters, rent or buy 'The Odyssey,' stream 'Madden' on Prime Video"
+  },
+  {
    "term": "rayo vs valencia",
    "geo": "US",
    "traffic": "500+",
@@ -676,6 +820,69 @@
    "ts": "2026-11-21T21:20:00+00:00",
    "url": "https://www.al.com/auburnfootball/2026/11/how-tristan-tia-is-developing-behind-byrum-brown.html",
    "news": "How Tristan Ti’a is developing behind Byrum Brown this season"
+  },
+  {
+   "term": "brussels airport",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-21T23:50:00+00:00",
+   "url": "https://www.independent.co.uk/travel/news-and-advice/brussels-airport-flights-cancelled-nationwide-strike-b3089235.html",
+   "news": "Major European airport ‘cancels majority of flights’ and warns of travel chaos"
+  },
+  {
+   "term": "knicks vs trail blazers",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T00:00:00+00:00",
+   "url": "https://news.bet365.com/en-us/article/jalen-brunson-player-props-and-odds-tonight/2026111917584334656",
+   "news": "Jalen Brunson Player Props and Odds Tonight"
+  },
+  {
+   "term": "santa clarita ice car detention video",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T00:50:00+00:00",
+   "url": "https://www.latimes.com/california/story/2026-11-21/ice-officer-seen-on-video-smashing-window-to-detain-man-at-santa-clarita-sheriffs-station",
+   "news": "ICE officer seen on video smashing window to detain man at Santa Clarita sheriff’s station"
+  },
+  {
+   "term": "croix bethune",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T01:00:00+00:00",
+   "url": "https://www.nytimes.com/athletic/7797400/2026/11/20/nwsl-championship-kansas-city-current-croix-bethune-manifest/",
+   "news": "Croix Bethune manifested a career year. Now comes a title shot against her former club"
+  },
+  {
+   "term": "general dynamics f-16 fighting falcon",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T01:00:00+00:00",
+   "url": "https://www.reuters.com/business/aerospace-defense/us-denies-iranian-account-that-missile-damaged-f-16-over-gulf-2026-11-21/",
+   "news": "US denies Iranian account that missile damaged F-16 over Gulf"
+  },
+  {
+   "term": "ducks vs mammoth",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://www.nhl.com/news/anaheim-ducks-utah-mammoth-game-preview-november-21-2026",
+   "news": "Ducks at Mammoth projected lineups"
+  },
+  {
+   "term": "paula patton",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/tv/articles/tracey-edmonds-previews-love-vineyard-182427793.html",
+   "news": "Tracey Edmonds previews ‘Love on the Vineyard’ premiering 11/21 on Lifetime"
   },
   {
    "term": "harvard yale game",
@@ -1011,6 +1218,33 @@
    "news": "Julio Iglesias Is Under Criminal Investigation for Sexual Offenses"
   },
   {
+   "term": "rockstar games gta vi",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T00:50:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
+   "news": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history"
+  },
+  {
+   "term": "miss universo 2026",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T01:00:00+00:00",
+   "url": "https://www.foxnews.com/entertainment/beauty-queen-stripped-miss-usa-crown-hidden-husband-kids-unexpected-spotlight-decades-later",
+   "news": "Beauty queen stripped of Miss USA crown over hidden husband, kids gets unexpected spotlight decades later"
+  },
+  {
+   "term": "spurs vs pelicans",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T01:10:00+00:00",
+   "url": "https://cwibc.co.id/en/spurs-adjust-rotations-harper-injury",
+   "news": "Spurs Adjust Rotations as Harper Misses Pelicans Matchup"
+  },
+  {
    "term": "sufc",
    "geo": "GB",
    "traffic": "100+",
@@ -1027,7 +1261,43 @@
    "ts": "2026-11-21T15:50:00+00:00",
    "url": "https://www.belfasttelegraph.co.uk/sport/football/irish-league/when-you-visualise-going-up-to-the-premier-league-this-venue-springs-to-mind-boss-insists-limavady-wont-be-overawed-by-windsor-park-duel/a/164799048.html",
    "news": "‘When you visualise going up to the Premier League, this venue springs to mind’: Boss insists Limavady won’t be overawed by Windsor Park duel"
+  },
+  {
+   "term": "josh hutcherson",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-21T23:50:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/movies/article/josh-hutcherson-reveals-top-secret-call-that-reunited-him-with-jennifer-lawrence-in-sunrise-on-the-reaping-161353596.html",
+   "news": "Josh Hutcherson reveals 'top-secret' call that reunited him with Jennifer Lawrence in 'Sunrise on the Reaping'"
+  },
+  {
+   "term": "maysilee donner",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T00:20:00+00:00",
+   "url": "https://variety.com/2026/film/features/mckenna-grace-hunger-games-press-tour-book-details-1236953484/",
+   "news": "Mckenna Grace on Her ‘Hunger Games’ Press Tour Looks for ‘Sunrise on the Reaping’: Maysilee’s Style Is Her ‘Form of Defiance Against the Capitol’"
+  },
+  {
+   "term": "gta 6 bowling alley safe code",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T00:40:00+00:00",
+   "url": "https://www.vice.com/en/article/all-gta-6-safe-codes-illegal-operations/",
+   "news": "GTA 6 Safe Codes for Illegal Operations – All Known Combinations"
+  },
+  {
+   "term": "chris hemsworth",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T00:50:00+00:00",
+   "url": "https://pagesix.com/2026/11/20/celebrity-news/teen-arrested-over-alleged-break-in-at-chris-hemsworths-australian-home/",
+   "news": "Teen, 16, arrested over alleged break-in at Chris Hemsworth’s Australian home"
   }
  ],
- "updated": "2026-11-21T21:45:00.885121+00:00"
+ "updated": "2026-11-22T01:28:28.079112+00:00"
 }
