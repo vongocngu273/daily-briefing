@@ -100,15 +100,6 @@
    "news": "Giá vàng có thể giảm tiếp"
   },
   {
-   "term": "sạt lở",
-   "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T04:40:00+00:00",
-   "url": "https://laodong.vn/moi-truong/canh-bao-2-tinh-co-mua-to-nguy-co-lu-quet-sat-lo-trong-6-gio-toi-1804563.ldo",
-   "news": "Cảnh báo 2 tỉnh có mưa to, nguy cơ lũ quét, sạt lở trong 6 giờ tới"
-  },
-  {
    "term": "câu lạc bộ bóng đá bournemouth",
    "geo": "VN",
    "traffic": "2000+",
@@ -190,13 +181,22 @@
    "news": "Ngày Văn hóa Việt Nam: Đừng đợi đủ đầy mới nghĩ đến hưởng thụ văn hóa"
   },
   {
-   "term": "mỹ tâm",
+   "term": "sen tài thu",
    "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T04:30:00+00:00",
-   "url": "https://vnexpress.net/see-the-light-2-suc-hut-cua-my-tam-5147410.html",
-   "news": "'See The Light 2': Sức hút của Mỹ Tâm"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T02:40:00+00:00",
+   "url": "https://vnexpress.net/me-con-cuu-chu-tich-sen-tai-thu-ra-toa-trong-vu-lua-dao-nghin-ty-5147715.html",
+   "news": "Mẹ con cựu Chủ tịch Sen Tài Thu ra tòa trong vụ lừa đảo nghìn tỷ"
+  },
+  {
+   "term": "lô đất",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T04:00:00+00:00",
+   "url": "https://laodong.vn/bat-dong-san/gia-dat-nen-giam-sau-nhieu-lo-dat-rao-ban-cat-lo-hang-ti-dong-1804955.ldo",
+   "news": "Giá đất nền giảm sâu, nhiều lô đất rao bán cắt lỗ hàng tỉ đồng"
   },
   {
    "term": "giá vàng ngày 22 tháng 11 năm 2026",
@@ -586,33 +586,6 @@
    "news": "Sóng ở đáy sông phần 2: Xuân Bắc muốn nhân vật Núi phải “khổ hơn nữa”"
   },
   {
-   "term": "sen tài thu",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-23T02:40:00+00:00",
-   "url": "https://vnexpress.net/me-con-cuu-chu-tich-sen-tai-thu-ra-toa-trong-vu-lua-dao-nghin-ty-5147715.html",
-   "news": "Mẹ con cựu Chủ tịch Sen Tài Thu ra tòa trong vụ lừa đảo nghìn tỷ"
-  },
-  {
-   "term": "lụt",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:30:00+00:00",
-   "url": "https://laodong.vn/xa-hoi/gia-lai-khan-truong-di-doi-dan-khoi-vung-nguy-co-lu-lut-1803834.ldo",
-   "news": "Gia Lai khẩn trương di dời dân khỏi vùng nguy cơ lũ lụt"
-  },
-  {
-   "term": "boeing 787 dreamliner",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:40:00+00:00",
-   "url": "https://www.rolls-royce.com/media/press-releases/2026/19-11-2026-rr-welcomes-royal-brunei-airlines-order-for-eight-trent-1000-xe-engines.aspx",
-   "news": "Rolls-Royce welcomes Royal Brunei Airlines order for eight Trent 1000 XE engines"
-  },
-  {
    "term": "bắt giữ",
    "geo": "VN",
    "traffic": "200+",
@@ -838,13 +811,22 @@
    "news": "Bữa cơm nhà của Hoa hậu Nguyễn Yến Trang"
   },
   {
-   "term": "lô đất",
+   "term": "hợp đồng",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-23T04:00:00+00:00",
-   "url": "https://laodong.vn/bat-dong-san/gia-dat-nen-giam-sau-nhieu-lo-dat-rao-ban-cat-lo-hang-ti-dong-1804955.ldo",
-   "news": "Giá đất nền giảm sâu, nhiều lô đất rao bán cắt lỗ hàng tỉ đồng"
+   "ts": "2026-11-23T03:30:00+00:00",
+   "url": "https://lsvn.vn/hop-dong-mua-ban-nha-o-hinh-thanh-trong-tuong-lai-tu-thuc-tien-tai-tp-ho-chi-minh-a182932.html",
+   "news": "Hợp đồng mua bán nhà ở hình thành trong tương lai từ thực tiễn tại TP. Hồ Chí Minh"
+  },
+  {
+   "term": "xe tải",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T04:40:00+00:00",
+   "url": "https://vnexpress.net/xe-con-len-qua-hong-xe-tai-vuot-len-nhu-tu-sat-5147820.html",
+   "news": "Xe con len qua hông xe tải vượt lên như tự sát"
   },
   {
    "term": "s27 ultra",
@@ -1045,13 +1027,13 @@
    "news": "Nhận định Vancouver Whitecaps vs Real Salt Lake 8h30 ngày 23/11 (Nhà nghề Mỹ 2026)"
   },
   {
-   "term": "hợp đồng",
+   "term": "ngày văn hoá",
    "geo": "VN",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-23T03:30:00+00:00",
-   "url": "https://lsvn.vn/hop-dong-mua-ban-nha-o-hinh-thanh-trong-tuong-lai-tu-thuc-tien-tai-tp-ho-chi-minh-a182932.html",
-   "news": "Hợp đồng mua bán nhà ở hình thành trong tương lai từ thực tiễn tại TP. Hồ Chí Minh"
+   "ts": "2026-11-23T02:30:00+00:00",
+   "url": "https://tuoitre.vn/nhan-ngay-van-hoa-viet-nam-nghi-ve-y-hoc-nhan-van-nguoi-benh-duoc-lang-nghe-va-ton-trong-100261123082036729.htm",
+   "news": "Nhân Ngày Văn hóa Việt Nam, nghĩ về y học nhân văn, người bệnh được lắng nghe và tôn trọng"
   }
  ],
  "world": [
@@ -1126,6 +1108,15 @@
    "ts": "2026-11-23T03:50:00+00:00",
    "url": "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html",
    "news": "Bay Area airports, coast under extreme flood threat; residents told to avoid travel"
+  },
+  {
+   "term": "nfc standings",
+   "geo": "US",
+   "traffic": "20000+",
+   "score": 20000,
+   "ts": "2026-11-23T04:20:00+00:00",
+   "url": "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-ahead-week-11-snf",
+   "news": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings Ahead of Week 11 SNF"
   },
   {
    "term": "metacritic gta vi",
@@ -1416,22 +1407,22 @@
    "news": "\"They Cut Their Eyelids Off\": Mike Tomlin Responds to Todd Monken's Fiery \"They've Never Blinked\" Message After Browns' Win Over Texans"
   },
   {
-   "term": "what is the last mission of chapter 1 gta 6",
+   "term": "mac jones",
    "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T04:50:00+00:00",
-   "url": "https://www.redbull.com/int-en/gta-6-daily-routine-guide",
-   "news": "GTA 6 daily routine: What you should do every day and why it matters"
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-23T04:10:00+00:00",
+   "url": "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
+   "news": "Steelers vs. Eagles Inactives"
   },
   {
-   "term": "hospital",
-   "geo": "GB",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T04:50:00+00:00",
-   "url": "https://news.sky.com/story/nhs-warns-of-alarming-rise-in-hospital-admissions-for-high-blood-pressure-13614403",
-   "news": "NHS warns of 'alarming' rise in hospital admissions for high blood pressure"
+   "term": "49ers loss",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-23T04:10:00+00:00",
+   "url": "https://www.prideofdetroit.com/detroit-lions-nfl-playoffs/182137/nfc-playoff-picture-detroit-lions-postseason-standings-nfc-north",
+   "news": "Here is where the Lions fit in the NFC playoff picture right now"
   },
   {
    "term": "devon dampier",
@@ -1884,13 +1875,13 @@
    "news": "SNF viewers concerned about Cris Collinsworth after tuning in to Vikings-49ers broadcast"
   },
   {
-   "term": "mac jones",
+   "term": "justin jefferson",
    "geo": "US",
    "traffic": "2000+",
    "score": 2000,
-   "ts": "2026-11-23T04:10:00+00:00",
-   "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/kyle-shanahan-mac-jones-bumpboxx/1981776/",
-   "news": "Why 49ers coach Kyle Shanahan wasn't surprised by viral Mac Jones Bumpboxx video"
+   "ts": "2026-11-23T04:00:00+00:00",
+   "url": "https://thevikingage.com/justin-jefferson-emotional-reaction-kirk-cousins-reveals-what-minnesota-vikings-missed",
+   "news": "Justin Jefferson's emotional reaction to Kirk Cousins reveals what Vikings missed"
   },
   {
    "term": "tank davis",
@@ -2280,6 +2271,15 @@
    "news": "Bowen Yang Apologizes for Using an Antisemitic Slur on His Podcast"
   },
   {
+   "term": "warriors vs celtics",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T01:20:00+00:00",
+   "url": "https://www.sofascore.com/news/warriors-88-87-celtics-charles-bassey-lifts-golden-state-in-gritty-nba-win",
+   "news": "Warriors 88-87 Celtics: Charles Bassey lifts Golden State in gritty NBA win"
+  },
+  {
    "term": "malik mustapha",
    "geo": "US",
    "traffic": "1000+",
@@ -2368,6 +2368,24 @@
    "ts": "2026-11-23T03:30:00+00:00",
    "url": "https://www.fastcompany.com/91633391/wendys-store-closures-update-list-of-locations-franchise-downfall",
    "news": "Wendy’s store closures hit close to 100 locations in franchisee downfall: See the latest list"
+  },
+  {
+   "term": "what happened to kirk cousins",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T04:20:00+00:00",
+   "url": "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+   "news": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games"
+  },
+  {
+   "term": "violent night 2",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T04:40:00+00:00",
+   "url": "https://www.93x.com/win/violent-night-2/",
+   "news": "Enter to Win Advance Screening Passes to Violent Night 2"
   },
   {
    "term": "lando norris",
@@ -3018,15 +3036,6 @@
    "news": "EBRSO and DEA Dismantle Large-scale Nitazene Laboratory in Baton Rouge"
   },
   {
-   "term": "warriors vs celtics",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-23T01:20:00+00:00",
-   "url": "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
-   "news": "Celtics at Warriors: Boston looks to rebound after last-second loss"
-  },
-  {
    "term": "knicks vs pacers",
    "geo": "GB",
    "traffic": "500+",
@@ -3252,58 +3261,13 @@
    "news": "‘Outer Banks’ Alum Madelyn Cline in Final Talks to Join New ‘Serendipity’ Movie (EXCLUSIVE)"
   },
   {
-   "term": "ben wang",
+   "term": "loyola chicago basketball",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:30:00+00:00",
-   "url": "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
-   "news": "Northfield’s Ben Wang takes us behind the scenes of ‘Hunger Games’ film"
-  },
-  {
-   "term": "bbc f1",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:40:00+00:00",
-   "url": "https://www.bbc.co.uk/sport/formula1/articles/c34gnrvl9zvro",
-   "news": "'Somebody has to stand up to that guy' - Verstappen-Russell rivalry blows up again"
-  },
-  {
-   "term": "homelessness",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:50:00+00:00",
-   "url": "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html",
-   "news": "Judge Blocks Trump Administration’s Effort to Transform Homelessness Policy"
-  },
-  {
-   "term": "chadwick boseman",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:50:00+00:00",
-   "url": "https://www.foxcarolina.com/2026/11/21/family-says-leroy-boseman-father-actor-chadwick-boseman-has-died/",
-   "news": "Family says Leroy Boseman, father of actor Chadwick Boseman, has died"
-  },
-  {
-   "term": "pierre gasly",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:50:00+00:00",
-   "url": "https://www.formula1.com/en/latest/article/alpine-left-disappointed-after-gasly-had-shone-with-perfect-lap-in-q2.48hDMDkgL0meTLKg3usEg6",
-   "news": "Alpine left disappointed despite Gasly’s ‘perfect’ Q2 lap"
-  },
-  {
-   "term": "news today",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T04:50:00+00:00",
-   "url": "https://www.bbc.co.uk/news/articles/cw8dvgg8v4nvo",
-   "news": "Man dies in two-car crash on A415 in Oxfordshire"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T04:30:00+00:00",
+   "url": "https://www.sportsgambler.com/betting-tips/basketball/san-jose-state-spartans-vs-loyola-chicago-ramblers-prediction-odds-2026-11-22/",
+   "news": "San Jose State vs Loyola Chicago Prediction, Picks & Odds | 22 Nov 2026"
   },
   {
    "term": "vancouver canucks",
@@ -4665,6 +4629,15 @@
    "news": "Joe Burrow clear NFL MVP odds favorite over Josh Allen, Brock Purdy"
   },
   {
+   "term": "tim allen",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T04:20:00+00:00",
+   "url": "https://people.com/tim-allen-jane-hajduk-reveal-ideal-date-night-after-20-years-of-marriage-exclusive-12267499",
+   "news": "Tim Allen and Jane Hajduk Reveal What Their Ideal Date Night Looks Like After 20 Years of Marriage (Exclusive)"
+  },
+  {
    "term": "chris pratt",
    "geo": "GB",
    "traffic": "100+",
@@ -5061,6 +5034,15 @@
    "news": "Met deputy rejects ‘few bad apples’ theory after 1,800 staff drummed out"
   },
   {
+   "term": "disney+",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T03:20:00+00:00",
+   "url": "https://www.imdb.com/news/ni66122688/?ref_=ttnw_art_perm",
+   "news": "Disney+ adds Storytime read-alongs and Nat Geo’s Greeking Out for kids"
+  },
+  {
    "term": "avengers doomsday runtime",
    "geo": "GB",
    "traffic": "100+",
@@ -5070,5 +5052,5 @@
    "news": "Joe Russo Confirms the Runtime for ‘Avengers: Doomsday’, and It’s Shorter Than Fans Expected"
   }
  ],
- "updated": "2026-11-23T04:25:28.042420+00:00"
+ "updated": "2026-11-23T04:55:25.059192+00:00"
 }
