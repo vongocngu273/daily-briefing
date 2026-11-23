@@ -82,15 +82,6 @@
    "news": "Lịch âm hôm nay 21.11: Ngày Kỷ Hợi, tháng Kỷ Hợi"
   },
   {
-   "term": "cristiano roland",
-   "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T00:40:00+00:00",
-   "url": "https://vnexpress.net/bao-bi-tuong-chung-se-thang-de-viet-nam-o-u17-world-cup-5147481.html",
-   "news": "Báo Bỉ: 'Tưởng chừng sẽ thắng dễ Việt Nam ở U17 World Cup'"
-  },
-  {
    "term": "lionel messi",
    "geo": "VN",
    "traffic": "2000+",
@@ -163,6 +154,15 @@
    "news": "Nhận định bóng đá Milan vs Frosinone, 00h00 ngày 23/11: Bắt nạt tân binh"
   },
   {
+   "term": "park hang-seo",
+   "geo": "VN",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T23:20:00+00:00",
+   "url": "https://www.saostar.vn/sao-sport/hlv-park-hang-seo-bao-tin-vui-giua-luc-hlv-kim-sang-sik-sap-chia-tay-202611222357511234.html",
+   "news": "HLV Park Hang Seo báo tin vui giữa lúc HLV Kim Sang Sik hết hợp đồng"
+  },
+  {
    "term": "lich am",
    "geo": "VN",
    "traffic": "2000+",
@@ -172,13 +172,13 @@
    "news": "Lịch âm hôm nay 21.11: Ngày Kỷ Hợi, tháng Kỷ Hợi"
   },
   {
-   "term": "đội tuyển bóng đá u 17 quốc gia new zealand",
+   "term": "giá cà phê hôm nay",
    "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T00:50:00+00:00",
-   "url": "https://vietnamnet.vn/u17-viet-nam-dau-new-zealand-hlv-roland-can-mot-loi-giai-khac-2577447.html",
-   "news": "U17 Việt Nam đấu New Zealand: HLV Cristiano Roland cần một lời giải khác"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T23:40:00+00:00",
+   "url": "https://vov.vn/thi-truong/gia-ca-phe-hom-nay-2311-gia-ca-phe-trong-nuoc-va-the-gioi-on-dinh-post1352445.vov",
+   "news": "Giá cà phê hôm nay 23/11: Giá cà phê trong nước và thế giới ổn định"
   },
   {
    "term": "viên chức",
@@ -350,24 +350,6 @@
    "ts": "2026-11-22T22:40:00+00:00",
    "url": "https://vietnamnet.vn/van-khan-ram-thang-10-am-lich-nam-2026-theo-truyen-thong-2577550.html",
    "news": "Văn khấn Rằm tháng 10 năm Bính Ngọ 2026 theo truyền thống"
-  },
-  {
-   "term": "park hang-seo",
-   "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T23:20:00+00:00",
-   "url": "https://www.saostar.vn/sao-sport/hlv-park-hang-seo-bao-tin-vui-giua-luc-hlv-kim-sang-sik-sap-chia-tay-202611222357511234.html",
-   "news": "HLV Park Hang Seo báo tin vui giữa lúc HLV Kim Sang Sik hết hợp đồng"
-  },
-  {
-   "term": "giá cà phê hôm nay",
-   "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T23:40:00+00:00",
-   "url": "https://vov.vn/thi-truong/gia-ca-phe-hom-nay-2311-gia-ca-phe-trong-nuoc-va-the-gioi-on-dinh-post1352445.vov",
-   "news": "Giá cà phê hôm nay 23/11: Giá cà phê trong nước và thế giới ổn định"
   },
   {
    "term": "pumas unam đấu với monterrey",
@@ -820,6 +802,15 @@
    "news": "Nhận định Guadalajara Chivas vs Cruz Azul: Đại chiến ngôi đầu, 6h07 ngày 23/11/2026"
   },
   {
+   "term": "anthropic",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T23:40:00+00:00",
+   "url": "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html",
+   "news": "Stocks are 'on fire sale' as Anthropic IPO fails to calm AI trade jitters"
+  },
+  {
    "term": "âm lịch",
    "geo": "VN",
    "traffic": "200+",
@@ -829,13 +820,13 @@
    "news": "Lời khuyên cho 3 con giáp giàu có, may mắn nhất nửa cuối tháng 10 Âm lịch: Top 1 tăng mạnh tài sản ròng nhưng phải để ý tiểu nhân"
   },
   {
-   "term": "pachuca đấu với toluca",
+   "term": "24 tháng 11",
    "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T00:40:00+00:00",
-   "url": "https://thethao247.vn/63-nhan-dinh-pachuca-vs-toluca-cang-thang-tai-hidalgo-05h50-ngay-22-11-2026-c288-d446416.html",
-   "news": "Nhận định Pachuca vs Toluca: Căng thẳng tại Hidalgo, 05h50 ngày 22/11/2026"
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://hdgmvietnam.com/chi-tiet/nguyen-gam-cung-cac-thanh-ngay-24-thang-11--le-trong-mung-cac-thanh-tu-dao-viet-nam",
+   "news": "Nguyện gẫm cùng các thánh: Ngày 24 tháng 11 - Lễ trọng mừng Các Thánh Tử đạo Việt Nam"
   },
   {
    "term": "doue",
@@ -1009,15 +1000,6 @@
    "news": "Giếng khoan ở Gia Lai phun cột khí và nước cao gần 20m suốt 2 năm, phát hiện thứ có hàm lượng tới 81,9%"
   },
   {
-   "term": "anthropic",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T23:40:00+00:00",
-   "url": "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html",
-   "news": "Stocks are 'on fire sale' as Anthropic IPO fails to calm AI trade jitters"
-  },
-  {
    "term": "đà lạt",
    "geo": "VN",
    "traffic": "100+",
@@ -1025,6 +1007,33 @@
    "ts": "2026-11-22T23:50:00+00:00",
    "url": "https://dantri.com.vn/du-lich/ky-si-nguoi-kho-phong-ngua-vun-vut-duoi-chan-nui-langbiang-da-lat-20261121182017338.htm",
    "news": "\"Kỵ sĩ\" người K'ho phóng ngựa vun vút dưới chân núi Langbiang Đà Lạt"
+  },
+  {
+   "term": "rằm tháng 10",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T00:00:00+00:00",
+   "url": "",
+   "news": ""
+  },
+  {
+   "term": "chicago fire đấu với charlotte",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T00:20:00+00:00",
+   "url": "https://baonghean.vn/truc-tiep-chicago-fire-vs-charlotte-doi-hinh-xuat-phat-10356421.html",
+   "news": "Trực tiếp Chicago Fire vs Charlotte: Đội hình xuất phát"
+  },
+  {
+   "term": "2",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T00:40:00+00:00",
+   "url": "https://vnexpress.net/apple-chuan-bi-san-xuat-hang-loat-iphone-air-2-iphone-18-5147678.html",
+   "news": "Apple chuẩn bị sản xuất hàng loạt iPhone Air 2, iPhone 18"
   }
  ],
  "world": [
@@ -1036,15 +1045,6 @@
    "ts": "2026-11-22T15:00:00+00:00",
    "url": "https://www.espn.com/nfl/story/_/id/50561778/tom-jackson-broncos-star-espn-legend-dies-75",
    "news": "Tom Jackson, Broncos star LB and Hall of Fame broadcaster at ESPN, dies at 75"
-  },
-  {
-   "term": "strictly come dancing blackpool disruption",
-   "geo": "GB",
-   "traffic": "20000+",
-   "score": 20000,
-   "ts": "2026-11-22T00:30:00+00:00",
-   "url": "https://www.theguardian.com/tv-and-radio/2026/nov/21/police-called-strictly-come-dancing-after-disruption-during-live-show",
-   "news": "Police called to Strictly Come Dancing after ‘disruption’ during live show"
   },
   {
    "term": "f1",
@@ -1218,6 +1218,15 @@
    "news": "DK Metcalf and Cooper DeJean engage in a bit of a skirmish during Steelers-Eagles game"
   },
   {
+   "term": "lowes black friday deals",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-23T00:40:00+00:00",
+   "url": "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026-1121/",
+   "news": "Black Friday Deals Are Already Rolling In — Here Are the Best | Reviews by Wirecutter"
+  },
+  {
    "term": "celtics vs kings",
    "geo": "US",
    "traffic": "5000+",
@@ -1351,6 +1360,15 @@
    "ts": "2026-11-23T00:10:00+00:00",
    "url": "https://sports.yahoo.com/articles/game-preview-knicks-vs-pacers-200000345.html",
    "news": "Game Preview: Knicks vs Pacers, November 22, 2026"
+  },
+  {
+   "term": "celtics vs warriors",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
+   "news": "Celtics at Warriors: Boston looks to rebound after last-second loss"
   },
   {
    "term": "madden cast",
@@ -1785,22 +1803,22 @@
    "news": "Prince William to step up on world stage with more royal trips"
   },
   {
-   "term": "maxx morando",
-   "geo": "GB",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T00:40:00+00:00",
-   "url": "https://pagesix.com/2026/11/21/celebrity-news/miley-cyrus-and-maxx-morando-pictured-after-rehearsal-dinner/",
-   "news": "Miley Cyrus and fiancé Maxx Morando pictured holding hands after wedding rehearsal dinner with her famous family"
+   "term": "the altruists cast",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://www.netflix.com/tudum/articles/the-altruists-cast-guide",
+   "news": "Who Is in The Altruists Cast? Meet the Unlikely Billionaires"
   },
   {
-   "term": "miley cyrus",
-   "geo": "GB",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T00:50:00+00:00",
-   "url": "https://people.com/miley-cyrus-marries-maxx-morando-11877139",
-   "news": "Miley Cyrus Marries Maxx Morando in Palm Springs Wedding: Report"
+   "term": "querétaro - necaxa",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T00:40:00+00:00",
+   "url": "https://www.tudn.com/futbol/liga-mx/queretaro-vs-necaxa-a-que-hora-y-donde-ver-el-partido-de-la-jornada-17-de-la-liga-mx-apertura-2026",
+   "news": "A qué hora y dónde ver el Querétaro vs. Necaxa de la Jornada 17"
   },
   {
    "term": "tony danza",
@@ -2253,13 +2271,13 @@
    "news": "Ariana Grande had a tough year. ‘Focker In-Law’ ends it on a high"
   },
   {
-   "term": "santa clarita ice car detention video",
+   "term": "marvel avengers doomsday trailer",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T00:50:00+00:00",
-   "url": "https://www.latimes.com/california/story/2026-11-21/ice-officer-seen-on-video-smashing-window-to-detain-man-at-santa-clarita-sheriffs-station",
-   "news": "ICE officer seen on video smashing window to detain man at Santa Clarita sheriff’s station"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T00:40:00+00:00",
+   "url": "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
+   "news": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”"
   },
   {
    "term": "general dynamics f-16 fighting falcon",
@@ -3054,22 +3072,31 @@
    "news": "Media Availability | Pregame vs. Blackhawks"
   },
   {
-   "term": "rockstar games gta vi",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T00:50:00+00:00",
-   "url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
-   "news": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history"
+   "term": "ja'quan mcmillian",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/22/nfl-broncos-likely-lose-jaquan-mcmillian-on-open-market/92833883007/",
+   "news": "Broncos seem likely to lose Ja'Quan McMillian if they let him test open market"
   },
   {
-   "term": "chris hemsworth",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T00:50:00+00:00",
-   "url": "https://pagesix.com/2026/11/20/celebrity-news/teen-arrested-over-alleged-break-in-at-chris-hemsworths-australian-home/",
-   "news": "Teen, 16, arrested over alleged break-in at Chris Hemsworth’s Australian home"
+   "term": "riley moss contract",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://www.49ers.com/video/kyle-shanahan-provides-injury-updates-final-preparations-ahead-of-mexico-city",
+   "news": "Kyle Shanahan Provides Injury Updates, Final Preparations Ahead of Mexico City"
+  },
+  {
+   "term": "steve campbell",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://ucasports.com/news/2026/11/22/steve-campbell-returns-to-central-arkansas-as-head-football-coach.aspx",
+   "news": "Steve Campbell Returns to Central Arkansas as Head Football Coach"
   },
   {
    "term": "miss universo 2026",
@@ -4512,13 +4539,31 @@
    "news": "NFL: ¿Qué esperar del partido Vikings vs 49ers en México?"
   },
   {
-   "term": "gta 6 bowling alley safe code",
+   "term": "ethan hampshire gofundme gta 6",
    "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T00:40:00+00:00",
-   "url": "https://www.vice.com/en/article/all-gta-6-safe-codes-illegal-operations/",
-   "news": "GTA 6 Safe Codes for Illegal Operations – All Known Combinations"
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T00:20:00+00:00",
+   "url": "https://www.bournemouthecho.co.uk/news/26751785.poole-dad-launches-fundraiser-buy-gta-vi-video-game/",
+   "news": "Poole dad launches fundraiser to buy GTA VI video game"
+  },
+  {
+   "term": "penn state volleyball",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T00:40:00+00:00",
+   "url": "https://www.espn.com/college-sports/story/_/id/50502503/penn-state-volleyball-big-ten-tournament-kennedy-martin-alexis-stucky",
+   "news": "Alexis Stucky, Kennedy Martin and volleyball's riskiest reunion"
+  },
+  {
+   "term": "lightning game",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T00:40:00+00:00",
+   "url": "https://www.espn.com/video/clip/_/id/50567273/noah-ostlund-lights-lamp-sabres",
+   "news": "Noah Ostlund lights the lamp for Sabres"
   },
   {
    "term": "scarlett johansson",
@@ -4951,7 +4996,16 @@
    "ts": "2026-11-23T00:00:00+00:00",
    "url": "https://observer.co.uk/news/national/article/met-deputy-rejects-few-bad-apples-theory-after-1800-staff-drummed-out",
    "news": "Met deputy rejects ‘few bad apples’ theory after 1,800 staff drummed out"
+  },
+  {
+   "term": "bulls vs nuggets",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://www.nytimes.com/athletic/7803186/2026/11/22/nuggets-vs-bulls-stream-how-to-watch-nov-22/",
+   "news": "How to watch Nuggets vs. Bulls: TV channel and streaming options for November 22"
   }
  ],
- "updated": "2026-11-23T00:25:22.054737+00:00"
+ "updated": "2026-11-23T00:55:26.744645+00:00"
 }
