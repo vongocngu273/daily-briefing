@@ -343,6 +343,15 @@
    "news": "Văn khấn Rằm tháng 10 năm Bính Ngọ 2026 theo truyền thống"
   },
   {
+   "term": "đội tuyển bóng đá u-17 quốc gia argentina",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T01:30:00+00:00",
+   "url": "https://www.24h.com.vn/bong-da/video-bong-da-u17-argentina-u17-mozambique-hiep-1-ruot-duoi-hap-dan-u17-world-cup-c48a1813286.html",
+   "news": "Video bóng đá U17 Argentina - U17 Mozambique: Hiệp 1 rượt đuổi hấp dẫn (U17 World Cup)"
+  },
+  {
    "term": "tigres đấu với américa",
    "geo": "VN",
    "traffic": "500+",
@@ -541,13 +550,13 @@
    "news": "Thời tiết miền Bắc sắp mưa trở lại, rét nhất dưới 10 độ C"
   },
   {
-   "term": "vàng sjc giá vàng",
+   "term": "24 tháng 11",
    "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T01:30:00+00:00",
-   "url": "https://vietnamnet.vn/gia-vang-hom-nay-22-11-sjc-mat-6-trieu-dong-luong-chieu-mua-2577390.html",
-   "news": "Giá vàng hôm nay 22/11: SJC mất 6 triệu đồng/lượng chỉ trong ít ngày"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://hdgmvietnam.com/chi-tiet/nguyen-gam-cung-cac-thanh-ngay-24-thang-11--le-trong-mung-cac-thanh-tu-dao-viet-nam",
+   "news": "Nguyện gẫm cùng các thánh: Ngày 24 tháng 11 - Lễ trọng mừng Các Thánh Tử đạo Việt Nam"
   },
   {
    "term": "lê hãn",
@@ -802,22 +811,13 @@
    "news": "\"Kỵ sĩ\" người K'ho phóng ngựa vun vút dưới chân núi Langbiang Đà Lạt"
   },
   {
-   "term": "24 tháng 11",
+   "term": "nguyễn văn toàn",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-23T00:30:00+00:00",
-   "url": "https://hdgmvietnam.com/chi-tiet/nguyen-gam-cung-cac-thanh-ngay-24-thang-11--le-trong-mung-cac-thanh-tu-dao-viet-nam",
-   "news": "Nguyện gẫm cùng các thánh: Ngày 24 tháng 11 - Lễ trọng mừng Các Thánh Tử đạo Việt Nam"
-  },
-  {
-   "term": "doue",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T01:30:00+00:00",
-   "url": "https://www.tufutbolero.com/en/news/desire-doue-stretchered-off-in-tears-psg-fear-cruciate-12a8a3",
-   "news": "Désiré Doué stretchered off in tears: PSG fear cruciate damage"
+   "ts": "2026-11-23T01:20:00+00:00",
+   "url": "https://bongda.com.vn/ly-do-van-toan-mat-tich-trong-doi-hinh-nam-dinh-tu-dau-mua-d856037.html",
+   "news": "Lý do Văn Toàn \"mất tích\" trong đội hình Nam Định từ đầu mùa"
   },
   {
    "term": "wellington đấu với câu lạc bộ bóng đá macarthur",
@@ -1007,6 +1007,15 @@
    "ts": "2026-11-23T00:40:00+00:00",
    "url": "https://vnexpress.net/apple-chuan-bi-san-xuat-hang-loat-iphone-air-2-iphone-18-5147678.html",
    "news": "Apple chuẩn bị sản xuất hàng loạt iPhone Air 2, iPhone 18"
+  },
+  {
+   "term": "ngay van hoa viet nam",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T01:30:00+00:00",
+   "url": "https://thanhnien.vn/pho-lon-hem-nho-rop-co-to-quoc-mung-ngay-van-hoa-viet-nam-185261122160319298.htm",
+   "news": "Phố lớn, hẻm nhỏ rợp cờ Tổ quốc mừng ngày Văn hóa Việt Nam"
   }
  ],
  "world": [
@@ -2271,6 +2280,33 @@
    "news": "Bowen Yang Apologizes for Using an Antisemitic Slur on His Podcast"
   },
   {
+   "term": "malik mustapha",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T01:30:00+00:00",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ceedee-lamb-fined-23-882-for-block-the-league-used-as-a-highlight",
+   "news": "CeeDee Lamb fined $23,882 for block the league used as a highlight"
+  },
+  {
+   "term": "cj west",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T01:30:00+00:00",
+   "url": "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
+   "news": "San Francisco 49ers Suddenly Cut Veteran Wide Receiver Before Vikings Game"
+  },
+  {
+   "term": "san francisco 49ers schedule",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T01:30:00+00:00",
+   "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50530832/fantasy-football-injuries-nfl-week-11-inactive-active",
+   "news": "Fantasy football Week 11 inactives: Who's in and who's out?"
+  },
+  {
    "term": "kraken vs sharks",
    "geo": "US",
    "traffic": "500+",
@@ -3099,22 +3135,58 @@
    "news": "EBRSO and DEA Dismantle Large-scale Nitazene Laboratory in Baton Rouge"
   },
   {
-   "term": "timberwolves vs grizzlies",
+   "term": "49ers vs vikings",
    "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T01:40:00+00:00",
-   "url": "https://www.tradingview.com/news/binance_news:3e190fa4b094b:0-polymarket-s-grizzlies-vs-timberwolves-market-sees-lamelo-ball-yes-odds-fall-25-5-points/",
-   "news": "Polymarket’s Grizzlies vs. Timberwolves Market Sees LaMelo Ball Yes Odds Fall 25.5 Points"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://www.nfl.com/news/vikings-vs-49ers-3-must-know-storylines-for-nfl-week-11-mexico-city-game-on-sunday-night-football",
+   "news": "Vikings vs. 49ers: 3 must-know storylines for NFL Week 11 Mexico City game on 'Sunday Night Football'"
   },
   {
-   "term": "erin cahill",
+   "term": "marines",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T01:50:00+00:00",
-   "url": "https://www.justjared.com/2026/11/21/is-erin-cahill-married-or-single-all-about-the-hallmark-channel-stars-real-life-husband/",
-   "news": "Is Erin Cahill Married or Single? All About the Hallmark Channel Star’s Real-Life Husband!"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:30:00+00:00",
+   "url": "https://kutv.com/news/local/marine-corps-releases-statement-after-utah-service-member-found-dead-in-california",
+   "news": "Marine Corps releases statement after Utah service member found dead in California"
+  },
+  {
+   "term": "reese witherspoon",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:30:00+00:00",
+   "url": "https://deadline.com/2026/11/lauren-neustadter-exits-reese-witherspoon-hello-sunshine-1237230709/",
+   "news": "Lauren Neustadter Exiting Reese Witherspoon’s Hello Sunshine"
+  },
+  {
+   "term": "dylan larkin",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:40:00+00:00",
+   "url": "https://www.sportsnet.ca/nhl/article/red-wings-adjusting-ask-for-dylan-larkin/",
+   "news": "Red Wings adjusting ask for Dylan Larkin"
+  },
+  {
+   "term": "michael hage",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:40:00+00:00",
+   "url": "https://www.montrealhockeyfanatics.com/nhl-team/montreal-canadiens/michael-hage-reveals-why-he-chose-not-to-sign-with-the-canadiens-this-season",
+   "news": "Michael Hage reveals why he chose not to sign with the Canadiens this season"
+  },
+  {
+   "term": "robert lewandowski",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:40:00+00:00",
+   "url": "https://przegladsportowy.onet.pl/pilka-nozna/mls/chicago-fire-charlotte-fc-relacja-na-zywo-lewandowski-z-golem-live/v36773e",
+   "news": "MLS: Chicago Fire - Charlotte FC"
   },
   {
    "term": "is zion williamson playing tonight",
@@ -4512,6 +4584,15 @@
    "news": "NFL: ¿Qué esperar del partido Vikings vs 49ers en México?"
   },
   {
+   "term": "jonah coleman",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T00:10:00+00:00",
+   "url": "https://www.espn.co.uk/nfl/recap/_/gameId/401873075",
+   "news": "Broncos 38-24 Raiders (22 Nov, 2026) Game Recap"
+  },
+  {
    "term": "ethan hampshire gofundme gta 6",
    "geo": "GB",
    "traffic": "200+",
@@ -4519,6 +4600,15 @@
    "ts": "2026-11-23T00:20:00+00:00",
    "url": "https://www.bournemouthecho.co.uk/news/26751785.poole-dad-launches-fundraiser-buy-gta-vi-video-game/",
    "news": "Poole dad launches fundraiser to buy GTA VI video game"
+  },
+  {
+   "term": "bulls vs nuggets",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://www.nytimes.com/athletic/7803186/2026/11/22/nuggets-vs-bulls-stream-how-to-watch-nov-22/",
+   "news": "How to watch Nuggets vs. Bulls: TV channel and streaming options for November 22"
   },
   {
    "term": "penn state volleyball",
@@ -4548,13 +4638,40 @@
    "news": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis"
   },
   {
-   "term": "49ers vs vikings",
+   "term": "warriors vs celtics",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-23T01:00:00+00:00",
-   "url": "https://www.nfl.com/news/vikings-vs-49ers-3-must-know-storylines-for-nfl-week-11-mexico-city-game-on-sunday-night-football",
-   "news": "Vikings vs. 49ers: 3 must-know storylines for NFL Week 11 Mexico City game on 'Sunday Night Football'"
+   "ts": "2026-11-23T01:20:00+00:00",
+   "url": "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
+   "news": "Celtics at Warriors: Boston looks to rebound after last-second loss"
+  },
+  {
+   "term": "knicks vs pacers",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T01:20:00+00:00",
+   "url": "https://basketnews.com/news-260044-pascal-siakam-final-injury-status-emerges-for-pacers-knicks-showdown.html",
+   "news": "Pascal Siakam final injury status emerges for Pacers-Knicks showdown"
+  },
+  {
+   "term": "pregnant workers fairness act",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T01:30:00+00:00",
+   "url": "https://www.pbs.org/newshour/nation/appeals-court-says-federal-law-requiring-accommodations-for-pregnant-workers-is-unconstitutional",
+   "news": "Appeals court says federal law requiring accommodations for pregnant workers is unconstitutional"
+  },
+  {
+   "term": "brock purdy wife",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T01:40:00+00:00",
+   "url": "https://www.si.com/onsi/athlete-lifestyle/49ers-brock-purdy-and-wife-jenna-share-powerful-message-that-goes-far-beyond-football",
+   "news": "49ers' Brock Purdy and Wife Jenna Share Powerful Message That Goes Far Beyond Football"
   },
   {
    "term": "scarlett johansson",
@@ -4989,15 +5106,6 @@
    "news": "Met deputy rejects ‘few bad apples’ theory after 1,800 staff drummed out"
   },
   {
-   "term": "bulls vs nuggets",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-23T00:30:00+00:00",
-   "url": "https://www.nytimes.com/athletic/7803186/2026/11/22/nuggets-vs-bulls-stream-how-to-watch-nov-22/",
-   "news": "How to watch Nuggets vs. Bulls: TV channel and streaming options for November 22"
-  },
-  {
    "term": "doomsday",
    "geo": "GB",
    "traffic": "100+",
@@ -5007,5 +5115,5 @@
    "news": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”"
   }
  ],
- "updated": "2026-11-23T01:25:22.386256+00:00"
+ "updated": "2026-11-23T01:55:30.792097+00:00"
 }
