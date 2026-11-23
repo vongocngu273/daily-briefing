@@ -379,6 +379,15 @@
    "news": "Video bóng đá U17 Argentina - U17 Mozambique: Hiệp 1 rượt đuổi hấp dẫn (U17 World Cup)"
   },
   {
+   "term": "lại lý huynh",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://tuoitre.vn/bang-xep-hang-huy-chuong-dai-hoi-the-thao-toan-quoc-ngay-22-11-tphcm-dan-dau-10026112222472988.htm",
+   "news": "Bảng xếp hạng huy chương Đại hội Thể thao toàn quốc ngày 22-11: TP.HCM dẫn đầu"
+  },
+  {
    "term": "nguyễn phương hằng",
    "geo": "VN",
    "traffic": "500+",
@@ -566,15 +575,6 @@
    "ts": "2026-11-23T01:20:00+00:00",
    "url": "https://bongda.com.vn/ly-do-van-toan-mat-tich-trong-doi-hinh-nam-dinh-tu-dau-mua-d856037.html",
    "news": "Lý do Văn Toàn \"mất tích\" trong đội hình Nam Định từ đầu mùa"
-  },
-  {
-   "term": "lại lý huynh",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-23T02:00:00+00:00",
-   "url": "https://tuoitre.vn/vo-dich-co-tuong-the-gioi-nhung-lai-ly-huynh-gap-kho-truoc-cac-ky-thu-viet-nam-100261122221543133.htm",
-   "news": "Vô địch cờ tướng thế giới nhưng Lại Lý Huynh gặp khó trước các kỳ thủ Việt Nam"
   },
   {
    "term": "thể dục",
@@ -820,6 +820,15 @@
    "news": "Khối ngoại bán ròng chứng khoán vượt kỷ lục năm 2025"
   },
   {
+   "term": "nguyễn yến trang",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T02:30:00+00:00",
+   "url": "https://www.24h.com.vn/dep/bua-com-nha-cua-hoa-hau-nguyen-yen-trang-c78a1813315.html",
+   "news": "Bữa cơm nhà của Hoa hậu Nguyễn Yến Trang"
+  },
+  {
    "term": "sóng ở đáy sông",
    "geo": "VN",
    "traffic": "200+",
@@ -827,15 +836,6 @@
    "ts": "2026-11-23T02:40:00+00:00",
    "url": "https://www.24h.com.vn/giai-tri/cuc-truong-xuan-bac-se-tro-lai-voi-vai-nui-trong-song-o-day-song-phan-2-c731a1813360.html",
    "news": "Cục trưởng Xuân Bắc sẽ trở lại với vai Núi trong 'Sóng ở đáy sông' phần 2"
-  },
-  {
-   "term": "wellington đấu với câu lạc bộ bóng đá macarthur",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T03:00:00+00:00",
-   "url": "",
-   "news": ""
   },
   {
    "term": "s27 ultra",
@@ -1034,15 +1034,6 @@
    "ts": "2026-11-23T02:10:00+00:00",
    "url": "https://bongda24h.vn/nhan-dinh-bong-da/du-doan-vancouver-whitecaps-vs-real-salt-lake-hom-nay-344-465218.html",
    "news": "Nhận định Vancouver Whitecaps vs Real Salt Lake 8h30 ngày 23/11 (Nhà nghề Mỹ 2026)"
-  },
-  {
-   "term": "nguyễn yến trang",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-23T02:30:00+00:00",
-   "url": "https://tienphong.vn/bua-com-nha-cua-hoa-hau-nguyen-yen-trang-post1896531.tpo",
-   "news": "Bữa cơm nhà của Hoa hậu Nguyễn Yến Trang"
   },
   {
    "term": "sen tài thu",
@@ -1423,6 +1414,15 @@
    "ts": "2026-11-23T02:40:00+00:00",
    "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
    "news": "Box Office: 'Hunger Games: Sunrise on Reaping' Opening to $120M, 4th Best Series"
+  },
+  {
+   "term": "mike tomlin",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-23T03:00:00+00:00",
+   "url": "https://sports.yahoo.com/articles/cut-eyelids-off-mike-tomlin-013424625.html",
+   "news": "\"They Cut Their Eyelids Off\": Mike Tomlin Responds to Todd Monken's Fiery \"They've Never Blinked\" Message After Browns' Win Over Texans"
   },
   {
    "term": "keanu reeves",
@@ -1902,13 +1902,13 @@
    "news": "Noon Sunday deadline set in Iowa Army blast challenge; Fort Madison says detonation could come Monday or Tuesday"
   },
   {
-   "term": "michael irvin",
+   "term": "the warning halftime show",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T03:00:00+00:00",
-   "url": "https://www.foxnews.com/outkick-sports/cowboys-great-michael-irvin-outlines-franchises-timeline-retain-americas-team-status",
-   "news": "Cowboys great Michael Irvin outlines franchise's timeline to retain 'America’s Team' status"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T03:00:00+00:00",
+   "url": "https://www.billboard.com/culture/product-recommendations/nfl-mexico-city-game-the-warning-halftime-watch-live-free-1236385357/",
+   "news": "NFL Mexico City Game Halftime Show 2026: Here's Where to Watch The Warning Perform Live Online Free"
   },
   {
    "term": "jack whitehall",
@@ -2397,40 +2397,13 @@
    "news": "Alperen Şengün is answering all the questions with his hot start to the season"
   },
   {
-   "term": "chris evans",
+   "term": "marshals show",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T03:00:00+00:00",
-   "url": "https://cosmicbook.news/chris-evans-steve-rogers",
-   "news": "Chris Evans Doesn’t Want To Be Called Captain America Anymore"
-  },
-  {
-   "term": "goldie hawn",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T03:00:00+00:00",
-   "url": "https://extratv.com/2026/11/19/goldie-hawn-on-new-book-30th-anniversary-of-first-wives-club-and-81st-birthday-exclusive/",
-   "news": "Goldie Hawn on New Book, 81st Birthday & 30th Anniversary of ‘First Wives Club' (Exclusive)"
-  },
-  {
-   "term": "jaden mcdaniels",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T03:10:00+00:00",
-   "url": "https://ripcityproject.com/toumani-camara-becoming-blazers-jaden-mcdaniels-under-micah-nori",
-   "news": "Toumani Camara is becoming the Blazers’ Jaden McDaniels under Micah Nori"
-  },
-  {
-   "term": "quinn hughes",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T03:10:00+00:00",
-   "url": "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
-   "news": "Hughes to miss remainder of Wild road trip with injury"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T02:50:00+00:00",
+   "url": "https://www.tvline.com/2324467/marshals-season-2-episode-7-recap-kayce-monica-baby-death-explained/",
+   "news": "Marshals Revisits Kayce And Monica's Most Tragic Yellowstone Storyline In Season 2"
   },
   {
    "term": "boubacar traore",
@@ -3270,22 +3243,40 @@
    "news": "Wendy’s store closures hit close to 100 locations in franchisee downfall: See the latest list"
   },
   {
-   "term": "knicks standings",
+   "term": "mike shanahan",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T03:00:00+00:00",
-   "url": "https://www.nba.com/news/emirates-nba-cup-live-updates-november-20",
-   "news": "Top moments from Friday's Emirates NBA Cup"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:50:00+00:00",
+   "url": "https://247sports.com/college/maryland/article/with-mike-shanahan-could-maryland-sprinkle-some-magical-cignetti-dust-on-its-football-program-292907770/",
+   "news": "With Mike Shanahan, could Maryland sprinkle some magical Cignetti dust on its football program?"
   },
   {
-   "term": "fossil",
+   "term": "olivia culpo",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T03:10:00+00:00",
-   "url": "https://www.theguardian.com/environment/2026/nov/21/climate-talks-stall-countries-mull-showdown-saudi-arabia-over-fossil-fuels",
-   "news": "Climate talks stall as countries mull showdown with Saudi Arabia over fossil fuel phaseout | Cop31"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:50:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/celebrity/articles/1995-george-clooney-paid-2-233918277.html",
+   "news": "In 1995, George Clooney paid $2.2 million for a Los Angeles mansion; Christian McCaffrey and Olivia Culpo bought it in 2024 for $14.5 million"
+  },
+  {
+   "term": "marine corps base camp pendleton",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T03:00:00+00:00",
+   "url": "https://ktla.com/news/california/missing-marine-body-found-abandoned-building-california-desert/",
+   "news": "Missing active-duty Marine, 19, found dead in Southern California desert"
+  },
+  {
+   "term": "line of fire",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T03:10:00+00:00",
+   "url": "https://www.imdb.com/news/ni66114947/",
+   "news": "‘Line of Fire’ Episode 8 Recap and Ending Explained: Secrets Pile Up for the Hollingsworths"
   },
   {
    "term": "avery johnson",
@@ -4665,6 +4656,15 @@
    "news": "49ers' Brock Purdy and Wife Jenna Share Powerful Message That Goes Far Beyond Football"
   },
   {
+   "term": "49ers",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T01:40:00+00:00",
+   "url": "https://www.nfl.com/videos/purdy-s-29-yard-connection-with-mike-evans-provides-49ers-with-red-zone-access",
+   "news": "Purdy's 29-yard connection with Mike Evans provides 49ers with red-zone access"
+  },
+  {
    "term": "princess eugenie",
    "geo": "GB",
    "traffic": "200+",
@@ -4710,13 +4710,31 @@
    "news": "The Cast of ‘The Gilded Age’ Belts Out a Holiday Album"
   },
   {
-   "term": "scarlett johansson",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T03:10:00+00:00",
-   "url": "https://movieweb.com/jurassic-world-rebirth-leaving-streaming-netflix-november-2026/",
-   "news": "Scarlett Johansson's $869 Million Sci-Fi Action Epic Is Officially Being Cut From Netflix"
+   "term": "justin hartley",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T03:10:00+00:00",
+   "url": "https://deadline.com/2026/11/justin-hartley-developing-dr-lucia-series-nbc-1237229428/",
+   "news": "Justin Hartley & ChangeUp Productions Developing Medical Drama ‘Dr. Lucia’ At NBC"
+  },
+  {
+   "term": "pacers vs knicks match player stats",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T03:10:00+00:00",
+   "url": "https://www.usatoday.com/sports/nba/event/2026/3018940/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=1",
+   "news": "Indiana Pacers at New York Knicks - NBA Game Summary - Nov 22, 2026"
+  },
+  {
+   "term": "landry shamet",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T03:10:00+00:00",
+   "url": "https://sports.yahoo.com/articles/mike-brown-landry-shamet-sixth-232659104.html",
+   "news": "Mike Brown on Landry Shamet: He should be Sixth Man of the Year, it's not close"
   },
   {
    "term": "mavericks vs clippers",
@@ -5140,7 +5158,16 @@
    "ts": "2026-11-23T00:00:00+00:00",
    "url": "https://observer.co.uk/news/national/article/met-deputy-rejects-few-bad-apples-theory-after-1800-staff-drummed-out",
    "news": "Met deputy rejects ‘few bad apples’ theory after 1,800 staff drummed out"
+  },
+  {
+   "term": "jake hager",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T02:50:00+00:00",
+   "url": "https://bleacherreport.com/articles/25536404-ex-wwe-champ-jack-swagger-suffers-permanent-vision-damage-after-serious-power-slap-injury",
+   "news": "Ex-WWE Champ Jack Swagger Suffers Permanent Vision Damage After Serious Power Slap Injury"
   }
  ],
- "updated": "2026-11-23T02:55:27.103950+00:00"
+ "updated": "2026-11-23T03:25:31.146024+00:00"
 }
