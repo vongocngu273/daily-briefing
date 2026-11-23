@@ -12,6 +12,10 @@ on:
         description: "Gọi tự động (Cloudflare) – bỏ qua nếu hôm nay đã có bản tin"
         required: false
         default: "false"
+      source:
+        description: "button = bấm Update trên trang (chạy lại giữa ngày, không gửi Telegram)"
+        required: false
+        default: "manual"
 
 permissions:
   contents: write
@@ -69,6 +73,7 @@ jobs:
           WEATHER_LAT: ${{ secrets.WEATHER_LAT }}
           WEATHER_LON: ${{ secrets.WEATHER_LON }}
           WEATHER_LOCATION_NAME: ${{ secrets.WEATHER_LOCATION_NAME }}
+          BRIEFING_MODE: ${{ inputs.source == 'button' && 'refresh' || 'morning' }}
         run: python -m src.main
 
       - name: Verify output
@@ -96,9 +101,11 @@ jobs:
 
       # Only reached after a successful push; give Pages time to deploy before pinging the phone.
       - name: Wait for Pages deploy
+        if: inputs.source != 'button'
         run: sleep 45
 
       - name: Notify Telegram
+        if: inputs.source != 'button'
         continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

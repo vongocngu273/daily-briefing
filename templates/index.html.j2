@@ -370,12 +370,12 @@ html.sheet-open{overflow:hidden}
 {% macro locicon() %}<svg class="ic-loc" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.3 2.2 2.8 8.4c-.8.3-.7 1.4.1 1.6l6.1 1.3 1.4 6.1c.2.8 1.3.9 1.6.1l6.2-14.5c.3-.6-.3-1.1-.9-.8z"/></svg>{% endmacro %}
 {% macro refreshicon() %}<svg class="ic-rf" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.2 10a6.2 6.2 0 1 1-1.9-4.47"/><path d="M15.6 2.8v3.4h-3.4"/></svg>{% endmacro %}
 {% macro arrow(kind) %}<svg class="ic" viewBox="0 0 12 12" aria-hidden="true">{% if kind == "out" %}<path d="M3 1.5h7.5V9H9V4.06L2.53 10.53 1.47 9.47 7.94 3H3z"/>{% else %}<path d="M1 5.25h7.19L5.47 2.53l1.06-1.06L11.06 6l-4.53 4.53-1.06-1.06 2.72-2.72H1z"/>{% endif %}</svg>{% endmacro %}
-<body data-day="{{ weekday }}" data-date="{{ date_compact }}"{% if ai_url is defined and ai_url %} data-ai="{{ ai_url }}"{% endif %}>
+<body data-day="{{ weekday }}" data-date="{{ date_compact }}" data-edition="{{ lv.updated_iso }}"{% if ai_url is defined and ai_url %} data-ai="{{ ai_url }}"{% endif %}>
 
 <header class="stub" id="thoi-tiet">
   {% set gid = "top" %}{% include "_guilloche.svg.j2" %}
   <div class="wrap">
-    <div class="stub-row"><h1>Bản tin sáng</h1><span class="upd">Cập nhật {{ lv.updated or updated_at }}<button type="button" class="rf" data-refresh aria-label="Làm mới tin">{{ refreshicon() }}</button></span></div>
+    <div class="stub-row"><h1>Bản tin sáng</h1><span class="upd">Cập nhật <span id="upd-time">{{ updated_at }}</span>{% if ai_url is defined and ai_url %}<button type="button" class="rf" id="update-btn" aria-label="Cập nhật bản tin mới nhất">{{ refreshicon() }}</button>{% endif %}</span></div>
     <div class="ticket">
       <div class="serial" aria-label="{{ date_str }}"><b>{{ serial }}</b><span>{{ weekday_name }}<small>{{ year }} · {{ total_items }} tin</small></span></div>
       <section class="wx" id="wx" aria-label="Thời tiết {{ weather.location }}">
@@ -450,28 +450,6 @@ html.sheet-open{overflow:hidden}
 </nav>
 
 <main class="wrap">
-  {% if lv.hot or lv.latest %}
-  <section class="hot" id="tin-nong" aria-labelledby="tin-nong-h" data-live="{{ lv.updated_iso }}">
-    <div class="hot-head">
-      <h2 id="tin-nong-h">Tin nóng</h2>
-      <div class="seg" role="tablist" aria-label="Sắp xếp">
-        <button type="button" role="tab" aria-selected="true" data-tab="hot">Nóng</button>
-        <button type="button" role="tab" aria-selected="false" data-tab="latest">Mới</button>
-      </div>
-      <button type="button" class="rf rf-lbl" data-refresh aria-label="Làm mới tin nóng">{{ refreshicon() }}<span>{{ lv.updated }}</span></button>
-    </div>
-    {% for key in ["hot", "latest"] %}
-    <ol class="hot-list" data-list="{{ key }}"{% if key != "hot" %} hidden{% endif %}>
-      {% for h in lv[key] %}
-      <li><a href="{{ h.url }}" target="_blank" rel="noopener noreferrer">
-        {% if h.image %}<span class="hthumb"><img src="{{ h.image }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('ph');this.remove()"></span>{% else %}<span class="hthumb ph"></span>{% endif %}
-        <span class="htxt"><b>{{ h.title }}</b><small>{{ h.source }}{% if h.sources > 1 %} · {{ h.sources }} báo cùng đưa{% endif %} · <time datetime="{{ h.ts }}">{{ h.time }}</time></small></span>
-      </a></li>
-      {% endfor %}
-    </ol>
-    {% endfor %}
-  </section>
-  {% endif %}
   <div class="views" role="group" aria-label="Kiểu xem">
     <span>Kiểu xem</span>
     <button type="button" data-v="list" aria-pressed="false">Danh sách</button>
@@ -486,11 +464,11 @@ html.sheet-open{overflow:hidden}
   <div class="layer-group" id="lop-{{ layer.id }}">
     {% for cat in layer.categories %}
     <details class="cat" id="{{ cat.key }}" open>
-      <summary><h3>{{ cat.label }}<small>{{ cat['items']|length }} tin</small></h3><button type="button" class="rf rf-cat" data-cat-refresh="{{ cat.key }}" aria-label="Cập nhật tin mới cho {{ cat.label }}">{{ refreshicon() }}</button></summary>
+      <summary><h3>{{ cat.label }}<small>{{ cat['items']|length }} tin</small></h3></summary>
       {% if cat.key == "economy" %}
       <div class="board" id="thi-truong">
         <table>
-          <caption><div class="cap"><span>Bảng giá{% if lv.updated %} · {{ lv.updated }}{% endif %}</span><button type="button" class="rf" data-refresh aria-label="Làm mới bảng giá">{{ refreshicon() }}</button></div></caption>
+          <caption>Bảng giá đóng cửa</caption>
           <tbody>
           {% for q in quotes %}
             <tr>
@@ -660,60 +638,6 @@ html.sheet-open{overflow:hidden}
       if(location.hash) history.replaceState(null,'',location.pathname+location.search);
     });
   })();
-  /* Tin nóng: tab Nóng/Mới, "x phút trước", nút ⟳ kiểm tra bản mới trên máy chủ */
-  (function(){
-    var sec=document.getElementById('tin-nong');
-    document.querySelectorAll('.seg [data-tab]').forEach(function(b){
-      b.addEventListener('click',function(){
-        document.querySelectorAll('.seg [data-tab]').forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false');});
-        document.querySelectorAll('.hot-list').forEach(function(l){l.hidden=l.getAttribute('data-list')!==b.getAttribute('data-tab');});
-      });
-    });
-    function ago(){
-      var now=Date.now();
-      document.querySelectorAll('.hot-list time').forEach(function(t){
-        var m=Math.round((now-Date.parse(t.getAttribute('datetime')))/60000);
-        if(isNaN(m)) return;
-        t.textContent=m<1?'vừa xong':m<60?m+' phút trước':m<24*60?Math.floor(m/60)+' giờ trước':t.textContent;
-      });
-    }
-    ago(); setInterval(ago,60000);
-    var toast=document.getElementById('toast'), tt;
-    function say(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show');},2600);}
-    var mine=Date.parse((sec&&sec.getAttribute('data-live'))||'')||0;
-    document.querySelectorAll('[data-refresh]').forEach(function(btn){
-      btn.addEventListener('click',function(){
-        if(btn.classList.contains('spin')) return;
-        document.querySelectorAll('[data-refresh]').forEach(function(b){b.classList.add('spin');});
-        fetch('live.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
-          var srv=Date.parse(j.updated||'')||0;
-          if(srv>mine){ say('Đang tải bản mới…'); location.replace(location.pathname+'?v='+srv+location.hash); return; }
-          var hm=new Date(srv||mine).toLocaleTimeString('vi-VN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'});
-          say('Đã mới nhất lúc '+hm+' · tự làm mới mỗi 30 phút');
-        }).catch(function(){ say('Không kiểm tra được, thử lại sau'); })
-        .then(function(){ setTimeout(function(){document.querySelectorAll('[data-refresh]').forEach(function(b){b.classList.remove('spin');});},400); });
-      });
-    });
-  })();
-  /* Nút ⟳ từng chuyên mục: có bản mới trên máy chủ thì tải lại và quay về đúng chuyên mục */
-  (function(){
-    var sec=document.getElementById('tin-nong'), mine=Date.parse((sec&&sec.getAttribute('data-live'))||'')||0;
-    var toast=document.getElementById('toast'), tt;
-    function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show');},2600);}
-    document.querySelectorAll('[data-cat-refresh]').forEach(function(b){
-      b.addEventListener('click',function(e){
-        e.preventDefault(); e.stopPropagation();
-        if(b.classList.contains('spin')) return;
-        var key=b.getAttribute('data-cat-refresh'); b.classList.add('spin');
-        fetch('live.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
-          var srv=Date.parse(j.updated||'')||0;
-          if(srv>mine){ location.replace(location.pathname+'?v='+srv+'#'+key); return; }
-          var hm=new Date(srv||mine).toLocaleTimeString('vi-VN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'});
-          say('Mục này đã mới nhất lúc '+hm);
-        }).catch(function(){ say('Không kiểm tra được, thử lại sau'); }).then(function(){ setTimeout(function(){b.classList.remove('spin');},400); });
-      });
-    });
-  })();
   /* AI tóm tắt khi bấm: gọi Cloudflare Worker (giữ key Gemini), cần mã truy cập lưu trên máy này */
   (function(){
     var AI=document.body.getAttribute('data-ai'); if(!AI) return;
@@ -755,6 +679,37 @@ html.sheet-open{overflow:hidden}
       }).catch(function(){ btn.removeAttribute('aria-busy'); btn.querySelector('span').textContent='Tóm tắt bằng AI'; });
     }
     document.addEventListener('click',function(e){ var b=e.target.closest('[data-ai-sum]'); if(b&&!b.hasAttribute('aria-busy')){ e.preventDefault(); run(b); } });
+  })();
+  /* Nút Update: nhờ Worker chạy lại bản tin bằng AI, rồi chờ bản mới lên trang và tự tải lại */
+  (function(){
+    var b=document.getElementById('update-btn'), AI=document.body.getAttribute('data-ai'); if(!b||!AI) return;
+    var toast=document.getElementById('toast'), tt;
+    function say(m,stay){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);if(!stay)tt=setTimeout(function(){toast.classList.remove('show');},3500);}
+    var mine=Date.parse(document.body.getAttribute('data-edition')||'')||0, PK='banTinSang.updating';
+    function key(){try{return localStorage.getItem('banTinSang.aiKey')||'';}catch(e){return '';}}
+    function poll(started){
+      b.classList.add('spin');
+      var tick=setInterval(function(){
+        fetch('live.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+          var srv=Date.parse(j.updated||'')||0;
+          if(srv>mine && srv>started-60000){ clearInterval(tick); try{localStorage.removeItem(PK);}catch(e){} say('Đã có bản tin mới, đang tải…',true); location.replace(location.pathname+'?v='+srv); }
+        }).catch(function(){});
+        if(Date.now()-started>12*60000){ clearInterval(tick); b.classList.remove('spin'); try{localStorage.removeItem(PK);}catch(e){} say('Chưa thấy bản mới, thử lại sau ít phút'); }
+      },20000);
+    }
+    try{var p=+localStorage.getItem(PK); if(p && Date.now()-p<12*60000){ say('Đang làm bản tin mới…',true); poll(p); }}catch(e){}
+    b.addEventListener('click',function(){
+      if(b.classList.contains('spin')) return;
+      var k=key(); if(!k){ say('Máy này chưa có mã AI: mở link trong file ai-link.txt trước'); return; }
+      b.classList.add('spin'); say('Đang gửi yêu cầu…',true);
+      fetch(AI.replace(/\/$/,'')+'/refresh',{method:'POST',headers:{'X-Access-Key':k}})
+      .then(function(r){return r.json().then(function(j){return {s:r.status,j:j};});})
+      .then(function(res){
+        if(res.s===202||res.s===409){ var t=Date.now(); try{localStorage.setItem(PK,String(t));}catch(e){} say('Đang làm bản tin mới bằng AI, khoảng 3–5 phút. Cứ đọc tiếp, xong trang tự tải lại.',true); poll(t); return; }
+        b.classList.remove('spin');
+        say(res.s===429?'Hôm nay đã cập nhật đủ số lần cho phép':res.s===401?'Mã AI sai, mở lại link ai-link.txt':'Không gửi được, thử lại sau');
+      }).catch(function(){ b.classList.remove('spin'); say('Không gửi được, thử lại sau'); });
+    });
   })();
   var root=document.documentElement, th=document.getElementById('theme');
   var vbs=document.querySelectorAll('.views button');

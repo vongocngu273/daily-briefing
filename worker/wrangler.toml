@@ -7,12 +7,13 @@ workers_dev = true
 #   GEMINI_API_KEY, GEMINI_API_KEY_2, ACCESS_KEY, GH_DISPATCH_TOKEN
 # Hẹn giờ (UTC) gọi GitHub Actions; xem CRON_JOBS trong src/index.js
 [triggers]
-crons = ["5 0 * * *", "25,55 0-16,23 * * *"]
+crons = ["5 0 * * *"]
 
 [vars]
 ALLOWED_ORIGIN = "https://vongocngu273.github.io"
 GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-2.5-flash"
 DAILY_LIMIT = "80"
+REFRESH_LIMIT = "6"
 
 # Bộ đếm lượt tóm tắt mỗi ngày (DAILY_LIMIT)
 [[kv_namespaces]]

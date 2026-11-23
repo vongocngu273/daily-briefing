@@ -75,7 +75,7 @@ def load_snapshot(path: Path = SNAPSHOT_PATH, trends_path: Path | None = None, l
     for layer in ctx.get("layers", []):
         for cat in layer.get("categories", []):
             cat["items"] = [_build(NewsItem, n) for n in cat.get("items", [])]
-    merge_fresh(ctx, lv.get("cats") or {})
+    # Không tự chèn tin mới trong ngày nữa: trang chỉ đổi khi chạy lại bản tin (nút Update)
     return ctx
 
 

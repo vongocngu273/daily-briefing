@@ -36,6 +36,14 @@ def _tide_high(tide) -> dict | None:
     return {"place": tide.place, "time": top["time"], "height": top["height"]}
 
 
+def today_excluded(history: dict, local: datetime) -> dict:
+    """Lịch sử chống trùng bỏ đi các tin đã thêm trong hôm nay (giờ địa phương)."""
+    day = local.date()
+    keep = [i for i in history.get("items", [])
+            if datetime.fromisoformat(i["ts"]).astimezone(local.tzinfo).date() != day]
+    return {"items": keep}
+
+
 def build_summary(context: dict, local: datetime) -> dict:
     """Compact data for notifications (src.notify). Not committed (.gitignore)."""
     w = context["weather"]
@@ -98,8 +106,11 @@ def run() -> int:
     quotes = fetch_market(cfg)
 
     history = prune_history(load_history(HISTORY_PATH), now, int(ncfg.get("history_retention_days", 7)))
-    articles = collect(cfg, now, history)
-    recent = recent_titles(history, int(ncfg.get("recent_titles_for_ai", 150)))
+    # Bấm Update giữa ngày (BRIEFING_MODE=refresh): chỉ loại tin đã đăng từ hôm trước, để tin sáng nay
+    # vẫn được xét lại cùng tin mới -> bản tin là bản tổng hợp nóng nhất tại lúc bấm.
+    dedup = today_excluded(history, local) if os.environ.get("BRIEFING_MODE") == "refresh" else history
+    articles = collect(cfg, now, dedup)
+    recent = recent_titles(dedup, int(ncfg.get("recent_titles_for_ai", 150)))
 
     gcfg = cfg.get("gemini", {})
     model = os.environ.get("GEMINI_MODEL", "").strip() or gcfg.get("model", "gemini-3.8-flash")

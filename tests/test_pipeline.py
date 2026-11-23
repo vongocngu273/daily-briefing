@@ -547,3 +547,14 @@ def test_merge_fresh_replaces_oldest_and_keeps_even():
     assert sports[0].fresh == "22:21" and sports[0].summary == "Đoạn ngắn" and not sports[0].ai
     assert [i.num for l in ctx["layers"] for c in l["categories"] for i in c["items"]] == [1, 2, 3, 4, 5, 6]
     assert ctx["total_items"] == 6
+
+
+def test_refresh_mode_keeps_todays_stories_eligible():
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    from src.main import today_excluded
+    local = datetime(2026, 11, 23, 14, 0, tzinfo=ZoneInfo("Asia/Ho_Chi_Minh"))
+    h = {"items": [{"hash": "a", "title": "hôm qua", "ts": "2026-11-22T00:20:00+00:00"},
+                   {"hash": "b", "title": "sáng nay", "ts": "2026-11-23T00:20:00+00:00"},
+                   {"hash": "c", "title": "07:00 VN hôm nay", "ts": "2026-11-22T23:59:00+00:00"}]}
+    assert [i["hash"] for i in today_excluded(h, local)["items"]] == ["a"]

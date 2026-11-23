@@ -3,10 +3,7 @@ name: Live Refresh
 # Làm mới trong ngày: Tin nóng/Mới, bảng giá, Google Trends, ảnh chia sẻ; render lại từ data/page.json.
 # Không gọi Gemini, không cần secret nào.
 on:
-  # Lịch 30 phút/lần (06:25–23:55 VN) do Cloudflare Worker hẹn giờ gọi tới (đúng giờ hơn lịch GitHub),
-  # xem worker/wrangler.toml. Lịch GitHub dưới đây chỉ là dự phòng thưa, 2 giờ/lần.
-  schedule:
-    - cron: "37 1-15/2 * * *"
+  # Không chạy theo lịch nữa: trang chỉ đổi khi chạy bản tin. Giữ để chạy tay khi cần.
   workflow_dispatch:
     inputs:
       auto:

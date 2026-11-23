@@ -112,9 +112,10 @@ export default {
     };
     if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
     const path = new URL(req.url).pathname;
-    if (req.method !== "POST" || path !== "/summarize") return json({ error: "not_found" }, 404, cors);
+    if (req.method !== "POST" || (path !== "/summarize" && path !== "/refresh")) return json({ error: "not_found" }, 404, cors);
     if ((req.headers.get("Origin") || "") !== allowed) return json({ error: "forbidden" }, 403, cors);
     if (!sameKey(req.headers.get("X-Access-Key") || "", env.ACCESS_KEY || "")) return json({ error: "unauthorized" }, 401, cors);
+    if (path === "/refresh") return refresh(env, cors);
 
     let body;
     try { body = await req.json(); } catch { return json({ error: "bad_request" }, 400, cors); }
@@ -162,11 +163,27 @@ ${text || "(không lấy được nội dung, chỉ dựa vào tiêu đề và m
 const REPO = "vongocngu273/daily-briefing";
 const CRON_JOBS = {
   "5 0 * * *": "daily-briefing.yml",        // 07:05 VN: bản tin sáng (job "check" chặn chạy trùng)
-  "25,55 0-16,23 * * *": "trends.yml",      // 30 phút/lần 06:25–23:55 VN: tin nóng, giá, trend
 };
 
-async function dispatch(env, workflow) {
-  if (!env.GH_DISPATCH_TOKEN) { console.log("thiếu GH_DISPATCH_TOKEN"); return; }
+// Nút Update trên trang: chạy lại bản tin bằng AI (không gửi Telegram).
+// Giới hạn REFRESH_LIMIT lần/ngày và không nhận yêu cầu mới khi lần trước chưa quá 8 phút (đang chạy).
+async function refresh(env, cors) {
+  const now = Date.now();
+  const day = new Date(now + 7 * 3600e3).toISOString().slice(0, 10); // ngày theo giờ VN
+  if (env.LIMITS) {
+    const last = parseInt((await env.LIMITS.get("refresh:last")) || "0", 10);
+    if (now - last < 8 * 60e3) return json({ status: "running", since: last }, 409, cors);
+    const used = parseInt((await env.LIMITS.get("refresh:" + day)) || "0", 10);
+    if (used >= parseInt(env.REFRESH_LIMIT || "6", 10)) return json({ error: "daily_limit" }, 429, cors);
+    await env.LIMITS.put("refresh:" + day, String(used + 1), { expirationTtl: 172800 });
+    await env.LIMITS.put("refresh:last", String(now), { expirationTtl: 3600 });
+  }
+  const status = await dispatch(env, "daily-briefing.yml", { source: "button" });
+  return status === 204 ? json({ status: "started" }, 202, cors) : json({ error: "dispatch_failed", status }, 502, cors);
+}
+
+async function dispatch(env, workflow, inputs = { auto: "true" }) {
+  if (!env.GH_DISPATCH_TOKEN) { console.log("thiếu GH_DISPATCH_TOKEN"); return 0; }
   const r = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${workflow}/dispatches`, {
     method: "POST",
     headers: {
@@ -175,7 +192,8 @@ async function dispatch(env, workflow) {
       "X-GitHub-Api-Version": "2022-11-28",
       "User-Agent": "ban-tin-ai-cron",
     },
-    body: JSON.stringify({ ref: "main", inputs: { auto: "true" } }),
+    body: JSON.stringify({ ref: "main", inputs }),
   });
   console.log(`dispatch ${workflow} -> ${r.status}`);
+  return r.status;
 }
