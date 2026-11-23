@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Bản tin sáng</title>
+  <defs>
+    <clipPath id="sky"><rect x="0" y="0" width="512" height="292"/></clipPath>
+  </defs>
+  <!-- nền xanh mực -->
+  <rect width="512" height="512" rx="112" fill="#1b1f4a"/>
+  <g transform="translate(256 256) scale(1.16) translate(-256 -256)">
+  <!-- cuống vé: hai khấc khuyết hai bên -->
+  <path fill="#ffffff" d="M120 128h272a24 24 0 0 1 24 24v76a28 28 0 0 0 0 56v76a24 24 0 0 1-24 24H120a24 24 0 0 1-24-24v-76a28 28 0 0 0 0-56v-76a24 24 0 0 1 24-24z"/>
+  <!-- đường đục lỗ -->
+  <g fill="#1b1f4a" opacity=".22">
+    <circle cx="340" cy="160" r="6"/><circle cx="340" cy="190" r="6"/><circle cx="340" cy="220" r="6"/>
+    <circle cx="340" cy="292" r="6"/><circle cx="340" cy="322" r="6"/><circle cx="340" cy="352" r="6"/>
+  </g>
+  <!-- mặt trời mọc -->
+  <g clip-path="url(#sky)">
+    <circle cx="220" cy="292" r="82" fill="#d0021b"/>
+  </g>
+  <g stroke="#d0021b" stroke-width="14" stroke-linecap="round">
+    <line x1="220" y1="164" x2="220" y2="184"/>
+    <line x1="140" y1="202" x2="154" y2="214"/>
+    <line x1="300" y1="202" x2="286" y2="214"/>
+  </g>
+  <!-- chân trời + dòng tin -->
+  <g stroke="#1b1f4a" stroke-linecap="round">
+    <line x1="132" y1="292" x2="308" y2="292" stroke-width="14"/>
+    <line x1="150" y1="326" x2="290" y2="326" stroke-width="10" opacity=".55"/>
+    <line x1="170" y1="354" x2="270" y2="354" stroke-width="10" opacity=".35"/>
+  </g>
+  <!-- cuống nhỏ bên phải: 3 vạch như số seri -->
+  <g fill="#d0021b">
+    <rect x="364" y="232" width="24" height="10" rx="5"/>
+    <rect x="364" y="252" width="24" height="10" rx="5"/>
+    <rect x="364" y="272" width="24" height="10" rx="5"/>
+  </g>
+  </g>
+</svg>

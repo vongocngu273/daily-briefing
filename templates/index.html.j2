@@ -10,6 +10,12 @@ try{var t=localStorage.getItem('banTinSang.theme');if(t==='light'||t==='dark')do
 document.documentElement.setAttribute('data-view','card');
 try{var v=localStorage.getItem('banTinSang.view');if(v==='list'||v==='mag'||v==='card')document.documentElement.setAttribute('data-view',v);}catch(e){}</script>
 <title>Bản tin sáng · {{ serial }}</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Bản tin">
+<meta name="theme-color" content="#1b1f4a">
 {% set site = site_url if site_url is defined else "" %}
 {% set lv = live if live is defined else {"hot": [], "latest": [], "updated": "", "updated_iso": "", "cats": {}} %}
 {% set share_desc = (takeaways|join(" · ")) if takeaways else "Tin tức, thời tiết, thị trường mỗi sáng." %}
