@@ -208,15 +208,6 @@
    "news": "Miền Bắc sắp mưa dông từ đêm nay, có nơi dưới 10 độ C do không khí lạnh"
   },
   {
-   "term": "lich thi dau u17",
-   "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T05:30:00+00:00",
-   "url": "https://tuoitre.vn/lich-truc-tiep-u17-world-cup-2026-ngay-22-11-phap-dau-saudi-arabia-100261121195540106.htm",
-   "news": "Lịch trực tiếp U17 World Cup 2026 ngày 22-11: Pháp đấu Saudi Arabia"
-  },
-  {
    "term": "bình phước",
    "geo": "VN",
    "traffic": "1000+",
@@ -386,6 +377,24 @@
    "ts": "2026-11-23T02:00:00+00:00",
    "url": "https://tuoitre.vn/bang-xep-hang-huy-chuong-dai-hoi-the-thao-toan-quoc-ngay-22-11-tphcm-dan-dau-10026112222472988.htm",
    "news": "Bảng xếp hạng huy chương Đại hội Thể thao toàn quốc ngày 22-11: TP.HCM dẫn đầu"
+  },
+  {
+   "term": "sóng ở đáy sông",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T02:40:00+00:00",
+   "url": "https://znews.vn/dan-dien-vien-song-o-day-song-sau-26-nam-post1698419.html",
+   "news": "Dàn diễn viên 'Sóng ở đáy sông' sau 26 năm"
+  },
+  {
+   "term": "xe tải",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T04:40:00+00:00",
+   "url": "https://vnexpress.net/xe-con-len-qua-hong-xe-tai-vuot-len-nhu-tu-sat-5147820.html",
+   "news": "Xe con len qua hông xe tải vượt lên như tự sát"
   },
   {
    "term": "ninh bình",
@@ -575,24 +584,6 @@
    "ts": "2026-11-23T02:30:00+00:00",
    "url": "https://tienphong.vn/bua-com-nha-cua-hoa-hau-nguyen-yen-trang-post1896531.tpo",
    "news": "Bữa cơm nhà của Hoa hậu Nguyễn Yến Trang"
-  },
-  {
-   "term": "sóng ở đáy sông",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-23T02:40:00+00:00",
-   "url": "https://dantri.com.vn/giai-tri/song-o-day-song-phan-2-xuan-bac-muon-nhan-vat-nui-phai-kho-hon-nua-20261123094120464.htm",
-   "news": "Sóng ở đáy sông phần 2: Xuân Bắc muốn nhân vật Núi phải “khổ hơn nữa”"
-  },
-  {
-   "term": "xe tải",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-23T04:40:00+00:00",
-   "url": "https://vnexpress.net/xe-con-len-qua-hong-xe-tai-vuot-len-nhu-tu-sat-5147820.html",
-   "news": "Xe con len qua hông xe tải vượt lên như tự sát"
   },
   {
    "term": "bắt giữ",
@@ -829,13 +820,22 @@
    "news": "TRỰC TIẾP Giải đua ghe ngo Cần Thơ 2026 trên VTV"
   },
   {
-   "term": "s27 ultra",
+   "term": "bitcoin",
    "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T05:50:00+00:00",
-   "url": "https://www.thegioididong.com/tin-tuc/galaxy-s27-pro-dung-chip-exynos-2700-lo-diem-geekbench-6595686",
-   "news": "Galaxy S27 Pro dùng chip Exynos 2700 lộ điểm Geekbench ấn tượng, vượt mặt Snapdragon"
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T05:20:00+00:00",
+   "url": "https://vnexpress.net/hang-ty-usd-bi-thoi-bay-sau-cu-roi-cua-bitcoin-5147874.html",
+   "news": "Hàng tỷ USD bị thổi bay sau cú rơi của Bitcoin"
+  },
+  {
+   "term": "ngân hàng thương mại cổ phần đầu tư và phát triển việt nam",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T05:40:00+00:00",
+   "url": "https://cafef.vn/ong-lon-ngan-hang-chuan-bi-chia-co-tuc-ty-le-gan-18-18826112309483776.chn",
+   "news": "\"Ông lớn\" ngân hàng chuẩn bị chia cổ tức tỷ lệ gần 18%"
   },
   {
    "term": "gta5",
@@ -1034,6 +1034,15 @@
    "ts": "2026-11-23T02:30:00+00:00",
    "url": "https://tuoitre.vn/nhan-ngay-van-hoa-viet-nam-nghi-ve-y-hoc-nhan-van-nguoi-benh-duoc-lang-nghe-va-ton-trong-100261123082036729.htm",
    "news": "Nhân Ngày Văn hóa Việt Nam, nghĩ về y học nhân văn, người bệnh được lắng nghe và tôn trọng"
+  },
+  {
+   "term": "kim tae-hee",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T05:20:00+00:00",
+   "url": "https://www.starnewskorea.com/en/broadcast-show/2026/11/22/2026112221122346856",
+   "news": "‘Kim Tae-hee’s husband’ Rain: “My daughter is in the same class as Baek Ji-young and Jung Suk-won’s daughter… I always attend sports day” [Please Take Care of My Fridge] [Byulbyul TV]"
   }
  ],
  "world": [
@@ -1054,24 +1063,6 @@
    "ts": "2026-11-23T02:20:00+00:00",
    "url": "https://sports.yahoo.com/articles/49ers-rt-colton-mckivitz-carted-022936220.html",
    "news": "49ers RT Colton McKivitz carted off in an air cast with apparent significant injury"
-  },
-  {
-   "term": "strictly come dancing week 9 results",
-   "geo": "GB",
-   "traffic": "20000+",
-   "score": 20000,
-   "ts": "2026-11-22T05:30:00+00:00",
-   "url": "https://www.bbc.co.uk/news/articles/cvx2xprxp5ryo",
-   "news": "Why is Blackpool such a Strictly highlight?"
-  },
-  {
-   "term": "heisman odds",
-   "geo": "US",
-   "traffic": "20000+",
-   "score": 20000,
-   "ts": "2026-11-22T05:50:00+00:00",
-   "url": "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls",
-   "news": "Latest Heisman Trophy 2026 Odds as Jeremiah Smith Rises, Mestemaker Falls"
   },
   {
    "term": "clima",
@@ -1117,6 +1108,24 @@
    "ts": "2026-11-23T04:20:00+00:00",
    "url": "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-ahead-week-11-snf",
    "news": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings Ahead of Week 11 SNF"
+  },
+  {
+   "term": "earthquake now",
+   "geo": "US",
+   "traffic": "20000+",
+   "score": 20000,
+   "ts": "2026-11-23T05:10:00+00:00",
+   "url": "https://www.nytimes.com/2026/11/20/us/earthquakes-california-los-angeles-pinnacles.html",
+   "news": "2 Earthquakes Rattle California"
+  },
+  {
+   "term": "king tides flooding",
+   "geo": "US",
+   "traffic": "20000+",
+   "score": 20000,
+   "ts": "2026-11-23T05:30:00+00:00",
+   "url": "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html",
+   "news": "California coast faces extreme flood threat on holiday; water could inundate Bay Area airports"
   },
   {
    "term": "metacritic gta vi",
@@ -1281,13 +1290,13 @@
    "news": "The Packers’ get some help from the 49ers in the playoff picture"
   },
   {
-   "term": "earthquake now",
+   "term": "los angeles earthquake",
    "geo": "US",
    "traffic": "10000+",
    "score": 10000,
    "ts": "2026-11-23T05:10:00+00:00",
-   "url": "https://www.nytimes.com/2026/11/20/us/earthquakes-california-los-angeles-pinnacles.html",
-   "news": "2 Earthquakes Rattle California"
+   "url": "https://abcnews.com/US/magnitude-44-earthquake-hits-downtown-los-angeles/story?id=138315998",
+   "news": "Magnitude 4.4 earthquake hits near downtown Los Angeles"
   },
   {
    "term": "alex burghart",
@@ -1452,31 +1461,13 @@
    "news": "Stats - Pant's six-feast in India's highest away Test total"
   },
   {
-   "term": "devon dampier",
+   "term": "dow jones stock markets",
    "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T05:40:00+00:00",
-   "url": "https://www.foxsports.com/stories/college-football/utah-utes-devon-dampier-heisman-trophy",
-   "news": "The Perfect Pairing Fueling A Heisman Trophy Campaign"
-  },
-  {
-   "term": "darius acuff jr.",
-   "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T05:40:00+00:00",
-   "url": "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
-   "news": "Damian Lillard respects Darius Acuff Jr.’s mentality. He also knows the test ahead"
-  },
-  {
-   "term": "big 12 championship game",
-   "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T05:40:00+00:00",
-   "url": "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/22/buy-utah-big-12-championship-game-tickets/92909891007/",
-   "news": "Utah clinches spot in Big 12 Championship Game, here's how to buy tickets"
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-23T05:40:00+00:00",
+   "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html",
+   "news": "S&P 500 futures rebound sharply to rise 2%, kick-starting shortened week after tech rout: Live updates"
   },
   {
    "term": "mn wild",
@@ -1920,22 +1911,13 @@
    "news": "Magnitude 4.4 earthquake hits near downtown Los Angeles"
   },
   {
-   "term": "tank davis",
+   "term": "earthquake manhattan beach",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T05:30:00+00:00",
-   "url": "https://www.boxingscene.com/articles/gervonta-davis-and-jesse-bam-rodriguez-tease-unlikely-catchweight-showdown",
-   "news": "Gervonta Davis and Jesse ‘Bam’ Rodriguez tease unlikely catchweight showdown"
-  },
-  {
-   "term": "charles leclerc",
-   "geo": "GB",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T05:50:00+00:00",
-   "url": "https://www.espn.co.uk/f1/story/_/id/50472109/lewis-hamilton-charles-leclerc-ferrari-las-vegas-grand-prix-formula-1",
-   "news": "Ferrari's Lewis Hamilton and Charles Leclerc clash at Las Vegas Grand Prix"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T05:20:00+00:00",
+   "url": "https://abc7.com/post/preliminary-3-3-magnitude-quake-strikes-off-manhattan-beach-coast/20068667/",
+   "news": "Preliminary 3.3-magnitude quake strikes off Manhattan Beach coast"
   },
   {
    "term": "theresa may",
@@ -2449,24 +2431,6 @@
    "ts": "2026-11-23T04:50:00+00:00",
    "url": "https://www.skysports.com/rugby-union/news/13614677/england-vs-new-zealand-maro-itoje-says-lewis-moody-gave-team-lift-as-former-captain-joins-side-to-face-haka",
    "news": "England vs New Zealand: Maro Itoje says Lewis Moody gave team 'lift' as former captain joins side to face Haka"
-  },
-  {
-   "term": "domantas sabonis",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T05:40:00+00:00",
-   "url": "https://www.espn.com/video/clip/_/id/50559241/domantas-sabonis-fights-defender-1",
-   "news": "Domantas Sabonis fights off defender for and-1"
-  },
-  {
-   "term": "f1 standings",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T05:40:00+00:00",
-   "url": "https://www.bbc.co.uk/sport/formula1/articles/cqx2ex25pvn9o",
-   "news": "Las Vegas Grand Prix result: Max Verstappen wins extraordinary race as Lewis Hamilton and Charles Leclerc collide"
   },
   {
    "term": "lewis hamilton",
@@ -3297,40 +3261,13 @@
    "news": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City"
   },
   {
-   "term": "sonny dykes",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:30:00+00:00",
-   "url": "https://sports.yahoo.com/articles/elko-dykes-real-jeopardy-college-151713268.html",
-   "news": "Are Elko and Dykes in real jeopardy? Our college football panel weighs in on Hear Me Out"
-  },
-  {
-   "term": "ben stiller",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:30:00+00:00",
-   "url": "https://ew.com/john-legend-reacts-to-ben-stiller-singing-all-of-me-focker-in-law-12267582",
-   "news": "John Legend reacts to Ben Stiller singing ‘All of Me’ in Focker-in-Law : ‘They had Ariana Grande right there’"
-  },
-  {
-   "term": "mattia gta 6",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:30:00+00:00",
-   "url": "https://egamers.io/gta-6-day-release-yacht-guide-where-mattia-is-and-how-to-hit-all-three-champagne-bottles/",
-   "news": "GTA 6 Day Release yacht guide: where Mattia is and how to hit all three champagne bottles"
-  },
-  {
-   "term": "stevie wonder",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:50:00+00:00",
-   "url": "https://www.nytimes.com/2026/11/20/arts/music/stevie-wonder-songs-in-the-key-of-life-tour.html",
-   "news": "Playing ‘Key of Life,’ Stevie Wonder Invites All to Match His Joy"
+   "term": "welfare",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T05:20:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cvlyj3rn201xo",
+   "news": "Pip assessments need 'fundamental overhaul', report to say"
   },
   {
    "term": "poland russian missiles",
@@ -4638,13 +4575,13 @@
    "news": "Glenn Close and Ralph Fiennes Agree Their ‘Hunger Games’ Characters Had ‘a Thing’ (Exclusive)"
   },
   {
-   "term": "george russell",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T05:50:00+00:00",
-   "url": "https://www.formula1.com/en/video/2026-las-vegas-grand-prix-russell-and-verstappen-trade-lead.1882531463419115202",
-   "news": "2026 Las Vegas Grand Prix: Russell and Verstappen trade lead"
+   "term": "mattia gta 6",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T05:30:00+00:00",
+   "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mattia/",
+   "news": "Should you shake Mattia's hand in GTA 6?"
   },
   {
    "term": "powerball winner",
@@ -5043,6 +4980,33 @@
    "news": "Disney+ adds Storytime read-alongs and Nat Geo’s Greeking Out for kids"
   },
   {
+   "term": "fraud",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T04:40:00+00:00",
+   "url": "https://digiday.com/media-buying/the-rundown-badbox-3-0-the-ctv-ad-fraud-scheme-generating-40-billion-bid-requests-a-day/",
+   "news": "The Rundown: BADBOX 3.0, the CTV ad fraud scheme generating 40 billion bid requests a day"
+  },
+  {
+   "term": "china",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T04:40:00+00:00",
+   "url": "https://www.thetimes.com/comment/columnists/article/ageing-population-china-xi-jinping-ld82wr6pc",
+   "news": "Ageing population is China’s hidden crisis"
+  },
+  {
+   "term": "weight loss",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T05:00:00+00:00",
+   "url": "https://www.washingtonpost.com/health/2026/11/16/glp-1-weight-loss-drugs-have-big-cons-even-if-serious-problems-are-rare/",
+   "news": "The serious complications of GLP-1s that few may know about"
+  },
+  {
    "term": "kospi index",
    "geo": "GB",
    "traffic": "100+",
@@ -5050,7 +5014,25 @@
    "ts": "2026-11-23T05:10:00+00:00",
    "url": "https://www.reuters.com/world/asia-pacific/south-koreas-finance-minister-sees-solid-growth-next-year-flags-chip-volatility-2026-11-23/",
    "news": "South Korea vows to stabilise stock market after KOSPI drops 5%"
+  },
+  {
+   "term": "wielka brytania",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T05:10:00+00:00",
+   "url": "https://wiadomosci.wp.pl/wielka-brytania-nie-wroci-do-ue-brexit-stal-sie-faktem-7353814922631168a",
+   "news": "\"Brexit stał się faktem\". Była premier sprzeciwia się powrotowi do UE"
+  },
+  {
+   "term": "sydney sweeney",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T05:30:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cr4g1l7x52jno",
+   "news": "James Bond: Could Zendaya, Sydney Sweeney or Jodie Comer be the next Bond girl opposite Robert Pattinson?"
   }
  ],
- "updated": "2026-11-23T05:25:27.890184+00:00"
+ "updated": "2026-11-23T05:55:28.264166+00:00"
 }
