@@ -73,6 +73,15 @@
    "news": "Trực tiếp bóng đá Hà Tĩnh - Công an TP.HCM: Miệt mài tìm bàn mở tỉ số (V-League)"
   },
   {
+   "term": "park hang-seo",
+   "geo": "VN",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-22T23:20:00+00:00",
+   "url": "https://tuoitre.vn/cuu-tro-ly-cua-hlv-park-hang-seo-ra-mat-v-league-bang-that-bai-100261122210007107.htm",
+   "news": "Cựu trợ lý của HLV Park Hang Seo ra mắt V-League bằng thất bại"
+  },
+  {
    "term": "lịch âm",
    "geo": "VN",
    "traffic": "5000+",
@@ -80,15 +89,6 @@
    "ts": "2026-11-22T23:50:00+00:00",
    "url": "https://thanhnien.vn/lich-am-hom-nay-2111-ngay-ky-hoi-thang-ky-hoi-18526112010241135.htm",
    "news": "Lịch âm hôm nay 21.11: Ngày Kỷ Hợi, tháng Kỷ Hợi"
-  },
-  {
-   "term": "lionel messi",
-   "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T01:00:00+00:00",
-   "url": "https://baonghean.vn/en/inter-miami-thua-dam-tai-nu-stadium-columbus-crew-huong-niem-vui-10356355.html",
-   "news": "Inter Miami suffered a heavy defeat at Nu Stadium, while Columbus Crew celebrated a victory."
   },
   {
    "term": "sạt lở",
@@ -154,15 +154,6 @@
    "news": "Nhận định bóng đá Milan vs Frosinone, 00h00 ngày 23/11: Bắt nạt tân binh"
   },
   {
-   "term": "park hang-seo",
-   "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T23:20:00+00:00",
-   "url": "https://www.saostar.vn/sao-sport/hlv-park-hang-seo-bao-tin-vui-giua-luc-hlv-kim-sang-sik-sap-chia-tay-202611222357511234.html",
-   "news": "HLV Park Hang Seo báo tin vui giữa lúc HLV Kim Sang Sik hết hợp đồng"
-  },
-  {
    "term": "lich am",
    "geo": "VN",
    "traffic": "2000+",
@@ -181,13 +172,13 @@
    "news": "Giá cà phê hôm nay 23/11: Giá cà phê trong nước và thế giới ổn định"
   },
   {
-   "term": "viên chức",
+   "term": "ngày 24/11",
    "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://dantri.com.vn/noi-vu/nhom-can-bo-vien-chuc-duoc-de-xuat-huong-tro-cap-mot-lan-36-trieu-dong-20261121162153268.htm",
-   "news": "Nhóm cán bộ, viên chức được đề xuất hưởng trợ cấp một lần 36 triệu đồng"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T00:00:00+00:00",
+   "url": "https://dantri.com.vn/giai-tri/ngay-van-hoa-viet-nam-dung-doi-du-day-moi-nghi-den-huong-thu-van-hoa-20261120002222109.htm",
+   "news": "Ngày Văn hóa Việt Nam: Đừng đợi đủ đầy mới nghĩ đến hưởng thụ văn hóa"
   },
   {
    "term": "mỹ tâm",
@@ -350,24 +341,6 @@
    "ts": "2026-11-22T22:40:00+00:00",
    "url": "https://vietnamnet.vn/van-khan-ram-thang-10-am-lich-nam-2026-theo-truyen-thong-2577550.html",
    "news": "Văn khấn Rằm tháng 10 năm Bính Ngọ 2026 theo truyền thống"
-  },
-  {
-   "term": "pumas unam đấu với monterrey",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T01:00:00+00:00",
-   "url": "https://thethao247.vn/63-nhan-dinh-unam-pumas-vs-monterrey-ve-di-tiep-trong-tam-tay-ai-8h00-ngay-22-11-2026-c288-d446452.html",
-   "news": "Nhận định UNAM Pumas vs Monterrey: Vé đi tiếp trong tầm tay ai, 8h00 ngày 22/11/2026"
-  },
-  {
-   "term": "musiala",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://znews.vn/bayern-bi-to-quay-lung-voi-musiala-vi-tien-post1698204.html",
-   "news": "Bayern bị tố quay lưng với Musiala vì tiền"
   },
   {
    "term": "tigres đấu với américa",
@@ -820,6 +793,15 @@
    "news": "Lời khuyên cho 3 con giáp giàu có, may mắn nhất nửa cuối tháng 10 Âm lịch: Top 1 tăng mạnh tài sản ròng nhưng phải để ý tiểu nhân"
   },
   {
+   "term": "đà lạt",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T23:50:00+00:00",
+   "url": "https://dantri.com.vn/du-lich/ky-si-nguoi-kho-phong-ngua-vun-vut-duoi-chan-nui-langbiang-da-lat-20261121182017338.htm",
+   "news": "\"Kỵ sĩ\" người K'ho phóng ngựa vun vút dưới chân núi Langbiang Đà Lạt"
+  },
+  {
    "term": "24 tháng 11",
    "geo": "VN",
    "traffic": "200+",
@@ -998,15 +980,6 @@
    "ts": "2026-11-22T22:50:00+00:00",
    "url": "https://www.24h.com.vn/tin-tuc-trong-ngay/gieng-khoan-o-gia-lai-phun-cot-khi-va-nuoc-cao-gan-20m-suot-2-nam-phat-hien-thu-co-ham-luong-toi-819-c46a1813263.html",
    "news": "Giếng khoan ở Gia Lai phun cột khí và nước cao gần 20m suốt 2 năm, phát hiện thứ có hàm lượng tới 81,9%"
-  },
-  {
-   "term": "đà lạt",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T23:50:00+00:00",
-   "url": "https://dantri.com.vn/du-lich/ky-si-nguoi-kho-phong-ngua-vun-vut-duoi-chan-nui-langbiang-da-lat-20261121182017338.htm",
-   "news": "\"Kỵ sĩ\" người K'ho phóng ngựa vun vút dưới chân núi Langbiang Đà Lạt"
   },
   {
    "term": "rằm tháng 10",
@@ -1227,6 +1200,15 @@
    "news": "Black Friday Deals Are Already Rolling In — Here Are the Best | Reviews by Wirecutter"
   },
   {
+   "term": "cam skattebo",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-23T00:50:00+00:00",
+   "url": "https://www.nfl.com/news/aidan-hutchinson-lions-season-ending-injury-hold-down-the-fort",
+   "news": "Aidan Hutchinson's message to Lions after season-ending injury: 'Hold down the fort til I’m back, boys'"
+  },
+  {
    "term": "celtics vs kings",
    "geo": "US",
    "traffic": "5000+",
@@ -1369,15 +1351,6 @@
    "ts": "2026-11-23T00:30:00+00:00",
    "url": "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
    "news": "Celtics at Warriors: Boston looks to rebound after last-second loss"
-  },
-  {
-   "term": "madden cast",
-   "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T01:00:00+00:00",
-   "url": "https://www.espn.com/nfl/story/_/id/50549761/mark-davis-upset-father-portrayal-movie-madden",
-   "news": "Raiders' Mark Davis unhappy with 'unfair' image of his father in 'Madden' movie"
   },
   {
    "term": "utah state vs oregon state",
@@ -1821,31 +1794,31 @@
    "news": "A qué hora y dónde ver el Querétaro vs. Necaxa de la Jornada 17"
   },
   {
-   "term": "tony danza",
+   "term": "49ers game today",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T01:00:00+00:00",
-   "url": "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
-   "news": "Mario Lopez on working with his son and Tony Danza in 'Three Generations, One Christmas'"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/live-updates-score-highlights-minnesota-vikings-2/1981025/",
+   "news": "49ers vs. Vikings live updates: Brock Purdy faces top NFL defense in Mexico City"
   },
   {
-   "term": "tony",
+   "term": "vikings game today",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T01:00:00+00:00",
-   "url": "https://decider.com/2026/11/20/tony-hbo-max-review/",
-   "news": "Stream It Or Skip It: ‘Tony’ on HBO Max, a slice-of-a-life biopic starring Dominic Sessa as young Anthony Bourdain"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+   "news": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games"
   },
   {
-   "term": "new movies to stream",
+   "term": "fred warner",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://www.yahoo.com/entertainment/movies/article/new-movies-to-watch-this-weekend-see-the-hunger-games-sunrise-on-the-reaping-in-theaters-rent-or-buy-the-odyssey-stream-madden-on-prime-video-151646229.html",
-   "news": "New movies to watch this weekend: See 'The Hunger Games: Sunrise on the Reaping' in theaters, rent or buy 'The Odyssey,' stream 'Madden' on Prime Video"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T01:10:00+00:00",
+   "url": "https://www.vikings.com/news/aaron-jones-levi-drake-rodriguez-excitement-first-game-mexico",
+   "news": "Aaron Jones, Sr. & Levi Drake Rodriguez Share Excitement for Vikings 1st Game in Mexico"
   },
   {
    "term": "wild vs canucks",
@@ -2280,40 +2253,22 @@
    "news": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”"
   },
   {
-   "term": "general dynamics f-16 fighting falcon",
+   "term": "tj hockenson",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T01:00:00+00:00",
-   "url": "https://www.reuters.com/business/aerospace-defense/us-denies-iranian-account-that-missile-damaged-f-16-over-gulf-2026-11-21/",
-   "news": "US denies Iranian account that missile damaged F-16 over Gulf"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T00:50:00+00:00",
+   "url": "https://www.vikings.com/news/inactives-49ers-sunday-night-football-mexico-2026",
+   "news": "Vikings vs. 49ers Inactives for Week 11 of 2026"
   },
   {
-   "term": "ducks vs mammoth",
+   "term": "nbc",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://www.nhl.com/news/anaheim-ducks-utah-mammoth-game-preview-november-21-2026",
-   "news": "Ducks at Mammoth projected lineups"
-  },
-  {
-   "term": "paula patton",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://www.yahoo.com/entertainment/tv/articles/tracey-edmonds-previews-love-vineyard-182427793.html",
-   "news": "Tracey Edmonds previews ‘Love on the Vineyard’ premiering 11/21 on Lifetime"
-  },
-  {
-   "term": "spurs vs pelicans",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T01:10:00+00:00",
-   "url": "https://cwibc.co.id/en/spurs-adjust-rotations-harper-injury",
-   "news": "Spurs Adjust Rotations as Harper Misses Pelicans Matchup"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T01:10:00+00:00",
+   "url": "https://www.nytimes.com/2026/11/20/arts/music/bowen-yang-apology-antisemitic-slur-regina-spektor.html",
+   "news": "Bowen Yang Apologizes for Using an Antisemitic Slur on His Podcast"
   },
   {
    "term": "kraken vs sharks",
@@ -3063,6 +3018,15 @@
    "news": "Thunder's Micah Peavy: Starting Sunday"
   },
   {
+   "term": "jude law",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T00:00:00+00:00",
+   "url": "https://www.apple.com/tv-pr/news/2026/11/wild-things-led-by-jude-law-and-andrew-garfield-roars-onto-apple-tv-on-april-160/",
+   "news": "“Wild Things,” led by Jude Law and Andrew Garfield, roars onto Apple TV on April 16"
+  },
+  {
    "term": "blackhawks vs canucks",
    "geo": "US",
    "traffic": "500+",
@@ -3099,22 +3063,40 @@
    "news": "Steve Campbell Returns to Central Arkansas as Head Football Coach"
   },
   {
-   "term": "miss universo 2026",
+   "term": "afc south",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T01:00:00+00:00",
-   "url": "https://www.foxnews.com/entertainment/beauty-queen-stripped-miss-usa-crown-hidden-husband-kids-unexpected-spotlight-decades-later",
-   "news": "Beauty queen stripped of Miss USA crown over hidden husband, kids gets unexpected spotlight decades later"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T00:50:00+00:00",
+   "url": "https://www.al.com/nfl/2026/11/will-anderson-talks-about-big-night-in-afc-south-showcase-game.html",
+   "news": "Will Anderson talks about big night in AFC South showcase game"
   },
   {
-   "term": "ridley scott",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T01:20:00+00:00",
-   "url": "https://collider.com/alien-ridley-scott-leaving-netflix-december-2026/",
-   "news": "Ridley Scott’s Sci-Fi Masterpiece Is Officially Being Removed From Netflix"
+   "term": "jordan mason",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://bsinews.id/en/aaron-jones-week-eleven-fantasy",
+   "news": "Fantasy Analysts Urge Managers to Bench Aaron Jones in Week 11"
+  },
+  {
+   "term": "rachael leigh cook",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/tv/articles/rachael-leigh-cook-plays-twins-212605934.html",
+   "news": "Rachael Leigh Cook Plays Twins In Her New Hallmark Movie. I’m Surprised At What Weirded Her Out"
+  },
+  {
+   "term": "dea",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://www.dea.gov/press-releases/2026/11/20/ebrso-and-dea-dismantle-large-scale-nitazene-laboratory-baton-rouge",
+   "news": "EBRSO and DEA Dismantle Large-scale Nitazene Laboratory in Baton Rouge"
   },
   {
    "term": "timberwolves vs grizzlies",
@@ -4521,15 +4503,6 @@
    "news": "France’s 1.6% SMIC hike on 1 December reshapes the minimum wage benchmark for Africa"
   },
   {
-   "term": "jude law",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-23T00:00:00+00:00",
-   "url": "https://www.apple.com/tv-pr/news/2026/11/wild-things-led-by-jude-law-and-andrew-garfield-roars-onto-apple-tv-on-april-160/",
-   "news": "“Wild Things,” led by Jude Law and Andrew Garfield, roars onto Apple TV on April 16"
-  },
-  {
    "term": "estadio banorte",
    "geo": "US",
    "traffic": "200+",
@@ -4564,6 +4537,24 @@
    "ts": "2026-11-23T00:40:00+00:00",
    "url": "https://www.espn.com/video/clip/_/id/50567273/noah-ostlund-lights-lamp-sabres",
    "news": "Noah Ostlund lights the lamp for Sabres"
+  },
+  {
+   "term": "nvidia stocks",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T00:50:00+00:00",
+   "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
+   "news": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis"
+  },
+  {
+   "term": "49ers vs vikings",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://www.nfl.com/news/vikings-vs-49ers-3-must-know-storylines-for-nfl-week-11-mexico-city-game-on-sunday-night-football",
+   "news": "Vikings vs. 49ers: 3 must-know storylines for NFL Week 11 Mexico City game on 'Sunday Night Football'"
   },
   {
    "term": "scarlett johansson",
@@ -5005,7 +4996,16 @@
    "ts": "2026-11-23T00:30:00+00:00",
    "url": "https://www.nytimes.com/athletic/7803186/2026/11/22/nuggets-vs-bulls-stream-how-to-watch-nov-22/",
    "news": "How to watch Nuggets vs. Bulls: TV channel and streaming options for November 22"
+  },
+  {
+   "term": "doomsday",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
+   "news": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”"
   }
  ],
- "updated": "2026-11-23T00:55:26.744645+00:00"
+ "updated": "2026-11-23T01:25:22.386256+00:00"
 }
