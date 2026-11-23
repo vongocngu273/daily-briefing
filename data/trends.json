@@ -577,13 +577,13 @@
    "news": "Lý do Văn Toàn \"mất tích\" trong đội hình Nam Định từ đầu mùa"
   },
   {
-   "term": "thể dục",
+   "term": "sóng ở đáy sông",
    "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://dantri.com.vn/suc-khoe/can-tap-the-duc-bao-nhieu-de-duy-tri-suc-khoe-khi-ve-gia-20261118155052792.htm",
-   "news": "Cần tập thể dục bao nhiêu để duy trì sức khỏe khi về già?"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:40:00+00:00",
+   "url": "https://dantri.com.vn/giai-tri/song-o-day-song-phan-2-xuan-bac-muon-nhan-vat-nui-phai-kho-hon-nua-20261123094120464.htm",
+   "news": "Sóng ở đáy sông phần 2: Xuân Bắc muốn nhân vật Núi phải “khổ hơn nữa”"
   },
   {
    "term": "lụt",
@@ -829,15 +829,6 @@
    "news": "Bữa cơm nhà của Hoa hậu Nguyễn Yến Trang"
   },
   {
-   "term": "sóng ở đáy sông",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-23T02:40:00+00:00",
-   "url": "https://www.24h.com.vn/giai-tri/cuc-truong-xuan-bac-se-tro-lai-voi-vai-nui-trong-song-o-day-song-phan-2-c731a1813360.html",
-   "news": "Cục trưởng Xuân Bắc sẽ trở lại với vai Núi trong 'Sóng ở đáy sông' phần 2"
-  },
-  {
    "term": "s27 ultra",
    "geo": "VN",
    "traffic": "100+",
@@ -1043,6 +1034,15 @@
    "ts": "2026-11-23T02:40:00+00:00",
    "url": "https://vnexpress.net/me-con-cuu-chu-tich-sen-tai-thu-ra-toa-trong-vu-lua-dao-nghin-ty-5147715.html",
    "news": "Mẹ con cựu Chủ tịch Sen Tài Thu ra tòa trong vụ lừa đảo nghìn tỷ"
+  },
+  {
+   "term": "hợp đồng",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T03:30:00+00:00",
+   "url": "https://lsvn.vn/hop-dong-mua-ban-nha-o-hinh-thanh-trong-tuong-lai-tu-thuc-tien-tai-tp-ho-chi-minh-a182932.html",
+   "news": "Hợp đồng mua bán nhà ở hình thành trong tương lai từ thực tiễn tại TP. Hồ Chí Minh"
   }
  ],
  "world": [
@@ -1254,22 +1254,13 @@
    "news": "Aidan Hutchinson's message to Lions after season-ending injury: 'Hold down the fort til I’m back, boys'"
   },
   {
-   "term": "victor wembanyama",
+   "term": "lost",
    "geo": "US",
-   "traffic": "5000+",
-   "score": 5000,
-   "ts": "2026-11-22T03:30:00+00:00",
-   "url": "https://www.espn.com/nba/recap/_/gameId/401910027",
-   "news": "Spurs 114-91 Pelicans (Nov 21, 2026) Game Recap"
-  },
-  {
-   "term": "apple tv",
-   "geo": "US",
-   "traffic": "5000+",
-   "score": 5000,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/",
-   "news": "A Guide to the Best Black Friday Streaming Deals: See Platforms, Prices & Plans for Less"
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-23T03:30:00+00:00",
+   "url": "https://www.espn.com/college-football/story/_/id/50563638/no-big-ten-football-teams-ap-top-5-first-21",
+   "news": "No Big Ten football teams in AP top 5 for first time since 2021"
   },
   {
    "term": "college football georgia standings",
@@ -1423,51 +1414,6 @@
    "ts": "2026-11-23T03:00:00+00:00",
    "url": "https://sports.yahoo.com/articles/cut-eyelids-off-mike-tomlin-013424625.html",
    "news": "\"They Cut Their Eyelids Off\": Mike Tomlin Responds to Todd Monken's Fiery \"They've Never Blinked\" Message After Browns' Win Over Texans"
-  },
-  {
-   "term": "keanu reeves",
-   "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T03:30:00+00:00",
-   "url": "https://www.vogue.com/article/kim-kardashian-is-dressing-for-team-lewis-hamilton-2026-11-21",
-   "news": "Kim Kardashian Is Dressing for Team Lewis Hamilton"
-  },
-  {
-   "term": "f1 schedule",
-   "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://www.formula1.com/en/latest/article/strategy-guide-what-are-the-tactical-options-for-the-las-vegas-gp.4k41CN1CbogRoqk1kkOb9C",
-   "news": "What are the tyre strategy options for the Las Vegas GP?"
-  },
-  {
-   "term": "las vegas gp",
-   "geo": "GB",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
-   "news": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix"
-  },
-  {
-   "term": "f1 tv",
-   "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T03:50:00+00:00",
-   "url": "https://www.formula1.com/en/latest/article/strategy-guide-what-are-the-tactical-options-for-the-las-vegas-gp.4k41CN1CbogRoqk1kkOb9C",
-   "news": "What are the tyre strategy options for the Las Vegas GP?"
-  },
-  {
-   "term": "drew mestemaker",
-   "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-22T03:50:00+00:00",
-   "url": "https://sports.yahoo.com/articles/drew-mestemaker-injury-oklahoma-state-120354777.html",
-   "news": "Drew Mestemaker injury update: Is Oklahoma State football QB playing vs Arizona State?"
   },
   {
    "term": "f1 las vegas",
@@ -1875,6 +1821,15 @@
    "news": "Aaron Jones, Sr. & Levi Drake Rodriguez Share Excitement for Vikings 1st Game in Mexico"
   },
   {
+   "term": "49ers",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T01:40:00+00:00",
+   "url": "https://www.nfl.com/news/vikings-vs-49ers-3-must-know-storylines-for-nfl-week-11-mexico-city-game-on-sunday-night-football",
+   "news": "Vikings vs. 49ers: 3 must-know storylines for NFL Week 11 Mexico City game on 'Sunday Night Football'"
+  },
+  {
    "term": "samuel montembeault",
    "geo": "US",
    "traffic": "2000+",
@@ -1911,22 +1866,22 @@
    "news": "NFL Mexico City Game Halftime Show 2026: Here's Where to Watch The Warning Perform Live Online Free"
   },
   {
-   "term": "jack whitehall",
+   "term": "kospi",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://www.chad.co.uk/whats-on/jack-whitehall-ending-2026-by-being-a-bad-influence-in-nottingham-9365050",
-   "news": "Jack Whitehall ending 2026 by being a Bad Influence in Nottingham"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T03:10:00+00:00",
+   "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount",
+   "news": "South Korea’s stock market tumbles as AI bubble fears mount"
   },
   {
-   "term": "donald sutherland",
+   "term": "brandin cooks",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://www.toy-people.com/en/?p=116835",
-   "news": "\"Ad Astra\" Earned Raves, but James Gray Has Disowned It for Years — Now He Wants a Shorter Director's Cut After Brad Pitt Pushed Changes"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T03:40:00+00:00",
+   "url": "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
+   "news": "San Francisco 49ers Suddenly Cut Veteran Wide Receiver Before Vikings Game"
   },
   {
    "term": "arvid lindblad",
@@ -2406,40 +2361,13 @@
    "news": "Marshals Revisits Kayce And Monica's Most Tragic Yellowstone Storyline In Season 2"
   },
   {
-   "term": "boubacar traore",
+   "term": "meritage hospitality group wendy closures",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T03:30:00+00:00",
-   "url": "https://sports.yahoo.com/articles/way-too-early-2027-nfl-170006243.html",
-   "news": "Way-Too-Early 2027 NFL Draft EDGE Rankings: 2 Elite Prospects Stealing the Spotlight"
-  },
-  {
-   "term": "las vegas weather",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://www.mercedesamgf1.com/news/rain-clouds-opening-day-picture-in-las-vegas",
-   "news": "2026 Las Vegas Grand Prix: Rain Clouds Opening Day Picture in Las Vegas"
-  },
-  {
-   "term": "zach lavine",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://www.fantasypros.com/nba/news/621666/zach-lavine-fills-stat-sheet-friday-against-lakers.php",
-   "news": "Zach LaVine fills stat sheet Friday against Lakers"
-  },
-  {
-   "term": "nba scores",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T03:50:00+00:00",
-   "url": "https://www.nytimes.com/athletic/7792284/2026/11/19/this-week-in-sports-trivia-november-19-2026/",
-   "news": "This Week in Sports Trivia: Nov. 19, 2026"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T03:30:00+00:00",
+   "url": "https://www.fastcompany.com/91633391/wendys-store-closures-update-list-of-locations-franchise-downfall",
+   "news": "Wendy’s store closures hit close to 100 locations in franchisee downfall: See the latest list"
   },
   {
    "term": "sam hauser",
@@ -3279,13 +3207,49 @@
    "news": "‘Line of Fire’ Episode 8 Recap and Ending Explained: Secrets Pile Up for the Hollingsworths"
   },
   {
-   "term": "avery johnson",
+   "term": "martin short",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T03:30:00+00:00",
-   "url": "https://247sports.com/college/kansas-state/article/kansas-state-college-football-basketball-k-state-big-12-daily-delivery-collin-klein-tim-fitzgerald-big-12-nil-avery-johnson-fifth-year-292953836/",
-   "news": "Will Avery Johnson return to Kansas State for his final season? | Daily Delivery"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T03:20:00+00:00",
+   "url": "https://www.allrecipes.com/martin-shorts-comfort-food-12265014",
+   "news": "Martin Short’s Go-To Comfort Food Makes Us Love Him Even More"
+  },
+  {
+   "term": "the mosquito bowl",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T03:20:00+00:00",
+   "url": "https://bookandfilmglobe.com/film/taking-a-dunk-in-the-mosquito-bowl/",
+   "news": "Taking a Dunk in ‘The Mosquito Bowl’"
+  },
+  {
+   "term": "karl-anthony towns",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T03:30:00+00:00",
+   "url": "https://nypost.com/2026/11/22/sports/karl-anthony-towns-draws-praise-from-another-former-coach/",
+   "news": "Karl-Anthony Towns draws praise from another former coach"
+  },
+  {
+   "term": "roman kantserov",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T03:30:00+00:00",
+   "url": "https://www.fantasypros.com/nhl/news/622033/roman-kantserov-notches-two-points-saturdays-win-over-flames.php",
+   "news": "Roman Kantserov notches two points in Saturday's win over Flames"
+  },
+  {
+   "term": "josh hart",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T03:40:00+00:00",
+   "url": "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers",
+   "news": "Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers"
   },
   {
    "term": "nina dobrev",
@@ -3511,15 +3475,6 @@
    "ts": "2026-11-22T06:10:00+00:00",
    "url": "https://www.cbssports.com/college-football/news/pac-12-championship-game-scenarios-boise-state-texas-state-oregon-state-san-diego-state/",
    "news": "Pac-12 Championship Game scenarios: Three teams alive for a date with No. 1 seed Boise State"
-  },
-  {
-   "term": "brandin cooks",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T06:10:00+00:00",
-   "url": "https://sports.yahoo.com/articles/49ers-waive-ex-bills-saints-214011514.html",
-   "news": "49ers waive ex-Bills, Saints WR with 9,869 career receiving yards"
   },
   {
    "term": "wsu basketball",
@@ -4656,15 +4611,6 @@
    "news": "49ers' Brock Purdy and Wife Jenna Share Powerful Message That Goes Far Beyond Football"
   },
   {
-   "term": "49ers",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-23T01:40:00+00:00",
-   "url": "https://www.nfl.com/videos/purdy-s-29-yard-connection-with-mike-evans-provides-49ers-with-red-zone-access",
-   "news": "Purdy's 29-yard connection with Mike Evans provides 49ers with red-zone access"
-  },
-  {
    "term": "princess eugenie",
    "geo": "GB",
    "traffic": "200+",
@@ -4737,22 +4683,13 @@
    "news": "Mike Brown on Landry Shamet: He should be Sixth Man of the Year, it's not close"
   },
   {
-   "term": "mavericks vs clippers",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T03:30:00+00:00",
-   "url": "https://www.espn.co.uk/nba/game/_/gameId/401910025",
-   "news": "Mavericks 110-100 Clippers (22 Nov, 2026) Final Score"
-  },
-  {
-   "term": "colin farrell",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T03:40:00+00:00",
-   "url": "https://www.theguardian.com/tv-and-radio/2026/nov/20/the-seven-best-films-to-watch-on-tv-this-week",
-   "news": "The Slightest Touch to California Schemin’: the seven best films to watch on TV this week"
+   "term": "utah valley basketball",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T03:40:00+00:00",
+   "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
+   "news": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix"
   },
   {
    "term": "nicola coughlan",
@@ -5169,5 +5106,5 @@
    "news": "Ex-WWE Champ Jack Swagger Suffers Permanent Vision Damage After Serious Power Slap Injury"
   }
  ],
- "updated": "2026-11-23T03:25:31.146024+00:00"
+ "updated": "2026-11-23T03:55:22.504997+00:00"
 }
