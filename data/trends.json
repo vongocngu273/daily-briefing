@@ -91,6 +91,15 @@
    "news": "Lịch âm hôm nay 21.11: Ngày Kỷ Hợi, tháng Kỷ Hợi"
   },
   {
+   "term": "giá vàng doji hôm nay",
+   "geo": "VN",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://vnexpress.net/gia-vang-co-the-giam-tiep-5147695.html",
+   "news": "Giá vàng có thể giảm tiếp"
+  },
+  {
    "term": "sạt lở",
    "geo": "VN",
    "traffic": "2000+",
@@ -343,6 +352,15 @@
    "news": "Văn khấn Rằm tháng 10 năm Bính Ngọ 2026 theo truyền thống"
   },
   {
+   "term": "24 tháng 11",
+   "geo": "VN",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T00:30:00+00:00",
+   "url": "https://hdgmvietnam.com/chi-tiet/nguyen-gam-cung-cac-thanh-ngay-24-thang-11--le-trong-mung-cac-thanh-tu-dao-viet-nam",
+   "news": "Nguyện gẫm cùng các thánh: Ngày 24 tháng 11 - Lễ trọng mừng Các Thánh Tử đạo Việt Nam"
+  },
+  {
    "term": "đội tuyển bóng đá u-17 quốc gia argentina",
    "geo": "VN",
    "traffic": "1000+",
@@ -550,22 +568,22 @@
    "news": "Thời tiết miền Bắc sắp mưa trở lại, rét nhất dưới 10 độ C"
   },
   {
-   "term": "24 tháng 11",
+   "term": "sao mai",
    "geo": "VN",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-23T00:30:00+00:00",
-   "url": "https://hdgmvietnam.com/chi-tiet/nguyen-gam-cung-cac-thanh-ngay-24-thang-11--le-trong-mung-cac-thanh-tu-dao-viet-nam",
-   "news": "Nguyện gẫm cùng các thánh: Ngày 24 tháng 11 - Lễ trọng mừng Các Thánh Tử đạo Việt Nam"
+   "ts": "2026-11-23T01:10:00+00:00",
+   "url": "https://tuoitre.vn/khanh-an-thi-sinh-nho-tuoi-nhat-la-quan-quan-sao-mai-2026-100261123065526923.htm",
+   "news": "Khánh An, thí sinh nhỏ tuổi nhất, là quán quân Sao Mai 2026"
   },
   {
-   "term": "lê hãn",
+   "term": "lại lý huynh",
    "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T02:20:00+00:00",
-   "url": "https://www.qdnd.vn/ban-doc/tin-buon/dong-chi-dai-ta-le-han-tu-tran-1065662",
-   "news": "Đồng chí Đại tá LÊ HÃN từ trần"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://tuoitre.vn/vo-dich-co-tuong-the-gioi-nhung-lai-ly-huynh-gap-kho-truoc-cac-ky-thu-viet-nam-100261122221543133.htm",
+   "news": "Vô địch cờ tướng thế giới nhưng Lại Lý Huynh gặp khó trước các kỳ thủ Việt Nam"
   },
   {
    "term": "hồng đào",
@@ -820,6 +838,15 @@
    "news": "Lý do Văn Toàn \"mất tích\" trong đội hình Nam Định từ đầu mùa"
   },
   {
+   "term": "chứng khoán",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T02:10:00+00:00",
+   "url": "https://vnexpress.net/khoi-ngoai-ban-rong-chung-khoan-vuot-ky-luc-nam-2025-5147536.html",
+   "news": "Khối ngoại bán ròng chứng khoán vượt kỷ lục năm 2025"
+  },
+  {
    "term": "wellington đấu với câu lạc bộ bóng đá macarthur",
    "geo": "VN",
    "traffic": "100+",
@@ -1016,6 +1043,15 @@
    "ts": "2026-11-23T01:30:00+00:00",
    "url": "https://thanhnien.vn/pho-lon-hem-nho-rop-co-to-quoc-mung-ngay-van-hoa-viet-nam-185261122160319298.htm",
    "news": "Phố lớn, hẻm nhỏ rợp cờ Tổ quốc mừng ngày Văn hóa Việt Nam"
+  },
+  {
+   "term": "whitecaps đấu với salt lake",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T02:10:00+00:00",
+   "url": "https://bongda24h.vn/nhan-dinh-bong-da/du-doan-vancouver-whitecaps-vs-real-salt-lake-hom-nay-344-465218.html",
+   "news": "Nhận định Vancouver Whitecaps vs Real Salt Lake 8h30 ngày 23/11 (Nhà nghề Mỹ 2026)"
   }
  ],
  "world": [
@@ -1216,15 +1252,6 @@
    "ts": "2026-11-23T00:50:00+00:00",
    "url": "https://www.nfl.com/news/aidan-hutchinson-lions-season-ending-injury-hold-down-the-fort",
    "news": "Aidan Hutchinson's message to Lions after season-ending injury: 'Hold down the fort til I’m back, boys'"
-  },
-  {
-   "term": "celtics vs kings",
-   "geo": "US",
-   "traffic": "5000+",
-   "score": 5000,
-   "ts": "2026-11-22T02:00:00+00:00",
-   "url": "https://sports.yahoo.com/articles/celtics-receive-favorable-injury-news-010128201.html",
-   "news": "Celtics Receive Favorable Injury News Just Before Kings Game"
   },
   {
    "term": "victor wembanyama",
@@ -1821,6 +1848,15 @@
    "news": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games"
   },
   {
+   "term": "49ers vs vikings",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://www.nfl.com/news/vikings-vs-49ers-3-must-know-storylines-for-nfl-week-11-mexico-city-game-on-sunday-night-football",
+   "news": "Vikings vs. 49ers: 3 must-know storylines for NFL Week 11 Mexico City game on 'Sunday Night Football'"
+  },
+  {
    "term": "fred warner",
    "geo": "US",
    "traffic": "2000+",
@@ -1830,13 +1866,22 @@
    "news": "Aaron Jones, Sr. & Levi Drake Rodriguez Share Excitement for Vikings 1st Game in Mexico"
   },
   {
-   "term": "wild vs canucks",
+   "term": "samuel montembeault",
    "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T02:10:00+00:00",
-   "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-21-2026",
-   "news": "NHL On Tap: White-hot Wild eye sixth win in row, point in 14th straight"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T01:50:00+00:00",
+   "url": "https://www.rds.ca/hockey/canadiens/article/le-ch-envoie-hage-et-un-gros-pactole-pour-larkin/",
+   "news": "Le CH envoie Hage et un gros pactole pour Larkin"
+  },
+  {
+   "term": "kevin o'connell",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://www.profootballrumors.com/2026/11/jets-may-pursue-vikings-hc-kevin-oconnell-sean-mcdermott-seen-as-likely-hire",
+   "news": "Jets To Pursue Vikings HC Kevin O'Connell? Sean McDermott Seen As Legitimate HC Target For New York"
   },
   {
    "term": "product recall",
@@ -2307,31 +2352,22 @@
    "news": "Fantasy football Week 11 inactives: Who's in and who's out?"
   },
   {
-   "term": "kraken vs sharks",
+   "term": "kirk cousins wife",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T02:10:00+00:00",
-   "url": "https://sports.yahoo.com/articles/seattle-kraken-travel-san-jose-231017347.html",
-   "news": "Seattle Kraken Travel to San Jose: Projected Lines, Game Notes, and How to Watch (Nov. 21)"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T01:50:00+00:00",
+   "url": "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+   "news": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games"
   },
   {
-   "term": "university of utah football",
+   "term": "jack nicklaus",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T02:10:00+00:00",
-   "url": "https://www.deseret.com/sports/2026/11/21/cougars-and-utes-hit-the-road-saturday-a-dangerous-place-for-the-hunted/",
-   "news": "Cougars and Utes hit the road Saturday — a place where no guarantees are granted"
-  },
-  {
-   "term": "dele alli",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T02:20:00+00:00",
-   "url": "https://www.theguardian.com/football/2026/nov/20/dele-alli-tottenham-mk-dons-england",
-   "news": "Training hard and biding his time, Dele Alli has not given up on football yet"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://sports.yahoo.com/articles/jack-nicklaus-had-plans-historic-183523864.html",
+   "news": "Jack Nicklaus had plans for historic Florida municipal golf course. What happened?"
   },
   {
    "term": "josh hart",
@@ -3108,6 +3144,15 @@
    "news": "Will Anderson talks about big night in AFC South showcase game"
   },
   {
+   "term": "nvidia stocks",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T00:50:00+00:00",
+   "url": "https://www.forbes.com/sites/jimosman/2026/11/22/nvidia-stock-has-a-cockroach-problem-what-comes-next-could-be-worse/",
+   "news": "Nvidia Stock Has A Cockroach Problem. What Comes Next Could Be Worse"
+  },
+  {
    "term": "jordan mason",
    "geo": "US",
    "traffic": "500+",
@@ -3133,15 +3178,6 @@
    "ts": "2026-11-23T01:00:00+00:00",
    "url": "https://www.dea.gov/press-releases/2026/11/20/ebrso-and-dea-dismantle-large-scale-nitazene-laboratory-baton-rouge",
    "news": "EBRSO and DEA Dismantle Large-scale Nitazene Laboratory in Baton Rouge"
-  },
-  {
-   "term": "49ers vs vikings",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-23T01:00:00+00:00",
-   "url": "https://www.nfl.com/news/vikings-vs-49ers-3-must-know-storylines-for-nfl-week-11-mexico-city-game-on-sunday-night-football",
-   "news": "Vikings vs. 49ers: 3 must-know storylines for NFL Week 11 Mexico City game on 'Sunday Night Football'"
   },
   {
    "term": "marines",
@@ -3189,58 +3225,49 @@
    "news": "MLS: Chicago Fire - Charlotte FC"
   },
   {
-   "term": "is zion williamson playing tonight",
+   "term": "terrell owens",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T02:00:00+00:00",
-   "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/nor-starts-fears-jones-bey-queen-missi",
-   "news": "NOR starts Fears, Jones, Bey, Queen, Missi"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://sports.yahoo.com/articles/terrell-owens-bought-moorestown-n-153300721.html",
+   "news": "Terrell Owens bought a Moorestown, N.J. mansion in 2004 for $3.9 million; six years later, he sold it for $1.7 million"
   },
   {
-   "term": "morelia vs la paz",
+   "term": "josh giddey",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T02:00:00+00:00",
-   "url": "https://www.soyfutbol.com/en/leagues/silver-throne-showdown-morelia-and-la-paz-kick-off-the-expansion-league-finalwhos-taking-the-crown-20261121-0062.html",
-   "news": "Silver Throne Showdown: Morelia and La Paz Kick Off the Expansion League Final—Who’s Taking the Crown?"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://chicago.suntimes.com/bulls/2026/11/20/josh-giddey-at-point-guard-this-experiment-is-not-going-to-end-well",
+   "news": "Josh Giddey at point guard? This experiment is not going to end well"
   },
   {
-   "term": "ryan garcia",
+   "term": "is keenan allen playing",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T02:00:00+00:00",
-   "url": "https://www.si.com/prediction-markets/floyd-mayweather-jr-vs-ryan-garcia-fight-date-waiting-game-continues-01m7wmj4hhgr",
-   "news": "Floyd Mayweather Jr. vs Ryan Garcia Fight Date: Waiting Game Continues"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://www.nbcsports.com/fantasy/football/news/fantasy-football-usage-report-keenan-allen-steps-into-immediate-role-with-49ers",
+   "news": "Fantasy Football Usage Report: Keenan Allen steps into immediate role with 49ers"
   },
   {
-   "term": "kurt russell",
+   "term": "raheem morris",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T02:00:00+00:00",
-   "url": "https://movieweb.com/rivals-of-amziah-king-hulu-date/",
-   "news": "Matthew McConaughey's New R-Rated Western Thriller Officially Confirms Streaming Release Date"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:10:00+00:00",
+   "url": "https://sports.yahoo.com/articles/tom-brady-answers-whether-san-160500176.html",
+   "news": "Tom Brady answers whether San Francisco 49ers fans should be concerned about their defence"
   },
   {
-   "term": "gta 6 mission list",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T02:00:00+00:00",
-   "url": "https://www.radiotimes.com/technology/gaming/gta-6-how-long-hours/",
-   "news": "How long is GTA 6? We asked the developers how many hours it'll take to beat"
-  },
-  {
-   "term": "ashton daniels",
+   "term": "deebo samuel sr.",
    "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T02:10:00+00:00",
-   "url": "https://chopchat.com/grading-ashton-daniels-two-interception-performance-in-week-12-against-nc-state",
-   "news": "Grading Ashton Daniels' two-interception performance in Week 12 against NC State"
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:10:00+00:00",
+   "url": "https://www.rotoballer.com/who-should-i-start-for-week-11-deebo-samuel-sr-jordan-mason-aaron-jones-sr-keenan-allen-kaelon-black-myles-price-mike-evans-jauan-jennings-justin-jefferson/2000139",
+   "news": "Who Should I Start for Fantasy Football Week 11? Deebo Samuel Sr., Jordan Mason, Aaron Jones Sr., Keenan Allen, Kaelon Black, Myles Price, Mike Evans, Jauan Jennings, Justin Jefferson"
   },
   {
    "term": "emergency operations center",
@@ -4629,13 +4656,13 @@
    "news": "Noah Ostlund lights the lamp for Sabres"
   },
   {
-   "term": "nvidia stocks",
+   "term": "doomsday",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-23T00:50:00+00:00",
-   "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
-   "news": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis"
+   "ts": "2026-11-23T01:00:00+00:00",
+   "url": "https://variety.com/2026/film/news/hailee-steinfeld-avengers-doomsday-kate-bishop-1236955585/",
+   "news": "'Avengers: Doomsday' Adds Hailee Steinfeld as Kate Bishop to Cast"
   },
   {
    "term": "warriors vs celtics",
@@ -4672,6 +4699,42 @@
    "ts": "2026-11-23T01:40:00+00:00",
    "url": "https://www.si.com/onsi/athlete-lifestyle/49ers-brock-purdy-and-wife-jenna-share-powerful-message-that-goes-far-beyond-football",
    "news": "49ers' Brock Purdy and Wife Jenna Share Powerful Message That Goes Far Beyond Football"
+  },
+  {
+   "term": "princess eugenie",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T01:50:00+00:00",
+   "url": "https://www.aol.co.uk/articles/princess-eugenies-unofficial-christmas-role-130900000.html",
+   "news": "Princess Eugenie's unofficial Christmas role that has been passed to this one royal"
+  },
+  {
+   "term": "rockstar games",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T01:50:00+00:00",
+   "url": "https://www.videogameschronicle.com/news/rockstar-explains-why-you-cant-play-darts-in-gta-6-we-dont-have-unlimited-time/",
+   "news": "Rockstar explains why you can’t play darts in GTA 6: ‘We don’t have unlimited time’"
+  },
+  {
+   "term": "penta wwe",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://bleacherreport.com/articles/25536633-george-kittle-pays-tribute-wwes-penta-mask-video-ahead-49ers-vikings-mexico-city",
+   "news": "George Kittle Pays Tribute to WWE's Penta With Mask in Video Ahead of 49ers-Vikings in Mexico City"
+  },
+  {
+   "term": "poundland",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T02:00:00+00:00",
+   "url": "https://www.bbc.co.uk/news/articles/cm4g10p2r0g9o",
+   "news": "What is going on with Poundland?"
   },
   {
    "term": "scarlett johansson",
@@ -5104,16 +5167,7 @@
    "ts": "2026-11-23T00:00:00+00:00",
    "url": "https://observer.co.uk/news/national/article/met-deputy-rejects-few-bad-apples-theory-after-1800-staff-drummed-out",
    "news": "Met deputy rejects ‘few bad apples’ theory after 1,800 staff drummed out"
-  },
-  {
-   "term": "doomsday",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-23T01:00:00+00:00",
-   "url": "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
-   "news": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”"
   }
  ],
- "updated": "2026-11-23T01:55:30.792097+00:00"
+ "updated": "2026-11-23T02:25:26.342811+00:00"
 }
