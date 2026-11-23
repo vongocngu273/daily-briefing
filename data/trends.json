@@ -172,15 +172,6 @@
    "news": "Lịch âm hôm nay 21.11: Ngày Kỷ Hợi, tháng Kỷ Hợi"
   },
   {
-   "term": "đội tuyển bóng đá u-17 quốc gia new zealand",
-   "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T00:10:00+00:00",
-   "url": "https://vietnamnet.vn/u17-viet-nam-dau-new-zealand-hlv-roland-can-mot-loi-giai-khac-2577447.html",
-   "news": "U17 Việt Nam đấu New Zealand: HLV Cristiano Roland cần một lời giải khác"
-  },
-  {
    "term": "đội tuyển bóng đá u 17 quốc gia new zealand",
    "geo": "VN",
    "traffic": "1000+",
@@ -595,15 +586,6 @@
    "news": "Thời tiết miền Bắc sắp mưa trở lại, rét nhất dưới 10 độ C"
   },
   {
-   "term": "động đất",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T00:20:00+00:00",
-   "url": "https://tuoitre.vn/dong-dat-lon-lien-tiep-o-trung-quoc-indonesia-va-peru-100261121200540904.htm",
-   "news": "Động đất lớn liên tiếp ở Trung Quốc, Indonesia và Peru"
-  },
-  {
    "term": "vàng sjc giá vàng",
    "geo": "VN",
    "traffic": "200+",
@@ -800,6 +782,15 @@
    "ts": "2026-11-22T22:50:00+00:00",
    "url": "https://tuoitre.vn/chi-1-nen-bong-da-dong-nam-a-gianh-ve-du-du-4-vong-chung-ket-chau-a-nam-2027-10026112112150595.htm",
    "news": "Chỉ 1 nền bóng đá Đông Nam Á giành vé dự đủ 4 vòng chung kết châu Á năm 2027"
+  },
+  {
+   "term": "the thao",
+   "geo": "VN",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-22T23:00:00+00:00",
+   "url": "https://vnexpress.net/anh-vien-thua-o-chung-ket-boi-dai-hoi-the-thao-toan-quoc-5147719.html",
+   "news": "Ánh Viên thua ở chung kết bơi Đại hội Thể thao toàn quốc"
   },
   {
    "term": "nashville đấu với cincinnati",
@@ -1018,15 +1009,6 @@
    "news": "Giếng khoan ở Gia Lai phun cột khí và nước cao gần 20m suốt 2 năm, phát hiện thứ có hàm lượng tới 81,9%"
   },
   {
-   "term": "the thao",
-   "geo": "VN",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T23:00:00+00:00",
-   "url": "https://znews.vn/anh-vien-thua-my-tien-o-noi-dung-so-truong-post1698328.html",
-   "news": "Ánh Viên thua Mỹ Tiên ở nội dung sở trường"
-  },
-  {
    "term": "anthropic",
    "geo": "VN",
    "traffic": "100+",
@@ -1034,6 +1016,15 @@
    "ts": "2026-11-22T23:40:00+00:00",
    "url": "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html",
    "news": "Stocks are 'on fire sale' as Anthropic IPO fails to calm AI trade jitters"
+  },
+  {
+   "term": "đà lạt",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-22T23:50:00+00:00",
+   "url": "https://dantri.com.vn/du-lich/ky-si-nguoi-kho-phong-ngua-vun-vut-duoi-chan-nui-langbiang-da-lat-20261121182017338.htm",
+   "news": "\"Kỵ sĩ\" người K'ho phóng ngựa vun vút dưới chân núi Langbiang Đà Lạt"
   }
  ],
  "world": [
@@ -1351,6 +1342,15 @@
    "ts": "2026-11-22T22:20:00+00:00",
    "url": "https://www.theguardian.com/tv-and-radio/2026/nov/22/the-witch-farm-review",
    "news": "The Witch Farm review – this creepy tale is laugh-out-loud funny … without meaning to be"
+  },
+  {
+   "term": "pacers vs knicks",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-23T00:10:00+00:00",
+   "url": "https://sports.yahoo.com/articles/game-preview-knicks-vs-pacers-200000345.html",
+   "news": "Game Preview: Knicks vs Pacers, November 22, 2026"
   },
   {
    "term": "madden cast",
@@ -1767,6 +1767,15 @@
    "news": "Croix Bethune manifested a career year. Now comes a title shot against her former club"
   },
   {
+   "term": "sandra bullock",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-22T23:50:00+00:00",
+   "url": "https://people.com/sandra-bullock-shares-rare-photos-of-2-kids-from-disneyland-with-josh-holloway-12272949",
+   "news": "Sandra Bullock Shares Rare Photos with Her 2 Kids from Trip to Disneyland"
+  },
+  {
    "term": "william, prince of wales",
    "geo": "GB",
    "traffic": "2000+",
@@ -1774,15 +1783,6 @@
    "ts": "2026-11-23T00:00:00+00:00",
    "url": "https://www.thetimes.com/uk/royal-family/article/prince-william-government-request-overseas-trips-gnffrqzxq",
    "news": "Prince William to step up on world stage with more royal trips"
-  },
-  {
-   "term": "iran war",
-   "geo": "GB",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T00:10:00+00:00",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
-   "news": "Iran war updates: Iran says US radar targeted in attacks on Bahrain bases | US-Israel war on Iran News"
   },
   {
    "term": "maxx morando",
@@ -2199,6 +2199,15 @@
    "news": "Iran war live: Navy says two tankers ablaze near Hormuz after hitting mines"
   },
   {
+   "term": "the holiday",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-22T23:20:00+00:00",
+   "url": "https://www.ktiv.com/2026/11/22/downtown-sioux-city-kick-off-holiday-season-with-ibew-holiday-lighted-parade-monday-nov-23/",
+   "news": "Downtown Sioux City to kick off the holiday season with the IBEW Holiday Lighted Parade on Monday, Nov. 23"
+  },
+  {
    "term": "geno smith",
    "geo": "US",
    "traffic": "1000+",
@@ -2226,15 +2235,6 @@
    "news": "26-year-old Google worker earns $323,000 a year—but lives on less than minimum wage"
   },
   {
-   "term": "sandra bullock",
-   "geo": "US",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T23:50:00+00:00",
-   "url": "https://people.com/sandra-bullock-shares-rare-photos-of-2-kids-from-disneyland-with-josh-holloway-12272949",
-   "news": "Sandra Bullock Shares Rare Photos with Her 2 Kids from Trip to Disneyland"
-  },
-  {
    "term": "cuando es el miss universo 2026",
    "geo": "US",
    "traffic": "1000+",
@@ -2242,6 +2242,15 @@
    "ts": "2026-11-22T23:50:00+00:00",
    "url": "https://www.telemundo.com/shows/miss-universo/miss-universe-2026-programacion-horarios-y-donde-ver-rcna609849",
    "news": "Miss Universe 2026: así será la cobertura especial de Telemundo"
+  },
+  {
+   "term": "meet the parents",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T00:10:00+00:00",
+   "url": "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
+   "news": "Ariana Grande had a tough year. ‘Focker In-Law’ ends it on a high"
   },
   {
    "term": "santa clarita ice car detention video",
@@ -2991,15 +3000,6 @@
    "news": "Cimini Warns Jets Losing Streak Could Push Garrett Wilson Out"
   },
   {
-   "term": "the holiday",
-   "geo": "GB",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T23:20:00+00:00",
-   "url": "https://www.ktiv.com/2026/11/22/downtown-sioux-city-kick-off-holiday-season-with-ibew-holiday-lighted-parade-monday-nov-23/",
-   "news": "Downtown Sioux City to kick off the holiday season with the IBEW Holiday Lighted Parade on Monday, Nov. 23"
-  },
-  {
    "term": "jets schedule",
    "geo": "US",
    "traffic": "500+",
@@ -3043,6 +3043,15 @@
    "ts": "2026-11-22T23:50:00+00:00",
    "url": "https://www.cbssports.com/fantasy/basketball/news/thunders-micah-peavy-starting-sunday/",
    "news": "Thunder's Micah Peavy: Starting Sunday"
+  },
+  {
+   "term": "blackhawks vs canucks",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T00:10:00+00:00",
+   "url": "https://www.nhl.com/canucks/video/media-availability-pregame-vs-blackhawks-6408743368112",
+   "news": "Media Availability | Pregame vs. Blackhawks"
   },
   {
    "term": "rockstar games gta vi",
@@ -4494,13 +4503,13 @@
    "news": "“Wild Things,” led by Jude Law and Andrew Garfield, roars onto Apple TV on April 16"
   },
   {
-   "term": "maysilee donner",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T00:20:00+00:00",
-   "url": "https://variety.com/2026/film/features/mckenna-grace-hunger-games-press-tour-book-details-1236953484/",
-   "news": "Mckenna Grace on Her ‘Hunger Games’ Press Tour Looks for ‘Sunrise on the Reaping’: Maysilee’s Style Is Her ‘Form of Defiance Against the Capitol’"
+   "term": "estadio banorte",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T00:00:00+00:00",
+   "url": "https://espndeportes.espn.com/futbol-americano/nota/_/id/17547369/nfl-mexico-49ers-vs-vikings-que-esperar-del-partido",
+   "news": "NFL: ¿Qué esperar del partido Vikings vs 49ers en México?"
   },
   {
    "term": "gta 6 bowling alley safe code",
@@ -4944,5 +4953,5 @@
    "news": "Met deputy rejects ‘few bad apples’ theory after 1,800 staff drummed out"
   }
  ],
- "updated": "2026-11-23T00:06:09.171382+00:00"
+ "updated": "2026-11-23T00:25:22.054737+00:00"
 }
