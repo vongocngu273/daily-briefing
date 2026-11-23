@@ -199,13 +199,13 @@
    "news": "Giá đất nền giảm sâu, nhiều lô đất rao bán cắt lỗ hàng tỉ đồng"
   },
   {
-   "term": "giá vàng ngày 22 tháng 11 năm 2026",
+   "term": "dự báo thời tiết",
    "geo": "VN",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-22T05:10:00+00:00",
-   "url": "https://laodong.vn/the-gioi/du-bao-thoi-diem-gia-vang-cham-moc-5000-usdounce-bat-chap-da-giam-manh-1804311.ldo",
-   "news": "Dự báo thời điểm giá vàng chạm mốc 5.000 USD/ounce bất chấp đà giảm mạnh"
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T04:50:00+00:00",
+   "url": "https://laodong.vn/moi-truong/mien-bac-sap-mua-dong-tu-dem-nay-co-noi-duoi-10-do-c-do-khong-khi-lanh-1805090.ldo",
+   "news": "Miền Bắc sắp mưa dông từ đêm nay, có nơi dưới 10 độ C do không khí lạnh"
   },
   {
    "term": "lich thi dau u17",
@@ -388,15 +388,6 @@
    "news": "Bảng xếp hạng huy chương Đại hội Thể thao toàn quốc ngày 22-11: TP.HCM dẫn đầu"
   },
   {
-   "term": "nguyễn phương hằng",
-   "geo": "VN",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T05:00:00+00:00",
-   "url": "",
-   "news": ""
-  },
-  {
    "term": "ninh bình",
    "geo": "VN",
    "traffic": "500+",
@@ -577,6 +568,15 @@
    "news": "Lý do Văn Toàn \"mất tích\" trong đội hình Nam Định từ đầu mùa"
   },
   {
+   "term": "nguyễn yến trang",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T02:30:00+00:00",
+   "url": "https://tienphong.vn/bua-com-nha-cua-hoa-hau-nguyen-yen-trang-post1896531.tpo",
+   "news": "Bữa cơm nhà của Hoa hậu Nguyễn Yến Trang"
+  },
+  {
    "term": "sóng ở đáy sông",
    "geo": "VN",
    "traffic": "500+",
@@ -584,6 +584,15 @@
    "ts": "2026-11-23T02:40:00+00:00",
    "url": "https://dantri.com.vn/giai-tri/song-o-day-song-phan-2-xuan-bac-muon-nhan-vat-nui-phai-kho-hon-nua-20261123094120464.htm",
    "news": "Sóng ở đáy sông phần 2: Xuân Bắc muốn nhân vật Núi phải “khổ hơn nữa”"
+  },
+  {
+   "term": "xe tải",
+   "geo": "VN",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-23T04:40:00+00:00",
+   "url": "https://vnexpress.net/xe-con-len-qua-hong-xe-tai-vuot-len-nhu-tu-sat-5147820.html",
+   "news": "Xe con len qua hông xe tải vượt lên như tự sát"
   },
   {
    "term": "bắt giữ",
@@ -802,15 +811,6 @@
    "news": "Khối ngoại bán ròng chứng khoán vượt kỷ lục năm 2025"
   },
   {
-   "term": "nguyễn yến trang",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-23T02:30:00+00:00",
-   "url": "https://www.24h.com.vn/dep/bua-com-nha-cua-hoa-hau-nguyen-yen-trang-c78a1813315.html",
-   "news": "Bữa cơm nhà của Hoa hậu Nguyễn Yến Trang"
-  },
-  {
    "term": "hợp đồng",
    "geo": "VN",
    "traffic": "200+",
@@ -820,13 +820,13 @@
    "news": "Hợp đồng mua bán nhà ở hình thành trong tương lai từ thực tiễn tại TP. Hồ Chí Minh"
   },
   {
-   "term": "xe tải",
+   "term": "trực tiếp đua ghe ngo sóc trăng",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-23T04:40:00+00:00",
-   "url": "https://vnexpress.net/xe-con-len-qua-hong-xe-tai-vuot-len-nhu-tu-sat-5147820.html",
-   "news": "Xe con len qua hông xe tải vượt lên như tự sát"
+   "ts": "2026-11-23T04:50:00+00:00",
+   "url": "https://vtv.vn/truc-tiep-giai-dua-ghe-ngo-can-tho-2026-tren-vtv-100261123090855827.htm",
+   "news": "TRỰC TIẾP Giải đua ghe ngo Cần Thơ 2026 trên VTV"
   },
   {
    "term": "s27 ultra",
@@ -1272,6 +1272,24 @@
    "news": "Vikings vs. 49ers Inactives for Week 11 of 2026"
   },
   {
+   "term": "nfl standings 49ers",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-23T04:30:00+00:00",
+   "url": "https://sports.yahoo.com/articles/packers-help-49ers-playoff-picture-042012697.html",
+   "news": "The Packers’ get some help from the 49ers in the playoff picture"
+  },
+  {
+   "term": "earthquake now",
+   "geo": "US",
+   "traffic": "10000+",
+   "score": 10000,
+   "ts": "2026-11-23T05:10:00+00:00",
+   "url": "https://www.nytimes.com/2026/11/20/us/earthquakes-california-los-angeles-pinnacles.html",
+   "news": "2 Earthquakes Rattle California"
+  },
+  {
    "term": "alex burghart",
    "geo": "GB",
    "traffic": "5000+",
@@ -1423,6 +1441,15 @@
    "ts": "2026-11-23T04:10:00+00:00",
    "url": "https://www.prideofdetroit.com/detroit-lions-nfl-playoffs/182137/nfc-playoff-picture-detroit-lions-postseason-standings-nfc-north",
    "news": "Here is where the Lions fit in the NFC playoff picture right now"
+  },
+  {
+   "term": "new zealand vs india",
+   "geo": "US",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-23T04:50:00+00:00",
+   "url": "https://www.espn.com/cricket/story/_/id/50559412/nz-vs-ind-1st-test-stats-rishabh-pant-six-hitting-record-india-highest-total-away-test",
+   "news": "Stats - Pant's six-feast in India's highest away Test total"
   },
   {
    "term": "devon dampier",
@@ -1882,6 +1909,15 @@
    "ts": "2026-11-23T04:00:00+00:00",
    "url": "https://thevikingage.com/justin-jefferson-emotional-reaction-kirk-cousins-reveals-what-minnesota-vikings-missed",
    "news": "Justin Jefferson's emotional reaction to Kirk Cousins reveals what Vikings missed"
+  },
+  {
+   "term": "earthquake now near los angeles, ca",
+   "geo": "US",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-23T05:10:00+00:00",
+   "url": "https://abcnews.com/US/magnitude-44-earthquake-hits-downtown-los-angeles/story?id=138315998",
+   "news": "Magnitude 4.4 earthquake hits near downtown Los Angeles"
   },
   {
    "term": "tank davis",
@@ -2379,6 +2415,15 @@
    "news": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games"
   },
   {
+   "term": "loyola chicago basketball",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T04:30:00+00:00",
+   "url": "https://www.sportsgambler.com/betting-tips/basketball/san-jose-state-spartans-vs-loyola-chicago-ramblers-prediction-odds-2026-11-22/",
+   "news": "San Jose State vs Loyola Chicago Prediction, Picks & Odds | 22 Nov 2026"
+  },
+  {
    "term": "violent night 2",
    "geo": "US",
    "traffic": "1000+",
@@ -2388,31 +2433,22 @@
    "news": "Enter to Win Advance Screening Passes to Violent Night 2"
   },
   {
-   "term": "lando norris",
+   "term": "quien salio de la mansion vip 2",
    "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T05:00:00+00:00",
-   "url": "https://www.formula1.com/en/latest/article/its-going-to-be-a-tough-day-norris-wary-of-mclarens-straight-line-speed-deficit-ahead-of-las-vegas-gp.43WdQWgZsqQaofWDF0E1l3",
-   "news": "Norris expects tough Vegas GP amid McLaren speed struggles"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T04:50:00+00:00",
+   "url": "https://www.infobae.com/mexico/2026/11/22/la-mansion-vip-votos-como-va-la-tabla-de-posiciones-y-quien-esta-en-riesgo-de-salir-hoy-domingo-22-de-noviembre/",
+   "news": "La Mansión VIP votos: cómo va la tabla de posiciones y quién está en riesgo de salir hoy domingo 22 de noviembre"
   },
   {
-   "term": "f1 vote",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T05:10:00+00:00",
-   "url": "https://www.espn.com/f1/story/_/id/50472097/v8-engine-confirmed-formula-1",
-   "news": "F1 bosses reach agreement to introduce V8 engines in 2030"
-  },
-  {
-   "term": "kieran culkin",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T05:20:00+00:00",
-   "url": "https://deadline.com/2026/11/kieran-culkin-reunite-succession-jesse-armstrong-movie-1237230018/",
-   "news": "Kieran Culkin Reveals He’s Reuniting With ‘Succession’ Creator Jesse Armstrong On Movie"
+   "term": "haka",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-23T04:50:00+00:00",
+   "url": "https://www.skysports.com/rugby-union/news/13614677/england-vs-new-zealand-maro-itoje-says-lewis-moody-gave-team-lift-as-former-captain-joins-side-to-face-haka",
+   "news": "England vs New Zealand: Maro Itoje says Lewis Moody gave team 'lift' as former captain joins side to face Haka"
   },
   {
    "term": "domantas sabonis",
@@ -2476,15 +2512,6 @@
    "ts": "2026-11-22T06:40:00+00:00",
    "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
    "news": "Who is Taryn Manning? GTA 6 Vicki actor and singer"
-  },
-  {
-   "term": "lucia voice actor",
-   "geo": "US",
-   "traffic": "500+",
-   "score": 500,
-   "ts": "2026-11-22T06:50:00+00:00",
-   "url": "https://www.yahoo.com/entertainment/celebrity/article/the-gta-6-cast-has-been-revealed-meet-the-voice-actors-behind-lucia-jason-and-more-155230217.html",
-   "news": "The ‘GTA 6’ cast has been revealed: Meet the voice actors behind Lucia, Jason and more"
   },
   {
    "term": "gta vi game",
@@ -3261,67 +3288,13 @@
    "news": "‘Outer Banks’ Alum Madelyn Cline in Final Talks to Join New ‘Serendipity’ Movie (EXCLUSIVE)"
   },
   {
-   "term": "loyola chicago basketball",
+   "term": "lucia voice actor",
    "geo": "US",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-23T04:30:00+00:00",
-   "url": "https://www.sportsgambler.com/betting-tips/basketball/san-jose-state-spartans-vs-loyola-chicago-ramblers-prediction-odds-2026-11-22/",
-   "news": "San Jose State vs Loyola Chicago Prediction, Picks & Odds | 22 Nov 2026"
-  },
-  {
-   "term": "vancouver canucks",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:00:00+00:00",
-   "url": "https://www.nhl.com/wild/news/projected-lineup-wild-at-canucks-112126",
-   "news": "Projected Lineup: Wild at Canucks"
-  },
-  {
-   "term": "devin carter",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:00:00+00:00",
-   "url": "https://www.masslive.com/celtics/2026/11/celtics-guard-lost-10-pounds-while-sick-but-returns-to-make-boston-debut.html",
-   "news": "Celtics guard lost 10 pounds while sick, but returns to make Boston debut"
-  },
-  {
-   "term": "mahershala ali oscar wins career impact",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:00:00+00:00",
-   "url": "https://variety.com/2026/film/news/mahershala-ali-oscars-wins-hollywood-1236955111/",
-   "news": "Mahershala Ali Says It ‘Doesn’t Matter’ That He’s Won 2 Oscars Because ‘There Are Not Roles for Me’ in ‘the Vast Majority of Projects’: ‘You’re Like Everybody Else Waiting’"
-  },
-  {
-   "term": "juan brunetta",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:10:00+00:00",
-   "url": "https://www.sportsgambler.com/betting-tips/football/tigres-vs-club-america-prediction-lineups-odds-2026-11-21/",
-   "news": "Tigres vs América Prediction, Betting Tips, Lineups & Odds | 21 Nov 2026"
-  },
-  {
-   "term": "neemias queta",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:20:00+00:00",
-   "url": "https://www.bostonglobe.com/2026/11/20/sports/celtics-road-trip-sacramento-kings/",
-   "news": "What the Celtics must clean up in Sacramento to make sure their first skid of the season ends at two games"
-  },
-  {
-   "term": "who won miss universe 2026",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-22T05:20:00+00:00",
-   "url": "https://news.tuoitre.vn/nguyen-quynh-anh-stripped-of-miss-universe-vietnam-title-103261119131743126.htm",
-   "news": "Nguyen Quynh Anh stripped of Miss Universe Vietnam title"
+   "ts": "2026-11-23T05:00:00+00:00",
+   "url": "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+   "news": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City"
   },
   {
    "term": "sonny dykes",
@@ -4620,6 +4593,15 @@
    "news": "Robert Griffin III Names Week 11's No. 1 College Football Coach"
   },
   {
+   "term": "avengers doomsday runtime",
+   "geo": "GB",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T04:00:00+00:00",
+   "url": "https://www.imdb.com/news/ni66123488/?ref_=int_nwr_2",
+   "news": "Joe Russo Confirms the Runtime for ‘Avengers: Doomsday’, and It’s Shorter Than Fans Expected"
+  },
+  {
    "term": "nfl mvp race",
    "geo": "US",
    "traffic": "200+",
@@ -4638,13 +4620,22 @@
    "news": "Tim Allen and Jane Hajduk Reveal What Their Ideal Date Night Looks Like After 20 Years of Marriage (Exclusive)"
   },
   {
-   "term": "chris pratt",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-22T05:20:00+00:00",
-   "url": "https://www.independent.co.uk/arts-entertainment/films/news/jennifer-lawrence-kiss-films-ranking-b3088673.html",
-   "news": "Jennifer Lawrence ranks Chris Pratt as ‘worst’ on-screen kiss"
+   "term": "jensen huang nvidia wealth breakdown",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T04:40:00+00:00",
+   "url": "https://www.wsj.com/finance/investing/jensen-and-lori-huang-have-amassed-a-vast-fortune-we-break-down-their-wealth-3d2287b1",
+   "news": "Jensen and Lori Huang Have Amassed a Vast Fortune. We Break Down Their Wealth."
+  },
+  {
+   "term": "president snow",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-23T05:10:00+00:00",
+   "url": "https://people.com/glenn-close-and-ralph-fiennes-agree-their-hunger-games-characters-had-a-thing-exclusive-12261207",
+   "news": "Glenn Close and Ralph Fiennes Agree Their ‘Hunger Games’ Characters Had ‘a Thing’ (Exclusive)"
   },
   {
    "term": "george russell",
@@ -5034,6 +5025,15 @@
    "news": "Met deputy rejects ‘few bad apples’ theory after 1,800 staff drummed out"
   },
   {
+   "term": "jazz vs mavericks",
+   "geo": "GB",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-23T03:00:00+00:00",
+   "url": "https://www.reutersconnect.com/item/nba-dallas-mavericks-at-utah-jazz/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MjkzNzU",
+   "news": "NBA: Dallas Mavericks at Utah Jazz"
+  },
+  {
    "term": "disney+",
    "geo": "GB",
    "traffic": "100+",
@@ -5043,14 +5043,14 @@
    "news": "Disney+ adds Storytime read-alongs and Nat Geo’s Greeking Out for kids"
   },
   {
-   "term": "avengers doomsday runtime",
+   "term": "kospi index",
    "geo": "GB",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-23T04:00:00+00:00",
-   "url": "https://www.imdb.com/news/ni66123488/?ref_=int_nwr_2",
-   "news": "Joe Russo Confirms the Runtime for ‘Avengers: Doomsday’, and It’s Shorter Than Fans Expected"
+   "ts": "2026-11-23T05:10:00+00:00",
+   "url": "https://www.reuters.com/world/asia-pacific/south-koreas-finance-minister-sees-solid-growth-next-year-flags-chip-volatility-2026-11-23/",
+   "news": "South Korea vows to stabilise stock market after KOSPI drops 5%"
   }
  ],
- "updated": "2026-11-23T04:55:25.059192+00:00"
+ "updated": "2026-11-23T05:25:27.890184+00:00"
 }
