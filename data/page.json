@@ -1,6 +1,6 @@
 {
  "updated_at": "07:06",
- "date_str": "Thứ Hai, 23/11/2026",
+ "date_str": "Thứ Ba, 24/11/2026",
  "weather": {
   "location": "TP.HCM (Bình Chánh & Nội thành)",
   "slots": [
@@ -8,58 +8,58 @@
     "key": "morning",
     "label": "Sáng",
     "hours": "07:00–09:00",
-    "temp_min": 26,
+    "temp_min": 27,
     "temp_max": 30,
-    "code": 2,
-    "condition": "Có mây",
+    "code": 0,
+    "condition": "Trời quang",
     "rain_prob": 0,
     "rain_mm": 0.0,
     "uv_max": 4.0,
-    "gust_max": 12
+    "gust_max": 16
    },
    {
     "key": "noon",
     "label": "Trưa",
     "hours": "11:00–14:00",
-    "temp_min": 33,
+    "temp_min": 30,
     "temp_max": 34,
     "code": 51,
     "condition": "Mưa phùn nhẹ",
-    "rain_prob": 24,
-    "rain_mm": 0.1,
+    "rain_prob": 79,
+    "rain_mm": 0.8,
     "uv_max": 7.7,
-    "gust_max": 24
+    "gust_max": 28
    },
    {
     "key": "evening",
     "label": "Chiều tối",
     "hours": "17:00–20:00",
-    "temp_min": 28,
-    "temp_max": 30,
+    "temp_min": 26,
+    "temp_max": 27,
     "code": 51,
     "condition": "Mưa phùn nhẹ",
-    "rain_prob": 45,
-    "rain_mm": 0.1,
-    "uv_max": 0.5,
-    "gust_max": 21
+    "rain_prob": 92,
+    "rain_mm": 0.2,
+    "uv_max": 0.2,
+    "gust_max": 11
    }
   ],
   "advice": [
-   "Nên mặc áo khoác chống nắng (UV tới 7,7)",
-   "Không khí kém (AQI 198), nên đeo khẩu trang khi ra đường"
+   "Nên mang áo mưa (khả năng mưa buổi trưa, chiều tối); mặc áo khoác chống nắng (UV tới 7,7)",
+   "Không khí kém với người nhạy cảm (AQI 128), nên đeo khẩu trang nếu đi xa"
   ],
   "ok": true,
-  "sunrise": "05:52",
+  "sunrise": "05:53",
   "sunset": "17:27",
   "uv_day": 7.7
  },
  "air": {
   "ok": true,
-  "aqi_now": 96,
-  "aqi_max": 198,
-  "pm25": 42.3,
-  "label": "Kém",
-  "tone": "alert"
+  "aqi_now": 128,
+  "aqi_max": 128,
+  "pm25": 49.5,
+  "label": "Kém với người nhạy cảm",
+  "tone": "warn"
  },
  "tide": {
   "place": "Cần Giờ",
@@ -67,23 +67,18 @@
   "extremes": [
    {
     "kind": "Thấp",
-    "time": "05:54",
-    "height": -0.7
+    "time": "06:35",
+    "height": -1.1
    },
    {
     "kind": "Cao",
-    "time": "12:50",
-    "height": 2.2
+    "time": "13:28",
+    "height": 2.4
    },
    {
     "kind": "Thấp",
-    "time": "17:59",
-    "height": 0.8
-   },
-   {
-    "kind": "Cao",
-    "time": "23:17",
-    "height": 2.3
+    "time": "18:53",
+    "height": 1.0
    }
   ]
  },
@@ -92,23 +87,23 @@
   {
    "symbol": "^DJI",
    "name": "Dow Jones",
-   "close": 48147.328125,
-   "change_pct": -1.9343938230770092,
-   "date": "20/11"
+   "close": 49595.30859375,
+   "change_pct": 3.0073952701814646,
+   "date": "23/11"
   },
   {
    "symbol": "^GSPC",
    "name": "S&P 500",
-   "close": 6910.39013671875,
-   "change_pct": -3.6990834302978346,
-   "date": "20/11"
+   "close": 7237.169921875,
+   "change_pct": 4.728818180899615,
+   "date": "23/11"
   },
   {
    "symbol": "^IXIC",
    "name": "Nasdaq",
-   "close": 22617.73046875,
-   "change_pct": -5.282709601959734,
-   "date": "20/11"
+   "close": 24089.55859375,
+   "change_pct": 6.50740854407813,
+   "date": "23/11"
   },
   {
    "symbol": "^N225",
@@ -120,37 +115,37 @@
   {
    "symbol": "^VNINDEX",
    "name": "VN-Index",
-   "close": 1688.79,
-   "change_pct": -0.04912347154981163,
-   "date": "20/11"
+   "close": 1697.14,
+   "change_pct": 0.494436845315293,
+   "date": "23/11"
   },
   {
    "symbol": "GC=F",
    "name": "Vàng (USD/oz)",
-   "close": 3584.60009765625,
-   "change_pct": 1.9684871489688438,
-   "date": "22/11"
+   "close": 3626.5,
+   "change_pct": 3.160382907850072,
+   "date": "23/11"
   },
   {
    "symbol": "BZ=F",
    "name": "Dầu Brent (USD/thùng)",
-   "close": 89.33000183105469,
-   "change_pct": -3.5000517170258627,
-   "date": "22/11"
+   "close": 86.80999755859375,
+   "change_pct": -6.222320573857064,
+   "date": "23/11"
   },
   {
    "symbol": "VND=X",
    "name": "USD/VND",
-   "close": 25705.0,
-   "change_pct": -0.1553699747523791,
-   "date": "22/11"
+   "close": 25783.0,
+   "change_pct": 0.14760147601476015,
+   "date": "23/11"
   },
   {
    "symbol": "BTC-USD",
    "name": "Bitcoin (USD)",
-   "close": 61097.7109375,
-   "change_pct": 1.6700828589957923,
-   "date": "23/11"
+   "close": 61133.171875,
+   "change_pct": -0.04698721994879242,
+   "date": "24/11"
   }
  ],
  "sjc_url": "https://sjc.com.vn/gia-vang-online",
@@ -164,168 +159,132 @@
      "label": "Địa chính trị quốc tế",
      "items": [
       {
-       "cid": 7,
+       "cid": 324,
        "category": "geopolitics",
        "severity": "high",
-       "title": "Đàm phán khí hậu COP31 chính thức thất bại không đạt thỏa thuận",
-       "summary": "Các cuộc đàm phán tại COP31 ở Thổ Nhĩ Kỳ đã kết thúc mà không thể thông qua được văn kiện chung do bất đồng về nhiên liệu hóa thạch.",
-       "developments": "Liên minh châu Âu cùng nhiều quốc gia đã bác bỏ dự thảo thỏa thuận cuối cùng sau khi cuộc đàm phán kéo dài quá thời hạn. Đây là lần đầu tiên sau 17 năm một hội nghị khí hậu toàn cầu kết thúc mà không có đồng thuận.",
-       "context": "Các bên tham gia đàm phán bất đồng sâu sắc về lộ trình cắt giảm nhiên liệu hóa thạch và tài chính khí hậu.",
-       "why_it_matters": "Sự bế tắc này đe dọa các nỗ lực toàn cầu trong ứng phó biến đổi khí hậu, tác động trực tiếp đến các quốc gia chịu ảnh hưởng nặng nề như Việt Nam.",
+       "title": "Nga cảnh báo trả đũa Ukraine sau các vụ tập kích tàu",
+       "summary": "Điện Kremlin cảnh báo hậu quả đau đớn đối với Ukraine sau khi tàu chiến Nga bị tập kích ngoài khơi.",
+       "developments": "Điện Kremlin tuyên bố sẽ có các biện pháp đáp trả cứng rắn sau khi chiến hạm và tàu hàng của Nga bị tấn công tại Libya cũng như biển Baltic.",
+       "context": "Trước đó, các đòn tập kích bằng máy bay không người lái của Ukraine nhắm vào tàu Nga đã khiến căng thẳng tại nhiều vùng biển leo thang.",
+       "why_it_matters": "Nguy cơ xung đột lan rộng ra ngoài lãnh thổ Ukraine đe dọa trực tiếp an ninh hàng hải quốc tế và hoạt động vận tải thương mại.",
        "is_update": true,
-       "url": "https://www.vietnamplus.vn/dam-phan-cop31-ket-thuc-ma-khong-dat-duoc-thoa-thuan-post1150038.vnp",
-       "source": "VietnamPlus",
-       "published": "2026-11-22T23:34:34+00:00",
+       "url": "https://vnexpress.net/nga-canh-bao-ukraine-ve-hau-qua-dau-don-sau-vu-tan-cong-tau-5148187.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T13:55:32+00:00",
        "ai": true,
        "num": 1,
-       "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6hUDCnPTU3QAQCMsUyEsJGjemt1pGS2WIYZ7TF1TdLQfLqNOpCEzN58q7dw4R9ZGSZ1lbqd0I2Rni6SS8icSGb91YBoBwDFMVH0CB6nM2LB2O68Kok39VxEegRpLRCZeeA/ttxvn_cop31-bat-dong-sau-sac-can-tro-thong-qua-van-kien-bao-trum-9172825.jpg.avif",
+       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/2026t141248z-mt1imgost000q5yuq-1264-2364-1795438492.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=OzCefIMbkUl844dDQIjEfg",
        "fresh": ""
       },
       {
-       "cid": 5,
+       "cid": 4,
        "category": "geopolitics",
-       "severity": "high",
-       "title": "Đảng Dân chủ đạt chiến thắng lớn nhất tại Hạ viện Mỹ từ năm 1992",
-       "summary": "Đảng Dân chủ chính thức giành ít nhất 258 ghế tại Hạ viện Mỹ, qua đó giành quyền kiểm soát Quốc hội trong kỳ bầu cử giữa kỳ.",
-       "developments": "Đảng Dân chủ đã giành thắng lợi vượt trội trước Đảng Cộng hòa để nắm đa số ghế tại Hạ viện và 56 ghế tại Thượng viện. Kết quả này giúp Đảng Dân chủ tạo lập lợi thế lớn trước các cuộc bầu cử tiếp theo.",
-       "context": "Cuộc bầu cử giữa kỳ ghi nhận đợt chuyển giao quyền lực quan trọng tại Quốc hội Mỹ sau nhiều ngày kiểm phiếu.",
-       "why_it_matters": "Tương quan lực lượng mới tại Quốc hội Mỹ sẽ ảnh hưởng trực tiếp đến các chính sách đối ngoại và kinh tế toàn cầu của chính quyền Mỹ.",
+       "severity": "medium",
+       "title": "Mỹ đưa doanh nghiệp chip Singapore vào danh sách đen thương mại",
+       "summary": "Bộ Thương mại Mỹ áp lệnh kiểm soát xuất khẩu với công ty Megaspeed International và bốn công ty con ở Đông Nam Á.",
+       "developments": "Megaspeed International cùng các chi nhánh tại Malaysia, Singapore và Thái Lan bị đưa vào Danh sách Thực thể do lo ngại ảnh hưởng an ninh quốc gia Mỹ.",
+       "context": "Quyết định này được đưa ra trong bối cảnh công ty bị cáo buộc có liên quan đến việc chuyển hướng chip trí tuệ nhân tạo sang Trung Quốc.",
+       "why_it_matters": "Động thái siết chặt kiểm soát của Washington làm gia tăng sức ép tuân thủ pháp lý đối với chuỗi cung ứng công nghệ cao tại Đông Nam Á.",
        "is_update": false,
-       "url": "https://www.vietnamplus.vn/dang-dan-chu-gianh-chien-thang-lon-nhat-tai-ha-vien-my-ke-tu-nam-1992-post1150039.vnp",
+       "url": "https://www.vietnamplus.vn/my-dua-cong-ty-singapore-vao-danh-sach-kiem-soat-xuat-khau-post1150235.vnp",
        "source": "VietnamPlus",
-       "published": "2026-11-22T23:44:14+00:00",
+       "published": "2026-11-23T23:58:18+00:00",
        "ai": true,
        "num": 2,
-       "image": "https://media.vietnamplus.vn/images/QcJaCVoYMCKXsPQ_Rprjc40Grqx1xEdGkPe5Fua_vLToyAV6jEYURYYOAWpO2wL4zbV_65Aa6oaOVuikAjVqcw/ttxvn-ha-vien-my-0402.jpg.avif",
-       "fresh": ""
-      },
-      {
-       "cid": 143,
-       "category": "geopolitics",
-       "severity": "medium",
-       "title": "Tàu chiến Nga bốc cháy sau vụ nổ lớn tại quân cảng ở Libya",
-       "summary": "Chính quyền miền Đông Libya nghi ngờ một đòn tập kích bằng máy bay không người lái đã gây ra vụ nổ trên tàu Nga ở Benghazi.",
-       "developments": "Vụ cháy nổ xảy ra khi tàu Nga đang dừng tại cảng Benghazi để tiếp nhiên liệu và nhu yếu phẩm. Các quan chức địa phương nghi ngờ máy bay không người lái đã thực hiện cuộc tấn công này.",
-       "context": "Vụ việc diễn ra trong bối cảnh các hoạt động quân sự và sự hiện diện của Nga tại khu vực Bắc Phi đang thu hút sự chú ý.",
-       "why_it_matters": "Diễn biến mới làm gia tăng căng thẳng an ninh hàng hải và nguy cơ leo thang xung đột tại khu vực Địa Trung Hải.",
-       "is_update": false,
-       "url": "https://vnexpress.net/no-tai-quan-cang-libya-nghi-do-tau-nga-bi-tap-kich-5147730.html",
-       "source": "VnExpress",
-       "published": "2026-11-22T16:03:02+00:00",
-       "ai": true,
-       "num": 3,
-       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/Settop-1795361093-7113-1795361652.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=32PaR6kfgP59DWippte7Mw&t=image",
-       "fresh": ""
-      },
-      {
-       "cid": 28,
-       "category": "geopolitics",
-       "severity": "medium",
-       "title": "Ấn Độ và Trung Quốc đàm phán nhằm giảm căng thẳng biên giới",
-       "summary": "Hai nước kết thúc vòng đàm phán cấp tư lệnh quân đoàn nhằm ngăn ngừa nguy cơ đối đầu giữa lực lượng hai bên tại biên giới.",
-       "developments": "Cuộc đàm phán hướng tới thiết lập cơ chế phối hợp và duy trì liên lạc thường xuyên giữa lực lượng quân đội hai nước. Hai bên nỗ lực xoa dịu tình hình và tránh các xung đột bộc phát.",
-       "context": "Căng thẳng biên giới Ấn - Trung đã kéo dài nhiều năm với nhiều đợt chạm trán quân sự gay gắt.",
-       "why_it_matters": "Việc giảm căng thẳng giữa hai cường quốc châu Á góp phần duy trì hòa bình, ổn định cho khu vực Ấn Độ Dương - Thái Bình Dương.",
-       "is_update": false,
-       "url": "https://www.vietnamplus.vn/an-do-trung-quoc-thuc-day-doi-thoai-giam-cang-thang-tai-khu-vuc-bien-gioi-post1150031.vnp",
-       "source": "VietnamPlus",
-       "published": "2026-11-22T22:59:08+00:00",
-       "ai": true,
-       "num": 4,
-       "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6g5Quo_CWml6NOaab0juv-v_IlNE7CPvMI_CWSFNHBf8r729xlA_ZSeZy9c_fnXBUGLQ0YUx1gJ7gNx9mGkrTYO1MipwxL24WL9wMZbcRlIq/ttxvn_an-do-trung-quoc-noi-lai-dam-phan-bien-gioi-8372402.jpg.avif",
+       "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eclSyW_jn8urdrTQJcuRZ-NPnvsMiXImX0nY-GFkhnmS/chip.jpg.avif",
        "fresh": ""
       }
      ],
      "first": 1,
-     "last": 4
+     "last": 2
     },
     {
      "key": "economy",
      "label": "Kinh tế – Tài chính toàn cầu",
      "items": [
       {
-       "cid": 63,
+       "cid": 224,
        "category": "economy",
-       "severity": "medium",
-       "title": "Lãi suất trái phiếu chính phủ 10 năm lần đầu hạ nhiệt trong năm",
-       "summary": "Lãi suất trúng thầu trái phiếu chính phủ kỳ hạn 10 năm vừa giảm xuống 4,41% sau gần 11 tháng liên tục đi ngang hoặc tăng.",
-       "developments": "Kỳ hạn chuẩn của thị trường ghi nhận mức giảm lãi suất đầu tiên sau thời gian dài neo ở mức cao. Điều này phản ánh sự dịch chuyển tích cực trong chi phí huy động vốn của Chính phủ.",
-       "context": "Thị trường trái phiếu chính phủ đóng vai trò định hướng lãi suất nền kinh tế và phản ánh thanh khoản hệ thống tài chính.",
-       "why_it_matters": "Lãi suất trái phiếu giảm giúp giảm chi phí vay nợ công và tạo tín hiệu tích cực cho thị trường vốn trong nước.",
-       "is_update": false,
-       "url": "https://vnexpress.net/trai-phieu-chinh-phu-lan-dau-giam-lai-suat-trong-nam-nay-5147737.html",
+       "severity": "high",
+       "title": "Cổ phiếu Nvidia tăng vọt sau khi CEO Jensen Huang trở lại",
+       "summary": "Cổ phiếu Nvidia tăng hơn ba mươi lăm phần trăm sau quyết định tái bổ nhiệm cựu Tổng giám đốc Jensen Huang.",
+       "developments": "Việc ông Jensen Huang quay lại vị trí lãnh đạo đã lập tức kích thích làn sóng mua mạnh, giúp tài sản cá nhân của ông tăng thêm hơn 30 tỷ USD.",
+       "context": "Sự trở lại này diễn ra chỉ hơn một tuần sau khi ông từ chức và được thúc đẩy từ sự can thiệp của chính quyền Tổng thống Trump.",
+       "why_it_matters": "Diễn biến tích cực từ cổ phiếu đầu ngành bán dẫn đã giải tỏa áp lực bán tháo, củng cố niềm tin cho thị trường công nghệ và trí tuệ nhân tạo toàn cầu.",
+       "is_update": true,
+       "url": "https://vnexpress.net/co-phieu-nvidia-tang-hon-35-khi-jensen-huang-tro-ve-5148259.html",
        "source": "VnExpress",
-       "published": "2026-11-22T20:55:09+00:00",
+       "published": "2026-11-23T16:18:04+00:00",
        "ai": true,
-       "num": 5,
-       "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/DSC-2515-2017-1795359065.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SfFUGxlot8U9hc00dJtmbQ",
+       "num": 3,
+       "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/23/Screenshot20261113125511-17954-6651-8064-1795449495.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Ht5_uJtRW1TLQtuQx6DUVw",
        "fresh": ""
       },
       {
-       "cid": 11,
+       "cid": 254,
        "category": "economy",
        "severity": "medium",
-       "title": "Chi phí nhập khẩu dầu khí của Ấn Độ tăng lên 16 tỷ USD",
-       "summary": "Tổng giá trị nhập khẩu dầu khí ròng của Ấn Độ trong tháng 10 tăng 60% so với cùng kỳ năm ngoái đạt 16 tỷ USD.",
-       "developments": "Kim ngạch nhập khẩu tăng vọt do lượng dầu thô nhập từ Nga đạt mức cao kỷ lục trong tháng thứ hai liên tiếp. Sự gia tăng này phản ánh nhu cầu năng lượng lớn của nền kinh tế Ấn Độ.",
-       "context": "Ấn Độ là một trong những quốc gia tiêu thụ và nhập khẩu năng lượng lớn nhất thế giới.",
-       "why_it_matters": "Biến động trong hoạt động nhập khẩu năng lượng của Ấn Độ tác động tới dòng chảy thương mại và mặt bằng giá dầu thô toàn cầu.",
+       "title": "Giá vàng thế giới tăng vọt tiến sát mốc 3.700 USD",
+       "summary": "Giá vàng quốc tế tăng hơn một trăm USD mỗi ounce khi nhà đầu tư đẩy mạnh lực mua bắt đáy.",
+       "developments": "Mỗi ounce vàng đã phục hồi mạnh mẽ sau chuỗi ngày điều chỉnh, tiến gần ngưỡng lịch sử 3.700 USD nhờ tâm lý gom hàng ở vùng giá thấp.",
+       "context": "Thị trường tài chính biến động cùng những bất định địa chính trị tiếp tục duy trì sức hấp dẫn của vàng như kênh trú ẩn tài sản an toàn.",
+       "why_it_matters": "Đà tăng vọt của giá vàng thế giới dự kiến sẽ tác động trực tiếp và đẩy giá kim loại quý tại thị trường Việt Nam đi lên.",
        "is_update": false,
-       "url": "https://www.vietnamplus.vn/an-do-chi-16-ty-usd-nhap-khau-dau-khi-trong-thang-10-post1150037.vnp",
-       "source": "VietnamPlus",
-       "published": "2026-11-22T23:26:18+00:00",
+       "url": "https://vnexpress.net/gia-vang-the-gioi-tang-vot-5148251.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T15:29:12+00:00",
        "ai": true,
-       "num": 6,
-       "image": "https://media.vietnamplus.vn/images/IQdJ9t68n_Fc4c6ldNrZ7QColDLLLo_oH_2F7s59_RYx2JEE4uJGXN6IdcHQSu82/ttxvn-gia-dau-my.jpg.avif",
+       "num": 4,
+       "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/24/afp-a7np2tr-v3-highres-uaeecon-5481-5800-1795456357.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=lng9FuwpDO2-GsogTZ1hMg",
        "fresh": ""
       }
      ],
-     "first": 5,
-     "last": 6
+     "first": 3,
+     "last": 4
     },
     {
      "key": "domestic",
      "label": "Thời sự trong nước",
      "items": [
       {
-       "cid": 210,
+       "cid": 390,
        "category": "domestic",
        "severity": "high",
-       "title": "Liên danh Việt Pháp Hàn trúng gói tư vấn đường sắt tốc độ cao",
-       "summary": "Liên danh 8 doanh nghiệp vừa trúng gói thầu tư vấn lớn nhất dự án đường sắt tốc độ cao Bắc Nam trị giá hơn 10.243 tỷ đồng.",
-       "developments": "Tổ hợp tư vấn gồm các nhà thầu Việt Nam, Pháp và Hàn Quốc sẽ đảm nhận gói thầu tư vấn quan trọng nhất của siêu dự án này.",
-       "context": "Dự án đường sắt tốc độ cao Bắc Nam là dự án hạ tầng giao thông có quy mô vốn lớn nhất từ trước đến nay tại Việt Nam.",
-       "why_it_matters": "Việc hoàn tất chọn nhà thầu tư vấn giúp thúc đẩy tiến độ chuẩn bị đầu tư và triển khai tuyến đường sắt huyết mạch quốc gia.",
+       "title": "Khởi công nhà máy chế biến sâu đất hiếm tại Hải Phòng",
+       "summary": "Nhà máy chế tạo vật liệu tinh khiết từ đất hiếm với vốn 1.580 tỷ đồng vừa được khởi công tại Hải Phòng.",
+       "developments": "Lễ bấm nút khởi công diễn ra ngày 23/11 nhằm xây dựng cơ sở chế biến sâu đất hiếm thành các vật liệu phục vụ công nghiệp công nghệ cao.",
+       "context": "Việt Nam sở hữu trữ lượng đất hiếm dồi dào nhưng từ lâu vẫn tìm kiếm giải pháp công nghệ để chế biến sâu thay vì xuất khẩu khoáng sản thô.",
+       "why_it_matters": "Dự án đánh dấu bước tiến chiến lược giúp Việt Nam từng bước làm chủ chuỗi cung ứng vật liệu quan trọng cho ngành bán dẫn và pin xe điện.",
        "is_update": false,
-       "url": "https://vnexpress.net/lien-danh-viet-phap-han-trung-goi-tu-van-lon-nhat-duong-sat-toc-do-cao-bac-nam-5147718.html",
-       "source": "VnExpress",
-       "published": "2026-11-22T13:47:24+00:00",
+       "url": "https://www.bbc.com/vietnamese/articles/cvze7ll8zdr6o?at_medium=RSS&at_campaign=rss",
+       "source": "BBC Tiếng Việt",
+       "published": "2026-11-23T12:39:27+00:00",
        "ai": true,
-       "num": 7,
-       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/395afd4a-ee7da30d70b0fe0-17953-8878-3722-1795353176.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=dvtE8qrf55-4hwz73-pgJQ",
+       "num": 5,
+       "image": "https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/f215/live/4bdb7af0-e724-11f1-a094-5fdc692f3e33.jpg",
        "fresh": ""
       },
       {
-       "cid": 240,
+       "cid": 200,
        "category": "domestic",
-       "severity": "high",
-       "title": "Bộ Chính trị cho phép thành lập Khu kinh tế đặc biệt Vân Phong",
-       "summary": "Tỉnh Khánh Hòa được cho phép thành lập Khu kinh tế đặc biệt Vân Phong sau nhiều năm đề xuất bị tạm dừng triển khai.",
-       "developments": "Quyết định của Bộ Chính trị mở đường cho việc xây dựng cơ chế phát triển đột phá tại khu vực bắc Vân Phong. Tỉnh Khánh Hòa sẽ hoàn thiện quy hoạch và chính sách thu hút đầu tư.",
-       "context": "Vân Phong sở hữu vị trí chiến lược về kinh tế và quốc phòng với tiềm năng phát triển cảng biển trung chuyển quốc tế.",
-       "why_it_matters": "Đột phá chính sách cho Vân Phong sẽ tạo động lực tăng trưởng mới cho tỉnh Khánh Hòa và toàn vùng duyên hải Nam Trung Bộ.",
+       "severity": "medium",
+       "title": "Tuyến đường trên cao Vành đai 3 tại TP.HCM sắp hoàn thành",
+       "summary": "Đoạn đường 17 km trên cao thuộc Vành đai 3 TP.HCM dự kiến hoàn thành thi công vào cuối tháng 11 này.",
+       "developments": "Công trình sẽ kết nối nút giao Tân Vạn với cao tốc TP.HCM - Long Thành - Dầu Giây, hoàn thiện hạ tầng giao thông trọng điểm của khu vực.",
+       "context": "Đây là đoạn đường trên cao đầu tiên thuộc dự án Vành đai 3 được đưa vào vận hành nhằm giảm áp lực ùn tắc cửa ngõ phía đông.",
+       "why_it_matters": "Tuyến đường giúp rút ngắn thời gian di chuyển giữa các trung tâm kinh tế Đông Nam Bộ và hỗ trợ trực tiếp việc kết nối tới sân bay quốc tế Long Thành.",
        "is_update": false,
-       "url": "https://www.bbc.com/vietnamese/articles/cqd012y2dr3ro?at_medium=RSS&at_campaign=rss",
-       "source": "BBC Tiếng Việt",
-       "published": "2026-11-22T12:46:14+00:00",
+       "url": "https://vnexpress.net/17-km-duong-tren-cao-dau-tien-o-tp-hcm-sap-hoan-thanh-5148208.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T17:00:00+00:00",
        "ai": true,
-       "num": 8,
-       "image": "https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/f226/live/46e63230-e641-11f1-99a1-253766e7ad8b.jpg",
+       "num": 6,
+       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/6-1795437503-8621-1795437598.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Zdap818xjYFBrr1rCX1rAQ",
        "fresh": ""
       }
      ],
-     "first": 7,
-     "last": 8
+     "first": 5,
+     "last": 6
     }
    ]
   },
@@ -338,75 +297,119 @@
      "label": "Công nghệ – AI",
      "items": [
       {
-       "cid": 132,
+       "cid": 9,
+       "category": "tech_ai",
+       "severity": "high",
+       "title": "Nvidia phục chức CEO cho Jensen Huang sau sức ép từ thị trường",
+       "summary": "Hội đồng quản trị Nvidia đã quyết định tái bổ nhiệm ông Jensen Huang làm Tổng giám đốc điều hành chỉ vài ngày sau khi từ chối.",
+       "developments": "Quyết định tái bổ nhiệm diễn ra nhanh chóng sau khi ông Huang từ chức, giúp trấn an làn sóng bán tháo cổ phiếu công nghệ trên toàn cầu. Động thái này nhận được sự quan tâm và ủng hộ lớn từ giới chức cũng như các đối tác.",
+       "context": "Trước đó vài ngày, ông Huang rời ghế lãnh đạo vì bê bối đời tư khiến giá trị vốn hóa của Nvidia và thị trường chứng khoán giảm mạnh.",
+       "why_it_matters": "Sự ổn định tại Nvidia có ý nghĩa then chốt đối với chuỗi cung ứng chip và hạ tầng trí tuệ nhân tạo toàn cầu, bao gồm cả thị trường Việt Nam.",
+       "is_update": false,
+       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbUdPNnFZNXVRRHJqeGNYX0ptRk1oUW85OHlueHM2aW5teGxVWmViTWdKOGVTTVBYdWNVTjA3M2d4NUFfQ1Fac2g2ZzVZZ0hMdnZ6V1RQdFRmdWNfZlFzNnRYNmR0YWsxUjFIaTNYR2c5V3RQUHdVVUx4X1loaHF6dEcyNF9fQQ?oc=5",
+       "source": "AP News",
+       "published": "2026-11-23T23:36:00+00:00",
+       "ai": true,
+       "num": 7,
+       "image": "",
+       "fresh": ""
+      },
+      {
+       "cid": 5,
        "category": "tech_ai",
        "severity": "medium",
-       "title": "AMD ra mắt chip EPYC 9006 kiến trúc Zen 6 tiến trình 2nm",
-       "summary": "AMD chính thức giới thiệu dòng vi xử lý EPYC 9006 sử dụng kiến trúc Zen 6 trên tiến trình 2nm với tối đa 256 nhân xử lý.",
-       "developments": "AMD ra mắt dòng CPU EPYC 9006 \"Venice\" mang kiến trúc Zen 6 đầu tiên của hãng. Chip được sản xuất trên tiến trình 2nm tiên tiến nhất hiện nay và hỗ trợ tối đa tới 256 nhân.",
-       "context": "Trong bối cảnh ngành công nghệ tập trung mạnh vào GPU cho AI, AMD tiếp tục cải tiến dòng vi xử lý chuyên dụng cho máy chủ và trung tâm dữ liệu.",
-       "why_it_matters": "Sự xuất hiện của chip 2nm giúp nâng cao hiệu năng xử lý cho các hệ thống máy chủ và hạ tầng điện toán đám mây tại Việt Nam.",
+       "title": "OpenAI chính thức đưa mô hình GPT-6.2 Sol lên giao diện ChatGPT",
+       "summary": "OpenAI đã bổ sung mô hình GPT-6.2 Sol vào thẻ trò chuyện của ChatGPT dành cho các gói thuê bao trả phí.",
+       "developments": "Mô hình mới được tinh chỉnh chuyên sâu để phục vụ các cuộc hội thoại đời thường và xử lý yêu cầu nhanh gọn hơn. Bản cập nhật hiện khả dụng cho người dùng các gói Plus, Pro, Business và Enterprise.",
+       "context": "Trước đó chưa đầy một tuần, GPT-6.2 Sol đã lần đầu được OpenAI tích hợp thử nghiệm trong các công cụ Work và Codex.",
+       "why_it_matters": "Cải tiến mới giúp người dùng cá nhân lẫn doanh nghiệp tại Việt Nam tối ưu hóa hiệu quả trao đổi và làm việc với trợ lý ảo AI.",
        "is_update": false,
-       "url": "https://tinhte.vn/thread/amd-ra-mat-epyc-9006-venice-cpu-zen-6-2nm-toi-da-256-nhan-thay-doi-triet-de-tu-trong-ra-ngoai.4194819/",
+       "url": "https://www.macrumors.com/2026/11/23/openai-gpt-6-2-sol-chatgpt/",
+       "source": "MacRumors",
+       "published": "2026-11-23T23:52:41+00:00",
+       "ai": true,
+       "num": 8,
+       "image": "https://images.macrumors.com/article-new/2026/11/gpt-6-2-openai.jpg",
+       "fresh": ""
+      }
+     ],
+     "first": 7,
+     "last": 8
+    },
+    {
+     "key": "mobile",
+     "label": "Điện thoại – Mobile",
+     "items": [
+      {
+       "cid": 281,
+       "category": "mobile",
+       "severity": "medium",
+       "title": "Honor ra mắt dòng Honor 700 với pin 9.000mAh và màn hình phụ",
+       "summary": "Honor trình làng bộ ba điện thoại Honor 700S, 700 và 700 Pro tại Trung Quốc với pin dung lượng lớn và camera 200MP.",
+       "developments": "Dòng sản phẩm gây chú ý khi tích hợp màn hình phụ vuông độc đáo trong cụm camera sau, camera chính 200 megapixel và viên pin dung lượng tới 9.000 mAh. Bản Pro cao cấp nhất trang bị chip vi xử lý Snapdragon thế hệ mới.",
+       "context": "Honor tiếp tục cuộc đua pin khủng và thiết kế màn hình phụ sau khi thị trường di động chứng kiến xu hướng tăng mạnh thời lượng pin.",
+       "why_it_matters": "Dòng máy tạo sức ép cạnh tranh lên các đối thủ Android tầm trung và cận cao cấp chuẩn bị cập bến thị trường quốc tế.",
+       "is_update": false,
+       "url": "https://tinhte.vn/thread/honor-700-700-pro-va-700s-ra-mat-man-hinh-phu-sau-lung-camera-200mp-pin-9-000mah.4195057/",
        "source": "Tinh tế",
-       "published": "2026-11-22T16:36:40+00:00",
+       "published": "2026-11-23T14:49:09+00:00",
        "ai": true,
        "num": 9,
-       "image": "https://photo2.tinhte.vn/data/attachment-files/2026/11/9140586_cover-AMD-Zen6-EPYC-9006-EPYC1_Large.jpeg",
+       "image": "https://imgproxy7.tinhte.vn/rG1wpFukuCiTEC3BhlHflYReXbl7vJ0feqkFqDOxGL4/w:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9141339_anh-1-honor-700.jpg",
        "fresh": ""
       },
       {
-       "cid": 309,
-       "category": "tech_ai",
-       "severity": "medium",
-       "title": "Apple phát triển trợ lý AI có khả năng tự điều khiển máy tính",
-       "summary": "Apple được cho là đang phát triển trợ lý AI có thể tự thao tác trên máy tính như duyệt web và làm việc với nhiều ứng dụng.",
-       "developments": "Nguồn tin tiết lộ Apple đang phát triển một trợ lý AI có khả năng thực hiện các tác vụ trên máy tính tương tự con người. Công cụ này có thể tự duyệt web, lập trình và vận hành nhiều ứng dụng cùng lúc.",
-       "context": "Các tập đoàn công nghệ lớn đang đua nhau phát triển AI agent để hỗ trợ tự động hóa công việc cho người dùng.",
-       "why_it_matters": "Trợ lý AI mới của Apple hứa hẹn nâng cao hiệu suất làm việc cho người dùng thiết bị Mac tại Việt Nam trong tương lai.",
-       "is_update": true,
-       "url": "https://vnexpress.net/apple-bi-mat-phat-trien-tro-ly-ai-tu-dieu-khien-may-tinh-5147686.html",
-       "source": "VnExpress",
-       "published": "2026-11-22T09:54:42+00:00",
+       "cid": 69,
+       "category": "mobile",
+       "severity": "low",
+       "title": "Motorola giới thiệu Edge 70 Neo trang bị pin lớn 7.000 mAh",
+       "summary": "Motorola ra mắt sớm mẫu Edge 70 Neo sở hữu viên pin 7.000 mAh cùng màn hình có tần số quét 144Hz mượt mà.",
+       "developments": "Thiết bị được công bố cấu hình đầy đủ sớm hơn dự kiến một ngày, tập trung vào thời lượng pin ấn tượng và màn hình hiển thị chất lượng cao. Sản phẩm hướng đến phân khúc người dùng cần thiết bị hoạt động bền bỉ.",
+       "context": "Motorola liên tục bổ sung dòng Edge mới nhằm mở rộng thị phần tại các thị trường tiềm năng như Ấn Độ và châu Á.",
+       "why_it_matters": "Thêm lựa chọn điện thoại thông minh pin 'khủng' giá tốt cho người dùng chuộng thiết bị giải trí và công việc liên tục.",
+       "is_update": false,
+       "url": "https://www.gsmarena.com/motorola_edge_70_neo_is_here_with_a_7000_mah_battery_and_144hz_screen-news-75602.php",
+       "source": "GSMArena",
+       "published": "2026-11-23T21:33:02+00:00",
        "ai": true,
        "num": 10,
-       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/a2-1795340999-5549-1795341032.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Qm3TEUGtv5--W9tm1Xt_Tw",
+       "image": "https://fdn.gsmarena.com/imgroot/news/26/11/motorola-edge-70-neo-official/-184x111/gsmarena_000.jpg",
        "fresh": ""
       },
       {
-       "cid": 243,
-       "category": "tech_ai",
-       "severity": "medium",
-       "title": "Tesla thử nghiệm FSD v15 hỗ trợ né ổ gà và nhận diện biển báo",
-       "summary": "Tesla bắt đầu phát hành bản cập nhật FSD v15 cho nhóm người dùng trải nghiệm sớm với các tính năng tự lái nâng cấp.",
-       "developments": "Tesla bắt đầu tung ra bản cập nhật Full Self-Driving v15 cho hệ thống phần cứng AI4. Phiên bản này cải thiện khả năng né ổ gà và nhận diện biển báo khu vực trường học.",
-       "context": "Tesla liên tục nâng cấp phần mềm tự lái nhằm tăng cường độ an toàn và mở rộng tính năng trên các dòng xe điện của hãng.",
-       "why_it_matters": "Công nghệ tự lái của Tesla là tham chiếu quan trọng cho sự phát triển của xe điện thông minh và giao thông tự hành tại Việt Nam.",
+       "cid": 160,
+       "category": "mobile",
+       "severity": "low",
+       "title": "Meta chuẩn bị phát hành ứng dụng Threads chuyên biệt cho iPad",
+       "summary": "Mạng xã hội Threads sắp có ứng dụng riêng tối ưu hóa cho màn hình lớn của máy tính bảng iPad.",
+       "developments": "Trưởng bộ phận thiết kế của Threads xác nhận phiên bản dành cho iPad sẽ sớm ra mắt sau hơn ba năm nền tảng này hoạt động. Giao diện mới được tinh chỉnh để tận dụng tối đa không gian màn hình lớn thay vì phóng to từ ứng dụng điện thoại.",
+       "context": "Người dùng máy tính bảng của Apple từ lâu đã phàn nàn về việc thiếu ứng dụng Threads và Instagram chính thức được tối ưu riêng.",
+       "why_it_matters": "Cải thiện trải nghiệm lướt mạng xã hội cho đông đảo người dùng iPad tại Việt Nam và quốc tế.",
        "is_update": false,
-       "url": "https://tinhte.vn/thread/tesla-fsd-v15-biet-ne-o-ga-doc-bien-truong-hoc-bao-gio-xe-tu-lai-chay-noi-duong-viet-nam.4194740/",
-       "source": "Tinh tế",
-       "published": "2026-11-22T12:38:44+00:00",
+       "url": "https://9to5mac.com/2026/11/23/threads-app-for-ipad-launching-very-soon/",
+       "source": "9to5Mac",
+       "published": "2026-11-23T18:06:32+00:00",
        "ai": true,
        "num": 11,
-       "image": "https://imgproxy7.tinhte.vn/caA6yYSm8b1jMgoJ4_3Egu6nTWxO69X2fh-o2HA3EOo/w:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9140361_anh-3-tesla-model-y-performance.jpg",
+       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/11/924744113_17990077620109474_773078292128629837_n-2.jpg?quality=82&strip=all&w=1600",
        "fresh": ""
       },
       {
-       "cid": 46,
-       "category": "tech_ai",
+       "cid": 152,
+       "category": "mobile",
        "severity": "low",
-       "title": "Nữ kỹ sư 29 tuổi đứng sau mô hình AI tạo video của ByteDance",
-       "summary": "Kỹ sư Zeng Yan 29 tuổi là nhân tố then chốt phát triển Seedance, mô hình AI tạo video đang được giới làm phim Trung Quốc ưa chuộng.",
-       "developments": "Zeng Yan là một trong những kỹ sư chủ chốt phát triển mô hình tạo video Seedance của ByteDance. Công cụ này đang tạo nên cơn sốt và được giới làm phim ngắn AI tại Trung Quốc sử dụng rộng rãi.",
-       "context": "ByteDance cùng nhiều công ty công nghệ Trung Quốc đang đẩy mạnh sáng tạo trong lĩnh vực AI tạo hình ảnh và video.",
-       "why_it_matters": "Mô hình AI tạo video phát triển mở ra thêm công cụ sáng tạo nội dung cho giới làm phim và sáng tạo số tại Việt Nam.",
+       "title": "Hệ điều hành iOS 27 bổ sung tùy chỉnh âm lượng báo thức riêng",
+       "summary": "Apple bổ sung tính năng cài đặt âm lượng độc lập cho báo thức trên iPhone thông qua bản cập nhật iOS 27.",
+       "developments": "Tính năng mới cho phép người dùng thiết lập mức âm lượng của đồng hồ báo thức tách biệt hoàn toàn với âm lượng hệ thống và cuộc gọi. Thay đổi này khắc phục tình trạng chuông báo thức quá nhỏ hoặc quá to do vô tình chỉnh âm lượng chung.",
+       "context": "Âm lượng báo thức vốn là một trong những điểm bất tiện được cộng đồng người dùng iPhone phản ánh trong nhiều năm qua.",
+       "why_it_matters": "Bản cập nhật mang lại tiện ích thiết thực cho hàng triệu người dùng iPhone trong sinh hoạt hằng ngày.",
        "is_update": false,
-       "url": "https://vnexpress.net/nu-ky-su-dung-sau-mo-hinh-ai-lam-phim-gay-sot-o-trung-quoc-5146432.html",
-       "source": "VnExpress",
-       "published": "2026-11-22T22:00:00+00:00",
+       "url": "https://9to5mac.com/2026/11/23/ios-27-gave-your-iphone-an-alarm-feature-thats-long-been-missing/",
+       "source": "9to5Mac",
+       "published": "2026-11-23T18:41:50+00:00",
        "ai": true,
        "num": 12,
-       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/19/nu-cu-o-i-be-n-tha-p-do-ng-ho-5897-4664-1795065103.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=0-SY2CqyPOYFtDZomf2EPw",
+       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/11/ios-27-alarm-screen-orange.jpg?quality=82&strip=all&w=1600",
        "fresh": ""
       }
      ],
@@ -414,79 +417,79 @@
      "last": 12
     },
     {
-     "key": "mobile",
-     "label": "Điện thoại – Mobile",
+     "key": "science_health",
+     "label": "Khoa học – Y tế",
      "items": [
       {
-       "cid": 324,
-       "category": "mobile",
+       "cid": 122,
+       "category": "science_health",
        "severity": "medium",
-       "title": "Apple chuẩn bị sản xuất hàng loạt iPhone Air 2 và iPhone 18",
-       "summary": "Apple cùng các đối tác cung ứng màn hình LG và Samsung bước vào giai đoạn chuẩn bị sản xuất hàng loạt dòng iPhone thế hệ mới.",
-       "developments": "Apple và các đối tác cung ứng màn hình hàng đầu như LG và Samsung đang đẩy nhanh tiến độ chuẩn bị sản xuất hàng loạt iPhone Air 2 và iPhone 18.",
-       "context": "Dòng máy gập và mỏng nhẹ mới của Apple thu hút sự chú ý lớn từ giới công nghệ trước thời điểm ra mắt chính thức.",
-       "why_it_matters": "Việc chuỗi cung ứng khởi động báo hiệu kế hoạch phát hành đúng hạn cho người tiêu dùng thiết bị Apple tại Việt Nam.",
-       "is_update": true,
-       "url": "https://vnexpress.net/apple-chuan-bi-san-xuat-hang-loat-iphone-air-2-iphone-18-5147678.html",
+       "title": "Phẫu thuật nội soi cắt u phổi cho người có nội tạng đảo ngược",
+       "summary": "Các bác sĩ phẫu thuật thành công khối u phổi trái cho một bệnh nhân nam 68 tuổi mắc dị tật đảo ngược phủ tạng.",
+       "developments": "Bệnh nhân nhập viện do mệt mỏi và sụt cân, được chẩn đoán mắc u phổi trái trên nền giải phẫu cơ thể đảo ngược hoàn toàn. Ca mổ diễn ra an toàn nhờ sự chuẩn bị kỹ lưỡng về định vị giải phẫu của ê kíp phẫu thuật.",
+       "context": "Đảo ngược phủ tạng là dị tật bẩm sinh hiếm gặp, khiến các can thiệp ngoại khoa trở nên phức tạp hơn bình thường.",
+       "why_it_matters": "Thành công của ca phẫu thuật thể hiện trình độ chuyên môn cao và kỹ thuật ngoại khoa ngày càng tiến bộ của y tế trong nước.",
+       "is_update": false,
+       "url": "https://vnexpress.net/mo-u-phoi-nguoi-co-noi-tang-dao-nguoc-5148071.html",
        "source": "VnExpress",
-       "published": "2026-11-22T08:45:40+00:00",
+       "published": "2026-11-23T20:00:00+00:00",
        "ai": true,
        "num": 13,
-       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/a2-1795338063-7151-1795338067.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=PwsZWV94_IHbGtolgeaHvw",
+       "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/23/2-1795442744-8144-1795442898.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=FZY6ln8fw9riZ-QUSgWMxg",
        "fresh": ""
       },
       {
-       "cid": 843,
-       "category": "mobile",
+       "cid": 60,
+       "category": "science_health",
        "severity": "medium",
-       "title": "Hệ điều hành iOS 27 cho phép hai iPhone dùng chung một số điện thoại",
-       "summary": "Phiên bản iOS 27 mang đến tính năng mới giúp người dùng có thể sử dụng cùng một số điện thoại trên hai thiết bị iPhone khác nhau.",
-       "developments": "Cập nhật mới trên iOS 27 bổ sung tính năng đồng bộ số điện thoại, cho phép hai chiếc iPhone hoạt động song song với cùng một số liên lạc.",
-       "context": "Apple liên tục cập nhật các tính năng tiện ích trên iOS nhằm tối ưu hóa trải nghiệm sử dụng nhiều thiết bị của người dùng.",
-       "why_it_matters": "Tính năng này mang lại sự tiện lợi lớn cho người dùng sở hữu nhiều thiết bị iPhone tại Việt Nam.",
+       "title": "Bác sĩ khuyến cáo các thói quen cần tránh vào ngày trời lạnh",
+       "summary": "Chuyên gia y tế cảnh báo không nên bật dậy đột ngột hay tập thể dục quá sớm trong những ngày trời chuyển lạnh để ngừa đột tử.",
+       "developments": "Bác sĩ chỉ ra 5 việc cần tránh gồm: bật dậy đột ngột, mặc quần áo phong phanh, tập thể dục quá sớm, vận động mạnh ngay khi ra ngoài và tắm nước lạnh. Việc thay đổi nhiệt độ đột ngột dễ làm co mạch máu, tăng huyết áp đột ngột dẫn đến nguy cơ đột quỵ.",
+       "context": "Các đợt không khí lạnh đầu mùa thường ghi nhận số ca tai biến tim mạch và hô hấp gia tăng tại các bệnh viện.",
+       "why_it_matters": "Cung cấp kiến thức chăm sóc sức khỏe thiết thực giúp người dân chủ động phòng ngừa rủi ro tim mạch trong mùa đông.",
        "is_update": false,
-       "url": "https://9to5mac.com/2026/11/20/ios-27-lets-you-use-two-iphones-with-the-same-phone-number/",
-       "source": "9to5Mac",
-       "published": "2026-11-20T23:06:00+00:00",
+       "url": "https://vnexpress.net/5-viec-tranh-lam-truoc-khi-ra-duong-ngay-lanh-de-phong-dot-tu-5147151.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T22:00:00+00:00",
        "ai": true,
        "num": 14,
-       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/iPhone-18-Pro-homescreen.jpg?quality=82&strip=all&w=1600",
+       "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/20/screenshot-at-1795165842-5848-1795165919.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=BsOCmnOnktEP3Ug3riBhzA",
        "fresh": ""
       },
       {
-       "cid": 769,
-       "category": "mobile",
+       "cid": 246,
+       "category": "science_health",
        "severity": "low",
-       "title": "HMD cân nhắc đưa thương hiệu camera PureView trở lại trên điện thoại mới",
-       "summary": "HMD Global được cho là đang xem xét tái sử dụng thương hiệu PureView nổi tiếng của Nokia cho dòng điện thoại tập trung vào camera mới.",
-       "developments": "Báo cáo mới cho thấy HMD Global có kế hoạch mang thương hiệu PureView trở lại. Đây là tên tuổi từng làm nên thương hiệu camera chụp ảnh cao cấp trên các dòng máy Nokia trước đây.",
-       "context": "HMD đang tìm cách làm mới dòng sản phẩm smartphone của mình để cạnh tranh tốt hơn trên thị trường di động.",
-       "why_it_matters": "Sự trở lại của PureView mang đến thêm lựa chọn điện thoại chụp ảnh chất lượng cho người dùng Việt Nam.",
+       "title": "Khen thưởng bác sĩ Cần Thơ cấp cứu kịp thời trên chuyến bay",
+       "summary": "Sở Y tế TP Cần Thơ trao giấy khen cho bác sĩ La Văn Phú vì nỗ lực cấp cứu một hành khách trên chuyến bay quốc tế.",
+       "developments": "Bác sĩ La Văn Phú, Trưởng khoa Ngoại tổng hợp thuộc Bệnh viện Đa khoa TP Cần Thơ, đã chủ động sơ cứu và hỗ trợ y tế khẩn cấp cho hành khách gặp nạn trên máy bay. Hành động nhanh trí và kịp thời này giúp hành khách qua cơn nguy kịch.",
+       "context": "Nhiều y bác sĩ Việt Nam từng ghi dấu ấn với các hành động nghĩa hiệp cứu người trong những tình huống khẩn cấp ngoài bệnh viện.",
+       "why_it_matters": "Tôn vinh tinh thần trách nhiệm và y đức của đội ngũ thầy thuốc Việt Nam cả trong và ngoài môi trường bệnh viện thông thường.",
        "is_update": false,
-       "url": "https://www.gsmarena.com/hmd_could_bring_nokias_pureview_branding_back_with_a_new_phone-news-75572.php",
-       "source": "GSMArena",
-       "published": "2026-11-21T03:32:02+00:00",
+       "url": "https://vnexpress.net/khen-thuong-bac-si-cap-cuu-hanh-khach-tren-chuyen-bay-quoc-te-5148217.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T15:45:31+00:00",
        "ai": true,
        "num": 15,
-       "image": "https://fdn.gsmarena.com/imgroot/news/26/11/hmd-pureview-phone-leak/-184x111/gsmarena_00.jpg",
+       "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/23/bac-si-1795448816-3114-1795448828.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Pov-VSQbfnxa2FXAm5jZvQ",
        "fresh": ""
       },
       {
-       "cid": 42,
-       "category": "mobile",
+       "cid": 297,
+       "category": "science_health",
        "severity": "low",
-       "title": "Apple bổ sung tính năng sửa lỗi Wi-Fi chập chờn trên iOS 27",
-       "summary": "Bản cập nhật iOS 27 tích hợp giải pháp mới giúp cải thiện tính ổn định cho các kết nối Wi-Fi không ổn định trên iPhone.",
-       "developments": "Apple đã đưa vào hệ điều hành iOS 27 một cơ chế sửa lỗi thông minh cho mạng Wi-Fi, hỗ trợ khắc phục tình trạng kết nối chập chờn hoặc ngắt khoảng.",
-       "context": "Kết nối Wi-Fi chập chờn là một trong những sự cố phổ biến ảnh hưởng tới trải nghiệm người dùng smartphone.",
-       "why_it_matters": "Bản sửa lỗi giúp tín hiệu mạng trên iPhone của người dùng Việt Nam hoạt động ổn định và mượt mà hơn.",
+       "title": "Chọn 30 nhà khoa học trẻ Việt Nam dự hội nghị tại Nga",
+       "summary": "Quỹ NAFOSTED công bố danh sách 30 nhà khoa học trẻ đại diện Việt Nam tham dự Đại hội các nhà khoa học trẻ tại Nga.",
+       "developments": "Các nhà khoa học trẻ được tuyển chọn kỹ lưỡng dựa trên năng lực nghiên cứu xuất sắc để tham dự kỳ đại hội lần thứ VI năm 2026. Đây là cơ hội để trao đổi chuyên môn, kết nối mạng lưới học thuật và tìm kiếm cơ hội hợp tác quốc tế.",
+       "context": "Chương trình nằm trong khuôn khổ hợp tác khoa học và công nghệ thường niên giữa Việt Nam và Liên bang Nga.",
+       "why_it_matters": "Sự kiện góp phần thúc đẩy nghiên cứu khoa học cơ bản và đào tạo thế hệ nhân lực khoa học công nghệ trẻ của Việt Nam.",
        "is_update": false,
-       "url": "https://9to5mac.com/2026/11/22/ios-27-has-a-clever-fix-for-unreliable-wi-fi-connections/",
-       "source": "9to5Mac",
-       "published": "2026-11-22T22:02:43+00:00",
+       "url": "https://vnexpress.net/30-nha-khoa-hoc-tre-viet-nam-duoc-chon-du-dai-hoi-tai-nga-5148222.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T14:24:49+00:00",
        "ai": true,
        "num": 16,
-       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-27-rose.jpg?quality=82&strip=all&w=1600",
+       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/nha-khoa-hoc-1795441898-1919-1795441958.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=TGFl_WqeOTPZ4GM7L7cSPg",
        "fresh": ""
       }
      ],
@@ -494,110 +497,48 @@
      "last": 16
     },
     {
-     "key": "science_health",
-     "label": "Khoa học – Y tế",
-     "items": [
-      {
-       "cid": 291,
-       "category": "science_health",
-       "severity": "medium",
-       "title": "Tàu vũ trụ tiếp cận Sao Thủy sau hành trình kéo dài 8 năm",
-       "summary": "Sứ mệnh không gian đến Sao Thủy đã chính thức tiếp cận hành tinh này sau chuyến bay kéo dài 8 năm nhằm thu thập hình ảnh chi tiết.",
-       "developments": "Sau chuyến hành trình dài 8 năm trong không gian, tàu vũ trụ nghiên cứu đã bắt đầu tiếp cận Sao Thủy. Sứ mệnh này dự kiến cung cấp những hình ảnh và dữ liệu cận cảnh rõ nét nhất về hành tinh gần Mặt Trời nhất.",
-       "context": "Sao Thủy là một trong những hành tinh ít được khám phá nhất trong Hệ Mặt Trời do điều kiện khắc nghiệt và khó tiếp cận.",
-       "why_it_matters": "Thành tựu nghiên cứu hành tinh giúp mở rộng hiểu biết khoa học vũ trụ cho cộng đồng nghiên cứu toàn cầu và Việt Nam.",
-       "is_update": false,
-       "url": "https://www.bbc.co.uk/news/articles/c39w9l4v1p9ro?at_medium=RSS&at_campaign=rss",
-       "source": "BBC",
-       "published": "2026-11-22T10:44:12+00:00",
-       "ai": true,
-       "num": 17,
-       "image": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/eca5/live/034a6cb0-e4c7-11f1-a094-5fdc692f3e33.png",
-       "fresh": ""
-      },
-      {
-       "cid": 76,
-       "category": "science_health",
-       "severity": "medium",
-       "title": "Ứng dụng kỹ thuật nội soi lấy mỡ bụng thay cho phương pháp hút cũ",
-       "summary": "Kỹ thuật mới sử dụng camera nội soi và dao siêu âm giúp bác sĩ quan sát trực tiếp vùng can thiệp mỡ, nâng cao độ an toàn.",
-       "developments": "Kỹ thuật nội soi lấy mỡ dưới da vừa được ứng dụng thay cho phương pháp hút truyền thống. Phương pháp này kết hợp camera quan sát trực tiếp và dao siêu âm giúp cắt mô mỡ và cầm máu hiệu quả.",
-       "context": "Phẫu thuật thẩm mỹ hút mỡ trước đây tiềm ẩn rủi ro do bác sĩ không thể nhìn thấy vị trí can thiệp bên trong.",
-       "why_it_matters": "Kỹ thuật y khoa tiên tiến giúp giảm thiểu rủi ro và tăng độ an toàn cho người dân có nhu cầu làm đẹp tại Việt Nam.",
-       "is_update": false,
-       "url": "https://vnexpress.net/ky-thuat-moi-noi-soi-lay-mo-thay-cach-hut-mu-5147591.html",
-       "source": "VnExpress",
-       "published": "2026-11-22T20:00:00+00:00",
-       "ai": true,
-       "num": 18,
-       "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/phong-mo-nguoi-da-mo-mat-ben-p-9224-4073-1795313968.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GtKbPtfjBkZxGNHpb_DmIw",
-       "fresh": ""
-      },
-      {
-       "cid": 312,
-       "category": "science_health",
-       "severity": "medium",
-       "title": "Nam thanh niên nhập viện cấp cứu vì yếu liệt chân sau uống thuốc ho",
-       "summary": "Một thanh niên 22 tuổi bị đột ngột yếu liệt hai chân không thể ngồi dậy sau khi tự mua thuốc ho về sử dụng tại nhà.",
-       "developments": "Nam thanh niên 22 tuổi phải nhập viện cấp cứu trong tình trạng yếu liệt hai chân, không thể tự ngồi dậy sau một đêm tự uống thuốc ho mua bên ngoài.",
-       "context": "Tình trạng tự ý mua và dùng thuốc điều trị không theo kê đơn của bác sĩ vẫn diễn ra khá phổ biến.",
-       "why_it_matters": "Vụ việc là lời cảnh báo quan trọng cho người dân Việt Nam về nguy cơ biến chứng nguy hiểm khi tự điều trị thuốc.",
-       "is_update": false,
-       "url": "https://vnexpress.net/thanh-nien-22-tuoi-yeu-liet-hai-chan-sau-khi-uong-thuoc-ho-5147679.html",
-       "source": "VnExpress",
-       "published": "2026-11-22T09:34:17+00:00",
-       "ai": true,
-       "num": 19,
-       "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/images-jpeg-1795337243-2721-1795337262.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=9gWiFTZP7q59DGHtNq9adw",
-       "fresh": ""
-      },
-      {
-       "cid": 121,
-       "category": "science_health",
-       "severity": "low",
-       "title": "Cảnh báo trạng thái cô đơn kéo dài gây ảnh hưởng tiêu cực tới não bộ",
-       "summary": "Cảm giác cô đơn trong thời gian dài có liên quan trực tiếp đến nguy cơ sa sút trí tuệ và suy giảm khả năng nhận thức của não bộ.",
-       "developments": "Các nghiên cứu chỉ ra rằng tình trạng cô đơn kéo dài làm gia tăng nguy cơ suy giảm nhận thức và sa sút trí tuệ. Nguyên nhân xuất phát từ những biến đổi trong giấc ngủ và sự sụt giảm tương tác xã hội.",
-       "context": "Sức khỏe tâm thần ngày càng nhận được sự chú ý lớn từ các chuyên gia y tế trên toàn thế giới.",
-       "why_it_matters": "Phát hiện giúp nâng cao nhận thức cộng đồng tại Việt Nam về tầm quan trọng của việc kết nối xã hội để bảo vệ não bộ.",
-       "is_update": false,
-       "url": "https://vnexpress.net/co-don-keo-dai-khong-tot-cho-nao-bo-5147522.html",
-       "source": "VnExpress",
-       "published": "2026-11-22T17:04:00+00:00",
-       "ai": true,
-       "num": 20,
-       "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/khoa-nh-kha-c-tra-m-tu-be-n-kh-8872-1524-1795271838.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Wj23edmE1bj1N27I3SxBIA",
-       "fresh": ""
-      }
-     ],
-     "first": 17,
-     "last": 20
-    },
-    {
      "key": "environment",
      "label": "Môi trường – Khí hậu",
      "items": [
       {
-       "cid": 41,
+       "cid": 26,
        "category": "environment",
-       "severity": "low",
-       "title": "Bắc Bộ đón đợt không khí lạnh tăng cường gây rét từ đêm nay",
-       "summary": "Thời tiết cả nước ngày nắng nhưng Bắc Bộ sẽ chuyển rét và đón thêm đợt không khí lạnh tăng cường bắt đầu từ đêm 23-11.",
-       "developments": "Thời tiết toàn quốc duy trì ngày nắng, nhưng khu vực Bắc Bộ ban đêm trời rét và bắt đầu chịu ảnh hưởng của đợt không khí lạnh tăng cường từ đêm nay.",
-       "context": "Mùa đông tại khu vực phía Bắc đang vào đợt với các đợt không khí lạnh liên tiếp tràn về.",
-       "why_it_matters": "Người dân các tỉnh phía Bắc Việt Nam cần chủ động giữ ấm và điều chỉnh sinh hoạt phù hợp thời tiết rét đậm.",
-       "is_update": false,
-       "url": "https://tuoitre.vn/thoi-tiet-hom-nay-23-11-ca-nuoc-nang-dem-nay-bac-bo-don-khong-khi-lanh-tang-cuong-100261122154634887.htm",
-       "source": "Tuổi Trẻ",
-       "published": "2026-11-22T22:07:00+00:00",
+       "severity": "medium",
+       "title": "Bắc Bộ và Bắc Trung Bộ chuyển rét kèm mưa dông diện rộng",
+       "summary": "Đợt không khí lạnh tăng cường khiến các tỉnh Bắc Bộ và Bắc Trung Bộ chuyển rét, nhiều nơi có mưa to đến rất to.",
+       "developments": "Cơ quan khí tượng dự báo ngày và đêm 24/11, không khí lạnh tác động mạnh gây mưa dông diện rộng, vùng núi Bắc Bộ có nơi rét đậm. Nguy cơ ngập úng vùng trũng thấp và sạt lở đất tại các sườn đồi núi cũng được nâng mức cảnh báo.",
+       "context": "Đây là diễn biến tăng cường của đợt gió mùa đông bắc tràn về nước ta từ đêm hôm trước.",
+       "why_it_matters": "Người dân và chính quyền các địa phương miền Bắc cần theo dõi sát diễn biến để chủ động phòng chống rét và thiên tai mưa lũ.",
+       "is_update": true,
+       "url": "https://www.vietnamplus.vn/thoi-tiet-ngay-2411-bac-bo-va-bac-trung-bo-co-mua-dong-troi-chuyen-ret-post1150230.vnp",
+       "source": "VietnamPlus",
+       "published": "2026-11-23T23:05:17+00:00",
        "ai": true,
-       "num": 21,
-       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/mua-lanh-17364134659241698395094-28-0-1278-2000-crop-17953371195671909107829.jpg",
+       "num": 17,
+       "image": "https://media.vietnamplus.vn/images/2Bp7XAns5lTd2E1LvH3sb8VhB8jbMxfZJRddfYDS1r6YX7EHwMuOBkobcoVlCEuV/ttxvn_mua-ret.jpg.avif",
+       "fresh": ""
+      },
+      {
+       "cid": 192,
+       "category": "environment",
+       "severity": "medium",
+       "title": "Oxfam cảnh báo các cuộc không kích biến Dải Gaza thành vùng đất độc",
+       "summary": "Tổ chức Oxfam cảnh báo các hoạt động quân sự của Israel đã gây ô nhiễm nặng nề và biến phần lớn Dải Gaza thành vùng đất độc.",
+       "developments": "Báo cáo của Oxfam chỉ ra dấu hiệu nhiễm độc lan rộng khắp Gaza do hóa chất từ bom đạn, rác thải và hệ thống xử lý môi trường bị phá hủy. Tình trạng này đe dọa nghiêm trọng đến nguồn nước, đất canh tác và sự sống lâu dài của cư dân địa phương.",
+       "context": "Xung đột kéo dài tại Trung Đông đã phá vỡ toàn bộ cơ sở hạ tầng dân sinh và xử lý chất thải tại dải đất này.",
+       "why_it_matters": "Cảnh báo thảm họa sinh thái và khủng hoảng môi trường nghiêm trọng phát sinh từ các cuộc xung đột vũ trang hiện đại.",
+       "is_update": false,
+       "url": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o?at_medium=RSS&at_campaign=rss",
+       "source": "BBC",
+       "published": "2026-11-23T17:07:25+00:00",
+       "ai": true,
+       "num": 18,
+       "image": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/810a/live/c0542f80-e73d-11f1-99a1-253766e7ad8b.jpg",
        "fresh": ""
       }
      ],
-     "first": 21,
-     "last": 21
+     "first": 17,
+     "last": 18
     }
    ]
   },
@@ -608,840 +549,957 @@
     {
      "key": "cyber_digital",
      "label": "An ninh mạng – Dữ liệu cá nhân & Chuyển đổi số",
-     "items": [],
-     "first": 0,
-     "last": 0
+     "items": [
+      {
+       "cid": 155,
+       "category": "cyber_digital",
+       "severity": "high",
+       "title": "CrowdStrike mua Zscaler với giá 44 tỷ USD nhằm ứng phó đe dọa mạng",
+       "summary": "Hãng an ninh mạng CrowdStrike đạt thỏa thuận thâu tóm Zscaler trị giá 44 tỷ USD giữa bối cảnh các mối đe dọa mạng gia tăng.",
+       "developments": "Thương vụ sáp nhập có giá trị 44 tỷ USD sẽ kết hợp hai nền tảng bảo mật lớn để tăng cường năng lực phòng vệ số. Động thái diễn ra trong bối cảnh các cuộc tấn công mạng trên toàn cầu ngày càng diễn biến phức tạp.",
+       "context": "Nhu cầu bảo mật trên môi trường đám mây đang gia tăng nhanh chóng khi các doanh nghiệp chuyển dịch hạ tầng số.",
+       "why_it_matters": "Thương vụ tạo nên bước ngoặt lớn trên thị trường an ninh thông tin toàn cầu, tác động đến các tiêu chuẩn bảo mật của doanh nghiệp.",
+       "is_update": false,
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOcUdmOUFLaEppLU9uMl80V2x1RTg4YWg3VUc5cWZsVzNfUWJBN2pFY3BhTndKanI0U2gzZHMzZVdpeWlkVkdBMkxGZkEtNFYyYmhteTQ5MHM0NnhkN2lfVk1WcDRxZDluQzVXNll2OWhodnVmaG9qNm15SWdweEM4YmxSWXVKd21mNW9uWW82MHUyWlJLTEE?oc=5",
+       "source": "Reuters",
+       "published": "2026-11-23T18:31:10+00:00",
+       "ai": true,
+       "num": 19,
+       "image": "",
+       "fresh": ""
+      },
+      {
+       "cid": 264,
+       "category": "cyber_digital",
+       "severity": "high",
+       "title": "Triệt phá đường dây mua bán tài khoản và rửa tiền hơn 9.000 tỷ",
+       "summary": "Công an TP.HCM bắt giữ 42 bị can trong đường dây mua bán trái phép gần 1.300 tài khoản ngân hàng và rửa tiền hơn 9.000 tỷ đồng.",
+       "developments": "Cơ quan công an đã khởi tố và tạm giam 42 đối tượng về các hành vi rửa tiền, mua bán tài khoản ngân hàng và đánh bạc. Dữ liệu trích xuất ghi nhận 138 cá nhân đứng tên mở gần 1.300 tài khoản để trung chuyển tiền phi pháp.",
+       "context": "Tình trạng mua bán tài khoản ngân hàng thu thập từ thông tin cá nhân bất hợp pháp vẫn diễn biến tinh vi.",
+       "why_it_matters": "Cảnh báo người dân nâng cao cảnh giác, không để kẻ xấu lợi dụng thông tin định danh cá nhân để mở tài khoản phục vụ tội phạm công nghệ cao.",
+       "is_update": false,
+       "url": "https://tuoitre.vn/bat-42-nguoi-trong-duong-day-rua-tien-danh-bac-gan-1300-tai-khoan-ngan-hang-nhan-hon-9000-ti-dong-100261123215058965.htm",
+       "source": "Tuổi Trẻ",
+       "published": "2026-11-23T15:14:00+00:00",
+       "ai": true,
+       "num": 20,
+       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/23/edit-photo-1795445698633-1795445766082778309252-0-59-1179-1945-crop-17954457868241327428760.jpeg",
+       "fresh": ""
+      },
+      {
+       "cid": 132,
+       "category": "cyber_digital",
+       "severity": "medium",
+       "title": "Mỹ khởi kiện thu hồi hơn 1 tỷ USD tiền mã hóa bị đánh cắp",
+       "summary": "Bộ Tư pháp Mỹ nộp đơn kiện nhằm thu hồi số tiền mã hóa trị giá hơn 1 tỷ USD bị đánh cắp trong vụ tấn công sàn Binance.",
+       "developments": "Nhà chức trách Mỹ triển khai hành động pháp lý để tịch thu số tài sản số quy mô lớn có nguồn gốc từ vụ xâm nhập mạng nhắm vào sàn Binance. Nỗ lực này nhằm phong tỏa và thu hồi tài sản bị tin tặc tẩu tán qua các ví điện tử.",
+       "context": "Tội phạm mạng xuyên biên giới liên tục nhắm vào các nền tảng giao dịch tiền mã hóa với quy mô ngày càng lớn.",
+       "why_it_matters": "Động thái thể hiện quyết tâm của các cơ quan quản lý trong việc truy vết và kiểm soát dòng tiền mã hóa bất hợp pháp.",
+       "is_update": false,
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVNMXVSLXVnN2RqNTM3Q09KcFk4MnhKNG9pN2FPd1ZJd2JURFNMRWRCMllWYm9Ia1dZYXh6bmhrWFdkM2k2WFNzNndJQXI5aDdoTXJXdzNwUGxUQzJhQWxwQ1JIcnRwaFVyVXJmbmV2STNnWGJPUldNelNRZmZyV1gweDFVeW1BVVhJMTV5WEtreVJnQ2xrQ0V2VzRfZUtHVWlsQzJja01fYUN1ZEw1ZUJwQU5zWExINXZqSGJGdEpYNjRR?oc=5",
+       "source": "Reuters",
+       "published": "2026-11-23T19:31:05+00:00",
+       "ai": true,
+       "num": 21,
+       "image": "",
+       "fresh": ""
+      },
+      {
+       "cid": 425,
+       "category": "cyber_digital",
+       "severity": "medium",
+       "title": "Bổ nhiệm Thiếu tướng Bùi Ngọc Tuyên làm Chính ủy Tác chiến không gian mạng",
+       "summary": "Thiếu tướng Bùi Ngọc Tuyên được Thủ tướng bổ nhiệm giữ chức Chính ủy Bộ Tư lệnh Tác chiến không gian mạng.",
+       "developments": "Thủ tướng ký quyết định bổ nhiệm Thiếu tướng Bùi Ngọc Tuyên, nguyên Chính ủy Bộ Tư lệnh Pháo binh - Tên lửa, đảm nhiệm chức vụ mới. Ông nhận trọng trách lãnh đạo công tác chính trị tại đơn vị nòng cốt phòng thủ không gian mạng quốc gia.",
+       "context": "Bảo vệ an ninh mạng và không gian mạng đã trở thành nhiệm vụ chiến lược cấp bách trong công tác quốc phòng hiện đại.",
+       "why_it_matters": "Kiện toàn bộ máy lãnh đạo giúp nâng cao năng lực ứng phó các nguy cơ tấn công mạng và bảo vệ chủ quyền số của Việt Nam.",
+       "is_update": false,
+       "url": "https://vnexpress.net/thieu-tuong-bui-ngoc-tuyen-lam-chinh-uy-bo-tu-lenh-tac-chien-khong-gian-mang-5148196.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T12:02:47+00:00",
+       "ai": true,
+       "num": 22,
+       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/thieu-tuong-bui-ngoc-tuyen-179-9775-4177-1795435515.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=9wM4rH3NO1FO3LUvhWJfOQ",
+       "fresh": ""
+      }
+     ],
+     "first": 19,
+     "last": 22
     },
     {
      "key": "sports",
      "label": "Thể thao",
      "items": [
       {
-       "cid": 14,
+       "cid": 283,
        "category": "sports",
        "severity": "high",
-       "title": "Carlos Alcaraz lần đầu vô địch ATP Finals sau khi đánh bại Zverev",
-       "summary": "Carlos Alcaraz vượt qua Alexander Zverev với tỷ số 6-2, 7-6 để giành chức vô địch ATP Finals đầu tiên trong sự nghiệp.",
-       "developments": "Tay vợt Carlos Alcaraz đã thể hiện phong độ xuất sắc để đánh bại tay vợt số một thế giới Alexander Zverev tại trận chung kết ATP Finals. Chiến thắng này giúp anh khép lại năm 2026 với chuỗi ba danh hiệu liên tiếp.",
-       "context": "Trước đó, Alcaraz đã vượt qua vòng bảng với thành tích toàn thắng để bước vào trận chung kết tranh ngôi vô địch.",
-       "why_it_matters": "Chức vô địch khẳng định vị thế đỉnh cao của Alcaraz trong làng quần vợt thế giới, thu hút sự chú ý của đông đảo người hâm mộ thể thao Việt Nam.",
+       "title": "U17 Việt Nam giành điểm số lịch sử sau trận hòa New Zealand 3-3",
+       "summary": "Đội tuyển U17 Việt Nam kiên cường rượt đuổi tỷ số để hòa New Zealand 3-3, giành điểm số đầu tiên tại vòng chung kết U17 World Cup.",
+       "developments": "Dù ba lần bị đối phương vượt lên dẫn trước, các học trò của HLV Cristiano Roland đã thi đấu quả cảm để gỡ hòa 3-3 kịch tính. Trận hòa giúp đại diện Việt Nam có được điểm số lịch sử đầu tiên tại sân chơi U17 thế giới.",
+       "context": "Trước đó, U17 Việt Nam đã để thua sít sao 2-3 trước U17 Bỉ trong trận ra quân ở bảng G.",
+       "why_it_matters": "Kết quả tạo động lực tinh thần to lớn và tiếp tục duy trì cơ hội cạnh tranh cho bóng đá trẻ Việt Nam tại đấu trường thế giới.",
        "is_update": true,
-       "url": "https://tuoitre.vn/danh-bai-zverev-alcaraz-lan-dau-vo-dich-atp-finals-100261123061912253.htm",
-       "source": "Tuổi Trẻ",
-       "published": "2026-11-22T23:25:00+00:00",
-       "ai": true,
-       "num": 22,
-       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/carlos-alcaraz-atp-finals-17953894472511452354104-237-0-1837-2560-crop-17953894981531949973996.jpg",
-       "fresh": ""
-      },
-      {
-       "cid": 37,
-       "category": "sports",
-       "severity": "medium",
-       "title": "Manchester United thảm bại 0-4 trước Liverpool trong ngày ra mắt HLV mới",
-       "summary": "HLV Mauricio Pochettino có màn ra mắt thất vọng khi Manchester United thua thảm 0-4 trước Liverpool tại Ngoại hạng Anh.",
-       "developments": "Trong trận đấu đầu tiên dẫn dắt Manchester United, HLV Mauricio Pochettino phải chịu thất bại nặng nề 0-4 trước Liverpool tại vòng 11 Ngoại hạng Anh. Chiếc thẻ đỏ sớm của Leny Yoro ở phút thứ tám đã khiến đội chủ nhà rơi vào thế hoảng loạn.",
-       "context": "Manchester United vừa bổ nhiệm HLV Pochettino với kỳ vọng cải thiện phong độ thi đấu tại giải quốc nội.",
-       "why_it_matters": "Trận thua thảm ảnh hưởng lớn đến tham vọng dự cúp châu Âu của Manchester United, câu lạc bộ sở hữu lượng CĐV rất đông đảo tại Việt Nam.",
-       "is_update": false,
-       "url": "https://tuoitre.vn/man-united-tham-bai-truoc-liverpool-trong-ngay-ra-mat-hlv-moi-100261123030652309.htm",
-       "source": "Tuổi Trẻ",
-       "published": "2026-11-22T22:23:00+00:00",
+       "url": "https://vnexpress.net/truc-tiep-viet-nam-vs-new-zealand-5148242.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T14:45:41+00:00",
        "ai": true,
        "num": 23,
-       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/anh-chup-man-hinh-2026-11-23-luc-030417-1795377881721648976412-0-60-649-1098-crop-179537793430097161982.png",
+       "image": "https://vcdn1-thethao.vnecdn.net/2026/11/24/179545274190528560458903111777-9192-1441-1795453630.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=5wWt6-A0bQt1ZACnIfDLfQ",
        "fresh": ""
       },
       {
-       "cid": 395,
+       "cid": 243,
        "category": "sports",
        "severity": "medium",
-       "title": "Kình ngư Việt kiều Watson Nguyễn phá kỷ kỷ bơi quốc gia 16 năm",
-       "summary": "Nguyễn Hoa Watson đạt 27 giây 16 ở nội dung 50m ếch nam, phá sâu kỷ kỷ tồn tại 16 năm tại Đại hội Thể thao toàn quốc.",
-       "developments": "Tại vòng loại 50m ếch nam Đại hội Thể thao toàn quốc 2026, kình ngư Việt kiều Mỹ Nguyễn Hoa Watson đạt thành tích 27 giây 16. Kết quả này phá sâu kỷ kỷ giải đấu từng do cố vận động viên Nguyễn Hữu Việt nắm giữ suốt 16 năm.",
-       "context": "Đại hội Thể thao toàn quốc 2026 đang diễn ra sôi nổi với sự tham gia của nhiều vận động viên xuất sắc trong và ngoài nước.",
-       "why_it_matters": "Thành tích ấn tượng của các vận động viên Việt kiều góp phần nâng cao chất lượng chuyên môn và cảm hứng cho thể thao thành tích cao Việt Nam.",
+       "title": "Ánh Viên phá kỷ lục Đại hội Thể thao sau gần 4 năm giải nghệ",
+       "summary": "Kình ngư Nguyễn Thị Ánh Viên cùng đồng đội giành huy chương vàng tiếp sức 4x200m tự do nữ và phá kỷ lục Đại hội Thể thao toàn quốc 2026.",
+       "developments": "Bơi ở lượt đầu tiên, Ánh Viên tạo lợi thế lớn giúp đội Quân Đội đoạt huy chương vàng nội dung tiếp sức 4x200m tự do nữ. Thành tích này đồng thời phá sâu kỷ lục Đại hội Thể thao toàn quốc tới 12,22 giây.",
+       "context": "Nguyễn Thị Ánh Viên trở lại thi đấu sau gần 4 năm tuyên bố chia tay bơi lội đỉnh cao.",
+       "why_it_matters": "Màn tái xuất rực rỡ của tượng đài bơi lội Việt Nam truyền cảm hứng mạnh mẽ cho phong trào thể thao nước nhà.",
        "is_update": false,
-       "url": "https://vnexpress.net/viet-kieu-my-pha-sau-ky-luc-boi-viet-nam-5147606.html",
-       "source": "VnExpress",
-       "published": "2026-11-22T03:18:05+00:00",
+       "url": "https://tuoitre.vn/anh-vien-gianh-hcv-dau-tien-sau-gan-4-nam-tuyen-bo-giai-nghe-100261123223521018.htm",
+       "source": "Tuổi Trẻ",
+       "published": "2026-11-23T15:47:00+00:00",
        "ai": true,
        "num": 24,
-       "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/watson-nguye-n-1795316078-9396-1795316333.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=bwcM8ddMkKbPX1Cu6RiwEw",
+       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/23/179544723414920664181444029384276225853887195716592d7f747b0d6e199c1774b62ae76e5aeb3-1795447645440595355110-41-168-1535-2560-crop-17954477872911844840860.jpg",
        "fresh": ""
       },
       {
-       "cid": 253,
+       "cid": 244,
        "category": "sports",
        "severity": "medium",
-       "title": "U17 Việt Nam tự tin hướng tới trận đấu lịch sử với U17 New Zealand",
-       "summary": "Đội tuyển U17 Việt Nam tích cực chuẩn bị và quyết tâm giành chiến thắng ở lượt trận thứ hai bảng G World Cup U17.",
-       "developments": "Sau trận hòa ấn tượng trước U17 Bỉ, tuyển U17 Việt Nam sẵn sàng cho lượt trận thứ hai gặp U17 New Zealand tại Qatar. Các cầu thủ tỏ ra rất tự tin vào khả năng cạnh tranh vé đi tiếp.",
-       "context": "Màn trình diễn khởi sắc ở trận ra quân giúp U17 Việt Nam nhận được nhiều sự đánh giá tích cực từ giới chuyên môn quốc tế.",
-       "why_it_matters": "Kết quả trận đấu có ý nghĩa quyết định tới cơ hội lần đầu tiên vượt qua vòng bảng World Cup của bóng đá trẻ Việt Nam.",
+       "title": "Kình ngư 17 tuổi Nguyễn Thúy Hiền phá 5 kỷ lục Đại hội",
+       "summary": "Vận động viên trẻ Nguyễn Thúy Hiền xuất sắc giành 5 huy chương vàng và phá 5 kỷ lục tại môn bơi Đại hội Thể thao toàn quốc 2026.",
+       "developments": "Kình ngư 17 tuổi của đoàn Quân Đội đã thi đấu bùng nổ, liên tiếp phá 5 kỷ lục đại hội chỉ sau hai ngày tranh tài.",
+       "context": "Đại hội Thể thao toàn quốc là sân chơi thể thao có quy mô lớn nhất nước, nơi quy tụ những gương mặt tài năng hàng đầu.",
+       "why_it_matters": "Thành tích vượt trội khẳng định tiềm năng lớn của thế hệ vận động viên trẻ kế cận cho bơi lội Việt Nam.",
        "is_update": false,
-       "url": "https://vnexpress.net/tien-dao-viet-nam-ket-qua-truoc-bi-giup-chung-toi-tu-tin-hon-o-u17-world-cup-5147710.html",
+       "url": "https://vnexpress.net/kinh-ngu-17-tuoi-pha-5-ky-luc-dai-hoi-the-thao-toan-quoc-5148238.html",
        "source": "VnExpress",
-       "published": "2026-11-22T12:11:51+00:00",
+       "published": "2026-11-23T15:46:54+00:00",
        "ai": true,
        "num": 25,
-       "image": "https://vcdn1-thethao.vnecdn.net/2026/11/22/img-1795348826-4809-1795348958.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=g5HWDNb1Z4kHO9H8hGvc3Q",
+       "image": "https://vcdn1-thethao.vnecdn.net/2026/11/23/wm1-wm1-17954348842876625051183830-2612-9195-1795444063.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=1Q6VCqFFsNCqf_oBgNStTg",
+       "fresh": ""
+      },
+      {
+       "cid": 130,
+       "category": "sports",
+       "severity": "low",
+       "title": "FIFA chọn Mỹ và Anh đăng cai hai kỳ World Cup nữ liên tiếp",
+       "summary": "Liên đoàn Bóng đá Thế giới chính thức trao quyền đồng đăng cai World Cup nữ 2031 cho Mỹ và giải đấu năm 2035 cho Anh.",
+       "developments": "FIFA công bố Mỹ sẽ là nước đồng chủ nhà của giải vô địch bóng đá nữ thế giới năm 2031, trong khi Vương quốc Anh được chọn đăng cai kỳ tiếp theo năm 2035.",
+       "context": "Bóng đá nữ đang chứng kiến bước phát triển vượt bậc về quy mô tổ chức lẫn sự quan tâm của khán giả toàn cầu.",
+       "why_it_matters": "Việc chốt địa điểm sớm mở ra tầm nhìn dài hạn cho các đội tuyển nữ trên toàn thế giới, bao gồm Việt Nam, chuẩn bị kế hoạch phát triển.",
+       "is_update": false,
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWm82TE84Qm96Y2xpQ0N4Y1ByS2hwSVMxSU5UV0RIbWlWd2phNlFCUVktQWtSbWJCemZCQkRTd2Q4eWJGclFhbDVlQmI5bkN1OWoxbEtDUGFlUWNMbjJTVHlLOEE4OEF6NGc3SHNkTzBkSEZlTUw2RTlHdGhQSlB6T3hvNVRvXzR1dHgyX0xzU3Y3QWRuVjFsOTdsUFI?oc=5",
+       "source": "AP News",
+       "published": "2026-11-23T19:46:00+00:00",
+       "ai": true,
+       "num": 26,
+       "image": "",
        "fresh": ""
       }
      ],
-     "first": 22,
-     "last": 25
+     "first": 23,
+     "last": 26
     },
     {
      "key": "culture_society",
      "label": "Văn hóa – Xã hội",
      "items": [
       {
-       "cid": 191,
-       "category": "culture_society",
-       "severity": "high",
-       "title": "Chủ tịch Quốc hội nhấn mạnh chuyển đổi xanh cho thương hiệu gạo Việt",
-       "summary": "Chủ tịch Quốc hội Trần Thanh Mẫn đề nghị đẩy mạnh khoa học công nghệ và giảm phát thải để bảo vệ thương hiệu gạo Việt Nam.",
-       "developments": "Tham dự Festival quốc tế ngành hàng lúa gạo Việt Nam lần thứ II, Chủ tịch Quốc hội Trần Thanh Mẫn phát biểu chỉ đạo về định hướng phát triển nông nghiệp bền vững. Ông yêu cầu chuyển mạnh sang ứng dụng công nghệ cao, giảm phát thải khí nhà kính và nâng cao giá trị hạt gạo.",
-       "context": "Việt Nam là một trong những quốc gia xuất khẩu gạo hàng đầu thế giới nhưng đang đối mặt với yêu cầu xanh hóa từ thị trường quốc tế.",
-       "why_it_matters": "Chiến lược chuyển đổi xanh giúp nâng cao sức cạnh tranh và đảm bảo sinh kế bền vững cho hàng triệu nông dân trồng lúa trên cả nước.",
-       "is_update": false,
-       "url": "https://www.vietnamplus.vn/chu-tich-quoc-hoi-tran-thanh-man-day-manh-chuyen-doi-xanh-xay-dung-va-bao-ve-thuong-hieu-gao-viet-nam-post1150012.vnp",
-       "source": "VietnamPlus",
-       "published": "2026-11-22T14:35:41+00:00",
-       "ai": true,
-       "num": 26,
-       "image": "https://media.vietnamplus.vn/images/0f-btEj60lGt0BFs9lOY19UuYnSwhaOt7VJ0BzNiOrYMuTIuH5-pWa35gHMrE-fgcZvv1mWzL957Vsx6Y0y79qON5KPsxnNbpO1jJ_OdRqDAfAyRjDJgqQ3ZECPjWRGgM4BfLUEr243amep-1PgaOB-ghhT_G-zHservdxz3NkHYXwknhcBeSjg2ddyvMvfdT577DIlyJl9J2PhhZIZ5kg/ttxvn_chu-tich-quoc-hoi-tran-thanh-man-du-le-khai-mac-festival-quoc-te-nganh-hang-lua-gao-viet-nam-lan-thu-ii-can-tho3.jpg.avif",
-       "fresh": ""
-      },
-      {
-       "cid": 187,
+       "cid": 35,
        "category": "culture_society",
        "severity": "medium",
-       "title": "TPHCM trình diễn nghệ thuật 3D mapping trên kiến trúc trụ sở UBND",
-       "summary": "Chương trình trình diễn nghệ thuật 3D mapping trên nền kiến trúc UBND TP.HCM đã chính thức mở màn chuỗi hoạt động Ngày Văn hóa Việt Nam.",
-       "developments": "Tối 22/11, màn trình diễn công nghệ chiếu sáng 3D mapping độc đáo đã diễn ra tại trụ sở UBND TP.HCM, biến công trình kiến trúc cổ kính thành không gian nghệ thuật thị giác sinh động. Sự kiện thu hút đông đảo người dân và du khách thưởng lãm.",
-       "context": "Hoạt động nằm trong khuôn khổ Ngày hội Đại đoàn kết toàn dân tộc và chào mừng Ngày Văn hóa Việt Nam năm 2026.",
-       "why_it_matters": "Sự kết hợp giữa công nghệ hiện đại và di sản kiến trúc giúp quảng bá hình ảnh một đô thị TP.HCM năng động, giàu bản sắc văn hóa.",
+       "title": "Khởi động Ngày Văn hóa Việt Nam với định hướng phát triển mới",
+       "summary": "Lần đầu tiên Ngày Văn hóa Việt Nam được tổ chức, nhấn mạnh sự phát triển đồng bộ từ tư duy, thể chế đến thị trường công nghiệp văn hóa.",
+       "developments": "Sự kiện đánh dấu bước chuyển động toàn diện về cơ chế và nguồn lực nhằm xây dựng ngành công nghiệp văn hóa hiện đại. Các chuyên gia nhấn mạnh phát triển công nghiệp văn hóa không đồng nghĩa với thương mại hóa bằng mọi cách.",
+       "context": "Việt Nam đang tập trung hoàn thiện chính sách để đưa văn hóa trở thành nguồn lực nội sinh thúc đẩy kinh tế.",
+       "why_it_matters": "Định hướng phát triển bền vững giúp bảo tồn bản sắc truyền thống đồng thời gia tăng giá trị kinh tế cho các sản phẩm sáng tạo.",
        "is_update": false,
-       "url": "https://tuoitre.vn/man-nhan-man-trinh-dien-nghe-thuat-3d-mapping-tren-nen-kien-truc-tru-so-ubnd-tphcm-100261122174029107.htm",
+       "url": "https://tuoitre.vn/ngay-van-hoa-viet-nam-lan-dau-tien-phat-trien-cong-nghiep-van-hoa-khong-dong-nghia-thuong-mai-moi-cach-10026111708090445.htm",
        "source": "Tuổi Trẻ",
-       "published": "2026-11-22T14:45:00+00:00",
+       "published": "2026-11-23T23:00:00+00:00",
        "ai": true,
        "num": 27,
-       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/2aoboreqhc7guarq1yntyrwdlalpvuof3znhho9a-17953530933811042335972-17953596856221109872529-74-60-1613-2523-crop-1795359842868906074269.jpg",
+       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/17/edit-87648134612024533388036751135934215961237857n-1794878382117271677706-369-0-1292-1476-crop-1794878437059807928319.jpeg",
        "fresh": ""
       },
       {
-       "cid": 152,
+       "cid": 413,
        "category": "culture_society",
        "severity": "medium",
-       "title": "Một nghìn drone trình diễn ánh sáng di sản và APEC 2027 tại Phú Quốc",
-       "summary": "Màn trình diễn của 1.000 thiết bị bay không người lái tái hiện di sản văn hóa và logo APEC 2027 rực sáng trên biển Phú Quốc.",
-       "developments": "Hàng ngàn du khách và người dân tại Phú Quốc đã được thưởng thức màn trình diễn nghệ thuật ánh sáng hoành tráng từ 1.000 drone. Các thiết bị xếp thành những hình ảnh di sản văn hóa tiêu biểu cùng biểu tượng chào đón APEC 2027.",
-       "context": "Phú Quốc đang tích cực quảng bá hình ảnh du lịch và chuẩn bị hạ tầng cho các sự kiện quốc tế lớn sắp tới.",
-       "why_it_matters": "Sự kiện góp phần khẳng định năng lực tổ chức các lễ hội công nghệ hiện đại, nâng tầm hình ảnh du lịch Việt Nam trên trường quốc tế.",
+       "title": "TP.HCM chi 370 tỷ đồng hỗ trợ Tết cho công nhân khó khăn",
+       "summary": "TP.HCM bắt đầu chuyển khoản 370 tỷ đồng tặng quà Tết cho 370.000 lao động gặp khó khăn hoặc bị giảm thu nhập.",
+       "developments": "Chương trình chăm lo Tết Đinh Mùi 2027 hỗ trợ trực tiếp 1 triệu đồng mỗi người thông qua tài khoản ngân hàng từ tháng 11. Các đối tượng ưu tiên gồm công nhân mất việc, giảm giờ làm và người lao động có hoàn cảnh đặc biệt khó khăn.",
+       "context": "Nhiều doanh nghiệp và công nhân phải đối mặt với khó khăn kinh tế vào giai đoạn cuối năm.",
+       "why_it_matters": "Chính sách an sinh xã hội kịp thời giúp người lao động chủ động ổn định sinh hoạt và đón Tết ấm cúng.",
        "is_update": false,
-       "url": "https://tuoitre.vn/1000-drone-trinh-dien-di-san-van-hoa-va-apec-2027-ruc-sang-giua-bien-troi-tay-nam-100261122222522503.htm",
-       "source": "Tuổi Trẻ",
-       "published": "2026-11-22T15:44:00+00:00",
+       "url": "https://vnexpress.net/tp-hcm-chuyen-khoan-370-ty-dong-qua-tet-den-cong-nhan-5148203.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T12:14:04+00:00",
        "ai": true,
        "num": 28,
-       "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/hvm7-1795360983227964638811-0-172-3080-5100-crop-1795362747760564418726.jpg",
+       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/1795435619955-e61929661dd0be3e-6749-7157-1795436045.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=CmOXrNE6ZV3C8vun2SfGdA",
        "fresh": ""
       },
       {
-       "cid": 32,
+       "cid": 166,
        "category": "culture_society",
        "severity": "medium",
-       "title": "Việt Nam trở thành khách mời danh dự tại Liên hoan phim quốc tế Pháp",
-       "summary": "Việt Nam được chọn làm khách mời danh dự tại Liên hoan phim cực ngắn quốc tế Pháp ngữ diễn ra năm 2027.",
-       "developments": "Liên hoan phim cực ngắn quốc tế Pháp ngữ 'Un Brin de Court' năm 2027 đã chính thức chọn Việt Nam là quốc gia khách mời danh dự. Đây là sự kiện điện ảnh quy tụ nhiều tác phẩm từ các nước trong cộng đồng Pháp ngữ.",
-       "context": "Điện ảnh và văn hóa Việt Nam thời gian qua liên tục ghi dấu ấn tại các diễn đàn nghệ thuật quốc tế.",
-       "why_it_matters": "Đây là cơ hội lớn để quảng bá điện ảnh, đất nước và con người Việt Nam tới đông đảo công chúng và giới nghệ thuật châu Âu.",
+       "title": "Đề nghị truy tặng Huân chương Dũng cảm cho hai người cứu nạn",
+       "summary": "UBND tỉnh Khánh Hòa đề xuất truy tặng Huân chương Dũng cảm cho hai công dân hy sinh khi dũng cảm cứu người đuối nước.",
+       "developments": "Hai công dân đã không màng hiểm nguy lao vào sóng lớn để đưa các nạn nhân vào bờ an toàn trước khi kiệt sức và qua đời. Chính quyền địa phương đã hoàn tất thủ tục đề nghị cấp có thẩm quyền vinh danh nghĩa cử cao đẹp này.",
+       "context": "Sự việc đau lòng xảy ra khi các nạn nhân gặp sự cố đuối nước trong điều kiện thời tiết biển động phức tạp.",
+       "why_it_matters": "Góp phần tôn vinh gương sáng dũng cảm và lan tỏa tinh thần nhân ái, vì cộng đồng trong đời sống xã hội.",
        "is_update": false,
-       "url": "https://www.vietnamplus.vn/viet-nam-duoc-chon-la-khach-moi-danh-du-lien-hoan-phim-tai-phap-post1150028.vnp",
-       "source": "VietnamPlus",
-       "published": "2026-11-22T22:46:38+00:00",
+       "url": "https://vnexpress.net/de-nghi-truy-tang-huan-chuong-cho-hai-nguoi-hy-sinh-khi-cuu-nan-5148247.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T18:00:00+00:00",
        "ai": true,
        "num": 29,
-       "image": "https://media.vietnamplus.vn/images/_oouAPyqAYT_A5VL0XA6pJBZc7UgyH6udbm0OqxphSGinm7GQDNh2ErHIKa4gSJrZwmRuVz_i_npoB7-CwmKlcxq7zsOv7qR0r6CWdANi9I4iXJG-A7WLQvJuzr1Tf_Op5l_TT8V1sp9YOLy8trUZ2dK2XKccilnbJwFP2BF3ftafqcGpKCuhKeNT4Yj-hb6O68Kok39VxEegRpLRCZeeA/lien-hoan-phim-tai-lieu-ngan-quoc-te-viet-culture-in-motion-2026-khi-nguoi-tre-ke-chuyen-viet-nam-bang-dien-anh-8822421.jpg.avif",
+       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/2aOboREYpLCONOzjGYUx390uzioQgz-5680-7331-1795446598.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=CdFIjoke9tTQKgkNfXipZg",
+       "fresh": ""
+      },
+      {
+       "cid": 359,
+       "category": "culture_society",
+       "severity": "low",
+       "title": "Nhà thờ Đức Bà Sài Gòn thắp sáng nghìn cây số đèn LED",
+       "summary": "Hơn 1.000 km dây đèn LED bao quanh Nhà thờ Đức Bà được thắp sáng thử nghiệm, tạo khung cảnh rực rỡ chào đón Giáng sinh.",
+       "developments": "Hệ thống chiếu sáng bằng dây đèn LED quy mô lớn quanh công trình kiến trúc cổ đã được vận hành thử nghiệm tối 23/11. Khung cảnh lung linh thu hút đông đảo người dân địa phương và du khách tới tham quan, chụp ảnh.",
+       "context": "Nhà thờ Đức Bà Sài Gòn là di tích kiến trúc tôn giáo tiêu biểu của TP.HCM và đang trong quá trình trùng tu.",
+       "why_it_matters": "Hoạt động mang lại không khí lễ hội rộn ràng, tạo điểm đến sinh hoạt văn hóa hấp dẫn cho cộng đồng trước thềm Giáng sinh.",
+       "is_update": false,
+       "url": "https://vnexpress.net/nha-tho-duc-ba-sai-gon-ruc-sang-voi-1-000-km-day-den-led-5148199.html",
+       "source": "VnExpress",
+       "published": "2026-11-23T13:16:53+00:00",
+       "ai": true,
+       "num": 30,
+       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/td5-1795439414.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=9HFZ2LVW4CwzpMVwze-PMg",
        "fresh": ""
       }
      ],
-     "first": 26,
-     "last": 29
+     "first": 27,
+     "last": 30
     }
    ]
   }
  ],
  "takeaways": [
-  "Liên danh Việt Pháp Hàn trúng gói tư vấn đường sắt tốc độ cao.",
-  "Bộ Chính trị cho phép thành lập Khu kinh tế đặc biệt Vân Phong.",
-  "Đàm phán khí hậu COP31 thất bại do bất đồng nhiên liệu hóa thạch."
+  "Bắc Bộ và Bắc Trung Bộ chuyển rét kèm mưa dông diện rộng.",
+  "Đoạn trên cao Vành đai 3 TP.HCM dự kiến xong cuối tháng này.",
+  "U17 Việt Nam hòa New Zealand 3-3, giành điểm số lịch sử."
  ],
- "total_items": 29,
+ "total_items": 30,
  "ai_degraded": false,
- "weekday": 0,
- "weekday_name": "Thứ Hai",
- "weekday_short": "T2",
- "serial": "23·11",
+ "weekday": 1,
+ "weekday_name": "Thứ Ba",
+ "weekday_short": "T3",
+ "serial": "24·11",
  "year": "2026",
- "date_compact": "20261123",
+ "date_compact": "20261124",
  "site_url": "https://vongocngu273.github.io/daily-briefing/",
  "ai_url": "https://ban-tin-ai.vongocngu273.workers.dev",
  "live": {
   "hot": [
    {
-    "title": "Sắc màu văn hóa 54 dân tộc hội tụ trên đường đi bộ Nguyễn Huệ",
-    "url": "https://tuoitre.vn/sac-mau-van-hoa-54-dan-toc-hoi-tu-tren-duong-di-bo-nguyen-hue-100261122215901212.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/2aoboreqzfotsdpcysk0p0rqt19mfichbakkb9kg-1795359265747103090922-250-81-1668-2349-crop-1795359306235959869252.jpg",
-    "ts": "2026-11-22T23:06:00+00:00",
-    "sources": 2,
-    "score": 7.53,
-    "time": "06:06"
-   },
-   {
-    "title": "Lan tỏa bản sắc văn hóa Việt Nam tại Malaysia",
-    "url": "https://www.vietnamplus.vn/lan-toa-ban-sac-van-hoa-viet-nam-tai-malaysia-post1150029.vnp",
+    "title": "Chứng khoán Mỹ tăng mạnh sau khi Nvidia phục chức CEO cho ông Jensen Huang",
+    "url": "https://www.vietnamplus.vn/chung-khoan-my-tang-manh-sau-khi-nvidia-phuc-chuc-ceo-cho-ong-jensen-huang-post1150223.vnp",
     "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6o-sJ9Ooxyl59S5YKG4R1WW0oO3F-Y5x-b8kGh8o7pCUVViifhmJi2dPz6h6OYsF85qaa58oqkzdeeiKdw3HexC1JwTnxYETdyLl1PtDT77Y/ttxvn_dac-sac-ngay-van-hoa-viet-nam-tai-malaysia-9172444-3.jpg.avif",
-    "ts": "2026-11-22T22:50:31+00:00",
+    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6ma-FV6KNn-7BfXmTVzR-BJjpy9QYbCyil7cdhjcYY9Wq5rbQrfeHYghknQMX-Kfs0-e-wyJciZfSdj4YWSGeZI/ttxvn_chung-khoan-my-tang-manh-8762066.jpg.avif",
+    "ts": "2026-11-23T15:50:13+00:00",
     "sources": 2,
-    "score": 7.49,
-    "time": "05:50"
+    "score": 5.92,
+    "time": "22:50"
    },
    {
-    "title": "Đánh bại Zverev, Alcaraz lần đầu vô địch ATP Finals",
-    "url": "https://tuoitre.vn/danh-bai-zverev-alcaraz-lan-dau-vo-dich-atp-finals-100261123061912253.htm",
-    "source": "Tuổi Trẻ",
-    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/carlos-alcaraz-atp-finals-17953894472511452354104-237-0-1837-2560-crop-17953894981531949973996.jpg",
-    "ts": "2026-11-22T23:25:00+00:00",
+    "title": "Phe Dân chủ sẽ điều tra việc Jensen Huang được phục chức",
+    "url": "https://vnexpress.net/phe-dan-chu-se-dieu-tra-viec-jensen-huang-duoc-phuc-chuc-5148277.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/24/ap26314805683835-1795476308-8550-1795476338.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=utLf37LukcvSFxd8XVrtrQ",
+    "ts": "2026-11-23T23:45:29+00:00",
     "sources": 2,
-    "score": 4.89,
-    "time": "06:25"
+    "score": 4.94,
+    "time": "06:45"
    },
    {
-    "title": "Roy Keane: 'Man Utd được vỗ tay vì điều gì khi thua 0-4?'",
-    "url": "https://vnexpress.net/roy-keane-man-utd-duoc-vo-tay-vi-dieu-gi-khi-thua-0-4-5147767.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/23/ap26326616261459-1795388157-1131-1795388267.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=W-8TFsEqjD_OfCCFVJXCbQ",
-    "ts": "2026-11-22T22:59:46+00:00",
-    "sources": 1,
-    "score": 4.82,
-    "time": "05:59"
-   },
-   {
-    "title": "Man Utd thảm bại trong trận ra mắt của Pochettino",
-    "url": "https://vnexpress.net/man-utd-tham-bai-trong-tran-ra-mat-cua-pochettino-5147763.html",
-    "source": "VnExpress",
-    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/23/2305901269-1795380677-9625-1795381139.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yRovftWjwGuU3VvHTTsEbA",
-    "ts": "2026-11-22T21:00:10+00:00",
-    "sources": 1,
-    "score": 4.48,
-    "time": "04:00"
-   },
-   {
-    "title": "Mexico bắt giữ trùm ma túy nằm trong danh sách truy nã hàng đầu của FBI",
-    "url": "https://www.vietnamplus.vn/mexico-bat-giu-trum-ma-tuy-nam-trong-danh-sach-truy-na-hang-dau-cua-fbi-post1150040.vnp",
+    "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm trao quyết định nghỉ hưu đối với cán bộ",
+    "url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-trao-quyet-dinh-nghi-huu-doi-voi-can-bo-post1150233.vnp",
     "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6gb3gDnRy1nKSLJdB0iWEfAoNgjOeidNw2LO9Y7Z777k6-oczbS7dRs6gE2qQNJzgH8GNtHlkI-v4buH9AMzZz3fKAAZu02Jlni5aTGEExB-/ttxvn_mexico-day-manh-cuoc-chien-chong-toi-pham-ma-tuy-8931104.jpg.avif",
-    "ts": "2026-11-23T00:07:33+00:00",
-    "sources": 1,
-    "score": 4.3,
-    "time": "07:07"
+    "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1earxyWuMylOtsUIgL7Pp3CNFFBMSvntlZZsnbIt-KFVqmDmageNb6ntfNwC2mrBCvA/360.jpg.avif",
+    "ts": "2026-11-23T23:18:41+00:00",
+    "sources": 2,
+    "score": 4.87,
+    "time": "06:18"
+   },
+   {
+    "title": "Khoảnh khắc nhân viên chào đón Jensen Huang trở lại Nvidia",
+    "url": "https://vnexpress.net/khoanh-khac-nhan-vien-chao-don-jensen-huang-tro-lai-nvidia-5148274.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/24/Jensen-1795474750-8683-1795474870.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=u1lsxAABfU5o7YvBrvCydw",
+    "ts": "2026-11-23T23:04:37+00:00",
+    "sources": 2,
+    "score": 4.83,
+    "time": "06:04"
+   },
+   {
+    "title": "Đề nghị truy tặng huân chương cho hai người hy sinh khi cứu nạn",
+    "url": "https://vnexpress.net/de-nghi-truy-tang-huan-chuong-cho-hai-nguoi-hy-sinh-khi-cuu-nan-5148247.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/2aOboREYpLCONOzjGYUx390uzioQgz-5680-7331-1795446598.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=CdFIjoke9tTQKgkNfXipZg",
+    "ts": "2026-11-23T18:00:00+00:00",
+    "sources": 2,
+    "score": 3.98,
+    "time": "01:00"
+   },
+   {
+    "title": "Bảng xếp hạng huy chương Đại hội Thể thao toàn quốc ngày 23-11: TP.HCM hơn Hà Nội 16 HCV",
+    "url": "https://tuoitre.vn/bang-xep-hang-huy-chuong-dai-hoi-the-thao-toan-quoc-ngay-23-11-tphcm-hon-ha-noi-16-hcv-100261123235409886.htm",
+    "source": "Tuổi Trẻ",
+    "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/23/179544882040720664181444029384276225853887195716592711e44fe7bdc1dca401c88d512ca9589-1795452316661123029415-92-0-1692-2560-crop-1795452609361920280833.jpg",
+    "ts": "2026-11-23T16:59:00+00:00",
+    "sources": 2,
+    "score": 3.81,
+    "time": "23:59"
    }
   ],
   "latest": [
    {
-    "title": "Hội Chữ thập đỏ Việt Nam: 80 năm đồng hành cùng vận mệnh dân tộc, lan tỏa ngọn lửa nhân ái",
-    "url": "https://www.vietnamplus.vn/hoi-chu-thap-do-viet-nam-80-nam-dong-hanh-cung-van-menh-dan-toc-lan-toa-ngon-lua-nhan-ai-post1149520.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/ai5KMJl3nDpNFxY3j7QdXspU2dvRKuQP-g6dT2gSFYqnT2sb_nCzIDdyx5eQIM76/coverz.png.avif",
-    "ts": "2026-11-23T00:10:00+00:00",
-    "sources": 1,
-    "score": 0.0,
-    "time": "07:10"
-   },
-   {
-    "title": "Phú Thọ: Thanh Sơn đẩy mạnh giáo dục nghề nghiệp gắn với việc làm",
-    "url": "https://www.vietnamplus.vn/phu-tho-thanh-son-day-manh-giao-duc-nghe-nghiep-gan-voi-viec-lam-post1149341.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eTMPWoGbfZge8XwNYqWLNaZUnTachL__uWX-7TGLqFd2/vnp_thanh-son-1.jpg.avif",
-    "ts": "2026-11-23T00:00:00+00:00",
-    "sources": 1,
-    "score": 0.0,
-    "time": "07:00"
-   },
-   {
-    "title": "Lâm Đồng: Học nghề, nâng kỹ năng để mở rộng sinh kế",
-    "url": "https://www.vietnamplus.vn/lam-dong-hoc-nghe-nang-ky-nang-de-mo-rong-sinh-ke-post1148050.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/1NRlHlv2ikBbd9jRTdcj2IHXcRvI-Au4pJnV-1U2VvvqOLYMJAPMaXvpJYdiOfidT577DIlyJl9J2PhhZIZ5kg/1311-lam-dong-hoc-nghe.jpg.avif",
-    "ts": "2026-11-23T00:00:00+00:00",
-    "sources": 1,
-    "score": 0.0,
-    "time": "07:00"
-   },
-   {
-    "title": "Đảng Dân chủ giành chiến thắng lớn nhất tại Hạ viện Mỹ kể từ năm 1992",
-    "url": "https://www.vietnamplus.vn/dang-dan-chu-gianh-chien-thang-lon-nhat-tai-ha-vien-my-ke-tu-nam-1992-post1150039.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/QcJaCVoYMCKXsPQ_Rprjc40Grqx1xEdGkPe5Fua_vLToyAV6jEYURYYOAWpO2wL4zbV_65Aa6oaOVuikAjVqcw/ttxvn-ha-vien-my-0402.jpg.avif",
-    "ts": "2026-11-22T23:44:14+00:00",
-    "sources": 1,
-    "score": 0.0,
-    "time": "06:44"
-   },
-   {
-    "title": "Đàm phán COP31 kết thúc mà không đạt được thỏa thuận",
-    "url": "https://www.vietnamplus.vn/dam-phan-cop31-ket-thuc-ma-khong-dat-duoc-thoa-thuan-post1150038.vnp",
-    "source": "VietnamPlus",
-    "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6hUDCnPTU3QAQCMsUyEsJGjemt1pGS2WIYZ7TF1TdLQfLqNOpCEzN58q7dw4R9ZGSZ1lbqd0I2Rni6SS8icSGb91YBoBwDFMVH0CB6nM2LB2O68Kok39VxEegRpLRCZeeA/ttxvn_cop31-bat-dong-sau-sac-can-tro-thong-qua-van-kien-bao-trum-9172825.jpg.avif",
-    "ts": "2026-11-22T23:34:34+00:00",
-    "sources": 1,
-    "score": 0.0,
-    "time": "06:34"
-   },
-   {
-    "title": "Sự cố tự động hóa khiến hơn 1.000 chuyến bay của Delta bị chậm",
-    "url": "https://vnexpress.net/su-co-tu-dong-hoa-khien-hon-1-000-chuyen-bay-cua-delta-bi-cham-5147770.html",
+    "title": "Đang dùng thuốc gan nhiễm mỡ có cần ăn kiêng?",
+    "url": "https://vnexpress.net/dang-dung-thuoc-gan-nhiem-mo-co-can-an-kieng-5148141.html",
     "source": "VnExpress",
-    "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/may-bay-jpeg-1795390100-1113-1795390106.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yuBaxEhLy3_PHQqaxNHh2g",
-    "ts": "2026-11-22T23:34:29+00:00",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/23/mo-hi-nh-gan-bi-nh-thu-o-ng-va-9686-5882-1795426296.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=xc9VSkLZo2IxsV5aEFt97g",
+    "ts": "2026-11-24T00:00:00+00:00",
     "sources": 1,
     "score": 0.0,
-    "time": "06:34"
+    "time": "07:00"
+   },
+   {
+    "title": "Bé trai 14 tuổi nặng hơn 100 kg mắc nhiều bệnh",
+    "url": "https://vnexpress.net/be-trai-14-tuoi-nang-hon-100-kg-mac-nhieu-benh-5148055.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/23/vne-1795441768-6447-1795442203.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=ljG2B3mwqBks4L-Gpic7YQ",
+    "ts": "2026-11-24T00:00:00+00:00",
+    "sources": 1,
+    "score": 0.0,
+    "time": "07:00"
+   },
+   {
+    "title": "Đẩy mạnh đào tạo nghề pha chế, nấu ăn cho lao động vùng khó khăn ở Đà Nẵng",
+    "url": "https://www.vietnamplus.vn/day-manh-dao-tao-nghe-pha-che-nau-an-cho-lao-dong-vung-kho-khan-o-da-nang-post1148059.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/lFuaSJ54A9Yx0v5wBTS36XyaUn8_4e6CDjB7-Z8NKC1Dj2klGYq-GeZKM8N_5SaXFlvAX-lTQ9bVZdjBd0ELcuYuvhytnz2fqudC3BOHWyDpi6ZPmkDu-6f-lech8RPTnGm1Y_OP-yjk6TCC1UyWilf8P64F-iX8tjs8xlFpCv8/gdnn-tin-bichvan-day-manh-dao-tao-nghe-pha-che-nau-an-cho-lao-dong-vung-kho-khan-o-da-nang-ac-anh.png.avif",
+    "ts": "2026-11-24T00:00:00+00:00",
+    "sources": 1,
+    "score": 0.0,
+    "time": "07:00"
+   },
+   {
+    "title": "Mỹ đưa công ty Singapore vào danh sách kiểm soát xuất khẩu",
+    "url": "https://www.vietnamplus.vn/my-dua-cong-ty-singapore-vao-danh-sach-kiem-soat-xuat-khau-post1150235.vnp",
+    "source": "VietnamPlus",
+    "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eclSyW_jn8urdrTQJcuRZ-NPnvsMiXImX0nY-GFkhnmS/chip.jpg.avif",
+    "ts": "2026-11-23T23:58:18+00:00",
+    "sources": 1,
+    "score": 0.0,
+    "time": "06:58"
+   },
+   {
+    "title": "Phe cực tả Pháp: 'Tôi muốn tiêu diệt chủ nghĩa tư bản, chứ không phải nước Pháp'",
+    "url": "https://www.bbc.com/vietnamese/articles/cwgkldm676l0o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC Tiếng Việt",
+    "image": "https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/e5fc/live/dcbcc250-e656-11f1-b7ac-3d43db3bdd56.jpg",
+    "ts": "2026-11-23T23:51:22+00:00",
+    "sources": 1,
+    "score": 0.0,
+    "time": "06:51"
+   },
+   {
+    "title": "Kịch bản nào để Việt Nam đi tiếp ở U17 World Cup?",
+    "url": "https://vnexpress.net/kich-ban-nao-de-viet-nam-di-tiep-o-u17-world-cup-5148270.html",
+    "source": "VnExpress",
+    "image": "https://vcdn1-thethao.vnecdn.net/2026/11/24/13-1795460288-2298-1795460981.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_dRwJzILI_7l00o9OHxgLQ",
+    "ts": "2026-11-23T23:43:29+00:00",
+    "sources": 1,
+    "score": 0.0,
+    "time": "06:43"
    }
   ],
   "updated": "07:06",
-  "updated_iso": "2026-11-23T00:06:09.171382+00:00",
+  "updated_iso": "2026-11-24T00:06:18.379016+00:00",
   "cats": {
-   "culture_society": [
+   "mobile": [
     {
-     "title": "Phú Thọ: Thanh Sơn đẩy mạnh giáo dục nghề nghiệp gắn với việc làm",
-     "url": "https://www.vietnamplus.vn/phu-tho-thanh-son-day-manh-giao-duc-nghe-nghiep-gan-voi-viec-lam-post1149341.vnp",
-     "source": "VietnamPlus",
-     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eTMPWoGbfZge8XwNYqWLNaZUnTachL__uWX-7TGLqFd2/vnp_thanh-son-1.jpg.avif",
-     "ts": "2026-11-23T00:00:00+00:00",
+     "title": "What’s new in Android’s November 2026 Google System Updates [U]",
+     "url": "https://9to5google.com/2026/11/23/november-2026-google-system-updates/",
+     "source": "9to5Google",
+     "image": "https://9to5google.com/wp-content/uploads/sites/4/2025/01/google-play-services-1.jpg?quality=82&strip=all&w=1600",
+     "ts": "2026-11-24T00:04:00+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Sàn giao dịch việc làm Thanh Sơn kết nối người lao động với doanh nghiệp, tư vấn học nghề và định hướng việc làm, góp phần phát triển nguồn nhân lực Phú Thọ.",
-     "time": "07:00"
+     "summary": "The monthly “ Google System Release Notes ” primarily detail what’s new in Play services, Play Store, and Play system update across Android phones/tablets, Wear OS, Google/Android TV, Auto, and PC.",
+     "time": "07:04"
     },
     {
-     "title": "Người trẻ đưa di sản TP.HCM lên không gian số",
-     "url": "https://tuoitre.vn/nguoi-tre-dua-di-san-tphcm-len-khong-gian-so-100261123061519647.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/2hgb6foxdndqq9gajdsz8ei6edqm4dfyn2hm-17953881291331870015809-498-719-1042-1590-crop-17953890270471298803204.jpg",
-     "ts": "2026-11-22T23:28:00+00:00",
+     "title": "OpenAI Brings GPT-6.2 Sol to ChatGPT's Chat Tab",
+     "url": "https://www.macrumors.com/2026/11/23/openai-gpt-6-2-sol-chatgpt/",
+     "source": "MacRumors",
+     "image": "https://images.macrumors.com/article-new/2026/11/gpt-6-2-openai.jpg",
+     "ts": "2026-11-23T23:52:41+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Cuộc thi Sáng tạo video ngắn Heritage Ho Chi Minh City 2026 trao giải cho 10 video xuất sắc, ghi dấu cách người trẻ ứng dụng công nghệ và sáng tạo nội dung để khám phá, kể chuyện",
-     "time": "06:28"
+     "summary": "A version of GPT–6.2 Sol made for the Chat tab is rolling out to Plus, Pro, Business, and Enterprise tiers, OpenAI said today.",
+     "time": "06:52"
     },
     {
-     "title": "Sắc màu văn hóa 54 dân tộc hội tụ trên đường đi bộ Nguyễn Huệ",
-     "url": "https://tuoitre.vn/sac-mau-van-hoa-54-dan-toc-hoi-tu-tren-duong-di-bo-nguyen-hue-100261122215901212.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/2aoboreqzfotsdpcysk0p0rqt19mfichbakkb9kg-1795359265747103090922-250-81-1668-2349-crop-1795359306235959869252.jpg",
-     "ts": "2026-11-22T23:06:00+00:00",
+     "title": "Google Translate gets a new gradient icon after 11 years",
+     "url": "https://9to5google.com/2026/11/23/new-google-translate-icon/",
+     "source": "9to5Google",
+     "image": "https://9to5google.com/wp-content/uploads/sites/4/2024/07/Google-Translate-Material-You-cover.jpg?quality=82&strip=all&w=1600",
+     "ts": "2026-11-23T23:24:52+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Ngày hội đại đoàn kết toàn dân tộc - Sắc màu văn hóa Việt TP.HCM lần thứ 1 năm 2026 mang đến không gian giao lưu",
-     "time": "06:06"
+     "summary": "Google Translate is the latest first-party app to get a new icon, and it comes 11 years after the last redesign. more…",
+     "time": "06:24"
     },
     {
-     "title": "Lan tỏa bản sắc văn hóa Việt Nam tại Malaysia",
-     "url": "https://www.vietnamplus.vn/lan-toa-ban-sac-van-hoa-viet-nam-tai-malaysia-post1150029.vnp",
-     "source": "VietnamPlus",
-     "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6o-sJ9Ooxyl59S5YKG4R1WW0oO3F-Y5x-b8kGh8o7pCUVViifhmJi2dPz6h6OYsF85qaa58oqkzdeeiKdw3HexC1JwTnxYETdyLl1PtDT77Y/ttxvn_dac-sac-ngay-van-hoa-viet-nam-tai-malaysia-9172444-3.jpg.avif",
-     "ts": "2026-11-22T22:50:31+00:00",
+     "title": "Hands-on: Baseus’ new PicoGo Pro USB-C charger is clever, cute, and on sale",
+     "url": "https://9to5google.com/2026/11/23/baseus-picogo-pro-usb-c-hands-on/",
+     "source": "9to5Google",
+     "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/11/baseus-picogo-pro-9.jpg?quality=82&strip=all&w=1600",
+     "ts": "2026-11-23T23:05:00+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Ngày Văn hóa Việt Nam 2026 với nhiều hoạt động trải nghiệm ẩm thực, biểu diễn nghệ thuật, góp phần quảng bá bản sắc dân tộc, gắn kết cộng đồng người Việt tại Malaysia.",
-     "time": "05:50"
+     "summary": "USB-C chargers are pretty standardized at this point, but there’s a fun new trend of adding displays to your power brick that I’ve been very much enjoying",
+     "time": "06:05"
     },
     {
-     "title": "Việt Nam được chọn là khách mời danh dự Liên hoan phim tại Pháp",
-     "url": "https://www.vietnamplus.vn/viet-nam-duoc-chon-la-khach-moi-danh-du-lien-hoan-phim-tai-phap-post1150028.vnp",
-     "source": "VietnamPlus",
-     "image": "https://media.vietnamplus.vn/images/_oouAPyqAYT_A5VL0XA6pJBZc7UgyH6udbm0OqxphSGinm7GQDNh2ErHIKa4gSJrZwmRuVz_i_npoB7-CwmKlcxq7zsOv7qR0r6CWdANi9I4iXJG-A7WLQvJuzr1Tf_Op5l_TT8V1sp9YOLy8trUZ2dK2XKccilnbJwFP2BF3ftafqcGpKCuhKeNT4Yj-hb6O68Kok39VxEegRpLRCZeeA/lien-hoan-phim-tai-lieu-ngan-quoc-te-viet-culture-in-motion-2026-khi-nguoi-tre-ke-chuyen-viet-nam-bang-dien-anh-8822421.jpg.avif",
-     "ts": "2026-11-22T22:46:38+00:00",
+     "title": "Samsung details the tech behind the Galaxy SmartTag3's longer finding range",
+     "url": "https://www.gsmarena.com/samsung_details_the_tech_behind_the_galaxy_smarttag3s_longer_finding_range-news-75596.php",
+     "source": "GSMArena",
+     "image": "https://fdn.gsmarena.com/imgroot/news/26/11/samsung-smarttag3-finding-details/-184x111/gsmarena_000.jpg",
+     "ts": "2026-11-23T22:59:02+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Việc được chọn làm khách mời danh dự tại Liên hoan phim cực ngắn quốc tế Pháp ngữ “Un Brin de Court” năm 2027 mở ra cơ hội quảng bá điện ảnh",
-     "time": "05:46"
-    },
-    {
-     "title": "Thành phố Hồ Chí Minh: Phát huy tinh thần đại đoàn kết và văn hóa dân tộc",
-     "url": "https://www.vietnamplus.vn/thanh-pho-ho-chi-minh-phat-huy-tinh-than-dai-doan-ket-va-van-hoa-dan-toc-post1150027.vnp",
-     "source": "VietnamPlus",
-     "image": "https://media.vietnamplus.vn/images/QcJaCVoYMCKXsPQ_Rprjc-38c4IPtjh1ZKRzCeHmR-5PlX63DVpUz6hkZRjwfuGi/logo-vietnamplus.jpg.avif",
-     "ts": "2026-11-22T16:04:57+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Tối 22/11, Thành phố Hồ Chí Minh khai mạc Ngày hội Đại đoàn kết toàn dân tộc - Sắc màu văn hóa Việt",
-     "time": "23:04"
-    }
-   ],
-   "geopolitics": [
-    {
-     "title": "Đảng Dân chủ giành chiến thắng lớn nhất tại Hạ viện Mỹ kể từ năm 1992",
-     "url": "https://www.vietnamplus.vn/dang-dan-chu-gianh-chien-thang-lon-nhat-tai-ha-vien-my-ke-tu-nam-1992-post1150039.vnp",
-     "source": "VietnamPlus",
-     "image": "https://media.vietnamplus.vn/images/QcJaCVoYMCKXsPQ_Rprjc40Grqx1xEdGkPe5Fua_vLToyAV6jEYURYYOAWpO2wL4zbV_65Aa6oaOVuikAjVqcw/ttxvn-ha-vien-my-0402.jpg.avif",
-     "ts": "2026-11-22T23:44:14+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Đảng Dân chủ giành ít nhất 258 ghế Hạ viện và 56 ghế Thượng viện trong cuộc bầu cử Mỹ, đạt kết quả tốt nhất tại Hạ viện trong nhiều thập kỷ",
-     "time": "06:44"
-    },
-    {
-     "title": "Giới khảo cổ Israel phát hiện tượng đất sét 15.000 năm tuổi",
-     "url": "https://www.vietnamplus.vn/gioi-khao-co-israel-phat-hien-tuong-dat-set-15000-nam-tuoi-post1150032.vnp",
-     "source": "VietnamPlus",
-     "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6uGYxEXqofKM4JRffSZQLH-EmVb619ERoWN6gTy1uOLu/ttxvn-khao-co.jpg.avif",
-     "ts": "2026-11-22T23:06:48+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Các tượng đất sét được xem là tượng tạo hình cổ nhất tại Tây Nam Á hé lộ nghệ thuật tiền sử, dấu vết trẻ em tham gia chế tác và cách người Natufian truyền đạt tri thức.",
-     "time": "06:06"
-    },
-    {
-     "title": "Ấn Độ-Trung Quốc thúc đẩy đối thoại, giảm căng thẳng tại khu vực biên giới",
-     "url": "https://www.vietnamplus.vn/an-do-trung-quoc-thuc-day-doi-thoai-giam-cang-thang-tai-khu-vuc-bien-gioi-post1150031.vnp",
-     "source": "VietnamPlus",
-     "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6g5Quo_CWml6NOaab0juv-v_IlNE7CPvMI_CWSFNHBf8r729xlA_ZSeZy9c_fnXBUGLQ0YUx1gJ7gNx9mGkrTYO1MipwxL24WL9wMZbcRlIq/ttxvn_an-do-trung-quoc-noi-lai-dam-phan-bien-gioi-8372402.jpg.avif",
-     "ts": "2026-11-22T22:59:08+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Ấn Độ và Trung Quốc đã kết thúc vòng đàm phán cấp Tư lệnh quân đoàn thứ hai nhằm thiết lập cơ chế phối hợp",
+     "summary": "Samsung announced the Galaxy SmartTag3 back in late September, and the tracker went on sale in the US earlier this month.",
      "time": "05:59"
     },
     {
-     "title": "Malaysia loay hoay xử lý 'xe ma'",
-     "url": "https://vnexpress.net/malaysia-loay-hoay-xu-ly-xe-ma-5147087.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/20/xe-bo-hoang-1795175433-8125-1795175760.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jDNMRBW34WzhYWYR6Xdt-Q",
-     "ts": "2026-11-22T22:00:00+00:00",
+     "title": "Claude rolling out updated Android app with Material 3 Expressive redesign",
+     "url": "https://9to5google.com/2026/11/23/claude-android-material-3-update/",
+     "source": "9to5Google",
+     "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/11/claude-android-m3-3.jpg?quality=82&strip=all&w=1600",
+     "ts": "2026-11-23T22:15:00+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Những chiếc ôtô rỉ sét, hoang phế nhiều năm bên đường đang trở thành vấn nạn tại Malaysia, trong khi chính quyền gặp khó vì quy trình xử lý phức tạp.",
-     "time": "05:00"
-    },
-    {
-     "title": "Bên trong máy bay 'ngày tận thế' của Mỹ",
-     "url": "https://vnexpress.net/ben-trong-may-bay-ngay-tan-the-cua-my-5147436.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/21/Settop-1795247367-5163-1795247581.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=cBLDBL048khqGlWe5TcRew",
-     "ts": "2026-11-22T18:00:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "E-4B Nightwatch có thể bố trí chỗ ngồi cho hơn 100 người, với nhiều khu vực chức năng để trở thành trung tâm chỉ huy chiến tranh lưu động.",
-     "time": "01:00"
-    },
-    {
-     "title": "Ông Zelensky lại than Mỹ chưa cho bàn giao tên lửa Patriot",
-     "url": "https://tuoitre.vn/ong-zelensky-lai-than-my-chua-cho-ban-giao-ten-lua-patriot-100261122235240769.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/1000020018-17953055197121373045092-26-0-701-1080-crop-17953662758241153208034.jpg",
-     "ts": "2026-11-22T16:58:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Tổng thống Ukraine một lần nữa kêu gọi Mỹ sớm cho phép chuyển giao số tên lửa Patriot được các đối tác của nước này đứng ra mua nhưng vẫn cần được Mỹ đồng ý.",
-     "time": "23:58"
+     "summary": "Anthropic is rolling out a new Claude app for Android that picks up a Material 3 Expressive redesign. more…",
+     "time": "05:15"
     }
    ],
    "science_health": [
     {
-     "title": "Sự cố tự động hóa khiến hơn 1.000 chuyến bay của Delta bị chậm",
-     "url": "https://vnexpress.net/su-co-tu-dong-hoa-khien-hon-1-000-chuyen-bay-cua-delta-bi-cham-5147770.html",
+     "title": "Đang dùng thuốc gan nhiễm mỡ có cần ăn kiêng?",
+     "url": "https://vnexpress.net/dang-dung-thuoc-gan-nhiem-mo-co-can-an-kieng-5148141.html",
      "source": "VnExpress",
-     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/may-bay-jpeg-1795390100-1113-1795390106.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yuBaxEhLy3_PHQqaxNHh2g",
-     "ts": "2026-11-22T23:34:29+00:00",
+     "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/23/mo-hi-nh-gan-bi-nh-thu-o-ng-va-9686-5882-1795426296.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=xc9VSkLZo2IxsV5aEFt97g",
+     "ts": "2026-11-24T00:00:00+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Hơn 1.000 chuyến bay của hãng hàng không Delta Air Lines bị chậm ngày 22/11 do sự cố kỹ thuật khiến một hệ thống tính toán trọng lượng và cân bằng ngừng hoạt động.",
-     "time": "06:34"
+     "summary": "Tôi mắc bệnh gan nhiễm mỡ, được bác sĩ kê thuốc điều trị. Trong thời gian uống thuốc, tôi có cần kiêng ăn gì không? (Hải Anh, TP HCM)",
+     "time": "07:00"
     },
     {
-     "title": "'Thánh ăn' sống trong ác mộng sau ca phẫu thuật cắt da thừa",
-     "url": "https://vnexpress.net/thanh-an-song-trong-ac-mong-sau-ca-phau-thuat-cat-da-thua-5147750.html",
+     "title": "Bé trai 14 tuổi nặng hơn 100 kg mắc nhiều bệnh",
+     "url": "https://vnexpress.net/be-trai-14-tuoi-nang-hon-100-kg-mac-nhieu-benh-5148055.html",
      "source": "VnExpress",
-     "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/giam-can-1795362569-8732-1795363070.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Phzyfe3PWxY70XopDp7nSQ",
-     "ts": "2026-11-22T23:12:26+00:00",
+     "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/23/vne-1795441768-6447-1795442203.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=ljG2B3mwqBks4L-Gpic7YQ",
+     "ts": "2026-11-24T00:00:00+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Nikocado Avocado, nam YouTuber mukbang nổi tiếng người Mỹ từng gây chú ý sau khi giảm khoảng 114 kg",
-     "time": "06:12"
+     "summary": "Thuận, 14 tuổi, nặng 104 kg, khối lượng mỡ chiếm gần một nửa trọng lượng cơ thể, gan nhiễm mỡ, rối loạn mỡ máu và huyết áp cao.",
+     "time": "07:00"
     },
     {
-     "title": "Người phụ nữ 3 lần ghép thận trong 26 năm",
-     "url": "https://vnexpress.net/nguoi-phu-nu-3-lan-ghep-than-trong-26-nam-5147655.html",
+     "title": "Thông điệp 5 từ của Elon Musk khi Jensen Huang phục chức",
+     "url": "https://vnexpress.net/thong-diep-5-tu-cua-elon-musk-khi-jensen-huang-phuc-chuc-5148278.html",
      "source": "VnExpress",
-     "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/1-1795329028-4305-1795329057.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ULnjpqQZbho1Eok9xEoVeQ",
-     "ts": "2026-11-22T23:00:00+00:00",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/24/9ytjylwkauvwehmtkbgz5a-jpg-179-4099-7168-1795476564.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=r8PAXs1yqTJFxyihsVO0nA",
+     "ts": "2026-11-23T23:33:43+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Ở tuổi 75, sau 26 năm sống chung với bệnh thận mạn và hai lần ghép thận, người phụ nữ bước vào phòng mổ lần nữa để tìm lại sức khỏe.",
+     "summary": "Elon Musk phản hồi ngắn gọn từ sau khi nhà đồng sáng lập Nvidia Jensen Huang khôi phục chức vụ CEO.",
+     "time": "06:33"
+    },
+    {
+     "title": "Khoảnh khắc nhân viên chào đón Jensen Huang trở lại Nvidia",
+     "url": "https://vnexpress.net/khoanh-khac-nhan-vien-chao-don-jensen-huang-tro-lai-nvidia-5148274.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/24/Jensen-1795474750-8683-1795474870.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=u1lsxAABfU5o7YvBrvCydw",
+     "ts": "2026-11-23T23:04:37+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Jensen Huang trở lại trụ sở Nvidia tại Santa Clara, California trong tiếng reo hò của nhân viên, 11 ngày sau khi ông bất ngờ từ chức.",
+     "time": "06:04"
+    },
+    {
+     "title": "Đàn ông cơ bắp càng to càng thu hút phụ nữ?",
+     "url": "https://vnexpress.net/dan-ong-co-bap-cang-to-cang-thu-hut-phu-nu-5147871.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/23/screenshot-at-1795403390-6927-1795403442.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Fw8eMDQLzxPA4YDRW4FBcg",
+     "ts": "2026-11-23T23:00:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Đàn ông thường nghĩ cơ bắp càng lớn càng ghi điểm với phái đẹp, nhưng thực tế nghiên cứu cho thấy phụ nữ chỉ thích vóc dáng săn chắc vừa phải.",
      "time": "06:00"
     },
     {
-     "title": "Nữ kỹ sư đứng sau mô hình AI làm phim gây sốt ở Trung Quốc",
-     "url": "https://vnexpress.net/nu-ky-su-dung-sau-mo-hinh-ai-lam-phim-gay-sot-o-trung-quoc-5146432.html",
+     "title": "Vì sao ung thư gan tái phát sau phẫu thuật?",
+     "url": "https://vnexpress.net/vi-sao-ung-thu-gan-tai-phat-sau-phau-thuat-5148147.html",
      "source": "VnExpress",
-     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/19/nu-cu-o-i-be-n-tha-p-do-ng-ho-5897-4664-1795065103.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=0-SY2CqyPOYFtDZomf2EPw",
-     "ts": "2026-11-22T22:00:00+00:00",
+     "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/23/dsc00002-da-crop-jpg-179542680-6706-7403-1795426860.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=V7neuCLhgr5RsQBPGeOhiA",
+     "ts": "2026-11-23T23:00:00+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Zeng Yan, 29 tuổi, là một trong những kỹ sư chủ chốt phát triển Seedance, mô hình tạo video của ByteDance được giới làm phim ngắn AI Trung Quốc ưa chuộng.",
-     "time": "05:00"
-    },
-    {
-     "title": "Bác sĩ cảnh báo 4 thói quen nguy hiểm khi vừa mở mắt",
-     "url": "https://vnexpress.net/bac-si-canh-bao-4-thoi-quen-nguy-hiem-khi-vua-mo-mat-5146952.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/21/2595-1795229046-9917-1795229077.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=cFeTDWcGfVTOtbBpWeyKpw",
-     "ts": "2026-11-22T22:00:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Đột ngột bật dậy khỏi giường, đi vệ sinh ngay khi vừa tỉnh giấc hoặc vận động mạnh lúc sáng sớm có thể khiến huyết áp, nhịp tim biến động, tiềm ẩn nhiều nguy cơ sức khỏe.",
-     "time": "05:00"
-    },
-    {
-     "title": "Kỹ thuật mới nội soi lấy mỡ thay cách hút 'mù'",
-     "url": "https://vnexpress.net/ky-thuat-moi-noi-soi-lay-mo-thay-cach-hut-mu-5147591.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-suckhoe.vnecdn.net/2026/11/22/phong-mo-nguoi-da-mo-mat-ben-p-9224-4073-1795313968.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GtKbPtfjBkZxGNHpb_DmIw",
-     "ts": "2026-11-22T20:00:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Thay vì đưa ống kim loại hút lớp mỡ dưới da mà không quan sát trực tiếp với nhiều nguy cơ, kỹ thuật mới dùng camera nội soi để bác sĩ nhìn thấy vùng can thiệp",
-     "time": "03:00"
-    }
-   ],
-   "sports": [
-    {
-     "title": "Video: Pha va chạm khiến Nhật Minh rời sân bằng xe cấp cứu",
-     "url": "https://tuoitre.vn/video-pha-va-cham-khien-nhat-minh-roi-san-bang-xe-cap-cuu-100261123003214449.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/gif-nhat-minh-17953683891031022451224-0-52-394-682-crop-1795368427460398753928.gif",
-     "ts": "2026-11-22T23:26:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Trong chuyến làm khách trước Hà Tĩnh, trung vệ Nhật Minh (CLB Công An TP.HCM) đã phải rời sân bằng xe cấp cứu sau pha va chạm mạnh ở vùng đầu.",
-     "time": "06:26"
-    },
-    {
-     "title": "Đánh bại Zverev, Alcaraz lần đầu vô địch ATP Finals",
-     "url": "https://tuoitre.vn/danh-bai-zverev-alcaraz-lan-dau-vo-dich-atp-finals-100261123061912253.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/carlos-alcaraz-atp-finals-17953894472511452354104-237-0-1837-2560-crop-17953894981531949973996.jpg",
-     "ts": "2026-11-22T23:25:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Rạng sáng 23-11, tại chung kết ATP Finals, Carlos Alcaraz thể hiện phong độ chói sáng để vượt qua Alexander Zverev và giành chức vô địch.",
-     "time": "06:25"
-    },
-    {
-     "title": "Vô địch cờ tướng thế giới nhưng Lại Lý Huynh gặp khó trước các kỳ thủ Việt Nam",
-     "url": "https://tuoitre.vn/vo-dich-co-tuong-the-gioi-nhung-lai-ly-huynh-gap-kho-truoc-cac-ky-thu-viet-nam-100261122221543133.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/lai-ly-huynh-05102026-1791172552954738399323-21-0-1271-2000-crop-17953603742021232714197.png",
-     "ts": "2026-11-22T23:23:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Sau 2 vòng đấu đầu tiên, đương kim vô địch cờ tướng tiêu chuẩn thế giới Lại Lý Huynh vẫn chưa biết mùi thắng trận cá nhân ở Đại hội Thể thao toàn quốc lần thứ X - năm 2026.",
-     "time": "06:23"
-    },
-    {
-     "title": "Dự đoán tỉ số World Cup U17: Việt Nam thắng New Zealand, làm nên lịch sử",
-     "url": "https://tuoitre.vn/du-doan-ti-so-world-cup-u17-viet-nam-thang-new-zealand-lam-nen-lich-su-100261122173044963.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/u17-vietnam-3-17953431658261772007301-7-0-647-1024-crop-17953431918511532629035.jpg",
-     "ts": "2026-11-22T23:00:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Sau màn trình diễn ấn tượng trước Bỉ, U17 Việt Nam có cơ sở để hướng đến chiến thắng lịch sử khi chạm trán New Zealand ở lượt trận thứ hai World Cup U17 2026",
+     "summary": "Tôi phẫu thuật ung thư gan hơn hai năm trước, gần đây hay đau bụng được chẩn đoán bệnh tái phát. Vì sao xảy ra tình trạng này? (Nguyễn Đoàn Vương, Hà Nội)",
      "time": "06:00"
-    },
-    {
-     "title": "Roy Keane: 'Man Utd được vỗ tay vì điều gì khi thua 0-4?'",
-     "url": "https://vnexpress.net/roy-keane-man-utd-duoc-vo-tay-vi-dieu-gi-khi-thua-0-4-5147767.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-thethao.vnecdn.net/2026/11/23/ap26326616261459-1795388157-1131-1795388267.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=W-8TFsEqjD_OfCCFVJXCbQ",
-     "ts": "2026-11-22T22:59:46+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Cựu tiền vệ Roy Keane bất bình khi thấy Gary Neville và một số CĐV cảm thông vì Man Utd sớm mất người rồi thua Liverpool 0-4 ở vòng 11 Ngoại hạng Anh ngày 22/11.",
-     "time": "05:59"
-    },
-    {
-     "title": "Lịch trực tiếp U17 World Cup 2026: Việt Nam đấu New Zealand, quyết định vé đi tiếp",
-     "url": "https://tuoitre.vn/lich-truc-tiep-u17-world-cup-2026-viet-nam-dau-new-zealand-quyet-dinh-ve-di-tiep-100261122183523605.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/edit-u17-viet-nam-sy-bach-1-1795222621134540537261-235-344-1266-1994-crop-17953470382531240750368.jpeg",
-     "ts": "2026-11-22T22:32:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Lúc 22h30 hôm nay 23-11, mọi sự chú ý của người hâm mộ bóng đá Việt Nam sẽ đổ dồn về trận U17 Việt Nam chạm trán U17 New Zealand ở bảng G U17 World Cup 2026 tại Qatar.",
-     "time": "05:32"
-    }
-   ],
-   "domestic": [
-    {
-     "title": "Quy hoạch tổng thể TP.HCM: Dẫn dắt chính sách phát triển 100 năm",
-     "url": "https://tuoitre.vn/quy-hoach-tong-the-tphcm-dan-dat-chinh-sach-phat-trien-100-nam-100261122212129183.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/1795357895157475773280422766866047577328042276686604907e7e76a0c54bacf16c6787ee651ad-1795357967560403679324-38-0-1638-2560-crop-17953587648062036007591.jpg",
-     "ts": "2026-11-22T22:30:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Quy hoạch tổng thể TP.HCM định hình con đường, dẫn dắt chính sách phát triển đô thị TP.HCM thành đô thị toàn cầu, tầm nhìn 100 năm.",
-     "time": "05:30"
-    },
-    {
-     "title": "'Vẽ lại' siêu đô thị TP HCM",
-     "url": "https://vnexpress.net/ve-lai-sieu-do-thi-tp-hcm-5139592.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/settop5cucdasuanhan-1795390125-5502-1795390216.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=-84kVm6xcmi6KiAobjpaSQ",
-     "ts": "2026-11-22T22:00:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Hơn 50 năm qua, TP HCM trải qua bốn lần lập và điều chỉnh quy hoạch chung vào năm 1993, 1998, 2010, 2025, nhưng đều chưa đạt được mục tiêu giãn dân và phát triển đô thị vệ tinh.",
-     "time": "05:00"
-    },
-    {
-     "title": "Ủy quyền nhận lương hưu không còn giới hạn 12 tháng",
-     "url": "https://vnexpress.net/uy-quyen-nhan-luong-huu-khong-con-gioi-han-12-thang-5147725.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/IMG2442JPG-1795355228-9612-1795355236.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DNQiNCXwC93OhBYWZxKTcA",
-     "ts": "2026-11-22T18:00:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Từ tháng 3/2027, người hưởng lương hưu được thỏa thuận thời hạn ủy quyền nhận tiền, thay vì tối đa 12 tháng; cơ quan bảo hiểm xã hội chậm giải quyết chế độ gây thiệt hại phải bồi thường.",
-     "time": "01:00"
-    },
-    {
-     "title": "12 dự án liên quan đến Tập đoàn Mường Thanh sẽ được xử lý thế nào?",
-     "url": "https://vnexpress.net/12-du-an-lien-quan-den-tap-doan-muong-thanh-se-duoc-xu-ly-the-nao-5147720.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/22/TOP-1-1795353343.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=A-plyMIl3y_QWQ1XcNDxnA",
-     "ts": "2026-11-22T17:00:12+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Để xử lý sai phạm trong các dự án liên quan đến tập đoàn Mường Thanh trên địa bàn, HĐND TP Hà Nội đã thông qua nghị quyết về cơ chế, chính sách đặc thù.",
-     "time": "00:00"
-    },
-    {
-     "title": "Bảng xếp hạng huy chương Đại hội Thể thao toàn quốc ngày 22-11: TP.HCM dẫn đầu",
-     "url": "https://tuoitre.vn/bang-xep-hang-huy-chuong-dai-hoi-the-thao-toan-quoc-ngay-22-11-tphcm-dan-dau-10026112222472988.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/17952600173483603893094286800030g3109916775877084853bf68e59acff437ea959cbf390a6c5b4e-1795260424921464368574-233-76-1661-2361-crop-17953622726691735220680.jpg",
-     "ts": "2026-11-22T15:55:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Cuối ngày 22-11, đoàn thể thao TP.HCM tạm vươn lên dẫn đầu bảng xếp hạng huy chương Đại hội Thể thao toàn quốc lần thứ X năm 2026.",
-     "time": "22:55"
-    },
-    {
-     "title": "Phó Thủ tướng Phạm Thị Thanh Trà dự Gala nghệ thuật “Hải Phòng - Nơi những câu chuyện bắt đầu”",
-     "url": "https://www.vietnamplus.vn/pho-thu-tuong-pham-thi-thanh-tra-du-gala-nghe-thuat-hai-phong-noi-nhung-cau-chuyen-bat-dau-post1150026.vnp",
-     "source": "VietnamPlus",
-     "image": "https://media.vietnamplus.vn/images/O5HOz7kQdXhh7X2Iy0psPrZoLG7QoLI1JNupFdUqBUwG1Pt1VUm6Q39A56yj_TCJ/ttxvn-thanh-tra.jpg.avif",
-     "ts": "2026-11-22T15:52:35+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Tối 22/11, Phó Thủ tướng Phạm Thị Thanh Trà đã dự Gala nghệ thuật “Hải Phòng- Nơi những câu chuyện bắt đầu,” góp phần thực hiện hiệu quả Nghị quyết số 80 về phát triển văn hóa Việt Nam.",
-     "time": "22:52"
-    }
-   ],
-   "mobile": [
-    {
-     "title": "iOS 27 has a clever fix for unreliable Wi-Fi connections",
-     "url": "https://9to5mac.com/2026/11/22/ios-27-has-a-clever-fix-for-unreliable-wi-fi-connections/",
-     "source": "9to5Mac",
-     "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-27-rose.jpg?quality=82&strip=all&w=1600",
-     "ts": "2026-11-22T22:02:43+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "9to5Mac is brought to you by Tello Mobile. Switching to Tello Mobile can bring the cost of your plan down to as little as $5 a month, or an unlimited plan for just $25 a month",
-     "time": "05:02"
-    },
-    {
-     "title": "Pixel Weather rolls out ‘Report current weather’ to ‘improve local forecasts’",
-     "url": "https://9to5google.com/2026/11/22/pixel-weather-report/",
-     "source": "9to5Google",
-     "image": "",
-     "ts": "2026-11-22T21:12:41+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Google this weekend rolled out the latest update to Pixel Weather with a new reporting feature and small interface tweaks. more…",
-     "time": "04:12"
-    },
-    {
-     "title": "AirPods Pro 3 Drop to $169.99 in Amazon Black Friday Sale",
-     "url": "https://www.macrumors.com/2026/11/22/airpods-pro-3-169/",
-     "source": "MacRumors",
-     "image": "https://images.macrumors.com/article-new/2026/11/airpods-pro-3-blue-snow.jpeg",
-     "ts": "2026-11-22T20:52:00+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Apple's AirPods Pro 3 have dropped to an even lower price today for Black Friday, available for $169.99 on Amazon, down from $249.00.",
-     "time": "03:52"
-    },
-    {
-     "title": "Deal: Amazon's Black Friday deal discounts the Pixel 11 Pro and Pixel 11 Pro XL by 31%",
-     "url": "https://www.gsmarena.com/deal_amazons_black_friday_deal_discounts_the_pixel_11_pro_and_pixel_11_pro_xl_by_31-news-75570.php",
-     "source": "GSMArena",
-     "image": "https://fdn.gsmarena.com/imgroot/news/26/11/black-friday-amazon-us/-184x111/gsmarena_002.jpg",
-     "ts": "2026-11-22T20:51:02+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Google was meant to offer a viable alternative to the Apple-Samsung duopoly in the US market, but its pricing strategy made that very difficult – the Pixel 11 series was $100 more than the already expensive Pixel 10 phones.",
-     "time": "03:51"
-    },
-    {
-     "title": "iPhone Duo Could Get More Lock Screen Widgets, Leak Suggests",
-     "url": "https://www.macrumors.com/2026/11/22/iphone-duo-could-get-more-lock-screen-widgets/",
-     "source": "MacRumors",
-     "image": "https://images.macrumors.com/article-new/2026/11/iphone-duo-cyber-monday.jpeg",
-     "ts": "2026-11-22T20:38:16+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "An experimental iPhone Duo interface tested by Apple would allow widgets to occupy two separate areas of the Lock Screen, according to findings shared by the leaker known as \"pdfu.\" The unreleased layout adds a vertical pair of circular widgets on the right side of the screen. Crucially, pdfu says this arrangement can be used together with the existing bottom row, giving users access to more infor",
-     "time": "03:38"
-    },
-    {
-     "title": "Gurman: Siri Layoffs Spared Newer AI Systems, But Problems Persist",
-     "url": "https://www.macrumors.com/2026/11/22/siri-layoffs-spared-newer-ai-systems/",
-     "source": "MacRumors",
-     "image": "https://images.macrumors.com/article-new/2026/11/Siri-AI-Icon.jpeg",
-     "ts": "2026-11-22T20:29:51+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Apple's recent Siri layoffs affected employees working on the assistant's older infrastructure rather than its newer AI systems, according to Bloomberg 's Mark Gurman.",
-     "time": "03:29"
     }
    ],
    "economy": [
     {
-     "title": "Giá vàng có thể giảm tiếp",
-     "url": "https://vnexpress.net/gia-vang-co-the-giam-tiep-5147695.html",
-     "source": "VnExpress",
-     "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/252l4ydm4rilvfxufeeg75gbb4-lo-3395-7422-1795342589.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=esEcqlE_gxvjjQRGzWuEJw",
-     "ts": "2026-11-22T21:02:28+00:00",
+     "title": "Mỹ đưa công ty Singapore vào danh sách kiểm soát xuất khẩu",
+     "url": "https://www.vietnamplus.vn/my-dua-cong-ty-singapore-vao-danh-sach-kiem-soat-xuat-khau-post1150235.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eclSyW_jn8urdrTQJcuRZ-NPnvsMiXImX0nY-GFkhnmS/chip.jpg.avif",
+     "ts": "2026-11-23T23:58:18+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Kỳ vọng lạm phát giảm, đà bán tháo cổ phiếu Mỹ tiếp tục lan rộng cùng lãi suất neo cao có thể là những rủi ro của vàng tuần này, theo các chuyên gia.",
-     "time": "04:02"
+     "summary": "Megaspeed International cùng 4 công ty con tại Malaysia, Singapore và Thái Lan đã bị đưa vào Danh sách Thực thể của Bộ Thương mại Mỹ vì có hành động bị đánh giá là đi ngược lợi ích an ninh của Mỹ. Trung Quốc quan ngại về biện pháp kiểm soát xuất khẩu chip của Mỹ Mỹ cấp phép bán gần 900.000 chip AI sang Trung Quốc trong 6 tháng Mỹ xác nhận điều tra Megaspeed liên quan xuất khẩu chip Nvidia",
+     "time": "06:58"
     },
     {
-     "title": "Trái phiếu chính phủ lần đầu giảm lãi suất trong năm nay",
-     "url": "https://vnexpress.net/trai-phieu-chinh-phu-lan-dau-giam-lai-suat-trong-nam-nay-5147737.html",
+     "title": "Các cụ 90 tuổi biến 1.000 túi nilon thải bỏ thành chiếu ngủ cho người vô gia cư",
+     "url": "https://vnexpress.net/cac-cu-90-tuoi-bien-1-000-tui-nilon-thai-bo-thanh-chieu-ngu-cho-nguoi-vo-gia-cu-5148073.html",
      "source": "VnExpress",
-     "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/22/DSC-2515-2017-1795359065.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SfFUGxlot8U9hc00dJtmbQ",
-     "ts": "2026-11-22T20:55:09+00:00",
+     "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/23/t-faa4058a19234f80babcc3162d55-5697-7694-1795419367.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=sEuFH1oDBPLk0ewjayzvbg",
+     "ts": "2026-11-23T23:33:23+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Lãi suất trúng thầu trái phiếu chính phủ 10 năm, kỳ hạn chuẩn của thị trường, vừa giảm còn 4,41% sau gần 11 tháng liên tiếp đi ngang hoặc tăng.",
-     "time": "03:55"
+     "summary": "20 năm qua, cụ bà Elizabeth King tại bang Florida làm sạch túi nilon, rồi móc thành chiếu ngủ, hỗ trợ người vô gia cư và giảm rác nhựa.",
+     "time": "06:33"
+    },
+    {
+     "title": "Cổ phiếu công ty ông Lê Viết Hải xuống thấp nhất chục năm",
+     "url": "https://vnexpress.net/co-phieu-cong-ty-ong-le-viet-hai-xuong-thap-nhat-chuc-nam-5148275.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/24/Le-Vie-t-Ha-i-TTung32-4188-1795474556.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=CvCoH_tay_qVfBnejKdXKg",
+     "ts": "2026-11-23T23:24:31+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Cổ phiếu Tập đoàn Xây dựng Hòa Bình (HBC) đã giảm hơn phân nửa so với đầu năm, xuống thấp nhất 12 năm khi doanh nghiệp đối mặt gánh nặng nợ và lợi nhuận giảm.",
+     "time": "06:24"
+    },
+    {
+     "title": "DSC: Mức tăng trưởng lợi nhuận năm 2027 có thể thấp hơn đáng kể năm nay",
+     "url": "https://vnexpress.net/dsc-muc-tang-truong-loi-nhuan-nam-2027-co-the-thap-hon-dang-ke-nam-nay-5148205.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/23/233a7521-1795435537-2866-1795435544.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=epgxSCL2IzNkrS-U7cvkgQ",
+     "ts": "2026-11-23T22:54:23+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Theo Chứng khoán DSC, nếu loại nhóm Vingroup, mức tăng trưởng lợi nhuận năm 2027 dự kiến chỉ khoảng 7%, thấp hơn đáng kể so với mức 25% của năm nay.",
+     "time": "05:54"
+    },
+    {
+     "title": "Hàng loạt chuỗi pizza tại Mỹ chật vật",
+     "url": "https://vnexpress.net/hang-loat-chuoi-pizza-tai-my-chat-vat-5148115.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/23/screenshot-1795424489-1629-1795424616.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=P8ODBMYOJGbjfNNI2jKLMg",
+     "ts": "2026-11-23T17:03:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Nhiều chuỗi pizza lớn như Pizza Hut hay Domino’s Pizza chịu sức ép khi khách hàng giảm chi, có nhiều lựa chọn và quan tâm sức khỏe hơn.",
+     "time": "00:03"
+    },
+    {
+     "title": "Ngân hàng SCB có chủ tịch mới",
+     "url": "https://vnexpress.net/ngan-hang-scb-co-chu-tich-moi-5148245.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/11/23/phamquangtienscb-1795445644-8047-1795445815.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=6SdDfwOmSrfADNlzfUtdYA",
+     "ts": "2026-11-23T17:00:30+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Sau 4 năm làm Tổng giám đốc SCB, ông Phạm Quang Tiến được bổ nhiệm giữ chức Chủ tịch Hội đồng quản trị ngân hàng, thay ông Phạm Đình Điền.",
+     "time": "00:00"
+    }
+   ],
+   "geopolitics": [
+    {
+     "title": "Phe Dân chủ sẽ điều tra việc Jensen Huang được phục chức",
+     "url": "https://vnexpress.net/phe-dan-chu-se-dieu-tra-viec-jensen-huang-duoc-phuc-chuc-5148277.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/24/ap26314805683835-1795476308-8550-1795476338.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=utLf37LukcvSFxd8XVrtrQ",
+     "ts": "2026-11-23T23:45:29+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Lãnh đạo phe Dân chủ tại quốc hội tuyên bố sẽ điều tra việc Tổng thống Trump và Nvidia đưa Jensen Huang trở lại làm CEO.",
+     "time": "06:45"
+    },
+    {
+     "title": "Ông Medvedev nêu kịch bản Nga tung đòn phủ đầu hạt nhân",
+     "url": "https://vnexpress.net/ong-medvedev-neu-kich-ban-nga-tung-don-phu-dau-hat-nhan-5148212.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/anh1-1795442597-8789-1795443084.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=8hLO4pMBBOAoMPAkBz5SpA",
+     "ts": "2026-11-23T23:25:02+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Ông Medvedev cho rằng phương Tây và Ukraine đã tạo cơ sở để Nga có thể dùng đến vũ khí hạt nhân, song Moskva chưa buộc phải ra đòn phủ đầu ngay.",
+     "time": "06:25"
+    },
+    {
+     "title": "Tòa án Iran yêu cầu Mỹ bồi thường 290 tỷ USD",
+     "url": "https://www.vietnamplus.vn/toa-an-iran-yeu-cau-my-boi-thuong-290-ty-usd-post1150227.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eRjN4U0X4qHiug9yIl6cdl_1CuhHcX7V6uxRk3TbLLfT46vC2-VKJuAt_-Ozz6jr7eae44gbs0ITUC_LY4MG4R6t3eYaBuEK7rnGvSa4NuNX8BsqbeEIqOpd7LbcxGu52w/ttxvn_iran-ghi-nhan-nhieu-tieng-no-tai-thanh-pho-cang-sirik-9104901-resize.jpg.avif",
+     "ts": "2026-11-23T22:49:40+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Các tòa án Iran ra phán quyết yêu cầu Mỹ bồi thường tổng cộng 290 tỷ USD, trong bối cảnh Tehran cũng khởi kiện một số quốc gia Arab vùng Vịnh.",
+     "time": "05:49"
+    },
+    {
+     "title": "Căng thẳng ngoại giao giữa Iran và Qatar gia tăng",
+     "url": "https://www.vietnamplus.vn/cang-thang-ngoai-giao-giua-iran-va-qatar-gia-tang-post1150228.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/2Bp7XAns5lTd2E1LvH3sb4x0FFuvOyFPUAGLn11Ph3k4TanYMUze9eOk9X9DlKWY/ttxvn-esmaeil-baghaei.jpg.avif",
+     "ts": "2026-11-23T22:48:52+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Iran triệu Đại biện lâm thời Qatar để phản đối tuyên bố chung với Đức, trong đó chỉ trích các động thái của Iran và kêu gọi Tehran tuân thủ nghĩa vụ hạt nhân.",
+     "time": "05:48"
+    },
+    {
+     "title": "Đòn nghi binh giúp đặc nhiệm Mexico bắt trùm ma túy nguy hiểm nhất",
+     "url": "https://vnexpress.net/don-nghi-binh-giup-dac-nhiem-mexico-bat-trum-ma-tuy-nguy-hiem-nhat-5147787.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/AFP20261121D89J6ZQv1HighResMex-4974-4284-1795403346.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ojSWrkBlHwBRQyYYFFMmfg",
+     "ts": "2026-11-23T22:00:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Quân đội Mexico tổ chức nhiều mũi tấn công nhằm đánh lạc hướng, tạo cơ hội để đội đặc nhiệm bắt sống trùm ma túy Meza Flores ngay tại sào huyệt.",
+     "time": "05:00"
+    },
+    {
+     "title": "Những người Mỹ chuộng hầm sinh tồn sau loạt sự cố công nghệ",
+     "url": "https://vnexpress.net/nhung-nguoi-my-chuong-ham-sinh-ton-sau-loat-su-co-cong-nghe-5148129.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/new-jersey-1795425575-7477-1795425963.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=h3ZxsO5coq-g8NuWIuzVlQ",
+     "ts": "2026-11-23T18:00:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Loạt sự cố công nghệ khiến nhu cầu mua nhà có hầm trú ẩn, nguồn điện và nước độc lập, đề phòng gián đoạn dịch vụ thiết yếu ở Mỹ tăng lên.",
+     "time": "01:00"
+    }
+   ],
+   "sports": [
+    {
+     "title": "Kịch bản nào để Việt Nam đi tiếp ở U17 World Cup?",
+     "url": "https://vnexpress.net/kich-ban-nao-de-viet-nam-di-tiep-o-u17-world-cup-5148270.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-thethao.vnecdn.net/2026/11/24/13-1795460288-2298-1795460981.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_dRwJzILI_7l00o9OHxgLQ",
+     "ts": "2026-11-23T23:43:29+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Trận hòa New Zealand 3-3 giúp Việt Nam duy trì hy vọng vượt qua vòng bảng U17 World Cup 2026, nhưng nhiệm vụ tiếp theo vô cùng thách thức.",
+     "time": "06:43"
+    },
+    {
+     "title": "Dẫn trước 2 bàn nhưng U17 Trung Quốc đánh rơi chiến thắng ở phút bù giờ",
+     "url": "https://tuoitre.vn/dan-truoc-2-ban-nhung-u17-trung-quoc-danh-roi-chien-thang-o-phut-bu-gio-100261124004454738.htm",
+     "source": "Tuổi Trẻ",
+     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/23/anh-chup-man-hinh-2026-11-24-004016-17954556260101676974594-53-0-448-632-crop-179545580751682323719.png",
+     "ts": "2026-11-23T22:43:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Tối 23-11, U17 Trung Quốc bị U17 Morocco cầm hòa 2-2 ở lượt trận thứ hai bảng H, Giải U17 World Cup 2026.",
+     "time": "05:43"
+    },
+    {
+     "title": "Đại hội Thể thao toàn quốc 2026: TP.HCM gặp Thái Nguyên ở chung kết bóng đá nữ",
+     "url": "https://tuoitre.vn/dai-hoi-the-thao-toan-quoc-2026-tphcm-gap-thai-nguyen-o-chung-ket-bong-da-nu-100261123234835788.htm",
+     "source": "Tuổi Trẻ",
+     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/23/kthua-an-mung-1795451561213756306971-0-0-564-902-crop-17954524039881220505923.jpeg",
+     "ts": "2026-11-23T16:51:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Với 2 chiến thắng liên tiếp, chủ nhà TP.HCM và Thái Nguyên đã giành vé vào chung kết môn bóng đá nữ Đại hội Thể thao toàn quốc 2026.",
+     "time": "23:51"
+    }
+   ],
+   "culture_society": [
+    {
+     "title": "Từ “văn hóa soi đường” đến động lực phát triển đất nước",
+     "url": "https://www.vietnamplus.vn/tu-van-hoa-soi-duong-den-dong-luc-phat-trien-dat-nuoc-post1150234.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eYFSGsP4fTt-B-aFCdijbQt6J9bUVEu53B1cl4LWlii6gVYvOI0_zDtSS8TyUbM0g0aJdZU18kzEld6ZEHljEMuaMZXGtPNZJnA_Z5OcQDxCSo1WE-ckImi-tz8IiJQePVD9W7rcWaN3FG-WumxF9Ko/ttxvn_hang-nghin-nguoi-tham-gia-dieu-hanh-ao-dai-chao-mung-ngay-van-hoa-viet-nam-9171624.jpg.avif",
+     "ts": "2026-11-23T23:38:13+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Từ những ngày đầu lập nước đến các chủ trương, quyết sách mới về phát triển văn hóa, hành trình 80 năm đã khẳng định vị trí",
+     "time": "06:38"
+    },
+    {
+     "title": "Ý nghĩa lịch sử của Hội nghị Văn hóa toàn quốc lần thứ nhất",
+     "url": "https://www.vietnamplus.vn/y-nghia-lich-su-cua-hoi-nghi-van-hoa-toan-quoc-lan-thu-nhat-post1150232.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1ecLIQexPXw5LoeV-L0ByPQR7hqnRoYvIbi61M_wtwy46/van-hoa-avatar.jpg.avif",
+     "ts": "2026-11-23T23:13:49+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Hội nghị Văn hóa toàn quốc lần thứ nhất có ý nghĩa quan trọng trong việc khẳng định vị trí, vai trò, sứ mệnh của văn hóa trong sự nghiệp cách mạng và tương lai của dân tộc.",
+     "time": "06:13"
+    },
+    {
+     "title": "Từ “lời hiệu triệu” năm 1946 đến sức mạnh văn hóa Việt Nam",
+     "url": "https://www.vietnamplus.vn/tu-loi-hieu-trieu-nam-1946-den-suc-manh-van-hoa-viet-nam-post1150167.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/DZsq1ayuLIblk1SqRFJFfe4WDkntwv-0a8fRPvq0Cee7DDgOQZrGQ73LbKIfRP3b-YBOgtO3Yj0ByNUfC5iMT3O5MG7kiV1Ncrn39TS6mn-pt43Ie3O2tNT09ztoGp1q9hmg4aPEr1YI_vLuWZ1VEzuvCqJN_VcRHoEaS0QmXng/1795152878510-3579223227724053055-g8247094018193334759-e85840b4092926cb13a11fafd6d1334e.jpg.avif",
+     "ts": "2026-11-23T23:08:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Ngày Văn hóa Việt Nam là một “chỉ dấu đỏ” kết nối sự kiện lịch sử năm 1946 với định hướng phát triển đất nước trong kỷ nguyên mới",
+     "time": "06:08"
+    },
+    {
+     "title": "Ngày Văn hóa Việt Nam lần đầu tiên: Phát triển công nghiệp văn hóa không đồng nghĩa thương mại mọi cách",
+     "url": "https://tuoitre.vn/ngay-van-hoa-viet-nam-lan-dau-tien-phat-trien-cong-nghiep-van-hoa-khong-dong-nghia-thuong-mai-moi-cach-10026111708090445.htm",
+     "source": "Tuổi Trẻ",
+     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/17/edit-87648134612024533388036751135934215961237857n-1794878382117271677706-369-0-1292-1476-crop-1794878437059807928319.jpeg",
+     "ts": "2026-11-23T23:00:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "‘Điều đáng mừng nhất là một sự chuyển động đồng bộ từ tư duy, thể chế đến nguồn lực và thị trường cho công nghiệp văn hóa mà Ngày Văn hóa Việt Nam là một mốc tiếp nối mới’.",
+     "time": "06:00"
+    },
+    {
+     "title": "Bảo tồn và phát triển làng nghề gắn với bản sắc văn hóa, kinh tế địa phương",
+     "url": "https://www.vietnamplus.vn/bao-ton-va-phat-trien-lang-nghe-gan-voi-ban-sac-van-hoa-kinh-te-dia-phuong-post1150205.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/Ahi90TSK3TF9vAer5LSFWsd8BStg7I_Ph9AnbWNtj4k/bton.jpg.avif",
+     "ts": "2026-11-23T14:55:46+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Các làng nghề Việt Nam được kỳ vọng sẽ vừa trở thành trung tâm sáng tạo văn hóa, vừa là điểm đến du lịch và tạo dựng những thương hiệu có sức cạnh tranh trên thị trường quốc tế.",
+     "time": "21:55"
+    },
+    {
+     "title": "Chuỗi hoạt động đặc sắc tôn vinh di sản văn hóa Huế",
+     "url": "https://www.vietnamplus.vn/chuoi-hoat-dong-dac-sac-ton-vinh-di-san-van-hoa-hue-post1150218.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eYacCTNCNB48jc9OuNTI-Cwqew9uCDgPBwL6aJqmJqFKWLddYyg7A3GnC0RxsNdJcdwAL5jiB_NvnS9SQHo6P__L3l06e3mSY1EdZhEb3RUD/ttxvn_khai-mac-trien-lam-tranh-phong-canh-hue-9174586-resize.jpg.avif",
+     "ts": "2026-11-23T14:42:56+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Huế tổ chức nhiều hoạt động văn hóa, nghệ thuật đặc sắc, tạo không gian giao lưu, sáng tạo và trải nghiệm cho công chúng",
+     "time": "21:42"
     }
    ],
    "tech_ai": [
     {
-     "title": "Amazon Kindle 2026 vào một ngày mưa, khi việc đọc sách quay trở về với bản ngã gốc rễ của nó",
-     "url": "https://tinhte.vn/thread/amazon-kindle-2026-vao-mot-ngay-mua-khi-viec-doc-sach-quay-tro-ve-voi-ban-nga-goc-re-cua-no.4192655/",
+     "title": "Đấu sĩ La Mã được đào tạo chuyên nghiệp, mỗi trận đấu chỉ có khoảng 10% khả năng tử vong",
+     "url": "https://tinhte.vn/thread/dau-si-la-ma-duoc-dao-tao-chuyen-nghiep-moi-tran-dau-chi-co-khoang-10-kha-nang-tu-vong.4194897/",
      "source": "Tinh tế",
      "image": "",
-     "ts": "2026-11-22T19:48:55+00:00",
+     "ts": "2026-11-23T23:29:53+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Đó là một buổi sáng chủ nhật âm u, khác hẳn với cái thời tiết nắng ấm thường nhật. Đường xá vắng vẻ",
-     "time": "02:48"
+     "summary": "Một ngày ở đấu trường La Mã bắt đầu từ buổi sáng với những cuộc săn thú. Người tổ chức cho thả sư tử",
+     "time": "06:29"
     },
     {
-     "title": "SoftBank từng tính mua SK Hynix với giá khoảng 1.000 tỉ USD, nay nói không còn xem xét",
-     "url": "https://tinhte.vn/thread/softbank-tung-tinh-mua-sk-hynix-voi-gia-khoang-1-000-ti-usd-nay-noi-khong-con-xem-xet.4194684/",
+     "title": "Lamborghini Temerario Spyder ra mắt tại Los Angeles: mui cứng gập điện, hybrid V8 920 mã lực",
+     "url": "https://tinhte.vn/thread/lamborghini-temerario-spyder-ra-mat-tai-los-angeles-mui-cung-gap-dien-hybrid-v8-920-ma-luc.4194528/",
      "source": "Tinh tế",
      "image": "",
-     "ts": "2026-11-22T19:21:55+00:00",
+     "ts": "2026-11-23T18:51:11+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Báo The Information ngày 20/11, dẫn người am hiểu vụ việc, viết rằng CEO SoftBank Group Masayoshi Son gần đây đã tiếp cận các định chế phố Wall để hỏi về việc tài trợ một thương vụ mua lại có thể...",
-     "time": "02:21"
+     "summary": "Lamborghini vừa ra mắt toàn cầu Temerario Spyder, bản mui trần của siêu xe hybrid Temerario, tại Bảo tàng Điện ảnh Academy Museum of Motion Pictures ở Los Angeles (Mỹ) và tại trụ sở Sant'Agata...",
+     "time": "01:51"
     },
     {
-     "title": "Kia Telluride Hybrid tới LA Auto Show 2026: 329 mã lực, đi được 1.025 km mỗi bình xăng",
-     "url": "https://tinhte.vn/thread/kia-telluride-hybrid-toi-la-auto-show-2026-329-ma-luc-di-duoc-1-025-km-moi-binh-xang.4194219/",
-     "source": "Tinh tế",
-     "image": "",
-     "ts": "2026-11-22T17:55:34+00:00",
+     "title": "Chứng khoán Mỹ tăng mạnh sau khi Nvidia phục chức CEO cho ông Jensen Huang",
+     "url": "https://www.vietnamplus.vn/chung-khoan-my-tang-manh-sau-khi-nvidia-phuc-chuc-ceo-cho-ong-jensen-huang-post1150223.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/VDu2ayPW9xEUQJPBOsBm6ma-FV6KNn-7BfXmTVzR-BJjpy9QYbCyil7cdhjcYY9Wq5rbQrfeHYghknQMX-Kfs0-e-wyJciZfSdj4YWSGeZI/ttxvn_chung-khoan-my-tang-manh-8762066.jpg.avif",
+     "ts": "2026-11-23T15:50:13+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Kia mang Telluride Hybrid, bản hybrid đầu tiên của mẫu SUV 3 hàng ghế này, tới LA Auto Show 2026 tại Los Angeles (Mỹ).",
-     "time": "00:55"
+     "summary": "Đà phục hồi diễn ra sau một tuần giao dịch đầy biến động, khi lo ngại về mức định giá và triển vọng đầu tư vào ngành AI khiến áp lực bán lan rộng trên thị trường.",
+     "time": "22:50"
     },
     {
-     "title": "AMD ra mắt EPYC 9006 \"Venice\": CPU Zen 6 2nm, tối đa 256 nhân, thay đổi triệt để từ trong ra ngoài",
-     "url": "https://tinhte.vn/thread/amd-ra-mat-epyc-9006-venice-cpu-zen-6-2nm-toi-da-256-nhan-thay-doi-triet-de-tu-trong-ra-ngoai.4194819/",
-     "source": "Tinh tế",
-     "image": "",
-     "ts": "2026-11-22T16:36:40+00:00",
-     "sources": 1,
-     "score": 0,
-     "summary": "Với EPYC 9006, AMD đã chính thức có CPU Zen 6 đầu tiên và cũng là con chip 2nm tiên tiến nhất hiện tại của hãng.",
-     "time": "23:36"
-    },
-    {
-     "title": "Phải chuyển từ xuất khẩu nông sản sang xuất khẩu công nghệ nông nghiệp",
-     "url": "https://tuoitre.vn/phai-chuyen-tu-xuat-khau-nong-san-sang-xuat-khau-cong-nghe-nong-nghiep-100261122212648165.htm",
+     "title": "Bảo tàng Chứng tích chiến tranh kể chuyện hòa bình bằng công nghệ, nghệ thuật về đêm",
+     "url": "https://tuoitre.vn/bao-tang-chung-tich-chien-tranh-ke-chuyen-hoa-binh-bang-cong-nghe-nghe-thuat-ve-dem-100261123213706907.htm",
      "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/chu-tich-quoc-hoi-2211-17953608519432005012996-17953656685851285717453-271-223-1332-1920-crop-1795365702286457343400.jpg",
-     "ts": "2026-11-22T16:34:00+00:00",
+     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/23/1k84dm1a13vmp0d-1795445541737216360002-418-337-1350-1828-crop-1795446486846527470965.jpg",
+     "ts": "2026-11-23T15:24:00+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Chủ tịch Quốc hội Trần Thanh Mẫn đã dẫn lời Tổng Bí thư, Chủ tịch nước Tô Lâm chỉ đạo phải chuyển từ xuất khẩu nông sản sang xuất khẩu công nghệ nông nghiệp tại Festival quốc tế ngành hàng lúa gạo Việt Nam lần thứ 2.",
-     "time": "23:34"
+     "summary": "Bảo tàng Chứng tích chiến tranh ra mắt chương trình trải nghiệm đêm, kết hợp nghệ thuật thực cảnh, công nghệ 3D mapping và trí tuệ nhân tạo để tái hiện ký ức chiến tranh",
+     "time": "22:24"
     },
     {
-     "title": "Cận cảnh Porsche Cayenne EV vừa ra mắt tại Việt Nam, giá từ 4,6 tỷ đồng",
-     "url": "https://tinhte.vn/thread/can-canh-porsche-cayenne-ev-vua-ra-mat-tai-viet-nam-gia-tu-4-6-ty-dong.4194700/",
+     "title": "Honor 700, 700 Pro và 700S ra mắt: màn hình phụ sau lưng, camera 200MP, pin 9.000mAh",
+     "url": "https://tinhte.vn/thread/honor-700-700-pro-va-700s-ra-mat-man-hinh-phu-sau-lung-camera-200mp-pin-9-000mah.4195057/",
      "source": "Tinh tế",
-     "image": "",
-     "ts": "2026-11-22T15:44:08+00:00",
+     "image": "https://imgproxy7.tinhte.vn/rG1wpFukuCiTEC3BhlHflYReXbl7vJ0feqkFqDOxGL4/w:400/plain/https://photo2.tinhte.vn/data/attachment-files/2026/11/9141339_anh-1-honor-700.jpg",
+     "ts": "2026-11-23T14:49:09+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Porsche Cayenne thuần điện vừa chính thức ra mắt tại thị trường Việt Nam với giá khởi điểm từ 4,72 tỷ đồng.",
-     "time": "22:44"
+     "summary": "Honor vừa ra mắt bộ ba Honor 700S, Honor 700 và Honor 700 Pro tại Trung Quốc chiều 23/11. Điểm chung của cả ba là một màn hình phụ hình vuông nằm trong cụm camera sau lưng",
+     "time": "21:49"
+    },
+    {
+     "title": "Sáng thứ 7, 28/11/2026 - Mời tham dự Offline Bose Open Day, trúng quà Quietcomfort Headphones gen 2",
+     "url": "https://tinhte.vn/thread/sang-thu-7-28-11-2026-moi-tham-du-offline-bose-open-day-trung-qua-quietcomfort-headphones-gen-2.4193822/",
+     "source": "Tinh tế",
+     "image": "",
+     "ts": "2026-11-23T14:45:41+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Chào anh em, sáng thứ Bảy ngày 28 tháng 11 này, Tinh tế và Bose có một buổi offline trải nghiệm sản phẩm Bose tại Cafe Tinh tế, mời anh em tham gia (link mình để cuối bài nhé).",
+     "time": "21:45"
+    }
+   ],
+   "domestic": [
+    {
+     "title": "Ngày Văn hóa Việt Nam: Hà Nội miễn phí vé xe buýt và đường sắt đô thị",
+     "url": "https://www.vietnamplus.vn/ngay-van-hoa-viet-nam-ha-noi-mien-phi-ve-xe-buyt-va-duong-sat-do-thi-post1150231.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1ebjb0slseYtHcTbmjXdZguqyz9fBEXK-YeY86cFGoyuep09rG_5wsyA3cseXkCDO-g/ngay-van-hoa-avatar.jpg.avif",
+     "ts": "2026-11-23T23:10:55+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Hành khách được miễn tiền vé trên 129 tuyến xe buýt có trợ giá và hai tuyến đường sắt đô thị gồm tuyến 2A Cát Linh-Hà Đông, tuyến 3.1 Nhổn-Cầu Giấy trong ngày thứ Ba (24/11/2026).",
+     "time": "06:10"
+    },
+    {
+     "title": "Nhà máy chốt sớm mức tăng lương cho hàng chục nghìn công nhân",
+     "url": "https://vnexpress.net/nha-may-chot-som-muc-tang-luong-cho-hang-chuc-nghin-cong-nhan-5147752.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/wm1-wm1-4894955c9f7749291066-17954-9288-9088-1795432750.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UYyXqyTVJuaf5KbQRfUymQ",
+     "ts": "2026-11-23T23:00:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Từ tháng 1/2027, lương cơ bản của chị My Kha, công nhân Pouyuen, đạt gần 13 triệu đồng mỗi tháng sau khi công ty tăng đồng loạt 500.000 đồng cho gần 41.000 lao động.",
+     "time": "06:00"
+    },
+    {
+     "title": "Các nước trên thế giới áp dụng phạt lao động công ích thế nào?",
+     "url": "https://vnexpress.net/cac-nuoc-tren-the-gioi-ap-dung-phat-lao-dong-cong-ich-the-nao-5147828.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/b3qxu7md5lfita6atg4mg5ji4x8e54-7228-7955-1795399061.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=N0kSR2fAOgzT3JJCIOSv3A",
+     "ts": "2026-11-23T22:00:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Mỹ cho phép chuyển tiền phạt giao thông thành giờ lao động, Hàn Quốc áp dụng với người không đủ khả năng nộp phạt, trong khi Singapore buộc người xả rác dọn vệ sinh công cộng.",
+     "time": "05:00"
+    },
+    {
+     "title": "Tin tức sáng 24-11: TP.HCM tổ chức hội nghị giới thiệu Luật Phát triển đô thị đến đối tác quốc tế",
+     "url": "https://tuoitre.vn/tin-tuc-sang-24-11-tphcm-to-chuc-hoi-nghi-gioi-thieu-luat-phat-trien-do-thi-den-doi-tac-quoc-te-100261123192509685.htm",
+     "source": "Tuổi Trẻ",
+     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/23/29244-1795391174793763734034-17954542072562014375131-0-0-1600-2560-crop-17954542155921850521482.png",
+     "ts": "2026-11-23T20:19:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Một số tin tức đáng chú ý: Hàng mua online trị giá đến 1 triệu đồng được miễn thuế nhập khẩu; TP.HCM sẽ tổ chức hội nghị giới thiệu Luật Phát triển đô thị đến đối tác quốc tế",
+     "time": "03:19"
+    },
+    {
+     "title": "Đề nghị truy tặng huân chương cho hai người hy sinh khi cứu nạn",
+     "url": "https://vnexpress.net/de-nghi-truy-tang-huan-chuong-cho-hai-nguoi-hy-sinh-khi-cuu-nan-5148247.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/2aOboREYpLCONOzjGYUx390uzioQgz-5680-7331-1795446598.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=CdFIjoke9tTQKgkNfXipZg",
+     "ts": "2026-11-23T18:00:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Với hành động cứu người gặp nạn, ông Nguyễn Duy An và Phạm Sáng được UBND tỉnh Khánh Hòa đề xuất truy tặng huân chương.",
+     "time": "01:00"
+    },
+    {
+     "title": "17 km đường trên cao đầu tiên ở TP HCM sắp hoàn thành",
+     "url": "https://vnexpress.net/17-km-duong-tren-cao-dau-tien-o-tp-hcm-sap-hoan-thanh-5148208.html",
+     "source": "VnExpress",
+     "image": "https://vcdn1-vnexpress.vnecdn.net/2026/11/23/6-1795437503-8621-1795437598.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Zdap818xjYFBrr1rCX1rAQ",
+     "ts": "2026-11-23T17:00:00+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Hơn 17 km Vành đai 3 trên cao dự kiến hoàn thành thi công cuối tháng 11, kết nối Tân Vạn với cao tốc TP HCM - Long Thành - Dầu Giây, mở thêm hướng tới sân bay Long Thành.",
+     "time": "00:00"
     }
    ],
    "environment": [
     {
-     "title": "Lần đầu tiên sau 17 năm, thế giới không đạt đồng thuận chung về khí hậu",
-     "url": "https://tuoitre.vn/lan-dau-tien-sau-17-nam-the-gioi-khong-dat-dong-thuan-chung-ve-khi-hau-100261122203148899.htm",
+     "title": "Trung Bộ khả năng hứng 2 đợt mưa lớn diện rộng từ đêm 24-11 đến hết tháng",
+     "url": "https://tuoitre.vn/trung-bo-kha-nang-hung-2-dot-mua-lon-dien-rong-tu-dem-24-11-den-het-thang-100261123210833349.htm",
      "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/murat-kurum-17953608945941031994832-91-373-820-1541-crop-17953609723801325046530.jpeg",
-     "ts": "2026-11-22T14:19:00+00:00",
+     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/23/14-10-ngap-lut-da-nang-29-169725-1697327281109694776709-249-0-1500-2000-crop-17954424980551149720403.png",
+     "ts": "2026-11-23T14:22:00+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Chủ tịch COP31 thừa nhận hội nghị năm nay kết thúc mà không thể thống nhất được một văn kiện chung về nỗ lực chống biến đổi khí hậu.",
-     "time": "21:19"
+     "summary": "Do ảnh hưởng của không khí lạnh mạnh ở tầng thấp kết hợp với các nhiễu động gió Đông trên cao và tác động của địa hình",
+     "time": "21:22"
+    },
+    {
+     "title": "Thanh Hóa công bố tình huống khẩn cấp sạt lở tại xã Thanh Quân",
+     "url": "https://www.vietnamplus.vn/thanh-hoa-cong-bo-tinh-huong-khan-cap-sat-lo-tai-xa-thanh-quan-post1150216.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/_RfA0Lv7xigOosrBfIuLk_JYwa7LIBoFHOAZchTeFR41tDm8vx-9IvhOxY5JRMR4/ttxvn-tra-leng.jpg.avif",
+     "ts": "2026-11-23T14:21:45+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Theo quyết định, UBND xã Thanh Quân có trách nhiệm duy trì biện pháp bảo đảm an toàn tại khu vực xảy ra sạt lở",
+     "time": "21:21"
+    },
+    {
+     "title": "Ra mắt nhãn hiệu tập thể \"Gạo Việt xanh, phát thải thấp\" và công cụ ViRiCert",
+     "url": "https://www.vietnamplus.vn/ra-mat-nhan-hieu-tap-the-gao-viet-xanh-phat-thai-thap-va-cong-cu-viricert-post1150204.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/_RfA0Lv7xigOosrBfIuLk3hy09hTIF261vVfTurQyHYpH5DEcYb1xcbvHmoo8wLDp09rG_5wsyA3cseXkCDO-g/ttxvn-gao-viet-xanh.jpg.avif",
+     "ts": "2026-11-23T13:36:46+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Việc ra mắt nhãn hiệu tập thể và công cụ giám sát là bước cụ thể nhằm gắn sản xuất lúa chất lượng cao, phát thải thấp với thị trường",
+     "time": "20:36"
+    },
+    {
+     "title": "An Giang: Khẩn trương khắc phục sạt lở, sụt lún tại xã Phú Hữu",
+     "url": "https://www.vietnamplus.vn/an-giang-khan-truong-khac-phuc-sat-lo-sut-lun-tai-xa-phu-huu-post1150193.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eYacCTNCNB48jc9OuNTI-CwzTPrP8BT26bjxstBuuHcVlNR2D7V5Y5wD0wGKn1XpKyoLnevzQ8pQLOleDKVc9nKzZJRH_qDyMJN_sz5wrQFdIKPbDL954AzstRpkSVGvAA/ttxvn_an-giang-khan-truong-khac-phuc-sat-lo-sut-lun-tai-xa-phu-huu-9174532.jpg.avif",
+     "ts": "2026-11-23T12:38:40+00:00",
+     "sources": 1,
+     "score": 0,
+     "summary": "Phó Chủ tịch UBND tỉnh An Giang đã trực tiếp đến hiện trường khảo sát các điểm sạt lở, chỉ đạo địa phương khẩn trương di dời các hộ dân sống trong khu vực sạt lở nguy hiểm đến nơi an toàn. An Giang khẩn trương duy tu, khắc phục sụt lún trên tuyến tránh Long Xuyên Cận cảnh các điểm sụt lún, nứt nền đường trên Quốc lộ 4D đoạn qua Lai Châu Khẩn trương xử lý điểm sụt lún, nứt nền đường trên Quốc lộ 4D",
+     "time": "19:38"
     }
    ],
    "cyber_digital": [
     {
-     "title": "Cảnh báo chiêu nhắn tin lừa đảo nhưng chèn vào luồng tin nhắn của ngân hàng",
-     "url": "https://tuoitre.vn/canh-bao-chieu-nhan-tin-lua-dao-nhung-chen-vao-luong-tin-nhan-cua-ngan-hang-100261122121836949.htm",
-     "source": "Tuổi Trẻ",
-     "image": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/22/1795324188532191102112990775327738560378301743084117b80a55f05931ab058f471373de0853d-17953244034211579541449-0-0-745-1192-crop-17953245298701609845155.jpg",
-     "ts": "2026-11-22T13:17:00+00:00",
+     "title": "“Quả ngọt” chuyển đổi số của ngành cấp nước Thành phố Hồ Chí Minh",
+     "url": "https://www.vietnamplus.vn/qua-ngot-chuyen-doi-so-cua-nganh-cap-nuoc-thanh-pho-ho-chi-minh-post1150194.vnp",
+     "source": "VietnamPlus",
+     "image": "https://media.vietnamplus.vn/images/QkaIkUpJXs0791nOdVF1eYacCTNCNB48jc9OuNTI-CxE4cKnDlMztQ-36tIQJ8L0MOcuZSPiJW27IVtqbhdr5pfIs2r2rN6ZsnAo7dGQ8HIFwMhjO1kS6qi2V1KApBdiTvkTrkELMpZsNWbCDKKo8DaPhJRYnXNKC2RO5XrOBYQ/ttxvn_nganh-cap-nuoc-tp-ho-chi-minh-chu-dong-ung-pho-truoc-hien-tuong-el-nino-keo-dai-9164613.jpg.avif",
+     "ts": "2026-11-23T12:48:26+00:00",
      "sources": 1,
      "score": 0,
-     "summary": "Thủ đoạn lừa đảo bằng cách gửi tin nhắn hưởng hoa hồng, đổi điểm thưởng hấp dẫn kèm đường dẫn không còn mới.",
-     "time": "20:17"
+     "summary": "Tổng Công ty Cấp nước Sài Gòn đã và đang triển khai nhiều giải pháp đồng bộ trong việc ứng dụng khoa học công nghệ",
+     "time": "19:48"
     }
    ]
   }
@@ -1449,156 +1507,156 @@
  "trends": {
   "vn": [
    {
-    "term": "Xsmn",
-    "traffic": "200000+",
-    "url": "https://laodong.vn/ldt/tin-tuc/ket-qua-xo-so-hau-giang-ngay-2111-1804294.ldo"
-   },
-   {
-    "term": "Sxmt",
-    "traffic": "200000+",
-    "url": "https://laodong.vn/ldt/tin-tuc/ket-qua-xo-so-mien-nam-hom-nay-2211-1804761.ldo"
-   },
-   {
-    "term": "Barcelona đấu với villarreal",
-    "traffic": "20000+",
-    "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-barcelona-villarreal-diem-tua-san-nha-la-liga-c48a1813129.html"
-   },
-   {
-    "term": "Liverpool đấu với man utd",
-    "traffic": "20000+",
-    "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-liverpool-mu-ruc-lua-derby-nuoc-anh-ngoai-hang-anh-c48a1813227.html"
-   },
-   {
-    "term": "Công vinh thủy tiên chia tay",
+    "term": "Thứ hạng của brentford gặp everton",
     "traffic": "10000+",
-    "url": "https://www.saostar.vn/dien-anh/thuy-tien-gay-tiec-nuoi-202611201617355403.html"
+    "url": "https://www.24h.com.vn/bong-da/video-bong-da-brentford-everton-ac-mong-the-do-2-ban-thua-trong-hiep-1-ngoai-hang-anh-c48a1813597.html"
    },
    {
-    "term": "Giải bóng đá vô địch thế giới",
-    "traffic": "10000+",
-    "url": "https://vnexpress.net/tien-dao-viet-nam-u17-world-cup-khong-kho-nhu-tuong-tuong-5147710.html"
-   },
-   {
-    "term": "Juventus đấu với venezia",
+    "term": "Giá vàng doji hôm nay",
     "traffic": "5000+",
-    "url": "https://bongdaplus.vn/serie-a/nhan-dinh-bong-da-juventus-vs-venezia-18h30-ngay-22-11-lao-ba-thang-nhe-5295502611.html"
+    "url": "https://vnexpress.net/gia-vang-co-the-giam-tiep-5147695.html"
    },
    {
-    "term": "Hồng lĩnh hà tĩnh đấu với catphcm",
-    "traffic": "5000+",
-    "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-ha-tinh-cong-an-tphcm-quyet-dau-vi-3-diem-v-league-c48a1813062.html"
-   },
-   {
-    "term": "Lịch âm",
-    "traffic": "5000+",
-    "url": "https://thanhnien.vn/lich-am-hom-nay-2111-ngay-ky-hoi-thang-ky-hoi-18526112010241135.htm"
-   },
-   {
-    "term": "Cristiano roland",
+    "term": "Sen tài thu",
     "traffic": "2000+",
-    "url": "https://vnexpress.net/bao-bi-tuong-chung-se-thang-de-viet-nam-o-u17-world-cup-5147481.html"
+    "url": "https://vnexpress.net/me-con-cuu-chu-tich-sen-tai-thu-ra-toa-trong-vu-lua-dao-nghin-ty-5147715.html"
    },
    {
-    "term": "Lionel messi",
+    "term": "Lô đất",
     "traffic": "2000+",
-    "url": "https://baonghean.vn/en/inter-miami-thua-dam-tai-nu-stadium-columbus-crew-huong-niem-vui-10356355.html"
+    "url": "https://laodong.vn/bat-dong-san/gia-dat-nen-giam-sau-nhieu-lo-dat-rao-ban-cat-lo-hang-ti-dong-1804955.ldo"
    },
    {
-    "term": "Sạt lở",
+    "term": "Dự báo thời tiết",
     "traffic": "2000+",
-    "url": "https://laodong.vn/moi-truong/canh-bao-2-tinh-co-mua-to-nguy-co-lu-quet-sat-lo-trong-6-gio-toi-1804563.ldo"
+    "url": "https://laodong.vn/moi-truong/mien-bac-sap-mua-dong-tu-dem-nay-co-noi-duoi-10-do-c-do-khong-khi-lanh-1805090.ldo"
    },
    {
-    "term": "Câu lạc bộ bóng đá bournemouth",
+    "term": "Vàng",
     "traffic": "2000+",
-    "url": "https://znews.vn/doi-bong-ngoai-hang-anh-thang-9-tran-lien-tiep-post1698246.html"
+    "url": "https://vnexpress.net/gia-vang-the-gioi-tang-vot-5148251.html"
    },
    {
-    "term": "Giá cà phê tây nguyên hôm nay",
-    "traffic": "2000+",
-    "url": "https://vov.vn/thi-truong/gia-ca-phe-hom-nay-2211-gia-ca-phe-trong-nuoc-giam-ve-72000-dongkg-post1352207.vov"
+    "term": "24 tháng 11",
+    "traffic": "1000+",
+    "url": "https://hdgmvietnam.com/chi-tiet/nguyen-gam-cung-cac-thanh-ngay-24-thang-11--le-trong-mung-cac-thanh-tu-dao-viet-nam"
    },
    {
-    "term": "Barcelona",
-    "traffic": "2000+",
-    "url": "https://elpais.com/deportes/futbol/2026-11-22/barcelona-villarreal-en-directo-el-partido-de-la-liga-en-vivo.html"
+    "term": "Sao mai",
+    "traffic": "1000+",
+    "url": "https://dantri.com.vn/giai-tri/quan-quan-sao-mai-2026-la-con-gai-chau-noi-cua-2-nsnd-cai-luong-noi-danh-20261123084115071.htm"
+   },
+   {
+    "term": "Đội tuyển bóng đá u-17 quốc gia argentina",
+    "traffic": "1000+",
+    "url": "https://www.24h.com.vn/bong-da/video-bong-da-u17-argentina-u17-mozambique-hiep-1-ruot-duoi-hap-dan-u17-world-cup-c48a1813286.html"
+   },
+   {
+    "term": "Lại lý huynh",
+    "traffic": "1000+",
+    "url": "https://tuoitre.vn/bang-xep-hang-huy-chuong-dai-hoi-the-thao-toan-quoc-ngay-22-11-tphcm-dan-dau-10026112222472988.htm"
+   },
+   {
+    "term": "Sóng ở đáy sông",
+    "traffic": "1000+",
+    "url": "https://znews.vn/dan-dien-vien-song-o-day-song-sau-26-nam-post1698419.html"
+   },
+   {
+    "term": "Xe tải",
+    "traffic": "1000+",
+    "url": "https://vnexpress.net/xe-con-len-qua-hong-xe-tai-vuot-len-nhu-tu-sat-5147820.html"
+   },
+   {
+    "term": "Nguyễn văn toàn",
+    "traffic": "500+",
+    "url": "https://bongda.com.vn/ly-do-van-toan-mat-tich-trong-doi-hinh-nam-dinh-tu-dau-mua-d856037.html"
+   },
+   {
+    "term": "Nguyễn yến trang",
+    "traffic": "500+",
+    "url": "https://tienphong.vn/bua-com-nha-cua-hoa-hau-nguyen-yen-trang-post1896531.tpo"
+   },
+   {
+    "term": "Mười hai con giáp",
+    "traffic": "500+",
+    "url": "https://www.24h.com.vn/ban-tre-cuoc-song/tu-vi-12-con-giap-hom-nay-24-11-suu-binh-on-tuat-tien-bac-doi-dao-c64a1813566.html"
    }
   ],
   "world": [
    {
-    "term": "Tom jackson espn",
-    "traffic": "100000+",
-    "url": "https://www.espn.com/nfl/story/_/id/50561778/tom-jackson-broncos-star-espn-legend-dies-75"
+    "term": "Colton mckivitz",
+    "traffic": "50000+",
+    "url": "https://sports.yahoo.com/articles/49ers-rt-colton-mckivitz-carted-022936220.html"
    },
    {
-    "term": "Strictly come dancing blackpool disruption",
+    "term": "Flood warning",
     "traffic": "20000+",
-    "url": "https://www.theguardian.com/tv-and-radio/2026/nov/21/police-called-strictly-come-dancing-after-disruption-during-live-show"
+    "url": "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html"
    },
    {
-    "term": "F1",
+    "term": "Nfc standings",
     "traffic": "20000+",
-    "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4"
+    "url": "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-ahead-week-11-snf"
    },
    {
-    "term": "Strictly come dancing week 9 results",
+    "term": "Earthquake now",
     "traffic": "20000+",
-    "url": "https://www.bbc.co.uk/news/articles/cvx2xprxp5ryo"
+    "url": "https://www.nytimes.com/2026/11/20/us/earthquakes-california-los-angeles-pinnacles.html"
    },
    {
-    "term": "Heisman odds",
+    "term": "King tides flooding",
     "traffic": "20000+",
-    "url": "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls"
+    "url": "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html"
    },
    {
-    "term": "Clima",
-    "traffic": "20000+",
-    "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-yonkers-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-la-semana-del-23-de-noviembre-al-nid22112026/"
-   },
-   {
-    "term": "Atp finals 2026",
-    "traffic": "20000+",
-    "url": "https://www.nytimes.com/athletic/7802181/2026/11/22/atp-finals-alcaraz-zverev-final/"
-   },
-   {
-    "term": "Liverpool vs man utd",
-    "traffic": "20000+",
-    "url": "https://www.theguardian.com/football/live/2026/nov/22/liverpool-v-manchester-united-premier-league-live"
-   },
-   {
-    "term": "Metacritic gta vi",
+    "term": "Lowes black friday deals",
     "traffic": "10000+",
-    "url": "https://www.forbes.com/sites/paultassi/2026/11/21/grand-theft-auto-6-is-being-review-bombed-on-metacritic/"
+    "url": "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026-1121/"
    },
    {
-    "term": "Black friday sales",
+    "term": "Cam skattebo",
     "traffic": "10000+",
-    "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html"
+    "url": "https://www.nfl.com/news/aidan-hutchinson-lions-season-ending-injury-hold-down-the-fort"
    },
    {
-    "term": "Philly marathon 2026",
+    "term": "Lost",
     "traffic": "10000+",
-    "url": "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/"
+    "url": "https://www.espn.com/college-football/story/_/id/50563638/no-big-ten-football-teams-ap-top-5-first-21"
    },
    {
-    "term": "Watford fc",
+    "term": "Vikings schedule",
     "traffic": "10000+",
-    "url": "https://www.bbc.co.uk/sport/football/live/crgqx1eqq0zqt"
+    "url": "https://www.vikings.com/news/inactives-49ers-sunday-night-football-mexico-2026"
    },
    {
-    "term": "Barcelona vs villarreal",
+    "term": "Nfl standings 49ers",
     "traffic": "10000+",
-    "url": "https://as.com/futbol/primera/barcelona-villarreal-en-directo-previa-y-ultima-hora-de-laliga-ea-sports-hoy-en-vivo-f202611-d/"
+    "url": "https://sports.yahoo.com/articles/packers-help-49ers-playoff-picture-042012697.html"
    },
    {
-    "term": "Was snl new last night",
+    "term": "Los angeles earthquake",
     "traffic": "10000+",
-    "url": "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host"
+    "url": "https://abcnews.com/US/magnitude-44-earthquake-hits-downtown-los-angeles/story?id=138315998"
    },
    {
-    "term": "Watford",
-    "traffic": "10000+",
-    "url": "https://www.bbc.co.uk/sport/football/live/crgqx1eqq0zqt"
+    "term": "Pacers vs knicks",
+    "traffic": "5000+",
+    "url": "https://sports.yahoo.com/articles/game-preview-knicks-vs-pacers-200000345.html"
+   },
+   {
+    "term": "Celtics vs warriors",
+    "traffic": "5000+",
+    "url": "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/"
+   },
+   {
+    "term": "Christian mccaffrey",
+    "traffic": "5000+",
+    "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/christian-mccaffrey-vikings-brian-flores/1981919/"
+   },
+   {
+    "term": "49ers schedule",
+    "traffic": "5000+",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50530832/fantasy-football-injuries-nfl-week-11-inactive-active"
    }
   ],
   "updated": "07:06"
