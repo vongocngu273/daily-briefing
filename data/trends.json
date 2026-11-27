@@ -1,277 +1,277 @@
 {
  "vn": [
   {
-   "term": "xăng",
+   "term": "đô thị lớn",
    "geo": "VN",
    "traffic": "2000+",
    "score": 2000,
-   "ts": "2026-11-25T22:30:00+00:00",
-   "url": "https://laodong.vn/kinh-doanh/du-bao-gia-xang-giam-hon-1000-donglit-1806547.ldo",
-   "news": "Dự báo giá xăng giảm hơn 1.000 đồng/lít"
+   "ts": "2026-11-26T22:50:00+00:00",
+   "url": "https://vnexpress.net/vinhomes-doi-ten-khu-do-thi-lon-nhat-viet-nam-5149167.html",
+   "news": "Vinhomes đổi tên khu đô thị lớn nhất Việt Nam"
   },
   {
-   "term": "tiền",
+   "term": "thứ hạng của borac banja luka gặp atalanta",
    "geo": "VN",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-25T23:40:00+00:00",
-   "url": "https://vnexpress.net/ngan-hang-van-chao-lai-suat-tiet-kiem-toi-9-6-mot-nam-5148499.html",
-   "news": "Ngân hàng vẫn chào lãi suất tiết kiệm tới 9,6% một năm"
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-26T22:20:00+00:00",
+   "url": "https://bongdaplus.vn/europa-conference-league/nhan-dinh-bong-da-borac-banja-luka-vs-atalanta-03h00-ngay-27-11-atalanta-vuot-kho-5299192611.html",
+   "news": "Nhận định bóng đá Borac Banja Luka vs Atalanta, 03h00 ngày 27/11: Tin vào Atalanta"
   },
   {
-   "term": "chung thân",
+   "term": "giá cà phê hôm nay",
    "geo": "VN",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-25T23:10:00+00:00",
-   "url": "https://vnexpress.net/an-chung-than-sau-cuoc-tinh-12-nam-dang-do-5148890.html",
-   "news": "Án chung thân sau cuộc tình 12 năm dang dở"
+   "ts": "2026-11-26T23:50:00+00:00",
+   "url": "https://vnexpress.net/ca-phe-rot-gia-con-15-000-dong-mot-kg-5148632.html",
+   "news": "Cà phê rớt giá còn 15.000 đồng một kg"
   },
   {
-   "term": "chi lợn",
+   "term": "sân bay",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-25T22:40:00+00:00",
-   "url": "https://laodong.vn/thi-truong/gia-heo-hoi-hom-nay-2511-di-ngang-dao-dong-tu-51000-55000-dongkg-1806203.ldo",
-   "news": "Giá heo hơi hôm nay 25.11: Đi ngang, dao động từ 51.000 - 55.000 đồng/kg"
+   "ts": "2026-11-26T23:20:00+00:00",
+   "url": "https://thanhnien.vn/nong-mot-so-goi-thau-quan-trong-cua-san-bay-long-thanh-tre-hen-toi-thang-62027-185261125174435525.htm",
+   "news": "Nóng: Một số gói thầu quan trọng của sân bay Long Thành trễ hẹn tới tháng 6.2027"
   },
   {
-   "term": "the thao",
+   "term": "lionel messi",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-25T22:40:00+00:00",
-   "url": "https://vnexpress.net/thuy-linh-vo-doi-o-giai-cau-long-dai-hoi-the-thao-toan-quoc-5148933.html",
-   "news": "Thùy Linh vô đối ở giải cầu lông Đại hội Thể thao toàn quốc"
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://www.goal.com/en-in/news/an-extraordinary-night-messi-returns-to-argentina-for-carlos-tevez/blt7b97bd4a29497bfd",
+   "news": "An extraordinary night: Messi returns to Argentina for Carlos Tevez"
   },
   {
-   "term": "nội bài",
+   "term": "câu lạc bộ bóng đá công an hà nội",
    "geo": "VN",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-25T22:50:00+00:00",
-   "url": "https://znews.vn/san-bay-noi-bai-kich-hoat-phuong-an-khan-vi-dieu-tha-gan-duong-ha-canh-post1698992.html",
-   "news": "Sân bay Nội Bài kích hoạt phương án khẩn vì diều thả gần đường hạ cánh"
+   "ts": "2026-11-26T23:40:00+00:00",
+   "url": "https://thanhnien.vn/ne-phuc-tuong-tai-polking-clb-cahn-tien-gan-ky-tich-tai-afc-champions-league-elite-185261125121437978.htm",
+   "news": "Nể phục 'tướng tài’ Polking: CLB CAHN tiến gần kỳ tích tại AFC Champions League Elite"
   },
   {
-   "term": "tuổi trẻ",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-25T22:50:00+00:00",
-   "url": "https://nhandan.vn/ha-noi-xac-dinh-nguyen-nhan-vu-no-tren-pho-nguyen-van-tuyet-post1005179.html",
-   "news": "Hà Nội: Xác định nguyên nhân vụ nổ trên phố Nguyễn Văn Tuyết"
-  },
-  {
-   "term": "burnley đấu với birmingham",
-   "geo": "VN",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-25T23:00:00+00:00",
-   "url": "https://bongdaplus.vn/hang-nhat-anh/nhan-dinh-bong-da-burnley-vs-birmingham-02h45-ngay-26-11-chu-nha-kho-thoat-khung-hoang-5298572611.html",
-   "news": "Nhận định bóng đá Burnley vs Birmingham, 02h45 ngày 26/11: Chủ nhà khó thoát khủng hoảng"
-  },
-  {
-   "term": "shakhtar đấu với fenerbahçe",
+   "term": "rain",
    "geo": "VN",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-25T23:40:00+00:00",
-   "url": "https://bongdaplus.vn/champions-league-cup-c1/nhan-dinh-bong-da-shakhtar-donetsk-vs-fenerbahce-03h00-ngay-26-11-chia-diem-5298882611.html",
-   "news": "Nhận định bóng đá Shakhtar Donetsk vs Fenerbahce, 03h00 ngày 26/11: Chia điểm!"
+   "ts": "2026-11-26T22:40:00+00:00",
+   "url": "https://www.yahoo.com/news/weather-news/live/thanksgiving-storms-live-updates-heavy-rains-winds-and-king-tides-batter-coastal-areas-as-severe-weather-threatens-holiday-travel-70-million-face-flooding-150722634.html",
+   "news": "Thanksgiving storms live updates: Heavy rains, winds and king tides batter coastal areas as severe weather threatens holiday travel; 67 million under coastal flood alerts"
   },
   {
-   "term": "club brugge vs liverpool f.c. standings",
+   "term": "câu lạc bộ bóng đá arsenal",
    "geo": "VN",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://www.skysports.com/football/news/13616517/club-brugge-0-3-liverpool-alexander-isak-and-florian-wirtz-on-target-in-dominant-champions-league-win",
-   "news": "Club Brugge 0-3 Liverpool: Alexander Isak and Florian Wirtz on target in dominant Champions League win"
+   "ts": "2026-11-26T22:50:00+00:00",
+   "url": "https://www.24h.com.vn/bong-da/sieu-may-tinh-du-doan-arsenal-sang-cua-vo-dich-cup-c1-mu-co-037-co-hoi-clip-tin-nong-c48a1814355.html",
+   "news": "Siêu máy tính dự đoán Arsenal sáng cửa vô địch Cúp C1, MU có 0,37% cơ hội (Clip tin nóng)"
+  },
+  {
+   "term": "huy chương",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://tuoitre.vn/bang-xep-hang-huy-chuong-dai-hoi-the-thao-toan-quoc-ngay-26-11-tphcm-tao-khoang-cach-an-toan-100261126232341819.htm",
+   "news": "Bảng xếp hạng huy chương Đại hội Thể thao toàn quốc ngày 26-11: TP.HCM tạo khoảng cách an toàn"
+  },
+  {
+   "term": "viktor gyökeres",
+   "geo": "VN",
+   "traffic": "100+",
+   "score": 100,
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://laodong.vn/bong-da-quoc-te/noi-nho-rodri-va-bernardo-silva-cua-man-city-1807235.ldo",
+   "news": "Nỗi nhớ Rodri và Bernardo Silva của Man City"
   }
  ],
  "world": [
   {
-   "term": "cavaliers vs knicks",
-   "geo": "US",
-   "traffic": "20000+",
-   "score": 20000,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://www.nba.com/cavaliers/photos/photogallery-clenyk-261125",
-   "news": "Cavs vs Knicks Through the Lens"
+   "term": "best black friday sales",
+   "geo": "GB",
+   "traffic": "5000+",
+   "score": 5000,
+   "ts": "2026-11-26T23:20:00+00:00",
+   "url": "https://www.theguardian.com/thefilter/2026/nov/25/best-black-friday-deals-under-50-uk",
+   "news": "The 37 best Black Friday deals under £50: lip stain, Lego and a bargain coffee machine"
   },
   {
-   "term": "boca juniors - independiente rivadavia",
+   "term": "gurnoor brar",
+   "geo": "GB",
+   "traffic": "2000+",
+   "score": 2000,
+   "ts": "2026-11-26T23:20:00+00:00",
+   "url": "https://www.cricinfo.com/story/nz-vs-ind-2nd-test-india-bowl-in-christchurch-gurnoor-brar-debuts-in-place-of-prasidh-krishna-1564351",
+   "news": "India bowl in Christchurch; Brar debuts in place of Prasidh"
+  },
+  {
+   "term": "dallas cowboys cheerleaders",
    "geo": "US",
    "traffic": "2000+",
    "score": 2000,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://www.tycsports.com/liga-profesional-de-futbol/argentina-torneo-clausura-2026-boca-juniors-vs-independiente-riv-m-llave-8-id772707.html",
-   "news": "Boca vs. Independiente Rivadavia, por el Torneo Clausura: seguilo EN VIVO"
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://people.com/dallas-cowboys-cheerleaders-game-day-hair-secrets-exclusive-12274500",
+   "news": "4 Dallas Cowboys Cheerleaders Dish on Their Best Game-Day Hair Secrets (Exclusive)"
   },
   {
-   "term": "giannis antetokounmpo",
-   "geo": "US",
+   "term": "military aid",
+   "geo": "GB",
    "traffic": "2000+",
    "score": 2000,
-   "ts": "2026-11-26T00:00:00+00:00",
-   "url": "https://sports.yahoo.com/nba/breaking-news/article/shai-gilgeous-alexander-giannis-antetokounmpo-sit-out-heats-victory-over-thunder-020641012.html",
-   "news": "Shai-Gilgeous Alexander, Giannis Antetokounmpo sit out Heat's victory over Thunder"
+   "ts": "2026-11-26T23:40:00+00:00",
+   "url": "https://www.telegraph.co.uk/world-news/2026/11/26/kim-jong-un-north-korea-cuts-military-aid-putin-russia/",
+   "news": "Kim Jong-un cuts off military aid to Putin"
   },
   {
-   "term": "john candy",
-   "geo": "US",
-   "traffic": "2000+",
-   "score": 2000,
-   "ts": "2026-11-26T00:00:00+00:00",
-   "url": "https://who13.com/news/how-des-moines-figures-into-the-true-story-behind-planes-trains-and-automobiles/",
-   "news": "How Des Moines figures into the true story behind ‘Planes, Trains and Automobiles’"
-  },
-  {
-   "term": "elizabeth holmes",
-   "geo": "GB",
-   "traffic": "1000+",
-   "score": 1000,
-   "ts": "2026-11-25T23:40:00+00:00",
-   "url": "https://variety.com/2026/tv/news/amanda-seyfried-you-can-see-everything-script-elizabeth-holmes-nathan-fielder-1236957716/",
-   "news": "Amanda Seyfried Reveals ‘You Can See Everything’ Script Required ‘Five-Factor Authentication App’ to Access"
-  },
-  {
-   "term": "usc basketball",
+   "term": "brendan mcloughlin",
    "geo": "US",
    "traffic": "1000+",
    "score": 1000,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://247sports.com/college/usc/article/rapid-recap-usc-women-of-troy-48-point-win-northern-arizona-lumberjacks-galen-center-293239089/",
-   "news": "Rapid Recap: No. 4 Women of Troy get 48-point win over Northern Arizona"
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/music/articles/miranda-lambert-makes-rare-appearance-033144154.html",
+   "news": "Miranda Lambert Makes Rare Appearance With Husband Brendan McLoughlin at 2026 CMA Awards"
   },
   {
-   "term": "bam adebayo",
+   "term": "the mayflower",
    "geo": "US",
    "traffic": "1000+",
    "score": 1000,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://www.espn.com/nba/story/_/id/50568682/adebayo-triple-double-sparks-shorthanded-heat-victory",
-   "news": "Bam Adebayo's triple-double ignites Heat's 123-113 victory over Thunder"
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://www.foxnews.com/entertainment/billy-bob-thornton-says-hes-holiday-purist-he-brings-back-traditional-thanksgiving-home",
+   "news": "Billy Bob Thornton says he’s a holiday ‘purist’ as he brings back ‘traditional’ Thanksgiving at home"
   },
   {
-   "term": "nfl schedule today",
+   "term": "macaulay culkin",
+   "geo": "US",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://deadline.com/2026/11/constance-wu-macaulay-culkin-ethan-eng-a24-walter-woodman-1237232191/",
+   "news": "Constance Wu, Macaulay Culkin, Ken Leung And Ethan Eng To Star In New A24 Film From Director Walter Woodman"
+  },
+  {
+   "term": "winter storm",
+   "geo": "GB",
+   "traffic": "1000+",
+   "score": 1000,
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://www.autoblog.com/news/winter-storm-warning-up-to-16-inches-of-heavy-snow-and-60-mph-gusts-through-saturday",
+   "news": "Winter Storm Warning: Up to 16 Inches of Heavy Snow and 60 MPH Gusts Through Saturday"
+  },
+  {
+   "term": "anthony joshua vs tyson fury",
+   "geo": "GB",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-26T23:20:00+00:00",
+   "url": "https://www.bbc.co.uk/sport/boxing/articles/cwj3klxj10edo",
+   "news": "Tyson Fury vs Anthony Joshua: Paris Fury clarifies fighter did not have schizophrenia diagnosis"
+  },
+  {
+   "term": "jessica simpson",
    "geo": "US",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://www.dailynorseman.com/minnesota-vikings-discussion-chat-message-board/102048/vikes-views-who-is-missing-the-playoffs-in-the-nfc",
-   "news": "Vikes Views: Who is Missing the Playoffs in the NFC?"
+   "ts": "2026-11-26T23:30:00+00:00",
+   "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-simpson-flaunts-darkest-hair-190458416.html",
+   "news": "Jessica Simpson flaunts darkest hair color in two decades: ‘Billionaire brunette’"
   },
   {
-   "term": "northeastern vs wisconsin",
+   "term": "fifa",
    "geo": "US",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-26T00:00:00+00:00",
-   "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/25/watch-wisconsin-basketball-vs-northeastern-tonight-time-tv-channel/92949234007/",
-   "news": "What channel is Wisconsin basketball on tonight? Time, TV, stream"
+   "ts": "2026-11-26T23:40:00+00:00",
+   "url": "https://www.bbc.com/sport/football/articles/crd61nvg4d84o",
+   "news": "Fifa confirms internal data stolen in cyber attack"
   },
   {
-   "term": "david peterson",
+   "term": "jensen huang foundation stock value jump",
    "geo": "US",
    "traffic": "500+",
    "score": 500,
-   "ts": "2026-11-26T00:00:00+00:00",
-   "url": "https://www.mlbtraderumors.com/2026/11/rockies-to-sign-david-peterson.html",
-   "news": "Rockies To Sign David Peterson"
+   "ts": "2026-11-26T23:40:00+00:00",
+   "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/",
+   "news": "Hegseth, Pentagon officials floated using wartime law to reappoint Nvidia CEO"
   },
   {
-   "term": "treyarch",
+   "term": "beyonce",
+   "geo": "US",
+   "traffic": "500+",
+   "score": 500,
+   "ts": "2026-11-26T23:40:00+00:00",
+   "url": "https://foxsanantonio.com/news/entertainment/from-a-record-breaking-grammy-milestone-to-a-holiday-special-and-a-new-musical-era",
+   "news": "From a record-breaking Grammy milestone to a holiday special and a new musical era"
+  },
+  {
+   "term": "joe milton",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-25T23:00:00+00:00",
-   "url": "https://www.videogameschronicle.com/news/21-year-call-of-duty-veteran-says-he-can-no-longer-recommend-a-career-in-game-development/",
-   "news": "21-year Call of Duty veteran says he ‘can no longer recommend a career in game development’"
+   "ts": "2026-11-26T23:00:00+00:00",
+   "url": "https://www.nfl.com/videos/can-t-miss-play-joe-milton-iii-dials-launch-codes-to-devonta-smith-for-50-yard-td-on-thanksgiving",
+   "news": "Can't-Miss Play: Joe Milton III dials launch codes to DeVonta Smith for 50-yard TD on Thanksgiving"
   },
   {
-   "term": "og anunoby",
+   "term": "saquon barkley",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-25T23:00:00+00:00",
-   "url": "https://uk.sports.yahoo.com/news/og-anunoby-officially-tomorrows-game-234255165.html",
-   "news": "OG Anunoby is officially OUT for tomorrow's game …"
+   "ts": "2026-11-26T23:10:00+00:00",
+   "url": "https://cwibc.co.id/en/barkley-clears-injury-report-eagles",
+   "news": "Saquon Barkley Clears Injury Report for Eagles Cowboys Game"
   },
   {
-   "term": "opus 5.6",
+   "term": "malcolm offord",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-25T23:00:00+00:00",
-   "url": "https://x.com/i/trending/2125285396275703925",
-   "news": "Claude Opus 5.6 Demos Show Stunning Code-Generated 3D Scenes"
+   "ts": "2026-11-26T23:20:00+00:00",
+   "url": "https://www.thenational.scot/news/26745364.john-swinney-slaps-malcolm-offord-divisive-language/",
+   "news": "John Swinney slaps down Malcolm Offord for ‘divisive language’ during FMQs"
   },
   {
-   "term": "what is muse",
-   "geo": "GB",
+   "term": "nicole richie",
+   "geo": "US",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-25T23:10:00+00:00",
-   "url": "https://www.bbc.com/news/articles/c9gkld2l38y6o",
-   "news": "Meta's Muse has launched in the UK. I found it helpful but awkward"
+   "ts": "2026-11-26T23:40:00+00:00",
+   "url": "https://nymag.com/strategist/article/what-nicole-richie-still-cant-live-without.html",
+   "news": "What Nicole Richie (Still) Can’t Live Without"
+  },
+  {
+   "term": "the voice judges",
+   "geo": "US",
+   "traffic": "200+",
+   "score": 200,
+   "ts": "2026-11-26T23:40:00+00:00",
+   "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/the-voice-2026-live-top-8/92934161007/",
+   "news": "'The Voice' Top 8 has been revealed. See who was eliminated"
   },
   {
    "term": "billy evans",
    "geo": "GB",
    "traffic": "200+",
    "score": 200,
-   "ts": "2026-11-25T23:30:00+00:00",
-   "url": "https://www.hollywoodreporter.com/movies/movie-news/billy-evans-profits-you-can-see-everything-ycse-charity-1236759761/",
-   "news": "Billy Evans Secured a Cut of ‘You Can See Everything’ Profits After All — and Gave It to Charity (Exclusive)"
+   "ts": "2026-11-26T23:50:00+00:00",
+   "url": "https://variety.com/2026/film/news/elizabeth-holmes-billy-evans-thanksgiving-love-letter-1236959067/",
+   "news": "Elizabeth Holmes’ Partner Billy Evans Writes Her an Emotional Thanksgiving Love Letter: ‘Our Most Beautiful Days Are Still Ahead of Us’"
   },
   {
-   "term": "zlatan ibrahimovic mobland",
-   "geo": "GB",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://www.esquire.com/uk/culture/tv/a74528847/mobland-zlatan-ibrahimovic/",
-   "news": "'MobLand' Has Reportedly Cast Football’s Biggest Pantomime Villain As a Season 3 Crime Boss"
-  },
-  {
-   "term": "solo ball",
-   "geo": "US",
-   "traffic": "200+",
-   "score": 200,
-   "ts": "2026-11-26T00:00:00+00:00",
-   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50598728/uconn-guard-solo-ball-available-play-first-season",
-   "news": "UConn guard Solo Ball available to play for first time this season"
-  },
-  {
-   "term": "skiing",
+   "term": "stephen flynn",
    "geo": "GB",
    "traffic": "100+",
    "score": 100,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://www.espn.com/olympics/skiing/story/_/id/50596127/world-cup-skiing-races-canceled-due-lack-snow-canada",
-   "news": "Lack of snow forces cancellation of World Cup skiing races in Canada next month"
-  },
-  {
-   "term": "atlético-mg vs corinthians",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-25T23:50:00+00:00",
-   "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/25/atletico-mg-x-corinthians-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-   "news": "Atlético-MG x Corinthians: onde assistir ao vivo, horário e escalações"
-  },
-  {
-   "term": "jesse baird",
-   "geo": "GB",
-   "traffic": "100+",
-   "score": 100,
-   "ts": "2026-11-26T00:00:00+00:00",
-   "url": "https://www.bbc.co.uk/news/videos/c6z9dk30880zo",
-   "news": "The CCTV that helped convict a Sydney policeman of double murder"
+   "ts": "2026-11-26T23:40:00+00:00",
+   "url": "https://www.thenational.scot/news/26765774.protesters-occupy-holyrood-israel-linked-firm-bids-public-money/",
+   "news": "Protesters occupy Scottish Parliament over Israel-linked firm's bid for public money"
   }
  ],
- "updated": "2026-11-26T00:06:21.662756+00:00"
+ "updated": "2026-11-27T00:06:18.486461+00:00"
 }
